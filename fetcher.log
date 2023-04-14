@@ -1069,3 +1069,69 @@
 [2023-04-15 01:51:19] INFO root fetch - main [MainThread]: End processing [singer-summarize]: success
 [2023-04-15 01:51:19] INFO root fetch - main [MainThread]: End processing [splatnet3-scraper]: success
 [2023-04-15 01:51:19] INFO root fetch - main [MainThread]: Store serial: [17713946]
+[2023-04-15 01:56:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713946]
+[2023-04-15 01:56:26] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-15 01:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wield.epics.autocas
+[2023-04-15 01:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wield.iirrational
+[2023-04-15 01:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wield.model
+[2023-04-15 01:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sigmaepsilon
+[2023-04-15 01:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wield.pytest
+[2023-04-15 01:56:26] WARNING root fetch - processPackages [wield.iirrational]: Skipping, unable to determine old version
+[2023-04-15 01:56:26] INFO root fetch - processPackages [wield.iirrational]: Start processing: wield.utilities
+[2023-04-15 01:56:26] WARNING root fetch - processPackages [wield.model]: Skipping, unable to determine old version
+[2023-04-15 01:56:26] INFO root fetch - main [MainThread]: End processing [wield.iirrational] error
+[2023-04-15 01:56:26] INFO root fetch - processPackages [wield.model]: Start processing: ShellcodeTester
+[2023-04-15 01:56:26] WARNING root fetch - processPackages [wield.epics.autocas]: Skipping, unable to determine old version
+[2023-04-15 01:56:26] INFO root fetch - processPackages [sigmaepsilon]: New version: [0.0.33] Old Version: [0.0.32]
+[2023-04-15 01:56:26] INFO root fetch - main [MainThread]: End processing [wield.model] error
+[2023-04-15 01:56:26] INFO root fetch - processPackages [wield.epics.autocas]: Start processing: bacalhau-apiclient
+[2023-04-15 01:56:26] INFO root fetch - main [MainThread]: End processing [wield.epics.autocas] error
+[2023-04-15 01:56:26] WARNING root fetch - processPackages [wield.pytest]: Skipping, unable to determine old version
+[2023-04-15 01:56:26] INFO root fetch - processPackages [wield.pytest]: Start processing: pinax-invitations
+[2023-04-15 01:56:26] INFO root fetch - main [MainThread]: End processing [wield.pytest] error
+[2023-04-15 01:56:26] INFO root fetch - processPackages [ShellcodeTester]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-15 01:56:26] WARNING root fetch - processPackages [wield.utilities]: Skipping, unable to determine old version
+[2023-04-15 01:56:26] INFO root fetch - processPackages [wield.utilities]: Start processing: bacalhau-sdk
+[2023-04-15 01:56:26] INFO root fetch - main [MainThread]: End processing [wield.utilities] error
+[2023-04-15 01:56:26] INFO root fetch - processPackages [bacalhau-apiclient]: New version: [0.3.28] Old Version: [0.3.27]
+[2023-04-15 01:56:26] INFO root fetch - processPackages [pinax-invitations]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-15 01:56:26] INFO root fetch - processPackages [bacalhau-sdk]: New version: [0.3.28] Old Version: [0.3.27]
+[2023-04-15 01:56:26] INFO root fetch - processPackages [pinax-invitations]: Downloading https://files.pythonhosted.org/packages/5b/1f/d2ba6c5f839ed8e8312c47e08a93e8e784e12d76f01c9d9462ebbfb7c940/pinax-invitations-7.0.0.tar.gz
+[2023-04-15 01:56:26] INFO root fetch - processPackages [bacalhau-apiclient]: Downloading https://files.pythonhosted.org/packages/d0/d0/9348ed5f9ef25c97ebdd8bb19f208cf940b3794671df26ee5378f0db49b6/bacalhau_apiclient-0.3.28.tar.gz
+[2023-04-15 01:56:26] INFO root fetch - processPackages [ShellcodeTester]: Downloading https://files.pythonhosted.org/packages/6e/d3/ddbd0bda19ebe004a44f9a81010c1d76715bcf7d09bb84ff567a070a74a8/ShellcodeTester-0.2.6.tar.gz
+[2023-04-15 01:56:26] INFO root fetch - processPackages [bacalhau-sdk]: Downloading https://files.pythonhosted.org/packages/b8/1f/1670c7c29725de19b20e20f427481c816cc316f6a011ca6a087f74cd0d2c/bacalhau_sdk-0.3.28.tar.gz
+[2023-04-15 01:56:26] INFO root fetch - processPackages [sigmaepsilon]: Downloading https://files.pythonhosted.org/packages/6a/26/5e5bb058331b0bfe1a96ffd4f664945f4074c2bf394aefaef2f5263e0903/sigmaepsilon-0.0.33.tar.gz
+[2023-04-15 01:56:26] INFO root fetch - processPackages [bacalhau-apiclient]: executing diffoscope
+[2023-04-15 01:56:26] INFO root fetch - processPackages [bacalhau-apiclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacalhau_apiclient-0.3.27.tar.gz tmp/bacalhau_apiclient-0.3.28.tar.gz --markdown 20230415/b/bacalhau-apiclient/0.3.27-0.3.28/diff.md --exclude *.pyd
+[2023-04-15 01:56:26] INFO root fetch - processPackages [bacalhau-sdk]: executing diffoscope
+[2023-04-15 01:56:26] INFO root fetch - processPackages [bacalhau-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacalhau_sdk-0.3.27.tar.gz tmp/bacalhau_sdk-0.3.28.tar.gz --markdown 20230415/b/bacalhau-sdk/0.3.27-0.3.28/diff.md --exclude *.pyd
+[2023-04-15 01:56:26] INFO root fetch - processPackages [sigmaepsilon]: executing diffoscope
+[2023-04-15 01:56:26] INFO root fetch - processPackages [sigmaepsilon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmaepsilon-0.0.32.tar.gz tmp/sigmaepsilon-0.0.33.tar.gz --markdown 20230415/s/sigmaepsilon/0.0.32-0.0.33/diff.md --exclude *.pyd
+[2023-04-15 01:56:26] INFO root fetch - processPackages [ShellcodeTester]: executing diffoscope
+[2023-04-15 01:56:26] INFO root fetch - processPackages [ShellcodeTester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ShellcodeTester-0.2.5.tar.gz tmp/ShellcodeTester-0.2.6.tar.gz --markdown 20230415/S/ShellcodeTester/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-15 01:56:26] INFO root fetch - processPackages [pinax-invitations]: Downloading https://files.pythonhosted.org/packages/39/6a/b4b42f9bb11c3de44a0f1175ef30ead1e25cb08858aadf451717cab9da7f/pinax-invitations-8.0.0.tar.gz
+[2023-04-15 01:56:27] INFO root fetch - processPackages [pinax-invitations]: executing diffoscope
+[2023-04-15 01:56:27] INFO root fetch - processPackages [pinax-invitations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinax-invitations-7.0.0.tar.gz tmp/pinax-invitations-8.0.0.tar.gz --markdown 20230415/p/pinax-invitations/7.0.0-8.0.0/diff.md --exclude *.pyd
+[2023-04-15 01:56:27] INFO root fetch - processPackages [bacalhau-sdk]: Start processing: bacalhau-airflow
+[2023-04-15 01:56:27] INFO root fetch - main [MainThread]: End processing [bacalhau-sdk]: success
+[2023-04-15 01:56:27] INFO root fetch - processPackages [bacalhau-airflow]: New version: [0.3.28] Old Version: [0.3.27]
+[2023-04-15 01:56:28] INFO root fetch - processPackages [bacalhau-airflow]: Downloading https://files.pythonhosted.org/packages/05/55/b7564162539c5f484f2c6d02c382756190cd852d2a731a2102ec9e8e42a2/bacalhau_airflow-0.3.28.tar.gz
+[2023-04-15 01:56:28] INFO root fetch - processPackages [pinax-invitations]: Start processing: luau
+[2023-04-15 01:56:28] INFO root fetch - main [MainThread]: End processing [pinax-invitations]: success
+[2023-04-15 01:56:28] INFO root fetch - processPackages [luau]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-15 01:56:28] INFO root fetch - processPackages [bacalhau-airflow]: executing diffoscope
+[2023-04-15 01:56:28] INFO root fetch - processPackages [bacalhau-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacalhau_airflow-0.3.27.tar.gz tmp/bacalhau_airflow-0.3.28.tar.gz --markdown 20230415/b/bacalhau-airflow/0.3.27-0.3.28/diff.md --exclude *.pyd
+[2023-04-15 01:56:28] INFO root fetch - processPackages [sigmaepsilon]: Start processing: modProcesso
+[2023-04-15 01:56:28] INFO root fetch - main [MainThread]: End processing [sigmaepsilon]: success
+[2023-04-15 01:56:28] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/de/58/6675f557c2b5c5f1d3570f912c6f2ddd607fa185d7c80db4762ac40ab75f/luau-0.2.3.tar.gz
+[2023-04-15 01:56:28] INFO root fetch - processPackages [modProcesso]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 01:56:28] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-15 01:56:28] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.2.2.tar.gz tmp/luau-0.2.3.tar.gz --markdown 20230415/l/luau/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-15 01:56:28] INFO root fetch - processPackages [modProcesso]: executing diffoscope
+[2023-04-15 01:56:28] INFO root fetch - processPackages [modProcesso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modProcesso-0.0.2.tar.gz tmp/modProcesso-0.0.3.tar.gz --markdown 20230415/m/modProcesso/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 01:56:28] INFO root fetch - main [MainThread]: End processing [bacalhau-apiclient]: success
+[2023-04-15 01:56:29] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-15 01:56:29] INFO root fetch - main [MainThread]: End processing [modProcesso]: success
+[2023-04-15 01:56:29] INFO root fetch - main [MainThread]: End processing [bacalhau-airflow]: success
+[2023-04-15 01:56:37] INFO root fetch - main [MainThread]: End processing [ShellcodeTester]: success
+[2023-04-15 01:56:37] INFO root fetch - main [MainThread]: Store serial: [17713993]
