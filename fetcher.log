@@ -960,3 +960,40 @@
 [2023-04-15 01:40:59] INFO root fetch - processPackages [ra-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ra_utils-1.9.2.tar.gz tmp/ra_utils-1.9.3.tar.gz --markdown 20230415/r/ra-utils/1.9.2-1.9.3/diff.md --exclude *.pyd
 [2023-04-15 01:41:00] INFO root fetch - main [MainThread]: End processing [ra-utils]: success
 [2023-04-15 01:41:00] INFO root fetch - main [MainThread]: Store serial: [17713844]
+[2023-04-15 01:46:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713844]
+[2023-04-15 01:46:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 01:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: symdexer
+[2023-04-15 01:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ra-utils
+[2023-04-15 01:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: a-pandas-ex-easy-loc
+[2023-04-15 01:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: akinator.py
+[2023-04-15 01:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ascicolor
+[2023-04-15 01:46:07] WARNING root fetch - processPackages [ascicolor]: Skipping, unable to determine old version
+[2023-04-15 01:46:07] INFO root fetch - processPackages [ascicolor]: Start processing: pipen-lock
+[2023-04-15 01:46:07] INFO root fetch - processPackages [symdexer]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-15 01:46:07] INFO root fetch - main [MainThread]: End processing [ascicolor] error
+[2023-04-15 01:46:07] INFO root fetch - processPackages [ra-utils]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-04-15 01:46:07] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: New version: [0.14] Old Version: [0.13]
+[2023-04-15 01:46:07] INFO root fetch - processPackages [akinator.py]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-15 01:46:07] INFO root fetch - processPackages [pipen-lock]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-15 01:46:07] INFO root fetch - processPackages [ra-utils]: executing diffoscope
+[2023-04-15 01:46:07] INFO root fetch - processPackages [ra-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ra_utils-1.9.2.tar.gz tmp/ra_utils-1.9.3.tar.gz --markdown 20230415/r/ra-utils/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-04-15 01:46:07] INFO root fetch - processPackages [akinator.py]: Downloading https://files.pythonhosted.org/packages/57/a9/a2fff7f58a4186f122d10fa36afdc4c9073ad0d5fc468c33713b97deb6ae/akinator.py-0.2.1.tar.gz
+[2023-04-15 01:46:07] INFO root fetch - processPackages [symdexer]: Downloading https://files.pythonhosted.org/packages/14/11/4ded13f85d3076474d1362c4fd673d508b2023741a0b06c759d460694211/symdexer-0.2.2.tar.gz
+[2023-04-15 01:46:07] INFO root fetch - processPackages [pipen-lock]: Downloading https://files.pythonhosted.org/packages/ee/3c/fe9e77fe8d1451c16477588c790df524eebd894ff553c3b1879e3cd85d52/pipen_lock-0.1.1.tar.gz
+[2023-04-15 01:46:07] INFO root fetch - processPackages [symdexer]: executing diffoscope
+[2023-04-15 01:46:07] INFO root fetch - processPackages [symdexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symdexer-0.2.1.tar.gz tmp/symdexer-0.2.2.tar.gz --markdown 20230415/s/symdexer/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-15 01:46:07] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: Downloading https://files.pythonhosted.org/packages/47/bc/828e2f87d9b04d73963245ac8f20da4f9f5e602c335c3d51248765bf64bf/a_pandas_ex_easy_loc-0.14.tar.gz
+[2023-04-15 01:46:07] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: executing diffoscope
+[2023-04-15 01:46:07] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a_pandas_ex_easy_loc-0.13.tar.gz tmp/a_pandas_ex_easy_loc-0.14.tar.gz --markdown 20230415/a/a-pandas-ex-easy-loc/0.13-0.14/diff.md --exclude *.pyd
+[2023-04-15 01:46:08] INFO root fetch - processPackages [akinator.py]: Downloading https://files.pythonhosted.org/packages/df/9e/1e84cf8b1ff71d04904d9cb08d68b41ce73cbb96db5180b14b6549e82b04/akinator.py-0.2.2.tar.gz
+[2023-04-15 01:46:08] INFO root fetch - processPackages [pipen-lock]: Downloading https://files.pythonhosted.org/packages/23/3f/1e1aa34db62e089e8c2317217eea75c2712fa9b4e7ca4ce1b8938c9f7f99/pipen_lock-0.2.0.tar.gz
+[2023-04-15 01:46:08] INFO root fetch - processPackages [pipen-lock]: executing diffoscope
+[2023-04-15 01:46:08] INFO root fetch - processPackages [pipen-lock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_lock-0.1.1.tar.gz tmp/pipen_lock-0.2.0.tar.gz --markdown 20230415/p/pipen-lock/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 01:46:08] INFO root fetch - processPackages [akinator.py]: executing diffoscope
+[2023-04-15 01:46:08] INFO root fetch - processPackages [akinator.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akinator.py-0.2.1.tar.gz tmp/akinator.py-0.2.2.tar.gz --markdown 20230415/a/akinator.py/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-15 01:46:08] INFO root fetch - main [MainThread]: End processing [symdexer]: success
+[2023-04-15 01:46:09] INFO root fetch - main [MainThread]: End processing [a-pandas-ex-easy-loc]: success
+[2023-04-15 01:46:09] INFO root fetch - main [MainThread]: End processing [ra-utils]: success
+[2023-04-15 01:46:09] INFO root fetch - main [MainThread]: End processing [pipen-lock]: success
+[2023-04-15 01:46:09] INFO root fetch - main [MainThread]: End processing [akinator.py]: success
+[2023-04-15 01:46:09] INFO root fetch - main [MainThread]: Store serial: [17713888]
