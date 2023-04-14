@@ -315,3 +315,37 @@
 [2023-04-15 00:32:01] INFO root fetch - main [MainThread]: End processing [hcai-nova-server-nightly]: success
 [2023-04-15 00:32:02] INFO root fetch - main [MainThread]: End processing [cumulusci]: success
 [2023-04-15 00:32:02] INFO root fetch - main [MainThread]: Store serial: [17713500]
+[2023-04-15 00:37:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713500]
+[2023-04-15 00:37:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 00:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fa_purity
+[2023-04-15 00:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhOn
+[2023-04-15 00:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: groundlight
+[2023-04-15 00:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rrplugins
+[2023-04-15 00:37:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tellurium
+[2023-04-15 00:37:09] INFO root fetch - processPackages [tellurium]: New version: [2.2.8] Old Version: [2.2.7]
+[2023-04-15 00:37:09] INFO root fetch - processPackages [groundlight]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-04-15 00:37:09] INFO root fetch - processPackages [pyhOn]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-04-15 00:37:09] INFO root fetch - processPackages [fa_purity]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-15 00:37:09] INFO root fetch - processPackages [rrplugins]: New version: [2.4.0] Old Version: [2.3.2]
+[2023-04-15 00:37:09] INFO root fetch - processPackages [rrplugins]: Downloading https://files.pythonhosted.org/packages/2b/3c/58f2efd1a06bac59ae8487badb5cb65aecf0a68189d9a965aa4fb3684f91/rrplugins-2.3.2-cp39-cp39-win_amd64.whl
+[2023-04-15 00:37:09] INFO root fetch - processPackages [tellurium]: Downloading https://files.pythonhosted.org/packages/28/bf/b7b6219b2dac0d8028167d387ab921811f439ee3081d2c40828696d07c22/tellurium-2.2.7-py3-none-any.whl
+[2023-04-15 00:37:09] INFO root fetch - processPackages [fa_purity]: Downloading https://files.pythonhosted.org/packages/01/d0/fb8f962d1e51c74d296a0d5029e5e865813407da91100420ef535f4aa927/fa_purity-1.8.0.tar.gz
+[2023-04-15 00:37:09] WARNING root fetch - processPackages [rrplugins]: Skipping package: exceeds size limit 38409305>=10485760
+[2023-04-15 00:37:09] INFO root fetch - main [MainThread]: End processing [rrplugins] error
+[2023-04-15 00:37:10] INFO root fetch - processPackages [pyhOn]: Downloading https://files.pythonhosted.org/packages/bd/2d/148dda24ce8dbe2a2cab4be799a56f8f279116d53d01d62170149cb74d6d/pyhOn-0.7.4.tar.gz
+[2023-04-15 00:37:10] INFO root fetch - processPackages [groundlight]: Downloading https://files.pythonhosted.org/packages/e1/f8/056620c7044d5641766207c2190b9457d9c8b3885268346b38ee477f0144/groundlight-0.7.5.tar.gz
+[2023-04-15 00:37:10] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-04-15 00:37:10] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.7.3.tar.gz tmp/pyhOn-0.7.4.tar.gz --markdown 20230415/p/pyhOn/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-04-15 00:37:10] INFO root fetch - processPackages [groundlight]: executing diffoscope
+[2023-04-15 00:37:10] INFO root fetch - processPackages [groundlight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/groundlight-0.7.4.tar.gz tmp/groundlight-0.7.5.tar.gz --markdown 20230415/g/groundlight/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-04-15 00:37:10] INFO root fetch - processPackages [tellurium]: Downloading https://files.pythonhosted.org/packages/71/d6/199fbb82fab6ecfeef9d7c9463171d5bcd30a3ffc01e8fb2b54e426bf18c/tellurium-2.2.8-py3-none-any.whl
+[2023-04-15 00:37:10] INFO root fetch - processPackages [tellurium]: executing diffoscope
+[2023-04-15 00:37:10] INFO root fetch - processPackages [tellurium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tellurium-2.2.7-py3-none-any.whl.zip tmp/tellurium-2.2.8-py3-none-any.whl.zip --markdown 20230415/t/tellurium/2.2.7-2.2.8/diff.md --exclude *.pyd
+[2023-04-15 00:37:10] INFO root fetch - processPackages [fa_purity]: Downloading https://files.pythonhosted.org/packages/d1/d7/49dcb1bab0f5a81d7e580591e30294d71c57c667d5a802800f71dda242fc/fa_purity-1.9.0.tar.gz
+[2023-04-15 00:37:10] INFO root fetch - processPackages [fa_purity]: executing diffoscope
+[2023-04-15 00:37:10] INFO root fetch - processPackages [fa_purity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fa_purity-1.8.0.tar.gz tmp/fa_purity-1.9.0.tar.gz --markdown 20230415/f/fa_purity/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-15 00:37:11] INFO root fetch - main [MainThread]: End processing [groundlight]: success
+[2023-04-15 00:37:11] INFO root fetch - main [MainThread]: End processing [tellurium]: success
+[2023-04-15 00:37:11] INFO root fetch - main [MainThread]: End processing [fa_purity]: success
+[2023-04-15 00:37:18] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-04-15 00:37:18] INFO root fetch - main [MainThread]: Store serial: [17713522]
