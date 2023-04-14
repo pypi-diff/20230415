@@ -54,3 +54,41 @@
 [2023-04-15 00:00:39] INFO root fetch - main [MainThread]: End processing [lumeny]: success
 [2023-04-15 00:00:41] INFO root fetch - main [MainThread]: End processing [returnn]: success
 [2023-04-15 00:00:41] INFO root fetch - main [MainThread]: Store serial: [17713314]
+[2023-04-15 00:05:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713314]
+[2023-04-15 00:05:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 00:05:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rtb-toolbox
+[2023-04-15 00:05:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyinstaller
+[2023-04-15 00:05:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: napari-griottes
+[2023-04-15 00:05:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TBForms
+[2023-04-15 00:05:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: henter
+[2023-04-15 00:05:49] WARNING root fetch - processPackages [rtb-toolbox]: Skipping, unable to determine old version
+[2023-04-15 00:05:49] WARNING root fetch - processPackages [henter]: Skipping, unable to determine old version
+[2023-04-15 00:05:49] INFO root fetch - processPackages [rtb-toolbox]: Start processing: python-docs-theme-lucit
+[2023-04-15 00:05:49] INFO root fetch - main [MainThread]: End processing [rtb-toolbox] error
+[2023-04-15 00:05:49] INFO root fetch - processPackages [henter]: Start processing: pepperize.cdk-serverless-cluster-from-snapshot
+[2023-04-15 00:05:49] INFO root fetch - main [MainThread]: End processing [henter] error
+[2023-04-15 00:05:49] INFO root fetch - processPackages [TBForms]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-15 00:05:49] INFO root fetch - processPackages [pyinstaller]: New version: [5.9.0] Old Version: [5.8.0]
+[2023-04-15 00:05:49] INFO root fetch - processPackages [napari-griottes]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-04-15 00:05:49] INFO root fetch - processPackages [python-docs-theme-lucit]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-04-15 00:05:49] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 00:05:49] INFO root fetch - processPackages [napari-griottes]: Downloading https://files.pythonhosted.org/packages/00/19/9c252160f8c8264e8aa8b413331146467c00cee748ef7ebbce9ceb750daf/napari_griottes-0.3.9.tar.gz
+[2023-04-15 00:05:50] INFO root fetch - processPackages [python-docs-theme-lucit]: Downloading https://files.pythonhosted.org/packages/82/49/7d24856ae6e2d8e42c40629c05303750bb44e43072eeec7e124dc25d57cc/python_docs_theme_lucit-1.2.9-py3-none-any.whl
+[2023-04-15 00:05:50] INFO root fetch - processPackages [TBForms]: executing diffoscope
+[2023-04-15 00:05:50] INFO root fetch - processPackages [TBForms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TBForms-0.9.8.tar.gz tmp/TBForms-0.9.9.tar.gz --markdown 20230415/T/TBForms/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-15 00:05:50] INFO root fetch - processPackages [pyinstaller]: executing diffoscope
+[2023-04-15 00:05:50] INFO root fetch - processPackages [pyinstaller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinstaller-5.8.0.tar.gz tmp/pyinstaller-5.9.0.tar.gz --markdown 20230415/p/pyinstaller/5.8.0-5.9.0/diff.md --exclude *.pyd
+[2023-04-15 00:05:50] INFO root fetch - processPackages [napari-griottes]: Downloading https://files.pythonhosted.org/packages/6e/67/20760510c22513b47ee366b6462627e9c9ad2ca38c5495de67f7da730c57/napari_griottes-0.4.0.tar.gz
+[2023-04-15 00:05:50] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-04-15 00:05:50] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230415/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 00:05:50] INFO root fetch - processPackages [napari-griottes]: executing diffoscope
+[2023-04-15 00:05:50] INFO root fetch - processPackages [napari-griottes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_griottes-0.3.9.tar.gz tmp/napari_griottes-0.4.0.tar.gz --markdown 20230415/n/napari-griottes/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-04-15 00:05:50] INFO root fetch - processPackages [python-docs-theme-lucit]: Downloading https://files.pythonhosted.org/packages/87/53/e0e6f29331b2f1208fda010c77e09cf86d1d774b4541ef9d116c4351c1e0/python_docs_theme_lucit-1.3.0-py3-none-any.whl
+[2023-04-15 00:05:50] INFO root fetch - processPackages [python-docs-theme-lucit]: executing diffoscope
+[2023-04-15 00:05:50] INFO root fetch - processPackages [python-docs-theme-lucit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_docs_theme_lucit-1.2.9-py3-none-any.whl.zip tmp/python_docs_theme_lucit-1.3.0-py3-none-any.whl.zip --markdown 20230415/p/python-docs-theme-lucit/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-04-15 00:05:51] INFO root fetch - main [MainThread]: End processing [TBForms]: success
+[2023-04-15 00:05:51] INFO root fetch - main [MainThread]: End processing [napari-griottes]: success
+[2023-04-15 00:05:51] INFO root fetch - main [MainThread]: End processing [python-docs-theme-lucit]: success
+[2023-04-15 00:05:52] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-serverless-cluster-from-snapshot]: success
+[2023-04-15 00:06:02] INFO root fetch - main [MainThread]: End processing [pyinstaller]: success
+[2023-04-15 00:06:02] INFO root fetch - main [MainThread]: Store serial: [17713349]
