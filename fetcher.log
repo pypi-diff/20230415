@@ -599,3 +599,92 @@
 [2023-04-15 00:58:03] INFO root fetch - main [MainThread]: End processing [datamol]: success
 [2023-04-15 00:59:27] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
 [2023-04-15 00:59:27] INFO root fetch - main [MainThread]: Store serial: [17713641]
+[2023-04-15 01:04:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713641]
+[2023-04-15 01:04:34] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-15 01:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrecdp
+[2023-04-15 01:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chibi-lxc
+[2023-04-15 01:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tmnt-cu101
+[2023-04-15 01:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sporestack
+[2023-04-15 01:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dnzapi
+[2023-04-15 01:04:34] INFO root fetch - processPackages [chibi-lxc]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-15 01:04:34] INFO root fetch - processPackages [pyrecdp]: New version: [1.0.1b202304141] Old Version: [1.0.1b20230404]
+[2023-04-15 01:04:34] WARNING root fetch - processPackages [dnzapi]: Skipping, unable to determine old version
+[2023-04-15 01:04:34] INFO root fetch - processPackages [dnzapi]: Start processing: datamol
+[2023-04-15 01:04:34] INFO root fetch - main [MainThread]: End processing [dnzapi] error
+[2023-04-15 01:04:34] INFO root fetch - processPackages [sporestack]: New version: [9.1.1] Old Version: [9.1.0]
+[2023-04-15 01:04:34] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230414] Old Version: [0.7.0b20230413]
+[2023-04-15 01:04:34] INFO root fetch - processPackages [datamol]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-04-15 01:04:34] INFO root fetch - processPackages [chibi-lxc]: Downloading https://files.pythonhosted.org/packages/be/06/9f24b26189c657fefed229715f4dd4073026811663742dddc29d8e3ea08b/chibi_lxc-0.2.0.tar.gz
+[2023-04-15 01:04:34] INFO root fetch - processPackages [pyrecdp]: Downloading https://files.pythonhosted.org/packages/ea/ec/3858e329b80326e392397b89a577918e4f3b6e273e0fb39f72a2530da552/pyrecdp-1.0.1b20230404.tar.gz
+[2023-04-15 01:04:35] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/d4/be/36e8eb342d095409f67efa7c19fec4df4d1baadd1f6efa8f89426e2fd2c0/tmnt-cu101-0.7.0b20230414.tar.gz
+[2023-04-15 01:04:35] INFO root fetch - processPackages [datamol]: Downloading https://files.pythonhosted.org/packages/59/b3/831830ab7991bd95ed22c7f61ee82c0eab6da7e47ec70237cb4ea95ed842/datamol-0.9.8.tar.gz
+[2023-04-15 01:04:35] INFO root fetch - processPackages [sporestack]: executing diffoscope
+[2023-04-15 01:04:35] INFO root fetch - processPackages [sporestack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sporestack-9.1.0.tar.gz tmp/sporestack-9.1.1.tar.gz --markdown 20230415/s/sporestack/9.1.0-9.1.1/diff.md --exclude *.pyd
+[2023-04-15 01:04:35] INFO root fetch - processPackages [chibi-lxc]: Downloading https://files.pythonhosted.org/packages/f5/03/cbc822fe06d584bef05e3c4fb734d0f8d4add4c40537d87b6df24521edf0/chibi_lxc-0.3.0.tar.gz
+[2023-04-15 01:04:35] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-04-15 01:04:35] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230413.tar.gz tmp/tmnt-cu101-0.7.0b20230414.tar.gz --markdown 20230415/t/tmnt-cu101/0.7.0b20230413-0.7.0b20230414/diff.md --exclude *.pyd
+[2023-04-15 01:04:35] INFO root fetch - processPackages [pyrecdp]: Downloading https://files.pythonhosted.org/packages/aa/5e/8198e057a87d683665ae225c51f5d7afa03642b380fcfe075221b8f2b553/pyrecdp-1.0.1b202304141.tar.gz
+[2023-04-15 01:04:35] INFO root fetch - processPackages [chibi-lxc]: executing diffoscope
+[2023-04-15 01:04:35] INFO root fetch - processPackages [chibi-lxc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chibi_lxc-0.2.0.tar.gz tmp/chibi_lxc-0.3.0.tar.gz --markdown 20230415/c/chibi-lxc/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 01:04:35] INFO root fetch - processPackages [pyrecdp]: executing diffoscope
+[2023-04-15 01:04:35] INFO root fetch - processPackages [pyrecdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrecdp-1.0.1b20230404.tar.gz tmp/pyrecdp-1.0.1b202304141.tar.gz --markdown 20230415/p/pyrecdp/1.0.1b20230404-1.0.1b202304141/diff.md --exclude *.pyd
+[2023-04-15 01:04:36] INFO root fetch - processPackages [datamol]: executing diffoscope
+[2023-04-15 01:04:36] INFO root fetch - processPackages [datamol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamol-0.9.7.tar.gz tmp/datamol-0.9.8.tar.gz --markdown 20230415/d/datamol/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-04-15 01:04:36] INFO root fetch - processPackages [sporestack]: Start processing: flwr-nightly
+[2023-04-15 01:04:36] INFO root fetch - main [MainThread]: End processing [sporestack]: success
+[2023-04-15 01:04:36] INFO root fetch - processPackages [flwr-nightly]: New version: [1.4.0.dev20230414] Old Version: [1.4.0.dev20230413]
+[2023-04-15 01:04:36] INFO root fetch - processPackages [tmnt-cu101]: Start processing: tmnt
+[2023-04-15 01:04:36] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-04-15 01:04:36] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230414] Old Version: [0.7.0b20230413]
+[2023-04-15 01:04:36] INFO root fetch - processPackages [chibi-lxc]: Start processing: strplus
+[2023-04-15 01:04:36] INFO root fetch - main [MainThread]: End processing [chibi-lxc]: success
+[2023-04-15 01:04:36] INFO root fetch - processPackages [strplus]: New version: [0.0.7] Old Version: [0.0.5]
+[2023-04-15 01:04:36] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/92/c7/babd9f6c7249bbc535fb2a48b6dc3eb0b15b9d81ab145d52de9a2c4d87cb/flwr_nightly-1.4.0.dev20230413.tar.gz
+[2023-04-15 01:04:36] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/15/60/52ae96b8e5ee096ddb7500769ff65b865e6e19ba6e6e9d43d6e138ac3243/tmnt-0.7.0b20230414.tar.gz
+[2023-04-15 01:04:36] INFO root fetch - processPackages [pyrecdp]: Start processing: fnv128a
+[2023-04-15 01:04:36] INFO root fetch - main [MainThread]: End processing [pyrecdp]: success
+[2023-04-15 01:04:36] INFO root fetch - processPackages [strplus]: Downloading https://files.pythonhosted.org/packages/49/92/8475682840319e49806964eb7607837f54d6514e17b34cd73f335b3d2fde/strplus-0.0.7.tar.gz
+[2023-04-15 01:04:36] INFO root fetch - processPackages [fnv128a]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 01:04:36] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/88/f7/3b72bdb9df1a576679cfc4c0b9a0395b6a958c9e81665672979af00cd448/flwr_nightly-1.4.0.dev20230414.tar.gz
+[2023-04-15 01:04:37] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-04-15 01:04:37] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230413.tar.gz tmp/tmnt-0.7.0b20230414.tar.gz --markdown 20230415/t/tmnt/0.7.0b20230413-0.7.0b20230414/diff.md --exclude *.pyd
+[2023-04-15 01:04:37] INFO root fetch - processPackages [fnv128a]: Downloading https://files.pythonhosted.org/packages/b8/34/b08d7a8d1648e24e79486ad4ed74e731c8d124f1b52218b790a0ae701e61/fnv128a-0.0.1.tar.gz
+[2023-04-15 01:04:37] INFO root fetch - processPackages [strplus]: executing diffoscope
+[2023-04-15 01:04:37] INFO root fetch - processPackages [strplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strplus-0.0.5.tar.gz tmp/strplus-0.0.7.tar.gz --markdown 20230415/s/strplus/0.0.5-0.0.7/diff.md --exclude *.pyd
+[2023-04-15 01:04:37] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2023-04-15 01:04:37] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.4.0.dev20230413.tar.gz tmp/flwr_nightly-1.4.0.dev20230414.tar.gz --markdown 20230415/f/flwr-nightly/1.4.0.dev20230413-1.4.0.dev20230414/diff.md --exclude *.pyd
+[2023-04-15 01:04:37] INFO root fetch - processPackages [fnv128a]: Downloading https://files.pythonhosted.org/packages/35/93/ab99f6d01db43fa15fffc73465e7ec218704f9c8a0449a9c04bb4fa5da79/fnv128a-0.0.2.tar.gz
+[2023-04-15 01:04:37] INFO root fetch - processPackages [fnv128a]: executing diffoscope
+[2023-04-15 01:04:37] INFO root fetch - processPackages [fnv128a]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fnv128a-0.0.1.tar.gz tmp/fnv128a-0.0.2.tar.gz --markdown 20230415/f/fnv128a/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 01:04:37] INFO root fetch - processPackages [strplus]: Start processing: remin
+[2023-04-15 01:04:37] INFO root fetch - main [MainThread]: End processing [strplus]: success
+[2023-04-15 01:04:38] WARNING root fetch - processPackages [remin]: Skipping, unable to determine old version
+[2023-04-15 01:04:38] INFO root fetch - processPackages [remin]: Start processing: ultralytics
+[2023-04-15 01:04:38] INFO root fetch - main [MainThread]: End processing [remin] error
+[2023-04-15 01:04:38] INFO root fetch - processPackages [ultralytics]: New version: [8.0.9] Old Version: [8.0.8]
+[2023-04-15 01:04:38] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2023-04-15 01:04:38] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.0.8.tar.gz tmp/ultralytics-8.0.9.tar.gz --markdown 20230415/u/ultralytics/8.0.8-8.0.9/diff.md --exclude *.pyd
+[2023-04-15 01:04:38] INFO root fetch - processPackages [tmnt]: Start processing: coiled
+[2023-04-15 01:04:38] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-04-15 01:04:38] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-15 01:04:38] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-15 01:04:38] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230415/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-15 01:04:38] INFO root fetch - processPackages [fnv128a]: Start processing: kgx
+[2023-04-15 01:04:38] INFO root fetch - main [MainThread]: End processing [fnv128a]: success
+[2023-04-15 01:04:38] INFO root fetch - processPackages [kgx]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-15 01:04:38] INFO root fetch - processPackages [datamol]: Start processing: xeye
+[2023-04-15 01:04:38] INFO root fetch - main [MainThread]: End processing [datamol]: success
+[2023-04-15 01:04:38] INFO root fetch - processPackages [xeye]: New version: [1.0] Old Version: [0.39]
+[2023-04-15 01:04:38] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2023-04-15 01:04:38] INFO root fetch - processPackages [kgx]: Downloading https://files.pythonhosted.org/packages/26/54/33bab0c81894f7adf8169bb8f1e64fce47e48279b45cd1f876aa197d9755/kgx-2.0.3.tar.gz
+[2023-04-15 01:04:38] INFO root fetch - processPackages [xeye]: Downloading https://files.pythonhosted.org/packages/04/18/16bfed6c96df262d3cf4f773b6940e8981a910d5c7832b57d92db23b4517/xeye-1.0.tar.gz
+[2023-04-15 01:04:38] INFO root fetch - processPackages [kgx]: Downloading https://files.pythonhosted.org/packages/60/c3/297f52917d58542fac88426101a6dc073d51eb4ff5bc91bf4f6f4f0958fc/kgx-2.0.4.tar.gz
+[2023-04-15 01:04:39] INFO root fetch - processPackages [xeye]: executing diffoscope
+[2023-04-15 01:04:39] INFO root fetch - processPackages [xeye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xeye-0.39.tar.gz tmp/xeye-1.0.tar.gz --markdown 20230415/x/xeye/0.39-1.0/diff.md --exclude *.pyd
+[2023-04-15 01:04:39] INFO root fetch - processPackages [kgx]: executing diffoscope
+[2023-04-15 01:04:39] INFO root fetch - processPackages [kgx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kgx-2.0.3.tar.gz tmp/kgx-2.0.4.tar.gz --markdown 20230415/k/kgx/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-15 01:04:39] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2023-04-15 01:04:40] INFO root fetch - main [MainThread]: End processing [xeye]: success
+[2023-04-15 01:04:40] INFO root fetch - main [MainThread]: End processing [kgx]: success
+[2023-04-15 01:04:41] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-15 01:04:41] INFO root fetch - main [MainThread]: Store serial: [17713689]
