@@ -858,3 +858,43 @@
 [2023-04-15 01:25:27] INFO root fetch - main [MainThread]: End processing [customhys]: success
 [2023-04-15 01:25:33] INFO root fetch - main [MainThread]: End processing [covalent]: success
 [2023-04-15 01:25:33] INFO root fetch - main [MainThread]: Store serial: [17713770]
+[2023-04-15 01:30:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713770]
+[2023-04-15 01:30:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 01:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiokeydb
+[2023-04-15 01:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: teamtalk-py
+[2023-04-15 01:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lennoxs30api
+[2023-04-15 01:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tommygtst
+[2023-04-15 01:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypub3
+[2023-04-15 01:30:40] INFO root fetch - processPackages [pypub3]: New version: [2.0.0] Old Version: [1.0.2]
+[2023-04-15 01:30:40] WARNING root fetch - processPackages [tommygtst]: Skipping, unable to determine old version
+[2023-04-15 01:30:40] INFO root fetch - processPackages [tommygtst]: Start processing: clown-sort
+[2023-04-15 01:30:40] INFO root fetch - main [MainThread]: End processing [tommygtst] error
+[2023-04-15 01:30:40] INFO root fetch - processPackages [lennoxs30api]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-15 01:30:40] INFO root fetch - processPackages [aiokeydb]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 01:30:40] INFO root fetch - processPackages [teamtalk-py]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-15 01:30:40] INFO root fetch - processPackages [clown-sort]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-15 01:30:40] INFO root fetch - processPackages [teamtalk-py]: Downloading https://files.pythonhosted.org/packages/3f/50/bdb3c00b225961f430b4137fc35bcdc68cc54810cfc5007a2ae44d684989/teamtalk_py-1.1.0.tar.gz
+[2023-04-15 01:30:40] INFO root fetch - processPackages [pypub3]: Downloading https://files.pythonhosted.org/packages/a3/40/5f5e91ff18ece2e42345424882c3baa033aac5e0d6a46bdffedfe0625e2e/pypub3-1.0.2.tar.gz
+[2023-04-15 01:30:40] INFO root fetch - processPackages [aiokeydb]: Downloading https://files.pythonhosted.org/packages/20/25/21f8103754ee16f18d37a261f6c78ebd5f5ce07634c0270159d5287b3e3e/aiokeydb-0.1.8.tar.gz
+[2023-04-15 01:30:40] INFO root fetch - processPackages [lennoxs30api]: Downloading https://files.pythonhosted.org/packages/d9/7b/d6f8035eebac9693e4601777d8fcb8a8f0b407d79f711cceecf44d51d81d/lennoxs30api-0.2.1.tar.gz
+[2023-04-15 01:30:40] INFO root fetch - processPackages [clown-sort]: Downloading https://files.pythonhosted.org/packages/8f/96/eb725b9e50a8e36ebdc0514e68c9fc81acfb39599a03bc3756e6b555215a/clown_sort-1.3.1.tar.gz
+[2023-04-15 01:30:40] INFO root fetch - processPackages [lennoxs30api]: Downloading https://files.pythonhosted.org/packages/75/c5/b9fa6cc84728d8421ae8b7fb46bc3b721b1b04c1ad78f57a931926d723ae/lennoxs30api-0.2.2.tar.gz
+[2023-04-15 01:30:41] INFO root fetch - processPackages [pypub3]: Downloading https://files.pythonhosted.org/packages/bd/3c/d7e05848835a7119ef592b7231fa76d342435b9603134eaf4b5b5c2722a1/pypub3-2.0.0.tar.gz
+[2023-04-15 01:30:41] INFO root fetch - processPackages [teamtalk-py]: Downloading https://files.pythonhosted.org/packages/3b/e1/e75a35682d5f29decb9aecc68034eb64392cbe447cb19440a7c0caf26735/teamtalk_py-1.1.1.tar.gz
+[2023-04-15 01:30:41] INFO root fetch - processPackages [clown-sort]: executing diffoscope
+[2023-04-15 01:30:41] INFO root fetch - processPackages [clown-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clown_sort-1.3.0.tar.gz tmp/clown_sort-1.3.1.tar.gz --markdown 20230415/c/clown-sort/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-15 01:30:41] INFO root fetch - processPackages [lennoxs30api]: executing diffoscope
+[2023-04-15 01:30:41] INFO root fetch - processPackages [lennoxs30api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lennoxs30api-0.2.1.tar.gz tmp/lennoxs30api-0.2.2.tar.gz --markdown 20230415/l/lennoxs30api/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-15 01:30:41] INFO root fetch - processPackages [aiokeydb]: Downloading https://files.pythonhosted.org/packages/6a/d0/d5b49c43fc0ac44c201063793737833fa0cc1228a7de48a1fa0a08cc708c/aiokeydb-0.1.9.tar.gz
+[2023-04-15 01:30:41] INFO root fetch - processPackages [teamtalk-py]: executing diffoscope
+[2023-04-15 01:30:41] INFO root fetch - processPackages [teamtalk-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teamtalk_py-1.1.0.tar.gz tmp/teamtalk_py-1.1.1.tar.gz --markdown 20230415/t/teamtalk-py/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-15 01:30:41] INFO root fetch - processPackages [pypub3]: executing diffoscope
+[2023-04-15 01:30:41] INFO root fetch - processPackages [pypub3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypub3-1.0.2.tar.gz tmp/pypub3-2.0.0.tar.gz --markdown 20230415/p/pypub3/1.0.2-2.0.0/diff.md --exclude *.pyd
+[2023-04-15 01:30:41] INFO root fetch - processPackages [aiokeydb]: executing diffoscope
+[2023-04-15 01:30:41] INFO root fetch - processPackages [aiokeydb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiokeydb-0.1.8.tar.gz tmp/aiokeydb-0.1.9.tar.gz --markdown 20230415/a/aiokeydb/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 01:30:42] INFO root fetch - main [MainThread]: End processing [lennoxs30api]: success
+[2023-04-15 01:30:42] INFO root fetch - main [MainThread]: End processing [clown-sort]: success
+[2023-04-15 01:30:42] INFO root fetch - main [MainThread]: End processing [pypub3]: success
+[2023-04-15 01:30:42] INFO root fetch - main [MainThread]: End processing [teamtalk-py]: success
+[2023-04-15 01:30:42] INFO root fetch - main [MainThread]: End processing [aiokeydb]: success
+[2023-04-15 01:30:42] INFO root fetch - main [MainThread]: Store serial: [17713791]
