@@ -349,3 +349,55 @@
 [2023-04-15 00:37:11] INFO root fetch - main [MainThread]: End processing [fa_purity]: success
 [2023-04-15 00:37:18] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
 [2023-04-15 00:37:18] INFO root fetch - main [MainThread]: Store serial: [17713522]
+[2023-04-15 00:42:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713522]
+[2023-04-15 00:42:25] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 00:42:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: frasa
+[2023-04-15 00:42:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biolink-model
+[2023-04-15 00:42:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rl_rocket_sim
+[2023-04-15 00:42:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: staticvar
+[2023-04-15 00:42:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-reusable
+[2023-04-15 00:42:25] INFO root fetch - processPackages [staticvar]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-15 00:42:25] WARNING root fetch - processPackages [rl_rocket_sim]: Skipping, unable to determine old version
+[2023-04-15 00:42:25] INFO root fetch - processPackages [rl_rocket_sim]: Start processing: st-text-annotator
+[2023-04-15 00:42:25] INFO root fetch - main [MainThread]: End processing [rl_rocket_sim] error
+[2023-04-15 00:42:25] INFO root fetch - processPackages [frasa]: New version: [0.0.6] Old Version: [0.0.4]
+[2023-04-15 00:42:25] INFO root fetch - processPackages [biolink-model]: New version: [3.2.8] Old Version: [3.2.7]
+[2023-04-15 00:42:25] INFO root fetch - processPackages [django-reusable]: New version: [9.1] Old Version: [9.0]
+[2023-04-15 00:42:25] INFO root fetch - processPackages [st-text-annotator]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 00:42:25] INFO root fetch - processPackages [st-text-annotator]: Downloading https://files.pythonhosted.org/packages/f0/20/b3de354ff93622dbfb4615e7b66eef9dc0a8c329439f98cf5501c1404876/st_text_annotator-0.1.0.tar.gz
+[2023-04-15 00:42:25] INFO root fetch - processPackages [frasa]: Downloading https://files.pythonhosted.org/packages/f4/db/ded62846cd33ea643779c5bee5c050071274c40d16971ef0d0e4524dcc8f/frasa-0.0.6.tar.gz
+[2023-04-15 00:42:25] INFO root fetch - processPackages [frasa]: executing diffoscope
+[2023-04-15 00:42:25] INFO root fetch - processPackages [frasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frasa-0.0.4.tar.gz tmp/frasa-0.0.6.tar.gz --markdown 20230415/f/frasa/0.0.4-0.0.6/diff.md --exclude *.pyd
+[2023-04-15 00:42:25] INFO root fetch - processPackages [staticvar]: Downloading https://files.pythonhosted.org/packages/ea/d5/cbd600e5c3e898e0f0d644c28c0d6835c3c750df4ed0ed44e0f053c4cf36/staticvar-0.0.6.tar.gz
+[2023-04-15 00:42:25] INFO root fetch - processPackages [django-reusable]: Downloading https://files.pythonhosted.org/packages/23/37/c662e9f672cda307a6e0b75129a85947429c04b383f5daa28e2adfc8c5eb/django-reusable-9.1.tar.gz
+[2023-04-15 00:42:25] INFO root fetch - processPackages [biolink-model]: Downloading https://files.pythonhosted.org/packages/58/39/b278c6b35a875addc3c26a5beac6c8d59be75ed6c60a47c0ac84633b4b7b/biolink-model-3.2.8.tar.gz
+[2023-04-15 00:42:25] INFO root fetch - processPackages [staticvar]: executing diffoscope
+[2023-04-15 00:42:25] INFO root fetch - processPackages [staticvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/staticvar-0.0.5.tar.gz tmp/staticvar-0.0.6.tar.gz --markdown 20230415/s/staticvar/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-15 00:42:25] INFO root fetch - processPackages [django-reusable]: executing diffoscope
+[2023-04-15 00:42:25] INFO root fetch - processPackages [django-reusable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-reusable-9.0.tar.gz tmp/django-reusable-9.1.tar.gz --markdown 20230415/d/django-reusable/9.0-9.1/diff.md --exclude *.pyd
+[2023-04-15 00:42:25] INFO root fetch - processPackages [biolink-model]: executing diffoscope
+[2023-04-15 00:42:25] INFO root fetch - processPackages [biolink-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biolink-model-3.2.7.tar.gz tmp/biolink-model-3.2.8.tar.gz --markdown 20230415/b/biolink-model/3.2.7-3.2.8/diff.md --exclude *.pyd
+[2023-04-15 00:42:26] INFO root fetch - processPackages [st-text-annotator]: Downloading https://files.pythonhosted.org/packages/80/8f/d4f55f6d0f3daa56255d2df071735dd5efa41548f5bfe3b3d6b9fde9b159/st_text_annotator-0.1.1.tar.gz
+[2023-04-15 00:42:26] INFO root fetch - processPackages [st-text-annotator]: executing diffoscope
+[2023-04-15 00:42:26] INFO root fetch - processPackages [st-text-annotator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_text_annotator-0.1.0.tar.gz tmp/st_text_annotator-0.1.1.tar.gz --markdown 20230415/s/st-text-annotator/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 00:42:26] INFO root fetch - processPackages [frasa]: Start processing: psychoevals
+[2023-04-15 00:42:26] INFO root fetch - main [MainThread]: End processing [frasa]: success
+[2023-04-15 00:42:26] INFO root fetch - processPackages [psychoevals]: New version: [0.4] Old Version: [0.3]
+[2023-04-15 00:42:26] INFO root fetch - processPackages [staticvar]: Start processing: ramqp
+[2023-04-15 00:42:26] INFO root fetch - main [MainThread]: End processing [staticvar]: success
+[2023-04-15 00:42:26] INFO root fetch - processPackages [ramqp]: New version: [8.1.1] Old Version: [8.1.0]
+[2023-04-15 00:42:27] INFO root fetch - processPackages [st-text-annotator]: Start processing: nonebot-plugin-akinator
+[2023-04-15 00:42:27] INFO root fetch - main [MainThread]: End processing [st-text-annotator]: success
+[2023-04-15 00:42:27] WARNING root fetch - processPackages [nonebot-plugin-akinator]: Skipping, unable to determine old version
+[2023-04-15 00:42:27] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-akinator] error
+[2023-04-15 00:42:27] INFO root fetch - processPackages [psychoevals]: Downloading https://files.pythonhosted.org/packages/01/52/01e9fcb42b6591d85c31ad82959c1140f3e10d02d0f1cbd56dd285c919ce/psychoevals-0.4.tar.gz
+[2023-04-15 00:42:27] INFO root fetch - processPackages [psychoevals]: executing diffoscope
+[2023-04-15 00:42:27] INFO root fetch - processPackages [psychoevals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychoevals-0.3.tar.gz tmp/psychoevals-0.4.tar.gz --markdown 20230415/p/psychoevals/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-15 00:42:27] INFO root fetch - processPackages [ramqp]: Downloading https://files.pythonhosted.org/packages/41/b5/0ff24440642fa3483c44aa960fe0dba6a5cd13bd3659b075bfbb6966d2d2/ramqp-8.1.1.tar.gz
+[2023-04-15 00:42:27] INFO root fetch - processPackages [ramqp]: executing diffoscope
+[2023-04-15 00:42:27] INFO root fetch - processPackages [ramqp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramqp-8.1.0.tar.gz tmp/ramqp-8.1.1.tar.gz --markdown 20230415/r/ramqp/8.1.0-8.1.1/diff.md --exclude *.pyd
+[2023-04-15 00:42:27] INFO root fetch - main [MainThread]: End processing [biolink-model]: success
+[2023-04-15 00:42:27] INFO root fetch - main [MainThread]: End processing [django-reusable]: success
+[2023-04-15 00:42:28] INFO root fetch - main [MainThread]: End processing [psychoevals]: success
+[2023-04-15 00:42:28] INFO root fetch - main [MainThread]: End processing [ramqp]: success
+[2023-04-15 00:42:28] INFO root fetch - main [MainThread]: Store serial: [17713553]
