@@ -401,3 +401,53 @@
 [2023-04-15 00:42:28] INFO root fetch - main [MainThread]: End processing [psychoevals]: success
 [2023-04-15 00:42:28] INFO root fetch - main [MainThread]: End processing [ramqp]: success
 [2023-04-15 00:42:28] INFO root fetch - main [MainThread]: Store serial: [17713553]
+[2023-04-15 00:47:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713553]
+[2023-04-15 00:47:35] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 00:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: latch
+[2023-04-15 00:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frasa
+[2023-04-15 00:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yak-server
+[2023-04-15 00:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: biocircuits
+[2023-04-15 00:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: neumann
+[2023-04-15 00:47:35] INFO root fetch - processPackages [biocircuits]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 00:47:35] INFO root fetch - processPackages [yak-server]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-15 00:47:35] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-15 00:47:35] INFO root fetch - processPackages [frasa]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-15 00:47:35] INFO root fetch - processPackages [neumann]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-15 00:47:35] INFO root fetch - processPackages [biocircuits]: executing diffoscope
+[2023-04-15 00:47:35] INFO root fetch - processPackages [biocircuits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biocircuits-0.1.8.tar.gz tmp/biocircuits-0.1.9.tar.gz --markdown 20230415/b/biocircuits/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 00:47:35] INFO root fetch - processPackages [neumann]: Downloading https://files.pythonhosted.org/packages/1f/aa/2462f2debb7b85748301719a8fd5032341ed2784e34617ec4739ce380bf1/neumann-1.0.4.tar.gz
+[2023-04-15 00:47:35] INFO root fetch - processPackages [frasa]: Downloading https://files.pythonhosted.org/packages/70/c7/0fd47bc4116bc5f9a271c652c180b7ed27a9ba969bbe2cac02948bf5847f/frasa-0.0.7.tar.gz
+[2023-04-15 00:47:35] INFO root fetch - processPackages [latch]: executing diffoscope
+[2023-04-15 00:47:35] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20230415/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-15 00:47:35] INFO root fetch - processPackages [yak-server]: executing diffoscope
+[2023-04-15 00:47:35] INFO root fetch - processPackages [yak-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yak_server-0.8.0.tar.gz tmp/yak_server-0.9.0.tar.gz --markdown 20230415/y/yak-server/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 00:47:35] INFO root fetch - processPackages [frasa]: executing diffoscope
+[2023-04-15 00:47:35] INFO root fetch - processPackages [frasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frasa-0.0.6.tar.gz tmp/frasa-0.0.7.tar.gz --markdown 20230415/f/frasa/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-15 00:47:35] INFO root fetch - processPackages [neumann]: Downloading https://files.pythonhosted.org/packages/75/4a/e54919dd9cd1e5f255721306d30b7c2cb89296cfdbda096764b6d1b03633/neumann-1.0.5.tar.gz
+[2023-04-15 00:47:36] INFO root fetch - processPackages [neumann]: executing diffoscope
+[2023-04-15 00:47:36] INFO root fetch - processPackages [neumann]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neumann-1.0.4.tar.gz tmp/neumann-1.0.5.tar.gz --markdown 20230415/n/neumann/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-15 00:47:36] INFO root fetch - processPackages [biocircuits]: Start processing: psychoevals
+[2023-04-15 00:47:36] INFO root fetch - main [MainThread]: End processing [biocircuits]: success
+[2023-04-15 00:47:36] INFO root fetch - processPackages [psychoevals]: New version: [0.5] Old Version: [0.4]
+[2023-04-15 00:47:36] INFO root fetch - processPackages [frasa]: Start processing: prql-python
+[2023-04-15 00:47:36] INFO root fetch - main [MainThread]: End processing [frasa]: success
+[2023-04-15 00:47:36] INFO root fetch - processPackages [prql-python]: New version: [0.8.0] Old Version: [0.7.1]
+[2023-04-15 00:47:36] INFO root fetch - processPackages [psychoevals]: Downloading https://files.pythonhosted.org/packages/f2/ce/8afc96be9d35539388e680e05779ed0d864b04275bfa1e8f7982ff8014e5/psychoevals-0.5.tar.gz
+[2023-04-15 00:47:37] INFO root fetch - processPackages [yak-server]: Start processing: fio-plot
+[2023-04-15 00:47:37] INFO root fetch - main [MainThread]: End processing [yak-server]: success
+[2023-04-15 00:47:37] INFO root fetch - processPackages [fio-plot]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-15 00:47:37] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2023-04-15 00:47:37] INFO root fetch - processPackages [prql-python]: Downloading https://files.pythonhosted.org/packages/f5/96/ec6d1dce83ae3c381bf4a018ee25b33be7ee513ec82327d55360a59d30eb/prql_python-0.7.1-cp37-abi3-win_amd64.whl
+[2023-04-15 00:47:37] INFO root fetch - processPackages [psychoevals]: executing diffoscope
+[2023-04-15 00:47:37] INFO root fetch - processPackages [psychoevals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychoevals-0.4.tar.gz tmp/psychoevals-0.5.tar.gz --markdown 20230415/p/psychoevals/0.4-0.5/diff.md --exclude *.pyd
+[2023-04-15 00:47:37] INFO root fetch - processPackages [fio-plot]: Downloading https://files.pythonhosted.org/packages/e1/47/6ffb26c8e7be2270f2b3cb99c6a5b0d6b6662e9157abc8631eb4e89acec9/fio-plot-1.1.6.tar.gz
+[2023-04-15 00:47:37] INFO root fetch - processPackages [prql-python]: Downloading https://files.pythonhosted.org/packages/ae/01/305aa904b3221b2f4b172db1de19dd5c6ed2659f1ece1b8ec3f96535ed69/prql_python-0.8.0-cp37-abi3-win_amd64.whl
+[2023-04-15 00:47:38] INFO root fetch - processPackages [fio-plot]: executing diffoscope
+[2023-04-15 00:47:38] INFO root fetch - processPackages [fio-plot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fio-plot-1.1.5.tar.gz tmp/fio-plot-1.1.6.tar.gz --markdown 20230415/f/fio-plot/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-15 00:47:38] INFO root fetch - processPackages [prql-python]: executing diffoscope
+[2023-04-15 00:47:38] INFO root fetch - processPackages [prql-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prql_python-0.7.1-cp37-abi3-win_amd64.whl.zip tmp/prql_python-0.8.0-cp37-abi3-win_amd64.whl.zip --markdown 20230415/p/prql-python/0.7.1-0.8.0/diff.md --exclude *.pyd
+[2023-04-15 00:47:38] INFO root fetch - main [MainThread]: End processing [psychoevals]: success
+[2023-04-15 00:47:39] INFO root fetch - main [MainThread]: End processing [prql-python]: success
+[2023-04-15 00:47:39] INFO root fetch - main [MainThread]: End processing [neumann]: success
+[2023-04-15 00:47:39] INFO root fetch - main [MainThread]: End processing [fio-plot]: success
+[2023-04-15 00:47:39] INFO root fetch - main [MainThread]: Store serial: [17713577]
