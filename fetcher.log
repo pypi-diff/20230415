@@ -941,3 +941,22 @@
 [2023-04-15 01:35:51] INFO root fetch - main [MainThread]: End processing [a-pandas-ex-easy-loc]: success
 [2023-04-15 01:35:52] INFO root fetch - main [MainThread]: End processing [a-pandas-ex-easy-loc]: success
 [2023-04-15 01:35:52] INFO root fetch - main [MainThread]: Store serial: [17713812]
+[2023-04-15 01:40:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713812]
+[2023-04-15 01:40:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 01:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ra-utils
+[2023-04-15 01:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: singer-summarize
+[2023-04-15 01:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ascicolor
+[2023-04-15 01:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wield
+[2023-04-15 01:40:58] WARNING root fetch - processPackages [ascicolor]: Skipping, unable to determine old version
+[2023-04-15 01:40:58] INFO root fetch - main [MainThread]: End processing [ascicolor] error
+[2023-04-15 01:40:58] WARNING root fetch - processPackages [singer-summarize]: Skipping, unable to determine old version
+[2023-04-15 01:40:58] INFO root fetch - main [MainThread]: End processing [singer-summarize] error
+[2023-04-15 01:40:58] INFO root fetch - processPackages [ra-utils]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-04-15 01:40:58] WARNING root fetch - processPackages [wield]: Skipping, unable to determine old version
+[2023-04-15 01:40:58] INFO root fetch - main [MainThread]: End processing [wield] error
+[2023-04-15 01:40:58] INFO root fetch - processPackages [ra-utils]: Downloading https://files.pythonhosted.org/packages/a2/30/f7258a0449621442d438fae25f3ecd712213ab8a746bd009a8a0d712c03f/ra_utils-1.9.2.tar.gz
+[2023-04-15 01:40:59] INFO root fetch - processPackages [ra-utils]: Downloading https://files.pythonhosted.org/packages/f7/8f/e66dca0321469d36dbfee5a06b5c1799a48a6d6d13d4f1c90315e3c05fba/ra_utils-1.9.3.tar.gz
+[2023-04-15 01:40:59] INFO root fetch - processPackages [ra-utils]: executing diffoscope
+[2023-04-15 01:40:59] INFO root fetch - processPackages [ra-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ra_utils-1.9.2.tar.gz tmp/ra_utils-1.9.3.tar.gz --markdown 20230415/r/ra-utils/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-04-15 01:41:00] INFO root fetch - main [MainThread]: End processing [ra-utils]: success
+[2023-04-15 01:41:00] INFO root fetch - main [MainThread]: Store serial: [17713844]
