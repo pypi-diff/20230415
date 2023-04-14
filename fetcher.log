@@ -744,3 +744,59 @@
 [2023-04-15 01:09:52] INFO root fetch - main [MainThread]: End processing [areas]: success
 [2023-04-15 01:09:53] INFO root fetch - main [MainThread]: End processing [pvrpm]: success
 [2023-04-15 01:09:53] INFO root fetch - main [MainThread]: Store serial: [17713715]
+[2023-04-15 01:14:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713715]
+[2023-04-15 01:14:59] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 01:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: groundlight
+[2023-04-15 01:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vernac
+[2023-04-15 01:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: raclients
+[2023-04-15 01:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: returnn
+[2023-04-15 01:14:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyrecdp
+[2023-04-15 01:14:59] INFO root fetch - processPackages [groundlight]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-04-15 01:14:59] INFO root fetch - processPackages [raclients]: New version: [3.1.3] Old Version: [3.1.2]
+[2023-04-15 01:14:59] INFO root fetch - processPackages [vernac]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 01:14:59] INFO root fetch - processPackages [pyrecdp]: New version: [1.0.1b202304142] Old Version: [1.0.1b202304141]
+[2023-04-15 01:14:59] INFO root fetch - processPackages [returnn]: New version: [1.20230415.10040] Old Version: [1.20230414.234522]
+[2023-04-15 01:15:00] INFO root fetch - processPackages [pyrecdp]: Downloading https://files.pythonhosted.org/packages/fe/d1/f71feac7dad8f0fb32591f83490acf89b7ab88666e1293364580702b4355/pyrecdp-1.0.1b202304142.tar.gz
+[2023-04-15 01:15:00] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/dd/f6/d97c98aafb42310c7036c7cf134d51ce5ca9c5ae3b6d562fb1eeb48359ad/returnn-1.20230415.10040.tar.gz
+[2023-04-15 01:15:00] INFO root fetch - processPackages [raclients]: Downloading https://files.pythonhosted.org/packages/33/c6/257f2de76bb522023f9e2bd2e2a33b49e9ea32214e95b9eb8b23bca114ce/raclients-3.1.3.tar.gz
+[2023-04-15 01:15:00] INFO root fetch - processPackages [vernac]: Downloading https://files.pythonhosted.org/packages/7e/04/2db01b0697fe4ba6b0eae6c4900bc5e9cb1ae47c2ad4b7454dc09a079ba5/vernac-0.0.3.tar.gz
+[2023-04-15 01:15:00] INFO root fetch - processPackages [groundlight]: Downloading https://files.pythonhosted.org/packages/ee/30/25d3a2112e3bf2de434f32bf3844943b0d0134c8962597de67dac738fcac/groundlight-0.7.6.tar.gz
+[2023-04-15 01:15:00] INFO root fetch - processPackages [raclients]: executing diffoscope
+[2023-04-15 01:15:00] INFO root fetch - processPackages [raclients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raclients-3.1.2.tar.gz tmp/raclients-3.1.3.tar.gz --markdown 20230415/r/raclients/3.1.2-3.1.3/diff.md --exclude *.pyd
+[2023-04-15 01:15:00] INFO root fetch - processPackages [vernac]: executing diffoscope
+[2023-04-15 01:15:00] INFO root fetch - processPackages [vernac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vernac-0.0.2.tar.gz tmp/vernac-0.0.3.tar.gz --markdown 20230415/v/vernac/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 01:15:00] INFO root fetch - processPackages [pyrecdp]: executing diffoscope
+[2023-04-15 01:15:00] INFO root fetch - processPackages [pyrecdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrecdp-1.0.1b202304141.tar.gz tmp/pyrecdp-1.0.1b202304142.tar.gz --markdown 20230415/p/pyrecdp/1.0.1b202304141-1.0.1b202304142/diff.md --exclude *.pyd
+[2023-04-15 01:15:00] INFO root fetch - processPackages [groundlight]: executing diffoscope
+[2023-04-15 01:15:00] INFO root fetch - processPackages [groundlight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/groundlight-0.7.5.tar.gz tmp/groundlight-0.7.6.tar.gz --markdown 20230415/g/groundlight/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-04-15 01:15:00] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-15 01:15:00] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230414.234522.tar.gz tmp/returnn-1.20230415.10040.tar.gz --markdown 20230415/r/returnn/1.20230414.234522-1.20230415.10040/diff.md --exclude *.pyd
+[2023-04-15 01:15:01] INFO root fetch - processPackages [vernac]: Start processing: quantconnect-stubs
+[2023-04-15 01:15:01] INFO root fetch - main [MainThread]: End processing [vernac]: success
+[2023-04-15 01:15:01] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-04-15 01:15:01] INFO root fetch - processPackages [raclients]: Start processing: chalkpy
+[2023-04-15 01:15:01] INFO root fetch - main [MainThread]: End processing [raclients]: success
+[2023-04-15 01:15:01] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-15 01:15:01] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-04-15 01:15:01] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230415/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-04-15 01:15:01] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-15 01:15:01] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230415/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-15 01:15:01] INFO root fetch - processPackages [groundlight]: Start processing: paracrine
+[2023-04-15 01:15:01] INFO root fetch - main [MainThread]: End processing [groundlight]: success
+[2023-04-15 01:15:01] INFO root fetch - processPackages [paracrine]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 01:15:01] INFO root fetch - processPackages [paracrine]: Downloading https://files.pythonhosted.org/packages/2e/4c/2251e83dd93e3e788a06464b7a703b9aafb779bd1a9816eb957d9c7abe93/paracrine-0.0.2.tar.gz
+[2023-04-15 01:15:01] INFO root fetch - processPackages [pyrecdp]: Start processing: shell-gpt
+[2023-04-15 01:15:01] INFO root fetch - main [MainThread]: End processing [pyrecdp]: success
+[2023-04-15 01:15:01] INFO root fetch - processPackages [shell-gpt]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-15 01:15:02] INFO root fetch - processPackages [paracrine]: Downloading https://files.pythonhosted.org/packages/8a/76/9350a17c04e4a064600309bf7eb1f676616b4271bc0cb017439ddf4e2e7d/paracrine-0.0.3-py3-none-any.whl
+[2023-04-15 01:15:02] INFO root fetch - processPackages [shell-gpt]: Downloading https://files.pythonhosted.org/packages/61/b3/d02fdd047f69f0e938295aca5f42cffc70a77a9de88f4f8ff73d55c1f85f/shell_gpt-0.8.9.tar.gz
+[2023-04-15 01:15:02] INFO root fetch - processPackages [paracrine]: executing diffoscope
+[2023-04-15 01:15:02] INFO root fetch - processPackages [paracrine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paracrine-0.0.2.tar.gz tmp/paracrine-0.0.3-py3-none-any.whl.zip --markdown 20230415/p/paracrine/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 01:15:02] INFO root fetch - processPackages [shell-gpt]: executing diffoscope
+[2023-04-15 01:15:02] INFO root fetch - processPackages [shell-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shell_gpt-0.8.8.tar.gz tmp/shell_gpt-0.8.9.tar.gz --markdown 20230415/s/shell-gpt/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-15 01:15:03] INFO root fetch - main [MainThread]: End processing [paracrine]: success
+[2023-04-15 01:15:03] INFO root fetch - main [MainThread]: End processing [shell-gpt]: success
+[2023-04-15 01:15:04] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-04-15 01:15:06] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2023-04-15 01:15:06] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-04-15 01:15:06] INFO root fetch - main [MainThread]: Store serial: [17713740]
