@@ -800,3 +800,31 @@
 [2023-04-15 01:15:06] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
 [2023-04-15 01:15:06] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-04-15 01:15:06] INFO root fetch - main [MainThread]: Store serial: [17713740]
+[2023-04-15 01:20:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713740]
+[2023-04-15 01:20:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 01:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: databricks-feature-store
+[2023-04-15 01:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-image-border
+[2023-04-15 01:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BlaApi
+[2023-04-15 01:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: polymesh
+[2023-04-15 01:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xmodel-rest
+[2023-04-15 01:20:14] INFO root fetch - processPackages [py-image-border]: New version: [2023.4.14.2] Old Version: [2023.4.14]
+[2023-04-15 01:20:14] INFO root fetch - processPackages [databricks-feature-store]: New version: [0.9.1a2] Old Version: [0.9.1a1]
+[2023-04-15 01:20:14] WARNING root fetch - processPackages [xmodel-rest]: Skipping, unable to determine old version
+[2023-04-15 01:20:14] INFO root fetch - main [MainThread]: End processing [xmodel-rest] error
+[2023-04-15 01:20:14] WARNING root fetch - processPackages [BlaApi]: Skipping, unable to determine old version
+[2023-04-15 01:20:14] INFO root fetch - main [MainThread]: End processing [BlaApi] error
+[2023-04-15 01:20:14] INFO root fetch - processPackages [polymesh]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 01:20:14] INFO root fetch - processPackages [py-image-border]: Downloading https://files.pythonhosted.org/packages/c0/bb/9319b1974c2d4da3af676c4a1d5582b0006576f3acbb146c74a0fd682626/py-image-border-2023.4.14.tar.gz
+[2023-04-15 01:20:14] INFO root fetch - processPackages [databricks-feature-store]: Downloading https://files.pythonhosted.org/packages/30/59/aed8ee28be2ed6205b016482ae801c804dfde835d2383f7ca75e200ba787/databricks-feature-store-0.9.1a1.tar.gz
+[2023-04-15 01:20:14] INFO root fetch - processPackages [polymesh]: executing diffoscope
+[2023-04-15 01:20:14] INFO root fetch - processPackages [polymesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polymesh-0.0.8.tar.gz tmp/polymesh-0.0.9.tar.gz --markdown 20230415/p/polymesh/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 01:20:14] INFO root fetch - processPackages [py-image-border]: Downloading https://files.pythonhosted.org/packages/76/09/4247189fdb90734f5f0b678d3fe0f936a31ebdbe9afcbec3cfac9f7e91cb/py-image-border-2023.4.14.2.tar.gz
+[2023-04-15 01:20:14] INFO root fetch - processPackages [databricks-feature-store]: Downloading https://files.pythonhosted.org/packages/70/3f/1bb6ad64ce3ee786bb2d7b2e20f4d24f7f531359d90f0769b532ca553e4a/databricks-feature-store-0.9.1a2.tar.gz
+[2023-04-15 01:20:14] INFO root fetch - processPackages [py-image-border]: executing diffoscope
+[2023-04-15 01:20:14] INFO root fetch - processPackages [py-image-border]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-image-border-2023.4.14.tar.gz tmp/py-image-border-2023.4.14.2.tar.gz --markdown 20230415/p/py-image-border/2023.4.14-2023.4.14.2/diff.md --exclude *.pyd
+[2023-04-15 01:20:14] INFO root fetch - processPackages [databricks-feature-store]: executing diffoscope
+[2023-04-15 01:20:14] INFO root fetch - processPackages [databricks-feature-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databricks-feature-store-0.9.1a1.tar.gz tmp/databricks-feature-store-0.9.1a2.tar.gz --markdown 20230415/d/databricks-feature-store/0.9.1a1-0.9.1a2/diff.md --exclude *.pyd
+[2023-04-15 01:20:15] INFO root fetch - main [MainThread]: End processing [py-image-border]: success
+[2023-04-15 01:20:15] INFO root fetch - main [MainThread]: End processing [polymesh]: success
+[2023-04-15 01:20:16] INFO root fetch - main [MainThread]: End processing [databricks-feature-store]: success
+[2023-04-15 01:20:16] INFO root fetch - main [MainThread]: Store serial: [17713761]
