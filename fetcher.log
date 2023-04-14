@@ -1,0 +1,56 @@
+[2023-04-15 00:00:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713285]
+[2023-04-15 00:00:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 00:00:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sporestack
+[2023-04-15 00:00:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: returnn
+[2023-04-15 00:00:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sopel-modules.twitter
+[2023-04-15 00:00:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nntplib
+[2023-04-15 00:00:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: luau
+[2023-04-15 00:00:35] INFO root fetch - processPackages [nntplib]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 00:00:35] INFO root fetch - processPackages [luau]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-15 00:00:35] INFO root fetch - processPackages [sopel-modules.twitter]: New version: [1.0.0] Old Version: [0.4.1]
+[2023-04-15 00:00:35] INFO root fetch - processPackages [sporestack]: New version: [9.1.1] Old Version: [9.1.0]
+[2023-04-15 00:00:35] INFO root fetch - processPackages [returnn]: New version: [1.20230414.234522] Old Version: [1.20230414.222530]
+[2023-04-15 00:00:35] INFO root fetch - processPackages [sporestack]: executing diffoscope
+[2023-04-15 00:00:35] INFO root fetch - processPackages [sporestack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sporestack-9.1.0.tar.gz tmp/sporestack-9.1.1.tar.gz --markdown 20230415/s/sporestack/9.1.0-9.1.1/diff.md --exclude *.pyd
+[2023-04-15 00:00:36] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/25/09/1b71a0dcfdfb235ba84f6c84c3da724d37de9607a18744a898bd1766c818/luau-0.2.2.tar.gz
+[2023-04-15 00:00:36] INFO root fetch - processPackages [sopel-modules.twitter]: Downloading https://files.pythonhosted.org/packages/66/2b/fd5df67dbe7c428c32a102d8bd55a826950f0a2af9d8533ca29d10f53982/sopel_modules.twitter-0.4.1.tar.gz
+[2023-04-15 00:00:36] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/ac/ef/bc56914a901928599827a4827d2b1bcb3d883e119aee46d9d38e289c4101/returnn-1.20230414.234522.tar.gz
+[2023-04-15 00:00:36] INFO root fetch - processPackages [nntplib]: Downloading https://files.pythonhosted.org/packages/69/72/82d9aa3583370f4fa7fefa90d46991bd4dc346f5ac550a702307fb109344/nntplib-0.1.0.tar.gz
+[2023-04-15 00:00:36] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-15 00:00:36] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.2.1.tar.gz tmp/luau-0.2.2.tar.gz --markdown 20230415/l/luau/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-15 00:00:36] INFO root fetch - processPackages [nntplib]: Downloading https://files.pythonhosted.org/packages/73/64/f7abe98e73913c1a145de20dcce96948d8e33386670d593e733e4190e2c2/nntplib-0.1.1.tar.gz
+[2023-04-15 00:00:36] INFO root fetch - processPackages [nntplib]: executing diffoscope
+[2023-04-15 00:00:36] INFO root fetch - processPackages [nntplib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nntplib-0.1.0.tar.gz tmp/nntplib-0.1.1.tar.gz --markdown 20230415/n/nntplib/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 00:00:36] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-15 00:00:36] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230414.222530.tar.gz tmp/returnn-1.20230414.234522.tar.gz --markdown 20230415/r/returnn/1.20230414.222530-1.20230414.234522/diff.md --exclude *.pyd
+[2023-04-15 00:00:36] INFO root fetch - processPackages [sopel-modules.twitter]: Downloading https://files.pythonhosted.org/packages/77/62/67d728280ad798fee6536c2acdfec64f0f38270cc217577f5fdc1e3f28fc/sopel_modules.twitter-1.0.0.tar.gz
+[2023-04-15 00:00:36] INFO root fetch - processPackages [sopel-modules.twitter]: executing diffoscope
+[2023-04-15 00:00:36] INFO root fetch - processPackages [sopel-modules.twitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sopel_modules.twitter-0.4.1.tar.gz tmp/sopel_modules.twitter-1.0.0.tar.gz --markdown 20230415/s/sopel-modules.twitter/0.4.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-15 00:00:37] INFO root fetch - processPackages [nntplib]: Start processing: shreycriclivemac
+[2023-04-15 00:00:37] INFO root fetch - main [MainThread]: End processing [nntplib]: success
+[2023-04-15 00:00:37] INFO root fetch - processPackages [shreycriclivemac]: New version: [0.4] Old Version: [0.3]
+[2023-04-15 00:00:37] INFO root fetch - processPackages [luau]: Start processing: ovos-config
+[2023-04-15 00:00:37] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-15 00:00:37] INFO root fetch - processPackages [ovos-config]: New version: [0.0.8a4] Old Version: [0.0.8a3]
+[2023-04-15 00:00:37] INFO root fetch - processPackages [shreycriclivemac]: Downloading https://files.pythonhosted.org/packages/75/e3/76a1108f0d549f878d8177714f77e88a87cdfbf26caa2542e0a79d9ec3fc/shreycriclivemac-0.4.tar.gz
+[2023-04-15 00:00:38] INFO root fetch - processPackages [sopel-modules.twitter]: Start processing: lumeny
+[2023-04-15 00:00:38] INFO root fetch - main [MainThread]: End processing [sopel-modules.twitter]: success
+[2023-04-15 00:00:38] INFO root fetch - processPackages [shreycriclivemac]: executing diffoscope
+[2023-04-15 00:00:38] INFO root fetch - processPackages [shreycriclivemac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shreycriclivemac-0.3.tar.gz tmp/shreycriclivemac-0.4.tar.gz --markdown 20230415/s/shreycriclivemac/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-15 00:00:38] INFO root fetch - processPackages [ovos-config]: Downloading https://files.pythonhosted.org/packages/be/cf/e4196d4d003d28957b16c47288486e58216cbdf6782077e28a9052cf5003/ovos_config-0.0.8a3-py3-none-any.whl
+[2023-04-15 00:00:38] INFO root fetch - processPackages [lumeny]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-15 00:00:38] INFO root fetch - processPackages [ovos-config]: Downloading https://files.pythonhosted.org/packages/dc/57/c1b6609d7dae16368f64aab7c0fa85345465b0c423748c39ef4926ca7d96/ovos_config-0.0.8a4-py3-none-any.whl
+[2023-04-15 00:00:38] INFO root fetch - processPackages [sporestack]: Start processing: pypi-class
+[2023-04-15 00:00:38] INFO root fetch - main [MainThread]: End processing [sporestack]: success
+[2023-04-15 00:00:38] INFO root fetch - processPackages [ovos-config]: executing diffoscope
+[2023-04-15 00:00:38] INFO root fetch - processPackages [ovos-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_config-0.0.8a3-py3-none-any.whl.zip tmp/ovos_config-0.0.8a4-py3-none-any.whl.zip --markdown 20230415/o/ovos-config/0.0.8a3-0.0.8a4/diff.md --exclude *.pyd
+[2023-04-15 00:00:38] INFO root fetch - processPackages [lumeny]: Downloading https://files.pythonhosted.org/packages/af/14/8d16dc3f721199462de56b3179aa0b0bc0cdab6c935ce9c806322c62e8db/lumeny-0.1.2.tar.gz
+[2023-04-15 00:00:38] WARNING root fetch - processPackages [pypi-class]: Skipping, unable to determine old version
+[2023-04-15 00:00:38] INFO root fetch - main [MainThread]: End processing [pypi-class] error
+[2023-04-15 00:00:38] INFO root fetch - processPackages [lumeny]: executing diffoscope
+[2023-04-15 00:00:38] INFO root fetch - processPackages [lumeny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lumeny-0.1.1.tar.gz tmp/lumeny-0.1.2.tar.gz --markdown 20230415/l/lumeny/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 00:00:39] INFO root fetch - main [MainThread]: End processing [shreycriclivemac]: success
+[2023-04-15 00:00:39] INFO root fetch - main [MainThread]: End processing [ovos-config]: success
+[2023-04-15 00:00:39] INFO root fetch - main [MainThread]: End processing [lumeny]: success
+[2023-04-15 00:00:41] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-04-15 00:00:41] INFO root fetch - main [MainThread]: Store serial: [17713314]
