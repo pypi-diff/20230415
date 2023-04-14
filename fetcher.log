@@ -451,3 +451,58 @@
 [2023-04-15 00:47:39] INFO root fetch - main [MainThread]: End processing [neumann]: success
 [2023-04-15 00:47:39] INFO root fetch - main [MainThread]: End processing [fio-plot]: success
 [2023-04-15 00:47:39] INFO root fetch - main [MainThread]: Store serial: [17713577]
+[2023-04-15 00:52:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713577]
+[2023-04-15 00:52:45] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 00:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toml-cli
+[2023-04-15 00:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qbittorrent-api
+[2023-04-15 00:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: KeyloggerScreenshot
+[2023-04-15 00:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-akinator
+[2023-04-15 00:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: frasa
+[2023-04-15 00:52:46] INFO root fetch - processPackages [toml-cli]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-15 00:52:46] INFO root fetch - processPackages [frasa]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-15 00:52:46] INFO root fetch - processPackages [qbittorrent-api]: New version: [6.0.0] Old Version: [2023.4.46]
+[2023-04-15 00:52:46] INFO root fetch - processPackages [nonebot-plugin-akinator]: New version: [0.1.0.post1] Old Version: [0.1.0]
+[2023-04-15 00:52:46] INFO root fetch - processPackages [KeyloggerScreenshot]: New version: [0.2.9.1] Old Version: [0.2.9]
+[2023-04-15 00:52:46] INFO root fetch - processPackages [qbittorrent-api]: Downloading https://files.pythonhosted.org/packages/61/79/1d5b1872f4870c2926bebbdb5b80e7338d5ccff92fe9575720516c68c999/qbittorrent-api-2023.4.46.tar.gz
+[2023-04-15 00:52:46] INFO root fetch - processPackages [toml-cli]: Downloading https://files.pythonhosted.org/packages/05/37/187fdfbcc45997cf69d2552e8387a8d3cfb2ad3cbd1e01e6a29be5a6b62d/toml-cli-0.3.1.tar.gz
+[2023-04-15 00:52:46] INFO root fetch - processPackages [nonebot-plugin-akinator]: Downloading https://files.pythonhosted.org/packages/28/1f/3a8a7dbc7d0c2b92ee5bbbe05a1d40c9e0f461167392bedaccd73f18b34e/nonebot-plugin-akinator-0.1.0.tar.gz
+[2023-04-15 00:52:46] INFO root fetch - processPackages [KeyloggerScreenshot]: Downloading https://files.pythonhosted.org/packages/e1/40/202e0a6c5c3624e7275d1533fc6d71135ddf6589277fa259b67f3cef77fd/KeyloggerScreenshot-0.2.9.tar.gz
+[2023-04-15 00:52:46] INFO root fetch - processPackages [frasa]: Downloading https://files.pythonhosted.org/packages/1d/18/e25dd8326cc6450a30bfb09f7336a205bab69c152e6627006459e34422bf/frasa-0.0.8.tar.gz
+[2023-04-15 00:52:46] INFO root fetch - processPackages [frasa]: executing diffoscope
+[2023-04-15 00:52:46] INFO root fetch - processPackages [frasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frasa-0.0.7.tar.gz tmp/frasa-0.0.8.tar.gz --markdown 20230415/f/frasa/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-15 00:52:46] INFO root fetch - processPackages [nonebot-plugin-akinator]: Downloading https://files.pythonhosted.org/packages/48/f1/18f387817a00124a490a5ee688a001b263ef9c40b9b2e04425ba1960f813/nonebot-plugin-akinator-0.1.0.post1.tar.gz
+[2023-04-15 00:52:46] INFO root fetch - processPackages [toml-cli]: Downloading https://files.pythonhosted.org/packages/db/8d/fce5ef6c0eaa0e07d818c3b70f1a85b338849170e3e3cf71b7cdee38378b/toml_cli-0.4.0.tar.gz
+[2023-04-15 00:52:46] INFO root fetch - processPackages [qbittorrent-api]: executing diffoscope
+[2023-04-15 00:52:46] INFO root fetch - processPackages [qbittorrent-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qbittorrent-api-2023.4.46.tar.gz tmp/qbittorrent-api-6.0.0.tar.gz --markdown 20230415/q/qbittorrent-api/2023.4.46-6.0.0/diff.md --exclude *.pyd
+[2023-04-15 00:52:46] INFO root fetch - processPackages [toml-cli]: executing diffoscope
+[2023-04-15 00:52:46] INFO root fetch - processPackages [toml-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toml-cli-0.3.1.tar.gz tmp/toml_cli-0.4.0.tar.gz --markdown 20230415/t/toml-cli/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-15 00:52:46] INFO root fetch - processPackages [nonebot-plugin-akinator]: executing diffoscope
+[2023-04-15 00:52:46] INFO root fetch - processPackages [nonebot-plugin-akinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-akinator-0.1.0.tar.gz tmp/nonebot-plugin-akinator-0.1.0.post1.tar.gz --markdown 20230415/n/nonebot-plugin-akinator/0.1.0-0.1.0.post1/diff.md --exclude *.pyd
+[2023-04-15 00:52:46] INFO root fetch - processPackages [KeyloggerScreenshot]: Downloading https://files.pythonhosted.org/packages/2c/77/dc948278ab0db7edf609a0bfc17f6df16994895bfe06342bae773810852c/KeyloggerScreenshot-0.2.9.1.tar.gz
+[2023-04-15 00:52:46] INFO root fetch - processPackages [KeyloggerScreenshot]: executing diffoscope
+[2023-04-15 00:52:46] INFO root fetch - processPackages [KeyloggerScreenshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KeyloggerScreenshot-0.2.9.tar.gz tmp/KeyloggerScreenshot-0.2.9.1.tar.gz --markdown 20230415/K/KeyloggerScreenshot/0.2.9-0.2.9.1/diff.md --exclude *.pyd
+[2023-04-15 00:52:47] INFO root fetch - processPackages [toml-cli]: Start processing: mss
+[2023-04-15 00:52:47] INFO root fetch - main [MainThread]: End processing [toml-cli]: success
+[2023-04-15 00:52:47] INFO root fetch - processPackages [mss]: New version: [8.0.3] Old Version: [8.0.2]
+[2023-04-15 00:52:47] INFO root fetch - processPackages [qbittorrent-api]: Start processing: datamol
+[2023-04-15 00:52:47] INFO root fetch - main [MainThread]: End processing [qbittorrent-api]: success
+[2023-04-15 00:52:47] INFO root fetch - processPackages [datamol]: New version: [0.9.6] Old Version: [0.9.4]
+[2023-04-15 00:52:47] INFO root fetch - processPackages [frasa]: Start processing: raclients
+[2023-04-15 00:52:47] INFO root fetch - main [MainThread]: End processing [frasa]: success
+[2023-04-15 00:52:47] INFO root fetch - processPackages [raclients]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-15 00:52:47] INFO root fetch - processPackages [datamol]: Downloading https://files.pythonhosted.org/packages/49/b9/fc2c54e0ac66efea5162f34d38de8fc13b3c2473916bcfcee57dceedc702/datamol-0.9.6.tar.gz
+[2023-04-15 00:52:47] INFO root fetch - processPackages [mss]: Downloading https://files.pythonhosted.org/packages/bf/d6/dc7981dfef53d9846856cae448ef7990f02c48c56681622e220c6d3b41db/mss-8.0.3.tar.gz
+[2023-04-15 00:52:47] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-akinator]: success
+[2023-04-15 00:52:47] INFO root fetch - processPackages [raclients]: Downloading https://files.pythonhosted.org/packages/ea/fd/bc329577ccf68d84853af484522c77659ef6f831c2232e0aaf8e6262152f/raclients-3.1.0.tar.gz
+[2023-04-15 00:52:48] INFO root fetch - processPackages [mss]: executing diffoscope
+[2023-04-15 00:52:48] INFO root fetch - processPackages [mss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mss-8.0.2.tar.gz tmp/mss-8.0.3.tar.gz --markdown 20230415/m/mss/8.0.2-8.0.3/diff.md --exclude *.pyd
+[2023-04-15 00:52:48] INFO root fetch - processPackages [raclients]: Downloading https://files.pythonhosted.org/packages/c6/31/7cf4667b32892f98f390bb66c67175f79c5339100319f9242e1cfce269bf/raclients-3.1.1.tar.gz
+[2023-04-15 00:52:48] INFO root fetch - processPackages [raclients]: executing diffoscope
+[2023-04-15 00:52:48] INFO root fetch - processPackages [raclients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raclients-3.1.0.tar.gz tmp/raclients-3.1.1.tar.gz --markdown 20230415/r/raclients/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-15 00:52:48] INFO root fetch - processPackages [datamol]: executing diffoscope
+[2023-04-15 00:52:48] INFO root fetch - processPackages [datamol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamol-0.9.4.tar.gz tmp/datamol-0.9.6.tar.gz --markdown 20230415/d/datamol/0.9.4-0.9.6/diff.md --exclude *.pyd
+[2023-04-15 00:52:49] INFO root fetch - main [MainThread]: End processing [raclients]: success
+[2023-04-15 00:52:49] INFO root fetch - main [MainThread]: End processing [mss]: success
+[2023-04-15 00:52:50] INFO root fetch - main [MainThread]: End processing [KeyloggerScreenshot]: success
+[2023-04-15 00:52:50] INFO root fetch - main [MainThread]: End processing [datamol]: success
+[2023-04-15 00:52:50] INFO root fetch - main [MainThread]: Store serial: [17713600]
