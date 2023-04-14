@@ -898,3 +898,46 @@
 [2023-04-15 01:30:42] INFO root fetch - main [MainThread]: End processing [teamtalk-py]: success
 [2023-04-15 01:30:42] INFO root fetch - main [MainThread]: End processing [aiokeydb]: success
 [2023-04-15 01:30:42] INFO root fetch - main [MainThread]: Store serial: [17713791]
+[2023-04-15 01:35:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713791]
+[2023-04-15 01:35:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 01:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: a-pandas-ex-easy-loc
+[2023-04-15 01:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: badgie
+[2023-04-15 01:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: caliper-reader
+[2023-04-15 01:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: data-diff
+[2023-04-15 01:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rkm-codes
+[2023-04-15 01:35:49] INFO root fetch - processPackages [caliper-reader]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-15 01:35:49] INFO root fetch - processPackages [rkm-codes]: New version: [0.6] Old Version: [0.5.0]
+[2023-04-15 01:35:49] INFO root fetch - processPackages [data-diff]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-15 01:35:49] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: New version: [0.13] Old Version: [0.11]
+[2023-04-15 01:35:49] INFO root fetch - processPackages [badgie]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-15 01:35:49] INFO root fetch - processPackages [data-diff]: Downloading https://files.pythonhosted.org/packages/38/c6/f61403baf9751a23535107cb3138c40d8151b995077c9c2c425e96c4ca0d/data_diff-0.6.0.tar.gz
+[2023-04-15 01:35:49] INFO root fetch - processPackages [rkm-codes]: Downloading https://files.pythonhosted.org/packages/5d/55/c4f82ae6562d6c1d1431aa12e23c8df385343c33612b3ad30ea57caff325/rkm_codes-0.5.0.tar.gz
+[2023-04-15 01:35:49] INFO root fetch - processPackages [caliper-reader]: Downloading https://files.pythonhosted.org/packages/64/d8/c9494c609b510fad1819fbbcddf5738d805d12759c0bbc75b2a4864bd15b/caliper-reader-0.3.0.tar.gz
+[2023-04-15 01:35:49] INFO root fetch - processPackages [badgie]: Downloading https://files.pythonhosted.org/packages/09/96/249f01d8a139e4d10851ad3c728df71523e9916a283efb968befd6ad7312/badgie-0.2.0.tar.gz
+[2023-04-15 01:35:49] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: Downloading https://files.pythonhosted.org/packages/5f/6e/d906c4bff1779798d8a00f8b0e5199a207644058446eadf6ba0d59766d9d/a_pandas_ex_easy_loc-0.11.tar.gz
+[2023-04-15 01:35:50] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: Downloading https://files.pythonhosted.org/packages/56/4d/110076554acbe7ca975e7346e102bf1e66cad60c8d22f05d8bbc11df2c9b/a_pandas_ex_easy_loc-0.13.tar.gz
+[2023-04-15 01:35:50] INFO root fetch - processPackages [badgie]: Downloading https://files.pythonhosted.org/packages/77/8e/a5324e3c29e2c00bcaee6fb22c3d265d0325c8f3e8e15c936392ebd45b9d/badgie-0.3.0.tar.gz
+[2023-04-15 01:35:50] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: executing diffoscope
+[2023-04-15 01:35:50] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a_pandas_ex_easy_loc-0.11.tar.gz tmp/a_pandas_ex_easy_loc-0.13.tar.gz --markdown 20230415/a/a-pandas-ex-easy-loc/0.11-0.13/diff.md --exclude *.pyd
+[2023-04-15 01:35:50] INFO root fetch - processPackages [badgie]: executing diffoscope
+[2023-04-15 01:35:50] INFO root fetch - processPackages [badgie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badgie-0.2.0.tar.gz tmp/badgie-0.3.0.tar.gz --markdown 20230415/b/badgie/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 01:35:50] INFO root fetch - processPackages [data-diff]: Downloading https://files.pythonhosted.org/packages/24/ba/3ce0ba593d9453fe125bf62b1680451f2b016c4a32fb7d73c8eccf4fe97b/data_diff-0.7.0.tar.gz
+[2023-04-15 01:35:50] INFO root fetch - processPackages [rkm-codes]: Downloading https://files.pythonhosted.org/packages/91/93/a0423cbe92076382e73a961f1df0a28248a762d9bc045866bf5205ef05dd/rkm_codes-0.6.tar.gz
+[2023-04-15 01:35:50] INFO root fetch - processPackages [caliper-reader]: Downloading https://files.pythonhosted.org/packages/0c/9f/6bc77773258078fbca83dbd0c4434bb0b7e4dc13e93938ab68ac26885c37/caliper-reader-0.4.0.tar.gz
+[2023-04-15 01:35:50] INFO root fetch - processPackages [rkm-codes]: executing diffoscope
+[2023-04-15 01:35:50] INFO root fetch - processPackages [rkm-codes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rkm_codes-0.5.0.tar.gz tmp/rkm_codes-0.6.tar.gz --markdown 20230415/r/rkm-codes/0.5.0-0.6/diff.md --exclude *.pyd
+[2023-04-15 01:35:50] INFO root fetch - processPackages [caliper-reader]: executing diffoscope
+[2023-04-15 01:35:50] INFO root fetch - processPackages [caliper-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caliper-reader-0.3.0.tar.gz tmp/caliper-reader-0.4.0.tar.gz --markdown 20230415/c/caliper-reader/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-15 01:35:50] INFO root fetch - processPackages [data-diff]: executing diffoscope
+[2023-04-15 01:35:50] INFO root fetch - processPackages [data-diff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_diff-0.6.0.tar.gz tmp/data_diff-0.7.0.tar.gz --markdown 20230415/d/data-diff/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-15 01:35:51] INFO root fetch - processPackages [rkm-codes]: Start processing: a-pandas-ex-easy-loc
+[2023-04-15 01:35:51] INFO root fetch - main [MainThread]: End processing [rkm-codes]: success
+[2023-04-15 01:35:51] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: New version: [0.13] Old Version: [0.11]
+[2023-04-15 01:35:51] INFO root fetch - main [MainThread]: End processing [caliper-reader]: success
+[2023-04-15 01:35:51] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: executing diffoscope
+[2023-04-15 01:35:51] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a_pandas_ex_easy_loc-0.11.tar.gz tmp/a_pandas_ex_easy_loc-0.13.tar.gz --markdown 20230415/a/a-pandas-ex-easy-loc/0.11-0.13/diff.md --exclude *.pyd
+[2023-04-15 01:35:51] INFO root fetch - main [MainThread]: End processing [badgie]: success
+[2023-04-15 01:35:51] INFO root fetch - main [MainThread]: End processing [data-diff]: success
+[2023-04-15 01:35:51] INFO root fetch - main [MainThread]: End processing [a-pandas-ex-easy-loc]: success
+[2023-04-15 01:35:52] INFO root fetch - main [MainThread]: End processing [a-pandas-ex-easy-loc]: success
+[2023-04-15 01:35:52] INFO root fetch - main [MainThread]: Store serial: [17713812]
