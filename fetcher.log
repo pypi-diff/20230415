@@ -828,3 +828,33 @@
 [2023-04-15 01:20:15] INFO root fetch - main [MainThread]: End processing [polymesh]: success
 [2023-04-15 01:20:16] INFO root fetch - main [MainThread]: End processing [databricks-feature-store]: success
 [2023-04-15 01:20:16] INFO root fetch - main [MainThread]: Store serial: [17713761]
+[2023-04-15 01:25:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713761]
+[2023-04-15 01:25:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 01:25:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: symdexer
+[2023-04-15 01:25:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: covalent
+[2023-04-15 01:25:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: customhys
+[2023-04-15 01:25:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: modProcesso
+[2023-04-15 01:25:24] INFO root fetch - processPackages [symdexer]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-15 01:25:24] INFO root fetch - processPackages [customhys]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-15 01:25:24] INFO root fetch - processPackages [modProcesso]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 01:25:24] INFO root fetch - processPackages [covalent]: New version: [0.219.0rc0] Old Version: [0.218.0rc0]
+[2023-04-15 01:25:24] INFO root fetch - processPackages [modProcesso]: Downloading https://files.pythonhosted.org/packages/3f/fc/8e4945acc22d4635a30b8e5f55331c9fa32fa28c0d2eade63d5922bd6292/modProcesso-0.0.2.tar.gz
+[2023-04-15 01:25:24] INFO root fetch - processPackages [customhys]: Downloading https://files.pythonhosted.org/packages/ce/18/68bd7463ed599dfa3c859534d24f098c07f3b8c8e6a7185ec6f493f5254e/customhys-1.1.0.tar.gz
+[2023-04-15 01:25:24] INFO root fetch - processPackages [covalent]: Downloading https://files.pythonhosted.org/packages/5f/b8/a3fb91fcc60955ec8cd4aa1d1cd1b30968fcdbf55e413d8a25ec8ef3e686/covalent-0.218.0rc0.tar.gz
+[2023-04-15 01:25:24] INFO root fetch - processPackages [symdexer]: Downloading https://files.pythonhosted.org/packages/74/1d/3439aaa76c01c027740899ec5ccc37a27b7a481f0f9b30d7ed7985262cff/symdexer-0.2.1.tar.gz
+[2023-04-15 01:25:24] INFO root fetch - processPackages [modProcesso]: Downloading https://files.pythonhosted.org/packages/4e/ae/da996a9efcec52386458ebc6fe1119c1eed36b164d845b1fdec0e417eb2a/modProcesso-0.0.3.tar.gz
+[2023-04-15 01:25:24] INFO root fetch - processPackages [symdexer]: executing diffoscope
+[2023-04-15 01:25:24] INFO root fetch - processPackages [symdexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symdexer-0.2.0.tar.gz tmp/symdexer-0.2.1.tar.gz --markdown 20230415/s/symdexer/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-15 01:25:24] INFO root fetch - processPackages [modProcesso]: executing diffoscope
+[2023-04-15 01:25:24] INFO root fetch - processPackages [modProcesso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modProcesso-0.0.2.tar.gz tmp/modProcesso-0.0.3.tar.gz --markdown 20230415/m/modProcesso/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 01:25:25] INFO root fetch - processPackages [customhys]: Downloading https://files.pythonhosted.org/packages/78/4d/c9ace8153198c8bab938e3a042cf5761eefd0fdbab6381fac2aae6db2961/customhys-1.1.1.tar.gz
+[2023-04-15 01:25:25] INFO root fetch - processPackages [customhys]: executing diffoscope
+[2023-04-15 01:25:25] INFO root fetch - processPackages [customhys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customhys-1.1.0.tar.gz tmp/customhys-1.1.1.tar.gz --markdown 20230415/c/customhys/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-15 01:25:25] INFO root fetch - processPackages [covalent]: Downloading https://files.pythonhosted.org/packages/91/6b/883ed9621ad7ca072128d94fed1c395e2862d189b63a07157c12e72f3efe/covalent-0.219.0rc0.tar.gz
+[2023-04-15 01:25:25] INFO root fetch - main [MainThread]: End processing [symdexer]: success
+[2023-04-15 01:25:25] INFO root fetch - main [MainThread]: End processing [modProcesso]: success
+[2023-04-15 01:25:26] INFO root fetch - processPackages [covalent]: executing diffoscope
+[2023-04-15 01:25:26] INFO root fetch - processPackages [covalent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/covalent-0.218.0rc0.tar.gz tmp/covalent-0.219.0rc0.tar.gz --markdown 20230415/c/covalent/0.218.0rc0-0.219.0rc0/diff.md --exclude *.pyd
+[2023-04-15 01:25:27] INFO root fetch - main [MainThread]: End processing [customhys]: success
+[2023-04-15 01:25:33] INFO root fetch - main [MainThread]: End processing [covalent]: success
+[2023-04-15 01:25:33] INFO root fetch - main [MainThread]: Store serial: [17713770]
