@@ -688,3 +688,59 @@
 [2023-04-15 01:04:40] INFO root fetch - main [MainThread]: End processing [kgx]: success
 [2023-04-15 01:04:41] INFO root fetch - main [MainThread]: End processing [coiled]: success
 [2023-04-15 01:04:41] INFO root fetch - main [MainThread]: Store serial: [17713689]
+[2023-04-15 01:09:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713689]
+[2023-04-15 01:09:49] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 01:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-04-15 01:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sspeedup
+[2023-04-15 01:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xeno
+[2023-04-15 01:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlalchemy-cockroachdb
+[2023-04-15 01:09:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cmlibs.argon
+[2023-04-15 01:09:49] INFO root fetch - processPackages [xeno]: New version: [5.0.0] Old Version: [4.9.6]
+[2023-04-15 01:09:49] WARNING root fetch - processPackages [cmlibs.argon]: Skipping, unable to determine old version
+[2023-04-15 01:09:49] INFO root fetch - processPackages [cmlibs.argon]: Start processing: apache-airflow
+[2023-04-15 01:09:49] INFO root fetch - main [MainThread]: End processing [cmlibs.argon] error
+[2023-04-15 01:09:49] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.273] Old Version: [0.3.272]
+[2023-04-15 01:09:49] INFO root fetch - processPackages [sqlalchemy-cockroachdb]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-15 01:09:49] INFO root fetch - processPackages [sspeedup]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-15 01:09:49] INFO root fetch - processPackages [apache-airflow]: New version: [2.6.0b1] Old Version: [2.5.3rc2]
+[2023-04-15 01:09:49] INFO root fetch - processPackages [xeno]: Downloading https://files.pythonhosted.org/packages/1c/31/736f669fb7ad8a403c8a2d24cdccf693dec0a853a52c4c4c0025ce40a8d2/xeno-4.9.6.tar.gz
+[2023-04-15 01:09:49] INFO root fetch - processPackages [sqlalchemy-cockroachdb]: Downloading https://files.pythonhosted.org/packages/fa/37/53778aa3b90323d86c5873321f7d7cb51cfbd56fd8a35053dc71d606c30d/sqlalchemy-cockroachdb-2.0.0.tar.gz
+[2023-04-15 01:09:49] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/ae/1b/aa809214b95888b31963e7c1cb3fc344dc1463de92cb5e2e257e44167e93/pepperize.cdk-ses-smtp-credentials-0.3.273.tar.gz
+[2023-04-15 01:09:49] INFO root fetch - processPackages [sspeedup]: Downloading https://files.pythonhosted.org/packages/53/ff/0d81dc0e4bdd7144254b76a113c03e1a5db1c751baee4770a604532f5abf/sspeedup-0.8.0.tar.gz
+[2023-04-15 01:09:50] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-04-15 01:09:50] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.272.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.273.tar.gz --markdown 20230415/p/pepperize.cdk-ses-smtp-credentials/0.3.272-0.3.273/diff.md --exclude *.pyd
+[2023-04-15 01:09:50] INFO root fetch - processPackages [sqlalchemy-cockroachdb]: Downloading https://files.pythonhosted.org/packages/72/74/7157d36dee9175864f803fdbc931913dac17b0d4eee24727dbdac1244543/sqlalchemy-cockroachdb-2.0.1.tar.gz
+[2023-04-15 01:09:50] INFO root fetch - processPackages [sspeedup]: executing diffoscope
+[2023-04-15 01:09:50] INFO root fetch - processPackages [sspeedup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sspeedup-0.7.0.tar.gz tmp/sspeedup-0.8.0.tar.gz --markdown 20230415/s/sspeedup/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-15 01:09:50] INFO root fetch - processPackages [sqlalchemy-cockroachdb]: executing diffoscope
+[2023-04-15 01:09:50] INFO root fetch - processPackages [sqlalchemy-cockroachdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-cockroachdb-2.0.0.tar.gz tmp/sqlalchemy-cockroachdb-2.0.1.tar.gz --markdown 20230415/s/sqlalchemy-cockroachdb/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-15 01:09:50] INFO root fetch - processPackages [xeno]: Downloading https://files.pythonhosted.org/packages/f1/5c/e7526764c1587aa8d648cbe266ac761a4e0d8a982db25eee39e93d90312f/xeno-5.0.0.tar.gz
+[2023-04-15 01:09:50] INFO root fetch - processPackages [xeno]: executing diffoscope
+[2023-04-15 01:09:50] INFO root fetch - processPackages [xeno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xeno-4.9.6.tar.gz tmp/xeno-5.0.0.tar.gz --markdown 20230415/x/xeno/4.9.6-5.0.0/diff.md --exclude *.pyd
+[2023-04-15 01:09:50] INFO root fetch - processPackages [apache-airflow]: Downloading https://files.pythonhosted.org/packages/c6/8f/1eaa25b86946f99d8f3f09c74a0a1994533aaf5dd9da9becd6ba50e09eb8/apache-airflow-2.5.3rc2.tar.gz
+[2023-04-15 01:09:50] WARNING root fetch - processPackages [apache-airflow]: Skipping package: exceeds size limit 10987563>=10485760
+[2023-04-15 01:09:50] INFO root fetch - processPackages [apache-airflow]: Start processing: raclients
+[2023-04-15 01:09:50] INFO root fetch - main [MainThread]: End processing [apache-airflow] error
+[2023-04-15 01:09:50] INFO root fetch - processPackages [raclients]: New version: [3.1.2] Old Version: [3.1.1]
+[2023-04-15 01:09:50] INFO root fetch - processPackages [raclients]: Downloading https://files.pythonhosted.org/packages/0d/58/8c14667a2e01e5942d423eb0d5824327a638dd31b5dfb82f47befaf8146f/raclients-3.1.2.tar.gz
+[2023-04-15 01:09:51] INFO root fetch - processPackages [raclients]: executing diffoscope
+[2023-04-15 01:09:51] INFO root fetch - processPackages [raclients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raclients-3.1.1.tar.gz tmp/raclients-3.1.2.tar.gz --markdown 20230415/r/raclients/3.1.1-3.1.2/diff.md --exclude *.pyd
+[2023-04-15 01:09:51] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Start processing: areas
+[2023-04-15 01:09:51] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-04-15 01:09:51] INFO root fetch - processPackages [areas]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-15 01:09:51] INFO root fetch - processPackages [sspeedup]: Start processing: pvrpm
+[2023-04-15 01:09:51] INFO root fetch - main [MainThread]: End processing [sspeedup]: success
+[2023-04-15 01:09:51] INFO root fetch - main [MainThread]: End processing [sqlalchemy-cockroachdb]: success
+[2023-04-15 01:09:51] INFO root fetch - processPackages [pvrpm]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-04-15 01:09:51] INFO root fetch - processPackages [areas]: Downloading https://files.pythonhosted.org/packages/4d/eb/ae6ea509fac73ad942893c2a9d4a83d571874f123160a3b9263901b0de4b/areas-0.1.8.tar.gz
+[2023-04-15 01:09:51] INFO root fetch - main [MainThread]: End processing [xeno]: success
+[2023-04-15 01:09:51] INFO root fetch - processPackages [pvrpm]: Downloading https://files.pythonhosted.org/packages/b0/ad/18bcd74c0e4ff6d013fbc7216044e000a73ac3d06969a47be1ee9ca4c2a8/pvrpm-1.8.0-py3-none-any.whl
+[2023-04-15 01:09:51] INFO root fetch - processPackages [areas]: executing diffoscope
+[2023-04-15 01:09:51] INFO root fetch - processPackages [areas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/areas-0.1.7.tar.gz tmp/areas-0.1.8.tar.gz --markdown 20230415/a/areas/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-15 01:09:51] INFO root fetch - processPackages [pvrpm]: Downloading https://files.pythonhosted.org/packages/ba/a6/2276199cc8f5cb3649422eb12192911f6e5201f8f4a56bb03209fdedc411/pvrpm-1.8.1-py3-none-any.whl
+[2023-04-15 01:09:51] INFO root fetch - processPackages [pvrpm]: executing diffoscope
+[2023-04-15 01:09:51] INFO root fetch - processPackages [pvrpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvrpm-1.8.0-py3-none-any.whl.zip tmp/pvrpm-1.8.1-py3-none-any.whl.zip --markdown 20230415/p/pvrpm/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-04-15 01:09:52] INFO root fetch - main [MainThread]: End processing [raclients]: success
+[2023-04-15 01:09:52] INFO root fetch - main [MainThread]: End processing [areas]: success
+[2023-04-15 01:09:53] INFO root fetch - main [MainThread]: End processing [pvrpm]: success
+[2023-04-15 01:09:53] INFO root fetch - main [MainThread]: Store serial: [17713715]
