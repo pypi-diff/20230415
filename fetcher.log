@@ -6321,3 +6321,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 08:27:31] INFO root fetch - main [MainThread]: End processing [selenextra]: success
 [2023-04-15 08:30:25] INFO root fetch - main [MainThread]: End processing [pydeck]: success
 [2023-04-15 08:30:25] INFO root fetch - main [MainThread]: Store serial: [17716917]
+[2023-04-15 08:35:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716917]
+[2023-04-15 08:35:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 08:35:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PureCloudPlatformClientV2
+[2023-04-15 08:35:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-searchbox
+[2023-04-15 08:35:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: standard-transform
+[2023-04-15 08:35:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webp-support
+[2023-04-15 08:35:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: katalytic-files
+[2023-04-15 08:35:34] INFO root fetch - processPackages [streamlit-searchbox]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-15 08:35:34] INFO root fetch - processPackages [katalytic-files]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-15 08:35:34] INFO root fetch - processPackages [standard-transform]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-15 08:35:34] INFO root fetch - processPackages [PureCloudPlatformClientV2]: New version: [99.0.0] Old Version: [98.0.0]
+[2023-04-15 08:35:34] INFO root fetch - processPackages [webp-support]: New version: [0.2.5.post1] Old Version: [0.2.5]
+[2023-04-15 08:35:34] INFO root fetch - processPackages [webp-support]: Downloading https://files.pythonhosted.org/packages/df/35/938b910df4c88a0d29b82bb7ca85fe0f0d7729f7e03b8d674791ba561666/webp_support-0.2.5.tar.gz
+[2023-04-15 08:35:34] INFO root fetch - processPackages [katalytic-files]: Downloading https://files.pythonhosted.org/packages/6f/d6/6c94d09ce3f246cc80f3ab40ab79f4ec877c3c964dfbfefd9755339417a6/katalytic-files-0.5.0.tar.gz
+[2023-04-15 08:35:34] INFO root fetch - processPackages [streamlit-searchbox]: Downloading https://files.pythonhosted.org/packages/6c/5b/728a18176c2e64def3b26af85d73bea571273a3d318f252139e5d56a5d73/streamlit-searchbox-0.1.2.tar.gz
+[2023-04-15 08:35:34] INFO root fetch - processPackages [standard-transform]: Downloading https://files.pythonhosted.org/packages/93/5f/d16774c2cdf94e20e1dfb6a6dd8dc37efb2c4e6629a48232857493b54946/standard-transform-1.3.0.tar.gz
+[2023-04-15 08:35:34] INFO root fetch - processPackages [standard-transform]: executing diffoscope
+[2023-04-15 08:35:34] INFO root fetch - processPackages [standard-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/standard-transform-1.2.0.tar.gz tmp/standard-transform-1.3.0.tar.gz --markdown 20230415/s/standard-transform/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-15 08:35:34] INFO root fetch - processPackages [webp-support]: Downloading https://files.pythonhosted.org/packages/2d/90/06aad0086dec1bd8cf739c66f6e27f77d476bbc0d862b54edbb4b6723867/webp_support-0.2.5.post1.tar.gz
+[2023-04-15 08:35:34] INFO root fetch - processPackages [streamlit-searchbox]: Downloading https://files.pythonhosted.org/packages/44/db/87d460fa93eabd6c16776c9d3892f071e0f815d329cd55bbac428b166405/streamlit-searchbox-0.1.3.tar.gz
+[2023-04-15 08:35:34] INFO root fetch - processPackages [PureCloudPlatformClientV2]: executing diffoscope
+[2023-04-15 08:35:34] INFO root fetch - processPackages [PureCloudPlatformClientV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PureCloudPlatformClientV2-98.0.0.tar.gz tmp/PureCloudPlatformClientV2-99.0.0.tar.gz --markdown 20230415/P/PureCloudPlatformClientV2/98.0.0-99.0.0/diff.md --exclude *.pyd
+[2023-04-15 08:35:34] INFO root fetch - processPackages [webp-support]: executing diffoscope
+[2023-04-15 08:35:34] INFO root fetch - processPackages [webp-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webp_support-0.2.5.tar.gz tmp/webp_support-0.2.5.post1.tar.gz --markdown 20230415/w/webp-support/0.2.5-0.2.5.post1/diff.md --exclude *.pyd
+[2023-04-15 08:35:34] INFO root fetch - processPackages [katalytic-files]: Downloading https://files.pythonhosted.org/packages/89/0a/7b63fe7b52820dd903a8c49cfa89411dd57d3aa739ff6d36d376f54ff430/katalytic-files-0.6.0.tar.gz
+[2023-04-15 08:35:34] INFO root fetch - processPackages [streamlit-searchbox]: executing diffoscope
+[2023-04-15 08:35:34] INFO root fetch - processPackages [streamlit-searchbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-searchbox-0.1.2.tar.gz tmp/streamlit-searchbox-0.1.3.tar.gz --markdown 20230415/s/streamlit-searchbox/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-15 08:35:34] INFO root fetch - processPackages [katalytic-files]: executing diffoscope
+[2023-04-15 08:35:34] INFO root fetch - processPackages [katalytic-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-files-0.5.0.tar.gz tmp/katalytic-files-0.6.0.tar.gz --markdown 20230415/k/katalytic-files/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-15 08:35:35] INFO root fetch - processPackages [webp-support]: Start processing: pylint-keyword-only-args-plugin
+[2023-04-15 08:35:35] INFO root fetch - main [MainThread]: End processing [webp-support]: success
+[2023-04-15 08:35:35] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-15 08:35:35] INFO root fetch - main [MainThread]: End processing [standard-transform]: success
+[2023-04-15 08:35:35] INFO root fetch - main [MainThread]: End processing [katalytic-files]: success
+[2023-04-15 08:35:35] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: executing diffoscope
+[2023-04-15 08:35:35] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylint_keyword_only_args_plugin-0.2.0.tar.gz tmp/pylint_keyword_only_args_plugin-0.2.1.tar.gz --markdown 20230415/p/pylint-keyword-only-args-plugin/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-15 08:35:35] INFO root fetch - main [MainThread]: End processing [streamlit-searchbox]: success
+[2023-04-15 08:35:36] INFO root fetch - main [MainThread]: End processing [pylint-keyword-only-args-plugin]: success
+[2023-04-15 08:36:22] INFO root fetch - main [MainThread]: End processing [PureCloudPlatformClientV2]: success
+[2023-04-15 08:36:22] INFO root fetch - main [MainThread]: Store serial: [17716947]
