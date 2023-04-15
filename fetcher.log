@@ -20056,3 +20056,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 22:37:30] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
 [2023-04-15 22:37:31] INFO root fetch - main [MainThread]: End processing [spawn-lia]: success
 [2023-04-15 22:37:31] INFO root fetch - main [MainThread]: Store serial: [17721756]
+[2023-04-15 22:42:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721756]
+[2023-04-15 22:42:41] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 22:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: artemis-common
+[2023-04-15 22:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leftdefault
+[2023-04-15 22:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mqtt-entity
+[2023-04-15 22:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: graphscope
+[2023-04-15 22:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sabledocs
+[2023-04-15 22:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jupyter-capture-output
+[2023-04-15 22:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: github-rest-api
+[2023-04-15 22:42:41] WARNING root fetch - processPackages [leftdefault]: Skipping, unable to determine old version
+[2023-04-15 22:42:41] INFO root fetch - main [MainThread]: End processing [leftdefault] error
+[2023-04-15 22:42:41] INFO root fetch - processPackages [artemis-common]: New version: [0.3.0b0] Old Version: [0.2.5b0]
+[2023-04-15 22:42:41] WARNING root fetch - processPackages [mqtt-entity]: Skipping, unable to determine old version
+[2023-04-15 22:42:41] INFO root fetch - main [MainThread]: End processing [mqtt-entity] error
+[2023-04-15 22:42:41] INFO root fetch - processPackages [graphscope]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-15 22:42:41] INFO root fetch - processPackages [github-rest-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-15 22:42:41] INFO root fetch - processPackages [sabledocs]: New version: [0.1.63] Old Version: [0.1.60]
+[2023-04-15 22:42:42] INFO root fetch - processPackages [jupyter-capture-output]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 22:42:42] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/8a/cf/5bf5520d0cba1c8ac0bd824e70ade1c01fce914eeed5c7c210496c3f5906/graphscope-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl
+[2023-04-15 22:42:42] INFO root fetch - processPackages [github-rest-api]: executing diffoscope
+[2023-04-15 22:42:42] INFO root fetch - processPackages [github-rest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_rest_api-0.8.0.tar.gz tmp/github_rest_api-0.9.0.tar.gz --markdown 20230415/g/github-rest-api/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 22:42:42] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/39/b4/30aa4798984d900eacfc622f89d0a76fe987cdecd8ed7997eb90fee57b2b/sabledocs-0.1.63.tar.gz
+[2023-04-15 22:42:42] INFO root fetch - processPackages [artemis-common]: Downloading https://files.pythonhosted.org/packages/98/58/5453e7de3832206ab2abd3e7748f2e5cc2be01eaa9e6dd4d835f138af83e/artemis-common-0.3.0b0.tar.gz
+[2023-04-15 22:42:42] INFO root fetch - processPackages [jupyter-capture-output]: Downloading https://files.pythonhosted.org/packages/8f/5a/bf30675b3a910b50fc6deb76e4cc3d3e512ca53df532e4d05f99c3f518d5/jupyter_capture_output-0.0.8.tar.gz
+[2023-04-15 22:42:42] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/88/bc/d15c620f88ee0f2d9e2d48162b0fe41abceec7a07feb87268c4d10c6392b/graphscope-0.9.1-py2.py3-none-macosx_11_0_arm64.whl
+[2023-04-15 22:42:42] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 22:42:42] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.60.tar.gz tmp/sabledocs-0.1.63.tar.gz --markdown 20230415/s/sabledocs/0.1.60-0.1.63/diff.md --exclude *.pyd
+[2023-04-15 22:42:42] INFO root fetch - processPackages [graphscope]: executing diffoscope
+[2023-04-15 22:42:42] INFO root fetch - processPackages [graphscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphscope-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl.zip tmp/graphscope-0.9.1-py2.py3-none-macosx_11_0_arm64.whl.zip --markdown 20230415/g/graphscope/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-15 22:42:42] INFO root fetch - processPackages [artemis-common]: executing diffoscope
+[2023-04-15 22:42:42] INFO root fetch - processPackages [artemis-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/artemis-common-0.2.5b0.tar.gz tmp/artemis-common-0.3.0b0.tar.gz --markdown 20230415/a/artemis-common/0.2.5b0-0.3.0b0/diff.md --exclude *.pyd
+[2023-04-15 22:42:42] INFO root fetch - processPackages [jupyter-capture-output]: Downloading https://files.pythonhosted.org/packages/f9/8d/cb03b19b799981513d9ad333f00ad93f4fc0414a302beeee5e3c85fe1a7e/jupyter_capture_output-0.0.9.tar.gz
+[2023-04-15 22:42:42] INFO root fetch - processPackages [jupyter-capture-output]: executing diffoscope
+[2023-04-15 22:42:42] INFO root fetch - processPackages [jupyter-capture-output]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_capture_output-0.0.8.tar.gz tmp/jupyter_capture_output-0.0.9.tar.gz --markdown 20230415/j/jupyter-capture-output/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 22:42:43] INFO root fetch - main [MainThread]: End processing [github-rest-api]: success
+[2023-04-15 22:42:43] INFO root fetch - main [MainThread]: End processing [artemis-common]: success
+[2023-04-15 22:42:43] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 22:42:43] INFO root fetch - main [MainThread]: End processing [graphscope]: success
+[2023-04-15 22:42:43] INFO root fetch - main [MainThread]: End processing [jupyter-capture-output]: success
+[2023-04-15 22:42:43] INFO root fetch - main [MainThread]: Store serial: [17721780]
