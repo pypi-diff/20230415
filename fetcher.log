@@ -15673,3 +15673,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 14:38:04] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-word-bank2]: success
 [2023-04-15 14:38:04] INFO root fetch - main [MainThread]: End processing [servey]: success
 [2023-04-15 14:38:04] INFO root fetch - main [MainThread]: Store serial: [17718931]
+[2023-04-15 14:43:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718931]
+[2023-04-15 14:43:13] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 14:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bagua-cuda111
+[2023-04-15 14:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sharewifi
+[2023-04-15 14:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-video-play
+[2023-04-15 14:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: toolkit-lennart
+[2023-04-15 14:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: colabdesign
+[2023-04-15 14:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: manticore
+[2023-04-15 14:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vagd
+[2023-04-15 14:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mb-pytorch
+[2023-04-15 14:43:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sh40-zenith
+[2023-04-15 14:43:13] WARNING root fetch - processPackages [sharewifi]: Skipping, unable to determine old version
+[2023-04-15 14:43:13] INFO root fetch - processPackages [django-video-play]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 14:43:13] INFO root fetch - processPackages [toolkit-lennart]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-15 14:43:13] INFO root fetch - main [MainThread]: End processing [sharewifi] error
+[2023-04-15 14:43:13] INFO root fetch - processPackages [bagua-cuda111]: New version: [0.9.3.dev5] Old Version: [0.9.3.dev4]
+[2023-04-15 14:43:14] INFO root fetch - processPackages [vagd]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-15 14:43:14] WARNING root fetch - processPackages [colabdesign]: Skipping, unable to determine old version
+[2023-04-15 14:43:14] INFO root fetch - main [MainThread]: End processing [colabdesign] error
+[2023-04-15 14:43:14] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304151223] Old Version: [1.0.202304151214]
+[2023-04-15 14:43:14] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230415] Old Version: [0.3.8.dev230414]
+[2023-04-15 14:43:14] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-15 14:43:14] INFO root fetch - processPackages [sh40-zenith]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-04-15 14:43:14] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304151214-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304151223-py3-none-any.whl.zip --markdown 20230415/m/mb-pytorch/1.0.202304151214-1.0.202304151223/diff.md --exclude *.pyd
+[2023-04-15 14:43:14] INFO root fetch - processPackages [toolkit-lennart]: Downloading https://files.pythonhosted.org/packages/7a/4e/f8a6257d975f36afc15a58a56a330169c7cf8a354a6272b7b368be7d7381/toolkit_lennart-0.0.5.tar.gz
+[2023-04-15 14:43:14] INFO root fetch - processPackages [django-video-play]: Downloading https://files.pythonhosted.org/packages/3f/ef/fb84c4303c12c7b57374094ef3065c3746ca8af6f3de89aaebbacd525b53/django_video_play-0.1.8.tar.gz
+[2023-04-15 14:43:14] INFO root fetch - processPackages [vagd]: Downloading https://files.pythonhosted.org/packages/a8/f9/df3f6bff604c04369dd3c7f2af900c998205d5479fb92ad7df6510c4d638/vagd-0.3.5.tar.gz
+[2023-04-15 14:43:14] INFO root fetch - processPackages [bagua-cuda111]: Downloading https://files.pythonhosted.org/packages/68/7f/d3d22b76b729ebf5b949250356814424b0872a7dbb38d22a2c166cb37d8b/bagua_cuda111-0.9.3.dev4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 14:43:14] INFO root fetch - processPackages [manticore]: Downloading https://files.pythonhosted.org/packages/13/4b/bf25fe806ffa85c1662d200cb7c5a33c8b3ca5fb45e88365e37eee7e98b3/manticore-0.3.8.dev230415.tar.gz
+[2023-04-15 14:43:14] INFO root fetch - processPackages [sh40-zenith]: Downloading https://files.pythonhosted.org/packages/c0/48/0a40b37bcc14d471111296557ae9c2fe8ce2614eae9d514dfc8e1d20ea08/sh40_zenith-0.0.2.tar.gz
+[2023-04-15 14:43:14] INFO root fetch - processPackages [vagd]: Downloading https://files.pythonhosted.org/packages/27/43/b4171166d0dba79dc86e6c4963f83faf67393c99626732958ec92a974faa/vagd-0.3.6.tar.gz
+[2023-04-15 14:43:14] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-04-15 14:43:14] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230414.tar.gz tmp/manticore-0.3.8.dev230415.tar.gz --markdown 20230415/m/manticore/0.3.8.dev230414-0.3.8.dev230415/diff.md --exclude *.pyd
+[2023-04-15 14:43:14] INFO root fetch - processPackages [toolkit-lennart]: Downloading https://files.pythonhosted.org/packages/72/df/685b15a0abfd83af98e489df1c709070716f8e91ea6f2be37411ee958a2c/toolkit_lennart-0.0.6.tar.gz
+[2023-04-15 14:43:14] INFO root fetch - processPackages [vagd]: executing diffoscope
+[2023-04-15 14:43:14] INFO root fetch - processPackages [vagd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vagd-0.3.5.tar.gz tmp/vagd-0.3.6.tar.gz --markdown 20230415/v/vagd/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-15 14:43:14] INFO root fetch - processPackages [toolkit-lennart]: executing diffoscope
+[2023-04-15 14:43:14] INFO root fetch - processPackages [toolkit-lennart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolkit_lennart-0.0.5.tar.gz tmp/toolkit_lennart-0.0.6.tar.gz --markdown 20230415/t/toolkit-lennart/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-15 14:43:14] INFO root fetch - processPackages [django-video-play]: Downloading https://files.pythonhosted.org/packages/0a/b5/3c5e0beb6f44e1edc922c25fdd637fd91b004b629b7ea8a0e3ae736e2d8b/django_video_play-0.1.9.tar.gz
+[2023-04-15 14:43:14] INFO root fetch - processPackages [sh40-zenith]: Downloading https://files.pythonhosted.org/packages/43/fb/5de780ad1c3d178aee79e84331e962d93215580ccdf0148149aad9baf232/sh40_zenith-0.1.0.tar.gz
+[2023-04-15 14:43:14] INFO root fetch - processPackages [django-video-play]: executing diffoscope
+[2023-04-15 14:43:14] INFO root fetch - processPackages [django-video-play]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_video_play-0.1.8.tar.gz tmp/django_video_play-0.1.9.tar.gz --markdown 20230415/d/django-video-play/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 14:43:14] WARNING root fetch - processPackages [bagua-cuda111]: Skipping package: exceeds size limit 18799651>=10485760
+[2023-04-15 14:43:14] INFO root fetch - main [MainThread]: End processing [bagua-cuda111] error
+[2023-04-15 14:43:14] INFO root fetch - processPackages [sh40-zenith]: executing diffoscope
+[2023-04-15 14:43:14] INFO root fetch - processPackages [sh40-zenith]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sh40_zenith-0.0.2.tar.gz tmp/sh40_zenith-0.1.0.tar.gz --markdown 20230415/s/sh40-zenith/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-04-15 14:43:15] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2023-04-15 14:43:15] INFO root fetch - main [MainThread]: End processing [toolkit-lennart]: success
+[2023-04-15 14:43:15] INFO root fetch - main [MainThread]: End processing [sh40-zenith]: success
+[2023-04-15 14:43:15] INFO root fetch - main [MainThread]: End processing [vagd]: success
+[2023-04-15 14:43:16] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-04-15 14:43:22] INFO root fetch - main [MainThread]: End processing [django-video-play]: success
+[2023-04-15 14:43:22] INFO root fetch - main [MainThread]: Store serial: [17718967]
