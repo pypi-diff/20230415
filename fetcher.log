@@ -5658,3 +5658,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 07:30:12] INFO root fetch - processPackages [idealgeo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idealgeo-0.0.3.tar.gz tmp/idealgeo-0.0.4.tar.gz --markdown 20230415/i/idealgeo/0.0.3-0.0.4/diff.md --exclude *.pyd
 [2023-04-15 07:30:14] INFO root fetch - main [MainThread]: End processing [idealgeo]: success
 [2023-04-15 07:30:14] INFO root fetch - main [MainThread]: Store serial: [17716645]
+[2023-04-15 07:35:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716645]
+[2023-04-15 07:35:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 07:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langful
+[2023-04-15 07:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tinta
+[2023-04-15 07:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pritunl-api
+[2023-04-15 07:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lcu-connector
+[2023-04-15 07:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: meroua
+[2023-04-15 07:35:20] INFO root fetch - processPackages [langful]: New version: [0.23] Old Version: [0.22]
+[2023-04-15 07:35:20] INFO root fetch - processPackages [meroua]: New version: [1.1] Old Version: [1.0]
+[2023-04-15 07:35:20] INFO root fetch - processPackages [lcu-connector]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-15 07:35:20] INFO root fetch - processPackages [tinta]: New version: [0.1.5b3] Old Version: [0.1.5b2]
+[2023-04-15 07:35:20] INFO root fetch - processPackages [pritunl-api]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-15 07:35:21] INFO root fetch - processPackages [lcu-connector]: Downloading https://files.pythonhosted.org/packages/8f/c1/fffd0bc7dd1720130c1261828631a57777ee926cf90ae1a7d3d9d18dc67c/lcu-connector-1.0.0.tar.gz
+[2023-04-15 07:35:21] INFO root fetch - processPackages [meroua]: Downloading https://files.pythonhosted.org/packages/c4/21/6068829399d4a2d53c1eb918843357dc181ddcd084b385aeac194b7b2ab5/meroua-1.0.tar.gz
+[2023-04-15 07:35:21] INFO root fetch - processPackages [tinta]: Downloading https://files.pythonhosted.org/packages/37/59/52f7d771a611b7ba3301e88528bb260e3056d580f30e56625a8a155c2066/tinta-0.1.5b3.tar.gz
+[2023-04-15 07:35:21] INFO root fetch - processPackages [pritunl-api]: Downloading https://files.pythonhosted.org/packages/fb/50/54b2a279220f696a1942a5899e26663399f71bf6b108fcdcb589eaf401c1/pritunl_api-1.1.8.tar.gz
+[2023-04-15 07:35:21] INFO root fetch - processPackages [pritunl-api]: executing diffoscope
+[2023-04-15 07:35:21] INFO root fetch - processPackages [pritunl-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pritunl_api-1.1.7.tar.gz tmp/pritunl_api-1.1.8.tar.gz --markdown 20230415/p/pritunl-api/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-15 07:35:21] INFO root fetch - processPackages [langful]: Downloading https://files.pythonhosted.org/packages/81/4d/a7a9f490a27b47b4db766fcd71a2a08cbf4a6d484d28ec953c26b5a00d01/langful-0.23-py2.py3-none-any.whl
+[2023-04-15 07:35:21] INFO root fetch - processPackages [langful]: executing diffoscope
+[2023-04-15 07:35:21] INFO root fetch - processPackages [langful]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langful-0.22-py2.py3-none-any.whl.zip tmp/langful-0.23-py2.py3-none-any.whl.zip --markdown 20230415/l/langful/0.22-0.23/diff.md --exclude *.pyd
+[2023-04-15 07:35:21] INFO root fetch - processPackages [tinta]: executing diffoscope
+[2023-04-15 07:35:21] INFO root fetch - processPackages [tinta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinta-0.1.5b2.tar.gz tmp/tinta-0.1.5b3.tar.gz --markdown 20230415/t/tinta/0.1.5b2-0.1.5b3/diff.md --exclude *.pyd
+[2023-04-15 07:35:21] INFO root fetch - processPackages [meroua]: Downloading https://files.pythonhosted.org/packages/4a/a3/d303b06202e1777fd379a657de5937578d4dc9bd46cfcbcc43da4ceb642c/meroua-1.1.tar.gz
+[2023-04-15 07:35:21] INFO root fetch - processPackages [lcu-connector]: Downloading https://files.pythonhosted.org/packages/14/a5/2ed382531eec3c2b12726971b17b9f494fdd22883f4162258a64108c87be/lcu-connector-1.0.1.tar.gz
+[2023-04-15 07:35:21] INFO root fetch - processPackages [meroua]: executing diffoscope
+[2023-04-15 07:35:21] INFO root fetch - processPackages [meroua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meroua-1.0.tar.gz tmp/meroua-1.1.tar.gz --markdown 20230415/m/meroua/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-15 07:35:21] INFO root fetch - processPackages [lcu-connector]: executing diffoscope
+[2023-04-15 07:35:21] INFO root fetch - processPackages [lcu-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lcu-connector-1.0.0.tar.gz tmp/lcu-connector-1.0.1.tar.gz --markdown 20230415/l/lcu-connector/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-15 07:35:22] INFO root fetch - processPackages [meroua]: Start processing: geeup
+[2023-04-15 07:35:22] INFO root fetch - main [MainThread]: End processing [meroua]: success
+[2023-04-15 07:35:22] INFO root fetch - processPackages [geeup]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-04-15 07:35:22] INFO root fetch - main [MainThread]: End processing [langful]: success
+[2023-04-15 07:35:22] INFO root fetch - main [MainThread]: End processing [tinta]: success
+[2023-04-15 07:35:22] INFO root fetch - main [MainThread]: End processing [pritunl-api]: success
+[2023-04-15 07:35:22] INFO root fetch - main [MainThread]: End processing [lcu-connector]: success
+[2023-04-15 07:35:22] INFO root fetch - processPackages [geeup]: Downloading https://files.pythonhosted.org/packages/9b/b1/9bf648f334418e3a954a14ee9ab39e88c1b6988dbc307dd84e7f09ab661c/geeup-0.6.5.tar.gz
+[2023-04-15 07:35:22] INFO root fetch - processPackages [geeup]: executing diffoscope
+[2023-04-15 07:35:22] INFO root fetch - processPackages [geeup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geeup-0.6.4.tar.gz tmp/geeup-0.6.5.tar.gz --markdown 20230415/g/geeup/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-04-15 07:35:24] INFO root fetch - main [MainThread]: End processing [geeup]: success
+[2023-04-15 07:35:24] INFO root fetch - main [MainThread]: Store serial: [17716661]
