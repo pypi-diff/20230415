@@ -5156,3 +5156,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 06:11:14] INFO root fetch - main [MainThread]: End processing [webp-support]: success
 [2023-04-15 06:11:33] INFO root fetch - main [MainThread]: End processing [highcharts-core]: success
 [2023-04-15 06:11:33] INFO root fetch - main [MainThread]: Store serial: [17716385]
+[2023-04-15 06:16:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716385]
+[2023-04-15 06:16:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 06:16:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: UzSyllable
+[2023-04-15 06:16:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-helpdesk-mgmt
+[2023-04-15 06:16:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-helpdesk-mgmt
+[2023-04-15 06:16:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mayan-edms
+[2023-04-15 06:16:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: drs-compliance
+[2023-04-15 06:16:40] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: New version: [14.0.2.6.1.dev8] Old Version: [14.0.2.6.1.dev7]
+[2023-04-15 06:16:40] INFO root fetch - processPackages [drs-compliance]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-15 06:16:40] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: New version: [15.0.3.5.1.5] Old Version: [15.0.3.5.1.4]
+[2023-04-15 06:16:40] INFO root fetch - processPackages [mayan-edms]: New version: [4.4.5] Old Version: [4.4.4]
+[2023-04-15 06:16:40] INFO root fetch - processPackages [UzSyllable]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-15 06:16:40] INFO root fetch - processPackages [mayan-edms]: executing diffoscope
+[2023-04-15 06:16:40] INFO root fetch - processPackages [mayan-edms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mayan-edms-4.4.4.tar.gz tmp/mayan-edms-4.4.5.tar.gz --markdown 20230415/m/mayan-edms/4.4.4-4.4.5/diff.md --exclude *.pyd
+[2023-04-15 06:16:40] INFO root fetch - processPackages [drs-compliance]: Downloading https://files.pythonhosted.org/packages/3c/6a/c3f0bb45898c1264a4f342ce77e08ee3078af1965c9c47cf7aaca4a489f8/drs-compliance-1.0.7.tar.gz
+[2023-04-15 06:16:40] INFO root fetch - processPackages [drs-compliance]: executing diffoscope
+[2023-04-15 06:16:40] INFO root fetch - processPackages [drs-compliance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drs-compliance-1.0.6.tar.gz tmp/drs-compliance-1.0.7.tar.gz --markdown 20230415/d/drs-compliance/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-15 06:16:40] INFO root fetch - processPackages [UzSyllable]: Downloading https://files.pythonhosted.org/packages/e4/cb/dcfe0ca4ad7987a1975d218c4e0cc6b49422871f117f5133cc9aaa23d3bf/UzSyllable-0.0.4-py3-none-any.whl
+[2023-04-15 06:16:40] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: Downloading https://files.pythonhosted.org/packages/a9/10/cd68e948c93daf0b71f13b5bebb5114555c28c997646998d75880891cfbe/odoo_addon_helpdesk_mgmt-15.0.3.5.1.5-py3-none-any.whl
+[2023-04-15 06:16:40] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: Downloading https://files.pythonhosted.org/packages/40/5d/9fd3bbd1e1569dc392d7fb82a0d41baf10e6eba9655a8c87edeb62e2c009/odoo14_addon_helpdesk_mgmt-14.0.2.6.1.dev8-py3-none-any.whl
+[2023-04-15 06:16:40] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: executing diffoscope
+[2023-04-15 06:16:40] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_helpdesk_mgmt-15.0.3.5.1.4-py3-none-any.whl.zip tmp/odoo_addon_helpdesk_mgmt-15.0.3.5.1.5-py3-none-any.whl.zip --markdown 20230415/o/odoo-addon-helpdesk-mgmt/15.0.3.5.1.4-15.0.3.5.1.5/diff.md --exclude *.pyd
+[2023-04-15 06:16:40] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: executing diffoscope
+[2023-04-15 06:16:40] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_helpdesk_mgmt-14.0.2.6.1.dev7-py3-none-any.whl.zip tmp/odoo14_addon_helpdesk_mgmt-14.0.2.6.1.dev8-py3-none-any.whl.zip --markdown 20230415/o/odoo14-addon-helpdesk-mgmt/14.0.2.6.1.dev7-14.0.2.6.1.dev8/diff.md --exclude *.pyd
+[2023-04-15 06:16:40] INFO root fetch - processPackages [UzSyllable]: Downloading https://files.pythonhosted.org/packages/d8/57/e7ecac8b393e1544c681273047abb8b0a59128aa09ae39bc8277ebd87f27/UzSyllable-0.0.5.tar.gz
+[2023-04-15 06:16:40] INFO root fetch - processPackages [UzSyllable]: executing diffoscope
+[2023-04-15 06:16:40] INFO root fetch - processPackages [UzSyllable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UzSyllable-0.0.4-py3-none-any.whl.zip tmp/UzSyllable-0.0.5.tar.gz --markdown 20230415/U/UzSyllable/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 06:16:41] INFO root fetch - processPackages [UzSyllable]: Start processing: databricks-sql-connector
+[2023-04-15 06:16:41] INFO root fetch - main [MainThread]: End processing [UzSyllable]: success
+[2023-04-15 06:16:41] INFO root fetch - processPackages [databricks-sql-connector]: New version: [2.5.0] Old Version: [2.4.1]
+[2023-04-15 06:16:41] INFO root fetch - processPackages [drs-compliance]: Start processing: python-geoacumen-city
+[2023-04-15 06:16:41] INFO root fetch - main [MainThread]: End processing [drs-compliance]: success
+[2023-04-15 06:16:41] INFO root fetch - processPackages [python-geoacumen-city]: New version: [2023.4.15] Old Version: [2023.3.15]
+[2023-04-15 06:16:41] INFO root fetch - processPackages [databricks-sql-connector]: Downloading https://files.pythonhosted.org/packages/34/e1/129e6b2a316c6d2cf3d8702de405be86b6741f2bc43dafd90dba2b05894d/databricks_sql_connector-2.4.1.tar.gz
+[2023-04-15 06:16:42] INFO root fetch - processPackages [python-geoacumen-city]: Downloading https://files.pythonhosted.org/packages/9b/85/e71687013a9e60827d27d289f2ac324c394cfa97b3684ba1fd0cfa2176ae/python-geoacumen-city-2023.3.15.tar.gz
+[2023-04-15 06:16:42] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: Start processing: geopro
+[2023-04-15 06:16:42] INFO root fetch - main [MainThread]: End processing [odoo-addon-helpdesk-mgmt]: success
+[2023-04-15 06:16:42] WARNING root fetch - processPackages [geopro]: Skipping, unable to determine old version
+[2023-04-15 06:16:42] INFO root fetch - main [MainThread]: End processing [geopro] error
+[2023-04-15 06:16:42] WARNING root fetch - processPackages [python-geoacumen-city]: Skipping package: exceeds size limit 47547250>=10485760
+[2023-04-15 06:16:42] INFO root fetch - main [MainThread]: End processing [python-geoacumen-city] error
+[2023-04-15 06:16:42] INFO root fetch - main [MainThread]: End processing [odoo14-addon-helpdesk-mgmt]: success
+[2023-04-15 06:16:42] INFO root fetch - processPackages [databricks-sql-connector]: Downloading https://files.pythonhosted.org/packages/c6/99/5311639e1fdbf88668e219a8a6acd387c7ea1b593fd1ec7b22d2dead99af/databricks_sql_connector-2.5.0.tar.gz
+[2023-04-15 06:16:42] INFO root fetch - processPackages [databricks-sql-connector]: executing diffoscope
+[2023-04-15 06:16:42] INFO root fetch - processPackages [databricks-sql-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databricks_sql_connector-2.4.1.tar.gz tmp/databricks_sql_connector-2.5.0.tar.gz --markdown 20230415/d/databricks-sql-connector/2.4.1-2.5.0/diff.md --exclude *.pyd
+[2023-04-15 06:16:43] INFO root fetch - main [MainThread]: End processing [databricks-sql-connector]: success
+[2023-04-15 06:18:53] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
+[2023-04-15 06:18:53] INFO root fetch - main [MainThread]: Store serial: [17716413]
