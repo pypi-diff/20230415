@@ -17221,3 +17221,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 17:17:44] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-15 17:17:45] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-15 17:17:45] INFO root fetch - main [MainThread]: Store serial: [17719812]
+[2023-04-15 17:22:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719812]
+[2023-04-15 17:22:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 17:22:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Track-Lost-Phone
+[2023-04-15 17:22:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatgpt-tool-hub
+[2023-04-15 17:22:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: poe-terminal-chat
+[2023-04-15 17:22:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: importlib-metadata
+[2023-04-15 17:22:54] WARNING root fetch - processPackages [poe-terminal-chat]: Skipping, unable to determine old version
+[2023-04-15 17:22:54] INFO root fetch - main [MainThread]: End processing [poe-terminal-chat] error
+[2023-04-15 17:22:54] INFO root fetch - processPackages [chatgpt-tool-hub]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-15 17:22:54] WARNING root fetch - processPackages [Track-Lost-Phone]: Skipping, unable to determine old version
+[2023-04-15 17:22:54] INFO root fetch - main [MainThread]: End processing [Track-Lost-Phone] error
+[2023-04-15 17:22:54] INFO root fetch - processPackages [importlib-metadata]: New version: [6.4.1] Old Version: [6.4.0]
+[2023-04-15 17:22:54] INFO root fetch - processPackages [importlib-metadata]: Downloading https://files.pythonhosted.org/packages/20/fc/a0e728307f38609ef849d813c95dc974d344a3d395f62013ddcd8fbe0bfe/importlib_metadata-6.4.1.tar.gz
+[2023-04-15 17:22:54] INFO root fetch - processPackages [chatgpt-tool-hub]: Downloading https://files.pythonhosted.org/packages/13/dc/a322fad76aed61d789c7742752c8108cfadddea8dd564f973f9ce45226bb/chatgpt-tool-hub-0.3.7.tar.gz
+[2023-04-15 17:22:54] INFO root fetch - processPackages [importlib-metadata]: executing diffoscope
+[2023-04-15 17:22:54] INFO root fetch - processPackages [importlib-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/importlib_metadata-6.4.0.tar.gz tmp/importlib_metadata-6.4.1.tar.gz --markdown 20230415/i/importlib-metadata/6.4.0-6.4.1/diff.md --exclude *.pyd
+[2023-04-15 17:22:54] INFO root fetch - processPackages [chatgpt-tool-hub]: Downloading https://files.pythonhosted.org/packages/86/3a/d0cca6a3476933cbd066654c8b73a225e320e294252a796bb8c11aabe89a/chatgpt-tool-hub-0.3.9.tar.gz
+[2023-04-15 17:22:55] INFO root fetch - processPackages [chatgpt-tool-hub]: executing diffoscope
+[2023-04-15 17:22:55] INFO root fetch - processPackages [chatgpt-tool-hub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt-tool-hub-0.3.7.tar.gz tmp/chatgpt-tool-hub-0.3.9.tar.gz --markdown 20230415/c/chatgpt-tool-hub/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-15 17:22:56] INFO root fetch - main [MainThread]: End processing [importlib-metadata]: success
+[2023-04-15 17:22:56] INFO root fetch - main [MainThread]: End processing [chatgpt-tool-hub]: success
+[2023-04-15 17:22:56] INFO root fetch - main [MainThread]: Store serial: [17719826]
