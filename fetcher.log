@@ -5041,3 +5041,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 05:45:30] INFO root fetch - main [MainThread]: End processing [rasterarea]: success
 [2023-04-15 05:45:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-currency-rate-update]: success
 [2023-04-15 05:45:30] INFO root fetch - main [MainThread]: Store serial: [17716300]
+[2023-04-15 05:50:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716300]
+[2023-04-15 05:50:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-15 05:50:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipen
+[2023-04-15 05:50:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plantao-noticias-b3
+[2023-04-15 05:50:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drs-compliance
+[2023-04-15 05:50:37] INFO root fetch - processPackages [pipen]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-15 05:50:37] INFO root fetch - processPackages [plantao-noticias-b3]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 05:50:37] INFO root fetch - processPackages [drs-compliance]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-15 05:50:37] INFO root fetch - processPackages [plantao-noticias-b3]: Downloading https://files.pythonhosted.org/packages/30/31/5d799feff324f2a12754bff80d36f00ff1c2ab3e3cb6c604e6d9fa583388/plantao_noticias_b3-0.1.0.tar.gz
+[2023-04-15 05:50:37] INFO root fetch - processPackages [drs-compliance]: Downloading https://files.pythonhosted.org/packages/a7/7b/2adc8cb18916c9d241684c37a4cd4065d137f5a6a10f163fae580764f310/drs-compliance-1.0.5.tar.gz
+[2023-04-15 05:50:37] INFO root fetch - processPackages [drs-compliance]: executing diffoscope
+[2023-04-15 05:50:37] INFO root fetch - processPackages [drs-compliance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drs-compliance-1.0.4.tar.gz tmp/drs-compliance-1.0.5.tar.gz --markdown 20230415/d/drs-compliance/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-15 05:50:37] INFO root fetch - processPackages [pipen]: Downloading https://files.pythonhosted.org/packages/c0/3b/014ef0307158320606ebc4f1ad7c53355628b01e1118ba426a3b33e0597d/pipen-0.9.3.tar.gz
+[2023-04-15 05:50:37] INFO root fetch - processPackages [plantao-noticias-b3]: Downloading https://files.pythonhosted.org/packages/b3/4b/109d997d24dfdb26c0da195a98eae9be07753736e4599edf99e147ca2f31/plantao_noticias_b3-0.1.1.tar.gz
+[2023-04-15 05:50:37] INFO root fetch - processPackages [pipen]: executing diffoscope
+[2023-04-15 05:50:37] INFO root fetch - processPackages [pipen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen-0.9.2.tar.gz tmp/pipen-0.9.3.tar.gz --markdown 20230415/p/pipen/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-15 05:50:37] INFO root fetch - processPackages [plantao-noticias-b3]: executing diffoscope
+[2023-04-15 05:50:37] INFO root fetch - processPackages [plantao-noticias-b3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plantao_noticias_b3-0.1.0.tar.gz tmp/plantao_noticias_b3-0.1.1.tar.gz --markdown 20230415/p/plantao-noticias-b3/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 05:50:38] INFO root fetch - main [MainThread]: End processing [drs-compliance]: success
+[2023-04-15 05:50:38] INFO root fetch - main [MainThread]: End processing [pipen]: success
+[2023-04-15 05:50:38] INFO root fetch - main [MainThread]: End processing [plantao-noticias-b3]: success
+[2023-04-15 05:50:38] INFO root fetch - main [MainThread]: Store serial: [17716310]
