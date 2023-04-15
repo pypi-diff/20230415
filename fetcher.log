@@ -1205,3 +1205,69 @@
 [2023-04-15 02:01:49] INFO root fetch - main [MainThread]: End processing [cbra]: success
 [2023-04-15 02:01:50] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2023-04-15 02:01:50] INFO root fetch - main [MainThread]: Store serial: [17714039]
+[2023-04-15 02:06:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17714039]
+[2023-04-15 02:06:56] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-15 02:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxutils-nightly
+[2023-04-15 02:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-bus-client
+[2023-04-15 02:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simple-hierarchical-transformer
+[2023-04-15 02:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchlayers-nightly
+[2023-04-15 02:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: steam-market-history
+[2023-04-15 02:06:56] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230414] Old Version: [0.0.8.dev20230413]
+[2023-04-15 02:06:56] INFO root fetch - processPackages [ovos-bus-client]: New version: [0.0.3a9] Old Version: [0.0.3a8]
+[2023-04-15 02:06:56] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 02:06:56] INFO root fetch - processPackages [steam-market-history]: New version: [3.0.4] Old Version: [3.0.3]
+[2023-04-15 02:06:56] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1681430811] Old Version: [1681344396]
+[2023-04-15 02:06:56] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-15 02:06:56] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.8.tar.gz tmp/simple-hierarchical-transformer-0.0.9.tar.gz --markdown 20230415/s/simple-hierarchical-transformer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 02:06:56] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-04-15 02:06:56] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1681344396.tar.gz tmp/torchlayers-nightly-1681430811.tar.gz --markdown 20230415/t/torchlayers-nightly/1681344396-1681430811/diff.md --exclude *.pyd
+[2023-04-15 02:06:56] INFO root fetch - processPackages [steam-market-history]: Downloading https://files.pythonhosted.org/packages/c1/00/29f9d4a0c14b0680b957df704fc2960c5543ff041a0c478af8eb6b7af145/steam-market-history-3.0.3.tar.gz
+[2023-04-15 02:06:56] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/42/6d/17649d7a63c75facd2ba5439645f3f67e8757c24c42ddb165924d86fbc7d/jaxutils-nightly-0.0.8.dev20230414.tar.gz
+[2023-04-15 02:06:57] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-04-15 02:06:57] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230413.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230414.tar.gz --markdown 20230415/j/jaxutils-nightly/0.0.8.dev20230413-0.0.8.dev20230414/diff.md --exclude *.pyd
+[2023-04-15 02:06:57] INFO root fetch - processPackages [ovos-bus-client]: executing diffoscope
+[2023-04-15 02:06:57] INFO root fetch - processPackages [ovos-bus-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_bus_client-0.0.3a8-py3-none-any.whl.zip tmp/ovos_bus_client-0.0.3a9-py3-none-any.whl.zip --markdown 20230415/o/ovos-bus-client/0.0.3a8-0.0.3a9/diff.md --exclude *.pyd
+[2023-04-15 02:06:57] INFO root fetch - processPackages [steam-market-history]: Downloading https://files.pythonhosted.org/packages/b8/9c/37d053e1043ef408e02d88be8be5af7c4fe4bef9dccc216faae0319ef28a/steam_market_history-3.0.4.tar.gz
+[2023-04-15 02:06:57] INFO root fetch - processPackages [steam-market-history]: executing diffoscope
+[2023-04-15 02:06:57] INFO root fetch - processPackages [steam-market-history]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steam-market-history-3.0.3.tar.gz tmp/steam_market_history-3.0.4.tar.gz --markdown 20230415/s/steam-market-history/3.0.3-3.0.4/diff.md --exclude *.pyd
+[2023-04-15 02:06:57] INFO root fetch - processPackages [simple-hierarchical-transformer]: Start processing: metdig
+[2023-04-15 02:06:57] INFO root fetch - main [MainThread]: End processing [simple-hierarchical-transformer]: success
+[2023-04-15 02:06:57] INFO root fetch - processPackages [metdig]: New version: [0.1.9.9.9] Old Version: [0.1.9.9.8]
+[2023-04-15 02:06:58] INFO root fetch - processPackages [metdig]: executing diffoscope
+[2023-04-15 02:06:58] INFO root fetch - processPackages [metdig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metdig-0.1.9.9.8-py3-none-any.whl.zip tmp/metdig-0.1.9.9.9-py3-none-any.whl.zip --markdown 20230415/m/metdig/0.1.9.9.8-0.1.9.9.9/diff.md --exclude *.pyd
+[2023-04-15 02:06:58] INFO root fetch - processPackages [jaxutils-nightly]: Start processing: cdk-aws-discord-notifiers
+[2023-04-15 02:06:58] INFO root fetch - processPackages [torchlayers-nightly]: Start processing: leeger
+[2023-04-15 02:06:58] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-04-15 02:06:58] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-04-15 02:06:58] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 02:06:58] INFO root fetch - processPackages [leeger]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-04-15 02:06:58] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-04-15 02:06:58] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230415/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 02:06:58] INFO root fetch - processPackages [ovos-bus-client]: Start processing: iohub
+[2023-04-15 02:06:58] INFO root fetch - main [MainThread]: End processing [ovos-bus-client]: success
+[2023-04-15 02:06:58] WARNING root fetch - processPackages [iohub]: Skipping, unable to determine old version
+[2023-04-15 02:06:58] INFO root fetch - processPackages [iohub]: Start processing: NEURON-nightly
+[2023-04-15 02:06:58] INFO root fetch - main [MainThread]: End processing [iohub] error
+[2023-04-15 02:06:58] INFO root fetch - processPackages [steam-market-history]: Start processing: openbb-nightly
+[2023-04-15 02:06:58] INFO root fetch - main [MainThread]: End processing [steam-market-history]: success
+[2023-04-15 02:06:58] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.0rc2.dev20230414] Old Version: [3.0.0rc1.dev20230413]
+[2023-04-15 02:06:58] INFO root fetch - processPackages [leeger]: Downloading https://files.pythonhosted.org/packages/58/3f/4746623169843bb878d9e7af5e2c83d193b1a4b76dac225fb4c036998c11/leeger-2.2.0.tar.gz
+[2023-04-15 02:06:58] INFO root fetch - processPackages [NEURON-nightly]: New version: [9.0.dev1331] Old Version: [9.0.dev1330]
+[2023-04-15 02:06:58] INFO root fetch - processPackages [leeger]: executing diffoscope
+[2023-04-15 02:06:58] INFO root fetch - processPackages [leeger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leeger-2.1.1.tar.gz tmp/leeger-2.2.0.tar.gz --markdown 20230415/l/leeger/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-04-15 02:06:58] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/2b/77/e2f5dcc6c44fb3831604f51948bf2d06812de0a4b051ce1ba5a6daff3ade/openbb_nightly-3.0.0rc2.dev20230414.tar.gz
+[2023-04-15 02:06:58] INFO root fetch - processPackages [NEURON-nightly]: Downloading https://files.pythonhosted.org/packages/72/1b/13a4e2e851e71310b704f5c7343d97d11e508737e1f46a6b445658a306f2/NEURON_nightly-9.0.dev1330-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 02:06:58] WARNING root fetch - processPackages [NEURON-nightly]: Skipping package: exceeds size limit 13186619>=10485760
+[2023-04-15 02:06:58] INFO root fetch - processPackages [NEURON-nightly]: Start processing: constructs
+[2023-04-15 02:06:58] INFO root fetch - main [MainThread]: End processing [NEURON-nightly] error
+[2023-04-15 02:06:58] INFO root fetch - processPackages [constructs]: New version: [3.4.99] Old Version: [3.4.98]
+[2023-04-15 02:06:58] INFO root fetch - processPackages [constructs]: executing diffoscope
+[2023-04-15 02:06:58] INFO root fetch - processPackages [constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constructs-3.4.98.tar.gz tmp/constructs-3.4.99.tar.gz --markdown 20230415/c/constructs/3.4.98-3.4.99/diff.md --exclude *.pyd
+[2023-04-15 02:06:59] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
+[2023-04-15 02:06:59] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-04-15 02:06:59] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.0rc1.dev20230413.tar.gz tmp/openbb_nightly-3.0.0rc2.dev20230414.tar.gz --markdown 20230415/o/openbb-nightly/3.0.0rc1.dev20230413-3.0.0rc2.dev20230414/diff.md --exclude *.pyd
+[2023-04-15 02:06:59] INFO root fetch - main [MainThread]: End processing [constructs]: success
+[2023-04-15 02:07:00] INFO root fetch - main [MainThread]: End processing [leeger]: success
+[2023-04-15 02:07:09] INFO root fetch - main [MainThread]: End processing [metdig]: success
+[2023-04-15 02:07:13] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2023-04-15 02:07:13] INFO root fetch - main [MainThread]: Store serial: [17714075]
