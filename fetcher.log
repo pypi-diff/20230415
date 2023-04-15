@@ -5107,3 +5107,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 06:00:56] INFO root fetch - main [MainThread]: End processing [objectory]: success
 [2023-04-15 06:00:56] INFO root fetch - main [MainThread]: End processing [datajunction]: success
 [2023-04-15 06:00:56] INFO root fetch - main [MainThread]: Store serial: [17716327]
+[2023-04-15 06:05:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716327]
+[2023-04-15 06:06:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 06:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: valaw
+[2023-04-15 06:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pavegen
+[2023-04-15 06:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: idealgeo
+[2023-04-15 06:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zhcode
+[2023-04-15 06:06:03] INFO root fetch - processPackages [valaw]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 06:06:03] ERROR root fetch - processPackages [idealgeo]: Unable to get metadata: No such project 'idealgeo'
+[2023-04-15 06:06:03] INFO root fetch - main [MainThread]: End processing [idealgeo] error
+[2023-04-15 06:06:03] WARNING root fetch - processPackages [zhcode]: Skipping, unable to determine old version
+[2023-04-15 06:06:03] INFO root fetch - main [MainThread]: End processing [zhcode] error
+[2023-04-15 06:06:03] WARNING root fetch - processPackages [pavegen]: Skipping, unable to determine old version
+[2023-04-15 06:06:03] INFO root fetch - main [MainThread]: End processing [pavegen] error
+[2023-04-15 06:06:04] INFO root fetch - processPackages [valaw]: Downloading https://files.pythonhosted.org/packages/f0/45/ef924ae7455d221e7395c40089322579cdadf7448045bbfc41465c20e446/valaw-0.0.4.tar.gz
+[2023-04-15 06:06:04] INFO root fetch - processPackages [valaw]: executing diffoscope
+[2023-04-15 06:06:04] INFO root fetch - processPackages [valaw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valaw-0.0.3.tar.gz tmp/valaw-0.0.4.tar.gz --markdown 20230415/v/valaw/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 06:06:05] INFO root fetch - main [MainThread]: End processing [valaw]: success
+[2023-04-15 06:06:05] INFO root fetch - main [MainThread]: Store serial: [17716341]
