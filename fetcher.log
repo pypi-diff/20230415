@@ -1444,3 +1444,86 @@
 [2023-04-15 02:17:43] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
 [2023-04-15 02:17:43] INFO root fetch - main [MainThread]: End processing [s3tethys]: success
 [2023-04-15 02:17:43] INFO root fetch - main [MainThread]: Store serial: [17714213]
+[2023-04-15 02:22:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17714213]
+[2023-04-15 02:22:50] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-15 02:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-aurora-globaldatabase
+[2023-04-15 02:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-cr-constructs
+[2023-04-15 02:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdklabs.cdk-ethereum-node
+[2023-04-15 02:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: np-queuey
+[2023-04-15 02:22:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyGenieScript
+[2023-04-15 02:22:50] INFO root fetch - processPackages [np-queuey]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 02:22:50] INFO root fetch - processPackages [pyGenieScript]: New version: [0.0.0b9] Old Version: [0.0.0b8]
+[2023-04-15 02:22:50] INFO root fetch - processPackages [cdk-cr-constructs]: New version: [2.1.91] Old Version: [2.1.90]
+[2023-04-15 02:22:50] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 02:22:50] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-15 02:22:50] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2023-04-15 02:22:50] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20230415/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 02:22:50] INFO root fetch - processPackages [np-queuey]: Downloading https://files.pythonhosted.org/packages/22/09/73a07e163d239250829b6ba65a340200484c4842d9a5a47cdfe9fd278208/np_queuey-0.1.0.tar.gz
+[2023-04-15 02:22:50] INFO root fetch - processPackages [cdk-cr-constructs]: Downloading https://files.pythonhosted.org/packages/74/36/89a36c3019e228d4c971827d1478a3a39d10716ebee663f08a03a0b0ad5c/cdk-cr-constructs-2.1.90.tar.gz
+[2023-04-15 02:22:50] WARNING root fetch - processPackages [cdk-cr-constructs]: Skipping package: exceeds size limit 12876404>=10485760
+[2023-04-15 02:22:50] INFO root fetch - processPackages [cdk-cr-constructs]: Start processing: synctera-client
+[2023-04-15 02:22:50] INFO root fetch - main [MainThread]: End processing [cdk-cr-constructs] error
+[2023-04-15 02:22:50] INFO root fetch - processPackages [synctera-client]: New version: [0.46.0] Old Version: [0.45.0]
+[2023-04-15 02:22:50] INFO root fetch - processPackages [np-queuey]: Downloading https://files.pythonhosted.org/packages/f5/39/8f1e050a8513262419bd5e50a0b39abddf73ce3dbe0c2d5cb2580040cc5e/np_queuey-0.1.1.tar.gz
+[2023-04-15 02:22:50] INFO root fetch - processPackages [pyGenieScript]: executing diffoscope
+[2023-04-15 02:22:50] INFO root fetch - processPackages [pyGenieScript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGenieScript-0.0.0b8.tar.gz tmp/pyGenieScript-0.0.0b9.tar.gz --markdown 20230415/p/pyGenieScript/0.0.0b8-0.0.0b9/diff.md --exclude *.pyd
+[2023-04-15 02:22:51] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2023-04-15 02:22:51] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20230415/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-15 02:22:51] INFO root fetch - processPackages [synctera-client]: Downloading https://files.pythonhosted.org/packages/86/d4/eae8d9fc23e38d2017c828ae769174453ff394346fbedd0ba6c5d901a8ed/synctera_client-0.46.0.tar.gz
+[2023-04-15 02:22:51] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-04-15 02:22:51] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.1.0.tar.gz tmp/np_queuey-0.1.1.tar.gz --markdown 20230415/n/np-queuey/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 02:22:51] INFO root fetch - processPackages [synctera-client]: executing diffoscope
+[2023-04-15 02:22:51] INFO root fetch - processPackages [synctera-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synctera_client-0.45.0.tar.gz tmp/synctera_client-0.46.0.tar.gz --markdown 20230415/s/synctera-client/0.45.0-0.46.0/diff.md --exclude *.pyd
+[2023-04-15 02:22:51] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Start processing: aws-cdk.asset-node-proxy-agent-v5
+[2023-04-15 02:22:51] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2023-04-15 02:22:51] INFO root fetch - processPackages [aws-cdk.asset-node-proxy-agent-v5]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-15 02:22:51] INFO root fetch - processPackages [aws-cdk.asset-node-proxy-agent-v5]: executing diffoscope
+[2023-04-15 02:22:51] INFO root fetch - processPackages [aws-cdk.asset-node-proxy-agent-v5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-cdk.asset-node-proxy-agent-v5-2.0.98.tar.gz tmp/aws-cdk.asset-node-proxy-agent-v5-2.0.99.tar.gz --markdown 20230415/a/aws-cdk.asset-node-proxy-agent-v5/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-15 02:22:52] INFO root fetch - processPackages [pyGenieScript]: Start processing: aws-cdk.asset-awscli-v2
+[2023-04-15 02:22:52] INFO root fetch - main [MainThread]: End processing [pyGenieScript]: success
+[2023-04-15 02:22:52] INFO root fetch - processPackages [aws-cdk.asset-awscli-v2]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-15 02:22:52] INFO root fetch - processPackages [aws-cdk.asset-awscli-v2]: Downloading https://files.pythonhosted.org/packages/ff/ea/d3ff38a542e799992724e66182e34e344f1ad60cea450624e2d48ee7303b/aws-cdk.asset-awscli-v2-2.0.8.tar.gz
+[2023-04-15 02:22:52] WARNING root fetch - processPackages [aws-cdk.asset-awscli-v2]: Skipping package: exceeds size limit 53149528>=10485760
+[2023-04-15 02:22:52] INFO root fetch - processPackages [aws-cdk.asset-awscli-v2]: Start processing: fakemap
+[2023-04-15 02:22:52] INFO root fetch - main [MainThread]: End processing [aws-cdk.asset-awscli-v2] error
+[2023-04-15 02:22:52] INFO root fetch - processPackages [np-queuey]: Start processing: cdk-docker-image-deployment
+[2023-04-15 02:22:52] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-04-15 02:22:52] INFO root fetch - processPackages [fakemap]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 02:22:52] INFO root fetch - processPackages [cdk-docker-image-deployment]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 02:22:52] INFO root fetch - processPackages [cdk-docker-image-deployment]: executing diffoscope
+[2023-04-15 02:22:52] INFO root fetch - processPackages [cdk-docker-image-deployment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-docker-image-deployment-0.0.98.tar.gz tmp/cdk-docker-image-deployment-0.0.99.tar.gz --markdown 20230415/c/cdk-docker-image-deployment/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 02:22:52] INFO root fetch - processPackages [fakemap]: Downloading https://files.pythonhosted.org/packages/fc/5b/65cfc23a571a118c526ae3a9b40729e42540a544bea9495018c0029cdf05/fakemap-0.0.2.tar.gz
+[2023-04-15 02:22:52] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Start processing: cdklabs.ecs-codedeploy
+[2023-04-15 02:22:52] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2023-04-15 02:22:52] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 02:22:52] INFO root fetch - processPackages [fakemap]: Downloading https://files.pythonhosted.org/packages/05/0b/d2fbf2acee90657559506e329828fbf3c300c969575b9890eea6dc6b9b1f/fakemap-0.0.3.tar.gz
+[2023-04-15 02:22:52] INFO root fetch - processPackages [fakemap]: executing diffoscope
+[2023-04-15 02:22:52] INFO root fetch - processPackages [fakemap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fakemap-0.0.2.tar.gz tmp/fakemap-0.0.3.tar.gz --markdown 20230415/f/fakemap/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 02:22:52] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: executing diffoscope
+[2023-04-15 02:22:52] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.ecs-codedeploy-0.0.98.tar.gz tmp/cdklabs.ecs-codedeploy-0.0.99.tar.gz --markdown 20230415/c/cdklabs.ecs-codedeploy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 02:22:53] INFO root fetch - processPackages [fakemap]: Start processing: a-pandas-ex-easy-loc
+[2023-04-15 02:22:53] INFO root fetch - main [MainThread]: End processing [fakemap]: success
+[2023-04-15 02:22:53] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: New version: [0.15] Old Version: [0.14]
+[2023-04-15 02:22:53] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: Start processing: tap-dbt
+[2023-04-15 02:22:53] INFO root fetch - main [MainThread]: End processing [cdklabs.ecs-codedeploy]: success
+[2023-04-15 02:22:53] INFO root fetch - processPackages [tap-dbt]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-15 02:22:53] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: Downloading https://files.pythonhosted.org/packages/8f/40/6a34808583f5e942dd94f590863a70d89a339ae92d6f171c8f533064a3ae/a_pandas_ex_easy_loc-0.15.tar.gz
+[2023-04-15 02:22:53] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: executing diffoscope
+[2023-04-15 02:22:53] INFO root fetch - processPackages [a-pandas-ex-easy-loc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a_pandas_ex_easy_loc-0.14.tar.gz tmp/a_pandas_ex_easy_loc-0.15.tar.gz --markdown 20230415/a/a-pandas-ex-easy-loc/0.14-0.15/diff.md --exclude *.pyd
+[2023-04-15 02:22:54] INFO root fetch - processPackages [tap-dbt]: Downloading https://files.pythonhosted.org/packages/ad/37/8dcde5ad86a07297353d92f1d809b8604a9455838505bffe9258e82338bb/tap_dbt-0.4.0.tar.gz
+[2023-04-15 02:22:54] INFO root fetch - processPackages [cdk-docker-image-deployment]: Start processing: pyArango
+[2023-04-15 02:22:54] INFO root fetch - main [MainThread]: End processing [cdk-docker-image-deployment]: success
+[2023-04-15 02:22:54] INFO root fetch - processPackages [pyArango]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-15 02:22:54] INFO root fetch - processPackages [pyArango]: Downloading https://files.pythonhosted.org/packages/9f/0e/e1b22ae0020ab9da9d481b42c426beac204ab79e8628267d135f16e09ad0/pyArango-2.0.1.tar.gz
+[2023-04-15 02:22:54] INFO root fetch - processPackages [tap-dbt]: Downloading https://files.pythonhosted.org/packages/49/24/1959b6dbac8a4dc3b7a8ad5c25ac4e5c6992e13903a867156624bd92490b/tap_dbt-0.5.0.tar.gz
+[2023-04-15 02:22:54] INFO root fetch - processPackages [tap-dbt]: executing diffoscope
+[2023-04-15 02:22:54] INFO root fetch - processPackages [tap-dbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_dbt-0.4.0.tar.gz tmp/tap_dbt-0.5.0.tar.gz --markdown 20230415/t/tap-dbt/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-15 02:22:54] INFO root fetch - processPackages [pyArango]: Downloading https://files.pythonhosted.org/packages/86/09/72ec95061917165f38e29eabf4a0d78be92f6a64bafea695d2049b1f16c5/pyArango-2.0.2.tar.gz
+[2023-04-15 02:22:54] INFO root fetch - processPackages [pyArango]: executing diffoscope
+[2023-04-15 02:22:54] INFO root fetch - processPackages [pyArango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyArango-2.0.1.tar.gz tmp/pyArango-2.0.2.tar.gz --markdown 20230415/p/pyArango/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-15 02:22:55] INFO root fetch - main [MainThread]: End processing [a-pandas-ex-easy-loc]: success
+[2023-04-15 02:22:55] INFO root fetch - main [MainThread]: End processing [aws-cdk.asset-node-proxy-agent-v5]: success
+[2023-04-15 02:22:55] INFO root fetch - main [MainThread]: End processing [tap-dbt]: success
+[2023-04-15 02:22:55] INFO root fetch - main [MainThread]: End processing [pyArango]: success
+[2023-04-15 02:23:49] INFO root fetch - main [MainThread]: End processing [synctera-client]: success
+[2023-04-15 02:23:49] INFO root fetch - main [MainThread]: Store serial: [17714257]
