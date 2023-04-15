@@ -18405,3 +18405,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 19:42:34] INFO root fetch - main [MainThread]: End processing [aistac-foundation]: success
 [2023-04-15 19:43:47] INFO root fetch - main [MainThread]: End processing [mtap]: success
 [2023-04-15 19:43:47] INFO root fetch - main [MainThread]: Store serial: [17720647]
+[2023-04-15 19:48:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720647]
+[2023-04-15 19:48:58] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-15 19:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: not1mm
+[2023-04-15 19:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vollseg
+[2023-04-15 19:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jupyterhub-tmpnativeauthenticator
+[2023-04-15 19:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RFTLib
+[2023-04-15 19:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fullctl
+[2023-04-15 19:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jupyterhub-tmpnativeauthenticator
+[2023-04-15 19:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mmg
+[2023-04-15 19:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pydtl-relativepath
+[2023-04-15 19:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyabsa
+[2023-04-15 19:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nonebot-plugin-l4d2-server
+[2023-04-15 19:48:58] INFO root fetch - processPackages [not1mm]: New version: [23.4.6] Old Version: [23.4.5]
+[2023-04-15 19:48:58] INFO root fetch - processPackages [fullctl]: New version: [1.2.0] Old Version: [0.3.0]
+[2023-04-15 19:48:58] INFO root fetch - processPackages [mmg]: New version: [1.0a2] Old Version: [1.0a1]
+[2023-04-15 19:48:58] WARNING root fetch - processPackages [RFTLib]: Skipping, unable to determine old version
+[2023-04-15 19:48:58] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-15 19:48:58] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-15 19:48:58] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-15 19:48:58] INFO root fetch - main [MainThread]: End processing [RFTLib] error
+[2023-04-15 19:48:58] INFO root fetch - processPackages [pydtl-relativepath]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-15 19:48:58] INFO root fetch - processPackages [pyabsa]: New version: [2.3.0] Old Version: [2.2.3]
+[2023-04-15 19:48:58] INFO root fetch - processPackages [pyabsa]: executing diffoscope
+[2023-04-15 19:48:58] INFO root fetch - processPackages [pyabsa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyabsa-2.2.3-py3-none-any.whl.zip tmp/pyabsa-2.3.0-py3-none-any.whl.zip --markdown 20230415/p/pyabsa/2.2.3-2.3.0/diff.md --exclude *.pyd
+[2023-04-15 19:48:58] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Downloading https://files.pythonhosted.org/packages/7f/7f/e545ef7f3f0585c46fa2b78637dbd6cc4592dd5cfc5207cb109efee36c63/jupyterhub-tmpnativeauthenticator-1.0.6.tar.gz
+[2023-04-15 19:48:58] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Downloading https://files.pythonhosted.org/packages/7f/7f/e545ef7f3f0585c46fa2b78637dbd6cc4592dd5cfc5207cb109efee36c63/jupyterhub-tmpnativeauthenticator-1.0.6.tar.gz
+[2023-04-15 19:48:58] INFO root fetch - processPackages [not1mm]: Downloading https://files.pythonhosted.org/packages/85/f4/fe5feb66b2b8ee31edcd57eee2c5a1f33e3e08e2b489b67af8e625905e7d/not1mm-23.4.5.tar.gz
+[2023-04-15 19:48:58] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-04-15 19:48:58] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-15 19:48:58] INFO root fetch - processPackages [mmg]: Downloading https://files.pythonhosted.org/packages/75/24/adf8b96f8479801b15af3351c87dd188444b256ea9bdba86032c924d8faa/mmg-1.0a1.tar.gz
+[2023-04-15 19:48:58] INFO root fetch - processPackages [pydtl-relativepath]: Downloading https://files.pythonhosted.org/packages/88/90/8f778d3389f9b1b4492c8f9c3ea412df2d03b259c2130a1c9c177d6ddc9e/pydtl_relativepath-0.0.1.tar.gz
+[2023-04-15 19:48:58] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-15 19:48:58] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-15 19:48:58] INFO root fetch - processPackages [fullctl]: Downloading https://files.pythonhosted.org/packages/77/de/e42f34c17e52c3d73bc5e7131276e5f61ecc22ef15c1e215a0160c31a48e/fullctl-1.2.0.tar.gz
+[2023-04-15 19:48:58] INFO root fetch - processPackages [pydtl-relativepath]: Downloading https://files.pythonhosted.org/packages/d4/ba/41fbdfe69ca7646403c0f019280b3899460d95825bb63094f9a456a4fc6d/pydtl_relativepath-0.1.0.tar.gz
+[2023-04-15 19:48:58] INFO root fetch - processPackages [fullctl]: executing diffoscope
+[2023-04-15 19:48:58] INFO root fetch - processPackages [fullctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fullctl-0.3.0.tar.gz tmp/fullctl-1.2.0.tar.gz --markdown 20230415/f/fullctl/0.3.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-15 19:48:58] INFO root fetch - processPackages [not1mm]: Downloading https://files.pythonhosted.org/packages/91/02/6374754c865e6079e8664c4e0cfc815e50a70b8e46d1a1864345ac56612c/not1mm-23.4.6.tar.gz
+[2023-04-15 19:48:58] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: Downloading https://files.pythonhosted.org/packages/29/62/f01b4f0353a09dac3a0fc208f9b74a0e4f2a1a2408a7d1e9622f7e864c5f/nonebot_plugin_l4d2_server-0.4.8.tar.gz
+[2023-04-15 19:48:58] INFO root fetch - processPackages [mmg]: Downloading https://files.pythonhosted.org/packages/67/c2/d65e2ae398f9abb088470e79245db35326cbbd232c6c68bc96c7929dce1d/mmg-1.0a2.tar.gz
+[2023-04-15 19:48:59] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-04-15 19:48:59] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.4.5.tar.gz tmp/not1mm-23.4.6.tar.gz --markdown 20230415/n/not1mm/23.4.5-23.4.6/diff.md --exclude *.pyd
+[2023-04-15 19:48:59] INFO root fetch - processPackages [pydtl-relativepath]: executing diffoscope
+[2023-04-15 19:48:59] INFO root fetch - processPackages [pydtl-relativepath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydtl_relativepath-0.0.1.tar.gz tmp/pydtl_relativepath-0.1.0.tar.gz --markdown 20230415/p/pydtl-relativepath/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-15 19:48:59] INFO root fetch - processPackages [mmg]: executing diffoscope
+[2023-04-15 19:48:59] INFO root fetch - processPackages [mmg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmg-1.0a1.tar.gz tmp/mmg-1.0a2.tar.gz --markdown 20230415/m/mmg/1.0a1-1.0a2/diff.md --exclude *.pyd
+[2023-04-15 19:48:59] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: executing diffoscope
+[2023-04-15 19:48:59] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_l4d2_server-0.4.7.tar.gz tmp/nonebot_plugin_l4d2_server-0.4.8.tar.gz --markdown 20230415/n/nonebot-plugin-l4d2-server/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-04-15 19:48:59] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Downloading https://files.pythonhosted.org/packages/91/57/2388d0c24b0246f616da58f9c36ed76fa2abfaa32141eedbe02979257de1/jupyterhub-tmpnativeauthenticator-1.0.7.tar.gz
+[2023-04-15 19:48:59] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Downloading https://files.pythonhosted.org/packages/91/57/2388d0c24b0246f616da58f9c36ed76fa2abfaa32141eedbe02979257de1/jupyterhub-tmpnativeauthenticator-1.0.7.tar.gz
+[2023-04-15 19:48:59] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: executing diffoscope
+[2023-04-15 19:48:59] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterhub-tmpnativeauthenticator-1.0.6.tar.gz tmp/jupyterhub-tmpnativeauthenticator-1.0.7.tar.gz --markdown 20230415/j/jupyterhub-tmpnativeauthenticator/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-15 19:48:59] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: executing diffoscope
+[2023-04-15 19:48:59] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterhub-tmpnativeauthenticator-1.0.6.tar.gz tmp/jupyterhub-tmpnativeauthenticator-1.0.7.tar.gz --markdown 20230415/j/jupyterhub-tmpnativeauthenticator/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-15 19:49:00] INFO root fetch - main [MainThread]: End processing [pydtl-relativepath]: success
+[2023-04-15 19:49:00] INFO root fetch - main [MainThread]: End processing [mmg]: success
+[2023-04-15 19:49:00] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-l4d2-server]: success
+[2023-04-15 19:49:00] INFO root fetch - main [MainThread]: End processing [jupyterhub-tmpnativeauthenticator]: success
+[2023-04-15 19:49:01] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2023-04-15 19:49:02] INFO root fetch - main [MainThread]: End processing [fullctl]: success
+[2023-04-15 19:49:02] INFO root fetch - main [MainThread]: End processing [pyabsa]: success
+[2023-04-15 19:49:03] INFO root fetch - main [MainThread]: End processing [jupyterhub-tmpnativeauthenticator]: success
+[2023-04-15 19:49:03] INFO root fetch - main [MainThread]: Store serial: [17720692]
