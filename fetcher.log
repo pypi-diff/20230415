@@ -2011,3 +2011,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 02:59:11] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
 [2023-04-15 02:59:14] INFO root fetch - main [MainThread]: End processing [acryl-datahub]: success
 [2023-04-15 02:59:14] INFO root fetch - main [MainThread]: Store serial: [17714518]
+[2023-04-15 03:04:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17714518]
+[2023-04-15 03:04:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 03:04:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: luau
+[2023-04-15 03:04:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hagis
+[2023-04-15 03:04:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pythonBgt
+[2023-04-15 03:04:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cpct
+[2023-04-15 03:04:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: luau
+[2023-04-15 03:04:20] INFO root fetch - processPackages [pythonBgt]: New version: [0.44] Old Version: [0.43]
+[2023-04-15 03:04:20] INFO root fetch - processPackages [cpct]: New version: [0.2.1] Old Version: [0.1.9]
+[2023-04-15 03:04:20] INFO root fetch - processPackages [luau]: New version: [0.3.0] Old Version: [0.2.6]
+[2023-04-15 03:04:20] INFO root fetch - processPackages [hagis]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-15 03:04:20] INFO root fetch - processPackages [luau]: New version: [0.3.0] Old Version: [0.2.6]
+[2023-04-15 03:04:20] INFO root fetch - processPackages [cpct]: Downloading https://files.pythonhosted.org/packages/85/80/051d00225f57afb8a49056644bd69a96a59a819775fa00b164b71031522e/cpct-0.1.9.tar.gz
+[2023-04-15 03:04:20] INFO root fetch - processPackages [pythonBgt]: Downloading https://files.pythonhosted.org/packages/4e/e1/a1aed7b998edb9c5c83da2744a09aae75f8f6b159f6dcb62f110d73df784/pythonBgt-0.43-py3-none-any.whl
+[2023-04-15 03:04:20] INFO root fetch - processPackages [hagis]: Downloading https://files.pythonhosted.org/packages/b0/2e/8aa1b1b1cdf9c0016e670df2332b5b8bfc5d64161cc3ec70a27fa67df6d4/hagis-0.2.2.tar.gz
+[2023-04-15 03:04:20] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/da/2e/57eb429e5b30bbef8a03a67da3f983ee906c8dcdc53fdf42d43a9c834703/luau-0.3.0.tar.gz
+[2023-04-15 03:04:20] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/da/2e/57eb429e5b30bbef8a03a67da3f983ee906c8dcdc53fdf42d43a9c834703/luau-0.3.0.tar.gz
+[2023-04-15 03:04:21] INFO root fetch - processPackages [hagis]: executing diffoscope
+[2023-04-15 03:04:21] INFO root fetch - processPackages [hagis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagis-0.2.1.tar.gz tmp/hagis-0.2.2.tar.gz --markdown 20230415/h/hagis/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-15 03:04:21] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-15 03:04:21] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.2.6.tar.gz tmp/luau-0.3.0.tar.gz --markdown 20230415/l/luau/0.2.6-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 03:04:21] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-15 03:04:21] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.2.6.tar.gz tmp/luau-0.3.0.tar.gz --markdown 20230415/l/luau/0.2.6-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 03:04:21] INFO root fetch - processPackages [pythonBgt]: Downloading https://files.pythonhosted.org/packages/9d/e5/1c73b291f10b79388a37f6c573099ae332e04628b7dad57c54d8f93af9ac/pythonBgt-0.44-py3-none-any.whl
+[2023-04-15 03:04:21] INFO root fetch - processPackages [cpct]: Downloading https://files.pythonhosted.org/packages/e6/f3/a599dee9643e86a9476985af5b3c2af5fd475a2e1310baab08b7195190f4/cpct-0.2.1.tar.gz
+[2023-04-15 03:04:21] INFO root fetch - processPackages [cpct]: executing diffoscope
+[2023-04-15 03:04:21] INFO root fetch - processPackages [cpct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpct-0.1.9.tar.gz tmp/cpct-0.2.1.tar.gz --markdown 20230415/c/cpct/0.1.9-0.2.1/diff.md --exclude *.pyd
+[2023-04-15 03:04:21] INFO root fetch - main [MainThread]: End processing [hagis]: success
+[2023-04-15 03:04:22] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-15 03:04:22] INFO root fetch - processPackages [pythonBgt]: executing diffoscope
+[2023-04-15 03:04:22] INFO root fetch - processPackages [pythonBgt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonBgt-0.43-py3-none-any.whl.zip tmp/pythonBgt-0.44-py3-none-any.whl.zip --markdown 20230415/p/pythonBgt/0.43-0.44/diff.md --exclude *.pyd
+[2023-04-15 03:04:22] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-15 03:04:23] INFO root fetch - main [MainThread]: End processing [cpct]: success
+[2023-04-15 03:04:23] INFO root fetch - main [MainThread]: End processing [pythonBgt]: success
+[2023-04-15 03:04:23] INFO root fetch - main [MainThread]: Store serial: [17714532]
