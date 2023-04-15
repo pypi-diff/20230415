@@ -14583,3 +14583,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 12:46:58] INFO root fetch - main [MainThread]: End processing [tsgm]: success
 [2023-04-15 12:47:03] INFO root fetch - main [MainThread]: End processing [monobit]: success
 [2023-04-15 12:47:03] INFO root fetch - main [MainThread]: Store serial: [17718224]
+[2023-04-15 12:52:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718224]
+[2023-04-15 12:52:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 12:52:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pip
+[2023-04-15 12:52:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: helixd
+[2023-04-15 12:52:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nobuco
+[2023-04-15 12:52:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ipsocgen
+[2023-04-15 12:52:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quom
+[2023-04-15 12:52:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: policyengine-us
+[2023-04-15 12:52:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: square-artkov
+[2023-04-15 12:52:12] WARNING root fetch - processPackages [helixd]: Skipping, unable to determine old version
+[2023-04-15 12:52:12] WARNING root fetch - processPackages [square-artkov]: Skipping, unable to determine old version
+[2023-04-15 12:52:12] INFO root fetch - main [MainThread]: End processing [helixd] error
+[2023-04-15 12:52:12] INFO root fetch - processPackages [quom]: New version: [4.0.0] Old Version: [3.0.0]
+[2023-04-15 12:52:12] INFO root fetch - main [MainThread]: End processing [square-artkov] error
+[2023-04-15 12:52:12] WARNING root fetch - processPackages [nobuco]: Skipping, unable to determine old version
+[2023-04-15 12:52:12] INFO root fetch - main [MainThread]: End processing [nobuco] error
+[2023-04-15 12:52:12] INFO root fetch - processPackages [pip]: New version: [9.0.3] Old Version: [9.0.2]
+[2023-04-15 12:52:12] INFO root fetch - processPackages [ipsocgen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 12:52:12] INFO root fetch - processPackages [policyengine-us]: New version: [0.291.0] Old Version: [0.290.0]
+[2023-04-15 12:52:12] INFO root fetch - processPackages [ipsocgen]: Downloading https://files.pythonhosted.org/packages/11/54/e76ec133a215133bc0add89fbba0f3e5d9473aaf7a80771670485d2081b0/ipsocgen-0.1.8.tar.gz
+[2023-04-15 12:52:12] INFO root fetch - processPackages [pip]: Downloading https://files.pythonhosted.org/packages/e5/8f/3fc66461992dc9e9fcf5e005687d5f676729172dda640df2fd8b597a6da7/pip-9.0.2.tar.gz
+[2023-04-15 12:52:12] INFO root fetch - processPackages [quom]: Downloading https://files.pythonhosted.org/packages/4b/a7/4f0e95ee6685b3a642a76bdb94a54ba63b868a15dff7898fb7efc025a430/quom-3.0.0.tar.gz
+[2023-04-15 12:52:12] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/65/9f/64f61dd26c0cfe7278d702deff4f3a7aabf7964e8bedf5ed7c899f77ddb1/policyengine-us-0.291.0.tar.gz
+[2023-04-15 12:52:12] INFO root fetch - processPackages [ipsocgen]: Downloading https://files.pythonhosted.org/packages/65/4b/20da524e91684573355257160a62b7f893d4175024d3f8ef3e478b720b50/ipsocgen-0.1.9.tar.gz
+[2023-04-15 12:52:12] INFO root fetch - processPackages [quom]: Downloading https://files.pythonhosted.org/packages/3f/92/784fc1849a9c009170f3042a33bfa4a163cd3de6518034f45efd76e7a799/quom-4.0.0.tar.gz
+[2023-04-15 12:52:12] INFO root fetch - processPackages [pip]: Downloading https://files.pythonhosted.org/packages/c4/44/e6b8056b6c8f2bfd1445cc9990f478930d8e3459e9dbf5b8e2d2922d64d3/pip-9.0.3.tar.gz
+[2023-04-15 12:52:12] INFO root fetch - processPackages [ipsocgen]: executing diffoscope
+[2023-04-15 12:52:12] INFO root fetch - processPackages [ipsocgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipsocgen-0.1.8.tar.gz tmp/ipsocgen-0.1.9.tar.gz --markdown 20230415/i/ipsocgen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 12:52:12] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-15 12:52:12] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.290.0.tar.gz tmp/policyengine-us-0.291.0.tar.gz --markdown 20230415/p/policyengine-us/0.290.0-0.291.0/diff.md --exclude *.pyd
+[2023-04-15 12:52:12] INFO root fetch - processPackages [pip]: executing diffoscope
+[2023-04-15 12:52:12] INFO root fetch - processPackages [pip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-9.0.2.tar.gz tmp/pip-9.0.3.tar.gz --markdown 20230415/p/pip/9.0.2-9.0.3/diff.md --exclude *.pyd
+[2023-04-15 12:52:13] INFO root fetch - processPackages [quom]: executing diffoscope
+[2023-04-15 12:52:13] INFO root fetch - processPackages [quom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quom-3.0.0.tar.gz tmp/quom-4.0.0.tar.gz --markdown 20230415/q/quom/3.0.0-4.0.0/diff.md --exclude *.pyd
+[2023-04-15 12:52:13] INFO root fetch - main [MainThread]: End processing [ipsocgen]: success
+[2023-04-15 12:52:14] INFO root fetch - main [MainThread]: End processing [quom]: success
+[2023-04-15 12:52:16] INFO root fetch - main [MainThread]: End processing [pip]: success
+[2023-04-15 12:53:18] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-04-15 12:53:18] INFO root fetch - main [MainThread]: Store serial: [17718252]
