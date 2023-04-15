@@ -4617,3 +4617,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 04:57:39] INFO root fetch - main [MainThread]: End processing [ml-pipelines-sdk]: success
 [2023-04-15 04:57:54] INFO root fetch - main [MainThread]: End processing [tfx]: success
 [2023-04-15 04:57:54] INFO root fetch - main [MainThread]: Store serial: [17716024]
+[2023-04-15 05:02:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716024]
+[2023-04-15 05:03:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 05:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-account-invoice-supplier-self-invoice
+[2023-04-15 05:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-listener
+[2023-04-15 05:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: navajo
+[2023-04-15 05:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-model-privacy-mixin
+[2023-04-15 05:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lazyops
+[2023-04-15 05:03:00] INFO root fetch - processPackages [odoo-addon-account-invoice-supplier-self-invoice]: New version: [15.0.1.3.0.2] Old Version: [15.0.1.3.0.1]
+[2023-04-15 05:03:00] INFO root fetch - processPackages [django-model-privacy-mixin]: New version: [0.3] Old Version: [0.2]
+[2023-04-15 05:03:00] INFO root fetch - processPackages [ovos-listener]: New version: [0.0.2a8] Old Version: [0.0.2a7]
+[2023-04-15 05:03:00] WARNING root fetch - processPackages [navajo]: Skipping, unable to determine old version
+[2023-04-15 05:03:00] INFO root fetch - processPackages [navajo]: Start processing: drs-compliance
+[2023-04-15 05:03:00] INFO root fetch - main [MainThread]: End processing [navajo] error
+[2023-04-15 05:03:00] INFO root fetch - processPackages [lazyops]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-15 05:03:00] INFO root fetch - processPackages [drs-compliance]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-15 05:03:00] INFO root fetch - processPackages [django-model-privacy-mixin]: Downloading https://files.pythonhosted.org/packages/24/fb/61362ce1e76dd75b5cc522d4160056aaf89a368810b265592dd22be719b0/django_model_privacy_mixin-0.2.tar.gz
+[2023-04-15 05:03:00] INFO root fetch - processPackages [odoo-addon-account-invoice-supplier-self-invoice]: Downloading https://files.pythonhosted.org/packages/65/c6/9873a4e1631197f9d1450e649cc467638ea6b953f0b0bc510db77e6a96a1/odoo_addon_account_invoice_supplier_self_invoice-15.0.1.3.0.1-py3-none-any.whl
+[2023-04-15 05:03:00] INFO root fetch - processPackages [ovos-listener]: Downloading https://files.pythonhosted.org/packages/e0/a6/8254a98c5544daccba9f8382f067519f5e076f85940d122e0290e3558ebb/ovos_listener-0.0.2a8-py3-none-any.whl
+[2023-04-15 05:03:01] INFO root fetch - processPackages [drs-compliance]: Downloading https://files.pythonhosted.org/packages/fd/f6/1185fd396aabb00e1c45ec6a2a0032bfd0660675adce10df9f4e2df2446d/drs-compliance-1.0.2.tar.gz
+[2023-04-15 05:03:01] INFO root fetch - processPackages [drs-compliance]: executing diffoscope
+[2023-04-15 05:03:01] INFO root fetch - processPackages [drs-compliance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drs-compliance-1.0.1.tar.gz tmp/drs-compliance-1.0.2.tar.gz --markdown 20230415/d/drs-compliance/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-15 05:03:01] INFO root fetch - processPackages [ovos-listener]: executing diffoscope
+[2023-04-15 05:03:01] INFO root fetch - processPackages [ovos-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_listener-0.0.2a7-py3-none-any.whl.zip tmp/ovos_listener-0.0.2a8-py3-none-any.whl.zip --markdown 20230415/o/ovos-listener/0.0.2a7-0.0.2a8/diff.md --exclude *.pyd
+[2023-04-15 05:03:01] INFO root fetch - processPackages [lazyops]: executing diffoscope
+[2023-04-15 05:03:01] INFO root fetch - processPackages [lazyops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazyops-0.2.8.tar.gz tmp/lazyops-0.2.9.tar.gz --markdown 20230415/l/lazyops/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-15 05:03:01] INFO root fetch - processPackages [django-model-privacy-mixin]: Downloading https://files.pythonhosted.org/packages/a1/33/33d90702b47044202735d91896bd25163c720c1dd7675610c6a13f4f28b9/django_model_privacy_mixin-0.3.tar.gz
+[2023-04-15 05:03:01] INFO root fetch - processPackages [django-model-privacy-mixin]: executing diffoscope
+[2023-04-15 05:03:01] INFO root fetch - processPackages [django-model-privacy-mixin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_model_privacy_mixin-0.2.tar.gz tmp/django_model_privacy_mixin-0.3.tar.gz --markdown 20230415/d/django-model-privacy-mixin/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-15 05:03:01] INFO root fetch - processPackages [odoo-addon-account-invoice-supplier-self-invoice]: Downloading https://files.pythonhosted.org/packages/8d/c2/6e2da75411071931e989dd15c0e53dc4abeaf666af57d3fa2529fad03b7d/odoo_addon_account_invoice_supplier_self_invoice-15.0.1.3.0.2-py3-none-any.whl
+[2023-04-15 05:03:01] INFO root fetch - processPackages [odoo-addon-account-invoice-supplier-self-invoice]: executing diffoscope
+[2023-04-15 05:03:01] INFO root fetch - processPackages [odoo-addon-account-invoice-supplier-self-invoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_invoice_supplier_self_invoice-15.0.1.3.0.1-py3-none-any.whl.zip tmp/odoo_addon_account_invoice_supplier_self_invoice-15.0.1.3.0.2-py3-none-any.whl.zip --markdown 20230415/o/odoo-addon-account-invoice-supplier-self-invoice/15.0.1.3.0.1-15.0.1.3.0.2/diff.md --exclude *.pyd
+[2023-04-15 05:03:02] INFO root fetch - processPackages [ovos-listener]: Start processing: policyengine-us
+[2023-04-15 05:03:02] INFO root fetch - main [MainThread]: End processing [ovos-listener]: success
+[2023-04-15 05:03:02] INFO root fetch - main [MainThread]: End processing [drs-compliance]: success
+[2023-04-15 05:03:02] INFO root fetch - processPackages [policyengine-us]: New version: [0.288.0] Old Version: [0.287.0]
+[2023-04-15 05:03:02] INFO root fetch - main [MainThread]: End processing [django-model-privacy-mixin]: success
+[2023-04-15 05:03:02] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-15 05:03:02] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.287.0.tar.gz tmp/policyengine-us-0.288.0.tar.gz --markdown 20230415/p/policyengine-us/0.287.0-0.288.0/diff.md --exclude *.pyd
+[2023-04-15 05:03:02] INFO root fetch - main [MainThread]: End processing [lazyops]: success
+[2023-04-15 05:03:02] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-supplier-self-invoice]: success
+[2023-04-15 05:04:07] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-04-15 05:04:07] INFO root fetch - main [MainThread]: Store serial: [17716048]
