@@ -18897,3 +18897,75 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 20:26:28] INFO root fetch - main [MainThread]: End processing [zuspec-arl-dm]: success
 [2023-04-15 20:27:17] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-04-15 20:27:17] INFO root fetch - main [MainThread]: Store serial: [17720976]
+[2023-04-15 20:32:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720976]
+[2023-04-15 20:32:31] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-15 20:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-smart-reply
+[2023-04-15 20:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: memprocfs
+[2023-04-15 20:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hitchstory
+[2023-04-15 20:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: regis
+[2023-04-15 20:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: algo900
+[2023-04-15 20:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: terka
+[2023-04-15 20:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: twitter-api-client
+[2023-04-15 20:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: microt-preprocessing
+[2023-04-15 20:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pebbles-bot
+[2023-04-15 20:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: algoxyz
+[2023-04-15 20:32:31] INFO root fetch - processPackages [algo900]: New version: [0.257] Old Version: [0.256]
+[2023-04-15 20:32:31] INFO root fetch - processPackages [regis]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 20:32:31] INFO root fetch - processPackages [twitter-api-client]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-15 20:32:31] INFO root fetch - processPackages [hitchstory]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-15 20:32:31] INFO root fetch - processPackages [terka]: New version: [1.5.4] Old Version: [1.5.3]
+[2023-04-15 20:32:31] INFO root fetch - processPackages [memprocfs]: New version: [5.5.0] Old Version: [5.4.2]
+[2023-04-15 20:32:31] INFO root fetch - processPackages [nonebot-plugin-smart-reply]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 20:32:31] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-04-15 20:32:31] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.6.1.tar.gz tmp/twitter-api-client-0.6.2.tar.gz --markdown 20230415/t/twitter-api-client/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-15 20:32:31] INFO root fetch - processPackages [pebbles-bot]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-15 20:32:31] WARNING root fetch - processPackages [algoxyz]: Skipping, unable to determine old version
+[2023-04-15 20:32:31] INFO root fetch - processPackages [algoxyz]: Start processing: pydae
+[2023-04-15 20:32:31] INFO root fetch - main [MainThread]: End processing [algoxyz] error
+[2023-04-15 20:32:31] INFO root fetch - processPackages [regis]: executing diffoscope
+[2023-04-15 20:32:31] INFO root fetch - processPackages [microt-preprocessing]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 20:32:31] INFO root fetch - processPackages [regis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regis-0.1.8.tar.gz tmp/regis-0.1.9.tar.gz --markdown 20230415/r/regis/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 20:32:31] INFO root fetch - processPackages [algo900]: executing diffoscope
+[2023-04-15 20:32:31] INFO root fetch - processPackages [algo900]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algo900-0.256.tar.gz tmp/algo900-0.257.tar.gz --markdown 20230415/a/algo900/0.256-0.257/diff.md --exclude *.pyd
+[2023-04-15 20:32:31] INFO root fetch - processPackages [pydae]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-15 20:32:31] INFO root fetch - processPackages [pydae]: Downloading https://files.pythonhosted.org/packages/7d/df/18fbeeac68b8076a40737405fc9638efb381a7dae1ccdfa520fe3810b1cd/pydae-0.8.0.tar.gz
+[2023-04-15 20:32:31] WARNING root fetch - processPackages [pydae]: Skipping package: exceeds size limit 76279170>=10485760
+[2023-04-15 20:32:31] INFO root fetch - processPackages [pydae]: Start processing: synergy-dataset
+[2023-04-15 20:32:31] INFO root fetch - main [MainThread]: End processing [pydae] error
+[2023-04-15 20:32:31] INFO root fetch - processPackages [synergy-dataset]: New version: [1.0a2] Old Version: [1.0a1]
+[2023-04-15 20:32:31] INFO root fetch - processPackages [hitchstory]: Downloading https://files.pythonhosted.org/packages/11/1d/52b18e89f2a99b571eba49a6214c5dbac1e7c1fffb228b2d41deee3d8b64/hitchstory-0.9.0.tar.gz
+[2023-04-15 20:32:31] INFO root fetch - processPackages [memprocfs]: Downloading https://files.pythonhosted.org/packages/a2/e2/942f97ec9db431a5ab22492e78d982382fdd3891ed4d6ddfa2581755530c/memprocfs-5.4.2.tar.gz
+[2023-04-15 20:32:31] INFO root fetch - processPackages [nonebot-plugin-smart-reply]: Downloading https://files.pythonhosted.org/packages/82/ab/5ca16abac8915b872239912589ec64aa8ab80dfa6db3eaa3c037eba842b1/nonebot_plugin_smart_reply-0.0.8.tar.gz
+[2023-04-15 20:32:31] INFO root fetch - processPackages [pebbles-bot]: Downloading https://files.pythonhosted.org/packages/4f/a7/571529d3837fc6098b984a0fc4a940b70167fb48e4e65ef3deb8d6d45c63/pebbles_bot-0.2.0.tar.gz
+[2023-04-15 20:32:31] INFO root fetch - processPackages [synergy-dataset]: executing diffoscope
+[2023-04-15 20:32:31] INFO root fetch - processPackages [synergy-dataset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synergy-dataset-1.0a1.tar.gz tmp/synergy-dataset-1.0a2.tar.gz --markdown 20230415/s/synergy-dataset/1.0a1-1.0a2/diff.md --exclude *.pyd
+[2023-04-15 20:32:31] INFO root fetch - processPackages [microt-preprocessing]: Downloading https://files.pythonhosted.org/packages/3b/0f/c3e3b2e0bff7d0638a594fc5e2359a938a854794c91c49b3bc7d64e7445c/microt_preprocessing-0.1.8.tar.gz
+[2023-04-15 20:32:31] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/f0/d4/1805d3cb23f773316a4b4b1611df79c06ab0c5c4b8c065d899b2e10037e6/terka-1.5.4.tar.gz
+[2023-04-15 20:32:31] INFO root fetch - processPackages [nonebot-plugin-smart-reply]: Downloading https://files.pythonhosted.org/packages/e3/86/286035850c9b1ff35d89d104cfe018042eba85bd9f39c4e6879be23e8449/nonebot_plugin_smart_reply-0.0.9.tar.gz
+[2023-04-15 20:32:31] INFO root fetch - processPackages [nonebot-plugin-smart-reply]: executing diffoscope
+[2023-04-15 20:32:31] INFO root fetch - processPackages [nonebot-plugin-smart-reply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_smart_reply-0.0.8.tar.gz tmp/nonebot_plugin_smart_reply-0.0.9.tar.gz --markdown 20230415/n/nonebot-plugin-smart-reply/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 20:32:31] INFO root fetch - processPackages [pebbles-bot]: Downloading https://files.pythonhosted.org/packages/3e/40/d20a9ae2965e886b5cec04e84798c65a5f5161fa5c4322ded11ed268ac90/pebbles_bot-0.3.0.tar.gz
+[2023-04-15 20:32:31] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-15 20:32:31] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.5.3.tar.gz tmp/terka-1.5.4.tar.gz --markdown 20230415/t/terka/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2023-04-15 20:32:31] INFO root fetch - processPackages [hitchstory]: Downloading https://files.pythonhosted.org/packages/30/26/45b9d9b30fe461c6b7e29402af44c5ce1e347d823b622649392152f60de8/hitchstory-0.9.1.tar.gz
+[2023-04-15 20:32:32] INFO root fetch - processPackages [microt-preprocessing]: Downloading https://files.pythonhosted.org/packages/a0/f1/c704c73b48136427954d5885c5b5521ced10031d2b014685055f487fee44/microt_preprocessing-0.1.9.tar.gz
+[2023-04-15 20:32:32] INFO root fetch - processPackages [pebbles-bot]: executing diffoscope
+[2023-04-15 20:32:32] INFO root fetch - processPackages [pebbles-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pebbles_bot-0.2.0.tar.gz tmp/pebbles_bot-0.3.0.tar.gz --markdown 20230415/p/pebbles-bot/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 20:32:32] INFO root fetch - processPackages [hitchstory]: executing diffoscope
+[2023-04-15 20:32:32] INFO root fetch - processPackages [hitchstory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hitchstory-0.9.0.tar.gz tmp/hitchstory-0.9.1.tar.gz --markdown 20230415/h/hitchstory/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-15 20:32:32] INFO root fetch - processPackages [microt-preprocessing]: executing diffoscope
+[2023-04-15 20:32:32] INFO root fetch - processPackages [microt-preprocessing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microt_preprocessing-0.1.8.tar.gz tmp/microt_preprocessing-0.1.9.tar.gz --markdown 20230415/m/microt-preprocessing/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 20:32:32] INFO root fetch - processPackages [memprocfs]: Downloading https://files.pythonhosted.org/packages/82/2e/97daf3104df23035ef5623b274bf00cabfd8624624d421d1a93cc3891ce6/memprocfs-5.5.0.tar.gz
+[2023-04-15 20:32:32] INFO root fetch - main [MainThread]: End processing [algo900]: success
+[2023-04-15 20:32:32] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-04-15 20:32:33] INFO root fetch - main [MainThread]: End processing [synergy-dataset]: success
+[2023-04-15 20:32:33] INFO root fetch - main [MainThread]: End processing [regis]: success
+[2023-04-15 20:32:33] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-smart-reply]: success
+[2023-04-15 20:32:33] INFO root fetch - processPackages [memprocfs]: executing diffoscope
+[2023-04-15 20:32:33] INFO root fetch - processPackages [memprocfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memprocfs-5.4.2.tar.gz tmp/memprocfs-5.5.0.tar.gz --markdown 20230415/m/memprocfs/5.4.2-5.5.0/diff.md --exclude *.pyd
+[2023-04-15 20:32:33] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-04-15 20:32:33] INFO root fetch - main [MainThread]: End processing [hitchstory]: success
+[2023-04-15 20:32:33] INFO root fetch - main [MainThread]: End processing [pebbles-bot]: success
+[2023-04-15 20:32:33] INFO root fetch - main [MainThread]: End processing [microt-preprocessing]: success
+[2023-04-15 20:32:41] INFO root fetch - main [MainThread]: End processing [memprocfs]: success
+[2023-04-15 20:32:41] INFO root fetch - main [MainThread]: Store serial: [17721037]
