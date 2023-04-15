@@ -5555,3 +5555,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 07:06:50] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
 [2023-04-15 07:09:36] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
 [2023-04-15 07:09:36] INFO root fetch - main [MainThread]: Store serial: [17716604]
+[2023-04-15 07:14:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716604]
+[2023-04-15 07:14:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 07:14:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jkh011120-randmat
+[2023-04-15 07:14:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nose-py3
+[2023-04-15 07:14:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nose-py3
+[2023-04-15 07:14:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hagworm
+[2023-04-15 07:14:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rapidpe-rift-pipe
+[2023-04-15 07:14:43] INFO root fetch - processPackages [nose-py3]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-04-15 07:14:43] INFO root fetch - processPackages [nose-py3]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-04-15 07:14:43] INFO root fetch - processPackages [jkh011120-randmat]: New version: [0.1] Old Version: [0.0.1]
+[2023-04-15 07:14:43] INFO root fetch - processPackages [hagworm]: New version: [5.4.6] Old Version: [5.4.5]
+[2023-04-15 07:14:43] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.0.9.dev20230323] Old Version: [0.0.9.dev20230322]
+[2023-04-15 07:14:43] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2023-04-15 07:14:43] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.0.9.dev20230322.tar.gz tmp/rapidpe_rift_pipe-0.0.9.dev20230323.tar.gz --markdown 20230415/r/rapidpe-rift-pipe/0.0.9.dev20230322-0.0.9.dev20230323/diff.md --exclude *.pyd
+[2023-04-15 07:14:43] INFO root fetch - processPackages [jkh011120-randmat]: Downloading https://files.pythonhosted.org/packages/f4/a1/43485bbfeb3eec3a8d2c1d93e178cfe0d8389c2a26a56456436f13bce9ca/jkh011120_randmat-0.0.1-py3-none-any.whl
+[2023-04-15 07:14:43] INFO root fetch - processPackages [nose-py3]: Downloading https://files.pythonhosted.org/packages/fc/17/b095c63c2cb4f45cda95b1b0b7d1d13575eaadc715b0d26374fa1907b9ab/nose-py3-1.6.0.tar.gz
+[2023-04-15 07:14:43] INFO root fetch - processPackages [nose-py3]: Downloading https://files.pythonhosted.org/packages/fc/17/b095c63c2cb4f45cda95b1b0b7d1d13575eaadc715b0d26374fa1907b9ab/nose-py3-1.6.0.tar.gz
+[2023-04-15 07:14:43] INFO root fetch - processPackages [hagworm]: Downloading https://files.pythonhosted.org/packages/3f/6c/8acbbf124f4406a711848a31407913a65601da8a40ab5c3e92d0995be2b7/hagworm-5.4.6.tar.gz
+[2023-04-15 07:14:43] INFO root fetch - processPackages [jkh011120-randmat]: Downloading https://files.pythonhosted.org/packages/e3/0a/21292026e40b25fbd665a03550b889d2d37ea7f0d8597c0bb9c2d9cbfa87/jkh011120_randmat-0.1-py3-none-any.whl
+[2023-04-15 07:14:43] INFO root fetch - processPackages [nose-py3]: Downloading https://files.pythonhosted.org/packages/37/cd/dfaca1cdc1a293b4a98aba80f05806002de1534ee46892a3ce5cce36163f/nose_py3-1.6.1-py3-none-any.whl
+[2023-04-15 07:14:43] INFO root fetch - processPackages [nose-py3]: Downloading https://files.pythonhosted.org/packages/37/cd/dfaca1cdc1a293b4a98aba80f05806002de1534ee46892a3ce5cce36163f/nose_py3-1.6.1-py3-none-any.whl
+[2023-04-15 07:14:43] INFO root fetch - processPackages [hagworm]: executing diffoscope
+[2023-04-15 07:14:43] INFO root fetch - processPackages [hagworm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagworm-5.4.5.tar.gz tmp/hagworm-5.4.6.tar.gz --markdown 20230415/h/hagworm/5.4.5-5.4.6/diff.md --exclude *.pyd
+[2023-04-15 07:14:43] INFO root fetch - processPackages [nose-py3]: executing diffoscope
+[2023-04-15 07:14:43] INFO root fetch - processPackages [nose-py3]: executing diffoscope
+[2023-04-15 07:14:43] INFO root fetch - processPackages [nose-py3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nose-py3-1.6.0.tar.gz tmp/nose_py3-1.6.1-py3-none-any.whl.zip --markdown 20230415/n/nose-py3/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-04-15 07:14:43] INFO root fetch - processPackages [nose-py3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nose-py3-1.6.0.tar.gz tmp/nose_py3-1.6.1-py3-none-any.whl.zip --markdown 20230415/n/nose-py3/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-04-15 07:14:43] INFO root fetch - processPackages [jkh011120-randmat]: executing diffoscope
+[2023-04-15 07:14:43] INFO root fetch - processPackages [jkh011120-randmat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jkh011120_randmat-0.0.1-py3-none-any.whl.zip tmp/jkh011120_randmat-0.1-py3-none-any.whl.zip --markdown 20230415/j/jkh011120-randmat/0.0.1-0.1/diff.md --exclude *.pyd
+[2023-04-15 07:14:44] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2023-04-15 07:14:44] INFO root fetch - main [MainThread]: End processing [jkh011120-randmat]: success
+[2023-04-15 07:14:45] INFO root fetch - main [MainThread]: End processing [nose-py3]: success
+[2023-04-15 07:14:45] INFO root fetch - main [MainThread]: End processing [hagworm]: success
+[2023-04-15 07:14:46] INFO root fetch - main [MainThread]: End processing [nose-py3]: success
+[2023-04-15 07:14:46] INFO root fetch - main [MainThread]: Store serial: [17716618]
