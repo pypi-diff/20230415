@@ -17243,3 +17243,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 17:22:56] INFO root fetch - main [MainThread]: End processing [importlib-metadata]: success
 [2023-04-15 17:22:56] INFO root fetch - main [MainThread]: End processing [chatgpt-tool-hub]: success
 [2023-04-15 17:22:56] INFO root fetch - main [MainThread]: Store serial: [17719826]
+[2023-04-15 17:28:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719826]
+[2023-04-15 17:28:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 17:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peerprint
+[2023-04-15 17:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: magic-duckdb
+[2023-04-15 17:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: theforensicator
+[2023-04-15 17:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kcli
+[2023-04-15 17:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dquotient
+[2023-04-15 17:28:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vocode
+[2023-04-15 17:28:05] INFO root fetch - processPackages [magic-duckdb]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 17:28:05] INFO root fetch - processPackages [theforensicator]: New version: [0.1.4] Old Version: [0.1.2]
+[2023-04-15 17:28:05] INFO root fetch - processPackages [peerprint]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-15 17:28:05] INFO root fetch - processPackages [vocode]: New version: [0.1.92] Old Version: [0.1.91]
+[2023-04-15 17:28:05] INFO root fetch - processPackages [kcli]: New version: [99.0.202304151529] Old Version: [99.0.202304151518]
+[2023-04-15 17:28:05] WARNING root fetch - processPackages [dquotient]: Skipping, unable to determine old version
+[2023-04-15 17:28:05] INFO root fetch - main [MainThread]: End processing [dquotient] error
+[2023-04-15 17:28:05] INFO root fetch - processPackages [magic-duckdb]: executing diffoscope
+[2023-04-15 17:28:05] INFO root fetch - processPackages [magic-duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magic_duckdb-0.1.8-py3-none-any.whl.zip tmp/magic_duckdb-0.1.9-py3-none-any.whl.zip --markdown 20230415/m/magic-duckdb/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 17:28:05] INFO root fetch - processPackages [vocode]: executing diffoscope
+[2023-04-15 17:28:05] INFO root fetch - processPackages [vocode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocode-0.1.91.tar.gz tmp/vocode-0.1.92.tar.gz --markdown 20230415/v/vocode/0.1.91-0.1.92/diff.md --exclude *.pyd
+[2023-04-15 17:28:06] INFO root fetch - processPackages [peerprint]: Downloading https://files.pythonhosted.org/packages/db/cd/81821253f59fe82464aaba655a86028494d93d4b3ffdf5aa3bdf9ce930c7/peerprint-0.3.1.tar.gz
+[2023-04-15 17:28:06] INFO root fetch - processPackages [theforensicator]: Downloading https://files.pythonhosted.org/packages/5e/74/f800228451b2135e9118252dbfe5dd7041f9f80d3013326c55faea6e83cb/theforensicator-0.1.4.tar.gz
+[2023-04-15 17:28:06] WARNING root fetch - processPackages [peerprint]: Skipping package: exceeds size limit 79600487>=10485760
+[2023-04-15 17:28:06] INFO root fetch - main [MainThread]: End processing [peerprint] error
+[2023-04-15 17:28:06] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/f9/81/f1220d96a299ec77b20cd4bfbcc4c6d81a01864a302e792cef9f83bc03a1/kcli-99.0.202304151529-py3-none-any.whl
+[2023-04-15 17:28:06] INFO root fetch - processPackages [theforensicator]: executing diffoscope
+[2023-04-15 17:28:06] INFO root fetch - processPackages [theforensicator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/theforensicator-0.1.2.tar.gz tmp/theforensicator-0.1.4.tar.gz --markdown 20230415/t/theforensicator/0.1.2-0.1.4/diff.md --exclude *.pyd
+[2023-04-15 17:28:06] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-15 17:28:06] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304151518-py3-none-any.whl.zip tmp/kcli-99.0.202304151529-py3-none-any.whl.zip --markdown 20230415/k/kcli/99.0.202304151518-99.0.202304151529/diff.md --exclude *.pyd
+[2023-04-15 17:28:06] INFO root fetch - main [MainThread]: End processing [magic-duckdb]: success
+[2023-04-15 17:28:07] INFO root fetch - main [MainThread]: End processing [theforensicator]: success
+[2023-04-15 17:28:07] INFO root fetch - main [MainThread]: End processing [vocode]: success
+[2023-04-15 17:28:14] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-15 17:28:14] INFO root fetch - main [MainThread]: Store serial: [17719844]
