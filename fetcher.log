@@ -1632,3 +1632,60 @@
 [2023-04-15 02:29:08] INFO root fetch - main [MainThread]: End processing [everdrop-aws-cdk-constructs]: success
 [2023-04-15 02:30:07] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-04-15 02:30:07] INFO root fetch - main [MainThread]: Store serial: [17714328]
+[2023-04-15 02:35:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17714328]
+[2023-04-15 02:35:15] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-15 02:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: learning-apis
+[2023-04-15 02:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: locate-pixelcolor-c
+[2023-04-15 02:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-04-15 02:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: netpackAIO
+[2023-04-15 02:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pysigma-backend-opensearch
+[2023-04-15 02:35:15] INFO root fetch - processPackages [locate-pixelcolor-c]: New version: [0.11] Old Version: [0.10]
+[2023-04-15 02:35:15] INFO root fetch - processPackages [pysigma-backend-opensearch]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 02:35:15] WARNING root fetch - processPackages [netpackAIO]: Skipping, unable to determine old version
+[2023-04-15 02:35:15] INFO root fetch - processPackages [netpackAIO]: Start processing: locate-pixelcolor-cpp-parallelfor
+[2023-04-15 02:35:15] INFO root fetch - main [MainThread]: End processing [netpackAIO] error
+[2023-04-15 02:35:15] WARNING root fetch - processPackages [learning-apis]: Skipping, unable to determine old version
+[2023-04-15 02:35:15] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 02:35:15] INFO root fetch - processPackages [learning-apis]: Start processing: np-pipeline-qc
+[2023-04-15 02:35:15] INFO root fetch - main [MainThread]: End processing [learning-apis] error
+[2023-04-15 02:35:15] INFO root fetch - processPackages [locate-pixelcolor-cpp-parallelfor]: New version: [0.11] Old Version: [0.10]
+[2023-04-15 02:35:15] WARNING root fetch - processPackages [np-pipeline-qc]: Skipping, unable to determine old version
+[2023-04-15 02:35:15] INFO root fetch - processPackages [np-pipeline-qc]: Start processing: twitter_bot_utils
+[2023-04-15 02:35:15] INFO root fetch - main [MainThread]: End processing [np-pipeline-qc] error
+[2023-04-15 02:35:15] INFO root fetch - processPackages [twitter_bot_utils]: New version: [0.9.post2] Old Version: [0.9.post1]
+[2023-04-15 02:35:15] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-04-15 02:35:15] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230415/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 02:35:15] INFO root fetch - processPackages [locate-pixelcolor-c]: Downloading https://files.pythonhosted.org/packages/3d/b1/ca22466b8a73a519a28deede3a95ea2a8f40e7e5fb3d99097bda21429b2f/locate_pixelcolor_c-0.10.tar.gz
+[2023-04-15 02:35:15] INFO root fetch - processPackages [pysigma-backend-opensearch]: Downloading https://files.pythonhosted.org/packages/70/4d/95c3475512765a35e5e5ae7eb6742a748bebf4f3408da0e035ccacd9a5a7/pySigma-backend-opensearch-0.1.5.tar.gz
+[2023-04-15 02:35:15] INFO root fetch - processPackages [locate-pixelcolor-cpp-parallelfor]: Downloading https://files.pythonhosted.org/packages/6f/c8/84731fccd623c4ed7656fdaced4f824975e1be92d784b1f6baa395ad217c/locate_pixelcolor_cpp_parallelfor-0.10.tar.gz
+[2023-04-15 02:35:15] INFO root fetch - processPackages [twitter_bot_utils]: Downloading https://files.pythonhosted.org/packages/41/36/6922e2cb41d1cad56ae21011d17a2a66194bf0b59c3305902c0fb9efc1a6/twitter_bot_utils-0.9.post1.tar.gz
+[2023-04-15 02:35:15] INFO root fetch - processPackages [pysigma-backend-opensearch]: Downloading https://files.pythonhosted.org/packages/3e/41/9f7e565fe27b4096a800c27354ae3d44401a404c3d79142fdda8ef832a76/pysigma_backend_opensearch-0.1.6.tar.gz
+[2023-04-15 02:35:15] INFO root fetch - processPackages [locate-pixelcolor-cpp-parallelfor]: Downloading https://files.pythonhosted.org/packages/a0/c0/7c09798dc957a2e762777162e485a58b83192948ad2e72e6f59887703335/locate_pixelcolor_cpp_parallelfor-0.11.tar.gz
+[2023-04-15 02:35:15] INFO root fetch - processPackages [locate-pixelcolor-c]: Downloading https://files.pythonhosted.org/packages/68/5a/c7133e0f8fbb547cd61bc9a3deaf82caa803e922fe437504ea7e4bb83d7e/locate_pixelcolor_c-0.11.tar.gz
+[2023-04-15 02:35:16] INFO root fetch - processPackages [pysigma-backend-opensearch]: executing diffoscope
+[2023-04-15 02:35:16] INFO root fetch - processPackages [pysigma-backend-opensearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pySigma-backend-opensearch-0.1.5.tar.gz tmp/pysigma_backend_opensearch-0.1.6.tar.gz --markdown 20230415/p/pysigma-backend-opensearch/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 02:35:16] INFO root fetch - processPackages [locate-pixelcolor-cpp-parallelfor]: executing diffoscope
+[2023-04-15 02:35:16] INFO root fetch - processPackages [twitter_bot_utils]: Downloading https://files.pythonhosted.org/packages/83/a6/0d019d8f32599b8e7d50126cc04a9bf676eb4be71e1e304806ea483bb25e/twitter_bot_utils-0.9.post2.tar.gz
+[2023-04-15 02:35:16] INFO root fetch - processPackages [locate-pixelcolor-cpp-parallelfor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locate_pixelcolor_cpp_parallelfor-0.10.tar.gz tmp/locate_pixelcolor_cpp_parallelfor-0.11.tar.gz --markdown 20230415/l/locate-pixelcolor-cpp-parallelfor/0.10-0.11/diff.md --exclude *.pyd
+[2023-04-15 02:35:16] INFO root fetch - processPackages [locate-pixelcolor-c]: executing diffoscope
+[2023-04-15 02:35:16] INFO root fetch - processPackages [locate-pixelcolor-c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locate_pixelcolor_c-0.10.tar.gz tmp/locate_pixelcolor_c-0.11.tar.gz --markdown 20230415/l/locate-pixelcolor-c/0.10-0.11/diff.md --exclude *.pyd
+[2023-04-15 02:35:16] INFO root fetch - processPackages [twitter_bot_utils]: executing diffoscope
+[2023-04-15 02:35:16] INFO root fetch - processPackages [twitter_bot_utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_bot_utils-0.9.post1.tar.gz tmp/twitter_bot_utils-0.9.post2.tar.gz --markdown 20230415/t/twitter_bot_utils/0.9.post1-0.9.post2/diff.md --exclude *.pyd
+[2023-04-15 02:35:17] INFO root fetch - processPackages [pysigma-backend-opensearch]: Start processing: locate-pixelcolor-cpppragma
+[2023-04-15 02:35:17] INFO root fetch - main [MainThread]: End processing [pysigma-backend-opensearch]: success
+[2023-04-15 02:35:17] INFO root fetch - processPackages [locate-pixelcolor-c]: Start processing: state-machine-semaphore
+[2023-04-15 02:35:17] INFO root fetch - main [MainThread]: End processing [locate-pixelcolor-c]: success
+[2023-04-15 02:35:17] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-15 02:35:17] INFO root fetch - processPackages [locate-pixelcolor-cpppragma]: New version: [0.11] Old Version: [0.10]
+[2023-04-15 02:35:17] INFO root fetch - main [MainThread]: End processing [locate-pixelcolor-cpp-parallelfor]: success
+[2023-04-15 02:35:17] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2023-04-15 02:35:17] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20230415/s/state-machine-semaphore/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-15 02:35:17] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-04-15 02:35:17] INFO root fetch - processPackages [locate-pixelcolor-cpppragma]: Downloading https://files.pythonhosted.org/packages/65/49/2b3de3c004e597391723f6c9e897a173a1980dcd1cf1d3a6aece4f5a3dce/locate_pixelcolor_cpppragma-0.10.tar.gz
+[2023-04-15 02:35:17] INFO root fetch - processPackages [locate-pixelcolor-cpppragma]: Downloading https://files.pythonhosted.org/packages/e1/f8/684783fd4bd5f39a5569016d2f14c7e1d119c8136e29b7894840a10604f7/locate_pixelcolor_cpppragma-0.11.tar.gz
+[2023-04-15 02:35:17] INFO root fetch - main [MainThread]: End processing [twitter_bot_utils]: success
+[2023-04-15 02:35:17] INFO root fetch - processPackages [locate-pixelcolor-cpppragma]: executing diffoscope
+[2023-04-15 02:35:17] INFO root fetch - processPackages [locate-pixelcolor-cpppragma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locate_pixelcolor_cpppragma-0.10.tar.gz tmp/locate_pixelcolor_cpppragma-0.11.tar.gz --markdown 20230415/l/locate-pixelcolor-cpppragma/0.10-0.11/diff.md --exclude *.pyd
+[2023-04-15 02:35:18] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2023-04-15 02:35:18] INFO root fetch - main [MainThread]: End processing [locate-pixelcolor-cpppragma]: success
+[2023-04-15 02:35:18] INFO root fetch - main [MainThread]: Store serial: [17714368]
