@@ -4874,3 +4874,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 05:24:53] INFO root fetch - main [MainThread]: End processing [psgtest]: success
 [2023-04-15 05:24:53] INFO root fetch - main [MainThread]: End processing [modProcesso]: success
 [2023-04-15 05:24:53] INFO root fetch - main [MainThread]: Store serial: [17716164]
+[2023-04-15 05:29:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716164]
+[2023-04-15 05:29:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 05:29:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: g41dataStructures
+[2023-04-15 05:29:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DomiKnowS
+[2023-04-15 05:29:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: minitrade
+[2023-04-15 05:29:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: psgtest
+[2023-04-15 05:29:59] INFO root fetch - processPackages [psgtest]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-15 05:29:59] INFO root fetch - processPackages [DomiKnowS]: New version: [0.533] Old Version: [0.532]
+[2023-04-15 05:29:59] WARNING root fetch - processPackages [g41dataStructures]: Skipping, unable to determine old version
+[2023-04-15 05:29:59] INFO root fetch - main [MainThread]: End processing [g41dataStructures] error
+[2023-04-15 05:29:59] INFO root fetch - processPackages [minitrade]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 05:30:00] INFO root fetch - processPackages [psgtest]: executing diffoscope
+[2023-04-15 05:30:00] INFO root fetch - processPackages [psgtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psgtest-1.8.0.tar.gz tmp/psgtest-1.9.0.tar.gz --markdown 20230415/p/psgtest/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-15 05:30:00] INFO root fetch - processPackages [DomiKnowS]: Downloading https://files.pythonhosted.org/packages/50/0b/7df18d10a26e35add43e2c8bf5c6161290c8000a1ff843a4a20d7cb08c47/DomiKnowS-0.533.tar.gz
+[2023-04-15 05:30:00] INFO root fetch - processPackages [DomiKnowS]: executing diffoscope
+[2023-04-15 05:30:00] INFO root fetch - processPackages [DomiKnowS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DomiKnowS-0.532.tar.gz tmp/DomiKnowS-0.533.tar.gz --markdown 20230415/D/DomiKnowS/0.532-0.533/diff.md --exclude *.pyd
+[2023-04-15 05:30:00] INFO root fetch - processPackages [minitrade]: executing diffoscope
+[2023-04-15 05:30:00] INFO root fetch - processPackages [minitrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minitrade-0.1.8.tar.gz tmp/minitrade-0.1.9.tar.gz --markdown 20230415/m/minitrade/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 05:30:01] INFO root fetch - main [MainThread]: End processing [psgtest]: success
+[2023-04-15 05:30:01] INFO root fetch - main [MainThread]: End processing [DomiKnowS]: success
+[2023-04-15 05:30:01] INFO root fetch - main [MainThread]: End processing [minitrade]: success
+[2023-04-15 05:30:01] INFO root fetch - main [MainThread]: Store serial: [17716183]
