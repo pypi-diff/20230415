@@ -15498,3 +15498,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 14:22:26] INFO root fetch - main [MainThread]: End processing [embetter]: success
 [2023-04-15 14:22:27] INFO root fetch - main [MainThread]: End processing [vollseg-napari-trackmate]: success
 [2023-04-15 14:22:27] INFO root fetch - main [MainThread]: Store serial: [17718845]
+[2023-04-15 14:27:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718845]
+[2023-04-15 14:27:36] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: planetai
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ssb-sgis
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kiam-astro
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bagua
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pylity
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyrepresent
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pip-chill
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: barbell2-castor
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: toolkit-lennart
+[2023-04-15 14:27:36] INFO root fetch - processPackages [planetai]: New version: [1.4] Old Version: [1.3]
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ssb-sgis]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 14:27:36] INFO root fetch - processPackages [pip-chill]: New version: [1.0.3] Old Version: [1.0.1]
+[2023-04-15 14:27:36] WARNING root fetch - processPackages [pylity]: Skipping, unable to determine old version
+[2023-04-15 14:27:36] INFO root fetch - main [MainThread]: End processing [pylity] error
+[2023-04-15 14:27:36] INFO root fetch - processPackages [kiam-astro]: New version: [3.1.0] Old Version: [3.0.4]
+[2023-04-15 14:27:36] INFO root fetch - processPackages [bagua]: New version: [0.9.3.dev5] Old Version: [0.9.3.dev4]
+[2023-04-15 14:27:36] INFO root fetch - processPackages [toolkit-lennart]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 14:27:36] INFO root fetch - processPackages [barbell2-castor]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-15 14:27:36] INFO root fetch - processPackages [pyrepresent]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-15 14:27:36] INFO root fetch - processPackages [toolkit-lennart]: executing diffoscope
+[2023-04-15 14:27:36] INFO root fetch - processPackages [toolkit-lennart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolkit_lennart-0.0.2.tar.gz tmp/toolkit_lennart-0.0.3.tar.gz --markdown 20230415/t/toolkit-lennart/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 14:27:36] INFO root fetch - processPackages [barbell2-castor]: Downloading https://files.pythonhosted.org/packages/79/c6/5f47f0b445d270c4faf3f7f7f0f90c3fda3d23adf3f90a7e2e44287ead2d/barbell2_castor-0.1.0.tar.gz
+[2023-04-15 14:27:36] INFO root fetch - processPackages [bagua]: Downloading https://files.pythonhosted.org/packages/a9/46/88be08f169b3b1ba8dc8855c9db37325b014c10236116c2f1adc415b42f1/bagua-0.9.3.dev5.tar.gz
+[2023-04-15 14:27:36] INFO root fetch - processPackages [pyrepresent]: Downloading https://files.pythonhosted.org/packages/31/f7/67b4bcfbe03538100247c235d7dce1ce9346d2b565f18d776587141ea2a5/pyrepresent-0.0.5.tar.gz
+[2023-04-15 14:27:36] INFO root fetch - processPackages [kiam-astro]: Downloading https://files.pythonhosted.org/packages/d4/87/14c5cd898b9f1d2a94aee09a84229c7594c7506f7aa43dca1877641b3719/kiam_astro-3.0.4.tar.gz
+[2023-04-15 14:27:36] INFO root fetch - processPackages [planetai]: Downloading https://files.pythonhosted.org/packages/99/9c/b8eadebc1be210a0aab695506b38086f6d059ed4c3e9fbaf03d0b65fc1e4/planetai-1.4.tar.gz
+[2023-04-15 14:27:36] INFO root fetch - processPackages [planetai]: executing diffoscope
+[2023-04-15 14:27:36] INFO root fetch - processPackages [planetai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/planetai-1.3.tar.gz tmp/planetai-1.4.tar.gz --markdown 20230415/p/planetai/1.3-1.4/diff.md --exclude *.pyd
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ssb-sgis]: Downloading https://files.pythonhosted.org/packages/be/01/6d54731d4de887ff452e64eadeb7a38b09435f656bbdddba991ac85c01fc/ssb_sgis-0.1.6.tar.gz
+[2023-04-15 14:27:36] INFO root fetch - processPackages [pip-chill]: Downloading https://files.pythonhosted.org/packages/0c/1d/eec0f393fe17675792e302a82cd6c1e77e261d212c7cbf70072727a6e016/pip-chill-1.0.3.tar.gz
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ssb-sgis]: executing diffoscope
+[2023-04-15 14:27:36] INFO root fetch - processPackages [ssb-sgis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssb_sgis-0.1.5.tar.gz tmp/ssb_sgis-0.1.6.tar.gz --markdown 20230415/s/ssb-sgis/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 14:27:36] INFO root fetch - processPackages [bagua]: executing diffoscope
+[2023-04-15 14:27:36] INFO root fetch - processPackages [bagua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagua-0.9.3.dev4.tar.gz tmp/bagua-0.9.3.dev5.tar.gz --markdown 20230415/b/bagua/0.9.3.dev4-0.9.3.dev5/diff.md --exclude *.pyd
+[2023-04-15 14:27:36] WARNING root fetch - processPackages [kiam-astro]: Skipping package: exceeds size limit 30605663>=10485760
+[2023-04-15 14:27:36] INFO root fetch - main [MainThread]: End processing [kiam-astro] error
+[2023-04-15 14:27:36] INFO root fetch - processPackages [barbell2-castor]: Downloading https://files.pythonhosted.org/packages/b2/f7/150873b589498ff58ec8cc6c207f994814d3b113dad569fc0aebd3ba3e8a/barbell2_castor-0.2.0.tar.gz
+[2023-04-15 14:27:36] INFO root fetch - processPackages [pip-chill]: executing diffoscope
+[2023-04-15 14:27:36] INFO root fetch - processPackages [pip-chill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-chill-1.0.1.tar.gz tmp/pip-chill-1.0.3.tar.gz --markdown 20230415/p/pip-chill/1.0.1-1.0.3/diff.md --exclude *.pyd
+[2023-04-15 14:27:36] INFO root fetch - processPackages [pyrepresent]: Downloading https://files.pythonhosted.org/packages/f7/7b/bca4fdd4dfe8fcfd2137d7819b4800a92bf48456f050fde860365fab455b/pyrepresent-0.0.6.tar.gz
+[2023-04-15 14:27:36] INFO root fetch - processPackages [barbell2-castor]: executing diffoscope
+[2023-04-15 14:27:36] INFO root fetch - processPackages [barbell2-castor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barbell2_castor-0.1.0.tar.gz tmp/barbell2_castor-0.2.0.tar.gz --markdown 20230415/b/barbell2-castor/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 14:27:36] INFO root fetch - processPackages [pyrepresent]: executing diffoscope
+[2023-04-15 14:27:36] INFO root fetch - processPackages [pyrepresent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrepresent-0.0.5.tar.gz tmp/pyrepresent-0.0.6.tar.gz --markdown 20230415/p/pyrepresent/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-15 14:27:37] INFO root fetch - main [MainThread]: End processing [toolkit-lennart]: success
+[2023-04-15 14:27:37] INFO root fetch - main [MainThread]: End processing [planetai]: success
+[2023-04-15 14:27:37] INFO root fetch - main [MainThread]: End processing [barbell2-castor]: success
+[2023-04-15 14:27:38] INFO root fetch - main [MainThread]: End processing [pyrepresent]: success
+[2023-04-15 14:27:38] INFO root fetch - main [MainThread]: End processing [pip-chill]: success
+[2023-04-15 14:27:38] INFO root fetch - main [MainThread]: End processing [ssb-sgis]: success
+[2023-04-15 14:27:42] INFO root fetch - main [MainThread]: End processing [bagua]: success
+[2023-04-15 14:27:42] INFO root fetch - main [MainThread]: Store serial: [17718870]
