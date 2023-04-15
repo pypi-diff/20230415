@@ -16492,3 +16492,127 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 16:07:32] INFO root fetch - main [MainThread]: End processing [xiot]: success
 [2023-04-15 16:07:41] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
 [2023-04-15 16:07:41] INFO root fetch - main [MainThread]: Store serial: [17719392]
+[2023-04-15 16:12:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719392]
+[2023-04-15 16:12:49] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-15 16:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xbool
+[2023-04-15 16:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xinject
+[2023-04-15 16:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xsentinels
+[2023-04-15 16:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xloop
+[2023-04-15 16:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AksharaJaana
+[2023-04-15 16:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xmodel
+[2023-04-15 16:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pycodeless
+[2023-04-15 16:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xsettings
+[2023-04-15 16:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ipython-gpt
+[2023-04-15 16:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: onnx2tf
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xbool]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xinject]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xloop]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xmodel]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xsentinels]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-15 16:12:50] INFO root fetch - processPackages [AksharaJaana]: New version: [1.0.1.1] Old Version: [1.0.0.1]
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xsettings]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-15 16:12:50] INFO root fetch - processPackages [ipython-gpt]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 16:12:50] INFO root fetch - processPackages [pycodeless]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-15 16:12:50] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-04-15 16:12:50] INFO root fetch - processPackages [pycodeless]: Downloading https://files.pythonhosted.org/packages/01/5f/17846d9731cfca4ec000af14b0a3a80ce5322de9ff6e85b6c4183e93900d/pycodeless-0.2.6.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xbool]: Downloading https://files.pythonhosted.org/packages/63/92/c1c4cff394e20970a1cce97d5fc8034dce56f32c633e1f9a056fa0c6a9b7/xbool-1.0.0.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [ipython-gpt]: Downloading https://files.pythonhosted.org/packages/ff/43/b842177889fab0c60db40bb24681c0d4834e1cb290f76b60bc0ab870bb87/ipython-gpt-0.0.2.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xloop]: Downloading https://files.pythonhosted.org/packages/40/15/802388414cdf9889b88c83a986532a2bdf611322f01d57cade2fd6c3d11e/xloop-1.0.1.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xinject]: Downloading https://files.pythonhosted.org/packages/0d/e7/6f30635f7cebda8ced58ebf2e62677a8c90ca3725abafceb21cd00657c60/xinject-1.4.0.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [AksharaJaana]: Downloading https://files.pythonhosted.org/packages/0f/11/9d288e469c34d83f93099c48e8abdbc23b34e377d652549ec3c6be142c0b/AksharaJaana-1.0.1.1.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xmodel]: Downloading https://files.pythonhosted.org/packages/db/cf/01a428e5d4c37835680402596e2ab34a564c70316cd74369dcac984ec752/xmodel-0.3.1.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xsettings]: Downloading https://files.pythonhosted.org/packages/97/6e/352d29bd38c9a16ecf7c877972cc7036befd1805001f3d977009f3de5baa/xsettings-1.3.0.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xsentinels]: Downloading https://files.pythonhosted.org/packages/6c/58/030acd4e7ffc5d712fcb3c5698d0a10e0aa8f47e957999f709fbced12047/xsentinels-1.2.1.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [AksharaJaana]: executing diffoscope
+[2023-04-15 16:12:50] INFO root fetch - processPackages [AksharaJaana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AksharaJaana-1.0.0.1.tar.gz tmp/AksharaJaana-1.0.1.1.tar.gz --markdown 20230415/A/AksharaJaana/1.0.0.1-1.0.1.1/diff.md --exclude *.pyd
+[2023-04-15 16:12:50] INFO root fetch - processPackages [ipython-gpt]: Downloading https://files.pythonhosted.org/packages/2e/14/7cdab13dfb85ce3e96984eb9a252a05eddb70b84e55d13d03029f2f4ac0a/ipython-gpt-0.0.3.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xmodel]: executing diffoscope
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xmodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xmodel-0.3.0.tar.gz tmp/xmodel-0.3.1.tar.gz --markdown 20230415/x/xmodel/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-15 16:12:50] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/b8/ad/b867c248c7a5972b6d26d177c3604cf49f08d19d0dc5274ed21b041d09a8/onnx2tf-1.9.3.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xbool]: Downloading https://files.pythonhosted.org/packages/22/83/eeed5fab7b4ecccfcedf853e875a58087585c8fa3722126ff2c2432a3be2/xbool-1.0.1.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [pycodeless]: Downloading https://files.pythonhosted.org/packages/e8/1b/9003355017bfac5fb48839a9e6b60a5a7a0cb108bf6d18e370b210353485/pycodeless-0.2.7.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xloop]: Downloading https://files.pythonhosted.org/packages/c1/98/005edd1f20dc4eacc2524b19721f78b565c1bf9128dc892f787496572c66/xloop-1.0.2.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xinject]: Downloading https://files.pythonhosted.org/packages/1a/bc/b9f3ef6be0a170cedcb8f2e23b424cd97180433e8246767a41ed164f78ba/xinject-1.4.1.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xsettings]: Downloading https://files.pythonhosted.org/packages/1a/94/20457ba3716244eb4ed3576379abee80b2ff97a8fff33043211209d34892/xsettings-1.3.1.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [ipython-gpt]: executing diffoscope
+[2023-04-15 16:12:50] INFO root fetch - processPackages [ipython-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipython-gpt-0.0.2.tar.gz tmp/ipython-gpt-0.0.3.tar.gz --markdown 20230415/i/ipython-gpt/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xsentinels]: Downloading https://files.pythonhosted.org/packages/63/0f/490ee44f66935e6f450687aca8bea90ae2d34ecdd86311bc60baae35ce12/xsentinels-1.2.2.tar.gz
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xbool]: executing diffoscope
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xbool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xbool-1.0.0.tar.gz tmp/xbool-1.0.1.tar.gz --markdown 20230415/x/xbool/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-15 16:12:50] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-04-15 16:12:50] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.2.tar.gz tmp/onnx2tf-1.9.3.tar.gz --markdown 20230415/o/onnx2tf/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xloop]: executing diffoscope
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xloop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xloop-1.0.1.tar.gz tmp/xloop-1.0.2.tar.gz --markdown 20230415/x/xloop/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-15 16:12:50] INFO root fetch - processPackages [pycodeless]: executing diffoscope
+[2023-04-15 16:12:50] INFO root fetch - processPackages [pycodeless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycodeless-0.2.6.tar.gz tmp/pycodeless-0.2.7.tar.gz --markdown 20230415/p/pycodeless/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xinject]: executing diffoscope
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xinject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xinject-1.4.0.tar.gz tmp/xinject-1.4.1.tar.gz --markdown 20230415/x/xinject/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xsettings]: executing diffoscope
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xsettings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xsettings-1.3.0.tar.gz tmp/xsettings-1.3.1.tar.gz --markdown 20230415/x/xsettings/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xsentinels]: executing diffoscope
+[2023-04-15 16:12:50] INFO root fetch - processPackages [xsentinels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xsentinels-1.2.1.tar.gz tmp/xsentinels-1.2.2.tar.gz --markdown 20230415/x/xsentinels/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-15 16:12:51] INFO root fetch - processPackages [AksharaJaana]: Start processing: xmodel-rest
+[2023-04-15 16:12:51] INFO root fetch - main [MainThread]: End processing [AksharaJaana]: success
+[2023-04-15 16:12:51] INFO root fetch - processPackages [xmodel-rest]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xbool]: Start processing: xurls
+[2023-04-15 16:12:52] INFO root fetch - main [MainThread]: End processing [xbool]: success
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xurls]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-15 16:12:52] INFO root fetch - processPackages [ipython-gpt]: Start processing: xmodel-dynamo
+[2023-04-15 16:12:52] INFO root fetch - main [MainThread]: End processing [ipython-gpt]: success
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xmodel-dynamo]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xloop]: Start processing: pycodeless
+[2023-04-15 16:12:52] INFO root fetch - main [MainThread]: End processing [xloop]: success
+[2023-04-15 16:12:52] INFO root fetch - processPackages [pycodeless]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xmodel-rest]: Downloading https://files.pythonhosted.org/packages/cc/c9/c4b6ac0aebb65b6f90134027355f0738f0388b181415b5a2089dbd94940a/xmodel_rest-0.1.0.tar.gz
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xinject]: Start processing: wixElemental
+[2023-04-15 16:12:52] INFO root fetch - main [MainThread]: End processing [xinject]: success
+[2023-04-15 16:12:52] WARNING root fetch - processPackages [wixElemental]: Skipping, unable to determine old version
+[2023-04-15 16:12:52] INFO root fetch - processPackages [wixElemental]: Start processing: xboto
+[2023-04-15 16:12:52] INFO root fetch - main [MainThread]: End processing [wixElemental] error
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xurls]: Downloading https://files.pythonhosted.org/packages/2d/50/3d57eea6836e841733c45e0423aa5fc3bd136c31e9802c87cbd845db1dfe/xurls-0.2.0.tar.gz
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xboto]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-15 16:12:52] INFO root fetch - processPackages [pycodeless]: executing diffoscope
+[2023-04-15 16:12:52] INFO root fetch - processPackages [pycodeless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycodeless-0.2.6.tar.gz tmp/pycodeless-0.2.7.tar.gz --markdown 20230415/p/pycodeless/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xsettings]: Start processing: phpdiscord
+[2023-04-15 16:12:52] INFO root fetch - main [MainThread]: End processing [xsettings]: success
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xmodel-dynamo]: Downloading https://files.pythonhosted.org/packages/f2/c0/05b3cf01a15eeb8ec7e1499cf1970a3215712e1c42ec940c367144155881/xmodel_dynamo-0.1.0.tar.gz
+[2023-04-15 16:12:52] INFO root fetch - processPackages [phpdiscord]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xsentinels]: Start processing: Erutils
+[2023-04-15 16:12:52] INFO root fetch - main [MainThread]: End processing [xsentinels]: success
+[2023-04-15 16:12:52] INFO root fetch - processPackages [Erutils]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-15 16:12:52] INFO root fetch - processPackages [pycodeless]: Start processing: kupala
+[2023-04-15 16:12:52] INFO root fetch - main [MainThread]: End processing [pycodeless]: success
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xmodel-rest]: Downloading https://files.pythonhosted.org/packages/c4/c1/c098fdabe80009b62265ed4c9752198947ada95bbaadb97d6efb1386ecc4/xmodel_rest-0.1.1.tar.gz
+[2023-04-15 16:12:52] INFO root fetch - processPackages [kupala]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xboto]: Downloading https://files.pythonhosted.org/packages/49/b5/eb6e7ea71f2b5b835280b9076bb0487c09a1907a2cb12f64946e279a72af/xboto-1.0.2.tar.gz
+[2023-04-15 16:12:52] INFO root fetch - processPackages [phpdiscord]: Downloading https://files.pythonhosted.org/packages/96/99/50b1739f979895b2ed66b54e959d1ea0a9527710f6387d95c1444846fdaf/phpdiscord-1.0.3.tar.gz
+[2023-04-15 16:12:52] INFO root fetch - processPackages [Erutils]: Downloading https://files.pythonhosted.org/packages/1c/b7/c5aca7700c17dabf56c9919b56ca545d468803341fbc08ad43090760d59e/Erutils-1.3.0.tar.gz
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xmodel-rest]: executing diffoscope
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xmodel-rest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xmodel_rest-0.1.0.tar.gz tmp/xmodel_rest-0.1.1.tar.gz --markdown 20230415/x/xmodel-rest/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 16:12:52] INFO root fetch - main [MainThread]: End processing [xmodel]: success
+[2023-04-15 16:12:52] INFO root fetch - processPackages [phpdiscord]: executing diffoscope
+[2023-04-15 16:12:52] INFO root fetch - processPackages [phpdiscord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phpdiscord-1.0.2.tar.gz tmp/phpdiscord-1.0.3.tar.gz --markdown 20230415/p/phpdiscord/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xurls]: Downloading https://files.pythonhosted.org/packages/47/43/6dce6f0e0c6eabfd8a3873e3e5c5796f67a60a6b7af31bacd1353ee4ae6f/xurls-0.2.1.tar.gz
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xmodel-dynamo]: Downloading https://files.pythonhosted.org/packages/61/31/ece482e2fbf22257a950d6de929421179607ee9313789b44050bb536b279/xmodel_dynamo-0.1.1.tar.gz
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xmodel-dynamo]: executing diffoscope
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xmodel-dynamo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xmodel_dynamo-0.1.0.tar.gz tmp/xmodel_dynamo-0.1.1.tar.gz --markdown 20230415/x/xmodel-dynamo/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xurls]: executing diffoscope
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xurls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xurls-0.2.0.tar.gz tmp/xurls-0.2.1.tar.gz --markdown 20230415/x/xurls/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-15 16:12:52] INFO root fetch - processPackages [Erutils]: Downloading https://files.pythonhosted.org/packages/96/c2/d510334509db241a360bf0c9e547d55897f45b8a3935e7f0104c756d1d7b/Erutils-1.3.1.tar.gz
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xboto]: Downloading https://files.pythonhosted.org/packages/e0/f8/f251b2d8632d2acea6559d5a6f46bec2656425e11de573aea4a5bf587034/xboto-1.1.0.tar.gz
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xboto]: executing diffoscope
+[2023-04-15 16:12:52] INFO root fetch - processPackages [xboto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xboto-1.0.2.tar.gz tmp/xboto-1.1.0.tar.gz --markdown 20230415/x/xboto/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-15 16:12:52] INFO root fetch - processPackages [kupala]: executing diffoscope
+[2023-04-15 16:12:52] INFO root fetch - processPackages [kupala]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kupala-0.9.7.tar.gz tmp/kupala-0.9.8.tar.gz --markdown 20230415/k/kupala/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-04-15 16:12:52] INFO root fetch - processPackages [Erutils]: executing diffoscope
+[2023-04-15 16:12:52] INFO root fetch - processPackages [Erutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Erutils-1.3.0.tar.gz tmp/Erutils-1.3.1.tar.gz --markdown 20230415/E/Erutils/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-15 16:12:53] INFO root fetch - main [MainThread]: End processing [pycodeless]: success
+[2023-04-15 16:12:53] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-04-15 16:12:53] INFO root fetch - main [MainThread]: End processing [phpdiscord]: success
+[2023-04-15 16:12:54] INFO root fetch - main [MainThread]: End processing [xurls]: success
+[2023-04-15 16:12:54] INFO root fetch - main [MainThread]: End processing [xmodel-rest]: success
+[2023-04-15 16:12:54] INFO root fetch - main [MainThread]: End processing [xmodel-dynamo]: success
+[2023-04-15 16:12:54] INFO root fetch - main [MainThread]: End processing [xboto]: success
+[2023-04-15 16:12:54] INFO root fetch - main [MainThread]: End processing [Erutils]: success
+[2023-04-15 16:12:54] INFO root fetch - main [MainThread]: End processing [kupala]: success
+[2023-04-15 16:12:54] INFO root fetch - main [MainThread]: Store serial: [17719450]
