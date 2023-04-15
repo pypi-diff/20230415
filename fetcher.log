@@ -13560,3 +13560,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 10:50:27] INFO root fetch - main [MainThread]: End processing [DjangoKit]: success
 [2023-04-15 10:50:29] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-04-15 10:50:29] INFO root fetch - main [MainThread]: Store serial: [17717624]
+[2023-04-15 10:55:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717624]
+[2023-04-15 10:55:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 10:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OctoBot-Tentacles-Manager
+[2023-04-15 10:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rwkv-paddle
+[2023-04-15 10:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: OctoBot-Commons
+[2023-04-15 10:55:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plone.behavior
+[2023-04-15 10:55:39] INFO root fetch - processPackages [rwkv-paddle]: New version: [0.7.3.1] Old Version: [0.7.3]
+[2023-04-15 10:55:39] INFO root fetch - processPackages [OctoBot-Tentacles-Manager]: New version: [2.8.6] Old Version: [2.8.5]
+[2023-04-15 10:55:39] INFO root fetch - processPackages [plone.behavior]: New version: [2.0.0] Old Version: [1.4.0]
+[2023-04-15 10:55:39] INFO root fetch - processPackages [OctoBot-Commons]: New version: [1.8.9] Old Version: [1.8.8]
+[2023-04-15 10:55:39] INFO root fetch - processPackages [rwkv-paddle]: Downloading https://files.pythonhosted.org/packages/38/a3/fe217fd333821c07e393e37e90fb3dc5141b355d948e1083eb0012f95481/rwkv-paddle-0.7.3.tar.gz
+[2023-04-15 10:55:39] INFO root fetch - processPackages [OctoBot-Tentacles-Manager]: Downloading https://files.pythonhosted.org/packages/48/17/b1ab264baa993a599db6e0bd141db5084173f4496afb937d9766cd4d7d16/OctoBot-Tentacles-Manager-2.8.5.tar.gz
+[2023-04-15 10:55:39] INFO root fetch - processPackages [plone.behavior]: Downloading https://files.pythonhosted.org/packages/20/71/932cae2920859fde9b7bb26b637de4ee1e12a28207ae1f6901c7f660c483/plone.behavior-1.4.0.tar.gz
+[2023-04-15 10:55:39] INFO root fetch - processPackages [OctoBot-Commons]: Downloading https://files.pythonhosted.org/packages/6f/d9/8d4bd3a0d37a723860fc064483a4e7d7aed42f7ddb54e1ad51d4e91ddcbb/OctoBot-Commons-1.8.8.tar.gz
+[2023-04-15 10:55:39] INFO root fetch - processPackages [rwkv-paddle]: Downloading https://files.pythonhosted.org/packages/f7/78/eb60215260593ae3d7af8abc716014317fab2030f9335ef059237b64244a/rwkv-paddle-0.7.3.1.tar.gz
+[2023-04-15 10:55:39] INFO root fetch - processPackages [OctoBot-Tentacles-Manager]: Downloading https://files.pythonhosted.org/packages/c8/60/4b5a39ae0171cd8d91b187c43ff7b2453483f4107429baa8d414755648dd/OctoBot-Tentacles-Manager-2.8.6.tar.gz
+[2023-04-15 10:55:39] INFO root fetch - processPackages [OctoBot-Tentacles-Manager]: executing diffoscope
+[2023-04-15 10:55:39] INFO root fetch - processPackages [OctoBot-Tentacles-Manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Tentacles-Manager-2.8.5.tar.gz tmp/OctoBot-Tentacles-Manager-2.8.6.tar.gz --markdown 20230415/O/OctoBot-Tentacles-Manager/2.8.5-2.8.6/diff.md --exclude *.pyd
+[2023-04-15 10:55:39] INFO root fetch - processPackages [plone.behavior]: Downloading https://files.pythonhosted.org/packages/61/db/fedb27c246ac6dc2e1a7ca00eee8e40b191818a5f55bdf856a82a2ca1092/plone.behavior-2.0.0.tar.gz
+[2023-04-15 10:55:39] INFO root fetch - processPackages [rwkv-paddle]: executing diffoscope
+[2023-04-15 10:55:39] INFO root fetch - processPackages [rwkv-paddle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rwkv-paddle-0.7.3.tar.gz tmp/rwkv-paddle-0.7.3.1.tar.gz --markdown 20230415/r/rwkv-paddle/0.7.3-0.7.3.1/diff.md --exclude *.pyd
+[2023-04-15 10:55:39] INFO root fetch - processPackages [OctoBot-Commons]: Downloading https://files.pythonhosted.org/packages/e8/ab/3df46536d1225eecd6a8fe675ab5168b3592bb4d4e108bbeec7388299c48/OctoBot-Commons-1.8.9.tar.gz
+[2023-04-15 10:55:39] INFO root fetch - processPackages [plone.behavior]: executing diffoscope
+[2023-04-15 10:55:39] INFO root fetch - processPackages [plone.behavior]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.behavior-1.4.0.tar.gz tmp/plone.behavior-2.0.0.tar.gz --markdown 20230415/p/plone.behavior/1.4.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-15 10:55:39] INFO root fetch - processPackages [OctoBot-Commons]: executing diffoscope
+[2023-04-15 10:55:39] INFO root fetch - processPackages [OctoBot-Commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Commons-1.8.8.tar.gz tmp/OctoBot-Commons-1.8.9.tar.gz --markdown 20230415/O/OctoBot-Commons/1.8.8-1.8.9/diff.md --exclude *.pyd
+[2023-04-15 10:55:41] INFO root fetch - main [MainThread]: End processing [plone.behavior]: success
+[2023-04-15 10:55:41] INFO root fetch - main [MainThread]: End processing [rwkv-paddle]: success
+[2023-04-15 10:55:41] INFO root fetch - main [MainThread]: End processing [OctoBot-Tentacles-Manager]: success
+[2023-04-15 10:55:41] INFO root fetch - main [MainThread]: End processing [OctoBot-Commons]: success
+[2023-04-15 10:55:41] INFO root fetch - main [MainThread]: Store serial: [17717635]
