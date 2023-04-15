@@ -5003,3 +5003,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 05:40:20] INFO root fetch - main [MainThread]: End processing [anthropic]: success
 [2023-04-15 05:40:21] INFO root fetch - main [MainThread]: End processing [mkdocs-terminal]: success
 [2023-04-15 05:40:21] INFO root fetch - main [MainThread]: Store serial: [17716253]
+[2023-04-15 05:45:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716253]
+[2023-04-15 05:45:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 05:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipen-dry
+[2023-04-15 05:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drs-compliance
+[2023-04-15 05:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-currency-rate-update
+[2023-04-15 05:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rasterarea
+[2023-04-15 05:45:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: h2o-mlops-scoring-client
+[2023-04-15 05:45:28] INFO root fetch - processPackages [pipen-dry]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-15 05:45:28] INFO root fetch - processPackages [odoo14-addon-currency-rate-update]: New version: [14.0.1.3.1.dev9] Old Version: [14.0.1.3.1.dev8]
+[2023-04-15 05:45:28] INFO root fetch - processPackages [rasterarea]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 05:45:28] INFO root fetch - processPackages [drs-compliance]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-15 05:45:28] WARNING root fetch - processPackages [h2o-mlops-scoring-client]: Skipping, unable to determine old version
+[2023-04-15 05:45:28] INFO root fetch - processPackages [h2o-mlops-scoring-client]: Start processing: WebP-Support
+[2023-04-15 05:45:28] INFO root fetch - main [MainThread]: End processing [h2o-mlops-scoring-client] error
+[2023-04-15 05:45:28] INFO root fetch - processPackages [WebP-Support]: New version: [0.2.1] Old Version: [0.0.2]
+[2023-04-15 05:45:28] INFO root fetch - processPackages [pipen-dry]: Downloading https://files.pythonhosted.org/packages/42/f7/ab7ab073c4037f0e8476dfbd64510f1ad9dbae305f937cf8eb36ea57fe29/pipen_dry-0.4.0.tar.gz
+[2023-04-15 05:45:28] INFO root fetch - processPackages [rasterarea]: Downloading https://files.pythonhosted.org/packages/e7/99/c10a078e5f603e32741a361d855869266d67b313051c1bbdf6c80ea59527/rasterarea-0.0.2.tar.gz
+[2023-04-15 05:45:28] INFO root fetch - processPackages [drs-compliance]: Downloading https://files.pythonhosted.org/packages/83/3f/0e355527fec754f0fe6ec8bebd46d6e6139debb3f3c6ff16cd90c2147c99/drs-compliance-1.0.4.tar.gz
+[2023-04-15 05:45:28] INFO root fetch - processPackages [WebP-Support]: Downloading https://files.pythonhosted.org/packages/90/b2/c09d4d5866fe125321f15c1d80daa245c9a6e63af48fec228d9b93847b26/WebP_Support-0.0.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 05:45:28] INFO root fetch - processPackages [drs-compliance]: executing diffoscope
+[2023-04-15 05:45:28] INFO root fetch - processPackages [drs-compliance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drs-compliance-1.0.3.tar.gz tmp/drs-compliance-1.0.4.tar.gz --markdown 20230415/d/drs-compliance/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-15 05:45:28] INFO root fetch - processPackages [odoo14-addon-currency-rate-update]: executing diffoscope
+[2023-04-15 05:45:28] INFO root fetch - processPackages [odoo14-addon-currency-rate-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_currency_rate_update-14.0.1.3.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_currency_rate_update-14.0.1.3.1.dev9-py3-none-any.whl.zip --markdown 20230415/o/odoo14-addon-currency-rate-update/14.0.1.3.1.dev8-14.0.1.3.1.dev9/diff.md --exclude *.pyd
+[2023-04-15 05:45:28] INFO root fetch - processPackages [rasterarea]: Downloading https://files.pythonhosted.org/packages/f4/c0/97d41ada1f52e8cb5a3ed8145970afd427ce84316071280b8758d0d0f3af/rasterarea-0.0.3.tar.gz
+[2023-04-15 05:45:28] INFO root fetch - processPackages [pipen-dry]: Downloading https://files.pythonhosted.org/packages/e0/f5/d383e30b0d5a02d6bc3f7fdbc2ef19aa38837b948bd0e24cbad3bfbf3130/pipen_dry-0.5.0.tar.gz
+[2023-04-15 05:45:28] INFO root fetch - processPackages [WebP-Support]: Downloading https://files.pythonhosted.org/packages/0c/3e/58937d663d10c5350f635e6fa3c35e41d416d28f4fb9ac467f0b668425bb/WebP%20Support-0.2.1.tar.gz
+[2023-04-15 05:45:28] INFO root fetch - processPackages [pipen-dry]: executing diffoscope
+[2023-04-15 05:45:28] INFO root fetch - processPackages [pipen-dry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_dry-0.4.0.tar.gz tmp/pipen_dry-0.5.0.tar.gz --markdown 20230415/p/pipen-dry/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-15 05:45:28] INFO root fetch - processPackages [rasterarea]: executing diffoscope
+[2023-04-15 05:45:28] INFO root fetch - processPackages [rasterarea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rasterarea-0.0.2.tar.gz tmp/rasterarea-0.0.3.tar.gz --markdown 20230415/r/rasterarea/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 05:45:28] INFO root fetch - processPackages [WebP-Support]: executing diffoscope
+[2023-04-15 05:45:28] INFO root fetch - processPackages [WebP-Support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WebP_Support-0.0.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/WebP Support-0.2.1.tar.gz --markdown 20230415/W/WebP-Support/0.0.2-0.2.1/diff.md --exclude *.pyd
+[2023-04-15 05:45:29] INFO root fetch - main [MainThread]: End processing [drs-compliance]: success
+[2023-04-15 05:45:29] INFO root fetch - main [MainThread]: End processing [pipen-dry]: success
+[2023-04-15 05:45:30] INFO root fetch - main [MainThread]: End processing [WebP-Support]: success
+[2023-04-15 05:45:30] INFO root fetch - main [MainThread]: End processing [rasterarea]: success
+[2023-04-15 05:45:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-currency-rate-update]: success
+[2023-04-15 05:45:30] INFO root fetch - main [MainThread]: Store serial: [17716300]
