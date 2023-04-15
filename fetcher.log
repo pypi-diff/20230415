@@ -14792,3 +14792,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 13:14:39] INFO root fetch - main [MainThread]: End processing [django-comment-system]: success
 [2023-04-15 13:14:48] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
 [2023-04-15 13:14:48] INFO root fetch - main [MainThread]: Store serial: [17718375]
+[2023-04-15 13:19:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718375]
+[2023-04-15 13:19:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 13:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-text-annotator
+[2023-04-15 13:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sharingiscaring
+[2023-04-15 13:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: APiHole
+[2023-04-15 13:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchtnt-nightly
+[2023-04-15 13:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: logicgateeso
+[2023-04-15 13:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xolojgmnizxche
+[2023-04-15 13:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tata
+[2023-04-15 13:19:59] WARNING root fetch - processPackages [xolojgmnizxche]: Skipping, unable to determine old version
+[2023-04-15 13:19:59] INFO root fetch - main [MainThread]: End processing [xolojgmnizxche] error
+[2023-04-15 13:19:59] INFO root fetch - processPackages [sharingiscaring]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-15 13:19:59] WARNING root fetch - processPackages [streamlit-text-annotator]: Skipping, unable to determine old version
+[2023-04-15 13:19:59] INFO root fetch - main [MainThread]: End processing [streamlit-text-annotator] error
+[2023-04-15 13:19:59] INFO root fetch - processPackages [logicgateeso]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-04-15 13:19:59] WARNING root fetch - processPackages [APiHole]: Skipping, unable to determine old version
+[2023-04-15 13:19:59] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-15 13:19:59] INFO root fetch - main [MainThread]: End processing [APiHole] error
+[2023-04-15 13:19:59] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/90/f0/5979ec353d8f6b4db609276e510f2b2adbe5ef9b6202e997c3dc12b1b6dc/torchtnt-nightly-2023.4.8.tar.gz
+[2023-04-15 13:19:59] INFO root fetch - processPackages [sharingiscaring]: executing diffoscope
+[2023-04-15 13:19:59] INFO root fetch - processPackages [sharingiscaring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharingiscaring-0.2.8.tar.gz tmp/sharingiscaring-0.2.9.tar.gz --markdown 20230415/s/sharingiscaring/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-15 13:19:59] WARNING root fetch - processPackages [tata]: Skipping, unable to determine old version
+[2023-04-15 13:19:59] INFO root fetch - main [MainThread]: End processing [tata] error
+[2023-04-15 13:19:59] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/48/97/381791bc4283e669dec9f67993e2049ffec0082aab092c27860699d3eb24/torchtnt-nightly-2023.4.9.tar.gz
+[2023-04-15 13:19:59] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-04-15 13:19:59] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.4.8.tar.gz tmp/torchtnt-nightly-2023.4.9.tar.gz --markdown 20230415/t/torchtnt-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-15 13:19:59] INFO root fetch - processPackages [logicgateeso]: Downloading https://files.pythonhosted.org/packages/56/24/ec82c1978bbd3aba999805b29e43d4b038dfba48505aa80cbcf59ae956c8/LogicGateESO-0.1.2.tar.gz
+[2023-04-15 13:19:59] INFO root fetch - processPackages [logicgateeso]: executing diffoscope
+[2023-04-15 13:19:59] INFO root fetch - processPackages [logicgateeso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LogicGateESO-0.1.0.tar.gz tmp/LogicGateESO-0.1.2.tar.gz --markdown 20230415/l/logicgateeso/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 13:20:00] INFO root fetch - main [MainThread]: End processing [logicgateeso]: success
+[2023-04-15 13:20:00] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-04-15 13:20:00] INFO root fetch - main [MainThread]: End processing [sharingiscaring]: success
+[2023-04-15 13:20:00] INFO root fetch - main [MainThread]: Store serial: [17718406]
