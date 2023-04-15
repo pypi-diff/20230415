@@ -5387,3 +5387,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 06:44:55] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-fr-das2]: success
 [2023-04-15 06:44:59] INFO root fetch - main [MainThread]: End processing [shipdeo]: success
 [2023-04-15 06:44:59] INFO root fetch - main [MainThread]: Store serial: [17716506]
+[2023-04-15 06:50:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716506]
+[2023-04-15 06:50:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 06:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: je-load-density-dev
+[2023-04-15 06:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo11-addon-l10n-it-fiscal-document-type
+[2023-04-15 06:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: systempath
+[2023-04-15 06:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo12-addon-l10n-it-fiscal-document-type
+[2023-04-15 06:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-assets-management
+[2023-04-15 06:50:06] INFO root fetch - processPackages [systempath]: New version: [1.0a8] Old Version: [1.0.6]
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo11-addon-l10n-it-fiscal-document-type]: New version: [11.0.2.1.0.99.dev3] Old Version: [11.0.2.1.0.99.dev2]
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo12-addon-l10n-it-fiscal-document-type]: New version: [12.0.2.1.2.99.dev1] Old Version: [12.0.2.1.2]
+[2023-04-15 06:50:06] INFO root fetch - processPackages [je-load-density-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo14-addon-assets-management]: New version: [14.0.1.0.5.dev9] Old Version: [14.0.1.0.5.dev6]
+[2023-04-15 06:50:06] INFO root fetch - processPackages [systempath]: Downloading https://files.pythonhosted.org/packages/69/6a/bdd559ce29ae5f7d85bc65cc6d120b24ec9f5dcbcd5b597fe8e91a31d9a0/systempath-1.0.6-py3-none-any.whl
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo11-addon-l10n-it-fiscal-document-type]: Downloading https://files.pythonhosted.org/packages/a0/e8/74e93caed3b36f513567fb9d0d5da8f328e5e7af7a0bfdc7566eb4d02211/odoo11_addon_l10n_it_fiscal_document_type-11.0.2.1.0.99.dev2-py2.py3-none-any.whl
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo12-addon-l10n-it-fiscal-document-type]: Downloading https://files.pythonhosted.org/packages/69/ef/ddfb23705298d8e9ead1cbbec5362ff76325abcfe18f9909a4755c19e2b0/odoo12_addon_l10n_it_fiscal_document_type-12.0.2.1.2-py3-none-any.whl
+[2023-04-15 06:50:06] INFO root fetch - processPackages [je-load-density-dev]: executing diffoscope
+[2023-04-15 06:50:06] INFO root fetch - processPackages [je-load-density-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_load_density_dev-0.0.8.tar.gz tmp/je_load_density_dev-0.0.9.tar.gz --markdown 20230415/j/je-load-density-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo14-addon-assets-management]: executing diffoscope
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo14-addon-assets-management]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_assets_management-14.0.1.0.5.dev6-py3-none-any.whl.zip tmp/odoo14_addon_assets_management-14.0.1.0.5.dev9-py3-none-any.whl.zip --markdown 20230415/o/odoo14-addon-assets-management/14.0.1.0.5.dev6-14.0.1.0.5.dev9/diff.md --exclude *.pyd
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo11-addon-l10n-it-fiscal-document-type]: Downloading https://files.pythonhosted.org/packages/e5/e4/fb3baec7d2a94085b41e726d68774bdbde915db0443a2994f4632e0d78ba/odoo11_addon_l10n_it_fiscal_document_type-11.0.2.1.0.99.dev3-py2.py3-none-any.whl
+[2023-04-15 06:50:06] INFO root fetch - processPackages [systempath]: executing diffoscope
+[2023-04-15 06:50:06] INFO root fetch - processPackages [systempath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systempath-1.0.6-py3-none-any.whl.zip tmp/systempath-1.0a8-py3-none-any.whl.zip --markdown 20230415/s/systempath/1.0.6-1.0a8/diff.md --exclude *.pyd
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo12-addon-l10n-it-fiscal-document-type]: Downloading https://files.pythonhosted.org/packages/03/36/4d5f0e17c9a009c5ae2e3f1c56a5c9a48af1d6f969bca0b65c5db0237a72/odoo12_addon_l10n_it_fiscal_document_type-12.0.2.1.2.99.dev1-py3-none-any.whl
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo11-addon-l10n-it-fiscal-document-type]: executing diffoscope
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo11-addon-l10n-it-fiscal-document-type]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_l10n_it_fiscal_document_type-11.0.2.1.0.99.dev2-py2.py3-none-any.whl.zip tmp/odoo11_addon_l10n_it_fiscal_document_type-11.0.2.1.0.99.dev3-py2.py3-none-any.whl.zip --markdown 20230415/o/odoo11-addon-l10n-it-fiscal-document-type/11.0.2.1.0.99.dev2-11.0.2.1.0.99.dev3/diff.md --exclude *.pyd
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo12-addon-l10n-it-fiscal-document-type]: executing diffoscope
+[2023-04-15 06:50:06] INFO root fetch - processPackages [odoo12-addon-l10n-it-fiscal-document-type]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_l10n_it_fiscal_document_type-12.0.2.1.2-py3-none-any.whl.zip tmp/odoo12_addon_l10n_it_fiscal_document_type-12.0.2.1.2.99.dev1-py3-none-any.whl.zip --markdown 20230415/o/odoo12-addon-l10n-it-fiscal-document-type/12.0.2.1.2-12.0.2.1.2.99.dev1/diff.md --exclude *.pyd
+[2023-04-15 06:50:07] INFO root fetch - main [MainThread]: End processing [systempath]: success
+[2023-04-15 06:50:07] INFO root fetch - main [MainThread]: End processing [je-load-density-dev]: success
+[2023-04-15 06:50:08] INFO root fetch - main [MainThread]: End processing [odoo11-addon-l10n-it-fiscal-document-type]: success
+[2023-04-15 06:50:08] INFO root fetch - main [MainThread]: End processing [odoo12-addon-l10n-it-fiscal-document-type]: success
+[2023-04-15 06:50:08] INFO root fetch - main [MainThread]: End processing [odoo14-addon-assets-management]: success
+[2023-04-15 06:50:08] INFO root fetch - main [MainThread]: Store serial: [17716517]
