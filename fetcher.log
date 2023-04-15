@@ -13591,3 +13591,95 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 10:55:41] INFO root fetch - main [MainThread]: End processing [OctoBot-Tentacles-Manager]: success
 [2023-04-15 10:55:41] INFO root fetch - main [MainThread]: End processing [OctoBot-Commons]: success
 [2023-04-15 10:55:41] INFO root fetch - main [MainThread]: Store serial: [17717635]
+[2023-04-15 11:00:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717635]
+[2023-04-15 11:00:50] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-15 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: analogic-framework
+[2023-04-15 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Products.CMFDynamicViewFTI
+[2023-04-15 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cupoch
+[2023-04-15 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scratch-poetry
+[2023-04-15 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: networklab
+[2023-04-15 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Products.CMFEditions
+[2023-04-15 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Products.CMFDiffTool
+[2023-04-15 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: autogluon.common
+[2023-04-15 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: autogluon.core
+[2023-04-15 11:00:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: autogluon.features
+[2023-04-15 11:00:50] INFO root fetch - processPackages [analogic-framework]: New version: [4.1.1] Old Version: [4.1.0]
+[2023-04-15 11:00:50] INFO root fetch - processPackages [cupoch]: New version: [0.2.7.1] Old Version: [0.2.7.0]
+[2023-04-15 11:00:50] INFO root fetch - processPackages [networklab]: New version: [1.5.2.dev1] Old Version: [1.5.1.dev1]
+[2023-04-15 11:00:50] INFO root fetch - processPackages [Products.CMFDiffTool]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-04-15 11:00:50] WARNING root fetch - processPackages [scratch-poetry]: Skipping, unable to determine old version
+[2023-04-15 11:00:50] INFO root fetch - processPackages [Products.CMFDynamicViewFTI]: New version: [7.0.1] Old Version: [7.0.0a1]
+[2023-04-15 11:00:50] INFO root fetch - processPackages [scratch-poetry]: Start processing: autogluon.tabular
+[2023-04-15 11:00:50] INFO root fetch - main [MainThread]: End processing [scratch-poetry] error
+[2023-04-15 11:00:50] INFO root fetch - processPackages [Products.CMFEditions]: New version: [4.0.1] Old Version: [4.0.0b3]
+[2023-04-15 11:00:50] INFO root fetch - processPackages [autogluon.common]: New version: [0.7.0b20230414] Old Version: [0.7.0b20230413]
+[2023-04-15 11:00:50] INFO root fetch - processPackages [autogluon.features]: New version: [0.7.0b20230414] Old Version: [0.7.0b20230413]
+[2023-04-15 11:00:50] INFO root fetch - processPackages [autogluon.core]: New version: [0.7.0b20230414] Old Version: [0.7.0b20230413]
+[2023-04-15 11:00:50] INFO root fetch - processPackages [autogluon.tabular]: New version: [0.7.0b20230414] Old Version: [0.7.0b20230413]
+[2023-04-15 11:00:50] INFO root fetch - processPackages [cupoch]: Downloading https://files.pythonhosted.org/packages/17/ce/2818580c3fee7985d244fc3998b250ab2475f0889b76c98fb3e13f0cbe32/cupoch-0.2.7.0-cp39-cp39-win_amd64.whl
+[2023-04-15 11:00:50] INFO root fetch - processPackages [networklab]: Downloading https://files.pythonhosted.org/packages/df/d4/a7d247d3219a00abfcfd995a9fd267bc7c29a2b634154e49bccae1d192f9/networklab-1.5.1.dev1.tar.gz
+[2023-04-15 11:00:50] INFO root fetch - processPackages [Products.CMFDynamicViewFTI]: Downloading https://files.pythonhosted.org/packages/43/a0/476d0c2eea4443c29b74828ef68321fa7c4c382a7fe58a5df5345cbaaf0e/Products.CMFDynamicViewFTI-7.0.0a1.tar.gz
+[2023-04-15 11:00:50] INFO root fetch - processPackages [autogluon.features]: executing diffoscope
+[2023-04-15 11:00:50] INFO root fetch - processPackages [autogluon.features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.features-0.7.0b20230413.tar.gz tmp/autogluon.features-0.7.0b20230414.tar.gz --markdown 20230415/a/autogluon.features/0.7.0b20230413-0.7.0b20230414/diff.md --exclude *.pyd
+[2023-04-15 11:00:51] INFO root fetch - processPackages [Products.CMFEditions]: Downloading https://files.pythonhosted.org/packages/3a/84/8d187dc12f74d6b6bc99ea70d3feae4b6528ee6b366d8d728de715746310/Products.CMFEditions-4.0.0b3.tar.gz
+[2023-04-15 11:00:51] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2023-04-15 11:00:51] INFO root fetch - processPackages [Products.CMFDiffTool]: Downloading https://files.pythonhosted.org/packages/d2/ab/1ba82fb5d64cbe0ba7f5c3590a807824f15b47a993bfe54f103c21f440c4/Products.CMFDiffTool-4.0.0.tar.gz
+[2023-04-15 11:00:51] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-0.7.0b20230413.tar.gz tmp/autogluon.core-0.7.0b20230414.tar.gz --markdown 20230415/a/autogluon.core/0.7.0b20230413-0.7.0b20230414/diff.md --exclude *.pyd
+[2023-04-15 11:00:51] INFO root fetch - processPackages [autogluon.tabular]: executing diffoscope
+[2023-04-15 11:00:51] INFO root fetch - processPackages [autogluon.tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.tabular-0.7.0b20230413.tar.gz tmp/autogluon.tabular-0.7.0b20230414.tar.gz --markdown 20230415/a/autogluon.tabular/0.7.0b20230413-0.7.0b20230414/diff.md --exclude *.pyd
+[2023-04-15 11:00:51] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2023-04-15 11:00:51] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-0.7.0b20230413.tar.gz tmp/autogluon.common-0.7.0b20230414.tar.gz --markdown 20230415/a/autogluon.common/0.7.0b20230413-0.7.0b20230414/diff.md --exclude *.pyd
+[2023-04-15 11:00:51] INFO root fetch - processPackages [analogic-framework]: Downloading https://files.pythonhosted.org/packages/c9/19/3d265e6cf9d341322041b072bcb4e61c303d41937efa7fbb5df320493eb2/analogic-framework-4.1.1.tar.gz
+[2023-04-15 11:00:51] WARNING root fetch - processPackages [cupoch]: Skipping package: exceeds size limit 19246917>=10485760
+[2023-04-15 11:00:51] INFO root fetch - processPackages [cupoch]: Start processing: autogluon.multimodal
+[2023-04-15 11:00:51] INFO root fetch - main [MainThread]: End processing [cupoch] error
+[2023-04-15 11:00:51] INFO root fetch - processPackages [autogluon.multimodal]: New version: [0.7.0b20230414] Old Version: [0.7.0b20230413]
+[2023-04-15 11:00:51] INFO root fetch - processPackages [autogluon.multimodal]: executing diffoscope
+[2023-04-15 11:00:51] INFO root fetch - processPackages [autogluon.multimodal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.multimodal-0.7.0b20230413.tar.gz tmp/autogluon.multimodal-0.7.0b20230414.tar.gz --markdown 20230415/a/autogluon.multimodal/0.7.0b20230413-0.7.0b20230414/diff.md --exclude *.pyd
+[2023-04-15 11:00:51] INFO root fetch - processPackages [Products.CMFDiffTool]: Downloading https://files.pythonhosted.org/packages/90/bb/0511f057bb6285f9f64619d83b5a5a34231745b2e68c50f5e690740d5046/Products.CMFDiffTool-4.0.1.tar.gz
+[2023-04-15 11:00:51] INFO root fetch - processPackages [networklab]: Downloading https://files.pythonhosted.org/packages/23/02/b1b740b08a73b5be3dd951319d719150b625fdee0dde00890ce8f5e83836/networklab-1.5.2.dev1.tar.gz
+[2023-04-15 11:00:51] INFO root fetch - processPackages [Products.CMFDynamicViewFTI]: Downloading https://files.pythonhosted.org/packages/81/c3/bddf0397f3064d9471cc37979a672c2ac18379eb4fe8e6875cc89226e4df/Products.CMFDynamicViewFTI-7.0.1.tar.gz
+[2023-04-15 11:00:51] INFO root fetch - processPackages [analogic-framework]: executing diffoscope
+[2023-04-15 11:00:51] INFO root fetch - processPackages [analogic-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/analogic-framework-4.1.0.tar.gz tmp/analogic-framework-4.1.1.tar.gz --markdown 20230415/a/analogic-framework/4.1.0-4.1.1/diff.md --exclude *.pyd
+[2023-04-15 11:00:51] INFO root fetch - processPackages [Products.CMFEditions]: Downloading https://files.pythonhosted.org/packages/55/c3/4e1c86e6f58f714a1940c4736b342792cd942e6af46364f63404301d74a5/Products.CMFEditions-4.0.1.tar.gz
+[2023-04-15 11:00:51] INFO root fetch - processPackages [Products.CMFDiffTool]: executing diffoscope
+[2023-04-15 11:00:51] INFO root fetch - processPackages [Products.CMFDiffTool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Products.CMFDiffTool-4.0.0.tar.gz tmp/Products.CMFDiffTool-4.0.1.tar.gz --markdown 20230415/P/Products.CMFDiffTool/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-04-15 11:00:51] INFO root fetch - processPackages [networklab]: executing diffoscope
+[2023-04-15 11:00:51] INFO root fetch - processPackages [networklab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networklab-1.5.1.dev1.tar.gz tmp/networklab-1.5.2.dev1.tar.gz --markdown 20230415/n/networklab/1.5.1.dev1-1.5.2.dev1/diff.md --exclude *.pyd
+[2023-04-15 11:00:51] INFO root fetch - processPackages [Products.CMFDynamicViewFTI]: executing diffoscope
+[2023-04-15 11:00:51] INFO root fetch - processPackages [Products.CMFDynamicViewFTI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Products.CMFDynamicViewFTI-7.0.0a1.tar.gz tmp/Products.CMFDynamicViewFTI-7.0.1.tar.gz --markdown 20230415/P/Products.CMFDynamicViewFTI/7.0.0a1-7.0.1/diff.md --exclude *.pyd
+[2023-04-15 11:00:51] INFO root fetch - processPackages [Products.CMFEditions]: executing diffoscope
+[2023-04-15 11:00:51] INFO root fetch - processPackages [Products.CMFEditions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Products.CMFEditions-4.0.0b3.tar.gz tmp/Products.CMFEditions-4.0.1.tar.gz --markdown 20230415/P/Products.CMFEditions/4.0.0b3-4.0.1/diff.md --exclude *.pyd
+[2023-04-15 11:00:52] INFO root fetch - processPackages [autogluon.features]: Start processing: autogluon.timeseries
+[2023-04-15 11:00:52] INFO root fetch - main [MainThread]: End processing [autogluon.features]: success
+[2023-04-15 11:00:52] INFO root fetch - processPackages [autogluon.timeseries]: New version: [0.7.0b20230414] Old Version: [0.7.0b20230413]
+[2023-04-15 11:00:52] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2023-04-15 11:00:52] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-0.7.0b20230413.tar.gz tmp/autogluon.timeseries-0.7.0b20230414.tar.gz --markdown 20230415/a/autogluon.timeseries/0.7.0b20230413-0.7.0b20230414/diff.md --exclude *.pyd
+[2023-04-15 11:00:53] INFO root fetch - processPackages [Products.CMFDiffTool]: Start processing: autogluon
+[2023-04-15 11:00:53] INFO root fetch - main [MainThread]: End processing [Products.CMFDiffTool]: success
+[2023-04-15 11:00:53] INFO root fetch - processPackages [autogluon]: New version: [0.7.0b20230414] Old Version: [0.7.0b20230413]
+[2023-04-15 11:00:53] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2023-04-15 11:00:53] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-0.7.0b20230413.tar.gz tmp/autogluon-0.7.0b20230414.tar.gz --markdown 20230415/a/autogluon/0.7.0b20230413-0.7.0b20230414/diff.md --exclude *.pyd
+[2023-04-15 11:00:53] INFO root fetch - processPackages [autogluon.common]: Start processing: plone.app.layout
+[2023-04-15 11:00:53] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2023-04-15 11:00:53] INFO root fetch - processPackages [Products.CMFDynamicViewFTI]: Start processing: autogluon.eda
+[2023-04-15 11:00:53] INFO root fetch - main [MainThread]: End processing [Products.CMFDynamicViewFTI]: success
+[2023-04-15 11:00:53] INFO root fetch - processPackages [autogluon.eda]: New version: [0.7.0b20230414] Old Version: [0.7.0b20230413]
+[2023-04-15 11:00:53] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
+[2023-04-15 11:00:53] INFO root fetch - processPackages [autogluon.eda]: executing diffoscope
+[2023-04-15 11:00:53] INFO root fetch - processPackages [autogluon.eda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.eda-0.7.0b20230413.tar.gz tmp/autogluon.eda-0.7.0b20230414.tar.gz --markdown 20230415/a/autogluon.eda/0.7.0b20230413-0.7.0b20230414/diff.md --exclude *.pyd
+[2023-04-15 11:00:53] INFO root fetch - processPackages [plone.app.layout]: New version: [4.0.3] Old Version: [4.0.2]
+[2023-04-15 11:00:54] INFO root fetch - processPackages [plone.app.layout]: Downloading https://files.pythonhosted.org/packages/2e/ac/2dcc7d3c09f51a88adaef20415135ed03227818cd4a86563389bfa36a36c/plone.app.layout-4.0.2.tar.gz
+[2023-04-15 11:00:54] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2023-04-15 11:00:54] INFO root fetch - processPackages [plone.app.layout]: Downloading https://files.pythonhosted.org/packages/71/c2/a7a9dcfd5e3be3c1e897e077e69998e640e0b1ad1520ddf9d228364c8320/plone.app.layout-4.0.3.tar.gz
+[2023-04-15 11:00:54] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
+[2023-04-15 11:00:54] INFO root fetch - processPackages [plone.app.layout]: executing diffoscope
+[2023-04-15 11:00:54] INFO root fetch - processPackages [plone.app.layout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.layout-4.0.2.tar.gz tmp/plone.app.layout-4.0.3.tar.gz --markdown 20230415/p/plone.app.layout/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2023-04-15 11:00:54] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
+[2023-04-15 11:00:55] INFO root fetch - main [MainThread]: End processing [Products.CMFEditions]: success
+[2023-04-15 11:00:55] INFO root fetch - main [MainThread]: End processing [autogluon.eda]: success
+[2023-04-15 11:00:55] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
+[2023-04-15 11:00:56] INFO root fetch - main [MainThread]: End processing [plone.app.layout]: success
+[2023-04-15 11:00:57] INFO root fetch - main [MainThread]: End processing [analogic-framework]: success
+[2023-04-15 11:00:57] INFO root fetch - main [MainThread]: End processing [networklab]: success
+[2023-04-15 11:00:57] INFO root fetch - main [MainThread]: Store serial: [17717701]
