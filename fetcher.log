@@ -6547,3 +6547,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 09:07:30] INFO root fetch - main [MainThread]: End processing [aiokeydb]: success
 [2023-04-15 09:07:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-base-user-locale]: success
 [2023-04-15 09:07:30] INFO root fetch - main [MainThread]: Store serial: [17717070]
+[2023-04-15 09:12:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717070]
+[2023-04-15 09:12:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 09:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skynamo
+[2023-04-15 09:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wagtail-sb-admin-interface
+[2023-04-15 09:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cmlibs.exporter
+[2023-04-15 09:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arxivterminal
+[2023-04-15 09:12:37] INFO root fetch - processPackages [skynamo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 09:12:37] WARNING root fetch - processPackages [cmlibs.exporter]: Skipping, unable to determine old version
+[2023-04-15 09:12:37] INFO root fetch - main [MainThread]: End processing [cmlibs.exporter] error
+[2023-04-15 09:12:37] INFO root fetch - processPackages [arxivterminal]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-15 09:12:37] INFO root fetch - processPackages [wagtail-sb-admin-interface]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-15 09:12:37] INFO root fetch - processPackages [skynamo]: executing diffoscope
+[2023-04-15 09:12:37] INFO root fetch - processPackages [skynamo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skynamo-0.0.8.tar.gz tmp/skynamo-0.0.9.tar.gz --markdown 20230415/s/skynamo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 09:12:38] INFO root fetch - processPackages [arxivterminal]: Downloading https://files.pythonhosted.org/packages/31/04/1502b41f6d3af740da39f1ce06cd8ec5b37bd497360a558c19adb3231a59/arxivterminal-0.1.0.tar.gz
+[2023-04-15 09:12:38] INFO root fetch - processPackages [wagtail-sb-admin-interface]: Downloading https://files.pythonhosted.org/packages/94/d7/da69beff2e0caed32ffbad9f379d249603449ec6d0d37e36c44f44d1ec11/wagtail_sb_admin_interface-0.3.0.tar.gz
+[2023-04-15 09:12:38] INFO root fetch - processPackages [arxivterminal]: Downloading https://files.pythonhosted.org/packages/01/b4/b5dfed8c84300a3b0620dc8969f189132a1714468a1f932c280abcdd058c/arxivterminal-0.2.0.tar.gz
+[2023-04-15 09:12:38] INFO root fetch - processPackages [arxivterminal]: executing diffoscope
+[2023-04-15 09:12:38] INFO root fetch - processPackages [arxivterminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arxivterminal-0.1.0.tar.gz tmp/arxivterminal-0.2.0.tar.gz --markdown 20230415/a/arxivterminal/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 09:12:38] INFO root fetch - processPackages [wagtail-sb-admin-interface]: Downloading https://files.pythonhosted.org/packages/ec/63/0c14584e15af8f0a454741f65a7a3e93a9acf341f7bae323f30d20481f18/wagtail_sb_admin_interface-0.4.0.tar.gz
+[2023-04-15 09:12:38] INFO root fetch - processPackages [wagtail-sb-admin-interface]: executing diffoscope
+[2023-04-15 09:12:38] INFO root fetch - processPackages [wagtail-sb-admin-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_sb_admin_interface-0.3.0.tar.gz tmp/wagtail_sb_admin_interface-0.4.0.tar.gz --markdown 20230415/w/wagtail-sb-admin-interface/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-15 09:12:39] INFO root fetch - main [MainThread]: End processing [skynamo]: success
+[2023-04-15 09:12:39] INFO root fetch - main [MainThread]: End processing [arxivterminal]: success
+[2023-04-15 09:12:39] INFO root fetch - main [MainThread]: End processing [wagtail-sb-admin-interface]: success
+[2023-04-15 09:12:39] INFO root fetch - main [MainThread]: Store serial: [17717096]
