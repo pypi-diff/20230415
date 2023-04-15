@@ -19515,3 +19515,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 21:36:34] INFO root fetch - main [MainThread]: End processing [salmon-triplets]: success
 [2023-04-15 21:36:50] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-04-15 21:36:50] INFO root fetch - main [MainThread]: Store serial: [17721489]
+[2023-04-15 21:41:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721489]
+[2023-04-15 21:42:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 21:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: balcony
+[2023-04-15 21:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyTelegramBotAPI
+[2023-04-15 21:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sfalmanac
+[2023-04-15 21:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: projectZ.py
+[2023-04-15 21:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anylabeling
+[2023-04-15 21:42:01] INFO root fetch - processPackages [sfalmanac]: New version: [1.9] Old Version: [1.8.2]
+[2023-04-15 21:42:01] INFO root fetch - processPackages [projectZ.py]: New version: [1.1.6.8] Old Version: [1.1.6.7]
+[2023-04-15 21:42:01] INFO root fetch - processPackages [pyTelegramBotAPI]: New version: [4.9.0] Old Version: [4.8.0]
+[2023-04-15 21:42:01] INFO root fetch - processPackages [anylabeling]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-15 21:42:01] INFO root fetch - processPackages [balcony]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 21:42:01] INFO root fetch - processPackages [balcony]: Downloading https://files.pythonhosted.org/packages/f7/46/02bb32dcde71b4900e5d543e99b104dab2a63dec323d60cbdb25cd064438/balcony-0.0.8.tar.gz
+[2023-04-15 21:42:01] INFO root fetch - processPackages [sfalmanac]: Downloading https://files.pythonhosted.org/packages/19/7a/8cfc2872f6b662b1d18e14bb9660020baedcd626ff89b67ea1c57bd9655c/sfalmanac-1.8.2.tar.gz
+[2023-04-15 21:42:01] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/85/35/7711cf29c03327f0c5de8e48bb978c80cddd18ac28f01efe2638b4f12c3d/anylabeling-0.2.4.tar.gz
+[2023-04-15 21:42:01] INFO root fetch - processPackages [projectZ.py]: Downloading https://files.pythonhosted.org/packages/b3/e7/9b1faf608ce666a9353f8f5cebef38b5cbf978e084661613262f366627df/projectZ.py-1.1.6.8.tar.gz
+[2023-04-15 21:42:01] INFO root fetch - processPackages [pyTelegramBotAPI]: Downloading https://files.pythonhosted.org/packages/69/bb/82ca44b25038344d807eee1f0022df33c786bad73f31505618ee1dee5167/pyTelegramBotAPI-4.8.0.tar.gz
+[2023-04-15 21:42:01] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-15 21:42:01] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.2.3.tar.gz tmp/anylabeling-0.2.4.tar.gz --markdown 20230415/a/anylabeling/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-15 21:42:01] INFO root fetch - processPackages [balcony]: Downloading https://files.pythonhosted.org/packages/12/6e/1a03d61fc945caa3dc718bb4815932e4865637dc350375afc510f7998363/balcony-0.0.9.tar.gz
+[2023-04-15 21:42:01] INFO root fetch - processPackages [projectZ.py]: executing diffoscope
+[2023-04-15 21:42:01] INFO root fetch - processPackages [projectZ.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projectZ.py-1.1.6.7.tar.gz tmp/projectZ.py-1.1.6.8.tar.gz --markdown 20230415/p/projectZ.py/1.1.6.7-1.1.6.8/diff.md --exclude *.pyd
+[2023-04-15 21:42:01] INFO root fetch - processPackages [pyTelegramBotAPI]: Downloading https://files.pythonhosted.org/packages/2e/6b/b3eaedc0a004c7a04a4b9ca941d38d0f94be4e9847dd537830a47218f436/pyTelegramBotAPI-4.9.0.tar.gz
+[2023-04-15 21:42:01] INFO root fetch - processPackages [balcony]: executing diffoscope
+[2023-04-15 21:42:01] INFO root fetch - processPackages [balcony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balcony-0.0.8.tar.gz tmp/balcony-0.0.9.tar.gz --markdown 20230415/b/balcony/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 21:42:02] INFO root fetch - processPackages [pyTelegramBotAPI]: executing diffoscope
+[2023-04-15 21:42:02] INFO root fetch - processPackages [pyTelegramBotAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyTelegramBotAPI-4.8.0.tar.gz tmp/pyTelegramBotAPI-4.9.0.tar.gz --markdown 20230415/p/pyTelegramBotAPI/4.8.0-4.9.0/diff.md --exclude *.pyd
+[2023-04-15 21:42:02] INFO root fetch - processPackages [sfalmanac]: Downloading https://files.pythonhosted.org/packages/f8/a7/39e2999a739124bb51f167a8864b35db6739f4b6866861d02a06c1f51e15/sfalmanac-1.9.tar.gz
+[2023-04-15 21:42:02] INFO root fetch - main [MainThread]: End processing [projectZ.py]: success
+[2023-04-15 21:42:02] INFO root fetch - processPackages [sfalmanac]: executing diffoscope
+[2023-04-15 21:42:02] INFO root fetch - processPackages [sfalmanac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfalmanac-1.8.2.tar.gz tmp/sfalmanac-1.9.tar.gz --markdown 20230415/s/sfalmanac/1.8.2-1.9/diff.md --exclude *.pyd
+[2023-04-15 21:42:03] INFO root fetch - main [MainThread]: End processing [balcony]: success
+[2023-04-15 21:42:03] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
+[2023-04-15 21:42:03] INFO root fetch - main [MainThread]: End processing [pyTelegramBotAPI]: success
+[2023-04-15 21:42:04] INFO root fetch - main [MainThread]: End processing [sfalmanac]: success
+[2023-04-15 21:42:04] INFO root fetch - main [MainThread]: Store serial: [17721503]
