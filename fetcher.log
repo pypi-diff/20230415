@@ -5802,3 +5802,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 07:50:51] INFO root fetch - main [MainThread]: End processing [ondewo-csi-client]: success
 [2023-04-15 07:50:53] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
 [2023-04-15 07:50:53] INFO root fetch - main [MainThread]: Store serial: [17716724]
+[2023-04-15 07:55:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716724]
+[2023-04-15 07:55:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-15 07:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: katalytic-files
+[2023-04-15 07:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webint
+[2023-04-15 07:55:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rozklad-ontu-parser-MakisuKurisu
+[2023-04-15 07:55:59] INFO root fetch - processPackages [katalytic-files]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-04-15 07:55:59] INFO root fetch - processPackages [webint]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 07:55:59] INFO root fetch - processPackages [webint]: executing diffoscope
+[2023-04-15 07:55:59] INFO root fetch - processPackages [webint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint-0.1.8.tar.gz tmp/webint-0.1.9.tar.gz --markdown 20230415/w/webint/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 07:56:00] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: New version: [0.0.3.4b0] Old Version: [0.0.3.3]
+[2023-04-15 07:56:00] INFO root fetch - processPackages [katalytic-files]: Downloading https://files.pythonhosted.org/packages/13/40/7d85d8e83d03dda8a6ce4d0fc68af72827f3c66e2a4bdc0bf64e3228d889/katalytic-files-0.4.0.tar.gz
+[2023-04-15 07:56:00] INFO root fetch - processPackages [katalytic-files]: executing diffoscope
+[2023-04-15 07:56:00] INFO root fetch - processPackages [katalytic-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-files-0.3.9.tar.gz tmp/katalytic-files-0.4.0.tar.gz --markdown 20230415/k/katalytic-files/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-04-15 07:56:00] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: Downloading https://files.pythonhosted.org/packages/54/5d/6a8ea34212987fa3a3eda24becf5153bbd0ce3cc10ee54ed22ed0228965b/rozklad_ontu_parser_makisukurisu-0.0.3.4b0.tar.gz
+[2023-04-15 07:56:00] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: executing diffoscope
+[2023-04-15 07:56:00] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rozklad_ontu_parser_makisukurisu-0.0.3.3.tar.gz tmp/rozklad_ontu_parser_makisukurisu-0.0.3.4b0.tar.gz --markdown 20230415/r/rozklad-ontu-parser-MakisuKurisu/0.0.3.3-0.0.3.4b0/diff.md --exclude *.pyd
+[2023-04-15 07:56:01] INFO root fetch - main [MainThread]: End processing [katalytic-files]: success
+[2023-04-15 07:56:01] INFO root fetch - main [MainThread]: End processing [rozklad-ontu-parser-MakisuKurisu]: success
+[2023-04-15 07:56:06] INFO root fetch - main [MainThread]: End processing [webint]: success
+[2023-04-15 07:56:06] INFO root fetch - main [MainThread]: Store serial: [17716733]
