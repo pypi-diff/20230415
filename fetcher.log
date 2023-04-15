@@ -6572,3 +6572,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 09:12:39] INFO root fetch - main [MainThread]: End processing [arxivterminal]: success
 [2023-04-15 09:12:39] INFO root fetch - main [MainThread]: End processing [wagtail-sb-admin-interface]: success
 [2023-04-15 09:12:39] INFO root fetch - main [MainThread]: Store serial: [17717096]
+[2023-04-15 09:17:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717096]
+[2023-04-15 09:17:45] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 09:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kisskh-downloader
+[2023-04-15 09:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shapvs
+[2023-04-15 09:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cmlibs.merger
+[2023-04-15 09:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-nightly
+[2023-04-15 09:17:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pipen-args
+[2023-04-15 09:17:46] INFO root fetch - processPackages [kisskh-downloader]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-15 09:17:46] WARNING root fetch - processPackages [shapvs]: Skipping, unable to determine old version
+[2023-04-15 09:17:46] INFO root fetch - processPackages [shapvs]: Start processing: govtech-data
+[2023-04-15 09:17:46] INFO root fetch - main [MainThread]: End processing [shapvs] error
+[2023-04-15 09:17:46] WARNING root fetch - processPackages [cmlibs.merger]: Skipping, unable to determine old version
+[2023-04-15 09:17:46] INFO root fetch - processPackages [cmlibs.merger]: Start processing: odoo-addon-stock-orderpoint-purchase-link
+[2023-04-15 09:17:46] INFO root fetch - main [MainThread]: End processing [cmlibs.merger] error
+[2023-04-15 09:17:46] INFO root fetch - processPackages [pipen-args]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-15 09:17:46] INFO root fetch - processPackages [govtech-data]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-15 09:17:46] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-04-15 09:17:46] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-04-15 09:17:46] INFO root fetch - processPackages [kisskh-downloader]: Downloading https://files.pythonhosted.org/packages/4b/aa/3511ca62bd7fee7916158f6858304e5b54d5bafd5558988cc72c5b0980e9/kisskh-downloader-0.1.4.tar.gz
+[2023-04-15 09:17:46] INFO root fetch - processPackages [govtech-data]: Downloading https://files.pythonhosted.org/packages/10/59/b023066e9aabd953e3d677804bc84e7d9cfc81eceb4297cdc09dabebf297/govtech_data-0.1.7.tar.gz
+[2023-04-15 09:17:46] INFO root fetch - processPackages [pipen-args]: Downloading https://files.pythonhosted.org/packages/f7/61/fe77bbf0f734647ac1d8bc3a05185fe10588d1a603648d7158c1ea9d9d8f/pipen_args-0.9.2.tar.gz
+[2023-04-15 09:17:46] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: Downloading https://files.pythonhosted.org/packages/21/99/51c84af198a413b8fcf9ec22bc59261d66f2db1040da5cf4e499b1d0a8e1/odoo_addon_stock_orderpoint_purchase_link-16.0.1.0.0.3-py3-none-any.whl
+[2023-04-15 09:17:46] INFO root fetch - processPackages [pipen-args]: executing diffoscope
+[2023-04-15 09:17:46] INFO root fetch - processPackages [pipen-args]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_args-0.9.1.tar.gz tmp/pipen_args-0.9.2.tar.gz --markdown 20230415/p/pipen-args/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-15 09:17:46] INFO root fetch - processPackages [govtech-data]: executing diffoscope
+[2023-04-15 09:17:46] INFO root fetch - processPackages [govtech-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/govtech_data-0.1.6.tar.gz tmp/govtech_data-0.1.7.tar.gz --markdown 20230415/g/govtech-data/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-15 09:17:46] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: executing diffoscope
+[2023-04-15 09:17:46] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_orderpoint_purchase_link-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_stock_orderpoint_purchase_link-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230415/o/odoo-addon-stock-orderpoint-purchase-link/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-04-15 09:17:46] INFO root fetch - processPackages [kisskh-downloader]: Downloading https://files.pythonhosted.org/packages/39/7f/f6c562a9b577f89371ecf17dcf53e3657cdf69882db61154813e91369943/kisskh-downloader-0.1.5.tar.gz
+[2023-04-15 09:17:46] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-04-15 09:17:46] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230415/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-04-15 09:17:46] INFO root fetch - processPackages [kisskh-downloader]: executing diffoscope
+[2023-04-15 09:17:46] INFO root fetch - processPackages [kisskh-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kisskh-downloader-0.1.4.tar.gz tmp/kisskh-downloader-0.1.5.tar.gz --markdown 20230415/k/kisskh-downloader/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-15 09:17:47] INFO root fetch - processPackages [govtech-data]: Start processing: tfq-nightly
+[2023-04-15 09:17:47] INFO root fetch - main [MainThread]: End processing [govtech-data]: success
+[2023-04-15 09:17:47] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230414] Old Version: [0.7.3.dev20230413]
+[2023-04-15 09:17:47] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: Start processing: odoo-addons-oca-stock-logistics-orderpoint
+[2023-04-15 09:17:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-orderpoint-purchase-link]: success
+[2023-04-15 09:17:47] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/32/d9/b474ac25b8cdb6dc31b988b4791c5cf9cbed7ea27dfaa1d363ff2ae332d0/tfq_nightly-0.7.3.dev20230413-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 09:17:47] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-orderpoint]: New version: [16.0.20230414.0] Old Version: [16.0.20221230.0]
+[2023-04-15 09:17:47] INFO root fetch - main [MainThread]: End processing [pipen-args]: success
+[2023-04-15 09:17:47] INFO root fetch - main [MainThread]: End processing [kisskh-downloader]: success
+[2023-04-15 09:17:47] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819846>=10485760
+[2023-04-15 09:17:47] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-04-15 09:17:47] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-orderpoint]: Downloading https://files.pythonhosted.org/packages/6a/b4/a66603b05e8e448e0015032cbd642c75c4851c863919e766e43a3f96f5b3/odoo_addons_oca_stock_logistics_orderpoint-16.0.20221230.0-py3-none-any.whl
+[2023-04-15 09:17:48] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-orderpoint]: Downloading https://files.pythonhosted.org/packages/7a/e3/e137fa4f28e2ba1cd36c62b27db9d054f34c9de18ea3faa5b2f12af60ef4/odoo_addons_oca_stock_logistics_orderpoint-16.0.20230414.0-py3-none-any.whl
+[2023-04-15 09:17:48] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-orderpoint]: executing diffoscope
+[2023-04-15 09:17:48] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-orderpoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_orderpoint-16.0.20221230.0-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_orderpoint-16.0.20230414.0-py3-none-any.whl.zip --markdown 20230415/o/odoo-addons-oca-stock-logistics-orderpoint/16.0.20221230.0-16.0.20230414.0/diff.md --exclude *.pyd
+[2023-04-15 09:17:49] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-orderpoint]: success
+[2023-04-15 09:17:56] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-04-15 09:17:56] INFO root fetch - main [MainThread]: Store serial: [17717136]
