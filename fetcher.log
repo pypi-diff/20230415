@@ -20096,3 +20096,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 22:42:43] INFO root fetch - main [MainThread]: End processing [graphscope]: success
 [2023-04-15 22:42:43] INFO root fetch - main [MainThread]: End processing [jupyter-capture-output]: success
 [2023-04-15 22:42:43] INFO root fetch - main [MainThread]: Store serial: [17721780]
+[2023-04-15 22:47:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721780]
+[2023-04-15 22:47:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 22:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airunner
+[2023-04-15 22:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twitter-api-client
+[2023-04-15 22:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypreql
+[2023-04-15 22:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: 0staff
+[2023-04-15 22:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sabledocs
+[2023-04-15 22:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Flask-First
+[2023-04-15 22:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cli-command-parser
+[2023-04-15 22:47:52] INFO root fetch - processPackages [Flask-First]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-15 22:47:52] INFO root fetch - processPackages [twitter-api-client]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-04-15 22:47:52] INFO root fetch - processPackages [airunner]: New version: [1.9.0] Old Version: [1.8.17]
+[2023-04-15 22:47:52] INFO root fetch - processPackages [sabledocs]: New version: [0.1.66] Old Version: [0.1.63]
+[2023-04-15 22:47:52] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2023-04-15 22:47:52] WARNING root fetch - processPackages [0staff]: Skipping, unable to determine old version
+[2023-04-15 22:47:52] INFO root fetch - main [MainThread]: End processing [0staff] error
+[2023-04-15 22:47:53] INFO root fetch - processPackages [cli-command-parser]: New version: [2023.4.8] Old Version: [2023.4.7]
+[2023-04-15 22:47:53] INFO root fetch - processPackages [Flask-First]: Downloading https://files.pythonhosted.org/packages/48/f8/233f7dd3d5a172a7e3c676a5cda441509f265d1af4468da86753e5ed3e38/Flask-First-0.9.3.tar.gz
+[2023-04-15 22:47:53] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/ff/ec/0d4178e60666288e79b4d532a1e355d83964dd95ac394b902c7b2e211f0c/twitter-api-client-0.6.3.tar.gz
+[2023-04-15 22:47:53] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/43/b8/2abb29f2547d81aff3f05e6578226b18359897a8e67919d46a46231d0bed/pypreql-0.0.1rc8.tar.gz
+[2023-04-15 22:47:53] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/c6/76/c3ba703025534247dbcd370d7e29b211f28a3c51aa15a3a25b70f51dc506/sabledocs-0.1.66.tar.gz
+[2023-04-15 22:47:53] INFO root fetch - processPackages [airunner]: Downloading https://files.pythonhosted.org/packages/a2/ee/91ce16de7dfe6efa413c1f676703c84bff7a62a6dd51a643490ec2d30ae7/airunner-1.8.17.tar.gz
+[2023-04-15 22:47:53] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 22:47:53] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.63.tar.gz tmp/sabledocs-0.1.66.tar.gz --markdown 20230415/s/sabledocs/0.1.63-0.1.66/diff.md --exclude *.pyd
+[2023-04-15 22:47:53] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/97/5a/c3583a3e784ab5e09515e5edeb1c8282c90db7b4cdc85a494cbdcd61f927/cli_command_parser-2023.4.7.tar.gz
+[2023-04-15 22:47:53] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/1a/ce/33794a7ef68067e22a883f6d200722a8ccfc530b6b40d7ba9956ed4ff8bf/pypreql-0.0.1rc9.tar.gz
+[2023-04-15 22:47:53] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2023-04-15 22:47:53] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc8.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20230415/p/pypreql/0.0.1rc8-0.0.1rc9/diff.md --exclude *.pyd
+[2023-04-15 22:47:53] INFO root fetch - processPackages [Flask-First]: Downloading https://files.pythonhosted.org/packages/f7/af/ebec4ea6900f2f584091cf80f54246444e01b9fe23e4ae6020e49d23bbb7/Flask-First-0.9.4.tar.gz
+[2023-04-15 22:47:53] INFO root fetch - processPackages [airunner]: Downloading https://files.pythonhosted.org/packages/8e/90/9d73e9ee5adfaf482b53fbf05fd5f91cd008ec1e07920d63f658af910212/airunner-1.9.0.tar.gz
+[2023-04-15 22:47:53] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/ce/11/16ec4fc2821f0ec0db8de45132901bf20798f9707e5331c8de6bb39aa91b/cli_command_parser-2023.4.8.tar.gz
+[2023-04-15 22:47:53] INFO root fetch - processPackages [airunner]: executing diffoscope
+[2023-04-15 22:47:53] INFO root fetch - processPackages [airunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airunner-1.8.17.tar.gz tmp/airunner-1.9.0.tar.gz --markdown 20230415/a/airunner/1.8.17-1.9.0/diff.md --exclude *.pyd
+[2023-04-15 22:47:53] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2023-04-15 22:47:53] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2023.4.7.tar.gz tmp/cli_command_parser-2023.4.8.tar.gz --markdown 20230415/c/cli-command-parser/2023.4.7-2023.4.8/diff.md --exclude *.pyd
+[2023-04-15 22:47:53] INFO root fetch - processPackages [Flask-First]: executing diffoscope
+[2023-04-15 22:47:53] INFO root fetch - processPackages [Flask-First]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-First-0.9.3.tar.gz tmp/Flask-First-0.9.4.tar.gz --markdown 20230415/F/Flask-First/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-15 22:47:53] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/22/fb/62f06799d64ada316b2ae01c059d92cf44bfaa2cbfee7c4aaf0c6adeff71/twitter-api-client-0.6.4.tar.gz
+[2023-04-15 22:47:53] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-04-15 22:47:53] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.6.3.tar.gz tmp/twitter-api-client-0.6.4.tar.gz --markdown 20230415/t/twitter-api-client/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-04-15 22:47:54] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 22:47:54] INFO root fetch - main [MainThread]: End processing [airunner]: success
+[2023-04-15 22:47:54] INFO root fetch - main [MainThread]: End processing [pypreql]: success
+[2023-04-15 22:47:54] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-04-15 22:47:54] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2023-04-15 22:47:55] INFO root fetch - main [MainThread]: End processing [Flask-First]: success
+[2023-04-15 22:47:55] INFO root fetch - main [MainThread]: Store serial: [17721800]
