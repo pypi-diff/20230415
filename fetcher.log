@@ -5699,3 +5699,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 07:35:22] INFO root fetch - processPackages [geeup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geeup-0.6.4.tar.gz tmp/geeup-0.6.5.tar.gz --markdown 20230415/g/geeup/0.6.4-0.6.5/diff.md --exclude *.pyd
 [2023-04-15 07:35:24] INFO root fetch - main [MainThread]: End processing [geeup]: success
 [2023-04-15 07:35:24] INFO root fetch - main [MainThread]: Store serial: [17716661]
+[2023-04-15 07:40:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716661]
+[2023-04-15 07:40:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-15 07:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: JarvisAI
+[2023-04-15 07:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: je-load-density
+[2023-04-15 07:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: idealgeo
+[2023-04-15 07:40:30] INFO root fetch - processPackages [idealgeo]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-04-15 07:40:30] INFO root fetch - processPackages [je-load-density]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 07:40:30] INFO root fetch - processPackages [JarvisAI]: New version: [4.8] Old Version: [4.7]
+[2023-04-15 07:40:31] INFO root fetch - processPackages [idealgeo]: Downloading https://files.pythonhosted.org/packages/93/25/ea026ac60a1cc55074ae4df74afec127250bdf92f3286042533273e1ebe2/idealgeo-0.1.0.tar.gz
+[2023-04-15 07:40:31] INFO root fetch - processPackages [JarvisAI]: Downloading https://files.pythonhosted.org/packages/a6/11/49c0954223feb2e055f4e3ba92045a5c1e6cb8d0d191e6e0dae55fb98dc5/JarvisAI-4.8.tar.gz
+[2023-04-15 07:40:31] INFO root fetch - processPackages [idealgeo]: executing diffoscope
+[2023-04-15 07:40:31] INFO root fetch - processPackages [idealgeo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idealgeo-0.0.4.tar.gz tmp/idealgeo-0.1.0.tar.gz --markdown 20230415/i/idealgeo/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-04-15 07:40:31] INFO root fetch - processPackages [je-load-density]: executing diffoscope
+[2023-04-15 07:40:31] INFO root fetch - processPackages [je-load-density]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_load_density-0.0.8.tar.gz tmp/je_load_density-0.0.9.tar.gz --markdown 20230415/j/je-load-density/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 07:40:31] INFO root fetch - processPackages [JarvisAI]: executing diffoscope
+[2023-04-15 07:40:31] INFO root fetch - processPackages [JarvisAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JarvisAI-4.7.tar.gz tmp/JarvisAI-4.8.tar.gz --markdown 20230415/J/JarvisAI/4.7-4.8/diff.md --exclude *.pyd
+[2023-04-15 07:40:32] INFO root fetch - main [MainThread]: End processing [idealgeo]: success
+[2023-04-15 07:40:32] INFO root fetch - main [MainThread]: End processing [je-load-density]: success
+[2023-04-15 07:40:32] INFO root fetch - main [MainThread]: End processing [JarvisAI]: success
+[2023-04-15 07:40:32] INFO root fetch - main [MainThread]: Store serial: [17716671]
