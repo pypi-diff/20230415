@@ -4847,3 +4847,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 05:19:41] INFO root fetch - main [MainThread]: End processing [Remilia]: success
 [2023-04-15 05:19:43] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-databricks]: success
 [2023-04-15 05:19:43] INFO root fetch - main [MainThread]: Store serial: [17716145]
+[2023-04-15 05:24:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716145]
+[2023-04-15 05:24:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 05:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: subprocess-alive
+[2023-04-15 05:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psgtest
+[2023-04-15 05:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: konfuzio-sdk
+[2023-04-15 05:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: modProcesso
+[2023-04-15 05:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dvt-the-one-sdk
+[2023-04-15 05:24:51] WARNING root fetch - processPackages [subprocess-alive]: Skipping, unable to determine old version
+[2023-04-15 05:24:51] INFO root fetch - main [MainThread]: End processing [subprocess-alive] error
+[2023-04-15 05:24:51] INFO root fetch - processPackages [psgtest]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-15 05:24:51] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.2.9.dev20230104175944] Old Version: [0.2.9.dev20221227125623]
+[2023-04-15 05:24:51] INFO root fetch - processPackages [modProcesso]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-15 05:24:51] WARNING root fetch - processPackages [dvt-the-one-sdk]: Skipping, unable to determine old version
+[2023-04-15 05:24:51] INFO root fetch - main [MainThread]: End processing [dvt-the-one-sdk] error
+[2023-04-15 05:24:51] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2023-04-15 05:24:51] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.2.9.dev20221227125623.tar.gz tmp/konfuzio_sdk-0.2.9.dev20230104175944.tar.gz --markdown 20230415/k/konfuzio-sdk/0.2.9.dev20221227125623-0.2.9.dev20230104175944/diff.md --exclude *.pyd
+[2023-04-15 05:24:51] INFO root fetch - processPackages [psgtest]: Downloading https://files.pythonhosted.org/packages/08/83/97402b42236f42bdfc99c14326ffca2e150bf1d02046382d2b1b422e8e09/psgtest-1.8.0.tar.gz
+[2023-04-15 05:24:51] INFO root fetch - processPackages [modProcesso]: Downloading https://files.pythonhosted.org/packages/38/3a/a284371f93be1a3cf86fea889137eeeb4711d4dc23b81a72675402a2c685/modProcesso-0.0.7.tar.gz
+[2023-04-15 05:24:51] INFO root fetch - processPackages [modProcesso]: executing diffoscope
+[2023-04-15 05:24:51] INFO root fetch - processPackages [modProcesso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modProcesso-0.0.6.tar.gz tmp/modProcesso-0.0.7.tar.gz --markdown 20230415/m/modProcesso/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-15 05:24:51] INFO root fetch - processPackages [psgtest]: Downloading https://files.pythonhosted.org/packages/b2/29/64b8566cfaa43a3433bc0385ce6a09b9687885546a338c34e4099a3b224a/psgtest-1.9.0.tar.gz
+[2023-04-15 05:24:51] INFO root fetch - processPackages [psgtest]: executing diffoscope
+[2023-04-15 05:24:51] INFO root fetch - processPackages [psgtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psgtest-1.8.0.tar.gz tmp/psgtest-1.9.0.tar.gz --markdown 20230415/p/psgtest/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-15 05:24:52] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2023-04-15 05:24:53] INFO root fetch - main [MainThread]: End processing [psgtest]: success
+[2023-04-15 05:24:53] INFO root fetch - main [MainThread]: End processing [modProcesso]: success
+[2023-04-15 05:24:53] INFO root fetch - main [MainThread]: Store serial: [17716164]
