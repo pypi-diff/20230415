@@ -16385,3 +16385,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 15:56:56] INFO root fetch - main [MainThread]: End processing [importlib-metadata]: success
 [2023-04-15 15:57:02] INFO root fetch - main [MainThread]: End processing [django-video-play]: success
 [2023-04-15 15:57:02] INFO root fetch - main [MainThread]: Store serial: [17719330]
+[2023-04-15 16:02:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719330]
+[2023-04-15 16:02:11] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 16:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ccxt
+[2023-04-15 16:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: orgnb
+[2023-04-15 16:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jeeves-shell
+[2023-04-15 16:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lkmlfmt
+[2023-04-15 16:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mrfix
+[2023-04-15 16:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: trainerbase
+[2023-04-15 16:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: orion-nais
+[2023-04-15 16:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pycodeless
+[2023-04-15 16:02:11] INFO root fetch - processPackages [lkmlfmt]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 16:02:11] INFO root fetch - processPackages [orgnb]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 16:02:11] WARNING root fetch - processPackages [mrfix]: Skipping, unable to determine old version
+[2023-04-15 16:02:11] INFO root fetch - processPackages [jeeves-shell]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-15 16:02:11] INFO root fetch - main [MainThread]: End processing [mrfix] error
+[2023-04-15 16:02:11] INFO root fetch - processPackages [pycodeless]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-15 16:02:11] INFO root fetch - processPackages [ccxt]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-15 16:02:11] INFO root fetch - processPackages [orion-nais]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-15 16:02:11] INFO root fetch - processPackages [trainerbase]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-04-15 16:02:11] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-04-15 16:02:11] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.8.tar.gz tmp/ccxt-3.0.9.tar.gz --markdown 20230415/c/ccxt/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-15 16:02:11] INFO root fetch - processPackages [lkmlfmt]: Downloading https://files.pythonhosted.org/packages/76/a2/2cd1e912b28bdff2049b41de729446593fb79187ac3da4b36ef483b52ee7/lkmlfmt-0.0.3.tar.gz
+[2023-04-15 16:02:11] INFO root fetch - processPackages [orgnb]: Downloading https://files.pythonhosted.org/packages/ad/dc/9ba80c85c81c1a6f957af4cd7404b51861b01bd0bb661257a82313724445/orgnb-0.1.0.tar.gz
+[2023-04-15 16:02:12] INFO root fetch - processPackages [jeeves-shell]: Downloading https://files.pythonhosted.org/packages/31/bd/c124271cbc0723cc116a79525cebe18f83d70f550bee4c734711159d69b4/jeeves_shell-2.1.2.tar.gz
+[2023-04-15 16:02:12] INFO root fetch - processPackages [pycodeless]: Downloading https://files.pythonhosted.org/packages/98/7f/9a14714ad8294448dbac80fcb67164d076d6627b9f86ee92c02b9fa34c8b/pycodeless-0.2.4.tar.gz
+[2023-04-15 16:02:12] INFO root fetch - processPackages [trainerbase]: Downloading https://files.pythonhosted.org/packages/cf/d0/d3b98bf30faaeb6c064be311f8e76c12004b4d44a645e042366b6b79ce64/TrainerBase-2.9.8.tar.gz
+[2023-04-15 16:02:12] INFO root fetch - processPackages [orion-nais]: Downloading https://files.pythonhosted.org/packages/c4/1e/7a3e45da18c7f141b36f0c02f75d89a9f09ba88901860c74a904654f16c8/orion_nais-0.1.2.tar.gz
+[2023-04-15 16:02:12] INFO root fetch - processPackages [jeeves-shell]: executing diffoscope
+[2023-04-15 16:02:12] INFO root fetch - processPackages [jeeves-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeeves_shell-2.1.1.tar.gz tmp/jeeves_shell-2.1.2.tar.gz --markdown 20230415/j/jeeves-shell/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-15 16:02:12] INFO root fetch - processPackages [orgnb]: Downloading https://files.pythonhosted.org/packages/cd/e2/136d976fbf4574c4436d32fc908f230540f438b7bbc78146dda53a2465a6/orgnb-0.1.1.tar.gz
+[2023-04-15 16:02:12] INFO root fetch - processPackages [pycodeless]: executing diffoscope
+[2023-04-15 16:02:12] INFO root fetch - processPackages [pycodeless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycodeless-0.2.3.tar.gz tmp/pycodeless-0.2.4.tar.gz --markdown 20230415/p/pycodeless/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-15 16:02:12] INFO root fetch - processPackages [lkmlfmt]: Downloading https://files.pythonhosted.org/packages/76/d8/33912564434ce2a36210e8b86d460c239bc63b0e8c4f1097922707132d9d/lkmlfmt-0.0.4.tar.gz
+[2023-04-15 16:02:12] INFO root fetch - processPackages [orion-nais]: executing diffoscope
+[2023-04-15 16:02:12] INFO root fetch - processPackages [orion-nais]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orion_nais-0.1.1.tar.gz tmp/orion_nais-0.1.2.tar.gz --markdown 20230415/o/orion-nais/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 16:02:12] INFO root fetch - processPackages [orgnb]: executing diffoscope
+[2023-04-15 16:02:12] INFO root fetch - processPackages [orgnb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orgnb-0.1.0.tar.gz tmp/orgnb-0.1.1.tar.gz --markdown 20230415/o/orgnb/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 16:02:12] INFO root fetch - processPackages [trainerbase]: Downloading https://files.pythonhosted.org/packages/ed/7c/4e8f2acca5eab10c7f3ec18fa9bcb8ae82008bf61da93d0188dc9fc5640f/TrainerBase-2.9.9.tar.gz
+[2023-04-15 16:02:12] INFO root fetch - processPackages [lkmlfmt]: executing diffoscope
+[2023-04-15 16:02:12] INFO root fetch - processPackages [lkmlfmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lkmlfmt-0.0.3.tar.gz tmp/lkmlfmt-0.0.4.tar.gz --markdown 20230415/l/lkmlfmt/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 16:02:12] INFO root fetch - processPackages [trainerbase]: executing diffoscope
+[2023-04-15 16:02:12] INFO root fetch - processPackages [trainerbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TrainerBase-2.9.8.tar.gz tmp/TrainerBase-2.9.9.tar.gz --markdown 20230415/t/trainerbase/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-04-15 16:02:13] INFO root fetch - main [MainThread]: End processing [pycodeless]: success
+[2023-04-15 16:02:13] INFO root fetch - main [MainThread]: End processing [jeeves-shell]: success
+[2023-04-15 16:02:13] INFO root fetch - main [MainThread]: End processing [orgnb]: success
+[2023-04-15 16:02:13] INFO root fetch - main [MainThread]: End processing [lkmlfmt]: success
+[2023-04-15 16:02:14] INFO root fetch - main [MainThread]: End processing [trainerbase]: success
+[2023-04-15 16:02:17] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-04-15 16:02:21] INFO root fetch - main [MainThread]: End processing [orion-nais]: success
+[2023-04-15 16:02:21] INFO root fetch - main [MainThread]: Store serial: [17719358]
