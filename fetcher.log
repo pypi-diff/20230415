@@ -18131,3 +18131,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 19:21:35] INFO root fetch - main [MainThread]: End processing [mixalime]: success
 [2023-04-15 19:21:36] INFO root fetch - main [MainThread]: End processing [subaligner]: success
 [2023-04-15 19:21:36] INFO root fetch - main [MainThread]: Store serial: [17720488]
+[2023-04-15 19:26:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720488]
+[2023-04-15 19:26:45] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-15 19:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autoresearcher
+[2023-04-15 19:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bonbast
+[2023-04-15 19:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TarkovCharacterTool
+[2023-04-15 19:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysolarfocus
+[2023-04-15 19:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiomisc
+[2023-04-15 19:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: crazy-thursday
+[2023-04-15 19:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: snaptrade-python-sdk
+[2023-04-15 19:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-api-admin
+[2023-04-15 19:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jupyterhub-tmpnativeauthenticator
+[2023-04-15 19:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: betanegbinfit
+[2023-04-15 19:26:45] INFO root fetch - processPackages [snaptrade-python-sdk]: New version: [9.0.0] Old Version: [8.4.0]
+[2023-04-15 19:26:45] INFO root fetch - processPackages [betanegbinfit]: New version: [1.8.2] Old Version: [1.8.1]
+[2023-04-15 19:26:45] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-15 19:26:45] INFO root fetch - processPackages [snaptrade-python-sdk]: executing diffoscope
+[2023-04-15 19:26:45] INFO root fetch - processPackages [snaptrade-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snaptrade-python-sdk-8.4.0.tar.gz tmp/snaptrade-python-sdk-9.0.0.tar.gz --markdown 20230415/s/snaptrade-python-sdk/8.4.0-9.0.0/diff.md --exclude *.pyd
+[2023-04-15 19:26:45] INFO root fetch - processPackages [autoresearcher]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-15 19:26:45] WARNING root fetch - processPackages [TarkovCharacterTool]: Skipping, unable to determine old version
+[2023-04-15 19:26:45] INFO root fetch - main [MainThread]: End processing [TarkovCharacterTool] error
+[2023-04-15 19:26:45] INFO root fetch - processPackages [bonbast]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-15 19:26:45] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-15 19:26:45] INFO root fetch - processPackages [django-api-admin]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-04-15 19:26:45] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-15 19:26:45] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230415/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-15 19:26:45] INFO root fetch - processPackages [pysolarfocus]: New version: [3.6.4] Old Version: [3.6.3]
+[2023-04-15 19:26:45] INFO root fetch - processPackages [betanegbinfit]: executing diffoscope
+[2023-04-15 19:26:45] INFO root fetch - processPackages [betanegbinfit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betanegbinfit-1.8.1.tar.gz tmp/betanegbinfit-1.8.2.tar.gz --markdown 20230415/b/betanegbinfit/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2023-04-15 19:26:45] INFO root fetch - processPackages [aiomisc]: New version: [9.8.4] Old Version: [9.8.1]
+[2023-04-15 19:26:45] INFO root fetch - processPackages [autoresearcher]: Downloading https://files.pythonhosted.org/packages/4d/c1/2de6b01a0d7e580e1ebe0a2322fee1fe1a10a413cf220173dc1cdf9f5fa3/autoresearcher-0.0.5.tar.gz
+[2023-04-15 19:26:45] INFO root fetch - processPackages [bonbast]: Downloading https://files.pythonhosted.org/packages/32/54/7cad351f82ddc72da3a1ee0cc01dba6ef7572e728a296f94003222a8f721/bonbast-0.5.3.tar.gz
+[2023-04-15 19:26:45] INFO root fetch - processPackages [django-api-admin]: Downloading https://files.pythonhosted.org/packages/2d/cb/7340e27fa2752a6b135010083b0d3504cb87886971bb1c01f074fed37c9b/django-api-admin-1.0.3.tar.gz
+[2023-04-15 19:26:45] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Downloading https://files.pythonhosted.org/packages/1a/63/b2152644dd5619a4ab1f492cc71f46d721526407cded4ee696ef84593046/jupyterhub-tmpnativeauthenticator-1.0.1.tar.gz
+[2023-04-15 19:26:45] INFO root fetch - processPackages [aiomisc]: Downloading https://files.pythonhosted.org/packages/c2/5e/0147260c1e4e86e57f3580d773391c45e0148592e1be737a164b6956c434/aiomisc-9.8.1.tar.gz
+[2023-04-15 19:26:46] INFO root fetch - processPackages [pysolarfocus]: Downloading https://files.pythonhosted.org/packages/f3/46/785ae30d0e0047d97eccb309d89bb7a3ce3b8cafb8e611fd2fc815590f31/pysolarfocus-3.6.4.tar.gz
+[2023-04-15 19:26:46] INFO root fetch - processPackages [bonbast]: Downloading https://files.pythonhosted.org/packages/1c/05/951caca19e7b5b6a3bdc7dd6e89dfd6d66f36c9a1c994b772d760b742424/bonbast-0.5.4.tar.gz
+[2023-04-15 19:26:46] INFO root fetch - processPackages [autoresearcher]: Downloading https://files.pythonhosted.org/packages/f6/b1/1ae820b0df624873762a651f9748e690d001fd6bad8fbfffdf08cc8ce2e7/autoresearcher-0.0.6.tar.gz
+[2023-04-15 19:26:46] INFO root fetch - processPackages [aiomisc]: Downloading https://files.pythonhosted.org/packages/93/ba/bd5f5955a4619763392f62584654683f73fc061715a99f405c324f3b51f9/aiomisc-9.8.4.tar.gz
+[2023-04-15 19:26:46] INFO root fetch - processPackages [pysolarfocus]: executing diffoscope
+[2023-04-15 19:26:46] INFO root fetch - processPackages [pysolarfocus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysolarfocus-3.6.3.tar.gz tmp/pysolarfocus-3.6.4.tar.gz --markdown 20230415/p/pysolarfocus/3.6.3-3.6.4/diff.md --exclude *.pyd
+[2023-04-15 19:26:46] INFO root fetch - processPackages [django-api-admin]: Downloading https://files.pythonhosted.org/packages/fc/54/c07c3a4a949325d0a0740892c55a72998bb491a5e9ce65b12099999aba07/django-api-admin-1.1.0.tar.gz
+[2023-04-15 19:26:46] INFO root fetch - processPackages [autoresearcher]: executing diffoscope
+[2023-04-15 19:26:46] INFO root fetch - processPackages [autoresearcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoresearcher-0.0.5.tar.gz tmp/autoresearcher-0.0.6.tar.gz --markdown 20230415/a/autoresearcher/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-15 19:26:46] INFO root fetch - processPackages [bonbast]: executing diffoscope
+[2023-04-15 19:26:46] INFO root fetch - processPackages [bonbast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bonbast-0.5.3.tar.gz tmp/bonbast-0.5.4.tar.gz --markdown 20230415/b/bonbast/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-15 19:26:46] INFO root fetch - processPackages [aiomisc]: executing diffoscope
+[2023-04-15 19:26:46] INFO root fetch - processPackages [aiomisc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiomisc-9.8.1.tar.gz tmp/aiomisc-9.8.4.tar.gz --markdown 20230415/a/aiomisc/9.8.1-9.8.4/diff.md --exclude *.pyd
+[2023-04-15 19:26:46] INFO root fetch - processPackages [django-api-admin]: executing diffoscope
+[2023-04-15 19:26:46] INFO root fetch - processPackages [django-api-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-api-admin-1.0.3.tar.gz tmp/django-api-admin-1.1.0.tar.gz --markdown 20230415/d/django-api-admin/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-04-15 19:26:46] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-15 19:26:46] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Downloading https://files.pythonhosted.org/packages/b9/ef/86699263f920cec98746186514180ecc6325d2549d7ce8770b4e5a1b9813/jupyterhub-tmpnativeauthenticator-1.0.2.tar.gz
+[2023-04-15 19:26:47] INFO root fetch - main [MainThread]: End processing [betanegbinfit]: success
+[2023-04-15 19:26:47] INFO root fetch - main [MainThread]: End processing [pysolarfocus]: success
+[2023-04-15 19:26:47] INFO root fetch - main [MainThread]: End processing [bonbast]: success
+[2023-04-15 19:26:47] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: executing diffoscope
+[2023-04-15 19:26:47] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterhub-tmpnativeauthenticator-1.0.1.tar.gz tmp/jupyterhub-tmpnativeauthenticator-1.0.2.tar.gz --markdown 20230415/j/jupyterhub-tmpnativeauthenticator/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-15 19:26:47] INFO root fetch - main [MainThread]: End processing [aiomisc]: success
+[2023-04-15 19:26:47] INFO root fetch - main [MainThread]: End processing [autoresearcher]: success
+[2023-04-15 19:26:48] INFO root fetch - main [MainThread]: End processing [django-api-admin]: success
+[2023-04-15 19:26:49] INFO root fetch - main [MainThread]: End processing [jupyterhub-tmpnativeauthenticator]: success
+[2023-04-15 19:26:51] INFO root fetch - main [MainThread]: End processing [snaptrade-python-sdk]: success
+[2023-04-15 19:26:51] INFO root fetch - main [MainThread]: Store serial: [17720523]
