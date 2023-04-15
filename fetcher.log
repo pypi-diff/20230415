@@ -7141,3 +7141,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 10:15:09] INFO root fetch - main [MainThread]: End processing [dftt-timecode]: success
 [2023-04-15 10:15:10] INFO root fetch - main [MainThread]: End processing [peegy]: success
 [2023-04-15 10:15:10] INFO root fetch - main [MainThread]: Store serial: [17717426]
+[2023-04-15 10:16:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717426]
+[2023-04-15 10:16:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-15 10:17:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717426]
+[2023-04-15 10:17:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-15 10:17:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717426]
+[2023-04-15 10:17:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 10:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paralleltd
+[2023-04-15 10:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mespaint
+[2023-04-15 10:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mespaint
+[2023-04-15 10:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iqrfpy
+[2023-04-15 10:17:49] INFO root fetch - processPackages [mespaint]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 10:17:49] WARNING root fetch - processPackages [paralleltd]: Skipping, unable to determine old version
+[2023-04-15 10:17:49] INFO root fetch - main [MainThread]: End processing [paralleltd] error
+[2023-04-15 10:17:49] INFO root fetch - processPackages [mespaint]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 10:17:49] INFO root fetch - processPackages [iqrfpy]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 10:17:49] INFO root fetch - processPackages [mespaint]: Downloading https://files.pythonhosted.org/packages/1d/7e/c195e1f7711736a2b82c6824b9ffc5dddb4c10b14f0d17635edf969ffaeb/mespaint-0.0.2.tar.gz
+[2023-04-15 10:17:49] INFO root fetch - processPackages [mespaint]: Downloading https://files.pythonhosted.org/packages/1d/7e/c195e1f7711736a2b82c6824b9ffc5dddb4c10b14f0d17635edf969ffaeb/mespaint-0.0.2.tar.gz
+[2023-04-15 10:17:49] INFO root fetch - processPackages [mespaint]: Downloading https://files.pythonhosted.org/packages/46/56/d7ffd1d2d1232bd29a0aa999caebdc648da22064744f055ff43405f4debb/mespaint-0.0.3.tar.gz
+[2023-04-15 10:17:49] INFO root fetch - processPackages [mespaint]: Downloading https://files.pythonhosted.org/packages/46/56/d7ffd1d2d1232bd29a0aa999caebdc648da22064744f055ff43405f4debb/mespaint-0.0.3.tar.gz
+[2023-04-15 10:17:49] INFO root fetch - processPackages [iqrfpy]: Downloading https://files.pythonhosted.org/packages/f2/50/5fdac1fb6e237095f2cbb30ef4ae5adc6114d5de765b5cca8edfd031e911/iqrfpy-0.1.6.tar.gz
+[2023-04-15 10:17:49] INFO root fetch - processPackages [mespaint]: executing diffoscope
+[2023-04-15 10:17:49] INFO root fetch - processPackages [mespaint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mespaint-0.0.2.tar.gz tmp/mespaint-0.0.3.tar.gz --markdown 20230415/m/mespaint/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 10:17:49] INFO root fetch - processPackages [mespaint]: executing diffoscope
+[2023-04-15 10:17:49] INFO root fetch - processPackages [mespaint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mespaint-0.0.2.tar.gz tmp/mespaint-0.0.3.tar.gz --markdown 20230415/m/mespaint/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 10:17:50] INFO root fetch - processPackages [iqrfpy]: executing diffoscope
+[2023-04-15 10:17:50] INFO root fetch - processPackages [iqrfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iqrfpy-0.1.5.tar.gz tmp/iqrfpy-0.1.6.tar.gz --markdown 20230415/i/iqrfpy/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 10:17:50] INFO root fetch - main [MainThread]: End processing [mespaint]: success
+[2023-04-15 10:17:50] INFO root fetch - main [MainThread]: End processing [mespaint]: success
+[2023-04-15 10:17:52] INFO root fetch - main [MainThread]: End processing [iqrfpy]: success
+[2023-04-15 10:17:52] INFO root fetch - main [MainThread]: Store serial: [17717439]
