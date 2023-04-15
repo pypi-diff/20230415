@@ -18805,3 +18805,95 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 20:20:25] INFO root fetch - main [MainThread]: End processing [vsc-solvers]: success
 [2023-04-15 20:20:52] INFO root fetch - main [MainThread]: End processing [vsc-dm]: success
 [2023-04-15 20:20:52] INFO root fetch - main [MainThread]: Store serial: [17720899]
+[2023-04-15 20:26:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720899]
+[2023-04-15 20:26:11] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-15 20:26:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: allocine-seances
+[2023-04-15 20:26:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zuspec-arl-dm
+[2023-04-15 20:26:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: synergy-dataset
+[2023-04-15 20:26:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydae
+[2023-04-15 20:26:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TheSilent
+[2023-04-15 20:26:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: github-rest-api
+[2023-04-15 20:26:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cioclarisse
+[2023-04-15 20:26:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pentapy
+[2023-04-15 20:26:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: policyengine-us
+[2023-04-15 20:26:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: embetter
+[2023-04-15 20:26:11] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 20:26:11] INFO root fetch - processPackages [pydae]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-15 20:26:11] INFO root fetch - processPackages [embetter]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-15 20:26:11] INFO root fetch - processPackages [cioclarisse]: New version: [0.3.1] Old Version: [0.2.9]
+[2023-04-15 20:26:11] INFO root fetch - processPackages [github-rest-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-15 20:26:11] INFO root fetch - processPackages [policyengine-us]: New version: [0.291.0] Old Version: [0.290.0]
+[2023-04-15 20:26:11] INFO root fetch - processPackages [pydae]: Downloading https://files.pythonhosted.org/packages/7d/df/18fbeeac68b8076a40737405fc9638efb381a7dae1ccdfa520fe3810b1cd/pydae-0.8.0.tar.gz
+[2023-04-15 20:26:11] INFO root fetch - processPackages [zuspec-arl-dm]: New version: [0.0.1.4709178815] Old Version: [0.0.1.4646342191]
+[2023-04-15 20:26:11] INFO root fetch - processPackages [synergy-dataset]: New version: [1.0a2] Old Version: [1.0a1]
+[2023-04-15 20:26:11] INFO root fetch - processPackages [allocine-seances]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 20:26:11] INFO root fetch - processPackages [pentapy]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-04-15 20:26:11] INFO root fetch - processPackages [embetter]: executing diffoscope
+[2023-04-15 20:26:11] INFO root fetch - processPackages [embetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embetter-0.3.5.tar.gz tmp/embetter-0.3.6.tar.gz --markdown 20230415/e/embetter/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-15 20:26:11] INFO root fetch - processPackages [cioclarisse]: executing diffoscope
+[2023-04-15 20:26:11] WARNING root fetch - processPackages [pydae]: Skipping package: exceeds size limit 76279170>=10485760
+[2023-04-15 20:26:11] INFO root fetch - processPackages [cioclarisse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cioclarisse-0.2.9-py2.py3-none-any.whl.zip tmp/cioclarisse-0.3.1-py2.py3-none-any.whl.zip --markdown 20230415/c/cioclarisse/0.2.9-0.3.1/diff.md --exclude *.pyd
+[2023-04-15 20:26:11] INFO root fetch - processPackages [pydae]: Start processing: transformers-gradients
+[2023-04-15 20:26:11] INFO root fetch - main [MainThread]: End processing [pydae] error
+[2023-04-15 20:26:11] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-15 20:26:11] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230415/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 20:26:11] INFO root fetch - processPackages [github-rest-api]: executing diffoscope
+[2023-04-15 20:26:11] INFO root fetch - processPackages [github-rest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_rest_api-0.8.0.tar.gz tmp/github_rest_api-0.9.0.tar.gz --markdown 20230415/g/github-rest-api/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 20:26:11] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-15 20:26:11] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.290.0.tar.gz tmp/policyengine-us-0.291.0.tar.gz --markdown 20230415/p/policyengine-us/0.290.0-0.291.0/diff.md --exclude *.pyd
+[2023-04-15 20:26:11] INFO root fetch - processPackages [zuspec-arl-dm]: Downloading https://files.pythonhosted.org/packages/28/e0/ef3c9d08273a6d333d95daa8c3fd3ef0fc5748c2118a6bf2db7665b89f5f/zuspec_arl_dm-0.0.1.4646342191-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 20:26:11] INFO root fetch - processPackages [allocine-seances]: Downloading https://files.pythonhosted.org/packages/96/22/3d8a7e379170766b0486327d34d1f4412efc08ba5b1b3558a1978bbf92f8/allocine-seances-0.0.2.tar.gz
+[2023-04-15 20:26:11] INFO root fetch - processPackages [pentapy]: Downloading https://files.pythonhosted.org/packages/be/dc/8ba48f70d93f3e66bf62bc571ec3d260d25984ead3cddf2af98dba784000/pentapy-1.1.2.tar.gz
+[2023-04-15 20:26:11] INFO root fetch - processPackages [transformers-gradients]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-15 20:26:11] INFO root fetch - processPackages [synergy-dataset]: Downloading https://files.pythonhosted.org/packages/5f/53/1a050cdc33812eabb21e623f2e1b1aabae5d5c370c3ece99fe7388b64e90/synergy-dataset-1.0a2.tar.gz
+[2023-04-15 20:26:11] INFO root fetch - processPackages [pentapy]: Downloading https://files.pythonhosted.org/packages/a0/55/189dc70dff7a34dbe16034e1863fbd18dc036a31c900b78d98fe53962c29/pentapy-1.2.0.tar.gz
+[2023-04-15 20:26:11] INFO root fetch - processPackages [allocine-seances]: Downloading https://files.pythonhosted.org/packages/ed/8b/7fbd13770c97975ff77a4f110d52b1425293bb3cd53fc6e74f77bcb0804d/allocine-seances-0.0.3.tar.gz
+[2023-04-15 20:26:11] INFO root fetch - processPackages [synergy-dataset]: executing diffoscope
+[2023-04-15 20:26:11] INFO root fetch - processPackages [synergy-dataset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synergy-dataset-1.0a1.tar.gz tmp/synergy-dataset-1.0a2.tar.gz --markdown 20230415/s/synergy-dataset/1.0a1-1.0a2/diff.md --exclude *.pyd
+[2023-04-15 20:26:12] INFO root fetch - processPackages [pentapy]: executing diffoscope
+[2023-04-15 20:26:12] INFO root fetch - processPackages [pentapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pentapy-1.1.2.tar.gz tmp/pentapy-1.2.0.tar.gz --markdown 20230415/p/pentapy/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-04-15 20:26:12] INFO root fetch - processPackages [allocine-seances]: executing diffoscope
+[2023-04-15 20:26:12] INFO root fetch - processPackages [allocine-seances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allocine-seances-0.0.2.tar.gz tmp/allocine-seances-0.0.3.tar.gz --markdown 20230415/a/allocine-seances/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 20:26:12] INFO root fetch - processPackages [zuspec-arl-dm]: Downloading https://files.pythonhosted.org/packages/fa/80/ed0d7f9137783bd12fdaf212ab671c4e95e5fb2fdabcc3e4cdf37960831e/zuspec_arl_dm-0.0.1.4709178815-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 20:26:12] INFO root fetch - processPackages [transformers-gradients]: Downloading https://files.pythonhosted.org/packages/d2/7b/7a7bbf791eaa324c59ff63873efe95d7f62c2054963cfbd05a38fc543ca5/transformers_gradients-0.0.7.tar.gz
+[2023-04-15 20:26:12] INFO root fetch - processPackages [transformers-gradients]: executing diffoscope
+[2023-04-15 20:26:12] INFO root fetch - processPackages [transformers-gradients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformers_gradients-0.0.6.tar.gz tmp/transformers_gradients-0.0.7.tar.gz --markdown 20230415/t/transformers-gradients/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-15 20:26:12] INFO root fetch - processPackages [zuspec-arl-dm]: executing diffoscope
+[2023-04-15 20:26:12] INFO root fetch - processPackages [zuspec-arl-dm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_arl_dm-0.0.1.4646342191-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_arl_dm-0.0.1.4709178815-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230415/z/zuspec-arl-dm/0.0.1.4646342191-0.0.1.4709178815/diff.md --exclude *.pyd
+[2023-04-15 20:26:12] INFO root fetch - processPackages [github-rest-api]: Start processing: branthebuilder
+[2023-04-15 20:26:12] INFO root fetch - main [MainThread]: End processing [github-rest-api]: success
+[2023-04-15 20:26:12] INFO root fetch - processPackages [branthebuilder]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-15 20:26:12] INFO root fetch - processPackages [embetter]: Start processing: pgx
+[2023-04-15 20:26:12] INFO root fetch - main [MainThread]: End processing [embetter]: success
+[2023-04-15 20:26:13] INFO root fetch - processPackages [cioclarisse]: Start processing: allocine-seances
+[2023-04-15 20:26:13] INFO root fetch - main [MainThread]: End processing [cioclarisse]: success
+[2023-04-15 20:26:13] INFO root fetch - processPackages [pgx]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-15 20:26:13] INFO root fetch - processPackages [allocine-seances]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 20:26:13] INFO root fetch - processPackages [branthebuilder]: Downloading https://files.pythonhosted.org/packages/3a/01/6f3804733c6165ce1a98524264d8f24537e667c6a52d3f5528e1cfcafc18/branthebuilder-1.0.8.tar.gz
+[2023-04-15 20:26:13] INFO root fetch - processPackages [allocine-seances]: executing diffoscope
+[2023-04-15 20:26:13] INFO root fetch - processPackages [allocine-seances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allocine-seances-0.0.2.tar.gz tmp/allocine-seances-0.0.3.tar.gz --markdown 20230415/a/allocine-seances/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 20:26:13] INFO root fetch - processPackages [pgx]: Downloading https://files.pythonhosted.org/packages/47/af/b20e8f5e07ac18dbdbfdca8ba7fdf52e4d3b4d03324a24f7d356deb4f0a5/pgx-0.2.1.tar.gz
+[2023-04-15 20:26:13] INFO root fetch - processPackages [TheSilent]: Start processing: tyba-cvxpy
+[2023-04-15 20:26:13] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-15 20:26:13] INFO root fetch - processPackages [branthebuilder]: Downloading https://files.pythonhosted.org/packages/9a/8a/fbd9885c336fff98c94c7199293bb8ef5567876f114a684410a7886e8abb/branthebuilder-1.0.9.tar.gz
+[2023-04-15 20:26:13] INFO root fetch - processPackages [tyba-cvxpy]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-15 20:26:13] INFO root fetch - main [MainThread]: End processing [synergy-dataset]: success
+[2023-04-15 20:26:13] INFO root fetch - processPackages [branthebuilder]: executing diffoscope
+[2023-04-15 20:26:13] INFO root fetch - processPackages [branthebuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/branthebuilder-1.0.8.tar.gz tmp/branthebuilder-1.0.9.tar.gz --markdown 20230415/b/branthebuilder/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-15 20:26:13] INFO root fetch - main [MainThread]: End processing [allocine-seances]: success
+[2023-04-15 20:26:13] INFO root fetch - main [MainThread]: End processing [transformers-gradients]: success
+[2023-04-15 20:26:13] INFO root fetch - processPackages [pgx]: Downloading https://files.pythonhosted.org/packages/d9/2b/8314f677e60a06f8f23b560810e2e3eab5e12b3101cb5147a2ef91b9ac24/pgx-0.3.0.tar.gz
+[2023-04-15 20:26:13] INFO root fetch - processPackages [tyba-cvxpy]: Downloading https://files.pythonhosted.org/packages/0c/66/c5670e0acecddaafef13fa83eb3dce38ab06185ea26be9a714364d7b164c/tyba_cvxpy-1.3.3-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-04-15 20:26:13] INFO root fetch - main [MainThread]: End processing [pentapy]: success
+[2023-04-15 20:26:13] INFO root fetch - processPackages [pgx]: executing diffoscope
+[2023-04-15 20:26:13] INFO root fetch - processPackages [pgx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgx-0.2.1.tar.gz tmp/pgx-0.3.0.tar.gz --markdown 20230415/p/pgx/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 20:26:14] INFO root fetch - main [MainThread]: End processing [allocine-seances]: success
+[2023-04-15 20:26:14] INFO root fetch - main [MainThread]: End processing [branthebuilder]: success
+[2023-04-15 20:26:14] INFO root fetch - processPackages [tyba-cvxpy]: Downloading https://files.pythonhosted.org/packages/ba/8c/5b273f915d9abaf3c366da3ab0a9311dabf87eadf807ca9bc82b9d6145e0/tyba_cvxpy-1.3.4-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-04-15 20:26:15] INFO root fetch - processPackages [tyba-cvxpy]: executing diffoscope
+[2023-04-15 20:26:15] INFO root fetch - processPackages [tyba-cvxpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tyba_cvxpy-1.3.3-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip tmp/tyba_cvxpy-1.3.4-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20230415/t/tyba-cvxpy/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-04-15 20:26:16] INFO root fetch - main [MainThread]: End processing [pgx]: success
+[2023-04-15 20:26:20] INFO root fetch - main [MainThread]: End processing [tyba-cvxpy]: success
+[2023-04-15 20:26:28] INFO root fetch - main [MainThread]: End processing [zuspec-arl-dm]: success
+[2023-04-15 20:27:17] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-04-15 20:27:17] INFO root fetch - main [MainThread]: Store serial: [17720976]
