@@ -16616,3 +16616,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 16:12:54] INFO root fetch - main [MainThread]: End processing [Erutils]: success
 [2023-04-15 16:12:54] INFO root fetch - main [MainThread]: End processing [kupala]: success
 [2023-04-15 16:12:54] INFO root fetch - main [MainThread]: Store serial: [17719450]
+[2023-04-15 16:17:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719450]
+[2023-04-15 16:18:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 16:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PySide6-Fluent-Widgets
+[2023-04-15 16:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiogram-ext
+[2023-04-15 16:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-04-15 16:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TheSilent
+[2023-04-15 16:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tastytrade-api
+[2023-04-15 16:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2023-04-15 16:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ssb-sgis
+[2023-04-15 16:18:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fhnw-nlp-utils
+[2023-04-15 16:18:03] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: New version: [0.7.0] Old Version: [0.6.9]
+[2023-04-15 16:18:03] INFO root fetch - processPackages [ssb-sgis]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 16:18:03] INFO root fetch - processPackages [aiogram-ext]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 16:18:03] INFO root fetch - processPackages [tastytrade-api]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-15 16:18:03] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 16:18:03] INFO root fetch - processPackages [fhnw-nlp-utils]: New version: [0.6.6] Old Version: [0.6.5]
+[2023-04-15 16:18:03] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2023-04-15 16:18:03] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-15 16:18:03] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.0.8.tar.gz tmp/aiogram-ext-0.0.9.tar.gz --markdown 20230415/a/aiogram-ext/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 16:18:03] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/22/b2/c7509f3446ffcf623735e42e32a78f2531bcbf442dac167571ac0e5ba476/PySide6-Fluent-Widgets-0.6.9.tar.gz
+[2023-04-15 16:18:03] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-15 16:18:03] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-15 16:18:03] INFO root fetch - processPackages [ssb-sgis]: executing diffoscope
+[2023-04-15 16:18:03] INFO root fetch - processPackages [ssb-sgis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssb_sgis-0.1.5.tar.gz tmp/ssb_sgis-0.1.6.tar.gz --markdown 20230415/s/ssb-sgis/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 16:18:04] INFO root fetch - processPackages [tastytrade-api]: Downloading https://files.pythonhosted.org/packages/09/2c/f4ab8bf6ed0f94feaa1cce084c275708a7a7159d131b12f45ad69f9a7a96/tastytrade-api-0.3.1.tar.gz
+[2023-04-15 16:18:04] INFO root fetch - processPackages [fhnw-nlp-utils]: Downloading https://files.pythonhosted.org/packages/cd/8e/4f83d7deea32eb9d6ca54a6996280ef875d779c3a60d852270793a387969/fhnw_nlp_utils-0.6.5-py3-none-any.whl
+[2023-04-15 16:18:04] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-15 16:18:04] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230415/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-15 16:18:04] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2023-04-15 16:18:04] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-15 16:18:04] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230415/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-15 16:18:04] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-15 16:18:04] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230415/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 16:18:04] INFO root fetch - processPackages [tastytrade-api]: executing diffoscope
+[2023-04-15 16:18:04] INFO root fetch - processPackages [tastytrade-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tastytrade-api-0.3.0.tar.gz tmp/tastytrade-api-0.3.1.tar.gz --markdown 20230415/t/tastytrade-api/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-15 16:18:04] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/2e/a1/d0afeeba91023e0755ba3a85da51d37ab4c41e2c2afd64c212b73e77255b/PySide6-Fluent-Widgets-0.7.0.tar.gz
+[2023-04-15 16:18:04] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: executing diffoscope
+[2023-04-15 16:18:04] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide6-Fluent-Widgets-0.6.9.tar.gz tmp/PySide6-Fluent-Widgets-0.7.0.tar.gz --markdown 20230415/P/PySide6-Fluent-Widgets/0.6.9-0.7.0/diff.md --exclude *.pyd
+[2023-04-15 16:18:04] INFO root fetch - processPackages [fhnw-nlp-utils]: Downloading https://files.pythonhosted.org/packages/67/a2/14d98a730bd2c06efe9d109fc7d977e8ce33dbeee84f8668d3a4d55aeb43/fhnw_nlp_utils-0.6.6-py3-none-any.whl
+[2023-04-15 16:18:04] INFO root fetch - processPackages [fhnw-nlp-utils]: executing diffoscope
+[2023-04-15 16:18:04] INFO root fetch - processPackages [fhnw-nlp-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhnw_nlp_utils-0.6.5-py3-none-any.whl.zip tmp/fhnw_nlp_utils-0.6.6-py3-none-any.whl.zip --markdown 20230415/f/fhnw-nlp-utils/0.6.5-0.6.6/diff.md --exclude *.pyd
+[2023-04-15 16:18:05] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-15 16:18:05] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-15 16:18:05] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-15 16:18:05] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-15 16:18:05] INFO root fetch - main [MainThread]: End processing [ssb-sgis]: success
+[2023-04-15 16:18:05] INFO root fetch - main [MainThread]: End processing [tastytrade-api]: success
+[2023-04-15 16:18:05] INFO root fetch - main [MainThread]: End processing [fhnw-nlp-utils]: success
+[2023-04-15 16:18:09] INFO root fetch - main [MainThread]: End processing [PySide6-Fluent-Widgets]: success
+[2023-04-15 16:18:09] INFO root fetch - main [MainThread]: Store serial: [17719473]
