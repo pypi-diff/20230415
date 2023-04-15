@@ -17089,3 +17089,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 17:05:22] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-15 17:06:52] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
 [2023-04-15 17:06:52] INFO root fetch - main [MainThread]: Store serial: [17719734]
+[2023-04-15 17:12:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719734]
+[2023-04-15 17:12:09] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 17:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CoLT5-attention
+[2023-04-15 17:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Scopul
+[2023-04-15 17:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FlexGet
+[2023-04-15 17:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: revchatgptauth
+[2023-04-15 17:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: netzeus-core-config
+[2023-04-15 17:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyElli
+[2023-04-15 17:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pygedcom
+[2023-04-15 17:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bbterm
+[2023-04-15 17:12:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ProfiWiki
+[2023-04-15 17:12:09] INFO root fetch - processPackages [CoLT5-attention]: New version: [0.2.0] Old Version: [0.1.6]
+[2023-04-15 17:12:09] INFO root fetch - processPackages [Scopul]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-15 17:12:09] INFO root fetch - processPackages [pygedcom]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-15 17:12:09] WARNING root fetch - processPackages [bbterm]: Skipping, unable to determine old version
+[2023-04-15 17:12:09] INFO root fetch - main [MainThread]: End processing [bbterm] error
+[2023-04-15 17:12:09] INFO root fetch - processPackages [ProfiWiki]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-15 17:12:09] WARNING root fetch - processPackages [netzeus-core-config]: Skipping, unable to determine old version
+[2023-04-15 17:12:09] INFO root fetch - main [MainThread]: End processing [netzeus-core-config] error
+[2023-04-15 17:12:09] INFO root fetch - processPackages [pyElli]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-15 17:12:09] INFO root fetch - processPackages [revchatgptauth]: New version: [2023.4.16] Old Version: [2023.4.14]
+[2023-04-15 17:12:09] INFO root fetch - processPackages [FlexGet]: New version: [3.6.3] Old Version: [3.6.2]
+[2023-04-15 17:12:09] INFO root fetch - processPackages [CoLT5-attention]: Downloading https://files.pythonhosted.org/packages/47/7a/8c6bca0bfe3b1a679201069b63bfe68170885bec7239ef6acc3114a93aa2/CoLT5-attention-0.1.6.tar.gz
+[2023-04-15 17:12:10] INFO root fetch - processPackages [pygedcom]: Downloading https://files.pythonhosted.org/packages/2d/ef/8661b13f0f85091d783f7eb882d06f49c49f61a4703947bfbb7d5532b855/pygedcom-0.1.8.tar.gz
+[2023-04-15 17:12:10] INFO root fetch - processPackages [Scopul]: Downloading https://files.pythonhosted.org/packages/48/61/3709452a91b1dff68e4cd95418de41c6f6b07471db67f26314aca21524aa/Scopul-1.0.4.tar.gz
+[2023-04-15 17:12:10] INFO root fetch - processPackages [ProfiWiki]: Downloading https://files.pythonhosted.org/packages/d2/3a/16528f422cad331ea2c623fca4abf7187d349b2def6bc6bdeb6de64d55e5/profiwiki-0.1.3.tar.gz
+[2023-04-15 17:12:10] INFO root fetch - processPackages [pygedcom]: executing diffoscope
+[2023-04-15 17:12:10] INFO root fetch - processPackages [pygedcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygedcom-0.1.7.tar.gz tmp/pygedcom-0.1.8.tar.gz --markdown 20230415/p/pygedcom/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-15 17:12:10] INFO root fetch - processPackages [pyElli]: Downloading https://files.pythonhosted.org/packages/98/ff/e2530fb70531fa86e54bbadb8148b4118523ca8354700f507c8aad9e45e6/pyElli-0.9.1.tar.gz
+[2023-04-15 17:12:10] INFO root fetch - processPackages [Scopul]: executing diffoscope
+[2023-04-15 17:12:10] INFO root fetch - processPackages [Scopul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Scopul-1.0.3.tar.gz tmp/Scopul-1.0.4.tar.gz --markdown 20230415/S/Scopul/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-15 17:12:10] INFO root fetch - processPackages [ProfiWiki]: executing diffoscope
+[2023-04-15 17:12:10] INFO root fetch - processPackages [ProfiWiki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiwiki-0.1.2.tar.gz tmp/profiwiki-0.1.3.tar.gz --markdown 20230415/P/ProfiWiki/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-15 17:12:10] INFO root fetch - processPackages [revchatgptauth]: Downloading https://files.pythonhosted.org/packages/71/90/96495d6584ef36841d30475b1e6b8d37b043c47d77610fdc76458d41be1c/revchatgptauth-2023.4.16.tar.gz
+[2023-04-15 17:12:10] INFO root fetch - processPackages [revchatgptauth]: executing diffoscope
+[2023-04-15 17:12:10] INFO root fetch - processPackages [revchatgptauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revchatgptauth-2023.4.14.tar.gz tmp/revchatgptauth-2023.4.16.tar.gz --markdown 20230415/r/revchatgptauth/2023.4.14-2023.4.16/diff.md --exclude *.pyd
+[2023-04-15 17:12:10] INFO root fetch - processPackages [CoLT5-attention]: Downloading https://files.pythonhosted.org/packages/cf/4e/4bb193f0bfb27b4f7bb22b722e0db1e82e440213ddf20e579ce547d1ed74/CoLT5-attention-0.2.0.tar.gz
+[2023-04-15 17:12:10] INFO root fetch - processPackages [FlexGet]: Downloading https://files.pythonhosted.org/packages/66/b2/a07180c80fb9e3582bd1a4047facf457067cda78f24f8fb70be3d06f791f/FlexGet-3.6.3.tar.gz
+[2023-04-15 17:12:10] INFO root fetch - processPackages [CoLT5-attention]: executing diffoscope
+[2023-04-15 17:12:10] INFO root fetch - processPackages [CoLT5-attention]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CoLT5-attention-0.1.6.tar.gz tmp/CoLT5-attention-0.2.0.tar.gz --markdown 20230415/C/CoLT5-attention/0.1.6-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 17:12:10] INFO root fetch - processPackages [FlexGet]: executing diffoscope
+[2023-04-15 17:12:10] INFO root fetch - processPackages [FlexGet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlexGet-3.6.2.tar.gz tmp/FlexGet-3.6.3.tar.gz --markdown 20230415/F/FlexGet/3.6.2-3.6.3/diff.md --exclude *.pyd
+[2023-04-15 17:12:10] INFO root fetch - processPackages [pyElli]: Downloading https://files.pythonhosted.org/packages/dc/05/5b5ae522fef24dfa9a3e0dcb1d3918b5b1f2f9a8488f30c51fe474875a95/pyElli-0.9.2.tar.gz
+[2023-04-15 17:12:10] INFO root fetch - processPackages [pyElli]: executing diffoscope
+[2023-04-15 17:12:10] INFO root fetch - processPackages [pyElli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyElli-0.9.1.tar.gz tmp/pyElli-0.9.2.tar.gz --markdown 20230415/p/pyElli/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-15 17:12:11] INFO root fetch - main [MainThread]: End processing [Scopul]: success
+[2023-04-15 17:12:11] INFO root fetch - main [MainThread]: End processing [ProfiWiki]: success
+[2023-04-15 17:12:11] INFO root fetch - main [MainThread]: End processing [revchatgptauth]: success
+[2023-04-15 17:12:11] INFO root fetch - main [MainThread]: End processing [pygedcom]: success
+[2023-04-15 17:12:11] INFO root fetch - main [MainThread]: End processing [CoLT5-attention]: success
+[2023-04-15 17:12:12] INFO root fetch - main [MainThread]: End processing [pyElli]: success
+[2023-04-15 17:12:24] INFO root fetch - main [MainThread]: End processing [FlexGet]: success
+[2023-04-15 17:12:24] INFO root fetch - main [MainThread]: Store serial: [17719768]
