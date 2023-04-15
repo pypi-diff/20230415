@@ -19146,3 +19146,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 20:48:24] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
 [2023-04-15 20:48:25] INFO root fetch - main [MainThread]: End processing [prunerr]: success
 [2023-04-15 20:48:25] INFO root fetch - main [MainThread]: Store serial: [17721153]
+[2023-04-15 20:53:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721153]
+[2023-04-15 20:53:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 20:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nlptoolssna
+[2023-04-15 20:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: turbx
+[2023-04-15 20:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: telegram-django-bot
+[2023-04-15 20:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nlptoolssna
+[2023-04-15 20:53:34] INFO root fetch - processPackages [nlptoolssna]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-15 20:53:34] INFO root fetch - processPackages [telegram-django-bot]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-15 20:53:34] INFO root fetch - processPackages [turbx]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-15 20:53:34] INFO root fetch - processPackages [nlptoolssna]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-15 20:53:34] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/ac/54/4fc71e00f34e231b8aa61841efc573bfa087abaadf9743466806bf4ba17c/nlptoolssna-0.1.2.tar.gz
+[2023-04-15 20:53:34] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/ac/54/4fc71e00f34e231b8aa61841efc573bfa087abaadf9743466806bf4ba17c/nlptoolssna-0.1.2.tar.gz
+[2023-04-15 20:53:34] INFO root fetch - processPackages [telegram-django-bot]: Downloading https://files.pythonhosted.org/packages/b7/a6/a6b351157173f3aa6385c0a8b782288ebd1d9d7da87e0550d13a12e3bbd4/telegram_django_bot-1.0.1.tar.gz
+[2023-04-15 20:53:34] INFO root fetch - processPackages [turbx]: Downloading https://files.pythonhosted.org/packages/7a/b3/51a2923e386076e874bd9272afe7f7c094252ffc140e4a5b67ae3b706b15/turbx-0.2.2.tar.gz
+[2023-04-15 20:53:34] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/43/b7/cb4f76058cd48af61fbbb1f7287de76c7abd8c8c163ae34f1fd9a5af1aea/nlptoolssna-0.1.3.tar.gz
+[2023-04-15 20:53:34] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/43/b7/cb4f76058cd48af61fbbb1f7287de76c7abd8c8c163ae34f1fd9a5af1aea/nlptoolssna-0.1.3.tar.gz
+[2023-04-15 20:53:34] INFO root fetch - processPackages [telegram-django-bot]: Downloading https://files.pythonhosted.org/packages/ae/fa/3ae630743fb9533edc5ac5b5880104636b0ee722ff76bd6ac4cfed9e3453/telegram_django_bot-1.0.2.tar.gz
+[2023-04-15 20:53:34] INFO root fetch - processPackages [turbx]: executing diffoscope
+[2023-04-15 20:53:34] INFO root fetch - processPackages [turbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbx-0.2.1.tar.gz tmp/turbx-0.2.2.tar.gz --markdown 20230415/t/turbx/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-15 20:53:34] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-15 20:53:34] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.1.2.tar.gz tmp/nlptoolssna-0.1.3.tar.gz --markdown 20230415/n/nlptoolssna/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-15 20:53:34] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-15 20:53:34] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.1.2.tar.gz tmp/nlptoolssna-0.1.3.tar.gz --markdown 20230415/n/nlptoolssna/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-15 20:53:34] INFO root fetch - processPackages [telegram-django-bot]: executing diffoscope
+[2023-04-15 20:53:34] INFO root fetch - processPackages [telegram-django-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_django_bot-1.0.1.tar.gz tmp/telegram_django_bot-1.0.2.tar.gz --markdown 20230415/t/telegram-django-bot/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-15 20:53:36] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-15 20:53:36] INFO root fetch - main [MainThread]: End processing [telegram-django-bot]: success
+[2023-04-15 20:53:36] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-15 20:53:36] INFO root fetch - main [MainThread]: End processing [turbx]: success
+[2023-04-15 20:53:36] INFO root fetch - main [MainThread]: Store serial: [17721176]
