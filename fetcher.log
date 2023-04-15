@@ -20644,3 +20644,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 23:53:09] INFO root fetch - main [MainThread]: End processing [mls-api]: success
 [2023-04-15 23:53:10] INFO root fetch - main [MainThread]: End processing [hat-syslog]: success
 [2023-04-15 23:53:10] INFO root fetch - main [MainThread]: Store serial: [17722099]
+[2023-04-15 23:58:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722099]
+[2023-04-15 23:58:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 23:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: glassppy
+[2023-04-15 23:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inkscape_figure_manager
+[2023-04-15 23:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chalkpy
+[2023-04-15 23:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: github-rest-api
+[2023-04-15 23:58:20] INFO root fetch - processPackages [github-rest-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-15 23:58:20] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-15 23:58:20] WARNING root fetch - processPackages [glassppy]: Skipping, unable to determine old version
+[2023-04-15 23:58:20] INFO root fetch - main [MainThread]: End processing [glassppy] error
+[2023-04-15 23:58:20] WARNING root fetch - processPackages [inkscape_figure_manager]: Skipping, unable to determine old version
+[2023-04-15 23:58:20] INFO root fetch - main [MainThread]: End processing [inkscape_figure_manager] error
+[2023-04-15 23:58:20] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/76/59/c9bc9fe2b15e2b0e1d11974738b31f85bb5afed0984cda0ae03e3f5684d9/chalkpy-1.9.8.tar.gz
+[2023-04-15 23:58:20] INFO root fetch - processPackages [github-rest-api]: executing diffoscope
+[2023-04-15 23:58:20] INFO root fetch - processPackages [github-rest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_rest_api-0.8.0.tar.gz tmp/github_rest_api-0.9.0.tar.gz --markdown 20230415/g/github-rest-api/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 23:58:20] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/23/aa/03b00b71ee5bedfe108c2b9d40a0960ebc300bcd4eba5eaa21f4543fd3a6/chalkpy-1.9.9.tar.gz
+[2023-04-15 23:58:20] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-15 23:58:20] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230415/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-15 23:58:21] INFO root fetch - main [MainThread]: End processing [github-rest-api]: success
+[2023-04-15 23:58:26] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-04-15 23:58:26] INFO root fetch - main [MainThread]: Store serial: [17722114]
