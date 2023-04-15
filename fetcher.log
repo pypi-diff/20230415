@@ -6678,3 +6678,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 09:23:08] INFO root fetch - main [MainThread]: End processing [kecam]: success
 [2023-04-15 09:23:09] INFO root fetch - main [MainThread]: End processing [keras-cv-attention-models]: success
 [2023-04-15 09:23:09] INFO root fetch - main [MainThread]: Store serial: [17717165]
+[2023-04-15 09:28:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717165]
+[2023-04-15 09:28:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 09:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-stock-cycle-count
+[2023-04-15 09:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-stock-orderpoint-uom
+[2023-04-15 09:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-stock-orderpoint-purchase-link
+[2023-04-15 09:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addons-oca-stock-logistics-warehouse
+[2023-04-15 09:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stockpy-learn
+[2023-04-15 09:28:16] INFO root fetch - processPackages [stockpy-learn]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: New version: [16.0.20230412.0] Old Version: [16.0.20230404.1]
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo14-addon-stock-cycle-count]: New version: [14.0.1.4.3.dev8] Old Version: [14.0.1.4.3.dev7]
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-uom]: New version: [15.0.1.0.0.3] Old Version: [15.0.1.0.0.2]
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: executing diffoscope
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_orderpoint_purchase_link-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_stock_orderpoint_purchase_link-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230415/o/odoo-addon-stock-orderpoint-purchase-link/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-uom]: Downloading https://files.pythonhosted.org/packages/bc/9c/46013b79d1e98272187eff39fc3d07ebe070bc51c7d6fb65bd6b91ccdb7a/odoo_addon_stock_orderpoint_uom-15.0.1.0.0.2-py3-none-any.whl
+[2023-04-15 09:28:16] INFO root fetch - processPackages [stockpy-learn]: executing diffoscope
+[2023-04-15 09:28:16] INFO root fetch - processPackages [stockpy-learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockpy-learn-0.1.8.tar.gz tmp/stockpy-learn-0.1.9.tar.gz --markdown 20230415/s/stockpy-learn/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo14-addon-stock-cycle-count]: executing diffoscope
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo14-addon-stock-cycle-count]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_cycle_count-14.0.1.4.3.dev7-py3-none-any.whl.zip tmp/odoo14_addon_stock_cycle_count-14.0.1.4.3.dev8-py3-none-any.whl.zip --markdown 20230415/o/odoo14-addon-stock-cycle-count/14.0.1.4.3.dev7-14.0.1.4.3.dev8/diff.md --exclude *.pyd
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: executing diffoscope
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20230404.1-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20230412.0-py3-none-any.whl.zip --markdown 20230415/o/odoo-addons-oca-stock-logistics-warehouse/16.0.20230404.1-16.0.20230412.0/diff.md --exclude *.pyd
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-uom]: Downloading https://files.pythonhosted.org/packages/66/b6/8e32a7792607eab3d2888d7b29c26494205cdc25f0fda04851baf074002f/odoo_addon_stock_orderpoint_uom-15.0.1.0.0.3-py3-none-any.whl
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-uom]: executing diffoscope
+[2023-04-15 09:28:16] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-uom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_orderpoint_uom-15.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_stock_orderpoint_uom-15.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230415/o/odoo-addon-stock-orderpoint-uom/15.0.1.0.0.2-15.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-04-15 09:28:17] INFO root fetch - processPackages [odoo-addon-stock-orderpoint-purchase-link]: Start processing: renus
+[2023-04-15 09:28:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-orderpoint-purchase-link]: success
+[2023-04-15 09:28:17] INFO root fetch - processPackages [renus]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-15 09:28:17] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Start processing: file-lines-counter
+[2023-04-15 09:28:17] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-warehouse]: success
+[2023-04-15 09:28:17] WARNING root fetch - processPackages [file-lines-counter]: Skipping, unable to determine old version
+[2023-04-15 09:28:17] INFO root fetch - main [MainThread]: End processing [file-lines-counter] error
+[2023-04-15 09:28:17] INFO root fetch - main [MainThread]: End processing [stockpy-learn]: success
+[2023-04-15 09:28:17] INFO root fetch - processPackages [renus]: Downloading https://files.pythonhosted.org/packages/58/0a/6cc3548206816db7b040a8caccefb4000bd75c3fbb7ba9ebcb3866653da2/renus-1.0.6.tar.gz
+[2023-04-15 09:28:18] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-orderpoint-uom]: success
+[2023-04-15 09:28:18] INFO root fetch - processPackages [renus]: Downloading https://files.pythonhosted.org/packages/a7/cd/c84180ca2d626ec88decef15298a5b09c45d0638a912e27a707bce0b8f68/renus-1.0.7.tar.gz
+[2023-04-15 09:28:18] INFO root fetch - processPackages [renus]: executing diffoscope
+[2023-04-15 09:28:18] INFO root fetch - processPackages [renus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renus-1.0.6.tar.gz tmp/renus-1.0.7.tar.gz --markdown 20230415/r/renus/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-15 09:28:18] INFO root fetch - main [MainThread]: End processing [odoo14-addon-stock-cycle-count]: success
+[2023-04-15 09:28:19] INFO root fetch - main [MainThread]: End processing [renus]: success
+[2023-04-15 09:28:19] INFO root fetch - main [MainThread]: Store serial: [17717187]
