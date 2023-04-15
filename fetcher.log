@@ -19283,3 +19283,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 21:09:15] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
 [2023-04-15 21:09:15] INFO root fetch - main [MainThread]: End processing [typing-result]: success
 [2023-04-15 21:09:15] INFO root fetch - main [MainThread]: Store serial: [17721264]
+[2023-04-15 21:14:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721264]
+[2023-04-15 21:14:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 21:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: argparse-manpage
+[2023-04-15 21:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: polars
+[2023-04-15 21:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: polars-lts-cpu
+[2023-04-15 21:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyarr
+[2023-04-15 21:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hassle
+[2023-04-15 21:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prunerr
+[2023-04-15 21:14:24] INFO root fetch - processPackages [argparse-manpage]: New version: [4.1] Old Version: [4]
+[2023-04-15 21:14:24] INFO root fetch - processPackages [pyarr]: New version: [5.0.0] Old Version: [4.1.0]
+[2023-04-15 21:14:24] INFO root fetch - processPackages [prunerr]: New version: [1.1.0b27] Old Version: [1.1.0b26]
+[2023-04-15 21:14:24] INFO root fetch - processPackages [hassle]: New version: [2.5.0] Old Version: [2.4.0]
+[2023-04-15 21:14:24] INFO root fetch - processPackages [polars-lts-cpu]: New version: [0.17.3] Old Version: [0.17.2]
+[2023-04-15 21:14:24] INFO root fetch - processPackages [polars]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-15 21:14:24] INFO root fetch - processPackages [prunerr]: executing diffoscope
+[2023-04-15 21:14:24] INFO root fetch - processPackages [prunerr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prunerr-1.1.0b26.tar.gz tmp/prunerr-1.1.0b27.tar.gz --markdown 20230415/p/prunerr/1.1.0b26-1.1.0b27/diff.md --exclude *.pyd
+[2023-04-15 21:14:24] INFO root fetch - processPackages [argparse-manpage]: Downloading https://files.pythonhosted.org/packages/03/cd/0598f30544d602eeb11cbc0d5c5d09cb48bd805ef884e7c56ff1239db7ce/argparse-manpage-4.tar.gz
+[2023-04-15 21:14:24] INFO root fetch - processPackages [pyarr]: Downloading https://files.pythonhosted.org/packages/a1/85/74953b19f4849a1ca693bf7802d0f08466289e62fbfd841364a8b592cb86/pyarr-4.1.0.tar.gz
+[2023-04-15 21:14:24] INFO root fetch - processPackages [hassle]: Downloading https://files.pythonhosted.org/packages/ef/eb/f9944e1077f8f414d2cf971ac5ced4ce6cf1e0eae2a22073d934d1a5a6be/hassle-2.4.0.tar.gz
+[2023-04-15 21:14:24] INFO root fetch - processPackages [polars-lts-cpu]: Downloading https://files.pythonhosted.org/packages/01/55/a8d67be363781c8b1e43bae1422c010e8dd8f0089c769c4991b3e2057910/polars_lts_cpu-0.17.2.tar.gz
+[2023-04-15 21:14:24] INFO root fetch - processPackages [polars]: Downloading https://files.pythonhosted.org/packages/e7/87/d9b28ede138dfbfa298446f324fd99a8c9f1229deeabc69024c8613d68f8/polars-0.9.8.tar.gz
+[2023-04-15 21:14:25] INFO root fetch - processPackages [hassle]: Downloading https://files.pythonhosted.org/packages/ca/c9/451089628a59ede3161187cebcb1913218841c42e2f4a8475ff94f395daf/hassle-2.5.0.tar.gz
+[2023-04-15 21:14:25] INFO root fetch - processPackages [hassle]: executing diffoscope
+[2023-04-15 21:14:25] INFO root fetch - processPackages [hassle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hassle-2.4.0.tar.gz tmp/hassle-2.5.0.tar.gz --markdown 20230415/h/hassle/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2023-04-15 21:14:25] INFO root fetch - processPackages [argparse-manpage]: Downloading https://files.pythonhosted.org/packages/6c/96/b53e86c3479d03f62338ede7430c32ec9b6bf189c83a5008b7d346dc00af/argparse-manpage-4.1.tar.gz
+[2023-04-15 21:14:25] INFO root fetch - processPackages [pyarr]: Downloading https://files.pythonhosted.org/packages/ad/e4/0fb982a0ceca284774f3182983a3ac50931f68787706f1c8028911210e90/pyarr-5.0.0.tar.gz
+[2023-04-15 21:14:25] INFO root fetch - processPackages [polars]: Downloading https://files.pythonhosted.org/packages/96/26/63076bebabb9ecbc73cd58cf48f924a3f05b871166f576b56d9935158194/polars-0.9.9.tar.gz
+[2023-04-15 21:14:25] INFO root fetch - processPackages [argparse-manpage]: executing diffoscope
+[2023-04-15 21:14:25] INFO root fetch - processPackages [argparse-manpage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argparse-manpage-4.tar.gz tmp/argparse-manpage-4.1.tar.gz --markdown 20230415/a/argparse-manpage/4-4.1/diff.md --exclude *.pyd
+[2023-04-15 21:14:25] INFO root fetch - processPackages [pyarr]: executing diffoscope
+[2023-04-15 21:14:25] INFO root fetch - processPackages [pyarr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarr-4.1.0.tar.gz tmp/pyarr-5.0.0.tar.gz --markdown 20230415/p/pyarr/4.1.0-5.0.0/diff.md --exclude *.pyd
+[2023-04-15 21:14:25] INFO root fetch - processPackages [polars-lts-cpu]: Downloading https://files.pythonhosted.org/packages/43/a6/7e1f1ef3f7d0b4b00b9ddd3954bcd4dfcc23b2e30830711702ef3eefd9f3/polars_lts_cpu-0.17.3.tar.gz
+[2023-04-15 21:14:25] INFO root fetch - processPackages [polars]: executing diffoscope
+[2023-04-15 21:14:25] INFO root fetch - processPackages [polars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars-0.9.8.tar.gz tmp/polars-0.9.9.tar.gz --markdown 20230415/p/polars/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-15 21:14:25] INFO root fetch - processPackages [polars-lts-cpu]: executing diffoscope
+[2023-04-15 21:14:25] INFO root fetch - processPackages [polars-lts-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_lts_cpu-0.17.2.tar.gz tmp/polars_lts_cpu-0.17.3.tar.gz --markdown 20230415/p/polars-lts-cpu/0.17.2-0.17.3/diff.md --exclude *.pyd
+[2023-04-15 21:14:26] INFO root fetch - main [MainThread]: End processing [pyarr]: success
+[2023-04-15 21:14:26] INFO root fetch - main [MainThread]: End processing [argparse-manpage]: success
+[2023-04-15 21:14:26] INFO root fetch - main [MainThread]: End processing [hassle]: success
+[2023-04-15 21:14:28] INFO root fetch - main [MainThread]: End processing [polars]: success
+[2023-04-15 21:14:31] INFO root fetch - main [MainThread]: End processing [prunerr]: success
+[2023-04-15 21:14:46] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
+[2023-04-15 21:14:46] INFO root fetch - main [MainThread]: Store serial: [17721282]
