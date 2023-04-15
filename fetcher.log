@@ -5317,3 +5317,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 06:34:28] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account]: success
 [2023-04-15 06:34:29] INFO root fetch - main [MainThread]: End processing [odoo12-addon-l10n-br-account]: success
 [2023-04-15 06:34:29] INFO root fetch - main [MainThread]: Store serial: [17716476]
+[2023-04-15 06:39:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716476]
+[2023-04-15 06:39:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 06:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netcheck
+[2023-04-15 06:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metaphor-connectors
+[2023-04-15 06:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lcu-connector
+[2023-04-15 06:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: idealgeo
+[2023-04-15 06:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygpt-net
+[2023-04-15 06:39:36] INFO root fetch - processPackages [netcheck]: New version: [0.2.0a1] Old Version: [0.2.0]
+[2023-04-15 06:39:36] INFO root fetch - processPackages [idealgeo]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 06:39:36] WARNING root fetch - processPackages [lcu-connector]: Skipping, unable to determine old version
+[2023-04-15 06:39:36] INFO root fetch - main [MainThread]: End processing [lcu-connector] error
+[2023-04-15 06:39:36] INFO root fetch - processPackages [metaphor-connectors]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-15 06:39:36] INFO root fetch - processPackages [netcheck]: Downloading https://files.pythonhosted.org/packages/d4/38/a8084c8f0e04972e15e8e8ca64059a1e79166510e115c0c4891ccddeeba5/netcheck-0.2.0.tar.gz
+[2023-04-15 06:39:36] INFO root fetch - processPackages [pygpt-net]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-15 06:39:36] INFO root fetch - processPackages [metaphor-connectors]: Downloading https://files.pythonhosted.org/packages/92/c2/f775488949e85740917971e97fbd1e7187de61421ac7fbbc9d5485275473/metaphor-connectors-0.9.3.tar.gz
+[2023-04-15 06:39:36] INFO root fetch - processPackages [idealgeo]: Downloading https://files.pythonhosted.org/packages/37/66/f599d1a762fca0e9749547da4737a02f685dad84e409d57a1852e1f0b998/idealgeo-0.0.2.tar.gz
+[2023-04-15 06:39:36] INFO root fetch - processPackages [netcheck]: executing diffoscope
+[2023-04-15 06:39:36] INFO root fetch - processPackages [netcheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netcheck-0.2.0.tar.gz tmp/netcheck-0.2.0a1.tar.gz --markdown 20230415/n/netcheck/0.2.0-0.2.0a1/diff.md --exclude *.pyd
+[2023-04-15 06:39:37] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/9b/17/d1d81ceb87392b402bf9b72405fffe6b3f09669d81e14d6b7930a2f60b14/pygpt-net-0.9.4.tar.gz
+[2023-04-15 06:39:37] INFO root fetch - processPackages [idealgeo]: Downloading https://files.pythonhosted.org/packages/d1/ab/ce64990bc7fddd0ac2eb0f5688c7c54086434fefaadd67a373864206967d/idealgeo-0.0.3.tar.gz
+[2023-04-15 06:39:37] INFO root fetch - processPackages [idealgeo]: executing diffoscope
+[2023-04-15 06:39:37] INFO root fetch - processPackages [idealgeo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idealgeo-0.0.2.tar.gz tmp/idealgeo-0.0.3.tar.gz --markdown 20230415/i/idealgeo/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 06:39:37] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2023-04-15 06:39:37] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt-net-0.9.3.tar.gz tmp/pygpt-net-0.9.4.tar.gz --markdown 20230415/p/pygpt-net/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-15 06:39:37] INFO root fetch - processPackages [metaphor-connectors]: Downloading https://files.pythonhosted.org/packages/7e/f3/fd51e0c2498f7340487d8eba1ee24a716e8056cce2a496a20f5da0cc11de/metaphor-connectors-0.9.4.tar.gz
+[2023-04-15 06:39:37] INFO root fetch - processPackages [metaphor-connectors]: executing diffoscope
+[2023-04-15 06:39:37] INFO root fetch - processPackages [metaphor-connectors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaphor-connectors-0.9.3.tar.gz tmp/metaphor-connectors-0.9.4.tar.gz --markdown 20230415/m/metaphor-connectors/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-15 06:39:38] INFO root fetch - main [MainThread]: End processing [netcheck]: success
+[2023-04-15 06:39:38] INFO root fetch - main [MainThread]: End processing [idealgeo]: success
+[2023-04-15 06:39:39] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2023-04-15 06:39:40] INFO root fetch - main [MainThread]: End processing [metaphor-connectors]: success
+[2023-04-15 06:39:40] INFO root fetch - main [MainThread]: Store serial: [17716491]
