@@ -20143,3 +20143,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 22:47:54] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
 [2023-04-15 22:47:55] INFO root fetch - main [MainThread]: End processing [Flask-First]: success
 [2023-04-15 22:47:55] INFO root fetch - main [MainThread]: Store serial: [17721800]
+[2023-04-15 22:53:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721800]
+[2023-04-15 22:53:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 22:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cli-command-parser
+[2023-04-15 22:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sabledocs
+[2023-04-15 22:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mine
+[2023-04-15 22:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycryptlibraryv3
+[2023-04-15 22:53:05] INFO root fetch - processPackages [sabledocs]: New version: [0.1.69] Old Version: [0.1.66]
+[2023-04-15 22:53:05] INFO root fetch - processPackages [mine]: New version: [2.1b1] Old Version: [2.0b1]
+[2023-04-15 22:53:05] INFO root fetch - processPackages [cli-command-parser]: New version: [2023.4.8] Old Version: [2023.4.7]
+[2023-04-15 22:53:05] WARNING root fetch - processPackages [pycryptlibraryv3]: Skipping, unable to determine old version
+[2023-04-15 22:53:05] INFO root fetch - main [MainThread]: End processing [pycryptlibraryv3] error
+[2023-04-15 22:53:05] INFO root fetch - processPackages [mine]: Downloading https://files.pythonhosted.org/packages/f1/16/4f79fc166319ad0b8402e24d7818faa60d0b4ed4e8bbd1358b86852c297a/mine-2.0b1.tar.gz
+[2023-04-15 22:53:05] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/be/67/8543ee5220bfa93ab302d5dfdd3f1027c31af4810b91a38b8f6c10541494/sabledocs-0.1.69.tar.gz
+[2023-04-15 22:53:05] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 22:53:05] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.66.tar.gz tmp/sabledocs-0.1.69.tar.gz --markdown 20230415/s/sabledocs/0.1.66-0.1.69/diff.md --exclude *.pyd
+[2023-04-15 22:53:06] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2023-04-15 22:53:06] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2023.4.7.tar.gz tmp/cli_command_parser-2023.4.8.tar.gz --markdown 20230415/c/cli-command-parser/2023.4.7-2023.4.8/diff.md --exclude *.pyd
+[2023-04-15 22:53:06] INFO root fetch - processPackages [mine]: Downloading https://files.pythonhosted.org/packages/9d/39/59a4fdbafd4dfd3c0da53df8c417ccf2aab909ed96bb3782c24b2b1d6dbb/mine-2.1b1.tar.gz
+[2023-04-15 22:53:06] INFO root fetch - processPackages [mine]: executing diffoscope
+[2023-04-15 22:53:06] INFO root fetch - processPackages [mine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mine-2.0b1.tar.gz tmp/mine-2.1b1.tar.gz --markdown 20230415/m/mine/2.0b1-2.1b1/diff.md --exclude *.pyd
+[2023-04-15 22:53:07] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 22:53:07] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2023-04-15 22:53:07] INFO root fetch - main [MainThread]: End processing [mine]: success
+[2023-04-15 22:53:07] INFO root fetch - main [MainThread]: Store serial: [17721810]
