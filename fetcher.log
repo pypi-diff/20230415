@@ -13773,3 +13773,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 11:11:24] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230415/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
 [2023-04-15 11:11:27] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-04-15 11:11:27] INFO root fetch - main [MainThread]: Store serial: [17717743]
+[2023-04-15 11:16:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717743]
+[2023-04-15 11:16:36] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fibnumber
+[2023-04-15 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-blive-danmaku
+[2023-04-15 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Benders
+[2023-04-15 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: renus
+[2023-04-15 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2023-04-15 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: snc
+[2023-04-15 11:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spanishconjugator
+[2023-04-15 11:16:36] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: New version: [0.2.0] Old Version: [0.1.64]
+[2023-04-15 11:16:36] INFO root fetch - processPackages [renus]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-15 11:16:36] WARNING root fetch - processPackages [Benders]: Skipping, unable to determine old version
+[2023-04-15 11:16:36] INFO root fetch - main [MainThread]: End processing [Benders] error
+[2023-04-15 11:16:36] INFO root fetch - processPackages [snc]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-15 11:16:36] WARNING root fetch - processPackages [fibnumber]: Skipping, unable to determine old version
+[2023-04-15 11:16:36] INFO root fetch - main [MainThread]: End processing [fibnumber] error
+[2023-04-15 11:16:36] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-15 11:16:36] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-15 11:16:36] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: Downloading https://files.pythonhosted.org/packages/73/0e/5aef246dca30ee59731828959b9dee3aab1f5b05eff3c6db5c018bd6cf48/nonebot_plugin_blive_danmaku-0.1.64.tar.gz
+[2023-04-15 11:16:36] INFO root fetch - processPackages [renus]: Downloading https://files.pythonhosted.org/packages/4b/90/1def19b7454f47782ae90677f3aa8103a1e9a26c83940c9475e06e7d057b/renus-1.0.8.tar.gz
+[2023-04-15 11:16:36] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2023-04-15 11:16:36] INFO root fetch - processPackages [snc]: Downloading https://files.pythonhosted.org/packages/f9/5b/216e1ba0a059945c18193087ad818aa928fdeb79e9c1c1a4d2639b8e5978/snc-0.2.0.tar.gz
+[2023-04-15 11:16:36] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2023-04-15 11:16:36] INFO root fetch - processPackages [renus]: executing diffoscope
+[2023-04-15 11:16:36] INFO root fetch - processPackages [renus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renus-1.0.7.tar.gz tmp/renus-1.0.8.tar.gz --markdown 20230415/r/renus/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-15 11:16:36] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2023-04-15 11:16:36] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2023-04-15 11:16:36] INFO root fetch - processPackages [snc]: executing diffoscope
+[2023-04-15 11:16:36] INFO root fetch - processPackages [snc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snc-0.1.0.tar.gz tmp/snc-0.2.0.tar.gz --markdown 20230415/s/snc/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 11:16:36] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-15 11:16:36] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230415/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-15 11:16:36] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-15 11:16:36] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230415/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-15 11:16:37] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: Downloading https://files.pythonhosted.org/packages/e2/0d/3d5108cf7509aaaf0247bf10297c7d209f48830de792e898bc88f4c90fe4/nonebot_plugin_blive_danmaku-0.2.0.tar.gz
+[2023-04-15 11:16:37] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: executing diffoscope
+[2023-04-15 11:16:37] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_blive_danmaku-0.1.64.tar.gz tmp/nonebot_plugin_blive_danmaku-0.2.0.tar.gz --markdown 20230415/n/nonebot-plugin-blive-danmaku/0.1.64-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 11:16:38] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-15 11:16:38] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-15 11:16:38] INFO root fetch - main [MainThread]: End processing [snc]: success
+[2023-04-15 11:16:38] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-blive-danmaku]: success
+[2023-04-15 11:16:38] INFO root fetch - main [MainThread]: End processing [renus]: success
+[2023-04-15 11:16:38] INFO root fetch - main [MainThread]: Store serial: [17717780]
