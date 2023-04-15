@@ -18969,3 +18969,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 20:32:33] INFO root fetch - main [MainThread]: End processing [microt-preprocessing]: success
 [2023-04-15 20:32:41] INFO root fetch - main [MainThread]: End processing [memprocfs]: success
 [2023-04-15 20:32:41] INFO root fetch - main [MainThread]: Store serial: [17721037]
+[2023-04-15 20:37:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721037]
+[2023-04-15 20:37:52] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-15 20:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: allocine-seances
+[2023-04-15 20:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rustplus
+[2023-04-15 20:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysimplify
+[2023-04-15 20:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: REMclust
+[2023-04-15 20:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: imbalance-metrics
+[2023-04-15 20:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aiogram-ext
+[2023-04-15 20:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: typing-result
+[2023-04-15 20:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: algoxyz
+[2023-04-15 20:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nlptoolssna
+[2023-04-15 20:37:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: punctuators
+[2023-04-15 20:37:52] INFO root fetch - processPackages [aiogram-ext]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 20:37:52] WARNING root fetch - processPackages [algoxyz]: Skipping, unable to determine old version
+[2023-04-15 20:37:52] INFO root fetch - main [MainThread]: End processing [algoxyz] error
+[2023-04-15 20:37:52] INFO root fetch - processPackages [allocine-seances]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 20:37:52] WARNING root fetch - processPackages [pysimplify]: Skipping, unable to determine old version
+[2023-04-15 20:37:52] INFO root fetch - main [MainThread]: End processing [pysimplify] error
+[2023-04-15 20:37:52] WARNING root fetch - processPackages [imbalance-metrics]: Skipping, unable to determine old version
+[2023-04-15 20:37:52] INFO root fetch - main [MainThread]: End processing [imbalance-metrics] error
+[2023-04-15 20:37:52] INFO root fetch - processPackages [punctuators]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 20:37:52] WARNING root fetch - processPackages [REMclust]: Skipping, unable to determine old version
+[2023-04-15 20:37:52] WARNING root fetch - processPackages [nlptoolssna]: Skipping, unable to determine old version
+[2023-04-15 20:37:52] WARNING root fetch - processPackages [typing-result]: Skipping, unable to determine old version
+[2023-04-15 20:37:52] INFO root fetch - main [MainThread]: End processing [REMclust] error
+[2023-04-15 20:37:52] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-15 20:37:52] INFO root fetch - main [MainThread]: End processing [nlptoolssna] error
+[2023-04-15 20:37:52] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.0.8.tar.gz tmp/aiogram-ext-0.0.9.tar.gz --markdown 20230415/a/aiogram-ext/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 20:37:52] INFO root fetch - main [MainThread]: End processing [typing-result] error
+[2023-04-15 20:37:52] INFO root fetch - processPackages [rustplus]: New version: [5.5.8] Old Version: [5.5.7]
+[2023-04-15 20:37:53] INFO root fetch - processPackages [punctuators]: Downloading https://files.pythonhosted.org/packages/f8/62/cf4a164e3a641f3f1eeb57acb060b5a77f27d67cc87aeb74b4b9d48ab72e/punctuators-0.0.3-py3-none-any.whl
+[2023-04-15 20:37:53] INFO root fetch - processPackages [allocine-seances]: Downloading https://files.pythonhosted.org/packages/d6/07/4a356259f0d944a937d2f26f7badc846a77cb9eea132f9b568e80e54564e/allocine-seances-0.0.4.tar.gz
+[2023-04-15 20:37:53] INFO root fetch - processPackages [rustplus]: executing diffoscope
+[2023-04-15 20:37:53] INFO root fetch - processPackages [rustplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustplus-5.5.7.tar.gz tmp/rustplus-5.5.8.tar.gz --markdown 20230415/r/rustplus/5.5.7-5.5.8/diff.md --exclude *.pyd
+[2023-04-15 20:37:53] INFO root fetch - processPackages [allocine-seances]: executing diffoscope
+[2023-04-15 20:37:53] INFO root fetch - processPackages [allocine-seances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allocine-seances-0.0.3.tar.gz tmp/allocine-seances-0.0.4.tar.gz --markdown 20230415/a/allocine-seances/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 20:37:53] INFO root fetch - processPackages [punctuators]: Downloading https://files.pythonhosted.org/packages/7c/f7/3f357e20b47e3493da14966e1184bdab78899c6120c246bd677d29e8b800/punctuators-0.0.4-py3-none-any.whl
+[2023-04-15 20:37:53] INFO root fetch - processPackages [punctuators]: executing diffoscope
+[2023-04-15 20:37:53] INFO root fetch - processPackages [punctuators]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/punctuators-0.0.3-py3-none-any.whl.zip tmp/punctuators-0.0.4-py3-none-any.whl.zip --markdown 20230415/p/punctuators/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 20:37:54] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-15 20:37:54] INFO root fetch - main [MainThread]: End processing [allocine-seances]: success
+[2023-04-15 20:37:54] INFO root fetch - main [MainThread]: End processing [punctuators]: success
+[2023-04-15 20:37:54] INFO root fetch - main [MainThread]: End processing [rustplus]: success
+[2023-04-15 20:37:54] INFO root fetch - main [MainThread]: Store serial: [17721075]
