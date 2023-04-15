@@ -15781,3 +15781,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 14:48:35] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
 [2023-04-15 14:49:07] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-04-15 14:49:07] INFO root fetch - main [MainThread]: Store serial: [17718990]
+[2023-04-15 14:54:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718990]
+[2023-04-15 14:54:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 14:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bagua-cuda117
+[2023-04-15 14:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: live-fast-api
+[2023-04-15 14:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: the-spymaster-solvers-client
+[2023-04-15 14:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sharewifi
+[2023-04-15 14:54:16] INFO root fetch - processPackages [live-fast-api]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 14:54:16] INFO root fetch - processPackages [the-spymaster-solvers-client]: New version: [1.7.0] Old Version: [1.6.0]
+[2023-04-15 14:54:16] INFO root fetch - processPackages [bagua-cuda117]: New version: [0.9.3.dev5] Old Version: [0.9.3.dev4]
+[2023-04-15 14:54:16] WARNING root fetch - processPackages [sharewifi]: Skipping, unable to determine old version
+[2023-04-15 14:54:16] INFO root fetch - main [MainThread]: End processing [sharewifi] error
+[2023-04-15 14:54:16] INFO root fetch - processPackages [the-spymaster-solvers-client]: Downloading https://files.pythonhosted.org/packages/0c/fe/a66e4999fec88e50241567ef36f3479ee75e9bdfe521f799ab5fa65a98f6/the-spymaster-solvers-client-1.6.0.tar.gz
+[2023-04-15 14:54:16] INFO root fetch - processPackages [bagua-cuda117]: Downloading https://files.pythonhosted.org/packages/07/41/d6cc2219026f757937e6eb16645de6f6a316ffcd2c46f4472f9b5df976e4/bagua_cuda117-0.9.3.dev4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 14:54:17] WARNING root fetch - processPackages [bagua-cuda117]: Skipping package: exceeds size limit 18864336>=10485760
+[2023-04-15 14:54:17] INFO root fetch - main [MainThread]: End processing [bagua-cuda117] error
+[2023-04-15 14:54:17] INFO root fetch - processPackages [live-fast-api]: Downloading https://files.pythonhosted.org/packages/b7/3a/8bd9773000de833b30e209f0f261663316d0e978c20fd61d71814d622d48/live-fast-api-0.0.2.tar.gz
+[2023-04-15 14:54:17] INFO root fetch - processPackages [the-spymaster-solvers-client]: Downloading https://files.pythonhosted.org/packages/d8/c0/2b3f4450030dd90b070cf8b2faab5dd70e78dcac45f3164e05e1ee258b9d/the-spymaster-solvers-client-1.7.0.tar.gz
+[2023-04-15 14:54:17] INFO root fetch - processPackages [live-fast-api]: executing diffoscope
+[2023-04-15 14:54:17] INFO root fetch - processPackages [live-fast-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/live-fast-api-0.0.1.tar.gz tmp/live-fast-api-0.0.2.tar.gz --markdown 20230415/l/live-fast-api/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 14:54:17] INFO root fetch - processPackages [the-spymaster-solvers-client]: executing diffoscope
+[2023-04-15 14:54:17] INFO root fetch - processPackages [the-spymaster-solvers-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/the-spymaster-solvers-client-1.6.0.tar.gz tmp/the-spymaster-solvers-client-1.7.0.tar.gz --markdown 20230415/t/the-spymaster-solvers-client/1.6.0-1.7.0/diff.md --exclude *.pyd
+[2023-04-15 14:54:18] INFO root fetch - main [MainThread]: End processing [live-fast-api]: success
+[2023-04-15 14:54:18] INFO root fetch - main [MainThread]: End processing [the-spymaster-solvers-client]: success
+[2023-04-15 14:54:18] INFO root fetch - main [MainThread]: Store serial: [17719009]
