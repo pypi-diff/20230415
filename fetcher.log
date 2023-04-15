@@ -4945,3 +4945,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 05:35:10] INFO root fetch - main [MainThread]: End processing [tulp]: success
 [2023-04-15 05:35:11] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
 [2023-04-15 05:35:11] INFO root fetch - main [MainThread]: Store serial: [17716217]
+[2023-04-15 05:40:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716217]
+[2023-04-15 05:40:17] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-15 05:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bluetooth-data-tools
+[2023-04-15 05:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs-terminal
+[2023-04-15 05:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opencv-python-rolling
+[2023-04-15 05:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opencv-contrib-python-rolling
+[2023-04-15 05:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opencv-python-headless-rolling
+[2023-04-15 05:40:17] INFO root fetch - processPackages [bluetooth-data-tools]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-15 05:40:17] INFO root fetch - processPackages [mkdocs-terminal]: New version: [4.3.0] Old Version: [4.2.0]
+[2023-04-15 05:40:17] INFO root fetch - processPackages [opencv-python-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-04-15 05:40:17] INFO root fetch - processPackages [opencv-contrib-python-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-04-15 05:40:17] INFO root fetch - processPackages [opencv-python-headless-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-04-15 05:40:18] INFO root fetch - processPackages [bluetooth-data-tools]: Downloading https://files.pythonhosted.org/packages/31/82/5fdc557152aa5f0d50d7ffc5da0c2f33dc84b246fcc3a31d3c127ae622f7/bluetooth_data_tools-0.3.1.tar.gz
+[2023-04-15 05:40:18] INFO root fetch - processPackages [mkdocs-terminal]: Downloading https://files.pythonhosted.org/packages/08/bc/c26c29b243530eea6cea6541a12154c0957ff6650fb983e176a6ea11dc3e/mkdocs_terminal-4.2.0.tar.gz
+[2023-04-15 05:40:18] INFO root fetch - processPackages [opencv-python-rolling]: Downloading https://files.pythonhosted.org/packages/32/6b/7a25c64d9114c7637e2850826c668c26d8ede5a8c04b15aa282508321da4/opencv_python_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-04-15 05:40:18] INFO root fetch - processPackages [opencv-contrib-python-rolling]: Downloading https://files.pythonhosted.org/packages/a3/97/2ea0710c3f154811d2c12291ed7a678dfa7a588f7a9e27440b9f9372a38a/opencv_contrib_python_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-04-15 05:40:18] INFO root fetch - processPackages [opencv-python-headless-rolling]: Downloading https://files.pythonhosted.org/packages/7f/d0/e5b36f57680408f36da0f3aa7615e343b05d5b08ec0548429a4cbcd9665b/opencv_python_headless_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-04-15 05:40:18] WARNING root fetch - processPackages [opencv-python-rolling]: Skipping package: exceeds size limit 32729233>=10485760
+[2023-04-15 05:40:18] INFO root fetch - processPackages [opencv-python-rolling]: Start processing: SlySerialize
+[2023-04-15 05:40:18] INFO root fetch - main [MainThread]: End processing [opencv-python-rolling] error
+[2023-04-15 05:40:18] WARNING root fetch - processPackages [opencv-contrib-python-rolling]: Skipping package: exceeds size limit 43085134>=10485760
+[2023-04-15 05:40:18] INFO root fetch - processPackages [opencv-contrib-python-rolling]: Start processing: opencv-contrib-python-headless-rolling
+[2023-04-15 05:40:18] INFO root fetch - main [MainThread]: End processing [opencv-contrib-python-rolling] error
+[2023-04-15 05:40:18] INFO root fetch - processPackages [bluetooth-data-tools]: Downloading https://files.pythonhosted.org/packages/de/96/200e2b40ae641dcd37fe7ecd79dd03e9ad4c88ad087b2af5ee6acbb30de9/bluetooth_data_tools-0.4.0.tar.gz
+[2023-04-15 05:40:18] WARNING root fetch - processPackages [SlySerialize]: Skipping, unable to determine old version
+[2023-04-15 05:40:18] INFO root fetch - processPackages [SlySerialize]: Start processing: poe-api
+[2023-04-15 05:40:18] INFO root fetch - main [MainThread]: End processing [SlySerialize] error
+[2023-04-15 05:40:18] INFO root fetch - processPackages [opencv-contrib-python-headless-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-04-15 05:40:18] INFO root fetch - processPackages [poe-api]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-15 05:40:18] WARNING root fetch - processPackages [opencv-python-headless-rolling]: Skipping package: exceeds size limit 32729352>=10485760
+[2023-04-15 05:40:18] INFO root fetch - processPackages [opencv-python-headless-rolling]: Start processing: modProcesso
+[2023-04-15 05:40:18] INFO root fetch - main [MainThread]: End processing [opencv-python-headless-rolling] error
+[2023-04-15 05:40:18] INFO root fetch - processPackages [bluetooth-data-tools]: executing diffoscope
+[2023-04-15 05:40:18] INFO root fetch - processPackages [bluetooth-data-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluetooth_data_tools-0.3.1.tar.gz tmp/bluetooth_data_tools-0.4.0.tar.gz --markdown 20230415/b/bluetooth-data-tools/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-15 05:40:18] INFO root fetch - processPackages [modProcesso]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-15 05:40:18] INFO root fetch - processPackages [mkdocs-terminal]: Downloading https://files.pythonhosted.org/packages/59/e1/f361752b87ff8cbafc865f66a6ba778b619716238b124ad60c89a50faaa1/mkdocs_terminal-4.3.0.tar.gz
+[2023-04-15 05:40:18] INFO root fetch - processPackages [opencv-contrib-python-headless-rolling]: Downloading https://files.pythonhosted.org/packages/52/d9/7ef539a10bce311d1e398e2ef46180316e0709bb45fe3c96989015f61412/opencv_contrib_python_headless_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-04-15 05:40:18] WARNING root fetch - processPackages [opencv-contrib-python-headless-rolling]: Skipping package: exceeds size limit 42759572>=10485760
+[2023-04-15 05:40:18] INFO root fetch - processPackages [opencv-contrib-python-headless-rolling]: Start processing: anthropic
+[2023-04-15 05:40:18] INFO root fetch - main [MainThread]: End processing [opencv-contrib-python-headless-rolling] error
+[2023-04-15 05:40:18] INFO root fetch - processPackages [anthropic]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-15 05:40:18] INFO root fetch - processPackages [mkdocs-terminal]: executing diffoscope
+[2023-04-15 05:40:18] INFO root fetch - processPackages [mkdocs-terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_terminal-4.2.0.tar.gz tmp/mkdocs_terminal-4.3.0.tar.gz --markdown 20230415/m/mkdocs-terminal/4.2.0-4.3.0/diff.md --exclude *.pyd
+[2023-04-15 05:40:18] INFO root fetch - processPackages [poe-api]: executing diffoscope
+[2023-04-15 05:40:18] INFO root fetch - processPackages [poe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poe_api-0.2.8-py3-none-any.whl.zip tmp/poe_api-0.2.9-py3-none-any.whl.zip --markdown 20230415/p/poe-api/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-15 05:40:18] INFO root fetch - processPackages [anthropic]: Downloading https://files.pythonhosted.org/packages/db/53/dccdb772beb36f6aa90f3e763a7fd10350c60113081daecbbc4ed99d53c8/anthropic-0.2.6.tar.gz
+[2023-04-15 05:40:18] INFO root fetch - processPackages [modProcesso]: Downloading https://files.pythonhosted.org/packages/d2/1f/894a72b2c91e9fd2dd03d11bf60301a3c82438038b8b41b4a55a9a4284a1/modProcesso-0.0.8.tar.gz
+[2023-04-15 05:40:18] INFO root fetch - processPackages [modProcesso]: executing diffoscope
+[2023-04-15 05:40:18] INFO root fetch - processPackages [modProcesso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modProcesso-0.0.7.tar.gz tmp/modProcesso-0.0.8.tar.gz --markdown 20230415/m/modProcesso/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-15 05:40:19] INFO root fetch - processPackages [anthropic]: Downloading https://files.pythonhosted.org/packages/60/d5/9254b8a32718b609300aab4e23e5b547d7faa1e8a089cc15bb0f0f8463f4/anthropic-0.2.7.tar.gz
+[2023-04-15 05:40:19] INFO root fetch - processPackages [anthropic]: executing diffoscope
+[2023-04-15 05:40:19] INFO root fetch - processPackages [anthropic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anthropic-0.2.6.tar.gz tmp/anthropic-0.2.7.tar.gz --markdown 20230415/a/anthropic/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-15 05:40:19] INFO root fetch - main [MainThread]: End processing [bluetooth-data-tools]: success
+[2023-04-15 05:40:19] INFO root fetch - main [MainThread]: End processing [poe-api]: success
+[2023-04-15 05:40:20] INFO root fetch - main [MainThread]: End processing [modProcesso]: success
+[2023-04-15 05:40:20] INFO root fetch - main [MainThread]: End processing [anthropic]: success
+[2023-04-15 05:40:21] INFO root fetch - main [MainThread]: End processing [mkdocs-terminal]: success
+[2023-04-15 05:40:21] INFO root fetch - main [MainThread]: Store serial: [17716253]
