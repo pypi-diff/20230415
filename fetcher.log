@@ -20606,3 +20606,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 23:47:56] INFO root fetch - main [MainThread]: End processing [crcgen]: success
 [2023-04-15 23:47:58] INFO root fetch - main [MainThread]: End processing [coiled]: success
 [2023-04-15 23:47:58] INFO root fetch - main [MainThread]: Store serial: [17722079]
+[2023-04-15 23:53:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722079]
+[2023-04-15 23:53:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 23:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fmdt-python
+[2023-04-15 23:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hat-syslog
+[2023-04-15 23:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: barbell2-castor
+[2023-04-15 23:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fepops
+[2023-04-15 23:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mls-api
+[2023-04-15 23:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: streamlit-mermaid-component
+[2023-04-15 23:53:07] INFO root fetch - processPackages [fmdt-python]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 23:53:07] INFO root fetch - processPackages [barbell2-castor]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-15 23:53:07] INFO root fetch - processPackages [hat-syslog]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-15 23:53:07] INFO root fetch - processPackages [fepops]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-15 23:53:07] WARNING root fetch - processPackages [streamlit-mermaid-component]: Skipping, unable to determine old version
+[2023-04-15 23:53:07] INFO root fetch - main [MainThread]: End processing [streamlit-mermaid-component] error
+[2023-04-15 23:53:07] INFO root fetch - processPackages [mls-api]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-15 23:53:07] INFO root fetch - processPackages [fmdt-python]: executing diffoscope
+[2023-04-15 23:53:07] INFO root fetch - processPackages [fmdt-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmdt_python-0.0.8.tar.gz tmp/fmdt_python-0.0.9.tar.gz --markdown 20230415/f/fmdt-python/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 23:53:07] INFO root fetch - processPackages [hat-syslog]: Downloading https://files.pythonhosted.org/packages/ee/6e/09a389cf2543650746d318d039d8a319ff75f3a9031bbe80b0ded3c7ad1e/hat_syslog-0.7.0-cp38.cp39.cp310.cp311-none-any.whl
+[2023-04-15 23:53:07] INFO root fetch - processPackages [fepops]: Downloading https://files.pythonhosted.org/packages/de/14/09486b116de17d5faccfba6adac598188daf2efb96aed17702cefa550803/fepops-1.1.0.tar.gz
+[2023-04-15 23:53:07] INFO root fetch - processPackages [barbell2-castor]: Downloading https://files.pythonhosted.org/packages/c6/42/bddcf6cb758a948aaf0d0f6e511fba2f6eaa2340786752c3a7edd6ec138a/barbell2_castor-0.3.0.tar.gz
+[2023-04-15 23:53:07] INFO root fetch - processPackages [mls-api]: Downloading https://files.pythonhosted.org/packages/ad/b5/dcfb7b832e0fa95be7302172fa5bde00868c7da068705c26e71049f8c933/mls-api-1.0.5.tar.gz
+[2023-04-15 23:53:07] INFO root fetch - processPackages [barbell2-castor]: executing diffoscope
+[2023-04-15 23:53:07] INFO root fetch - processPackages [barbell2-castor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barbell2_castor-0.2.0.tar.gz tmp/barbell2_castor-0.3.0.tar.gz --markdown 20230415/b/barbell2-castor/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 23:53:07] INFO root fetch - processPackages [fepops]: Downloading https://files.pythonhosted.org/packages/c4/22/b04b6ece69148d6bd5742a94dea01dd9eb72b64dd6d8d9074c2d13cc9b0a/fepops-1.2.0.tar.gz
+[2023-04-15 23:53:07] INFO root fetch - processPackages [hat-syslog]: Downloading https://files.pythonhosted.org/packages/90/84/bcec7fee9255b20d9ac56a32782ee97afa094e5bea86bcc66cb70424f730/hat_syslog-0.7.1-cp38.cp39.cp310.cp311-none-any.whl
+[2023-04-15 23:53:07] INFO root fetch - processPackages [fepops]: executing diffoscope
+[2023-04-15 23:53:07] INFO root fetch - processPackages [fepops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fepops-1.1.0.tar.gz tmp/fepops-1.2.0.tar.gz --markdown 20230415/f/fepops/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-15 23:53:08] INFO root fetch - processPackages [mls-api]: Downloading https://files.pythonhosted.org/packages/19/eb/a18c604e6b46287bc7dcf7684ad73c0b55456718aeeb1188e987a195ea95/mls-api-1.0.6.tar.gz
+[2023-04-15 23:53:08] INFO root fetch - processPackages [hat-syslog]: executing diffoscope
+[2023-04-15 23:53:08] INFO root fetch - processPackages [hat-syslog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hat_syslog-0.7.0-cp38.cp39.cp310.cp311-none-any.whl.zip tmp/hat_syslog-0.7.1-cp38.cp39.cp310.cp311-none-any.whl.zip --markdown 20230415/h/hat-syslog/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-15 23:53:08] INFO root fetch - processPackages [mls-api]: executing diffoscope
+[2023-04-15 23:53:08] INFO root fetch - processPackages [mls-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mls-api-1.0.5.tar.gz tmp/mls-api-1.0.6.tar.gz --markdown 20230415/m/mls-api/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-15 23:53:08] INFO root fetch - main [MainThread]: End processing [fmdt-python]: success
+[2023-04-15 23:53:08] INFO root fetch - main [MainThread]: End processing [barbell2-castor]: success
+[2023-04-15 23:53:08] INFO root fetch - main [MainThread]: End processing [fepops]: success
+[2023-04-15 23:53:09] INFO root fetch - main [MainThread]: End processing [mls-api]: success
+[2023-04-15 23:53:10] INFO root fetch - main [MainThread]: End processing [hat-syslog]: success
+[2023-04-15 23:53:10] INFO root fetch - main [MainThread]: Store serial: [17722099]
