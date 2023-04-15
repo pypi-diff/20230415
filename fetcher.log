@@ -17142,3 +17142,82 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 17:12:12] INFO root fetch - main [MainThread]: End processing [pyElli]: success
 [2023-04-15 17:12:24] INFO root fetch - main [MainThread]: End processing [FlexGet]: success
 [2023-04-15 17:12:24] INFO root fetch - main [MainThread]: Store serial: [17719768]
+[2023-04-15 17:17:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719768]
+[2023-04-15 17:17:35] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ddqa
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: splashlab
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kcli
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kcli
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nazo-rand
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: z4d-certified-devices
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: megabots
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: beaupy
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: netzeus-core-config
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: scalde-cognito-confidential
+[2023-04-15 17:17:35] INFO root fetch - processPackages [splashlab]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ddqa]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-15 17:17:35] INFO root fetch - processPackages [nazo-rand]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 17:17:35] INFO root fetch - processPackages [beaupy]: New version: [3.5.3b0] Old Version: [3.5.2]
+[2023-04-15 17:17:35] INFO root fetch - processPackages [megabots]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-15 17:17:35] INFO root fetch - processPackages [scalde-cognito-confidential]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 17:17:35] INFO root fetch - processPackages [netzeus-core-config]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-04-15 17:17:35] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.44] Old Version: [2.43]
+[2023-04-15 17:17:35] INFO root fetch - processPackages [kcli]: New version: [99.0.202304151518] Old Version: [99.0.202304151517]
+[2023-04-15 17:17:35] INFO root fetch - processPackages [kcli]: New version: [99.0.202304151518] Old Version: [99.0.202304151517]
+[2023-04-15 17:17:35] INFO root fetch - processPackages [nazo-rand]: Downloading https://files.pythonhosted.org/packages/26/3a/605facad4b5d8df041b185dcadd11a51e4bb33c29507803758433ca4f7be/nazo_rand-0.0.2.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [netzeus-core-config]: Downloading https://files.pythonhosted.org/packages/6e/62/f673b4776a78a56b0a9988db0860c57d8b0f007016c483b95bf8878a75c2/netzeus_core_config-0.0.1.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [splashlab]: Downloading https://files.pythonhosted.org/packages/f4/61/daec8b865651d30336f3f746e1a3498d0da73cda961bcd9f0183cff84477/splashlab-0.0.8.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [scalde-cognito-confidential]: Downloading https://files.pythonhosted.org/packages/47/ba/032718022fba36cebc9c58d9f21262368ed26900fdc3b5bb0141dd38c356/scalde_cognito_confidential-0.0.2-py3-none-any.whl
+[2023-04-15 17:17:35] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/2c/53/efa3f119ef19030da682b0ad9fcbcf8203babac5b16436915c015e66e5fd/kcli-99.0.202304151517-py3-none-any.whl
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ddqa]: Downloading https://files.pythonhosted.org/packages/e1/29/970fd21cbcc44d00baaba9d8212cdf6b80b71447b344240f480bd3dd2132/ddqa-0.0.1.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/2c/53/efa3f119ef19030da682b0ad9fcbcf8203babac5b16436915c015e66e5fd/kcli-99.0.202304151517-py3-none-any.whl
+[2023-04-15 17:17:35] INFO root fetch - processPackages [beaupy]: Downloading https://files.pythonhosted.org/packages/c2/9b/c9376fef632ef55bfc29edef7bd8ed1689dc0d93a28660a456254e3d7bfe/beaupy-3.5.2.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [megabots]: Downloading https://files.pythonhosted.org/packages/69/f6/dc1f85add7eedadf6180e46ab41139a0d39783fcc6550288bd5d2b3d4017/megabots-0.0.8.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/ce/d2/8e10cfd90e9fb8790c2c219f4c7ab8b5dfee43228a8dffe214ec7744876d/z4d-certified-devices-2.43.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [megabots]: executing diffoscope
+[2023-04-15 17:17:35] INFO root fetch - processPackages [megabots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megabots-0.0.7.tar.gz tmp/megabots-0.0.8.tar.gz --markdown 20230415/m/megabots/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-15 17:17:35] INFO root fetch - processPackages [netzeus-core-config]: Downloading https://files.pythonhosted.org/packages/9d/11/a8cb50aebd33011fa3149198c30e3c306ef556b27189fd5418c0341c90ee/netzeus_core_config-0.0.3.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [nazo-rand]: Downloading https://files.pythonhosted.org/packages/54/b5/ef03042ad034e2c144d2d45e7de477f7d938ce2b42ebb7691f2e69dd117c/nazo_rand-0.0.3.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [netzeus-core-config]: executing diffoscope
+[2023-04-15 17:17:35] INFO root fetch - processPackages [netzeus-core-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netzeus_core_config-0.0.1.tar.gz tmp/netzeus_core_config-0.0.3.tar.gz --markdown 20230415/n/netzeus-core-config/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 17:17:35] INFO root fetch - processPackages [splashlab]: Downloading https://files.pythonhosted.org/packages/77/ec/2608c5bae18854b26dbad44a6158ed55a0202163e276a74afb95381acac9/splashlab-0.0.9.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [beaupy]: Downloading https://files.pythonhosted.org/packages/13/88/0a715833cc1cf76e058133c842b56a9bb7727b7b4f6bb5f02617caab26d6/beaupy-3.5.3b0.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [nazo-rand]: executing diffoscope
+[2023-04-15 17:17:35] INFO root fetch - processPackages [nazo-rand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nazo_rand-0.0.2.tar.gz tmp/nazo_rand-0.0.3.tar.gz --markdown 20230415/n/nazo-rand/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 17:17:35] INFO root fetch - processPackages [splashlab]: executing diffoscope
+[2023-04-15 17:17:35] INFO root fetch - processPackages [splashlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splashlab-0.0.8.tar.gz tmp/splashlab-0.0.9.tar.gz --markdown 20230415/s/splashlab/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 17:17:35] INFO root fetch - processPackages [scalde-cognito-confidential]: Downloading https://files.pythonhosted.org/packages/9c/90/445ad66fb326cfe44767eb7380ff80d76bf8529c99b1f472821b151e8273/scalde_cognito_confidential-0.0.3-py3-none-any.whl
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ddqa]: Downloading https://files.pythonhosted.org/packages/b2/bc/fa7ee25a16dce536ed82a380d400eb895f937e12daa577031935acac6762/ddqa-0.1.0.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [scalde-cognito-confidential]: executing diffoscope
+[2023-04-15 17:17:35] INFO root fetch - processPackages [scalde-cognito-confidential]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scalde_cognito_confidential-0.0.2-py3-none-any.whl.zip tmp/scalde_cognito_confidential-0.0.3-py3-none-any.whl.zip --markdown 20230415/s/scalde-cognito-confidential/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 17:17:35] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/82/94/288c60450e9692f4c6a92191772f6646dfe45a835764318df779ecd81f81/z4d-certified-devices-2.44.tar.gz
+[2023-04-15 17:17:35] INFO root fetch - processPackages [beaupy]: executing diffoscope
+[2023-04-15 17:17:35] INFO root fetch - processPackages [beaupy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beaupy-3.5.2.tar.gz tmp/beaupy-3.5.3b0.tar.gz --markdown 20230415/b/beaupy/3.5.2-3.5.3b0/diff.md --exclude *.pyd
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ddqa]: executing diffoscope
+[2023-04-15 17:17:35] INFO root fetch - processPackages [ddqa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddqa-0.0.1.tar.gz tmp/ddqa-0.1.0.tar.gz --markdown 20230415/d/ddqa/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-15 17:17:35] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/12/79/980fc954a4e10a382c2969476b4488bb1fce3b54737a1d18476f3d193f9e/kcli-99.0.202304151518-py3-none-any.whl
+[2023-04-15 17:17:35] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/12/79/980fc954a4e10a382c2969476b4488bb1fce3b54737a1d18476f3d193f9e/kcli-99.0.202304151518-py3-none-any.whl
+[2023-04-15 17:17:35] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-04-15 17:17:35] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.43.tar.gz tmp/z4d-certified-devices-2.44.tar.gz --markdown 20230415/z/z4d-certified-devices/2.43-2.44/diff.md --exclude *.pyd
+[2023-04-15 17:17:36] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-15 17:17:36] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304151517-py3-none-any.whl.zip tmp/kcli-99.0.202304151518-py3-none-any.whl.zip --markdown 20230415/k/kcli/99.0.202304151517-99.0.202304151518/diff.md --exclude *.pyd
+[2023-04-15 17:17:36] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-15 17:17:36] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304151517-py3-none-any.whl.zip tmp/kcli-99.0.202304151518-py3-none-any.whl.zip --markdown 20230415/k/kcli/99.0.202304151517-99.0.202304151518/diff.md --exclude *.pyd
+[2023-04-15 17:17:37] INFO root fetch - processPackages [netzeus-core-config]: Start processing: bnunicodenormalizer
+[2023-04-15 17:17:37] INFO root fetch - main [MainThread]: End processing [netzeus-core-config]: success
+[2023-04-15 17:17:37] INFO root fetch - processPackages [bnunicodenormalizer]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 17:17:37] INFO root fetch - main [MainThread]: End processing [megabots]: success
+[2023-04-15 17:17:37] INFO root fetch - processPackages [bnunicodenormalizer]: Downloading https://files.pythonhosted.org/packages/d5/75/4b6d2c95cbaf43440d96ad1ac124802bdfe3fac7fc180c381b344d6fdb23/bnunicodenormalizer-0.1.5.tar.gz
+[2023-04-15 17:17:37] INFO root fetch - main [MainThread]: End processing [beaupy]: success
+[2023-04-15 17:17:37] INFO root fetch - main [MainThread]: End processing [scalde-cognito-confidential]: success
+[2023-04-15 17:17:37] INFO root fetch - main [MainThread]: End processing [splashlab]: success
+[2023-04-15 17:17:37] INFO root fetch - processPackages [bnunicodenormalizer]: Downloading https://files.pythonhosted.org/packages/b0/eb/8ec11d496623bfceeccb3ad8d40b4a4653d4e1559ece2f4488f5bf58518d/bnunicodenormalizer-0.1.6.tar.gz
+[2023-04-15 17:17:37] INFO root fetch - main [MainThread]: End processing [nazo-rand]: success
+[2023-04-15 17:17:37] INFO root fetch - processPackages [bnunicodenormalizer]: executing diffoscope
+[2023-04-15 17:17:37] INFO root fetch - processPackages [bnunicodenormalizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bnunicodenormalizer-0.1.5.tar.gz tmp/bnunicodenormalizer-0.1.6.tar.gz --markdown 20230415/b/bnunicodenormalizer/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 17:17:38] INFO root fetch - main [MainThread]: End processing [bnunicodenormalizer]: success
+[2023-04-15 17:17:39] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-04-15 17:17:40] INFO root fetch - main [MainThread]: End processing [ddqa]: success
+[2023-04-15 17:17:44] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-15 17:17:45] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-15 17:17:45] INFO root fetch - main [MainThread]: Store serial: [17719812]
