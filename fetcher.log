@@ -14537,3 +14537,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 12:41:47] INFO root fetch - main [MainThread]: End processing [traducteur]: success
 [2023-04-15 12:41:47] INFO root fetch - main [MainThread]: End processing [atomicshop]: success
 [2023-04-15 12:41:47] INFO root fetch - main [MainThread]: Store serial: [17718201]
+[2023-04-15 12:46:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718201]
+[2023-04-15 12:46:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 12:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: insidecouchbase
+[2023-04-15 12:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EmoTFIDF
+[2023-04-15 12:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monobit
+[2023-04-15 12:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: decimify
+[2023-04-15 12:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: barbell2-bodycomp
+[2023-04-15 12:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tsgm
+[2023-04-15 12:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: napatrackmater
+[2023-04-15 12:46:56] INFO root fetch - processPackages [barbell2-bodycomp]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-15 12:46:56] INFO root fetch - processPackages [monobit]: New version: [0.39.3] Old Version: [0.39.2]
+[2023-04-15 12:46:56] INFO root fetch - processPackages [EmoTFIDF]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-15 12:46:56] INFO root fetch - processPackages [tsgm]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 12:46:56] INFO root fetch - processPackages [decimify]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-04-15 12:46:56] WARNING root fetch - processPackages [insidecouchbase]: Skipping, unable to determine old version
+[2023-04-15 12:46:56] INFO root fetch - main [MainThread]: End processing [insidecouchbase] error
+[2023-04-15 12:46:56] INFO root fetch - processPackages [napatrackmater]: New version: [3.3.6] Old Version: [3.3.5]
+[2023-04-15 12:46:56] INFO root fetch - processPackages [barbell2-bodycomp]: Downloading https://files.pythonhosted.org/packages/a1/4e/16b87b32b212090672355996ddc6f1f7112efde2d6f7b8680beeca52c23b/barbell2_bodycomp-0.5.0.tar.gz
+[2023-04-15 12:46:56] INFO root fetch - processPackages [tsgm]: Downloading https://files.pythonhosted.org/packages/50/45/c67e16cb0161a2738b41e7f64e2317e7bdcc8d8a6c5e3a80fd65cec3edd9/tsgm-0.0.1.tar.gz
+[2023-04-15 12:46:56] INFO root fetch - processPackages [EmoTFIDF]: Downloading https://files.pythonhosted.org/packages/cc/b2/5815019c7ac0920f88cd741c9d5a67b4eea15d8c1977aeeace7cb01f17d2/EmoTFIDF-1.0.8.tar.gz
+[2023-04-15 12:46:56] INFO root fetch - processPackages [monobit]: Downloading https://files.pythonhosted.org/packages/30/3f/ce290d5ad117e3de092da3db72d7f795c06495a60491bbcc9c2813e997a8/monobit-0.39.2.tar.gz
+[2023-04-15 12:46:56] INFO root fetch - processPackages [decimify]: Downloading https://files.pythonhosted.org/packages/31/5c/790924ebcf7c7d4af8154eb68c127c44910e0d329e3b4cfdabc76df6f2c3/decimify-0.1.0.tar.gz
+[2023-04-15 12:46:56] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/19/93/165376250fb4a3f34a01a220e957a67cd2420a4e06ad2532c066e5a9c68f/napatrackmater-3.3.6.tar.gz
+[2023-04-15 12:46:56] INFO root fetch - processPackages [barbell2-bodycomp]: executing diffoscope
+[2023-04-15 12:46:56] INFO root fetch - processPackages [barbell2-bodycomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barbell2_bodycomp-0.4.0.tar.gz tmp/barbell2_bodycomp-0.5.0.tar.gz --markdown 20230415/b/barbell2-bodycomp/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-15 12:46:56] INFO root fetch - processPackages [decimify]: Downloading https://files.pythonhosted.org/packages/42/ce/6e5e31c479fe1aac00985bfa3f3ec612055cce83f2f8ebed0fc3aefff636/decimify-0.1.2.tar.gz
+[2023-04-15 12:46:56] INFO root fetch - processPackages [napatrackmater]: executing diffoscope
+[2023-04-15 12:46:56] INFO root fetch - processPackages [napatrackmater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napatrackmater-3.3.5.tar.gz tmp/napatrackmater-3.3.6.tar.gz --markdown 20230415/n/napatrackmater/3.3.5-3.3.6/diff.md --exclude *.pyd
+[2023-04-15 12:46:56] INFO root fetch - processPackages [tsgm]: Downloading https://files.pythonhosted.org/packages/d1/85/11d269f8261ae21c498881fa388974341bc82d29d14c036d10b7fc092ce4/tsgm-0.0.2.tar.gz
+[2023-04-15 12:46:56] INFO root fetch - processPackages [EmoTFIDF]: Downloading https://files.pythonhosted.org/packages/72/b5/bd6fe6b18bdcadb0547c36f68b783d67cdaf69312e05ec3776a395864474/EmoTFIDF-1.0.9.tar.gz
+[2023-04-15 12:46:56] INFO root fetch - processPackages [decimify]: executing diffoscope
+[2023-04-15 12:46:56] INFO root fetch - processPackages [decimify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decimify-0.1.0.tar.gz tmp/decimify-0.1.2.tar.gz --markdown 20230415/d/decimify/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 12:46:57] INFO root fetch - processPackages [monobit]: Downloading https://files.pythonhosted.org/packages/97/f3/1903b341687eaf47f8b4860809f3e419274b39a5b118a170d1fe6eac5311/monobit-0.39.3.tar.gz
+[2023-04-15 12:46:57] INFO root fetch - processPackages [EmoTFIDF]: executing diffoscope
+[2023-04-15 12:46:57] INFO root fetch - processPackages [EmoTFIDF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EmoTFIDF-1.0.8.tar.gz tmp/EmoTFIDF-1.0.9.tar.gz --markdown 20230415/E/EmoTFIDF/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-15 12:46:57] INFO root fetch - processPackages [tsgm]: executing diffoscope
+[2023-04-15 12:46:57] INFO root fetch - processPackages [tsgm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsgm-0.0.1.tar.gz tmp/tsgm-0.0.2.tar.gz --markdown 20230415/t/tsgm/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 12:46:57] INFO root fetch - processPackages [monobit]: executing diffoscope
+[2023-04-15 12:46:57] INFO root fetch - processPackages [monobit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monobit-0.39.2.tar.gz tmp/monobit-0.39.3.tar.gz --markdown 20230415/m/monobit/0.39.2-0.39.3/diff.md --exclude *.pyd
+[2023-04-15 12:46:57] INFO root fetch - main [MainThread]: End processing [decimify]: success
+[2023-04-15 12:46:57] INFO root fetch - main [MainThread]: End processing [barbell2-bodycomp]: success
+[2023-04-15 12:46:58] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
+[2023-04-15 12:46:58] INFO root fetch - main [MainThread]: End processing [EmoTFIDF]: success
+[2023-04-15 12:46:58] INFO root fetch - main [MainThread]: End processing [tsgm]: success
+[2023-04-15 12:47:03] INFO root fetch - main [MainThread]: End processing [monobit]: success
+[2023-04-15 12:47:03] INFO root fetch - main [MainThread]: Store serial: [17718224]
