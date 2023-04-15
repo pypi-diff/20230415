@@ -14742,3 +14742,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 13:09:25] INFO root fetch - main [MainThread]: End processing [logicgateeso]: success
 [2023-04-15 13:09:26] INFO root fetch - main [MainThread]: End processing [peaksjs-widget]: success
 [2023-04-15 13:09:26] INFO root fetch - main [MainThread]: Store serial: [17718343]
+[2023-04-15 13:14:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718343]
+[2023-04-15 13:14:36] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 13:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: interlinking
+[2023-04-15 13:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mage-ai
+[2023-04-15 13:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: planetai
+[2023-04-15 13:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-comment-system
+[2023-04-15 13:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: k-amino.py
+[2023-04-15 13:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-comment-system
+[2023-04-15 13:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-sdgpt
+[2023-04-15 13:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fshec2
+[2023-04-15 13:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Turk-game
+[2023-04-15 13:14:36] INFO root fetch - processPackages [django-comment-system]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-04-15 13:14:36] INFO root fetch - processPackages [interlinking]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 13:14:36] INFO root fetch - processPackages [django-comment-system]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-04-15 13:14:36] INFO root fetch - processPackages [k-amino.py]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-15 13:14:36] WARNING root fetch - processPackages [planetai]: Skipping, unable to determine old version
+[2023-04-15 13:14:36] INFO root fetch - main [MainThread]: End processing [planetai] error
+[2023-04-15 13:14:36] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-15 13:14:36] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-15 13:14:36] WARNING root fetch - processPackages [fshec2]: Skipping, unable to determine old version
+[2023-04-15 13:14:36] INFO root fetch - main [MainThread]: End processing [fshec2] error
+[2023-04-15 13:14:36] WARNING root fetch - processPackages [Turk-game]: Skipping, unable to determine old version
+[2023-04-15 13:14:36] INFO root fetch - main [MainThread]: End processing [Turk-game] error
+[2023-04-15 13:14:36] INFO root fetch - processPackages [django-comment-system]: Downloading https://files.pythonhosted.org/packages/9c/79/517fcfa35059711c107b1d4ea91cb025faf328f8dedd0437a8c23a0bffd6/django-comment-system-2.9.0.tar.gz
+[2023-04-15 13:14:36] INFO root fetch - processPackages [interlinking]: Downloading https://files.pythonhosted.org/packages/13/e7/cc1720f626d0ca8524295030c36451add585ed8e7719182b164f16428d16/interlinking-0.0.2.tar.gz
+[2023-04-15 13:14:36] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-04-15 13:14:36] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.8.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230415/m/mage-ai/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-15 13:14:36] INFO root fetch - processPackages [django-comment-system]: Downloading https://files.pythonhosted.org/packages/9c/79/517fcfa35059711c107b1d4ea91cb025faf328f8dedd0437a8c23a0bffd6/django-comment-system-2.9.0.tar.gz
+[2023-04-15 13:14:36] INFO root fetch - processPackages [k-amino.py]: Downloading https://files.pythonhosted.org/packages/05/b6/b1230561a577a41db2e5840b3994ab51e64b49996e22492f9cb8afee87b7/k-amino.py-1.2.1.tar.gz
+[2023-04-15 13:14:36] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: Downloading https://files.pythonhosted.org/packages/1c/51/9c76c62bcbb69aa99c5880c6b0f3760b1ae6c6b3621beea6dd38fcf50db4/nonebot_plugin_sdgpt-0.2.4.tar.gz
+[2023-04-15 13:14:36] INFO root fetch - processPackages [k-amino.py]: executing diffoscope
+[2023-04-15 13:14:36] INFO root fetch - processPackages [k-amino.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/k-amino.py-1.2.0.tar.gz tmp/k-amino.py-1.2.1.tar.gz --markdown 20230415/k/k-amino.py/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-15 13:14:36] INFO root fetch - processPackages [interlinking]: Downloading https://files.pythonhosted.org/packages/6c/2d/35a2cd312ff6c85ec8dcf272d3c8fccfe3c70c1c9328a5f56a9578515962/interlinking-0.0.3.tar.gz
+[2023-04-15 13:14:37] INFO root fetch - processPackages [interlinking]: executing diffoscope
+[2023-04-15 13:14:37] INFO root fetch - processPackages [interlinking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interlinking-0.0.2.tar.gz tmp/interlinking-0.0.3.tar.gz --markdown 20230415/i/interlinking/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 13:14:37] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: executing diffoscope
+[2023-04-15 13:14:37] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_sdgpt-0.2.3.tar.gz tmp/nonebot_plugin_sdgpt-0.2.4.tar.gz --markdown 20230415/n/nonebot-plugin-sdgpt/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-15 13:14:37] INFO root fetch - processPackages [django-comment-system]: Downloading https://files.pythonhosted.org/packages/31/31/9af7c97910c1beb8a00e56878bc31ef13a05f8cbb44e821c6981ec3d71c2/django-comment-system-2.9.1.tar.gz
+[2023-04-15 13:14:37] INFO root fetch - processPackages [django-comment-system]: Downloading https://files.pythonhosted.org/packages/31/31/9af7c97910c1beb8a00e56878bc31ef13a05f8cbb44e821c6981ec3d71c2/django-comment-system-2.9.1.tar.gz
+[2023-04-15 13:14:37] INFO root fetch - processPackages [django-comment-system]: executing diffoscope
+[2023-04-15 13:14:37] INFO root fetch - processPackages [django-comment-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-comment-system-2.9.0.tar.gz tmp/django-comment-system-2.9.1.tar.gz --markdown 20230415/d/django-comment-system/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-04-15 13:14:37] INFO root fetch - processPackages [django-comment-system]: executing diffoscope
+[2023-04-15 13:14:37] INFO root fetch - processPackages [django-comment-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-comment-system-2.9.0.tar.gz tmp/django-comment-system-2.9.1.tar.gz --markdown 20230415/d/django-comment-system/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-04-15 13:14:38] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-sdgpt]: success
+[2023-04-15 13:14:38] INFO root fetch - main [MainThread]: End processing [k-amino.py]: success
+[2023-04-15 13:14:38] INFO root fetch - main [MainThread]: End processing [interlinking]: success
+[2023-04-15 13:14:39] INFO root fetch - main [MainThread]: End processing [django-comment-system]: success
+[2023-04-15 13:14:39] INFO root fetch - main [MainThread]: End processing [django-comment-system]: success
+[2023-04-15 13:14:48] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
+[2023-04-15 13:14:48] INFO root fetch - main [MainThread]: Store serial: [17718375]
