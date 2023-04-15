@@ -14097,3 +14097,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 11:49:16] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-gshisbanner]: success
 [2023-04-15 11:49:16] INFO root fetch - main [MainThread]: End processing [ipv4tree]: success
 [2023-04-15 11:49:16] INFO root fetch - main [MainThread]: Store serial: [17717943]
+[2023-04-15 11:54:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717943]
+[2023-04-15 11:54:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 11:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: VRP
+[2023-04-15 11:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytheus
+[2023-04-15 11:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: subprocesskiller
+[2023-04-15 11:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anim
+[2023-04-15 11:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quorum-data-py
+[2023-04-15 11:54:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sharingiscaring
+[2023-04-15 11:54:25] INFO root fetch - processPackages [quorum-data-py]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-15 11:54:25] INFO root fetch - processPackages [VRP]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 11:54:25] INFO root fetch - processPackages [anim]: New version: [0.1.17] Old Version: [0.1.16]
+[2023-04-15 11:54:25] WARNING root fetch - processPackages [subprocesskiller]: Skipping, unable to determine old version
+[2023-04-15 11:54:25] INFO root fetch - main [MainThread]: End processing [subprocesskiller] error
+[2023-04-15 11:54:25] INFO root fetch - processPackages [pytheus]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 11:54:25] INFO root fetch - processPackages [sharingiscaring]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-15 11:54:25] INFO root fetch - processPackages [anim]: Downloading https://files.pythonhosted.org/packages/98/92/ee1b72597ea282a7031a4575ff1f5ce0f536144246546dcf9c195efd61b1/anim-0.1.17-py3-none-any.whl
+[2023-04-15 11:54:25] INFO root fetch - processPackages [sharingiscaring]: Downloading https://files.pythonhosted.org/packages/ec/8c/18f997c3d361aa358776fa84dc75aa9ae090ce8fbc3f7099d41d86437e2e/sharingiscaring-0.2.8.tar.gz
+[2023-04-15 11:54:25] INFO root fetch - processPackages [anim]: executing diffoscope
+[2023-04-15 11:54:25] INFO root fetch - processPackages [anim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anim-0.1.16-py3-none-any.whl.zip tmp/anim-0.1.17-py3-none-any.whl.zip --markdown 20230415/a/anim/0.1.16-0.1.17/diff.md --exclude *.pyd
+[2023-04-15 11:54:25] INFO root fetch - processPackages [quorum-data-py]: Downloading https://files.pythonhosted.org/packages/03/84/806dce4339beead0f812611dfa4aab328b3f61f5a9e149ce9c6ea987e40f/quorum_data_py-1.1.8.tar.gz
+[2023-04-15 11:54:25] INFO root fetch - processPackages [pytheus]: Downloading https://files.pythonhosted.org/packages/81/91/2118822eee94be679af19c9fd9c9bfe2289d5eeb0f18883b2bfbdeeba393/pytheus-0.0.9.tar.gz
+[2023-04-15 11:54:25] INFO root fetch - processPackages [VRP]: Downloading https://files.pythonhosted.org/packages/98/83/68ad8f0ce8a107d31a1ba7c6d8bdf404d0accacc18f27cfb35816a64ab51/VRP-0.0.2.tar.gz
+[2023-04-15 11:54:25] INFO root fetch - processPackages [quorum-data-py]: executing diffoscope
+[2023-04-15 11:54:25] INFO root fetch - processPackages [quorum-data-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quorum_data_py-1.1.7.tar.gz tmp/quorum_data_py-1.1.8.tar.gz --markdown 20230415/q/quorum-data-py/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-15 11:54:25] INFO root fetch - processPackages [pytheus]: executing diffoscope
+[2023-04-15 11:54:25] INFO root fetch - processPackages [pytheus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytheus-0.0.8.tar.gz tmp/pytheus-0.0.9.tar.gz --markdown 20230415/p/pytheus/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 11:54:26] INFO root fetch - processPackages [VRP]: Downloading https://files.pythonhosted.org/packages/04/d5/c34ef0f56f0dd4bb6d43246db4e1f5ee881bfe187f1ef1ef1e17632638b2/VRP-0.0.3.tar.gz
+[2023-04-15 11:54:26] INFO root fetch - processPackages [sharingiscaring]: Downloading https://files.pythonhosted.org/packages/3c/51/994c3bf1116cc8b6234cbdc78a444ab9f875f5c3ce1e11c36bc0b2cdfa0e/sharingiscaring-0.2.9.tar.gz
+[2023-04-15 11:54:26] INFO root fetch - processPackages [VRP]: executing diffoscope
+[2023-04-15 11:54:26] INFO root fetch - processPackages [VRP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VRP-0.0.2.tar.gz tmp/VRP-0.0.3.tar.gz --markdown 20230415/V/VRP/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 11:54:26] INFO root fetch - processPackages [sharingiscaring]: executing diffoscope
+[2023-04-15 11:54:26] INFO root fetch - processPackages [sharingiscaring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharingiscaring-0.2.8.tar.gz tmp/sharingiscaring-0.2.9.tar.gz --markdown 20230415/s/sharingiscaring/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-15 11:54:26] INFO root fetch - main [MainThread]: End processing [anim]: success
+[2023-04-15 11:54:26] INFO root fetch - main [MainThread]: End processing [quorum-data-py]: success
+[2023-04-15 11:54:27] INFO root fetch - main [MainThread]: End processing [pytheus]: success
+[2023-04-15 11:54:27] INFO root fetch - main [MainThread]: End processing [VRP]: success
+[2023-04-15 11:54:29] INFO root fetch - main [MainThread]: End processing [sharingiscaring]: success
+[2023-04-15 11:54:29] INFO root fetch - main [MainThread]: Store serial: [17717965]
