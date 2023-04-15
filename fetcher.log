@@ -15944,3 +15944,74 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 15:09:58] INFO root fetch - main [MainThread]: End processing [oldschool-management-tools]: success
 [2023-04-15 15:09:58] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
 [2023-04-15 15:09:58] INFO root fetch - main [MainThread]: Store serial: [17719086]
+[2023-04-15 15:15:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719086]
+[2023-04-15 15:15:07] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-15 15:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: digitalarztools
+[2023-04-15 15:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-django
+[2023-04-15 15:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-apl
+[2023-04-15 15:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: extr-ds
+[2023-04-15 15:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kumarpdf
+[2023-04-15 15:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lanms-nova
+[2023-04-15 15:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: json-codec
+[2023-04-15 15:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: slideio
+[2023-04-15 15:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: chemotools
+[2023-04-15 15:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: py-senertec
+[2023-04-15 15:15:07] INFO root fetch - processPackages [digitalarztools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 15:15:07] INFO root fetch - processPackages [lanms-nova]: New version: [1.0.3] Old Version: [1.0.1]
+[2023-04-15 15:15:07] INFO root fetch - processPackages [json-codec]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-04-15 15:15:07] INFO root fetch - processPackages [extr-ds]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-15 15:15:07] INFO root fetch - processPackages [py-senertec]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-15 15:15:07] INFO root fetch - processPackages [chemotools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 15:15:07] WARNING root fetch - processPackages [kumarpdf]: Skipping, unable to determine old version
+[2023-04-15 15:15:07] INFO root fetch - processPackages [kumarpdf]: Start processing: tinote
+[2023-04-15 15:15:07] INFO root fetch - main [MainThread]: End processing [kumarpdf] error
+[2023-04-15 15:15:07] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 15:15:07] WARNING root fetch - processPackages [tinote]: Skipping, unable to determine old version
+[2023-04-15 15:15:07] INFO root fetch - processPackages [tinote]: Start processing: drf-spectacular
+[2023-04-15 15:15:07] INFO root fetch - main [MainThread]: End processing [tinote] error
+[2023-04-15 15:15:07] INFO root fetch - processPackages [slideio]: New version: [2.0.8] Old Version: [2.0.7]
+[2023-04-15 15:15:07] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.715] Old Version: [0.0.714]
+[2023-04-15 15:15:07] INFO root fetch - processPackages [nbdev-django]: Downloading https://files.pythonhosted.org/packages/2b/95/9e261b8f3e5f931da5a2f9ddc475954265376d1d468b6f3877f38ad482c3/nbdev-django-0.0.98.tar.gz
+[2023-04-15 15:15:07] INFO root fetch - processPackages [chemotools]: Downloading https://files.pythonhosted.org/packages/a4/fa/4b535fc354bf39a56cdfcc0c096bdf6d2b738fbb6cd75b60b8ffae5d3bc6/chemotools-0.0.8.tar.gz
+[2023-04-15 15:15:07] INFO root fetch - processPackages [py-senertec]: Downloading https://files.pythonhosted.org/packages/a6/b9/e1493ccaf910b2882b9c30a48e5df79728707a85de1a01c620ef5cfb270f/py-senertec-0.4.0.tar.gz
+[2023-04-15 15:15:07] INFO root fetch - processPackages [drf-spectacular]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-15 15:15:07] INFO root fetch - processPackages [slideio]: Downloading https://files.pythonhosted.org/packages/3b/aa/3d1be799b0856ed00e6c7934d842e21f617bb69feb053450956a223cc6c3/slideio-2.0.7-cp39-cp39-win_amd64.whl
+[2023-04-15 15:15:07] INFO root fetch - processPackages [json-codec]: Downloading https://files.pythonhosted.org/packages/59/5c/03db835d1eebb5052b9334c6ff8dc147072a99b888acf502d105fba00e88/json_codec-0.2.0.tar.gz
+[2023-04-15 15:15:07] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/b6/3f/38ef7ad3aef441b3b5664737892789141556114c15abe05a62e7bb3ce931/nbdev-apl-0.0.715.tar.gz
+[2023-04-15 15:15:07] INFO root fetch - processPackages [lanms-nova]: Downloading https://files.pythonhosted.org/packages/96/d5/8f5d23d0fa49f96ff2b82d7047160311430199eeb15e5163f36b6213af2d/lanms-nova-1.0.3.tar.gz
+[2023-04-15 15:15:07] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-15 15:15:07] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.714.tar.gz tmp/nbdev-apl-0.0.715.tar.gz --markdown 20230415/n/nbdev-apl/0.0.714-0.0.715/diff.md --exclude *.pyd
+[2023-04-15 15:15:07] INFO root fetch - processPackages [extr-ds]: Downloading https://files.pythonhosted.org/packages/5f/07/d8dbd86d761a98c35d529bb38319b4f102590e9ca9c9f9b0045696501b70/extr-ds-0.0.5.tar.gz
+[2023-04-15 15:15:07] WARNING root fetch - processPackages [slideio]: Skipping package: exceeds size limit 31509651>=10485760
+[2023-04-15 15:15:07] INFO root fetch - main [MainThread]: End processing [slideio] error
+[2023-04-15 15:15:07] INFO root fetch - processPackages [json-codec]: executing diffoscope
+[2023-04-15 15:15:07] INFO root fetch - processPackages [json-codec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_codec-0.1.5.tar.gz tmp/json_codec-0.2.0.tar.gz --markdown 20230415/j/json-codec/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 15:15:07] INFO root fetch - processPackages [drf-spectacular]: Downloading https://files.pythonhosted.org/packages/c4/b9/e5b00bb7fdccaaa03ac1014e3be806c724c1278f53b8b7cb151690f4f5ce/drf-spectacular-0.9.8.tar.gz
+[2023-04-15 15:15:07] INFO root fetch - processPackages [chemotools]: Downloading https://files.pythonhosted.org/packages/5b/ca/82965eff739116141e64dd814023d634fbc085ef8721f45f9155363a3926/chemotools-0.0.9.tar.gz
+[2023-04-15 15:15:07] INFO root fetch - processPackages [extr-ds]: executing diffoscope
+[2023-04-15 15:15:07] INFO root fetch - processPackages [extr-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extr-ds-0.0.4.tar.gz tmp/extr-ds-0.0.5.tar.gz --markdown 20230415/e/extr-ds/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 15:15:07] INFO root fetch - processPackages [chemotools]: executing diffoscope
+[2023-04-15 15:15:07] INFO root fetch - processPackages [chemotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemotools-0.0.8.tar.gz tmp/chemotools-0.0.9.tar.gz --markdown 20230415/c/chemotools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 15:15:07] INFO root fetch - processPackages [lanms-nova]: executing diffoscope
+[2023-04-15 15:15:07] INFO root fetch - processPackages [lanms-nova]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lanms-nova-1.0.1.tar.gz tmp/lanms-nova-1.0.3.tar.gz --markdown 20230415/l/lanms-nova/1.0.1-1.0.3/diff.md --exclude *.pyd
+[2023-04-15 15:15:07] INFO root fetch - processPackages [py-senertec]: Downloading https://files.pythonhosted.org/packages/68/08/2182c390869e40b79f2b5ca9558009bc439d0253f9f1553ee99c6fb15834/py-senertec-0.5.0.tar.gz
+[2023-04-15 15:15:07] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2023-04-15 15:15:07] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.0.8.tar.gz tmp/digitalarztools-0.0.9.tar.gz --markdown 20230415/d/digitalarztools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 15:15:08] INFO root fetch - processPackages [nbdev-django]: Downloading https://files.pythonhosted.org/packages/f2/7a/5214014e1426324d1fea2f984c9b5480e467e5eddefe61721e8f4d1c025e/nbdev-django-0.0.99.tar.gz
+[2023-04-15 15:15:08] INFO root fetch - processPackages [py-senertec]: executing diffoscope
+[2023-04-15 15:15:08] INFO root fetch - processPackages [py-senertec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-senertec-0.4.0.tar.gz tmp/py-senertec-0.5.0.tar.gz --markdown 20230415/p/py-senertec/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-15 15:15:08] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-15 15:15:08] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230415/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 15:15:08] INFO root fetch - processPackages [drf-spectacular]: Downloading https://files.pythonhosted.org/packages/30/f9/de6a1b2304c6f30cc04bb7b1b8cb3fcee4269c3e7c7d94ddebb56e301305/drf-spectacular-0.9.9.tar.gz
+[2023-04-15 15:15:09] INFO root fetch - processPackages [drf-spectacular]: executing diffoscope
+[2023-04-15 15:15:09] INFO root fetch - processPackages [drf-spectacular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf-spectacular-0.9.8.tar.gz tmp/drf-spectacular-0.9.9.tar.gz --markdown 20230415/d/drf-spectacular/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-15 15:15:09] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-04-15 15:15:09] INFO root fetch - main [MainThread]: End processing [extr-ds]: success
+[2023-04-15 15:15:09] INFO root fetch - main [MainThread]: End processing [json-codec]: success
+[2023-04-15 15:15:09] INFO root fetch - main [MainThread]: End processing [py-senertec]: success
+[2023-04-15 15:15:09] INFO root fetch - main [MainThread]: End processing [chemotools]: success
+[2023-04-15 15:15:09] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-04-15 15:15:09] INFO root fetch - main [MainThread]: End processing [lanms-nova]: success
+[2023-04-15 15:15:09] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2023-04-15 15:15:10] INFO root fetch - main [MainThread]: End processing [drf-spectacular]: success
+[2023-04-15 15:15:10] INFO root fetch - main [MainThread]: Store serial: [17719129]
