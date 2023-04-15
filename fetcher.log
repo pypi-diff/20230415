@@ -19778,3 +19778,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 22:06:11] ERROR root fetch - processPackages [RsFsw]: Timeout during execution of pkgdiff
 [2023-04-15 22:06:11] INFO root fetch - main [MainThread]: End processing [RsFsw] error
 [2023-04-15 22:06:11] INFO root fetch - main [MainThread]: Store serial: [17721624]
+[2023-04-15 22:11:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721624]
+[2023-04-15 22:11:20] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 22:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dauth
+[2023-04-15 22:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pic-rucio
+[2023-04-15 22:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mahiro
+[2023-04-15 22:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aim-ui
+[2023-04-15 22:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sabledocs
+[2023-04-15 22:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aim
+[2023-04-15 22:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: microt-preprocessing
+[2023-04-15 22:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nlptoolssna
+[2023-04-15 22:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pygedcom
+[2023-04-15 22:11:20] INFO root fetch - processPackages [mahiro]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-15 22:11:20] INFO root fetch - processPackages [dauth]: New version: [0.2] Old Version: [0.1]
+[2023-04-15 22:11:20] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0.dev3] Old Version: [4.0.0.dev2]
+[2023-04-15 22:11:20] INFO root fetch - processPackages [pic-rucio]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-15 22:11:20] INFO root fetch - processPackages [nlptoolssna]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-15 22:11:20] INFO root fetch - processPackages [pygedcom]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-15 22:11:20] INFO root fetch - processPackages [sabledocs]: New version: [0.1.46] Old Version: [0.1.43]
+[2023-04-15 22:11:20] INFO root fetch - processPackages [microt-preprocessing]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 22:11:20] INFO root fetch - processPackages [aim]: New version: [4.0.0.dev3] Old Version: [4.0.0.dev2]
+[2023-04-15 22:11:20] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-15 22:11:20] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.1.7.tar.gz tmp/nlptoolssna-0.1.8.tar.gz --markdown 20230415/n/nlptoolssna/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-15 22:11:20] INFO root fetch - processPackages [mahiro]: Downloading https://files.pythonhosted.org/packages/56/8e/865bc47f16978410ccb4598115f87a519d7dd8656d050eaf0c7b9879a09b/mahiro-1.1.0.tar.gz
+[2023-04-15 22:11:20] INFO root fetch - processPackages [pygedcom]: executing diffoscope
+[2023-04-15 22:11:20] INFO root fetch - processPackages [pygedcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygedcom-0.1.7.tar.gz tmp/pygedcom-0.1.8.tar.gz --markdown 20230415/p/pygedcom/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-15 22:11:20] INFO root fetch - processPackages [dauth]: Downloading https://files.pythonhosted.org/packages/a3/30/cafafaad41e1025b5e6afad1fc7559aa47f821437c920303661b7b312ba0/dauth-0.1.tar.gz
+[2023-04-15 22:11:20] INFO root fetch - processPackages [microt-preprocessing]: executing diffoscope
+[2023-04-15 22:11:20] INFO root fetch - processPackages [microt-preprocessing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microt_preprocessing-0.1.8.tar.gz tmp/microt_preprocessing-0.1.9.tar.gz --markdown 20230415/m/microt-preprocessing/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 22:11:20] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/d6/c0/8412600d01de28dac29fc7f2821e1c045150709439ee3cb7a4fd3bce8312/aim-ui-4.0.0.dev2.tar.gz
+[2023-04-15 22:11:20] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/08/0f/3ed478f7f380031719a707d8d9edc0bfd58bc341beb82735c76c5c3e0f00/aim-4.0.0.dev2.tar.gz
+[2023-04-15 22:11:20] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/3b/78/bcd254bc3b38a258fbe9cffdf5c3395c2e74633cea9ef235004890fab0bd/sabledocs-0.1.46-py3-none-any.whl
+[2023-04-15 22:11:20] INFO root fetch - processPackages [pic-rucio]: Downloading https://files.pythonhosted.org/packages/1d/eb/94f47e1344fe44f74ed4c85911b8cdd3ed152256cf3402649bff54504553/pic_rucio-0.1.3-py3-none-any.whl
+[2023-04-15 22:11:20] INFO root fetch - processPackages [mahiro]: Downloading https://files.pythonhosted.org/packages/bd/10/5c6bff63167260b526b04e06250214749ae6c0d1cddc07ae2409b9f5a211/mahiro-1.2.0.tar.gz
+[2023-04-15 22:11:20] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 22:11:20] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.43.tar.gz tmp/sabledocs-0.1.46-py3-none-any.whl.zip --markdown 20230415/s/sabledocs/0.1.43-0.1.46/diff.md --exclude *.pyd
+[2023-04-15 22:11:20] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 27060349>=10485760
+[2023-04-15 22:11:20] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-04-15 22:11:20] INFO root fetch - processPackages [pic-rucio]: executing diffoscope
+[2023-04-15 22:11:20] INFO root fetch - processPackages [pic-rucio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pic_rucio-0.1.2-py3-none-any.whl.zip tmp/pic_rucio-0.1.3-py3-none-any.whl.zip --markdown 20230415/p/pic-rucio/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-15 22:11:20] INFO root fetch - processPackages [dauth]: Downloading https://files.pythonhosted.org/packages/78/b3/020c527798460c664900d419d799aaa585b9ccd7b004549642c6be685222/dauth-0.2.tar.gz
+[2023-04-15 22:11:20] INFO root fetch - processPackages [mahiro]: executing diffoscope
+[2023-04-15 22:11:20] INFO root fetch - processPackages [mahiro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mahiro-1.1.0.tar.gz tmp/mahiro-1.2.0.tar.gz --markdown 20230415/m/mahiro/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-15 22:11:20] INFO root fetch - processPackages [dauth]: executing diffoscope
+[2023-04-15 22:11:20] INFO root fetch - processPackages [dauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dauth-0.1.tar.gz tmp/dauth-0.2.tar.gz --markdown 20230415/d/dauth/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-15 22:11:21] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/79/f6/66b29a9a5fc61f43374c997b8d6d9baca52d28f11769d896405f451d9541/aim-4.0.0.dev3.tar.gz
+[2023-04-15 22:11:21] INFO root fetch - processPackages [aim]: executing diffoscope
+[2023-04-15 22:11:21] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.0.dev2.tar.gz tmp/aim-4.0.0.dev3.tar.gz --markdown 20230415/a/aim/4.0.0.dev2-4.0.0.dev3/diff.md --exclude *.pyd
+[2023-04-15 22:11:21] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-15 22:11:21] INFO root fetch - main [MainThread]: End processing [pygedcom]: success
+[2023-04-15 22:11:22] INFO root fetch - main [MainThread]: End processing [pic-rucio]: success
+[2023-04-15 22:11:22] INFO root fetch - main [MainThread]: End processing [mahiro]: success
+[2023-04-15 22:11:22] INFO root fetch - main [MainThread]: End processing [dauth]: success
+[2023-04-15 22:11:22] INFO root fetch - main [MainThread]: End processing [microt-preprocessing]: success
+[2023-04-15 22:11:23] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 22:11:30] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2023-04-15 22:11:30] INFO root fetch - main [MainThread]: Store serial: [17721651]
