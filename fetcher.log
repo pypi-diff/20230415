@@ -4060,3 +4060,22 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 03:45:49] INFO root fetch - main [MainThread]: End processing [pytest-servers]: success
 [2023-04-15 03:45:53] INFO root fetch - main [MainThread]: End processing [hls4ml]: success
 [2023-04-15 03:45:53] INFO root fetch - main [MainThread]: Store serial: [17715735]
+[2023-04-15 03:50:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715735]
+[2023-04-15 03:51:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-15 03:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: live-transcribe
+[2023-04-15 03:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: viser
+[2023-04-15 03:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mbfxml2ex
+[2023-04-15 03:51:00] INFO root fetch - processPackages [viser]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 03:51:00] WARNING root fetch - processPackages [live-transcribe]: Skipping, unable to determine old version
+[2023-04-15 03:51:00] INFO root fetch - main [MainThread]: End processing [live-transcribe] error
+[2023-04-15 03:51:00] INFO root fetch - processPackages [mbfxml2ex]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-15 03:51:00] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/a6/58/003a697ca5bc9945d5fa045bc77b7bbe462e45ab6c895a9b8788793a88d9/viser-0.0.3.tar.gz
+[2023-04-15 03:51:00] INFO root fetch - processPackages [mbfxml2ex]: Downloading https://files.pythonhosted.org/packages/19/ea/9aa62da5117bbd6dae7c274bc498465063b2473f1b03091ac26a64c8e97f/mbfxml2ex-0.5.0.tar.gz
+[2023-04-15 03:51:00] INFO root fetch - processPackages [viser]: executing diffoscope
+[2023-04-15 03:51:00] INFO root fetch - processPackages [viser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viser-0.0.2.tar.gz tmp/viser-0.0.3.tar.gz --markdown 20230415/v/viser/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 03:51:01] INFO root fetch - processPackages [mbfxml2ex]: Downloading https://files.pythonhosted.org/packages/cd/b6/fb58664a2d777a087b34ed94e90af478167163459213710d794b2c3aef8d/mbfxml2ex-0.6.0.tar.gz
+[2023-04-15 03:51:01] INFO root fetch - processPackages [mbfxml2ex]: executing diffoscope
+[2023-04-15 03:51:01] INFO root fetch - processPackages [mbfxml2ex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbfxml2ex-0.5.0.tar.gz tmp/mbfxml2ex-0.6.0.tar.gz --markdown 20230415/m/mbfxml2ex/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-15 03:51:02] INFO root fetch - main [MainThread]: End processing [mbfxml2ex]: success
+[2023-04-15 03:51:02] INFO root fetch - main [MainThread]: End processing [viser]: success
+[2023-04-15 03:51:02] INFO root fetch - main [MainThread]: Store serial: [17715745]
