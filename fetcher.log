@@ -19400,3 +19400,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 21:25:32] INFO root fetch - main [MainThread]: End processing [pydantic-core]: success
 [2023-04-15 21:25:52] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-04-15 21:25:52] INFO root fetch - main [MainThread]: Store serial: [17721330]
+[2023-04-15 21:30:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721330]
+[2023-04-15 21:31:03] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-15 21:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydantic-core
+[2023-04-15 21:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gqt
+[2023-04-15 21:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: frasa
+[2023-04-15 21:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yopass-api
+[2023-04-15 21:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dataligo
+[2023-04-15 21:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: search-algos
+[2023-04-15 21:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mqttthreaddatalogger
+[2023-04-15 21:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-eveuniverse
+[2023-04-15 21:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nlptoolssna
+[2023-04-15 21:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hiddifypanel
+[2023-04-15 21:31:03] WARNING root fetch - processPackages [yopass-api]: Skipping, unable to determine old version
+[2023-04-15 21:31:03] WARNING root fetch - processPackages [dataligo]: Skipping, unable to determine old version
+[2023-04-15 21:31:03] INFO root fetch - processPackages [yopass-api]: Start processing: pandas-selector
+[2023-04-15 21:31:03] INFO root fetch - main [MainThread]: End processing [yopass-api] error
+[2023-04-15 21:31:03] INFO root fetch - main [MainThread]: End processing [dataligo] error
+[2023-04-15 21:31:03] INFO root fetch - processPackages [gqt]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-15 21:31:03] INFO root fetch - processPackages [frasa]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 21:31:03] INFO root fetch - processPackages [nlptoolssna]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-15 21:31:03] INFO root fetch - processPackages [django-eveuniverse]: New version: [1.0.0a2] Old Version: [1.0.0a1]
+[2023-04-15 21:31:03] INFO root fetch - processPackages [mqttthreaddatalogger]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-15 21:31:03] INFO root fetch - processPackages [search-algos]: New version: [0.1] Old Version: [0.0.1]
+[2023-04-15 21:31:03] INFO root fetch - processPackages [hiddifypanel]: New version: [4.0.0.dev5] Old Version: [4.0.0.dev3]
+[2023-04-15 21:31:03] INFO root fetch - processPackages [pandas-selector]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-15 21:31:03] INFO root fetch - processPackages [pydantic-core]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-15 21:31:03] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-15 21:31:03] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-4.0.0.dev3-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-4.0.0.dev5-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230415/h/hiddifypanel/4.0.0.dev3-4.0.0.dev5/diff.md --exclude *.pyd
+[2023-04-15 21:31:03] INFO root fetch - processPackages [search-algos]: Downloading https://files.pythonhosted.org/packages/c2/2c/73385875e1f00615885fc9ba80dcad19e6335a193bf55b1e660b768158b4/search-algos-0.0.1.tar.gz
+[2023-04-15 21:31:03] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/a1/6e/29af9f5da5c171d78b98a2f2ccdf9dbf8436942aaa03f24660d061fcedfd/nlptoolssna-0.1.8.tar.gz
+[2023-04-15 21:31:03] INFO root fetch - processPackages [django-eveuniverse]: Downloading https://files.pythonhosted.org/packages/ea/0c/b958a07720746f19b390e931c145d9a1d1ccff303158233b4897f4def8f1/django_eveuniverse-1.0.0a2.tar.gz
+[2023-04-15 21:31:03] INFO root fetch - processPackages [frasa]: Downloading https://files.pythonhosted.org/packages/fb/fd/c909e22d73c34eadcf86bd37d73957e654a4a399360bdd4a6638728f507d/frasa-0.0.9.tar.gz
+[2023-04-15 21:31:03] INFO root fetch - processPackages [mqttthreaddatalogger]: Downloading https://files.pythonhosted.org/packages/6c/f6/593d64c77a85e68620e5bde73e8684e142ec6ddab541299303fea14908e0/mqttthreaddatalogger-1.5.1.tar.gz
+[2023-04-15 21:31:03] INFO root fetch - processPackages [pandas-selector]: Downloading https://files.pythonhosted.org/packages/18/98/15961e92b11e841f82b5509dbce918c0990671dcb69ea8efe5476cd4c131/pandas_selector-1.3.3.tar.gz
+[2023-04-15 21:31:03] INFO root fetch - processPackages [gqt]: executing diffoscope
+[2023-04-15 21:31:03] INFO root fetch - processPackages [gqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqt-0.98.0.tar.gz tmp/gqt-0.99.0.tar.gz --markdown 20230415/g/gqt/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-15 21:31:03] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-15 21:31:03] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.1.7.tar.gz tmp/nlptoolssna-0.1.8.tar.gz --markdown 20230415/n/nlptoolssna/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-15 21:31:03] INFO root fetch - processPackages [mqttthreaddatalogger]: executing diffoscope
+[2023-04-15 21:31:03] INFO root fetch - processPackages [mqttthreaddatalogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mqttthreaddatalogger-1.5.0.tar.gz tmp/mqttthreaddatalogger-1.5.1.tar.gz --markdown 20230415/m/mqttthreaddatalogger/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-15 21:31:03] INFO root fetch - processPackages [django-eveuniverse]: executing diffoscope
+[2023-04-15 21:31:03] INFO root fetch - processPackages [django-eveuniverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_eveuniverse-1.0.0a1.tar.gz tmp/django_eveuniverse-1.0.0a2.tar.gz --markdown 20230415/d/django-eveuniverse/1.0.0a1-1.0.0a2/diff.md --exclude *.pyd
+[2023-04-15 21:31:03] INFO root fetch - processPackages [pydantic-core]: executing diffoscope
+[2023-04-15 21:31:03] INFO root fetch - processPackages [pydantic-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_core-0.8.2.tar.gz tmp/pydantic_core-0.9.0.tar.gz --markdown 20230415/p/pydantic-core/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 21:31:04] INFO root fetch - processPackages [pandas-selector]: Downloading https://files.pythonhosted.org/packages/88/8f/c59a979a832c7675e5ba2d2cd671ed5c5508d78e3d213e10ae76271cc6f6/pandas_selector-1.3.4.tar.gz
+[2023-04-15 21:31:04] INFO root fetch - processPackages [pandas-selector]: executing diffoscope
+[2023-04-15 21:31:04] INFO root fetch - processPackages [pandas-selector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandas_selector-1.3.3.tar.gz tmp/pandas_selector-1.3.4.tar.gz --markdown 20230415/p/pandas-selector/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-04-15 21:31:04] INFO root fetch - processPackages [search-algos]: Downloading https://files.pythonhosted.org/packages/9b/df/7afb43b8da4c55eb5ff08cbc377b3ed47b8a02c85c82d385b4c01cc8f5e9/search-algos-0.1.tar.gz
+[2023-04-15 21:31:04] INFO root fetch - processPackages [search-algos]: executing diffoscope
+[2023-04-15 21:31:04] INFO root fetch - processPackages [search-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/search-algos-0.0.1.tar.gz tmp/search-algos-0.1.tar.gz --markdown 20230415/s/search-algos/0.0.1-0.1/diff.md --exclude *.pyd
+[2023-04-15 21:31:04] INFO root fetch - processPackages [frasa]: executing diffoscope
+[2023-04-15 21:31:04] INFO root fetch - processPackages [frasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frasa-0.0.8.tar.gz tmp/frasa-0.0.9.tar.gz --markdown 20230415/f/frasa/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 21:31:05] INFO root fetch - main [MainThread]: End processing [gqt]: success
+[2023-04-15 21:31:05] INFO root fetch - main [MainThread]: End processing [mqttthreaddatalogger]: success
+[2023-04-15 21:31:05] INFO root fetch - main [MainThread]: End processing [pandas-selector]: success
+[2023-04-15 21:31:05] INFO root fetch - main [MainThread]: End processing [search-algos]: success
+[2023-04-15 21:31:05] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-15 21:31:06] INFO root fetch - main [MainThread]: End processing [frasa]: success
+[2023-04-15 21:31:07] INFO root fetch - main [MainThread]: End processing [django-eveuniverse]: success
+[2023-04-15 21:31:08] INFO root fetch - main [MainThread]: End processing [pydantic-core]: success
+[2023-04-15 21:31:22] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-04-15 21:31:22] INFO root fetch - main [MainThread]: Store serial: [17721450]
