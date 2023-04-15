@@ -15433,3 +15433,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 14:17:09] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
 [2023-04-15 14:17:14] INFO root fetch - main [MainThread]: End processing [toolkit-lennart]: success
 [2023-04-15 14:17:14] INFO root fetch - main [MainThread]: Store serial: [17718812]
+[2023-04-15 14:22:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718812]
+[2023-04-15 14:22:24] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-15 14:22:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: embetter
+[2023-04-15 14:22:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-text-annotator
+[2023-04-15 14:22:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: advancedrequests
+[2023-04-15 14:22:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: grgrjax
+[2023-04-15 14:22:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cubao-pypi-example
+[2023-04-15 14:22:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mb-pytorch
+[2023-04-15 14:22:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: barbell2-castor
+[2023-04-15 14:22:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: toolkit-lennart
+[2023-04-15 14:22:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vollseg-napari-trackmate
+[2023-04-15 14:22:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pystatic-language
+[2023-04-15 14:22:24] INFO root fetch - processPackages [embetter]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-15 14:22:24] INFO root fetch - processPackages [advancedrequests]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-15 14:22:24] INFO root fetch - processPackages [grgrjax]: New version: [0.4.3] Old Version: [0.4.1]
+[2023-04-15 14:22:24] WARNING root fetch - processPackages [cubao-pypi-example]: Skipping, unable to determine old version
+[2023-04-15 14:22:24] INFO root fetch - processPackages [cubao-pypi-example]: Start processing: planetai
+[2023-04-15 14:22:24] INFO root fetch - main [MainThread]: End processing [cubao-pypi-example] error
+[2023-04-15 14:22:24] INFO root fetch - processPackages [streamlit-text-annotator]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-15 14:22:24] INFO root fetch - processPackages [vollseg-napari-trackmate]: New version: [2.1.0] Old Version: [2.0.8]
+[2023-04-15 14:22:24] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304151223] Old Version: [1.0.202304151214]
+[2023-04-15 14:22:24] INFO root fetch - processPackages [toolkit-lennart]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 14:22:24] WARNING root fetch - processPackages [barbell2-castor]: Skipping, unable to determine old version
+[2023-04-15 14:22:24] INFO root fetch - main [MainThread]: End processing [barbell2-castor] error
+[2023-04-15 14:22:24] INFO root fetch - processPackages [planetai]: New version: [1.3] Old Version: [1.2]
+[2023-04-15 14:22:24] INFO root fetch - processPackages [pystatic-language]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-15 14:22:24] INFO root fetch - processPackages [planetai]: executing diffoscope
+[2023-04-15 14:22:24] INFO root fetch - processPackages [planetai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/planetai-1.2.tar.gz tmp/planetai-1.3.tar.gz --markdown 20230415/p/planetai/1.2-1.3/diff.md --exclude *.pyd
+[2023-04-15 14:22:24] INFO root fetch - processPackages [vollseg-napari-trackmate]: Downloading https://files.pythonhosted.org/packages/ee/38/3f3ec0ec8bf5e954c1d3bc8b2f9e728b9843f0aeacca8dbbded0b294c8b6/vollseg-napari-trackmate-2.0.8.tar.gz
+[2023-04-15 14:22:25] INFO root fetch - processPackages [advancedrequests]: Downloading https://files.pythonhosted.org/packages/a4/f1/7baa97d395b7ec85f09a55f6cadb2515c629b97e0c26aea25396b4a80724/advancedrequests-1.0.4.tar.gz
+[2023-04-15 14:22:25] INFO root fetch - processPackages [streamlit-text-annotator]: Downloading https://files.pythonhosted.org/packages/4c/ae/7c9c487f07ccc5e306a356e4cbbc6d02c680c5e0bb741cc85126d18c2fe1/streamlit-text-annotator-0.1.4.tar.gz
+[2023-04-15 14:22:25] INFO root fetch - processPackages [embetter]: Downloading https://files.pythonhosted.org/packages/3e/a0/f123ecd3f594c4e2655d3fa69b898a763e09cf7a84067b3b919f559dd945/embetter-0.3.5.tar.gz
+[2023-04-15 14:22:25] INFO root fetch - processPackages [toolkit-lennart]: Downloading https://files.pythonhosted.org/packages/3a/23/2ce9ab8eb51cf8c7f37c85b53fcbca6dbaa9680c40b8b2512b01b5ce75b7/toolkit_lennart-0.0.3.tar.gz
+[2023-04-15 14:22:25] INFO root fetch - processPackages [grgrjax]: Downloading https://files.pythonhosted.org/packages/9d/a8/85f21958709e53463edff42d8c4849feec1283ef78387cf3c5c10551d4d6/grgrjax-0.4.1.tar.gz
+[2023-04-15 14:22:25] INFO root fetch - processPackages [advancedrequests]: executing diffoscope
+[2023-04-15 14:22:25] INFO root fetch - processPackages [advancedrequests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/advancedrequests-1.0.3.tar.gz tmp/advancedrequests-1.0.4.tar.gz --markdown 20230415/a/advancedrequests/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-15 14:22:25] INFO root fetch - processPackages [streamlit-text-annotator]: executing diffoscope
+[2023-04-15 14:22:25] INFO root fetch - processPackages [streamlit-text-annotator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-text-annotator-0.1.3.tar.gz tmp/streamlit-text-annotator-0.1.4.tar.gz --markdown 20230415/s/streamlit-text-annotator/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-15 14:22:25] INFO root fetch - processPackages [pystatic-language]: Downloading https://files.pythonhosted.org/packages/cc/a5/e4354678339913084bdafe1e4e208b67f4207abdf72cf6efafaeb1e55b4f/pystatic-language-1.0.0.tar.gz
+[2023-04-15 14:22:25] INFO root fetch - processPackages [vollseg-napari-trackmate]: executing diffoscope
+[2023-04-15 14:22:25] INFO root fetch - processPackages [vollseg-napari-trackmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vollseg-napari-trackmate-2.0.8.tar.gz tmp/vollseg-napari-trackmate-2.1.0.tar.gz --markdown 20230415/v/vollseg-napari-trackmate/2.0.8-2.1.0/diff.md --exclude *.pyd
+[2023-04-15 14:22:25] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/47/89/61d9433c6c134ad0205985913d2cc7104c61d6bda59739016bb56859f452/mb_pytorch-1.0.202304151223-py3-none-any.whl
+[2023-04-15 14:22:25] INFO root fetch - processPackages [toolkit-lennart]: executing diffoscope
+[2023-04-15 14:22:25] INFO root fetch - processPackages [toolkit-lennart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolkit_lennart-0.0.2.tar.gz tmp/toolkit_lennart-0.0.3.tar.gz --markdown 20230415/t/toolkit-lennart/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 14:22:25] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-15 14:22:25] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304151214-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304151223-py3-none-any.whl.zip --markdown 20230415/m/mb-pytorch/1.0.202304151214-1.0.202304151223/diff.md --exclude *.pyd
+[2023-04-15 14:22:25] INFO root fetch - processPackages [embetter]: Downloading https://files.pythonhosted.org/packages/1c/98/a4ea5c690759d0e8a404d1d99f64f9da31c4dd234bfd89b3a7af0dbe116d/embetter-0.3.6.tar.gz
+[2023-04-15 14:22:25] INFO root fetch - processPackages [grgrjax]: Downloading https://files.pythonhosted.org/packages/75/42/b606c91b6234e3a180aa54e15678dc5c554860347a503a0b414717cdd227/grgrjax-0.4.3.tar.gz
+[2023-04-15 14:22:25] INFO root fetch - processPackages [embetter]: executing diffoscope
+[2023-04-15 14:22:25] INFO root fetch - processPackages [embetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embetter-0.3.5.tar.gz tmp/embetter-0.3.6.tar.gz --markdown 20230415/e/embetter/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-15 14:22:25] INFO root fetch - processPackages [grgrjax]: executing diffoscope
+[2023-04-15 14:22:25] INFO root fetch - processPackages [grgrjax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grgrjax-0.4.1.tar.gz tmp/grgrjax-0.4.3.tar.gz --markdown 20230415/g/grgrjax/0.4.1-0.4.3/diff.md --exclude *.pyd
+[2023-04-15 14:22:25] INFO root fetch - processPackages [pystatic-language]: Downloading https://files.pythonhosted.org/packages/07/ba/34a74415d16aeac9beff6bd540924f9cfe58625cf07c40a2b4f09b64bac6/pystatic-language-1.0.1.tar.gz
+[2023-04-15 14:22:25] INFO root fetch - processPackages [pystatic-language]: executing diffoscope
+[2023-04-15 14:22:25] INFO root fetch - processPackages [pystatic-language]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystatic-language-1.0.0.tar.gz tmp/pystatic-language-1.0.1.tar.gz --markdown 20230415/p/pystatic-language/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-15 14:22:26] INFO root fetch - main [MainThread]: End processing [streamlit-text-annotator]: success
+[2023-04-15 14:22:26] INFO root fetch - main [MainThread]: End processing [planetai]: success
+[2023-04-15 14:22:26] INFO root fetch - main [MainThread]: End processing [advancedrequests]: success
+[2023-04-15 14:22:26] INFO root fetch - main [MainThread]: End processing [toolkit-lennart]: success
+[2023-04-15 14:22:26] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2023-04-15 14:22:26] INFO root fetch - main [MainThread]: End processing [pystatic-language]: success
+[2023-04-15 14:22:26] INFO root fetch - main [MainThread]: End processing [grgrjax]: success
+[2023-04-15 14:22:26] INFO root fetch - main [MainThread]: End processing [embetter]: success
+[2023-04-15 14:22:27] INFO root fetch - main [MainThread]: End processing [vollseg-napari-trackmate]: success
+[2023-04-15 14:22:27] INFO root fetch - main [MainThread]: Store serial: [17718845]
