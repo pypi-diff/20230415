@@ -1896,3 +1896,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2023-04-15 02:48:32] INFO root fetch - main [MainThread]: End processing [pycde] error
 [2023-04-15 02:48:32] INFO root fetch - main [MainThread]: Store serial: [17714430]
+[2023-04-15 02:53:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17714430]
+[2023-04-15 02:53:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 02:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-datamodel
+[2023-04-15 02:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-databrew-cicd
+[2023-04-15 02:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioversions
+[2023-04-15 02:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ctypeslib2
+[2023-04-15 02:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: learning-apis
+[2023-04-15 02:53:38] INFO root fetch - processPackages [learning-apis]: New version: [0.2] Old Version: [0.1]
+[2023-04-15 02:53:38] INFO root fetch - processPackages [ctypeslib2]: New version: [2.3.3] Old Version: [2.3.2]
+[2023-04-15 02:53:38] INFO root fetch - processPackages [python-datamodel]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-04-15 02:53:38] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-15 02:53:38] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-04-15 02:53:39] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-04-15 02:53:39] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230415/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-04-15 02:53:39] INFO root fetch - processPackages [learning-apis]: Downloading https://files.pythonhosted.org/packages/1a/dd/047b7d7ff0594c77890f07284162a32c753f3517342cf451e262106b8488/learning-apis-0.1.tar.gz
+[2023-04-15 02:53:39] INFO root fetch - processPackages [ctypeslib2]: Downloading https://files.pythonhosted.org/packages/63/a0/f155d47895469f44ca8fe096364dc5f3bad8da2550ec618b9db59d1e699c/ctypeslib2-2.3.2.tar.gz
+[2023-04-15 02:53:39] INFO root fetch - processPackages [python-datamodel]: Downloading https://files.pythonhosted.org/packages/3b/ca/40d99dfe6a94b77225e3e58df17bf49af5d06f46571de1c3cfc0e455e94e/python_datamodel-0.2.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 02:53:39] INFO root fetch - processPackages [learning-apis]: Downloading https://files.pythonhosted.org/packages/22/bc/6890a0d0a3cc10e5a552fc6523dc8945f042ef82a932d8aefed3b7568303/learning-apis-0.2.tar.gz
+[2023-04-15 02:53:39] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-04-15 02:53:39] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230415/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-15 02:53:39] INFO root fetch - processPackages [ctypeslib2]: Downloading https://files.pythonhosted.org/packages/da/d6/dffe25ce5c699ec49ad7db2f361f1ae7eeb5fb29f6cd067efad5560fbc60/ctypeslib2-2.3.3-py3-none-any.whl
+[2023-04-15 02:53:39] INFO root fetch - processPackages [learning-apis]: executing diffoscope
+[2023-04-15 02:53:39] INFO root fetch - processPackages [learning-apis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/learning-apis-0.1.tar.gz tmp/learning-apis-0.2.tar.gz --markdown 20230415/l/learning-apis/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-15 02:53:39] INFO root fetch - processPackages [ctypeslib2]: executing diffoscope
+[2023-04-15 02:53:39] INFO root fetch - processPackages [ctypeslib2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctypeslib2-2.3.2.tar.gz tmp/ctypeslib2-2.3.3-py3-none-any.whl.zip --markdown 20230415/c/ctypeslib2/2.3.2-2.3.3/diff.md --exclude *.pyd
+[2023-04-15 02:53:39] INFO root fetch - processPackages [python-datamodel]: Downloading https://files.pythonhosted.org/packages/a9/d4/63b364d049939a30641600e9ec91510d2265fb4dcf162dc6f5dd43817226/python_datamodel-0.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 02:53:39] INFO root fetch - processPackages [python-datamodel]: executing diffoscope
+[2023-04-15 02:53:39] INFO root fetch - processPackages [python-datamodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_datamodel-0.2.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/python_datamodel-0.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230415/p/python-datamodel/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 02:53:40] INFO root fetch - processPackages [learning-apis]: Start processing: pyroscopegridding
+[2023-04-15 02:53:40] INFO root fetch - main [MainThread]: End processing [learning-apis]: success
+[2023-04-15 02:53:40] INFO root fetch - processPackages [pyroscopegridding]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-15 02:53:40] INFO root fetch - main [MainThread]: End processing [ctypeslib2]: success
+[2023-04-15 02:53:40] INFO root fetch - processPackages [pyroscopegridding]: Downloading https://files.pythonhosted.org/packages/32/ae/b724cc474ba2d267c4261c143aced33a87f13199195e1f75a3d72d44ee19/pyroscopegridding-0.1.4.tar.gz
+[2023-04-15 02:53:40] INFO root fetch - processPackages [pyroscopegridding]: Downloading https://files.pythonhosted.org/packages/e9/0a/d00789a93841e1a9f0bddf84688b3dfb0fb46c95de8a9ecaf2ff07dad32f/pyroscopegridding-0.1.5.tar.gz
+[2023-04-15 02:53:41] INFO root fetch - processPackages [pyroscopegridding]: executing diffoscope
+[2023-04-15 02:53:41] INFO root fetch - processPackages [pyroscopegridding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroscopegridding-0.1.4.tar.gz tmp/pyroscopegridding-0.1.5.tar.gz --markdown 20230415/p/pyroscopegridding/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-15 02:53:41] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-04-15 02:53:42] INFO root fetch - main [MainThread]: End processing [pyroscopegridding]: success
+[2023-04-15 02:53:54] INFO root fetch - main [MainThread]: End processing [python-datamodel]: success
+[2023-04-15 02:53:59] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2023-04-15 02:53:59] INFO root fetch - main [MainThread]: Store serial: [17714455]
