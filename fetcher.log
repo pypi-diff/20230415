@@ -15284,3 +15284,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 13:59:57] INFO root fetch - main [MainThread]: End processing [arxiv-bot]: success
 [2023-04-15 14:00:05] INFO root fetch - main [MainThread]: End processing [py-raycast-engine]: success
 [2023-04-15 14:00:05] INFO root fetch - main [MainThread]: Store serial: [17718692]
+[2023-04-15 14:05:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718692]
+[2023-04-15 14:05:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 14:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-bsor
+[2023-04-15 14:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sabledocs
+[2023-04-15 14:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: econpizza
+[2023-04-15 14:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sabledocs
+[2023-04-15 14:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qtoggleserver
+[2023-04-15 14:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mash-shell
+[2023-04-15 14:05:16] INFO root fetch - processPackages [sabledocs]: New version: [0.0.1.dev23] Old Version: [0.0.1.dev21]
+[2023-04-15 14:05:16] INFO root fetch - processPackages [py-bsor]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-15 14:05:16] INFO root fetch - processPackages [sabledocs]: New version: [0.0.1.dev23] Old Version: [0.0.1.dev21]
+[2023-04-15 14:05:16] INFO root fetch - processPackages [econpizza]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-15 14:05:16] INFO root fetch - processPackages [mash-shell]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-15 14:05:16] INFO root fetch - processPackages [qtoggleserver]: New version: [0.26.3] Old Version: [0.26.2]
+[2023-04-15 14:05:16] INFO root fetch - processPackages [mash-shell]: executing diffoscope
+[2023-04-15 14:05:16] INFO root fetch - processPackages [mash-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mash-shell-0.2.2.tar.gz tmp/mash-shell-0.2.3.tar.gz --markdown 20230415/m/mash-shell/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-15 14:05:16] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/8c/7f/37c6f2cf26f4afc0ab1e6490aeefe8591cafe1d538a90b8709537cb90096/sabledocs-0.0.1.dev21.tar.gz
+[2023-04-15 14:05:16] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/8c/7f/37c6f2cf26f4afc0ab1e6490aeefe8591cafe1d538a90b8709537cb90096/sabledocs-0.0.1.dev21.tar.gz
+[2023-04-15 14:05:16] INFO root fetch - processPackages [py-bsor]: Downloading https://files.pythonhosted.org/packages/83/24/1e41b6ebaf0b7ca301907af5c51d01579652f5facf2ffbf80c36e9703bd9/py_bsor-0.9.8.tar.gz
+[2023-04-15 14:05:16] INFO root fetch - processPackages [econpizza]: Downloading https://files.pythonhosted.org/packages/a4/11/63d4c66840fcead5717ae3774196baa8b6a24a01dffc0944a0ae663061fa/econpizza-0.5.2.tar.gz
+[2023-04-15 14:05:16] INFO root fetch - processPackages [qtoggleserver]: Downloading https://files.pythonhosted.org/packages/13/63/ac865f8c53854eac860c0e8bad34b44eaba77f632086ed99b7cb126e7c61/qtoggleserver-0.26.2.tar.gz
+[2023-04-15 14:05:16] INFO root fetch - processPackages [econpizza]: Downloading https://files.pythonhosted.org/packages/49/5e/ccedf1eebbca13f8ff4697a4755f645d82c6974195fffcfd7901e988e571/econpizza-0.5.3.tar.gz
+[2023-04-15 14:05:16] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/ff/f9/c595d4b6bf49f656907132e335bee8637db314a178174b6f42350d09845f/sabledocs-0.0.1.dev23.tar.gz
+[2023-04-15 14:05:16] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/ff/f9/c595d4b6bf49f656907132e335bee8637db314a178174b6f42350d09845f/sabledocs-0.0.1.dev23.tar.gz
+[2023-04-15 14:05:17] INFO root fetch - processPackages [py-bsor]: Downloading https://files.pythonhosted.org/packages/78/40/2a7d3253c11092bf016fcd1f658edf28ce10d380ce6990fc44337ed2a596/py_bsor-0.9.9.tar.gz
+[2023-04-15 14:05:17] INFO root fetch - processPackages [econpizza]: executing diffoscope
+[2023-04-15 14:05:17] INFO root fetch - processPackages [econpizza]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/econpizza-0.5.2.tar.gz tmp/econpizza-0.5.3.tar.gz --markdown 20230415/e/econpizza/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-15 14:05:17] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 14:05:17] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.0.1.dev21.tar.gz tmp/sabledocs-0.0.1.dev23.tar.gz --markdown 20230415/s/sabledocs/0.0.1.dev21-0.0.1.dev23/diff.md --exclude *.pyd
+[2023-04-15 14:05:17] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 14:05:17] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.0.1.dev21.tar.gz tmp/sabledocs-0.0.1.dev23.tar.gz --markdown 20230415/s/sabledocs/0.0.1.dev21-0.0.1.dev23/diff.md --exclude *.pyd
+[2023-04-15 14:05:17] INFO root fetch - processPackages [py-bsor]: executing diffoscope
+[2023-04-15 14:05:17] INFO root fetch - processPackages [py-bsor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_bsor-0.9.8.tar.gz tmp/py_bsor-0.9.9.tar.gz --markdown 20230415/p/py-bsor/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-15 14:05:17] INFO root fetch - processPackages [qtoggleserver]: Downloading https://files.pythonhosted.org/packages/19/b3/bfdc6e10adef7b114faa795dc47f985838b0bd5d62ed9f81bd8ce9c12036/qtoggleserver-0.26.3.tar.gz
+[2023-04-15 14:05:17] INFO root fetch - processPackages [qtoggleserver]: executing diffoscope
+[2023-04-15 14:05:17] INFO root fetch - processPackages [qtoggleserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtoggleserver-0.26.2.tar.gz tmp/qtoggleserver-0.26.3.tar.gz --markdown 20230415/q/qtoggleserver/0.26.2-0.26.3/diff.md --exclude *.pyd
+[2023-04-15 14:05:18] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 14:05:18] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 14:05:18] INFO root fetch - main [MainThread]: End processing [mash-shell]: success
+[2023-04-15 14:05:18] INFO root fetch - main [MainThread]: End processing [py-bsor]: success
+[2023-04-15 14:05:26] INFO root fetch - main [MainThread]: End processing [econpizza]: success
+[2023-04-15 14:06:41] INFO root fetch - main [MainThread]: End processing [qtoggleserver]: success
+[2023-04-15 14:06:41] INFO root fetch - main [MainThread]: Store serial: [17718747]
