@@ -6904,3 +6904,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 09:49:08] INFO root fetch - main [MainThread]: End processing [plone.alterego]: success
 [2023-04-15 09:49:09] INFO root fetch - main [MainThread]: End processing [plone.app.users]: success
 [2023-04-15 09:49:09] INFO root fetch - main [MainThread]: Store serial: [17717290]
+[2023-04-15 09:54:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717290]
+[2023-04-15 09:54:17] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 09:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygedcom
+[2023-04-15 09:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plone.alterego
+[2023-04-15 09:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PhanMemMMN
+[2023-04-15 09:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webp-support
+[2023-04-15 09:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oarepo
+[2023-04-15 09:54:17] INFO root fetch - processPackages [plone.alterego]: New version: [2.0.0] Old Version: [1.1.6]
+[2023-04-15 09:54:17] INFO root fetch - processPackages [pygedcom]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 09:54:17] INFO root fetch - processPackages [oarepo]: New version: [9.0.9] Old Version: [9.0.8]
+[2023-04-15 09:54:17] INFO root fetch - processPackages [webp-support]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-15 09:54:17] INFO root fetch - processPackages [PhanMemMMN]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-15 09:54:17] INFO root fetch - processPackages [PhanMemMMN]: Downloading https://files.pythonhosted.org/packages/33/d1/42f3345b06772fbe6616eb174512ad0bd042b87ccc15ec6f9ed52ca07a99/PhanMemMMN-0.0.5.tar.gz
+[2023-04-15 09:54:17] INFO root fetch - processPackages [plone.alterego]: Downloading https://files.pythonhosted.org/packages/31/ac/f0d6a7410b252f5c723eaa919366afe19283d5b0bc41dda0620033fb5f95/plone.alterego-2.0.0.tar.gz
+[2023-04-15 09:54:17] INFO root fetch - processPackages [pygedcom]: Downloading https://files.pythonhosted.org/packages/17/38/8af3c5428c02d9c63db3b7a5c4b87be73bbdaee117435474eb0ede812e44/pygedcom-0.1.6.tar.gz
+[2023-04-15 09:54:17] INFO root fetch - processPackages [webp-support]: Downloading https://files.pythonhosted.org/packages/d0/40/1968b2fdbb6de47cff9e04976ffa07689cd058eec3e96ef3db59b6e1d659/webp_support-0.2.7.tar.gz
+[2023-04-15 09:54:17] INFO root fetch - processPackages [plone.alterego]: executing diffoscope
+[2023-04-15 09:54:17] INFO root fetch - processPackages [plone.alterego]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.alterego-1.1.6.tar.gz tmp/plone.alterego-2.0.0.tar.gz --markdown 20230415/p/plone.alterego/1.1.6-2.0.0/diff.md --exclude *.pyd
+[2023-04-15 09:54:17] INFO root fetch - processPackages [oarepo]: executing diffoscope
+[2023-04-15 09:54:17] INFO root fetch - processPackages [oarepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-9.0.8.tar.gz tmp/oarepo-9.0.9.tar.gz --markdown 20230415/o/oarepo/9.0.8-9.0.9/diff.md --exclude *.pyd
+[2023-04-15 09:54:18] INFO root fetch - processPackages [pygedcom]: executing diffoscope
+[2023-04-15 09:54:18] INFO root fetch - processPackages [pygedcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygedcom-0.1.5.tar.gz tmp/pygedcom-0.1.6.tar.gz --markdown 20230415/p/pygedcom/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 09:54:18] INFO root fetch - processPackages [webp-support]: executing diffoscope
+[2023-04-15 09:54:18] INFO root fetch - processPackages [PhanMemMMN]: Downloading https://files.pythonhosted.org/packages/a9/9e/02c8fca91d9226dc700f0f27e2fff1c00dbac33c31bb4e2e2764632e66f4/PhanMemMMN-0.0.6.tar.gz
+[2023-04-15 09:54:18] INFO root fetch - processPackages [webp-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webp_support-0.2.6.tar.gz tmp/webp_support-0.2.7.tar.gz --markdown 20230415/w/webp-support/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-15 09:54:18] INFO root fetch - processPackages [PhanMemMMN]: executing diffoscope
+[2023-04-15 09:54:18] INFO root fetch - processPackages [PhanMemMMN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PhanMemMMN-0.0.5.tar.gz tmp/PhanMemMMN-0.0.6.tar.gz --markdown 20230415/P/PhanMemMMN/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-15 09:54:19] INFO root fetch - processPackages [plone.alterego]: Start processing: plone.caching
+[2023-04-15 09:54:19] INFO root fetch - main [MainThread]: End processing [plone.alterego]: success
+[2023-04-15 09:54:19] INFO root fetch - processPackages [plone.caching]: New version: [2.0.0] Old Version: [1.2.2]
+[2023-04-15 09:54:19] INFO root fetch - processPackages [webp-support]: Start processing: PhanMemMMN
+[2023-04-15 09:54:19] INFO root fetch - main [MainThread]: End processing [webp-support]: success
+[2023-04-15 09:54:19] INFO root fetch - processPackages [PhanMemMMN]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-15 09:54:19] INFO root fetch - processPackages [oarepo]: Start processing: oarepo
+[2023-04-15 09:54:19] INFO root fetch - main [MainThread]: End processing [oarepo]: success
+[2023-04-15 09:54:19] INFO root fetch - processPackages [oarepo]: New version: [9.0.9] Old Version: [9.0.8]
+[2023-04-15 09:54:19] INFO root fetch - processPackages [PhanMemMMN]: executing diffoscope
+[2023-04-15 09:54:19] INFO root fetch - processPackages [PhanMemMMN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PhanMemMMN-0.0.5.tar.gz tmp/PhanMemMMN-0.0.6.tar.gz --markdown 20230415/P/PhanMemMMN/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-15 09:54:19] INFO root fetch - processPackages [oarepo]: executing diffoscope
+[2023-04-15 09:54:19] INFO root fetch - processPackages [oarepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-9.0.8.tar.gz tmp/oarepo-9.0.9.tar.gz --markdown 20230415/o/oarepo/9.0.8-9.0.9/diff.md --exclude *.pyd
+[2023-04-15 09:54:19] INFO root fetch - processPackages [plone.caching]: Downloading https://files.pythonhosted.org/packages/bc/14/f48b33a5744e72c11071ee8680311854b1e90770401c80d6de2f42fd55f1/plone.caching-1.2.2.tar.gz
+[2023-04-15 09:54:19] INFO root fetch - processPackages [pygedcom]: Start processing: plone.app.intid
+[2023-04-15 09:54:19] INFO root fetch - main [MainThread]: End processing [pygedcom]: success
+[2023-04-15 09:54:19] INFO root fetch - processPackages [plone.app.intid]: New version: [2.0.0] Old Version: [1.1.4]
+[2023-04-15 09:54:19] INFO root fetch - main [MainThread]: End processing [PhanMemMMN]: success
+[2023-04-15 09:54:19] INFO root fetch - processPackages [plone.caching]: Downloading https://files.pythonhosted.org/packages/07/c0/2261c3b9cd359629cadabdf4b09627495e87a0e72e5b48776b5b33e908db/plone.caching-2.0.0.tar.gz
+[2023-04-15 09:54:19] INFO root fetch - processPackages [plone.app.intid]: Downloading https://files.pythonhosted.org/packages/04/37/7ed5ede8883e6b2ab6cb02aad8eca3979767ca60980a017a93595a6c4579/plone.app.intid-1.1.4.tar.gz
+[2023-04-15 09:54:19] INFO root fetch - processPackages [plone.caching]: executing diffoscope
+[2023-04-15 09:54:19] INFO root fetch - processPackages [plone.caching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.caching-1.2.2.tar.gz tmp/plone.caching-2.0.0.tar.gz --markdown 20230415/p/plone.caching/1.2.2-2.0.0/diff.md --exclude *.pyd
+[2023-04-15 09:54:19] INFO root fetch - processPackages [plone.app.intid]: Downloading https://files.pythonhosted.org/packages/34/3d/e2666ddb03d28a70792c64e0562d45baea8d3280fec3e0f54d4925b1a270/plone.app.intid-2.0.0.tar.gz
+[2023-04-15 09:54:20] INFO root fetch - processPackages [plone.app.intid]: executing diffoscope
+[2023-04-15 09:54:20] INFO root fetch - processPackages [plone.app.intid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.intid-1.1.4.tar.gz tmp/plone.app.intid-2.0.0.tar.gz --markdown 20230415/p/plone.app.intid/1.1.4-2.0.0/diff.md --exclude *.pyd
+[2023-04-15 09:54:20] INFO root fetch - main [MainThread]: End processing [PhanMemMMN]: success
+[2023-04-15 09:54:20] INFO root fetch - main [MainThread]: End processing [oarepo]: success
+[2023-04-15 09:54:20] INFO root fetch - main [MainThread]: End processing [plone.caching]: success
+[2023-04-15 09:54:21] INFO root fetch - main [MainThread]: End processing [plone.app.intid]: success
+[2023-04-15 09:54:21] INFO root fetch - main [MainThread]: Store serial: [17717331]
