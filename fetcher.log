@@ -16108,3 +16108,98 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 15:30:47] INFO root fetch - main [MainThread]: End processing [pylatexenc]: success
 [2023-04-15 15:30:47] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
 [2023-04-15 15:30:47] INFO root fetch - main [MainThread]: Store serial: [17719178]
+[2023-04-15 15:35:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719178]
+[2023-04-15 15:35:56] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-15 15:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RiskQuantLib
+[2023-04-15 15:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly-intel
+[2023-04-15 15:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gitpulse
+[2023-04-15 15:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pic-rucio
+[2023-04-15 15:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: starwhale
+[2023-04-15 15:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jeeves-shell
+[2023-04-15 15:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyQt6-Fluent-Widgets
+[2023-04-15 15:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gqt
+[2023-04-15 15:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lemonrunner
+[2023-04-15 15:35:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: xcon
+[2023-04-15 15:35:56] INFO root fetch - processPackages [pic-rucio]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-15 15:35:56] INFO root fetch - processPackages [RiskQuantLib]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-15 15:35:56] INFO root fetch - processPackages [gitpulse]: New version: [1.1] Old Version: [1.0]
+[2023-04-15 15:35:56] INFO root fetch - processPackages [jeeves-shell]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-15 15:35:56] INFO root fetch - processPackages [starwhale]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-15 15:35:56] INFO root fetch - processPackages [xcon]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-15 15:35:56] INFO root fetch - processPackages [lemonrunner]: New version: [0.3.3] Old Version: [0.2]
+[2023-04-15 15:35:56] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: New version: [0.7.0] Old Version: [0.6.9]
+[2023-04-15 15:35:57] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.13.0.dev20230414] Old Version: [2.13.0.dev20230413]
+[2023-04-15 15:35:57] INFO root fetch - processPackages [gqt]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-15 15:35:57] INFO root fetch - processPackages [gqt]: executing diffoscope
+[2023-04-15 15:35:57] INFO root fetch - processPackages [gqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqt-0.98.0.tar.gz tmp/gqt-0.99.0.tar.gz --markdown 20230415/g/gqt/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-15 15:35:57] INFO root fetch - processPackages [gitpulse]: Downloading https://files.pythonhosted.org/packages/3a/78/8d624fb2303cdb5fe343515c3635f6a330955a77583e507e006d611c45e0/gitpulse-1.0.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [RiskQuantLib]: Downloading https://files.pythonhosted.org/packages/a5/a6/a32a5034f7b3fbced25ed70738cd8931154266ea6e83fbbb00cf9f7fc62b/RiskQuantLib-0.2.7.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/42/c4/1152d436715f3fde8daf4486b6c6ac4efd15701ef10929bfe49a0b3f7236/PyQt6-Fluent-Widgets-0.6.9.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [pic-rucio]: Downloading https://files.pythonhosted.org/packages/50/9f/f53a4f0d265306eae5c13ba2a9d904a13422a76ef6e006b61842b37cfc78/pic_rucio-0.1.2-py3-none-any.whl
+[2023-04-15 15:35:57] INFO root fetch - processPackages [xcon]: Downloading https://files.pythonhosted.org/packages/67/cf/d7dcb84ccda20fd9db8eb6761703e1281af54a6a42aff43703f7cea6c320/xcon-0.4.0.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [jeeves-shell]: Downloading https://files.pythonhosted.org/packages/80/7f/7a31bac8b5889c6420712403cf4486589c30680c160e95a6660dc69c77bb/jeeves_shell-2.1.0.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/3f/6a/b79c2bd75e4a0dbe8e3fa7777ad6dac1009578c98aaeb6557d67acb7b6fd/tf_nightly_intel-2.13.0.dev20230413-cp39-cp39-win_amd64.whl
+[2023-04-15 15:35:57] INFO root fetch - processPackages [starwhale]: Downloading https://files.pythonhosted.org/packages/f1/94/5dc8056b7dcba5f9501240d7c451e2654f0d7b7dede4fd5dd98be3de0bbe/starwhale-0.4.1.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [pic-rucio]: executing diffoscope
+[2023-04-15 15:35:57] INFO root fetch - processPackages [pic-rucio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pic_rucio-0.1.1-py3-none-any.whl.zip tmp/pic_rucio-0.1.2-py3-none-any.whl.zip --markdown 20230415/p/pic-rucio/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 15:35:57] INFO root fetch - processPackages [lemonrunner]: Downloading https://files.pythonhosted.org/packages/06/4d/ee3acb3fef8c065854caa3cd230b0a891bbd7a06e2f6c194c3ec7756967d/lemonrunner-0.3.3.tar.gz
+[2023-04-15 15:35:57] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 178314560>=10485760
+[2023-04-15 15:35:57] INFO root fetch - processPackages [tf-nightly-intel]: Start processing: publicsuffixlist
+[2023-04-15 15:35:57] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2023-04-15 15:35:57] INFO root fetch - processPackages [publicsuffixlist]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-15 15:35:57] INFO root fetch - processPackages [gitpulse]: Downloading https://files.pythonhosted.org/packages/6a/ae/c0c246053ca9664c546dad8c6f2a453721d50d6e8b54f081fb6cb126f2aa/gitpulse-1.1.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [xcon]: Downloading https://files.pythonhosted.org/packages/fe/b5/2e4f959fa051ccf19c7e148894f16d0327e73ddabcb2383cb3af96c5ee95/xcon-0.4.1.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/64/e7/72c45e9baf85a00a88111c1e71431374e83e4f90e3fb8701af3ebfc7a83c/PyQt6-Fluent-Widgets-0.7.0.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [RiskQuantLib]: Downloading https://files.pythonhosted.org/packages/50/59/cabeef81e1ff1f213f5cbf49a494c741059a79a140c234910434735877e5/RiskQuantLib-0.2.8.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [lemonrunner]: executing diffoscope
+[2023-04-15 15:35:57] INFO root fetch - processPackages [lemonrunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lemonrunner-0.2.tar.gz tmp/lemonrunner-0.3.3.tar.gz --markdown 20230415/l/lemonrunner/0.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-15 15:35:57] INFO root fetch - processPackages [gitpulse]: executing diffoscope
+[2023-04-15 15:35:57] INFO root fetch - processPackages [gitpulse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitpulse-1.0.tar.gz tmp/gitpulse-1.1.tar.gz --markdown 20230415/g/gitpulse/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-15 15:35:57] INFO root fetch - processPackages [jeeves-shell]: Downloading https://files.pythonhosted.org/packages/b7/12/87bac9dac7d85a86315981b163959d24ee428c670f0f5d2bbe4e4bae7583/jeeves_shell-2.1.1.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [starwhale]: Downloading https://files.pythonhosted.org/packages/9a/17/6fae25af9f8f6754907710f39ded58157e3942d9a1e46a6927a0a9a105f7/starwhale-0.4.2.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [publicsuffixlist]: Downloading https://files.pythonhosted.org/packages/e9/d3/789ccc7b502183c3ca52f463a65a341194fd8caf884d33f4eedf4ae8f390/publicsuffixlist-0.9.3.tar.gz
+[2023-04-15 15:35:57] INFO root fetch - processPackages [RiskQuantLib]: executing diffoscope
+[2023-04-15 15:35:57] INFO root fetch - processPackages [RiskQuantLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RiskQuantLib-0.2.7.tar.gz tmp/RiskQuantLib-0.2.8.tar.gz --markdown 20230415/R/RiskQuantLib/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-15 15:35:57] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: executing diffoscope
+[2023-04-15 15:35:57] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6-Fluent-Widgets-0.6.9.tar.gz tmp/PyQt6-Fluent-Widgets-0.7.0.tar.gz --markdown 20230415/P/PyQt6-Fluent-Widgets/0.6.9-0.7.0/diff.md --exclude *.pyd
+[2023-04-15 15:35:57] INFO root fetch - processPackages [jeeves-shell]: executing diffoscope
+[2023-04-15 15:35:57] INFO root fetch - processPackages [jeeves-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeeves_shell-2.1.0.tar.gz tmp/jeeves_shell-2.1.1.tar.gz --markdown 20230415/j/jeeves-shell/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-15 15:35:57] INFO root fetch - processPackages [xcon]: executing diffoscope
+[2023-04-15 15:35:57] INFO root fetch - processPackages [xcon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcon-0.4.0.tar.gz tmp/xcon-0.4.1.tar.gz --markdown 20230415/x/xcon/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-15 15:35:57] INFO root fetch - processPackages [starwhale]: executing diffoscope
+[2023-04-15 15:35:57] INFO root fetch - processPackages [starwhale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starwhale-0.4.1.tar.gz tmp/starwhale-0.4.2.tar.gz --markdown 20230415/s/starwhale/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-15 15:35:57] INFO root fetch - processPackages [publicsuffixlist]: Downloading https://files.pythonhosted.org/packages/3c/09/9dc48e18dc8c917eb66fe2caef48273e4f55dea0f8d56f9f6a427373c08b/publicsuffixlist-0.9.4.tar.gz
+[2023-04-15 15:35:58] INFO root fetch - processPackages [publicsuffixlist]: executing diffoscope
+[2023-04-15 15:35:58] INFO root fetch - processPackages [publicsuffixlist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/publicsuffixlist-0.9.3.tar.gz tmp/publicsuffixlist-0.9.4.tar.gz --markdown 20230415/p/publicsuffixlist/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-15 15:35:58] INFO root fetch - processPackages [pic-rucio]: Start processing: digitalarztools
+[2023-04-15 15:35:58] INFO root fetch - main [MainThread]: End processing [pic-rucio]: success
+[2023-04-15 15:35:58] INFO root fetch - processPackages [digitalarztools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 15:35:58] INFO root fetch - processPackages [lemonrunner]: Start processing: so-vits-svc-fork
+[2023-04-15 15:35:58] INFO root fetch - main [MainThread]: End processing [lemonrunner]: success
+[2023-04-15 15:35:58] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.7.3] Old Version: [3.7.2]
+[2023-04-15 15:35:58] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2023-04-15 15:35:58] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.0.8.tar.gz tmp/digitalarztools-0.0.9.tar.gz --markdown 20230415/d/digitalarztools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 15:35:59] INFO root fetch - processPackages [gitpulse]: Start processing: tradingpython
+[2023-04-15 15:35:59] INFO root fetch - main [MainThread]: End processing [gitpulse]: success
+[2023-04-15 15:35:59] INFO root fetch - processPackages [gqt]: Start processing: ogs5py
+[2023-04-15 15:35:59] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/72/2e/18f233c5f7ad3a6674db20f8d05bcad28b799ff974f793fded245afa4df9/so_vits_svc_fork-3.7.3.tar.gz
+[2023-04-15 15:35:59] INFO root fetch - main [MainThread]: End processing [gqt]: success
+[2023-04-15 15:35:59] INFO root fetch - main [MainThread]: End processing [jeeves-shell]: success
+[2023-04-15 15:35:59] WARNING root fetch - processPackages [tradingpython]: Skipping, unable to determine old version
+[2023-04-15 15:35:59] INFO root fetch - main [MainThread]: End processing [tradingpython] error
+[2023-04-15 15:35:59] INFO root fetch - processPackages [ogs5py]: New version: [1.3.0] Old Version: [1.2.2]
+[2023-04-15 15:35:59] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-15 15:35:59] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.7.2.tar.gz tmp/so_vits_svc_fork-3.7.3.tar.gz --markdown 20230415/s/so-vits-svc-fork/3.7.2-3.7.3/diff.md --exclude *.pyd
+[2023-04-15 15:35:59] INFO root fetch - processPackages [ogs5py]: Downloading https://files.pythonhosted.org/packages/a4/16/d41c271fe558efbe2e1dec7d935610deae3f95c38959d6f9570e49460b75/ogs5py-1.2.2.tar.gz
+[2023-04-15 15:35:59] INFO root fetch - main [MainThread]: End processing [xcon]: success
+[2023-04-15 15:36:00] INFO root fetch - processPackages [ogs5py]: Downloading https://files.pythonhosted.org/packages/e2/b4/cbd7cd1f97832abec71f8ce7d7c7e7238bb54426896b494e3fbd07cb77bb/ogs5py-1.3.0.tar.gz
+[2023-04-15 15:36:00] INFO root fetch - main [MainThread]: End processing [RiskQuantLib]: success
+[2023-04-15 15:36:00] INFO root fetch - processPackages [ogs5py]: executing diffoscope
+[2023-04-15 15:36:00] INFO root fetch - processPackages [ogs5py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogs5py-1.2.2.tar.gz tmp/ogs5py-1.3.0.tar.gz --markdown 20230415/o/ogs5py/1.2.2-1.3.0/diff.md --exclude *.pyd
+[2023-04-15 15:36:00] INFO root fetch - main [MainThread]: End processing [publicsuffixlist]: success
+[2023-04-15 15:36:00] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2023-04-15 15:36:00] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-15 15:36:01] INFO root fetch - main [MainThread]: End processing [PyQt6-Fluent-Widgets]: success
+[2023-04-15 15:36:01] INFO root fetch - main [MainThread]: End processing [ogs5py]: success
+[2023-04-15 15:36:03] INFO root fetch - main [MainThread]: End processing [starwhale]: success
+[2023-04-15 15:36:03] INFO root fetch - main [MainThread]: Store serial: [17719224]
