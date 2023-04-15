@@ -5649,3 +5649,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 07:25:04] INFO root fetch - main [MainThread]: End processing [odoo13-addon-mgmtsystem-hazard-risk]: success
 [2023-04-15 07:25:04] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mgmtsystem-hazard-risk]: success
 [2023-04-15 07:25:04] INFO root fetch - main [MainThread]: Store serial: [17716642]
+[2023-04-15 07:30:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716642]
+[2023-04-15 07:30:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-15 07:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: idealgeo
+[2023-04-15 07:30:12] INFO root fetch - processPackages [idealgeo]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 07:30:12] INFO root fetch - processPackages [idealgeo]: Downloading https://files.pythonhosted.org/packages/41/e7/0e383c6ce542964d931aac6ec9d467bed70002b4ec74f376cf9b25d34ccf/idealgeo-0.0.4.tar.gz
+[2023-04-15 07:30:12] INFO root fetch - processPackages [idealgeo]: executing diffoscope
+[2023-04-15 07:30:12] INFO root fetch - processPackages [idealgeo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idealgeo-0.0.3.tar.gz tmp/idealgeo-0.0.4.tar.gz --markdown 20230415/i/idealgeo/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 07:30:14] INFO root fetch - main [MainThread]: End processing [idealgeo]: success
+[2023-04-15 07:30:14] INFO root fetch - main [MainThread]: Store serial: [17716645]
