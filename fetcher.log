@@ -19326,3 +19326,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 21:14:31] INFO root fetch - main [MainThread]: End processing [prunerr]: success
 [2023-04-15 21:14:46] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
 [2023-04-15 21:14:46] INFO root fetch - main [MainThread]: Store serial: [17721282]
+[2023-04-15 21:19:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721282]
+[2023-04-15 21:19:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 21:19:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nlptoolssna
+[2023-04-15 21:19:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: developergpt
+[2023-04-15 21:19:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: polars-u64-idx
+[2023-04-15 21:19:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: psd-export
+[2023-04-15 21:19:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nlptoolssna
+[2023-04-15 21:19:57] WARNING root fetch - processPackages [psd-export]: Skipping, unable to determine old version
+[2023-04-15 21:19:57] INFO root fetch - main [MainThread]: End processing [psd-export] error
+[2023-04-15 21:19:57] INFO root fetch - processPackages [nlptoolssna]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 21:19:57] INFO root fetch - processPackages [nlptoolssna]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 21:19:57] INFO root fetch - processPackages [developergpt]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-15 21:19:57] INFO root fetch - processPackages [polars-u64-idx]: New version: [0.17.3] Old Version: [0.17.2]
+[2023-04-15 21:19:57] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/a2/ae/30c52df450cf376018681cc6ebe3ee033e931b475bb9126262be8caa038f/nlptoolssna-0.1.5.tar.gz
+[2023-04-15 21:19:57] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/a2/ae/30c52df450cf376018681cc6ebe3ee033e931b475bb9126262be8caa038f/nlptoolssna-0.1.5.tar.gz
+[2023-04-15 21:19:57] INFO root fetch - processPackages [polars-u64-idx]: Downloading https://files.pythonhosted.org/packages/99/65/89c60166f65f2cc50fd9045f9c3b5fceb458e4b7f4a5a0c08a20c79ae1cd/polars_u64_idx-0.17.2.tar.gz
+[2023-04-15 21:19:58] INFO root fetch - processPackages [developergpt]: Downloading https://files.pythonhosted.org/packages/96/6a/57157ceb613066f59f5463f956ce70b2c6923bd7e2b06cc8ce2796f85612/developergpt-0.1.7.tar.gz
+[2023-04-15 21:19:58] INFO root fetch - processPackages [developergpt]: executing diffoscope
+[2023-04-15 21:19:58] INFO root fetch - processPackages [developergpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/developergpt-0.1.6.tar.gz tmp/developergpt-0.1.7.tar.gz --markdown 20230415/d/developergpt/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-15 21:19:58] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/65/fe/a0b49bf07a278706d166d5a89b175b39dfcdb0ed3bead507c0db27af1e34/nlptoolssna-0.1.6.tar.gz
+[2023-04-15 21:19:58] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/65/fe/a0b49bf07a278706d166d5a89b175b39dfcdb0ed3bead507c0db27af1e34/nlptoolssna-0.1.6.tar.gz
+[2023-04-15 21:19:58] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-15 21:19:58] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.1.5.tar.gz tmp/nlptoolssna-0.1.6.tar.gz --markdown 20230415/n/nlptoolssna/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 21:19:58] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-15 21:19:58] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.1.5.tar.gz tmp/nlptoolssna-0.1.6.tar.gz --markdown 20230415/n/nlptoolssna/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 21:19:58] INFO root fetch - processPackages [polars-u64-idx]: Downloading https://files.pythonhosted.org/packages/c4/5f/77646c5fbddf1ab68bbfc72d3d2317f9cf1ceb1772cfea132964bb6d4ca3/polars_u64_idx-0.17.3.tar.gz
+[2023-04-15 21:19:58] INFO root fetch - processPackages [polars-u64-idx]: executing diffoscope
+[2023-04-15 21:19:58] INFO root fetch - processPackages [polars-u64-idx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_u64_idx-0.17.2.tar.gz tmp/polars_u64_idx-0.17.3.tar.gz --markdown 20230415/p/polars-u64-idx/0.17.2-0.17.3/diff.md --exclude *.pyd
+[2023-04-15 21:19:59] INFO root fetch - main [MainThread]: End processing [developergpt]: success
+[2023-04-15 21:19:59] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-15 21:19:59] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-15 21:20:19] INFO root fetch - main [MainThread]: End processing [polars-u64-idx]: success
+[2023-04-15 21:20:19] INFO root fetch - main [MainThread]: Store serial: [17721306]
