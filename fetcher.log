@@ -4159,3 +4159,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 03:56:22] INFO root fetch - main [MainThread]: End processing [docassemble.webapp]: success
 [2023-04-15 03:58:25] INFO root fetch - main [MainThread]: End processing [viser]: success
 [2023-04-15 03:58:25] INFO root fetch - main [MainThread]: Store serial: [17715776]
+[2023-04-15 04:03:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715776]
+[2023-04-15 04:03:32] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 04:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyautosrt
+[2023-04-15 04:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: live-transcribe
+[2023-04-15 04:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-conventional-commits
+[2023-04-15 04:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: so-vits-svc-fork
+[2023-04-15 04:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbrief
+[2023-04-15 04:03:32] INFO root fetch - processPackages [pyautosrt]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 04:03:32] WARNING root fetch - processPackages [py-conventional-commits]: Skipping, unable to determine old version
+[2023-04-15 04:03:32] INFO root fetch - processPackages [py-conventional-commits]: Start processing: live-transcribe
+[2023-04-15 04:03:32] INFO root fetch - main [MainThread]: End processing [py-conventional-commits] error
+[2023-04-15 04:03:32] INFO root fetch - processPackages [dbrief]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-15 04:03:32] INFO root fetch - processPackages [live-transcribe]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-15 04:03:32] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.7.2] Old Version: [3.7.1]
+[2023-04-15 04:03:32] INFO root fetch - processPackages [live-transcribe]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-15 04:03:32] INFO root fetch - processPackages [live-transcribe]: Downloading https://files.pythonhosted.org/packages/89/ff/9165c032be8e4c50ebfd65b77c08ffb5bd012b2beb8338d66faeb7035df9/live-transcribe-0.1.1.tar.gz
+[2023-04-15 04:03:32] INFO root fetch - processPackages [live-transcribe]: Downloading https://files.pythonhosted.org/packages/89/ff/9165c032be8e4c50ebfd65b77c08ffb5bd012b2beb8338d66faeb7035df9/live-transcribe-0.1.1.tar.gz
+[2023-04-15 04:03:32] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/8a/5d/0597799d7c42b3921c48688b76e0019fe40a88b065d6bac0be91e4ca16c3/so_vits_svc_fork-3.7.2.tar.gz
+[2023-04-15 04:03:32] INFO root fetch - processPackages [dbrief]: Downloading https://files.pythonhosted.org/packages/12/59/3ccee17aaf4733aa0c269c072f2226fa8ffa51e5b623d6177d7d1113d868/dbrief-0.1.1.tar.gz
+[2023-04-15 04:03:32] INFO root fetch - processPackages [pyautosrt]: Downloading https://files.pythonhosted.org/packages/bf/94/c5dcf9570bd1f9019357cdd8214a39089154a544c17dd597b95c00c55a5d/pyautosrt-0.1.6.tar.gz
+[2023-04-15 04:03:33] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-15 04:03:33] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.7.1.tar.gz tmp/so_vits_svc_fork-3.7.2.tar.gz --markdown 20230415/s/so-vits-svc-fork/3.7.1-3.7.2/diff.md --exclude *.pyd
+[2023-04-15 04:03:33] INFO root fetch - processPackages [dbrief]: Downloading https://files.pythonhosted.org/packages/08/8d/004c1c8ab9108a3b913ccb2d18f30d7f7ea7ac2d907b337c1ba55030a750/dbrief-0.1.2.tar.gz
+[2023-04-15 04:03:33] INFO root fetch - processPackages [live-transcribe]: Downloading https://files.pythonhosted.org/packages/9f/d4/1468202f60027247455424f1aada2d45d9493c0a861b12be4153aa545abb/live-transcribe-0.1.2.tar.gz
+[2023-04-15 04:03:33] INFO root fetch - processPackages [live-transcribe]: Downloading https://files.pythonhosted.org/packages/9f/d4/1468202f60027247455424f1aada2d45d9493c0a861b12be4153aa545abb/live-transcribe-0.1.2.tar.gz
+[2023-04-15 04:03:33] INFO root fetch - processPackages [pyautosrt]: executing diffoscope
+[2023-04-15 04:03:33] INFO root fetch - processPackages [pyautosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyautosrt-0.1.5.tar.gz tmp/pyautosrt-0.1.6.tar.gz --markdown 20230415/p/pyautosrt/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 04:03:33] INFO root fetch - processPackages [dbrief]: executing diffoscope
+[2023-04-15 04:03:33] INFO root fetch - processPackages [dbrief]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbrief-0.1.1.tar.gz tmp/dbrief-0.1.2.tar.gz --markdown 20230415/d/dbrief/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 04:03:33] INFO root fetch - processPackages [live-transcribe]: executing diffoscope
+[2023-04-15 04:03:33] INFO root fetch - processPackages [live-transcribe]: executing diffoscope
+[2023-04-15 04:03:33] INFO root fetch - processPackages [live-transcribe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/live-transcribe-0.1.1.tar.gz tmp/live-transcribe-0.1.2.tar.gz --markdown 20230415/l/live-transcribe/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 04:03:33] INFO root fetch - processPackages [live-transcribe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/live-transcribe-0.1.1.tar.gz tmp/live-transcribe-0.1.2.tar.gz --markdown 20230415/l/live-transcribe/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 04:03:34] INFO root fetch - processPackages [pyautosrt]: Start processing: adsb-tools
+[2023-04-15 04:03:34] INFO root fetch - main [MainThread]: End processing [pyautosrt]: success
+[2023-04-15 04:03:34] INFO root fetch - processPackages [adsb-tools]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 04:03:34] INFO root fetch - processPackages [adsb-tools]: executing diffoscope
+[2023-04-15 04:03:34] INFO root fetch - processPackages [adsb-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adsb_tools-0.1.8.tar.gz tmp/adsb_tools-0.1.9.tar.gz --markdown 20230415/a/adsb-tools/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 04:03:34] INFO root fetch - processPackages [dbrief]: Start processing: ovos-listener
+[2023-04-15 04:03:34] INFO root fetch - main [MainThread]: End processing [dbrief]: success
+[2023-04-15 04:03:34] INFO root fetch - processPackages [ovos-listener]: New version: [0.0.2a7] Old Version: [0.0.2a6]
+[2023-04-15 04:03:34] INFO root fetch - processPackages [live-transcribe]: Start processing: pyroscopegridding
+[2023-04-15 04:03:34] INFO root fetch - main [MainThread]: End processing [live-transcribe]: success
+[2023-04-15 04:03:34] INFO root fetch - processPackages [pyroscopegridding]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-15 04:03:34] INFO root fetch - processPackages [ovos-listener]: Downloading https://files.pythonhosted.org/packages/5d/1b/d6a4ca1947c009df5b68fd309e770c0fb23796bd960a43620d2f147389b2/ovos_listener-0.0.2a6-py3-none-any.whl
+[2023-04-15 04:03:34] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-15 04:03:34] INFO root fetch - main [MainThread]: End processing [live-transcribe]: success
+[2023-04-15 04:03:34] INFO root fetch - processPackages [pyroscopegridding]: Downloading https://files.pythonhosted.org/packages/ae/ef/533f083efbfadb346c5a1eeb7199575db815d59089826957a0ebac4c971a/pyroscopegridding-0.2.2.tar.gz
+[2023-04-15 04:03:34] INFO root fetch - processPackages [ovos-listener]: Downloading https://files.pythonhosted.org/packages/6c/70/06e238651f04d254bad9a68d5b414f1ee1f5df582ce3d41b5e49f157dee8/ovos_listener-0.0.2a7-py3-none-any.whl
+[2023-04-15 04:03:34] INFO root fetch - processPackages [pyroscopegridding]: executing diffoscope
+[2023-04-15 04:03:34] INFO root fetch - processPackages [pyroscopegridding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroscopegridding-0.2.1.tar.gz tmp/pyroscopegridding-0.2.2.tar.gz --markdown 20230415/p/pyroscopegridding/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-15 04:03:35] INFO root fetch - processPackages [ovos-listener]: executing diffoscope
+[2023-04-15 04:03:35] INFO root fetch - processPackages [ovos-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_listener-0.0.2a6-py3-none-any.whl.zip tmp/ovos_listener-0.0.2a7-py3-none-any.whl.zip --markdown 20230415/o/ovos-listener/0.0.2a6-0.0.2a7/diff.md --exclude *.pyd
+[2023-04-15 04:03:35] INFO root fetch - main [MainThread]: End processing [adsb-tools]: success
+[2023-04-15 04:03:36] INFO root fetch - main [MainThread]: End processing [ovos-listener]: success
+[2023-04-15 04:03:36] INFO root fetch - main [MainThread]: End processing [pyroscopegridding]: success
+[2023-04-15 04:03:36] INFO root fetch - main [MainThread]: Store serial: [17715803]
