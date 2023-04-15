@@ -14365,3 +14365,64 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 12:20:31] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
 [2023-04-15 12:20:33] INFO root fetch - main [MainThread]: End processing [PyroFork-dev]: success
 [2023-04-15 12:20:33] INFO root fetch - main [MainThread]: Store serial: [17718111]
+[2023-04-15 12:25:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718111]
+[2023-04-15 12:25:42] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-15 12:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bagua-cuda115
+[2023-04-15 12:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mini-python
+[2023-04-15 12:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: credentials-manager-client
+[2023-04-15 12:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyroFork
+[2023-04-15 12:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: likeprocessing
+[2023-04-15 12:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tmt
+[2023-04-15 12:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: anim
+[2023-04-15 12:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: explainaboard-api-client
+[2023-04-15 12:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vctoolkit
+[2023-04-15 12:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: logicgateeso
+[2023-04-15 12:25:42] WARNING root fetch - processPackages [mini-python]: Skipping, unable to determine old version
+[2023-04-15 12:25:42] INFO root fetch - main [MainThread]: End processing [mini-python] error
+[2023-04-15 12:25:42] INFO root fetch - processPackages [bagua-cuda115]: New version: [0.9.3.dev4] Old Version: [0.9.3.dev3]
+[2023-04-15 12:25:42] INFO root fetch - processPackages [likeprocessing]: New version: [0.1.7.2.4] Old Version: [0.1.7.2.3]
+[2023-04-15 12:25:42] INFO root fetch - processPackages [PyroFork]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-04-15 12:25:42] INFO root fetch - processPackages [anim]: New version: [0.1.20] Old Version: [0.1.19]
+[2023-04-15 12:25:42] INFO root fetch - processPackages [credentials-manager-client]: New version: [0.1a0] Old Version: [0.0.1]
+[2023-04-15 12:25:42] INFO root fetch - processPackages [vctoolkit]: New version: [0.1.9.9] Old Version: [0.1.9.8]
+[2023-04-15 12:25:42] INFO root fetch - processPackages [explainaboard-api-client]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-15 12:25:42] INFO root fetch - processPackages [tmt]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-15 12:25:42] WARNING root fetch - processPackages [logicgateeso]: Skipping, unable to determine old version
+[2023-04-15 12:25:42] INFO root fetch - main [MainThread]: End processing [logicgateeso] error
+[2023-04-15 12:25:42] INFO root fetch - processPackages [bagua-cuda115]: Downloading https://files.pythonhosted.org/packages/fc/cd/567d9a7b8d5d4af516c0f5f232dc4d42f05c99bd704f2dd007a67bd8c788/bagua_cuda115-0.9.3.dev3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 12:25:42] INFO root fetch - processPackages [likeprocessing]: Downloading https://files.pythonhosted.org/packages/24/49/d2e6c28a450356510bd75a714b2c1019cdfe63f30beddbb56c1e4fd14e25/likeprocessing-0.1.7.2.3.tar.gz
+[2023-04-15 12:25:42] INFO root fetch - processPackages [PyroFork]: Downloading https://files.pythonhosted.org/packages/f3/f5/8826680a382cb3bb49d5023ee112e71133683c9b01d43870c62ba8696e1e/PyroFork-2.1.5.tar.gz
+[2023-04-15 12:25:42] INFO root fetch - processPackages [credentials-manager-client]: Downloading https://files.pythonhosted.org/packages/49/5c/9b4538f4e40cfbb6ada71a75d952a0333dc6038d8114c7adbcf04e26235a/credentials-manager-client-0.0.1.tar.gz
+[2023-04-15 12:25:42] INFO root fetch - processPackages [anim]: Downloading https://files.pythonhosted.org/packages/0e/5b/3d0d141e4a044af6dd62bfbca303bf5715dbca032da31f3391be3b65cad4/anim-0.1.19-py3-none-any.whl
+[2023-04-15 12:25:42] INFO root fetch - processPackages [tmt]: Downloading https://files.pythonhosted.org/packages/5f/7e/f7e9241769799015dcbae5d8845176dd3e9421cdd2542f620fb0dd918e09/tmt-1.8.0-py3-none-any.whl
+[2023-04-15 12:25:42] INFO root fetch - processPackages [explainaboard-api-client]: Downloading https://files.pythonhosted.org/packages/66/bf/25a7f51015acf2f7a08a375a4866a9fd8072fa7be83b46ecea06f0b41e09/explainaboard-api-client-0.4.1.tar.gz
+[2023-04-15 12:25:43] WARNING root fetch - processPackages [bagua-cuda115]: Skipping package: exceeds size limit 18866849>=10485760
+[2023-04-15 12:25:43] INFO root fetch - main [MainThread]: End processing [bagua-cuda115] error
+[2023-04-15 12:25:43] INFO root fetch - processPackages [vctoolkit]: executing diffoscope
+[2023-04-15 12:25:43] INFO root fetch - processPackages [vctoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vctoolkit-0.1.9.8.tar.gz tmp/vctoolkit-0.1.9.9.tar.gz --markdown 20230415/v/vctoolkit/0.1.9.8-0.1.9.9/diff.md --exclude *.pyd
+[2023-04-15 12:25:43] INFO root fetch - processPackages [PyroFork]: Downloading https://files.pythonhosted.org/packages/40/ab/da57f04694551bb84e46de19413b94ddddadb7a1d0addc09bfbdf1483f27/PyroFork-2.1.6.tar.gz
+[2023-04-15 12:25:43] INFO root fetch - processPackages [explainaboard-api-client]: Downloading https://files.pythonhosted.org/packages/25/4f/a874bba792e521315b7d2055cff9886f52fe54d3682a7e3bf51256a008be/explainaboard-api-client-0.4.2.tar.gz
+[2023-04-15 12:25:43] INFO root fetch - processPackages [credentials-manager-client]: Downloading https://files.pythonhosted.org/packages/f0/d4/babf3679893b572227ac7d88927105c85a9030a6a0f523671d806284c8bb/credentials_manager_client-0.1a-.tar.gz
+[2023-04-15 12:25:43] INFO root fetch - processPackages [likeprocessing]: Downloading https://files.pythonhosted.org/packages/54/03/341c7d687757532d798e4aedcb82df1e29703d8bb66eade40f1e1f543328/likeprocessing-0.1.7.2.4.tar.gz
+[2023-04-15 12:25:43] INFO root fetch - processPackages [anim]: Downloading https://files.pythonhosted.org/packages/d8/8a/6c8e9fb45a6240aa08fd767612b3c0da8c3810f2cc47f07ab5ba9516c46a/anim-0.1.20-py3-none-any.whl
+[2023-04-15 12:25:43] INFO root fetch - processPackages [PyroFork]: executing diffoscope
+[2023-04-15 12:25:43] INFO root fetch - processPackages [PyroFork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-2.1.5.tar.gz tmp/PyroFork-2.1.6.tar.gz --markdown 20230415/P/PyroFork/2.1.5-2.1.6/diff.md --exclude *.pyd
+[2023-04-15 12:25:43] INFO root fetch - processPackages [credentials-manager-client]: executing diffoscope
+[2023-04-15 12:25:43] INFO root fetch - processPackages [credentials-manager-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/credentials-manager-client-0.0.1.tar.gz tmp/credentials_manager_client-0.1a-.tar.gz --markdown 20230415/c/credentials-manager-client/0.0.1-0.1a0/diff.md --exclude *.pyd
+[2023-04-15 12:25:43] INFO root fetch - processPackages [anim]: executing diffoscope
+[2023-04-15 12:25:43] INFO root fetch - processPackages [anim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anim-0.1.19-py3-none-any.whl.zip tmp/anim-0.1.20-py3-none-any.whl.zip --markdown 20230415/a/anim/0.1.19-0.1.20/diff.md --exclude *.pyd
+[2023-04-15 12:25:43] INFO root fetch - processPackages [explainaboard-api-client]: executing diffoscope
+[2023-04-15 12:25:43] INFO root fetch - processPackages [explainaboard-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/explainaboard-api-client-0.4.1.tar.gz tmp/explainaboard-api-client-0.4.2.tar.gz --markdown 20230415/e/explainaboard-api-client/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-15 12:25:43] INFO root fetch - processPackages [likeprocessing]: executing diffoscope
+[2023-04-15 12:25:43] INFO root fetch - processPackages [likeprocessing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/likeprocessing-0.1.7.2.3.tar.gz tmp/likeprocessing-0.1.7.2.4.tar.gz --markdown 20230415/l/likeprocessing/0.1.7.2.3-0.1.7.2.4/diff.md --exclude *.pyd
+[2023-04-15 12:25:43] INFO root fetch - processPackages [tmt]: Downloading https://files.pythonhosted.org/packages/cb/c2/6437879ae74d655601098cb95fb0fabbb0f572238944ba0d0dd91fd25c7d/tmt-1.9.0-py3-none-any.whl
+[2023-04-15 12:25:44] INFO root fetch - processPackages [tmt]: executing diffoscope
+[2023-04-15 12:25:44] INFO root fetch - processPackages [tmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmt-1.8.0-py3-none-any.whl.zip tmp/tmt-1.9.0-py3-none-any.whl.zip --markdown 20230415/t/tmt/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-15 12:25:44] INFO root fetch - main [MainThread]: End processing [vctoolkit]: success
+[2023-04-15 12:25:44] INFO root fetch - main [MainThread]: End processing [credentials-manager-client]: success
+[2023-04-15 12:25:44] INFO root fetch - main [MainThread]: End processing [anim]: success
+[2023-04-15 12:25:44] INFO root fetch - main [MainThread]: End processing [likeprocessing]: success
+[2023-04-15 12:25:45] INFO root fetch - main [MainThread]: End processing [tmt]: success
+[2023-04-15 12:25:48] INFO root fetch - main [MainThread]: End processing [PyroFork]: success
+[2023-04-15 12:25:48] INFO root fetch - main [MainThread]: End processing [explainaboard-api-client]: success
+[2023-04-15 12:25:48] INFO root fetch - main [MainThread]: Store serial: [17718142]
