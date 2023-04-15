@@ -19265,3 +19265,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 21:04:03] INFO root fetch - main [MainThread]: End processing [mkdocs-terminal]: success
 [2023-04-15 21:04:03] INFO root fetch - main [MainThread]: End processing [kosis]: success
 [2023-04-15 21:04:03] INFO root fetch - main [MainThread]: Store serial: [17721252]
+[2023-04-15 21:09:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721252]
+[2023-04-15 21:09:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-15 21:09:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: typing-result
+[2023-04-15 21:09:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nlptoolssna
+[2023-04-15 21:09:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: search-algos
+[2023-04-15 21:09:13] INFO root fetch - processPackages [typing-result]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 21:09:14] INFO root fetch - processPackages [nlptoolssna]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-15 21:09:14] WARNING root fetch - processPackages [search-algos]: Skipping, unable to determine old version
+[2023-04-15 21:09:14] INFO root fetch - main [MainThread]: End processing [search-algos] error
+[2023-04-15 21:09:14] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-15 21:09:14] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.1.2.tar.gz tmp/nlptoolssna-0.1.3.tar.gz --markdown 20230415/n/nlptoolssna/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-15 21:09:14] INFO root fetch - processPackages [typing-result]: Downloading https://files.pythonhosted.org/packages/26/b8/15599bc47815b67f13a7237f61fe3547346d26653db46975e578aa12b698/typing_result-0.1.0.tar.gz
+[2023-04-15 21:09:14] INFO root fetch - processPackages [typing-result]: Downloading https://files.pythonhosted.org/packages/1a/ad/06d442ba37be4687e781c413369e81f4bcf85f968b7d950cf79e01604884/typing_result-0.1.1.tar.gz
+[2023-04-15 21:09:14] INFO root fetch - processPackages [typing-result]: executing diffoscope
+[2023-04-15 21:09:14] INFO root fetch - processPackages [typing-result]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typing_result-0.1.0.tar.gz tmp/typing_result-0.1.1.tar.gz --markdown 20230415/t/typing-result/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 21:09:15] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-15 21:09:15] INFO root fetch - main [MainThread]: End processing [typing-result]: success
+[2023-04-15 21:09:15] INFO root fetch - main [MainThread]: Store serial: [17721264]
