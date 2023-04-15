@@ -19598,3 +19598,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 21:47:17] INFO root fetch - main [MainThread]: End processing [PyICU]: success
 [2023-04-15 21:47:17] INFO root fetch - main [MainThread]: End processing [skyalmanac]: success
 [2023-04-15 21:47:17] INFO root fetch - main [MainThread]: Store serial: [17721520]
+[2023-04-15 21:52:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721520]
+[2023-04-15 21:52:27] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-15 21:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multi-cloud-utils
+[2023-04-15 21:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wheel-axle-runtime
+[2023-04-15 21:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: searchlix
+[2023-04-15 21:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ssss
+[2023-04-15 21:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyglotaran-extras
+[2023-04-15 21:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wheel-axle-runtime
+[2023-04-15 21:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyLSV2
+[2023-04-15 21:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: wheel-axle
+[2023-04-15 21:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: onvif-zeep-async
+[2023-04-15 21:52:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: microt-preprocessing
+[2023-04-15 21:52:27] WARNING root fetch - processPackages [multi-cloud-utils]: Skipping, unable to determine old version
+[2023-04-15 21:52:27] INFO root fetch - processPackages [multi-cloud-utils]: Start processing: awc
+[2023-04-15 21:52:27] INFO root fetch - main [MainThread]: End processing [multi-cloud-utils] error
+[2023-04-15 21:52:27] INFO root fetch - processPackages [searchlix]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle-runtime]: New version: [0.0.4.dev20230415195356] Old Version: [0.0.4.dev20230415195042]
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle]: New version: [0.0.6.dev20230415195445] Old Version: [0.0.6.dev20230415194546]
+[2023-04-15 21:52:27] INFO root fetch - processPackages [pyglotaran-extras]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-15 21:52:27] INFO root fetch - processPackages [pyLSV2]: New version: [1.1.2] Old Version: [1.1.0]
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle-runtime]: New version: [0.0.4.dev20230415195356] Old Version: [0.0.4.dev20230415195042]
+[2023-04-15 21:52:27] INFO root fetch - processPackages [onvif-zeep-async]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-04-15 21:52:27] WARNING root fetch - processPackages [ssss]: Skipping, unable to determine old version
+[2023-04-15 21:52:27] INFO root fetch - processPackages [ssss]: Start processing: owl-on-fhir
+[2023-04-15 21:52:27] INFO root fetch - processPackages [microt-preprocessing]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 21:52:27] INFO root fetch - main [MainThread]: End processing [ssss] error
+[2023-04-15 21:52:27] INFO root fetch - processPackages [awc]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-15 21:52:27] INFO root fetch - processPackages [owl-on-fhir]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 21:52:27] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-04-15 21:52:27] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-1.2.6.tar.gz tmp/onvif-zeep-async-1.2.7.tar.gz --markdown 20230415/o/onvif-zeep-async/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-04-15 21:52:27] INFO root fetch - processPackages [awc]: executing diffoscope
+[2023-04-15 21:52:27] INFO root fetch - processPackages [awc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awc-1.2.1-py2.py3-none-any.whl.zip tmp/awc-1.2.2-py2.py3-none-any.whl.zip --markdown 20230415/a/awc/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-15 21:52:27] INFO root fetch - processPackages [microt-preprocessing]: executing diffoscope
+[2023-04-15 21:52:27] INFO root fetch - processPackages [microt-preprocessing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microt_preprocessing-0.1.8.tar.gz tmp/microt_preprocessing-0.1.9.tar.gz --markdown 20230415/m/microt-preprocessing/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle-runtime]: Downloading https://files.pythonhosted.org/packages/76/ef/e2d106fa4165616554f9f013085774dcf88e346705bcd3134d1bdcb1e361/wheel-axle-runtime-0.0.4.dev20230415195042.tar.gz
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle-runtime]: Downloading https://files.pythonhosted.org/packages/76/ef/e2d106fa4165616554f9f013085774dcf88e346705bcd3134d1bdcb1e361/wheel-axle-runtime-0.0.4.dev20230415195042.tar.gz
+[2023-04-15 21:52:27] INFO root fetch - processPackages [searchlix]: Downloading https://files.pythonhosted.org/packages/c2/f8/494b840858c0f3fd13abbdcd340b57e5b3061a07e8c8e89b33842fe8db1c/searchlix-1.0.5.tar.gz
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle]: Downloading https://files.pythonhosted.org/packages/0e/95/8254517678ecb8c9e3aa6130801340bf5491e9b8d5a20655a0526e0da38c/wheel_axle-0.0.6.dev20230415195445.tar.gz
+[2023-04-15 21:52:27] INFO root fetch - processPackages [pyLSV2]: Downloading https://files.pythonhosted.org/packages/db/3e/ad42264019c015027de3f59187670e404235f48f54284403e0a6d2520174/pyLSV2-1.1.0.tar.gz
+[2023-04-15 21:52:27] INFO root fetch - processPackages [pyglotaran-extras]: Downloading https://files.pythonhosted.org/packages/a9/f3/accc334421213310ce2f3050669103f90e3715ed126ea1577439a9bf57c3/pyglotaran_extras-0.6.0.tar.gz
+[2023-04-15 21:52:27] INFO root fetch - processPackages [searchlix]: executing diffoscope
+[2023-04-15 21:52:27] INFO root fetch - processPackages [searchlix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchlix-1.0.4.tar.gz tmp/searchlix-1.0.5.tar.gz --markdown 20230415/s/searchlix/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-15 21:52:27] INFO root fetch - processPackages [owl-on-fhir]: Downloading https://files.pythonhosted.org/packages/23/00/3e6d0545f91891b4acdb92f54fdf7252682cae3d0844a35319c65b5e13a5/owl-on-fhir-0.1.8.tar.gz
+[2023-04-15 21:52:27] WARNING root fetch - processPackages [owl-on-fhir]: Skipping package: exceeds size limit 71919209>=10485760
+[2023-04-15 21:52:27] INFO root fetch - main [MainThread]: End processing [owl-on-fhir] error
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle]: executing diffoscope
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheel_axle-0.0.6.dev20230415194546.tar.gz tmp/wheel_axle-0.0.6.dev20230415195445.tar.gz --markdown 20230415/w/wheel-axle/0.0.6.dev20230415194546-0.0.6.dev20230415195445/diff.md --exclude *.pyd
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle-runtime]: Downloading https://files.pythonhosted.org/packages/80/cb/d1f8ac45eebd3b5ba53b391041965a4d5871d4c6bfe475f16de9388c6c92/wheel-axle-runtime-0.0.4.dev20230415195356.tar.gz
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle-runtime]: Downloading https://files.pythonhosted.org/packages/80/cb/d1f8ac45eebd3b5ba53b391041965a4d5871d4c6bfe475f16de9388c6c92/wheel-axle-runtime-0.0.4.dev20230415195356.tar.gz
+[2023-04-15 21:52:27] INFO root fetch - processPackages [pyLSV2]: Downloading https://files.pythonhosted.org/packages/11/a3/b15b8b4675af1fba651a22c838f2de18955040b28895082b720344412b6f/pyLSV2-1.1.2.tar.gz
+[2023-04-15 21:52:27] INFO root fetch - processPackages [pyglotaran-extras]: Downloading https://files.pythonhosted.org/packages/2d/80/8c01ae0dcba75d183d324562d5e91842b73e81e5ab5c01c7bffcc9fee6c8/pyglotaran_extras-0.7.0.tar.gz
+[2023-04-15 21:52:27] INFO root fetch - processPackages [pyLSV2]: executing diffoscope
+[2023-04-15 21:52:27] INFO root fetch - processPackages [pyLSV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyLSV2-1.1.0.tar.gz tmp/pyLSV2-1.1.2.tar.gz --markdown 20230415/p/pyLSV2/1.1.0-1.1.2/diff.md --exclude *.pyd
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle-runtime]: executing diffoscope
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheel-axle-runtime-0.0.4.dev20230415195042.tar.gz tmp/wheel-axle-runtime-0.0.4.dev20230415195356.tar.gz --markdown 20230415/w/wheel-axle-runtime/0.0.4.dev20230415195042-0.0.4.dev20230415195356/diff.md --exclude *.pyd
+[2023-04-15 21:52:27] INFO root fetch - processPackages [pyglotaran-extras]: executing diffoscope
+[2023-04-15 21:52:27] INFO root fetch - processPackages [pyglotaran-extras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglotaran_extras-0.6.0.tar.gz tmp/pyglotaran_extras-0.7.0.tar.gz --markdown 20230415/p/pyglotaran-extras/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle-runtime]: executing diffoscope
+[2023-04-15 21:52:27] INFO root fetch - processPackages [wheel-axle-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheel-axle-runtime-0.0.4.dev20230415195042.tar.gz tmp/wheel-axle-runtime-0.0.4.dev20230415195356.tar.gz --markdown 20230415/w/wheel-axle-runtime/0.0.4.dev20230415195042-0.0.4.dev20230415195356/diff.md --exclude *.pyd
+[2023-04-15 21:52:28] INFO root fetch - main [MainThread]: End processing [searchlix]: success
+[2023-04-15 21:52:28] INFO root fetch - main [MainThread]: End processing [wheel-axle]: success
+[2023-04-15 21:52:29] INFO root fetch - main [MainThread]: End processing [awc]: success
+[2023-04-15 21:52:29] INFO root fetch - main [MainThread]: End processing [wheel-axle-runtime]: success
+[2023-04-15 21:52:29] INFO root fetch - main [MainThread]: End processing [pyLSV2]: success
+[2023-04-15 21:52:29] INFO root fetch - main [MainThread]: End processing [wheel-axle-runtime]: success
+[2023-04-15 21:52:29] INFO root fetch - main [MainThread]: End processing [pyglotaran-extras]: success
+[2023-04-15 21:52:30] INFO root fetch - main [MainThread]: End processing [microt-preprocessing]: success
+[2023-04-15 21:52:31] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-04-15 21:52:31] INFO root fetch - main [MainThread]: Store serial: [17721559]
