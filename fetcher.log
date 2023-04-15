@@ -4471,3 +4471,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 04:42:04] INFO root fetch - main [MainThread]: End processing [TelegramNotificator]: success
 [2023-04-15 04:42:04] INFO root fetch - main [MainThread]: End processing [TelegramNotificator]: success
 [2023-04-15 04:42:04] INFO root fetch - main [MainThread]: Store serial: [17715964]
+[2023-04-15 04:47:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715964]
+[2023-04-15 04:47:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 04:47:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modProcesso
+[2023-04-15 04:47:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psychoevals
+[2023-04-15 04:47:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TerraVide
+[2023-04-15 04:47:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cmdgpt
+[2023-04-15 04:47:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-account-fiscal-position-vat-check
+[2023-04-15 04:47:11] INFO root fetch - processPackages [cmdgpt]: New version: [0.2.5] Old Version: [0.2.4.1]
+[2023-04-15 04:47:11] INFO root fetch - processPackages [modProcesso]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-15 04:47:11] INFO root fetch - processPackages [odoo-addon-account-fiscal-position-vat-check]: New version: [16.0.1.1.0.2] Old Version: [16.0.1.1.0.1]
+[2023-04-15 04:47:11] INFO root fetch - processPackages [psychoevals]: New version: [0.6] Old Version: [0.5]
+[2023-04-15 04:47:11] INFO root fetch - processPackages [TerraVide]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-04-15 04:47:11] INFO root fetch - processPackages [modProcesso]: Downloading https://files.pythonhosted.org/packages/3a/b2/a9c8c70c32fe70316f61a952407117828f6e9dfc86cae1efda1d39bc79ab/modProcesso-0.0.4.tar.gz
+[2023-04-15 04:47:11] INFO root fetch - processPackages [psychoevals]: Downloading https://files.pythonhosted.org/packages/61/e5/a106ff9ef17be81eea7bd47e132f9f5328aab3fae8c8b935fff3891f1b85/psychoevals-0.6.tar.gz
+[2023-04-15 04:47:11] INFO root fetch - processPackages [cmdgpt]: Downloading https://files.pythonhosted.org/packages/d2/c8/b991072a190448d15b028fb490b8d62211abcabcf43117d1d4f4550672bd/cmdgpt-0.2.4.1.tar.gz
+[2023-04-15 04:47:11] INFO root fetch - processPackages [TerraVide]: Downloading https://files.pythonhosted.org/packages/f1/48/6aeabbc5949eeabf15938e39af61541b53953e70ae51de372d9713daecd6/TerraVide-0.1.2.tar.gz
+[2023-04-15 04:47:11] INFO root fetch - processPackages [odoo-addon-account-fiscal-position-vat-check]: Downloading https://files.pythonhosted.org/packages/16/5b/1e251d17966a8e640382c7d61dcdfa9d966d88210d9157540b64986a412b/odoo_addon_account_fiscal_position_vat_check-16.0.1.1.0.2-py3-none-any.whl
+[2023-04-15 04:47:11] INFO root fetch - processPackages [psychoevals]: executing diffoscope
+[2023-04-15 04:47:11] INFO root fetch - processPackages [psychoevals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychoevals-0.5.tar.gz tmp/psychoevals-0.6.tar.gz --markdown 20230415/p/psychoevals/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-15 04:47:12] INFO root fetch - processPackages [modProcesso]: Downloading https://files.pythonhosted.org/packages/13/3e/a1ac5e230c595f74d94c6bdbabc45c0391596577a701417ddf288431635c/modProcesso-0.0.5.tar.gz
+[2023-04-15 04:47:12] INFO root fetch - processPackages [cmdgpt]: Downloading https://files.pythonhosted.org/packages/71/d8/be3ed9a7ac192db48c9507b8e86cbe7dbb6e058982430975600ca41b3aab/cmdgpt-0.2.5.tar.gz
+[2023-04-15 04:47:12] INFO root fetch - processPackages [TerraVide]: executing diffoscope
+[2023-04-15 04:47:12] INFO root fetch - processPackages [TerraVide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TerraVide-0.1.0.tar.gz tmp/TerraVide-0.1.2.tar.gz --markdown 20230415/T/TerraVide/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 04:47:12] INFO root fetch - processPackages [odoo-addon-account-fiscal-position-vat-check]: executing diffoscope
+[2023-04-15 04:47:12] INFO root fetch - processPackages [odoo-addon-account-fiscal-position-vat-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_fiscal_position_vat_check-16.0.1.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_account_fiscal_position_vat_check-16.0.1.1.0.2-py3-none-any.whl.zip --markdown 20230415/o/odoo-addon-account-fiscal-position-vat-check/16.0.1.1.0.1-16.0.1.1.0.2/diff.md --exclude *.pyd
+[2023-04-15 04:47:12] INFO root fetch - processPackages [modProcesso]: executing diffoscope
+[2023-04-15 04:47:12] INFO root fetch - processPackages [modProcesso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modProcesso-0.0.4.tar.gz tmp/modProcesso-0.0.5.tar.gz --markdown 20230415/m/modProcesso/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 04:47:12] INFO root fetch - processPackages [cmdgpt]: executing diffoscope
+[2023-04-15 04:47:12] INFO root fetch - processPackages [cmdgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmdgpt-0.2.4.1.tar.gz tmp/cmdgpt-0.2.5.tar.gz --markdown 20230415/c/cmdgpt/0.2.4.1-0.2.5/diff.md --exclude *.pyd
+[2023-04-15 04:47:13] INFO root fetch - processPackages [psychoevals]: Start processing: odoo-addon-account-chart-update
+[2023-04-15 04:47:13] INFO root fetch - main [MainThread]: End processing [psychoevals]: success
+[2023-04-15 04:47:13] INFO root fetch - processPackages [odoo-addon-account-chart-update]: New version: [16.0.1.0.1.9] Old Version: [16.0.1.0.1.8]
+[2023-04-15 04:47:13] INFO root fetch - processPackages [TerraVide]: Start processing: odoo-addon-account-move-print
+[2023-04-15 04:47:13] INFO root fetch - main [MainThread]: End processing [TerraVide]: success
+[2023-04-15 04:47:13] INFO root fetch - processPackages [odoo-addon-account-move-print]: New version: [16.0.1.0.0.7] Old Version: [16.0.1.0.0.5]
+[2023-04-15 04:47:13] INFO root fetch - main [MainThread]: End processing [modProcesso]: success
+[2023-04-15 04:47:13] INFO root fetch - processPackages [odoo-addon-account-move-print]: Downloading https://files.pythonhosted.org/packages/9e/5e/3bfed0c31944003f5cf1f40fd701f16db93d7939fc89e7a3b9545c11ac38/odoo_addon_account_move_print-16.0.1.0.0.5-py3-none-any.whl
+[2023-04-15 04:47:13] INFO root fetch - processPackages [odoo-addon-account-chart-update]: Downloading https://files.pythonhosted.org/packages/c8/c4/5169ce3377189dab7f4cf1ebd81d3797e684de4755f0cf6fc3d8c01415c2/odoo_addon_account_chart_update-16.0.1.0.1.9-py3-none-any.whl
+[2023-04-15 04:47:13] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-fiscal-position-vat-check]: success
+[2023-04-15 04:47:13] INFO root fetch - main [MainThread]: End processing [cmdgpt]: success
+[2023-04-15 04:47:13] INFO root fetch - processPackages [odoo-addon-account-chart-update]: executing diffoscope
+[2023-04-15 04:47:13] INFO root fetch - processPackages [odoo-addon-account-chart-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_chart_update-16.0.1.0.1.8-py3-none-any.whl.zip tmp/odoo_addon_account_chart_update-16.0.1.0.1.9-py3-none-any.whl.zip --markdown 20230415/o/odoo-addon-account-chart-update/16.0.1.0.1.8-16.0.1.0.1.9/diff.md --exclude *.pyd
+[2023-04-15 04:47:13] INFO root fetch - processPackages [odoo-addon-account-move-print]: Downloading https://files.pythonhosted.org/packages/f5/c9/e9306a8c64393bf1bac173162fc9890e740a99fee04db1abe28a1e8e2288/odoo_addon_account_move_print-16.0.1.0.0.7-py3-none-any.whl
+[2023-04-15 04:47:13] INFO root fetch - processPackages [odoo-addon-account-move-print]: executing diffoscope
+[2023-04-15 04:47:13] INFO root fetch - processPackages [odoo-addon-account-move-print]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_move_print-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_account_move_print-16.0.1.0.0.7-py3-none-any.whl.zip --markdown 20230415/o/odoo-addon-account-move-print/16.0.1.0.0.5-16.0.1.0.0.7/diff.md --exclude *.pyd
+[2023-04-15 04:47:14] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-move-print]: success
+[2023-04-15 04:47:15] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-chart-update]: success
+[2023-04-15 04:47:15] INFO root fetch - main [MainThread]: Store serial: [17715983]
