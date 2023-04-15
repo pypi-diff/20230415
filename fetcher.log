@@ -19862,3 +19862,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 22:16:40] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
 [2023-04-15 22:16:41] INFO root fetch - main [MainThread]: End processing [wibuapi]: success
 [2023-04-15 22:16:41] INFO root fetch - main [MainThread]: Store serial: [17721668]
+[2023-04-15 22:21:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721668]
+[2023-04-15 22:21:49] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 22:21:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sabledocs
+[2023-04-15 22:21:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2023-04-15 22:21:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-04-15 22:21:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: terka
+[2023-04-15 22:21:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pylatexenc
+[2023-04-15 22:21:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: osintbuddy
+[2023-04-15 22:21:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: algoxyz
+[2023-04-15 22:21:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nlptoolssna
+[2023-04-15 22:21:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: wg-utilities
+[2023-04-15 22:21:49] INFO root fetch - processPackages [sabledocs]: New version: [0.1.48] Old Version: [0.1.46]
+[2023-04-15 22:21:49] INFO root fetch - processPackages [osintbuddy]: New version: [0.0.2rc14.post1] Old Version: [0.0.2rc13.post1]
+[2023-04-15 22:21:49] INFO root fetch - processPackages [terka]: New version: [1.5.4] Old Version: [1.5.3]
+[2023-04-15 22:21:49] INFO root fetch - processPackages [algoxyz]: New version: [0.31] Old Version: [0.0.2]
+[2023-04-15 22:21:49] INFO root fetch - processPackages [nlptoolssna]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-15 22:21:49] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-15 22:21:49] INFO root fetch - processPackages [pylatexenc]: New version: [3.0a14] Old Version: [3.0a13]
+[2023-04-15 22:21:49] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-15 22:21:49] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.5.3.tar.gz tmp/terka-1.5.4.tar.gz --markdown 20230415/t/terka/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2023-04-15 22:21:50] INFO root fetch - processPackages [wg-utilities]: New version: [3.3.0] Old Version: [3.2.0]
+[2023-04-15 22:21:50] INFO root fetch - processPackages [osintbuddy]: executing diffoscope
+[2023-04-15 22:21:50] INFO root fetch - processPackages [osintbuddy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osintbuddy-0.0.2rc13.post1.tar.gz tmp/osintbuddy-0.0.2rc14.post1.tar.gz --markdown 20230415/o/osintbuddy/0.0.2rc13.post1-0.0.2rc14.post1/diff.md --exclude *.pyd
+[2023-04-15 22:21:50] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-15 22:21:50] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/fc/7b/fcb05a369e8917383d3ced7309bde298b3b6b97b34dfeecde77a87c29dc2/sabledocs-0.1.48.tar.gz
+[2023-04-15 22:21:50] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-15 22:21:50] INFO root fetch - processPackages [algoxyz]: Downloading https://files.pythonhosted.org/packages/09/74/3238743dd85717a7a18e8aa5f6f031494553e19a03bc8cd32a5961fc7b96/algoxyz-0.0.2.tar.gz
+[2023-04-15 22:21:50] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.1.9.tar.gz tmp/nlptoolssna-0.2.0.tar.gz --markdown 20230415/n/nlptoolssna/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 22:21:50] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-15 22:21:50] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230415/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-15 22:21:50] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-15 22:21:50] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230415/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-15 22:21:50] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 22:21:50] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.46-py3-none-any.whl.zip tmp/sabledocs-0.1.48.tar.gz --markdown 20230415/s/sabledocs/0.1.46-0.1.48/diff.md --exclude *.pyd
+[2023-04-15 22:21:50] INFO root fetch - processPackages [pylatexenc]: Downloading https://files.pythonhosted.org/packages/7a/ed/b4c45f0d08fdb74dd8c11350896223ef42cf47cd56a2823c4b39748bc4e8/pylatexenc-3.0a14.tar.gz
+[2023-04-15 22:21:50] INFO root fetch - processPackages [algoxyz]: Downloading https://files.pythonhosted.org/packages/b8/46/00cae29650acdddf8a140a2aa32214506d9e831770ab6c275773b0941cbf/algoxyz-0.31.tar.gz
+[2023-04-15 22:21:50] INFO root fetch - processPackages [wg-utilities]: Downloading https://files.pythonhosted.org/packages/33/86/c0b329a8c7636618f19fc4c8953478fcade73a81e2bd21d5660dfa06c870/wg_utilities-3.3.0.tar.gz
+[2023-04-15 22:21:50] INFO root fetch - processPackages [algoxyz]: executing diffoscope
+[2023-04-15 22:21:50] INFO root fetch - processPackages [algoxyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algoxyz-0.0.2.tar.gz tmp/algoxyz-0.31.tar.gz --markdown 20230415/a/algoxyz/0.0.2-0.31/diff.md --exclude *.pyd
+[2023-04-15 22:21:50] INFO root fetch - processPackages [pylatexenc]: executing diffoscope
+[2023-04-15 22:21:50] INFO root fetch - processPackages [pylatexenc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylatexenc-3.0a13.tar.gz tmp/pylatexenc-3.0a14.tar.gz --markdown 20230415/p/pylatexenc/3.0a13-3.0a14/diff.md --exclude *.pyd
+[2023-04-15 22:21:50] INFO root fetch - processPackages [wg-utilities]: executing diffoscope
+[2023-04-15 22:21:50] INFO root fetch - processPackages [wg-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wg_utilities-3.2.0.tar.gz tmp/wg_utilities-3.3.0.tar.gz --markdown 20230415/w/wg-utilities/3.2.0-3.3.0/diff.md --exclude *.pyd
+[2023-04-15 22:21:51] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-15 22:21:51] INFO root fetch - main [MainThread]: End processing [osintbuddy]: success
+[2023-04-15 22:21:51] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 22:21:51] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-15 22:21:51] INFO root fetch - main [MainThread]: End processing [algoxyz]: success
+[2023-04-15 22:21:51] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-04-15 22:21:52] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-15 22:21:52] INFO root fetch - main [MainThread]: End processing [wg-utilities]: success
+[2023-04-15 22:21:53] INFO root fetch - main [MainThread]: End processing [pylatexenc]: success
+[2023-04-15 22:21:53] INFO root fetch - main [MainThread]: Store serial: [17721696]
