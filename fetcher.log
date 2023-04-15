@@ -14065,3 +14065,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 11:43:40] INFO root fetch - main [MainThread]: End processing [cosmic-profiles]: success
 [2023-04-15 11:44:02] INFO root fetch - main [MainThread]: End processing [pytextrust]: success
 [2023-04-15 11:44:02] INFO root fetch - main [MainThread]: Store serial: [17717919]
+[2023-04-15 11:49:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717919]
+[2023-04-15 11:49:14] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 11:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-gshisbanner
+[2023-04-15 11:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: VRP
+[2023-04-15 11:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-lifespan-manager
+[2023-04-15 11:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anim
+[2023-04-15 11:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lock-plot
+[2023-04-15 11:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ipv4tree
+[2023-04-15 11:49:14] INFO root fetch - processPackages [anim]: New version: [0.1.16] Old Version: [0.1.15]
+[2023-04-15 11:49:14] WARNING root fetch - processPackages [fastapi-lifespan-manager]: Skipping, unable to determine old version
+[2023-04-15 11:49:14] INFO root fetch - main [MainThread]: End processing [fastapi-lifespan-manager] error
+[2023-04-15 11:49:14] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-04-15 11:49:14] WARNING root fetch - processPackages [VRP]: Skipping, unable to determine old version
+[2023-04-15 11:49:14] INFO root fetch - main [MainThread]: End processing [VRP] error
+[2023-04-15 11:49:14] INFO root fetch - processPackages [ipv4tree]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-15 11:49:14] WARNING root fetch - processPackages [lock-plot]: Skipping, unable to determine old version
+[2023-04-15 11:49:14] INFO root fetch - main [MainThread]: End processing [lock-plot] error
+[2023-04-15 11:49:14] INFO root fetch - processPackages [anim]: Downloading https://files.pythonhosted.org/packages/86/58/a7d41cb30091defa869a69f76cbec49c6e58433f82edd794eba775eedf8d/anim-0.1.15-py3-none-any.whl
+[2023-04-15 11:49:14] INFO root fetch - processPackages [ipv4tree]: Downloading https://files.pythonhosted.org/packages/2c/ef/f20ce804a99bed746d9a88b289472ae393617c9250136a954f349529e6d4/ipv4tree-0.0.5.tar.gz
+[2023-04-15 11:49:15] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: Downloading https://files.pythonhosted.org/packages/59/f8/63c9b2f20ce752e215b3a260d2f9f4dc4d957e26d8711dee2a15e73bfb77/nonebot_plugin_gshisbanner-0.4.8.tar.gz
+[2023-04-15 11:49:15] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: executing diffoscope
+[2023-04-15 11:49:15] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_gshisbanner-0.4.7.tar.gz tmp/nonebot_plugin_gshisbanner-0.4.8.tar.gz --markdown 20230415/n/nonebot-plugin-gshisbanner/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-04-15 11:49:15] INFO root fetch - processPackages [anim]: Downloading https://files.pythonhosted.org/packages/65/07/0e42aca931c8d1d59602f62e9faaeb064e5564eba5d10ad0c5247b623785/anim-0.1.16-py3-none-any.whl
+[2023-04-15 11:49:15] INFO root fetch - processPackages [anim]: executing diffoscope
+[2023-04-15 11:49:15] INFO root fetch - processPackages [anim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anim-0.1.15-py3-none-any.whl.zip tmp/anim-0.1.16-py3-none-any.whl.zip --markdown 20230415/a/anim/0.1.15-0.1.16/diff.md --exclude *.pyd
+[2023-04-15 11:49:15] INFO root fetch - processPackages [ipv4tree]: Downloading https://files.pythonhosted.org/packages/ac/c9/357b55d6446cb364596bd247e5586ae6dd4dae0168a99dedd5a03aae9a57/ipv4tree-0.0.6.tar.gz
+[2023-04-15 11:49:15] INFO root fetch - processPackages [ipv4tree]: executing diffoscope
+[2023-04-15 11:49:15] INFO root fetch - processPackages [ipv4tree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipv4tree-0.0.5.tar.gz tmp/ipv4tree-0.0.6.tar.gz --markdown 20230415/i/ipv4tree/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-15 11:49:16] INFO root fetch - main [MainThread]: End processing [anim]: success
+[2023-04-15 11:49:16] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-gshisbanner]: success
+[2023-04-15 11:49:16] INFO root fetch - main [MainThread]: End processing [ipv4tree]: success
+[2023-04-15 11:49:16] INFO root fetch - main [MainThread]: Store serial: [17717943]
