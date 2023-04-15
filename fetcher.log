@@ -1726,3 +1726,173 @@
 [2023-04-15 02:40:27] INFO root fetch - main [MainThread]: End processing [cpggen]: success
 [2023-04-15 02:42:41] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
 [2023-04-15 02:42:41] INFO root fetch - main [MainThread]: Store serial: [17714382]
+[2023-04-15 02:47:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17714382]
+[2023-04-15 02:47:48] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-15 02:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfds-nightly
+[2023-04-15 02:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-comprehend-s3olap
+[2023-04-15 02:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: locate-pixelcolor-numbacuda
+[2023-04-15 02:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: twitter-api-client
+[2023-04-15 02:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kubric-nightly
+[2023-04-15 02:47:48] INFO root fetch - processPackages [twitter-api-client]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-15 02:47:48] INFO root fetch - processPackages [locate-pixelcolor-numbacuda]: New version: [0.12] Old Version: [0.11]
+[2023-04-15 02:47:48] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-15 02:47:48] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-15 02:47:48] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-04-15 02:47:48] INFO root fetch - processPackages [locate-pixelcolor-numbacuda]: Downloading https://files.pythonhosted.org/packages/d9/5c/56f7f6951b5ea88ebf3add799807f5ada620639c17cb81f94b507420ad79/locate_pixelcolor_numbacuda-0.12.tar.gz
+[2023-04-15 02:47:48] INFO root fetch - processPackages [locate-pixelcolor-numbacuda]: executing diffoscope
+[2023-04-15 02:47:48] INFO root fetch - processPackages [locate-pixelcolor-numbacuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locate_pixelcolor_numbacuda-0.11.tar.gz tmp/locate_pixelcolor_numbacuda-0.12.tar.gz --markdown 20230415/l/locate-pixelcolor-numbacuda/0.11-0.12/diff.md --exclude *.pyd
+[2023-04-15 02:47:48] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/8e/9f/42a299ad058d4ac304c72e1222f349af4b14de1757df9157cf2febf30f72/twitter-api-client-0.6.2.tar.gz
+[2023-04-15 02:47:48] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-04-15 02:47:48] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.6.1.tar.gz tmp/twitter-api-client-0.6.2.tar.gz --markdown 20230415/t/twitter-api-client/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-15 02:47:48] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-04-15 02:47:48] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.4.8.tar.gz tmp/kubric-nightly-2023.4.9.tar.gz --markdown 20230415/k/kubric-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-15 02:47:48] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202304150044] Old Version: [4.9.2.dev202304140044]
+[2023-04-15 02:47:49] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/f4/b4/2b0254d580429aeaeacfc797dfbee59d8ad9c3019cd1f74942404e01adb5/tfds-nightly-4.9.2.dev202304140044.tar.gz
+[2023-04-15 02:47:49] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-04-15 02:47:49] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Start processing: buge
+[2023-04-15 02:47:49] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-04-15 02:47:49] WARNING root fetch - processPackages [buge]: Skipping, unable to determine old version
+[2023-04-15 02:47:49] INFO root fetch - processPackages [buge]: Start processing: domini
+[2023-04-15 02:47:49] INFO root fetch - main [MainThread]: End processing [buge] error
+[2023-04-15 02:47:49] INFO root fetch - processPackages [domini]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-15 02:47:49] INFO root fetch - processPackages [domini]: Downloading https://files.pythonhosted.org/packages/ca/ce/2af2abd5d51f8128a2c7bcf274c72c95279e565eed511695471a52c4a88e/domini-0.6.1.tar.gz
+[2023-04-15 02:47:49] INFO root fetch - processPackages [domini]: Downloading https://files.pythonhosted.org/packages/63/55/bff5c867f7d4fe6c5e67a7a96d99d1fa5d0270880b033eae00cf45ae904c/domini-0.7.0.tar.gz
+[2023-04-15 02:47:49] INFO root fetch - processPackages [locate-pixelcolor-numbacuda]: Start processing: gradio-client
+[2023-04-15 02:47:49] INFO root fetch - main [MainThread]: End processing [locate-pixelcolor-numbacuda]: success
+[2023-04-15 02:47:49] INFO root fetch - processPackages [gradio-client]: New version: [0.1.3] Old Version: [0.1.2b1]
+[2023-04-15 02:47:49] INFO root fetch - processPackages [domini]: executing diffoscope
+[2023-04-15 02:47:49] INFO root fetch - processPackages [domini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domini-0.6.1.tar.gz tmp/domini-0.7.0.tar.gz --markdown 20230415/d/domini/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-15 02:47:49] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/47/74/f05e6535e91b1e8ef06f7972f4a367b11474cce61c78da01ac42dab0d4d0/tfds-nightly-4.9.2.dev202304150044.tar.gz
+[2023-04-15 02:47:49] INFO root fetch - processPackages [kubric-nightly]: Start processing: py7zr
+[2023-04-15 02:47:49] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-04-15 02:47:49] INFO root fetch - processPackages [py7zr]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-15 02:47:49] INFO root fetch - processPackages [gradio-client]: Downloading https://files.pythonhosted.org/packages/61/80/4431ee61c5ce636a2bdb8c37137c3c9b2e5535f0d295f218252538cce158/gradio_client-0.1.3.tar.gz
+[2023-04-15 02:47:50] INFO root fetch - processPackages [gradio-client]: executing diffoscope
+[2023-04-15 02:47:50] INFO root fetch - processPackages [gradio-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_client-0.1.2b1.tar.gz tmp/gradio_client-0.1.3.tar.gz --markdown 20230415/g/gradio-client/0.1.2b1-0.1.3/diff.md --exclude *.pyd
+[2023-04-15 02:47:50] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-04-15 02:47:50] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202304140044.tar.gz tmp/tfds-nightly-4.9.2.dev202304150044.tar.gz --markdown 20230415/t/tfds-nightly/4.9.2.dev202304140044-4.9.2.dev202304150044/diff.md --exclude *.pyd
+[2023-04-15 02:47:50] INFO root fetch - processPackages [py7zr]: Downloading https://files.pythonhosted.org/packages/a5/00/34fc0f88d961978a5a75354e11e3081633b661d5d97ad3f8294c6fa5c675/py7zr-0.9.8.tar.gz
+[2023-04-15 02:47:50] INFO root fetch - processPackages [twitter-api-client]: Start processing: cdk-slack-chatbot
+[2023-04-15 02:47:50] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-04-15 02:47:50] INFO root fetch - processPackages [cdk-slack-chatbot]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-04-15 02:47:50] INFO root fetch - processPackages [domini]: Start processing: LCU-Connector
+[2023-04-15 02:47:50] INFO root fetch - main [MainThread]: End processing [domini]: success
+[2023-04-15 02:47:50] WARNING root fetch - processPackages [LCU-Connector]: Skipping, unable to determine old version
+[2023-04-15 02:47:50] INFO root fetch - processPackages [LCU-Connector]: Start processing: preprocessing-pgp
+[2023-04-15 02:47:50] INFO root fetch - main [MainThread]: End processing [LCU-Connector] error
+[2023-04-15 02:47:50] INFO root fetch - processPackages [preprocessing-pgp]: New version: [0.2.9.dev6] Old Version: [0.2.9.dev5]
+[2023-04-15 02:47:50] INFO root fetch - processPackages [preprocessing-pgp]: Downloading https://files.pythonhosted.org/packages/a4/32/76406bb95af278543f80cb417f9fe475e1853b055f70661443b1cf0cb925/preprocessing-pgp-0.2.9.dev5.tar.gz
+[2023-04-15 02:47:50] INFO root fetch - processPackages [cdk-slack-chatbot]: executing diffoscope
+[2023-04-15 02:47:50] INFO root fetch - processPackages [cdk-slack-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-slack-chatbot-1.0.98.tar.gz tmp/cdk-slack-chatbot-1.0.99.tar.gz --markdown 20230415/c/cdk-slack-chatbot/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-04-15 02:47:50] WARNING root fetch - processPackages [preprocessing-pgp]: Skipping package: exceeds size limit 78856794>=10485760
+[2023-04-15 02:47:50] INFO root fetch - processPackages [preprocessing-pgp]: Start processing: pycde
+[2023-04-15 02:47:50] INFO root fetch - main [MainThread]: End processing [preprocessing-pgp] error
+[2023-04-15 02:47:50] INFO root fetch - processPackages [py7zr]: Downloading https://files.pythonhosted.org/packages/61/22/f6b3eecd99706e63aa61319a40e89a6ea1b910bab804abb783fa5b96e67a/py7zr-0.9.9.tar.gz
+[2023-04-15 02:47:50] INFO root fetch - processPackages [pycde]: New version: [0.2.1.dev9] Old Version: [0.2.1.dev80]
+[2023-04-15 02:47:51] INFO root fetch - processPackages [pycde]: executing diffoscope
+[2023-04-15 02:47:51] INFO root fetch - processPackages [pycde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycde-0.2.1.dev80-cp39-cp39-win_amd64.whl.zip tmp/pycde-0.2.1.dev9-cp39-cp39-win_amd64.whl.zip --markdown 20230415/p/pycde/0.2.1.dev80-0.2.1.dev9/diff.md --exclude *.pyd
+[2023-04-15 02:47:51] INFO root fetch - processPackages [gradio-client]: Start processing: netpackAIO
+[2023-04-15 02:47:51] INFO root fetch - main [MainThread]: End processing [gradio-client]: success
+[2023-04-15 02:47:51] INFO root fetch - processPackages [netpackAIO]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 02:47:51] INFO root fetch - processPackages [netpackAIO]: Downloading https://files.pythonhosted.org/packages/ed/0a/9d5e15c52d7af1c7a64df7c272929f4066035309fb385613085ccc8c189a/netpackAIO-0.0.1.tar.gz
+[2023-04-15 02:47:51] INFO root fetch - processPackages [py7zr]: executing diffoscope
+[2023-04-15 02:47:51] INFO root fetch - processPackages [py7zr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py7zr-0.9.8.tar.gz tmp/py7zr-0.9.9.tar.gz --markdown 20230415/p/py7zr/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-15 02:47:51] INFO root fetch - processPackages [netpackAIO]: Downloading https://files.pythonhosted.org/packages/40/d3/d7b81304de8479a4c45bba9f361320bf11807d24ab38aa1e3702336846d2/netpackAIO-0.0.2.tar.gz
+[2023-04-15 02:47:51] INFO root fetch - processPackages [netpackAIO]: executing diffoscope
+[2023-04-15 02:47:51] INFO root fetch - processPackages [netpackAIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netpackAIO-0.0.1.tar.gz tmp/netpackAIO-0.0.2.tar.gz --markdown 20230415/n/netpackAIO/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 02:47:52] INFO root fetch - main [MainThread]: End processing [cdk-slack-chatbot]: success
+[2023-04-15 02:47:52] INFO root fetch - main [MainThread]: End processing [netpackAIO]: success
+[2023-04-15 02:47:54] INFO root fetch - main [MainThread]: End processing [py7zr]: success
+[2023-04-15 02:48:01] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-04-15 02:48:32] ERROR root fetch - processPackages [pycde]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140673667834272)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140673533615648)
+
+[2023-04-15 02:48:32] INFO root fetch - main [MainThread]: End processing [pycde] error
+[2023-04-15 02:48:32] INFO root fetch - main [MainThread]: Store serial: [17714430]
