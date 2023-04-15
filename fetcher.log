@@ -15896,3 +15896,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 15:04:47] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
 [2023-04-15 15:04:48] INFO root fetch - main [MainThread]: End processing [crawler-py]: success
 [2023-04-15 15:04:48] INFO root fetch - main [MainThread]: Store serial: [17719056]
+[2023-04-15 15:09:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719056]
+[2023-04-15 15:09:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 15:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-pandas
+[2023-04-15 15:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: universalio
+[2023-04-15 15:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-pytorch
+[2023-04-15 15:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-scipy
+[2023-04-15 15:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oldschool-management-tools
+[2023-04-15 15:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sharewifi
+[2023-04-15 15:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-sphinx
+[2023-04-15 15:09:56] INFO root fetch - processPackages [universalio]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 15:09:56] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 15:09:56] INFO root fetch - processPackages [oldschool-management-tools]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-15 15:09:56] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 15:09:56] WARNING root fetch - processPackages [sharewifi]: Skipping, unable to determine old version
+[2023-04-15 15:09:56] INFO root fetch - main [MainThread]: End processing [sharewifi] error
+[2023-04-15 15:09:56] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 15:09:56] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 15:09:56] INFO root fetch - processPackages [nbdev-pandas]: Downloading https://files.pythonhosted.org/packages/e4/e4/cd3df65f7d13a8e8dfa1592e08d78574793d38384b1c92993ce920dcd0df/nbdev-pandas-0.0.98.tar.gz
+[2023-04-15 15:09:56] INFO root fetch - processPackages [nbdev-pytorch]: Downloading https://files.pythonhosted.org/packages/f8/45/4613a0137d296a1960d76ded45b0af15a8fd578bf48df103c50675b49136/nbdev-pytorch-0.0.98.tar.gz
+[2023-04-15 15:09:56] INFO root fetch - processPackages [nbdev-scipy]: Downloading https://files.pythonhosted.org/packages/94/a7/9596b1506d5fc0b0ceb265f8bbd5e0919fc146eb6df0916b4e546e9f074f/nbdev-scipy-0.0.98.tar.gz
+[2023-04-15 15:09:56] INFO root fetch - processPackages [nbdev-sphinx]: Downloading https://files.pythonhosted.org/packages/50/26/1673892b3686c404af92c390906ab3bac81806c424381e82dedac6477190/nbdev-sphinx-0.0.98.tar.gz
+[2023-04-15 15:09:56] INFO root fetch - processPackages [oldschool-management-tools]: Downloading https://files.pythonhosted.org/packages/6a/ef/d5330043b6ca2aa14032faef7cec481d2f2686ec4d30a5068d7f38f2e0e7/oldschool_management_tools-0.1.4.tar.gz
+[2023-04-15 15:09:56] INFO root fetch - processPackages [universalio]: Downloading https://files.pythonhosted.org/packages/82/11/9b726192b722251212b5ce411468c31709a28c726d0f94c50020e2034d7e/universalio-0.0.8.tar.gz
+[2023-04-15 15:09:56] INFO root fetch - processPackages [nbdev-pandas]: Downloading https://files.pythonhosted.org/packages/cf/b5/493c8e89c5cb4fcc7db248f99868f931ca6389f6e411e63c97bb22c6f1b0/nbdev-pandas-0.0.99.tar.gz
+[2023-04-15 15:09:56] INFO root fetch - processPackages [nbdev-scipy]: Downloading https://files.pythonhosted.org/packages/d4/25/482f9160692bdd2d374401b19f8b4700ae91c179761991cee076e37aae0d/nbdev-scipy-0.0.99.tar.gz
+[2023-04-15 15:09:56] INFO root fetch - processPackages [nbdev-pytorch]: Downloading https://files.pythonhosted.org/packages/b0/37/5921f26bef4d07ebb5599f7ccb4d57ab1a847950edaa615ebcf9ef228690/nbdev-pytorch-0.0.99.tar.gz
+[2023-04-15 15:09:56] INFO root fetch - processPackages [nbdev-sphinx]: Downloading https://files.pythonhosted.org/packages/55/5e/ba946430b849ba8f51f4047dad2bb2417fbc794da9bb8301308347bb6207/nbdev-sphinx-0.0.99.tar.gz
+[2023-04-15 15:09:57] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-04-15 15:09:57] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230415/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 15:09:57] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-04-15 15:09:57] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230415/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 15:09:57] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-04-15 15:09:57] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230415/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 15:09:57] INFO root fetch - processPackages [universalio]: Downloading https://files.pythonhosted.org/packages/39/15/3cd66764b5422a09ad57567f7bee967d7bc6083a74a36a7f85a8fba88a11/universalio-0.0.9-py3-none-any.whl
+[2023-04-15 15:09:57] INFO root fetch - processPackages [oldschool-management-tools]: Downloading https://files.pythonhosted.org/packages/53/da/691a02cb044bc0805242a133f539e09e86f7ae2f9b3741dbc0f8b1cba850/oldschool_management_tools-0.1.5.tar.gz
+[2023-04-15 15:09:57] INFO root fetch - processPackages [universalio]: executing diffoscope
+[2023-04-15 15:09:57] INFO root fetch - processPackages [universalio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/universalio-0.0.8.tar.gz tmp/universalio-0.0.9-py3-none-any.whl.zip --markdown 20230415/u/universalio/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 15:09:57] INFO root fetch - processPackages [oldschool-management-tools]: executing diffoscope
+[2023-04-15 15:09:57] INFO root fetch - processPackages [oldschool-management-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oldschool_management_tools-0.1.4.tar.gz tmp/oldschool_management_tools-0.1.5.tar.gz --markdown 20230415/o/oldschool-management-tools/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-15 15:09:57] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-04-15 15:09:57] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230415/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 15:09:58] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-04-15 15:09:58] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-04-15 15:09:58] INFO root fetch - main [MainThread]: End processing [universalio]: success
+[2023-04-15 15:09:58] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-04-15 15:09:58] INFO root fetch - main [MainThread]: End processing [oldschool-management-tools]: success
+[2023-04-15 15:09:58] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-04-15 15:09:58] INFO root fetch - main [MainThread]: Store serial: [17719086]
