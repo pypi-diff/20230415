@@ -1937,3 +1937,77 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 02:53:54] INFO root fetch - main [MainThread]: End processing [python-datamodel]: success
 [2023-04-15 02:53:59] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2023-04-15 02:53:59] INFO root fetch - main [MainThread]: Store serial: [17714455]
+[2023-04-15 02:59:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17714455]
+[2023-04-15 02:59:06] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-15 02:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cppe5
+[2023-04-15 02:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-emrserverless-with-delta-lake
+[2023-04-15 02:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aemcmc-nightly
+[2023-04-15 02:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-lambda-layer-wget
+[2023-04-15 02:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: digitalarztools
+[2023-04-15 02:59:06] INFO root fetch - processPackages [cppe5]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 02:59:06] INFO root fetch - processPackages [digitalarztools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 02:59:06] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230414] Old Version: [0.0.8.dev20230413]
+[2023-04-15 02:59:07] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-15 02:59:07] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-15 02:59:07] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2023-04-15 02:59:07] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20230415/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-15 02:59:07] INFO root fetch - processPackages [cppe5]: Downloading https://files.pythonhosted.org/packages/85/2d/0c68abd5507ef7589ce8b9c9090f43ceda1c906eb1fefbf87e92c0d94246/cppe5-0.1.0.tar.gz
+[2023-04-15 02:59:07] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/00/25/c980e24e95c2d2aab7f7e3042a4ea7fabfcb8deb667f49e39a2c04a8a201/digitalarztools-0.0.9.tar.gz
+[2023-04-15 02:59:07] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-04-15 02:59:07] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230415/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-15 02:59:07] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/de/ff/433655411acf6176422cd9fc56a09314148eb366420fa647fde1e1f77c02/aemcmc-nightly-0.0.8.dev20230414.tar.gz
+[2023-04-15 02:59:07] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2023-04-15 02:59:07] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.0.8.tar.gz tmp/digitalarztools-0.0.9.tar.gz --markdown 20230415/d/digitalarztools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 02:59:07] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-04-15 02:59:07] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230413.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230414.tar.gz --markdown 20230415/a/aemcmc-nightly/0.0.8.dev20230413-0.0.8.dev20230414/diff.md --exclude *.pyd
+[2023-04-15 02:59:07] INFO root fetch - processPackages [cppe5]: Downloading https://files.pythonhosted.org/packages/82/23/6fe4a815068e37cd3878a32579b1d29703f59db02ff37ae53e8831de3e71/cppe5-0.1.1.tar.gz
+[2023-04-15 02:59:07] INFO root fetch - processPackages [cppe5]: executing diffoscope
+[2023-04-15 02:59:07] INFO root fetch - processPackages [cppe5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cppe5-0.1.0.tar.gz tmp/cppe5-0.1.1.tar.gz --markdown 20230415/c/cppe5/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 02:59:08] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: Start processing: acryl-datahub-airflow-plugin
+[2023-04-15 02:59:08] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
+[2023-04-15 02:59:08] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-04-15 02:59:08] INFO root fetch - processPackages [aemcmc-nightly]: Start processing: acryl-datahub
+[2023-04-15 02:59:08] INFO root fetch - main [MainThread]: End processing [aemcmc-nightly]: success
+[2023-04-15 02:59:08] INFO root fetch - processPackages [acryl-datahub]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-04-15 02:59:08] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: executing diffoscope
+[2023-04-15 02:59:08] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-airflow-plugin-0.9.6rc0.tar.gz tmp/acryl-datahub-airflow-plugin-0.9.6rc1.tar.gz --markdown 20230415/a/acryl-datahub-airflow-plugin/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-04-15 02:59:08] INFO root fetch - processPackages [acryl-datahub]: executing diffoscope
+[2023-04-15 02:59:08] INFO root fetch - processPackages [acryl-datahub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-0.9.6rc0.tar.gz tmp/acryl-datahub-0.9.6rc1.tar.gz --markdown 20230415/a/acryl-datahub/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-04-15 02:59:08] INFO root fetch - processPackages [cdk-lambda-layer-wget]: Start processing: python-library-30140721
+[2023-04-15 02:59:08] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-04-15 02:59:08] INFO root fetch - processPackages [cppe5]: Start processing: cdk-lambda-layer-curl
+[2023-04-15 02:59:08] INFO root fetch - main [MainThread]: End processing [cppe5]: success
+[2023-04-15 02:59:08] INFO root fetch - processPackages [python-library-30140721]: New version: [1.8.0] Old Version: [1.5.0]
+[2023-04-15 02:59:08] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-15 02:59:08] INFO root fetch - processPackages [digitalarztools]: Start processing: LCU-Connector
+[2023-04-15 02:59:08] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2023-04-15 02:59:08] ERROR root fetch - processPackages [LCU-Connector]: Unable to get metadata: No such project 'LCU-Connector'
+[2023-04-15 02:59:08] INFO root fetch - processPackages [LCU-Connector]: Start processing: pyroscopegridding
+[2023-04-15 02:59:08] INFO root fetch - main [MainThread]: End processing [LCU-Connector] error
+[2023-04-15 02:59:08] INFO root fetch - processPackages [pyroscopegridding]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 02:59:08] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-04-15 02:59:08] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230415/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-15 02:59:08] INFO root fetch - processPackages [python-library-30140721]: Downloading https://files.pythonhosted.org/packages/00/1f/5b722ca3d2a73f4c721bc28f0ecf89354fa86b0d3fafda74f6b753e26490/python-library-30140721-1.5.0.tar.gz
+[2023-04-15 02:59:09] INFO root fetch - processPackages [pyroscopegridding]: Downloading https://files.pythonhosted.org/packages/2c/3a/802eb0e6dcb370b3fe2a78bf2181e5055fe19dcccb35b0f6b24540b933b2/pyroscopegridding-0.1.6.tar.gz
+[2023-04-15 02:59:09] INFO root fetch - processPackages [pyroscopegridding]: executing diffoscope
+[2023-04-15 02:59:09] INFO root fetch - processPackages [pyroscopegridding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroscopegridding-0.1.5.tar.gz tmp/pyroscopegridding-0.1.6.tar.gz --markdown 20230415/p/pyroscopegridding/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 02:59:09] INFO root fetch - processPackages [python-library-30140721]: Downloading https://files.pythonhosted.org/packages/bb/96/38d402f1d5ad4ca0cc03cc7dd9afd1505c0488d60f2b9fe46f556471253b/python-library-30140721-1.8.0.tar.gz
+[2023-04-15 02:59:09] INFO root fetch - processPackages [python-library-30140721]: executing diffoscope
+[2023-04-15 02:59:09] INFO root fetch - processPackages [python-library-30140721]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-library-30140721-1.5.0.tar.gz tmp/python-library-30140721-1.8.0.tar.gz --markdown 20230415/p/python-library-30140721/1.5.0-1.8.0/diff.md --exclude *.pyd
+[2023-04-15 02:59:09] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: Start processing: pyagrum-nightly
+[2023-04-15 02:59:09] INFO root fetch - main [MainThread]: End processing [acryl-datahub-airflow-plugin]: success
+[2023-04-15 02:59:09] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.7.1.9.dev202304141681314159] Old Version: [1.7.1.9.dev202304131681314159]
+[2023-04-15 02:59:10] INFO root fetch - processPackages [pyagrum-nightly]: Downloading https://files.pythonhosted.org/packages/7e/ec/a07042a52ca0e8dbd012a3c819697aa2c69115e002ea92ad9089a8994605/pyAgrum_nightly-1.7.1.9.dev202304141681314159-cp39-cp39-win_amd64.whl
+[2023-04-15 02:59:10] INFO root fetch - processPackages [pyroscopegridding]: Start processing: openhasp-config-manager
+[2023-04-15 02:59:10] INFO root fetch - main [MainThread]: End processing [pyroscopegridding]: success
+[2023-04-15 02:59:10] INFO root fetch - processPackages [openhasp-config-manager]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-15 02:59:10] INFO root fetch - processPackages [openhasp-config-manager]: executing diffoscope
+[2023-04-15 02:59:10] INFO root fetch - processPackages [openhasp-config-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openhasp_config_manager-0.4.5.tar.gz tmp/openhasp_config_manager-0.4.6.tar.gz --markdown 20230415/o/openhasp-config-manager/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-15 02:59:10] INFO root fetch - main [MainThread]: End processing [python-library-30140721]: success
+[2023-04-15 02:59:10] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-04-15 02:59:10] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-04-15 02:59:10] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.7.1.9.dev202304131681314159-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.7.1.9.dev202304141681314159-cp39-cp39-win_amd64.whl.zip --markdown 20230415/p/pyagrum-nightly/1.7.1.9.dev202304131681314159-1.7.1.9.dev202304141681314159/diff.md --exclude *.pyd
+[2023-04-15 02:59:11] INFO root fetch - main [MainThread]: End processing [openhasp-config-manager]: success
+[2023-04-15 02:59:11] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-04-15 02:59:14] INFO root fetch - main [MainThread]: End processing [acryl-datahub]: success
+[2023-04-15 02:59:14] INFO root fetch - main [MainThread]: Store serial: [17714518]
