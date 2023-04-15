@@ -13683,3 +13683,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 11:00:57] INFO root fetch - main [MainThread]: End processing [analogic-framework]: success
 [2023-04-15 11:00:57] INFO root fetch - main [MainThread]: End processing [networklab]: success
 [2023-04-15 11:00:57] INFO root fetch - main [MainThread]: Store serial: [17717701]
+[2023-04-15 11:06:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717701]
+[2023-04-15 11:06:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 11:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numwords-to-nums
+[2023-04-15 11:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-date-name
+[2023-04-15 11:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: igbpyutils
+[2023-04-15 11:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: somemanfib
+[2023-04-15 11:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: duckduckgo-search
+[2023-04-15 11:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nekograd
+[2023-04-15 11:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: plone.base
+[2023-04-15 11:06:10] INFO root fetch - processPackages [numwords-to-nums]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-15 11:06:10] INFO root fetch - processPackages [duckduckgo-search]: New version: [2.8.6] Old Version: [2.8.5]
+[2023-04-15 11:06:10] INFO root fetch - processPackages [igbpyutils]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 11:06:10] WARNING root fetch - processPackages [somemanfib]: Skipping, unable to determine old version
+[2023-04-15 11:06:10] INFO root fetch - main [MainThread]: End processing [somemanfib] error
+[2023-04-15 11:06:10] INFO root fetch - processPackages [nonebot-plugin-date-name]: New version: [3.0] Old Version: [2.0]
+[2023-04-15 11:06:10] INFO root fetch - processPackages [plone.base]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-15 11:06:10] INFO root fetch - processPackages [nekograd]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-15 11:06:10] INFO root fetch - processPackages [igbpyutils]: Downloading https://files.pythonhosted.org/packages/60/5f/fbcc3451905766101a45ffa9e3a196fe582b88afb6e9a88f26ab4b46b15b/igbpyutils-0.0.1.tar.gz
+[2023-04-15 11:06:10] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/52/21/32daea4ba806fc24b56de95b89c8409339c5dd34112de89676cb25f5d599/duckduckgo_search-2.8.5.tar.gz
+[2023-04-15 11:06:10] INFO root fetch - processPackages [numwords-to-nums]: Downloading https://files.pythonhosted.org/packages/0d/49/138d2f88bc9a24ca8d60fb2839daf8c3549fdcc9a62f52c7aa3405880819/numwords_to_nums-1.1.5.tar.gz
+[2023-04-15 11:06:10] INFO root fetch - processPackages [nonebot-plugin-date-name]: Downloading https://files.pythonhosted.org/packages/d0/52/34961ba9161416a137f1c16f8815610111c713a66a1065715c96e85e3566/nonebot_plugin_date_name-2.0.tar.gz
+[2023-04-15 11:06:10] INFO root fetch - processPackages [plone.base]: Downloading https://files.pythonhosted.org/packages/5f/e1/d77f52307812bf672338609d390140322c93a40b1c6652ca0a61a8401afd/plone.base-1.1.0.tar.gz
+[2023-04-15 11:06:10] INFO root fetch - processPackages [nekograd]: Downloading https://files.pythonhosted.org/packages/19/50/33fe8f7e51dcb74cdda2df14679e60debf1bc07177c959a4c3ca31a59f08/nekograd-0.0.1.tar.gz
+[2023-04-15 11:06:10] INFO root fetch - processPackages [numwords-to-nums]: executing diffoscope
+[2023-04-15 11:06:10] INFO root fetch - processPackages [numwords-to-nums]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numwords_to_nums-1.1.4.tar.gz tmp/numwords_to_nums-1.1.5.tar.gz --markdown 20230415/n/numwords-to-nums/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-15 11:06:10] INFO root fetch - processPackages [igbpyutils]: Downloading https://files.pythonhosted.org/packages/30/19/549da6c18c399a084e99414d1f188bf8a284e422df1cf0347a40c3933041/igbpyutils-0.0.2.tar.gz
+[2023-04-15 11:06:10] INFO root fetch - processPackages [igbpyutils]: executing diffoscope
+[2023-04-15 11:06:10] INFO root fetch - processPackages [igbpyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/igbpyutils-0.0.1.tar.gz tmp/igbpyutils-0.0.2.tar.gz --markdown 20230415/i/igbpyutils/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 11:06:10] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/37/5d/8a752cc00893f15989e017e41447b8b75d035ff1c8343285ba63e3812ffc/duckduckgo_search-2.8.6.tar.gz
+[2023-04-15 11:06:10] INFO root fetch - processPackages [duckduckgo-search]: executing diffoscope
+[2023-04-15 11:06:10] INFO root fetch - processPackages [duckduckgo-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckduckgo_search-2.8.5.tar.gz tmp/duckduckgo_search-2.8.6.tar.gz --markdown 20230415/d/duckduckgo-search/2.8.5-2.8.6/diff.md --exclude *.pyd
+[2023-04-15 11:06:10] INFO root fetch - processPackages [plone.base]: Downloading https://files.pythonhosted.org/packages/28/b2/288a7fda2713c5bf6c9fe961fd8f334ddff9b0b3afae32c0f3541c04b48b/plone.base-1.1.1.tar.gz
+[2023-04-15 11:06:10] INFO root fetch - processPackages [nonebot-plugin-date-name]: Downloading https://files.pythonhosted.org/packages/07/2d/721c709c48c262d558f512212d27aedbeb48ee94ed9c89d70fde1ff4e6b8/nonebot_plugin_date_name-3.0.tar.gz
+[2023-04-15 11:06:11] INFO root fetch - processPackages [nekograd]: Downloading https://files.pythonhosted.org/packages/12/d8/70a70d7498569e64ae3625d9c0ef173f4018e26d1bde5cb989994df3f407/nekograd-0.1.0.tar.gz
+[2023-04-15 11:06:11] INFO root fetch - processPackages [nonebot-plugin-date-name]: executing diffoscope
+[2023-04-15 11:06:11] INFO root fetch - processPackages [nonebot-plugin-date-name]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_date_name-2.0.tar.gz tmp/nonebot_plugin_date_name-3.0.tar.gz --markdown 20230415/n/nonebot-plugin-date-name/2.0-3.0/diff.md --exclude *.pyd
+[2023-04-15 11:06:11] INFO root fetch - processPackages [plone.base]: executing diffoscope
+[2023-04-15 11:06:11] INFO root fetch - processPackages [plone.base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.base-1.1.0.tar.gz tmp/plone.base-1.1.1.tar.gz --markdown 20230415/p/plone.base/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-15 11:06:11] INFO root fetch - processPackages [nekograd]: executing diffoscope
+[2023-04-15 11:06:11] INFO root fetch - processPackages [nekograd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nekograd-0.0.1.tar.gz tmp/nekograd-0.1.0.tar.gz --markdown 20230415/n/nekograd/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-15 11:06:11] INFO root fetch - main [MainThread]: End processing [igbpyutils]: success
+[2023-04-15 11:06:12] INFO root fetch - main [MainThread]: End processing [numwords-to-nums]: success
+[2023-04-15 11:06:12] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-date-name]: success
+[2023-04-15 11:06:12] INFO root fetch - main [MainThread]: End processing [duckduckgo-search]: success
+[2023-04-15 11:06:12] INFO root fetch - main [MainThread]: End processing [nekograd]: success
+[2023-04-15 11:06:12] INFO root fetch - main [MainThread]: End processing [plone.base]: success
+[2023-04-15 11:06:12] INFO root fetch - main [MainThread]: Store serial: [17717726]
