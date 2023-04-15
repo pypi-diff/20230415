@@ -4294,3 +4294,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 04:14:04] INFO root fetch - main [MainThread]: End processing [webint]: success
 [2023-04-15 04:16:07] INFO root fetch - main [MainThread]: End processing [viser]: success
 [2023-04-15 04:16:07] INFO root fetch - main [MainThread]: Store serial: [17715847]
+[2023-04-15 04:21:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715847]
+[2023-04-15 04:21:13] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-15 04:21:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DomiKnowS
+[2023-04-15 04:21:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wellplate-image
+[2023-04-15 04:21:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: EdgeGPT
+[2023-04-15 04:21:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: main-package-for-holding-dastructure-library
+[2023-04-15 04:21:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyhOn
+[2023-04-15 04:21:13] WARNING root fetch - processPackages [main-package-for-holding-dastructure-library]: Skipping, unable to determine old version
+[2023-04-15 04:21:13] INFO root fetch - processPackages [main-package-for-holding-dastructure-library]: Start processing: openram
+[2023-04-15 04:21:13] INFO root fetch - main [MainThread]: End processing [main-package-for-holding-dastructure-library] error
+[2023-04-15 04:21:13] WARNING root fetch - processPackages [wellplate-image]: Skipping, unable to determine old version
+[2023-04-15 04:21:13] INFO root fetch - processPackages [DomiKnowS]: New version: [0.532] Old Version: [0.531.dev0]
+[2023-04-15 04:21:13] INFO root fetch - processPackages [pyhOn]: New version: [0.8.0b2] Old Version: [0.7.4]
+[2023-04-15 04:21:13] INFO root fetch - processPackages [wellplate-image]: Start processing: ENSF-338-Final-Project-Package
+[2023-04-15 04:21:13] INFO root fetch - main [MainThread]: End processing [wellplate-image] error
+[2023-04-15 04:21:14] INFO root fetch - processPackages [openram]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-15 04:21:14] WARNING root fetch - processPackages [ENSF-338-Final-Project-Package]: Skipping, unable to determine old version
+[2023-04-15 04:21:14] INFO root fetch - processPackages [ENSF-338-Final-Project-Package]: Start processing: plantao-noticias-b3
+[2023-04-15 04:21:14] INFO root fetch - main [MainThread]: End processing [ENSF-338-Final-Project-Package] error
+[2023-04-15 04:21:14] WARNING root fetch - processPackages [plantao-noticias-b3]: Skipping, unable to determine old version
+[2023-04-15 04:21:14] INFO root fetch - processPackages [plantao-noticias-b3]: Start processing: webint
+[2023-04-15 04:21:14] INFO root fetch - main [MainThread]: End processing [plantao-noticias-b3] error
+[2023-04-15 04:21:14] INFO root fetch - processPackages [EdgeGPT]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 04:21:14] INFO root fetch - processPackages [webint]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 04:21:14] INFO root fetch - processPackages [openram]: Downloading https://files.pythonhosted.org/packages/cd/81/d4f41efe943d85919e448d6c65c4be619651aadd21d63f69137165780373/openram-1.2.8.tar.gz
+[2023-04-15 04:21:14] INFO root fetch - processPackages [pyhOn]: Downloading https://files.pythonhosted.org/packages/3a/7d/e754d67fe03aa0f7016138c93e841e857468c3933917e4ae05066536f233/pyhOn-0.8.0b2.tar.gz
+[2023-04-15 04:21:14] INFO root fetch - processPackages [webint]: executing diffoscope
+[2023-04-15 04:21:14] INFO root fetch - processPackages [webint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint-0.1.8.tar.gz tmp/webint-0.1.9.tar.gz --markdown 20230415/w/webint/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 04:21:14] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/fa/72/6b89bc7ccd5a213061077554885e07dbd2a71a6cac4bc2cb8edf6eab4cdf/EdgeGPT-0.1.8.tar.gz
+[2023-04-15 04:21:14] INFO root fetch - processPackages [DomiKnowS]: Downloading https://files.pythonhosted.org/packages/ab/35/91b9438bb90ed966b2ef3349f076e826c033bc2804208ff6c38ff77fee07/DomiKnowS-0.532.tar.gz
+[2023-04-15 04:21:14] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-04-15 04:21:14] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.7.4.tar.gz tmp/pyhOn-0.8.0b2.tar.gz --markdown 20230415/p/pyhOn/0.7.4-0.8.0b2/diff.md --exclude *.pyd
+[2023-04-15 04:21:14] INFO root fetch - processPackages [DomiKnowS]: executing diffoscope
+[2023-04-15 04:21:14] INFO root fetch - processPackages [DomiKnowS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DomiKnowS-0.531.dev0.tar.gz tmp/DomiKnowS-0.532.tar.gz --markdown 20230415/D/DomiKnowS/0.531.dev0-0.532/diff.md --exclude *.pyd
+[2023-04-15 04:21:14] INFO root fetch - processPackages [openram]: Downloading https://files.pythonhosted.org/packages/db/55/baee5dcc46fb63835c99917282700e98ba6d6177d267d541ceb50f1352d8/openram-1.2.9.tar.gz
+[2023-04-15 04:21:14] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/f2/6a/a575243ab9d46936ac8a5370136d1f10a95208889fcefef499cf6d0cd5e7/EdgeGPT-0.1.9.tar.gz
+[2023-04-15 04:21:14] INFO root fetch - processPackages [openram]: executing diffoscope
+[2023-04-15 04:21:14] INFO root fetch - processPackages [openram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openram-1.2.8.tar.gz tmp/openram-1.2.9.tar.gz --markdown 20230415/o/openram/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-15 04:21:14] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-04-15 04:21:14] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.1.8.tar.gz tmp/EdgeGPT-0.1.9.tar.gz --markdown 20230415/E/EdgeGPT/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 04:21:15] INFO root fetch - processPackages [pyhOn]: Start processing: chat-spiral
+[2023-04-15 04:21:15] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-04-15 04:21:15] INFO root fetch - processPackages [chat-spiral]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 04:21:15] INFO root fetch - processPackages [chat-spiral]: Downloading https://files.pythonhosted.org/packages/91/d7/958a5a7089a9b472ca9bb7c9f8f34e26fc7e2097e0052ff9771e0f39ca9c/chat-spiral-0.0.3.tar.gz
+[2023-04-15 04:21:15] INFO root fetch - processPackages [EdgeGPT]: Start processing: pandasgwas
+[2023-04-15 04:21:15] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-04-15 04:21:15] INFO root fetch - processPackages [pandasgwas]: New version: [0.99.9] Old Version: [0.99.8]
+[2023-04-15 04:21:16] INFO root fetch - processPackages [chat-spiral]: Downloading https://files.pythonhosted.org/packages/5f/33/53235edfa839d0db890dbf56b9eab8678746ad92416b2a3b503cc30274dc/chat-spiral-0.0.4.tar.gz
+[2023-04-15 04:21:16] INFO root fetch - processPackages [chat-spiral]: executing diffoscope
+[2023-04-15 04:21:16] INFO root fetch - processPackages [chat-spiral]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat-spiral-0.0.3.tar.gz tmp/chat-spiral-0.0.4.tar.gz --markdown 20230415/c/chat-spiral/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 04:21:16] INFO root fetch - processPackages [pandasgwas]: Downloading https://files.pythonhosted.org/packages/f8/94/39ad133b828248ddced1c991dfd4476d60fc48827e29a64b33261a5eb8ef/pandasgwas-0.99.8.tar.gz
+[2023-04-15 04:21:16] INFO root fetch - processPackages [DomiKnowS]: Start processing: coola
+[2023-04-15 04:21:16] INFO root fetch - main [MainThread]: End processing [DomiKnowS]: success
+[2023-04-15 04:21:16] INFO root fetch - processPackages [coola]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-15 04:21:16] INFO root fetch - processPackages [coola]: Downloading https://files.pythonhosted.org/packages/14/81/206d5d44e2c37467c58ea5915f841c638518f6b947b89c00889695105a00/coola-0.0.4.tar.gz
+[2023-04-15 04:21:16] INFO root fetch - processPackages [pandasgwas]: Downloading https://files.pythonhosted.org/packages/8d/4e/18ed6e9f63bd4486574887c8c74f0d9ac441ea68a82207726ab2724f4bce/pandasgwas-0.99.9.tar.gz
+[2023-04-15 04:21:16] INFO root fetch - processPackages [pandasgwas]: executing diffoscope
+[2023-04-15 04:21:16] INFO root fetch - processPackages [pandasgwas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasgwas-0.99.8.tar.gz tmp/pandasgwas-0.99.9.tar.gz --markdown 20230415/p/pandasgwas/0.99.8-0.99.9/diff.md --exclude *.pyd
+[2023-04-15 04:21:16] INFO root fetch - processPackages [coola]: Downloading https://files.pythonhosted.org/packages/19/b1/5eeec64a373390cce904cbe610b2640a3018ac15ff1b6b387fe6f8f1edb2/coola-0.0.5.tar.gz
+[2023-04-15 04:21:16] INFO root fetch - processPackages [coola]: executing diffoscope
+[2023-04-15 04:21:16] INFO root fetch - processPackages [coola]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coola-0.0.4.tar.gz tmp/coola-0.0.5.tar.gz --markdown 20230415/c/coola/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 04:21:17] INFO root fetch - main [MainThread]: End processing [chat-spiral]: success
+[2023-04-15 04:21:17] INFO root fetch - main [MainThread]: End processing [pandasgwas]: success
+[2023-04-15 04:21:17] INFO root fetch - main [MainThread]: End processing [coola]: success
+[2023-04-15 04:21:20] INFO root fetch - main [MainThread]: End processing [webint]: success
+[2023-04-15 04:21:24] INFO root fetch - main [MainThread]: End processing [openram]: success
+[2023-04-15 04:21:24] INFO root fetch - main [MainThread]: Store serial: [17715894]
