@@ -17827,3 +17827,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 18:37:05] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.1.9-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-4.0.0.dev3-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230415/h/hiddifypanel/3.1.9-4.0.0.dev3/diff.md --exclude *.pyd
 [2023-04-15 18:37:23] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-04-15 18:37:23] INFO root fetch - main [MainThread]: Store serial: [17720242]
+[2023-04-15 18:42:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720242]
+[2023-04-15 18:42:34] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-15 18:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: retico-chatgpt
+[2023-04-15 18:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eplusout
+[2023-04-15 18:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LRU-pytorch
+[2023-04-15 18:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slg-dev-ops
+[2023-04-15 18:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: retico
+[2023-04-15 18:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fusion360-streamer
+[2023-04-15 18:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: simplebox
+[2023-04-15 18:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mayan-edms
+[2023-04-15 18:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: theforensicator
+[2023-04-15 18:42:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cubao-pybind
+[2023-04-15 18:42:34] INFO root fetch - processPackages [slg-dev-ops]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-15 18:42:34] INFO root fetch - processPackages [retico]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-15 18:42:34] INFO root fetch - processPackages [cubao-pybind]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 18:42:34] WARNING root fetch - processPackages [eplusout]: Skipping, unable to determine old version
+[2023-04-15 18:42:34] INFO root fetch - processPackages [fusion360-streamer]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-15 18:42:34] INFO root fetch - main [MainThread]: End processing [eplusout] error
+[2023-04-15 18:42:34] WARNING root fetch - processPackages [LRU-pytorch]: Skipping, unable to determine old version
+[2023-04-15 18:42:34] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a130] Old Version: [0.0.1a129]
+[2023-04-15 18:42:34] WARNING root fetch - processPackages [retico-chatgpt]: Skipping, unable to determine old version
+[2023-04-15 18:42:34] INFO root fetch - main [MainThread]: End processing [LRU-pytorch] error
+[2023-04-15 18:42:34] INFO root fetch - main [MainThread]: End processing [retico-chatgpt] error
+[2023-04-15 18:42:34] INFO root fetch - processPackages [theforensicator]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-15 18:42:34] INFO root fetch - processPackages [mayan-edms]: New version: [4.4.5] Old Version: [4.4.4]
+[2023-04-15 18:42:34] INFO root fetch - processPackages [slg-dev-ops]: executing diffoscope
+[2023-04-15 18:42:34] INFO root fetch - processPackages [slg-dev-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slg-dev-ops-1.8.0.tar.gz tmp/slg-dev-ops-1.9.0.tar.gz --markdown 20230415/s/slg-dev-ops/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-15 18:42:34] INFO root fetch - processPackages [fusion360-streamer]: executing diffoscope
+[2023-04-15 18:42:34] INFO root fetch - processPackages [fusion360-streamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fusion360-streamer-1.0.8.tar.gz tmp/fusion360-streamer-1.0.9.tar.gz --markdown 20230415/f/fusion360-streamer/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-15 18:42:34] INFO root fetch - processPackages [mayan-edms]: executing diffoscope
+[2023-04-15 18:42:34] INFO root fetch - processPackages [mayan-edms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mayan-edms-4.4.4.tar.gz tmp/mayan-edms-4.4.5.tar.gz --markdown 20230415/m/mayan-edms/4.4.4-4.4.5/diff.md --exclude *.pyd
+[2023-04-15 18:42:34] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/2a/dd/dc534bfe6793b9a12d540d49b95c028d348f75c2d0bbeb97667d99a6b0e3/simplebox-0.0.1a129-py3-none-any.whl
+[2023-04-15 18:42:34] INFO root fetch - processPackages [retico]: Downloading https://files.pythonhosted.org/packages/05/f3/7b56bd84d517cbf005cfcd589ae94b2baddeb9fcf2696c9e5a809810b2c6/retico-0.1.7.tar.gz
+[2023-04-15 18:42:34] INFO root fetch - processPackages [cubao-pybind]: Downloading https://files.pythonhosted.org/packages/f6/a0/4b194d83a1c822efae104bb764531e27fad4ee22e5aa82da9ab8ab05f59d/cubao_pybind-0.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 18:42:34] INFO root fetch - processPackages [theforensicator]: Downloading https://files.pythonhosted.org/packages/28/f3/f0784d3e1bccb29601e91a65e4c2dc36fd3faec51dde64b4f7966c91e281/theforensicator-0.1.5.tar.gz
+[2023-04-15 18:42:34] INFO root fetch - processPackages [theforensicator]: executing diffoscope
+[2023-04-15 18:42:34] INFO root fetch - processPackages [theforensicator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/theforensicator-0.1.4.tar.gz tmp/theforensicator-0.1.5.tar.gz --markdown 20230415/t/theforensicator/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-15 18:42:34] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/a0/23/02f7ed33343b08537fe2ef73dffbd9cb3dd2c1db15e9d085ffa598a1a647/simplebox-0.0.1a130-py3-none-any.whl
+[2023-04-15 18:42:34] INFO root fetch - processPackages [retico]: Downloading https://files.pythonhosted.org/packages/8b/dc/4de3d7ba47f4a69c9d6bc45c64efd3e428138e3c9d43c4f77be4f36854ba/retico-0.1.8.tar.gz
+[2023-04-15 18:42:34] INFO root fetch - processPackages [cubao-pybind]: Downloading https://files.pythonhosted.org/packages/3d/e3/422264ee4890c1e1c16320935db2128e2f80db02053d95028c2131a62f89/cubao_pybind-0.0.2-cp311-cp311-win_amd64.whl
+[2023-04-15 18:42:34] INFO root fetch - processPackages [retico]: executing diffoscope
+[2023-04-15 18:42:34] INFO root fetch - processPackages [retico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retico-0.1.7.tar.gz tmp/retico-0.1.8.tar.gz --markdown 20230415/r/retico/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-15 18:42:34] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2023-04-15 18:42:34] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a129-py3-none-any.whl.zip tmp/simplebox-0.0.1a130-py3-none-any.whl.zip --markdown 20230415/s/simplebox/0.0.1a129-0.0.1a130/diff.md --exclude *.pyd
+[2023-04-15 18:42:34] INFO root fetch - processPackages [cubao-pybind]: executing diffoscope
+[2023-04-15 18:42:34] INFO root fetch - processPackages [cubao-pybind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cubao_pybind-0.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/cubao_pybind-0.0.2-cp311-cp311-win_amd64.whl.zip --markdown 20230415/c/cubao-pybind/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 18:42:35] INFO root fetch - main [MainThread]: End processing [slg-dev-ops]: success
+[2023-04-15 18:42:35] INFO root fetch - main [MainThread]: End processing [fusion360-streamer]: success
+[2023-04-15 18:42:35] INFO root fetch - main [MainThread]: End processing [theforensicator]: success
+[2023-04-15 18:42:35] INFO root fetch - main [MainThread]: End processing [retico]: success
+[2023-04-15 18:42:35] INFO root fetch - main [MainThread]: End processing [cubao-pybind]: success
+[2023-04-15 18:42:36] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2023-04-15 18:44:50] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
+[2023-04-15 18:44:50] INFO root fetch - main [MainThread]: Store serial: [17720281]
