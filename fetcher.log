@@ -14622,3 +14622,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 12:52:16] INFO root fetch - main [MainThread]: End processing [pip]: success
 [2023-04-15 12:53:18] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-04-15 12:53:18] INFO root fetch - main [MainThread]: Store serial: [17718252]
+[2023-04-15 12:58:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718252]
+[2023-04-15 12:58:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 12:58:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: square-artkov
+[2023-04-15 12:58:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hiddifypanel
+[2023-04-15 12:58:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psql2py
+[2023-04-15 12:58:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: square-artkov1
+[2023-04-15 12:58:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: secapi-tl
+[2023-04-15 12:58:27] WARNING root fetch - processPackages [square-artkov1]: Skipping, unable to determine old version
+[2023-04-15 12:58:27] INFO root fetch - main [MainThread]: End processing [square-artkov1] error
+[2023-04-15 12:58:27] INFO root fetch - processPackages [psql2py]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-15 12:58:27] INFO root fetch - processPackages [hiddifypanel]: New version: [4.0.0.dev0] Old Version: [3.1.6]
+[2023-04-15 12:58:27] INFO root fetch - processPackages [square-artkov]: New version: [1.0.0] Old Version: [0.0.1]
+[2023-04-15 12:58:27] INFO root fetch - processPackages [secapi-tl]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-15 12:58:27] INFO root fetch - processPackages [psql2py]: Downloading https://files.pythonhosted.org/packages/75/5b/77e88b58e7915c14ebe169397b7c1c72afc7aabde8270f3bd0c2821ec214/psql2py-0.1.0.tar.gz
+[2023-04-15 12:58:27] INFO root fetch - processPackages [square-artkov]: Downloading https://files.pythonhosted.org/packages/ef/f1/e63f69b6591ae8c9cb5c31a4be247d3fa22917da015d1809fd931f7f969e/square_artkov-0.0.1-py3-none-any.whl
+[2023-04-15 12:58:27] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/cb/64/ae64ad52a2ceef1c07856768f3f7bc9c6740a1f45286a47f17b02e1c9e70/hiddifypanel-3.1.6-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-15 12:58:27] INFO root fetch - processPackages [secapi-tl]: Downloading https://files.pythonhosted.org/packages/8e/24/9ffec8364434670aa699723af66c7b2fc852f8b4f6a0589ba6da19236b2b/secapi-tl-1.1.4.tar.gz
+[2023-04-15 12:58:27] INFO root fetch - processPackages [square-artkov]: Downloading https://files.pythonhosted.org/packages/5c/da/5eff9af4b0e817da742ff4f376bf59eec87dc77a3d2956b821a52b989ec8/square_artkov-1.0.0.tar.gz
+[2023-04-15 12:58:28] INFO root fetch - processPackages [secapi-tl]: executing diffoscope
+[2023-04-15 12:58:28] INFO root fetch - processPackages [secapi-tl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secapi-tl-1.1.3.tar.gz tmp/secapi-tl-1.1.4.tar.gz --markdown 20230415/s/secapi-tl/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-15 12:58:28] INFO root fetch - processPackages [square-artkov]: executing diffoscope
+[2023-04-15 12:58:28] INFO root fetch - processPackages [square-artkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/square_artkov-0.0.1-py3-none-any.whl.zip tmp/square_artkov-1.0.0.tar.gz --markdown 20230415/s/square-artkov/0.0.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-15 12:58:28] INFO root fetch - processPackages [psql2py]: Downloading https://files.pythonhosted.org/packages/55/8b/903c1e665efeedeaa060a6710028173650b1062e6f5eb2108393de22a180/psql2py-0.2.0.tar.gz
+[2023-04-15 12:58:28] INFO root fetch - processPackages [psql2py]: executing diffoscope
+[2023-04-15 12:58:28] INFO root fetch - processPackages [psql2py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psql2py-0.1.0.tar.gz tmp/psql2py-0.2.0.tar.gz --markdown 20230415/p/psql2py/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 12:58:28] INFO root fetch - main [MainThread]: End processing [square-artkov]: success
+[2023-04-15 12:58:29] INFO root fetch - main [MainThread]: End processing [secapi-tl]: success
+[2023-04-15 12:58:29] INFO root fetch - main [MainThread]: End processing [psql2py]: success
+[2023-04-15 12:58:29] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/1f/11/65dca9b82d6072a8ffd9d02ca687b8d7d40481517b9d8039b10bb0d66ba7/hiddifypanel-4.0.0.dev0-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-15 12:58:30] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-15 12:58:30] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.1.6-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-4.0.0.dev0-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230415/h/hiddifypanel/3.1.6-4.0.0.dev0/diff.md --exclude *.pyd
+[2023-04-15 12:58:44] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-04-15 12:58:44] INFO root fetch - main [MainThread]: Store serial: [17718278]
