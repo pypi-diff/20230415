@@ -18045,3 +18045,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 19:11:08] INFO root fetch - main [MainThread]: End processing [awc]: success
 [2023-04-15 19:11:09] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-facturae]: success
 [2023-04-15 19:11:09] INFO root fetch - main [MainThread]: Store serial: [17720433]
+[2023-04-15 19:16:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720433]
+[2023-04-15 19:16:19] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 19:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PHX
+[2023-04-15 19:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leveled-hotbackup-s3-sync
+[2023-04-15 19:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-cookie-consent-gutsh
+[2023-04-15 19:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otoe
+[2023-04-15 19:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: backseat-driver
+[2023-04-15 19:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flgo
+[2023-04-15 19:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: betanegbinfit
+[2023-04-15 19:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spanishconjugator
+[2023-04-15 19:16:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: algo900
+[2023-04-15 19:16:19] WARNING root fetch - processPackages [leveled-hotbackup-s3-sync]: Skipping, unable to determine old version
+[2023-04-15 19:16:19] INFO root fetch - main [MainThread]: End processing [leveled-hotbackup-s3-sync] error
+[2023-04-15 19:16:19] WARNING root fetch - processPackages [algo900]: Skipping, unable to determine old version
+[2023-04-15 19:16:19] INFO root fetch - main [MainThread]: End processing [algo900] error
+[2023-04-15 19:16:19] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-15 19:16:19] WARNING root fetch - processPackages [django-cookie-consent-gutsh]: Skipping, unable to determine old version
+[2023-04-15 19:16:19] INFO root fetch - main [MainThread]: End processing [django-cookie-consent-gutsh] error
+[2023-04-15 19:16:19] INFO root fetch - processPackages [PHX]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-15 19:16:19] INFO root fetch - processPackages [flgo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 19:16:19] INFO root fetch - processPackages [otoe]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 19:16:19] WARNING root fetch - processPackages [backseat-driver]: Skipping, unable to determine old version
+[2023-04-15 19:16:19] INFO root fetch - main [MainThread]: End processing [backseat-driver] error
+[2023-04-15 19:16:19] INFO root fetch - processPackages [betanegbinfit]: New version: [1.8.2] Old Version: [1.8.1]
+[2023-04-15 19:16:19] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-15 19:16:19] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230415/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-15 19:16:20] INFO root fetch - processPackages [PHX]: Downloading https://files.pythonhosted.org/packages/ad/48/a9b966f484d5fbfbde35e2c15c1211cc18359a09978bfbaafcd30f095d50/PHX-1.8.1.tar.gz
+[2023-04-15 19:16:20] INFO root fetch - processPackages [flgo]: Downloading https://files.pythonhosted.org/packages/7d/03/f7ae72ce893be762dba8320d17de265ad7022b88a52e90a1bb76db918b86/flgo-0.0.8.tar.gz
+[2023-04-15 19:16:20] INFO root fetch - processPackages [betanegbinfit]: Downloading https://files.pythonhosted.org/packages/91/db/e1a5c64f21f0e291e3c9f0a73d536769628082ab09f412147734522d8592/betanegbinfit-1.8.1.tar.gz
+[2023-04-15 19:16:20] INFO root fetch - processPackages [otoe]: Downloading https://files.pythonhosted.org/packages/fe/3f/e0bee4ef1adda3f751694db22832c1b4ac4d7d93a0c7a627042a88edcf8d/otoe-0.0.4.tar.gz
+[2023-04-15 19:16:20] INFO root fetch - processPackages [flgo]: Downloading https://files.pythonhosted.org/packages/7c/4c/1c5b7b0186dfc5956f5b4836f8a9ca2ba58d694b2a89e0b5dba6910f9779/flgo-0.0.9.tar.gz
+[2023-04-15 19:16:20] INFO root fetch - processPackages [betanegbinfit]: Downloading https://files.pythonhosted.org/packages/e5/e8/1b476c40b5f35f76b185b63279d874dc733d226b8edc38e3f68ab518bf82/betanegbinfit-1.8.2.tar.gz
+[2023-04-15 19:16:20] INFO root fetch - processPackages [flgo]: executing diffoscope
+[2023-04-15 19:16:20] INFO root fetch - processPackages [flgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flgo-0.0.8.tar.gz tmp/flgo-0.0.9.tar.gz --markdown 20230415/f/flgo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 19:16:20] INFO root fetch - processPackages [otoe]: executing diffoscope
+[2023-04-15 19:16:20] INFO root fetch - processPackages [otoe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otoe-0.0.3.tar.gz tmp/otoe-0.0.4.tar.gz --markdown 20230415/o/otoe/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 19:16:20] INFO root fetch - processPackages [PHX]: Downloading https://files.pythonhosted.org/packages/d5/cf/427f0ced8ef3cc98e22c877b4eb980575483e2cf3ac2387f5e901120b744/PHX-1.9.0.tar.gz
+[2023-04-15 19:16:20] INFO root fetch - processPackages [betanegbinfit]: executing diffoscope
+[2023-04-15 19:16:20] INFO root fetch - processPackages [betanegbinfit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betanegbinfit-1.8.1.tar.gz tmp/betanegbinfit-1.8.2.tar.gz --markdown 20230415/b/betanegbinfit/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2023-04-15 19:16:20] INFO root fetch - processPackages [PHX]: executing diffoscope
+[2023-04-15 19:16:20] INFO root fetch - processPackages [PHX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PHX-1.8.1.tar.gz tmp/PHX-1.9.0.tar.gz --markdown 20230415/P/PHX/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-15 19:16:21] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-15 19:16:21] INFO root fetch - main [MainThread]: End processing [otoe]: success
+[2023-04-15 19:16:21] INFO root fetch - main [MainThread]: End processing [betanegbinfit]: success
+[2023-04-15 19:16:22] INFO root fetch - main [MainThread]: End processing [PHX]: success
+[2023-04-15 19:16:22] INFO root fetch - main [MainThread]: End processing [flgo]: success
+[2023-04-15 19:16:22] INFO root fetch - main [MainThread]: Store serial: [17720465]
