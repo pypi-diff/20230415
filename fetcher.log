@@ -5063,3 +5063,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 05:50:38] INFO root fetch - main [MainThread]: End processing [pipen]: success
 [2023-04-15 05:50:38] INFO root fetch - main [MainThread]: End processing [plantao-noticias-b3]: success
 [2023-04-15 05:50:38] INFO root fetch - main [MainThread]: Store serial: [17716310]
+[2023-04-15 05:55:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716310]
+[2023-04-15 05:55:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-15 05:55:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo13-addon-dms
+[2023-04-15 05:55:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drs-compliance
+[2023-04-15 05:55:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: adafruit-circuitpython-typing
+[2023-04-15 05:55:45] INFO root fetch - processPackages [drs-compliance]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-15 05:55:45] INFO root fetch - processPackages [odoo13-addon-dms]: New version: [13.0.8.5.1.dev9] Old Version: [13.0.8.5.1.dev8]
+[2023-04-15 05:55:45] INFO root fetch - processPackages [adafruit-circuitpython-typing]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-15 05:55:45] INFO root fetch - processPackages [odoo13-addon-dms]: Downloading https://files.pythonhosted.org/packages/52/6e/bd3e2fcb6bc5aa952353b86014883ab2d389b54b0697ec5f6bb629d487f4/odoo13_addon_dms-13.0.8.5.1.dev8-py3-none-any.whl
+[2023-04-15 05:55:45] INFO root fetch - processPackages [drs-compliance]: Downloading https://files.pythonhosted.org/packages/8d/4c/1397f8d8210c848881df9713fc8d5aaa7dcf974ba0517fdaf15b0093c70e/drs-compliance-1.0.6.tar.gz
+[2023-04-15 05:55:46] INFO root fetch - processPackages [adafruit-circuitpython-typing]: Downloading https://files.pythonhosted.org/packages/c7/0b/8f93640737623a95ef1e0b5ea7e7346ac8402b2e3c7e5315367529987445/adafruit-circuitpython-typing-1.9.0.tar.gz
+[2023-04-15 05:55:46] INFO root fetch - processPackages [drs-compliance]: executing diffoscope
+[2023-04-15 05:55:46] INFO root fetch - processPackages [drs-compliance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drs-compliance-1.0.5.tar.gz tmp/drs-compliance-1.0.6.tar.gz --markdown 20230415/d/drs-compliance/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-15 05:55:46] WARNING root fetch - processPackages [odoo13-addon-dms]: Skipping package: exceeds size limit 15628955>=10485760
+[2023-04-15 05:55:46] INFO root fetch - main [MainThread]: End processing [odoo13-addon-dms] error
+[2023-04-15 05:55:46] INFO root fetch - processPackages [adafruit-circuitpython-typing]: Downloading https://files.pythonhosted.org/packages/f0/85/4b9b1c1ee833cf1c8562477d57abba4cef3ca73180f3913d5a9b2f3fdaff/adafruit-circuitpython-typing-1.9.1.tar.gz
+[2023-04-15 05:55:46] INFO root fetch - processPackages [adafruit-circuitpython-typing]: executing diffoscope
+[2023-04-15 05:55:46] INFO root fetch - processPackages [adafruit-circuitpython-typing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-typing-1.9.0.tar.gz tmp/adafruit-circuitpython-typing-1.9.1.tar.gz --markdown 20230415/a/adafruit-circuitpython-typing/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-15 05:55:47] INFO root fetch - main [MainThread]: End processing [drs-compliance]: success
+[2023-04-15 05:55:47] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-typing]: success
+[2023-04-15 05:55:47] INFO root fetch - main [MainThread]: Store serial: [17716318]
