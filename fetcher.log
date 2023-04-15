@@ -16203,3 +16203,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 15:36:01] INFO root fetch - main [MainThread]: End processing [ogs5py]: success
 [2023-04-15 15:36:03] INFO root fetch - main [MainThread]: End processing [starwhale]: success
 [2023-04-15 15:36:03] INFO root fetch - main [MainThread]: Store serial: [17719224]
+[2023-04-15 15:41:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719224]
+[2023-04-15 15:41:13] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 15:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyPhasesML
+[2023-04-15 15:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-admin-site-search
+[2023-04-15 15:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jaxns
+[2023-04-15 15:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitpulse
+[2023-04-15 15:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: digitalarztools
+[2023-04-15 15:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flm-core
+[2023-04-15 15:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-l10n-br-resource
+[2023-04-15 15:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cmdgpt
+[2023-04-15 15:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sharewifi
+[2023-04-15 15:41:13] INFO root fetch - processPackages [django-admin-site-search]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-15 15:41:13] INFO root fetch - processPackages [jaxns]: New version: [2.1.0] Old Version: [2.0.1]
+[2023-04-15 15:41:13] INFO root fetch - processPackages [gitpulse]: New version: [1.2] Old Version: [1.1]
+[2023-04-15 15:41:13] INFO root fetch - processPackages [pyPhasesML]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-15 15:41:13] INFO root fetch - processPackages [digitalarztools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 15:41:13] WARNING root fetch - processPackages [odoo-addon-l10n-br-resource]: Skipping, unable to determine old version
+[2023-04-15 15:41:13] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-br-resource] error
+[2023-04-15 15:41:13] WARNING root fetch - processPackages [flm-core]: Skipping, unable to determine old version
+[2023-04-15 15:41:13] INFO root fetch - main [MainThread]: End processing [flm-core] error
+[2023-04-15 15:41:13] INFO root fetch - processPackages [cmdgpt]: New version: [0.3.0] Old Version: [0.2.5]
+[2023-04-15 15:41:13] INFO root fetch - processPackages [sharewifi]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-15 15:41:13] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2023-04-15 15:41:13] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.0.8.tar.gz tmp/digitalarztools-0.0.9.tar.gz --markdown 20230415/d/digitalarztools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 15:41:13] INFO root fetch - processPackages [pyPhasesML]: Downloading https://files.pythonhosted.org/packages/d2/d1/639513bea5f66f4c11f58223fb13ce40426bf482d0011d85252723c8b188/pyPhasesML-0.4.6.tar.gz
+[2023-04-15 15:41:13] INFO root fetch - processPackages [gitpulse]: Downloading https://files.pythonhosted.org/packages/45/87/6fff6c7df418f9cb38da50bd96079fe8f5b61c594a3247455cc07acddbf9/gitpulse-1.2.tar.gz
+[2023-04-15 15:41:13] INFO root fetch - processPackages [django-admin-site-search]: Downloading https://files.pythonhosted.org/packages/c4/34/0a7bbb7c5f31750723e13dcae39197a68b8e14e799c3f2a9131737ce834e/django-admin-site-search-0.3.1.tar.gz
+[2023-04-15 15:41:13] INFO root fetch - processPackages [jaxns]: Downloading https://files.pythonhosted.org/packages/68/10/1b7022c4e010af0284f7f7d8a43601d5b82215b91a274a894dc1f054a8ee/jaxns-2.0.1.tar.gz
+[2023-04-15 15:41:13] INFO root fetch - processPackages [cmdgpt]: Downloading https://files.pythonhosted.org/packages/9f/12/71a857f71813c30891303b78ec1a9a928982f105b0766508215060856bf1/cmdgpt-0.3.0.tar.gz
+[2023-04-15 15:41:13] INFO root fetch - processPackages [sharewifi]: Downloading https://files.pythonhosted.org/packages/ab/11/817570c65a5be7b0973c07f750c310c3b521ab3078ec856da0ca5751c394/sharewifi-1.0.3.tar.gz
+[2023-04-15 15:41:13] INFO root fetch - processPackages [pyPhasesML]: executing diffoscope
+[2023-04-15 15:41:13] INFO root fetch - processPackages [pyPhasesML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPhasesML-0.4.5.tar.gz tmp/pyPhasesML-0.4.6.tar.gz --markdown 20230415/p/pyPhasesML/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-15 15:41:13] INFO root fetch - processPackages [cmdgpt]: executing diffoscope
+[2023-04-15 15:41:13] INFO root fetch - processPackages [cmdgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmdgpt-0.2.5.tar.gz tmp/cmdgpt-0.3.0.tar.gz --markdown 20230415/c/cmdgpt/0.2.5-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 15:41:13] INFO root fetch - processPackages [sharewifi]: executing diffoscope
+[2023-04-15 15:41:13] INFO root fetch - processPackages [sharewifi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharewifi-1.0.2.tar.gz tmp/sharewifi-1.0.3.tar.gz --markdown 20230415/s/sharewifi/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-15 15:41:13] INFO root fetch - processPackages [gitpulse]: executing diffoscope
+[2023-04-15 15:41:13] INFO root fetch - processPackages [gitpulse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitpulse-1.1.tar.gz tmp/gitpulse-1.2.tar.gz --markdown 20230415/g/gitpulse/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-15 15:41:13] INFO root fetch - processPackages [jaxns]: Downloading https://files.pythonhosted.org/packages/cd/3d/0a50fc81259bd2278805cec25bd49eb4b2a286757cc6b4f1cb1dc249cda8/jaxns-2.1.0.tar.gz
+[2023-04-15 15:41:13] INFO root fetch - processPackages [django-admin-site-search]: Downloading https://files.pythonhosted.org/packages/73/5b/48085cee95f837ce35620b34d7c89da69dc41281d927c0d4f2229d3694d7/django-admin-site-search-0.3.2.tar.gz
+[2023-04-15 15:41:13] INFO root fetch - processPackages [jaxns]: executing diffoscope
+[2023-04-15 15:41:13] INFO root fetch - processPackages [jaxns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxns-2.0.1.tar.gz tmp/jaxns-2.1.0.tar.gz --markdown 20230415/j/jaxns/2.0.1-2.1.0/diff.md --exclude *.pyd
+[2023-04-15 15:41:13] INFO root fetch - processPackages [django-admin-site-search]: executing diffoscope
+[2023-04-15 15:41:13] INFO root fetch - processPackages [django-admin-site-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-site-search-0.3.1.tar.gz tmp/django-admin-site-search-0.3.2.tar.gz --markdown 20230415/d/django-admin-site-search/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-15 15:41:14] INFO root fetch - main [MainThread]: End processing [sharewifi]: success
+[2023-04-15 15:41:14] INFO root fetch - main [MainThread]: End processing [pyPhasesML]: success
+[2023-04-15 15:41:14] INFO root fetch - main [MainThread]: End processing [cmdgpt]: success
+[2023-04-15 15:41:15] INFO root fetch - main [MainThread]: End processing [gitpulse]: success
+[2023-04-15 15:41:15] INFO root fetch - main [MainThread]: End processing [jaxns]: success
+[2023-04-15 15:41:15] INFO root fetch - main [MainThread]: End processing [django-admin-site-search]: success
+[2023-04-15 15:41:16] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2023-04-15 15:41:16] INFO root fetch - main [MainThread]: Store serial: [17719253]
