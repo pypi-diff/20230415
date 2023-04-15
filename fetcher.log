@@ -5456,3 +5456,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 06:55:30] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
 [2023-04-15 06:55:47] INFO root fetch - main [MainThread]: End processing [jskiner]: success
 [2023-04-15 06:55:47] INFO root fetch - main [MainThread]: Store serial: [17716538]
+[2023-04-15 07:00:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716538]
+[2023-04-15 07:00:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 07:00:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anachem
+[2023-04-15 07:00:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bipartite-learn
+[2023-04-15 07:00:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tflite-runtime-nightly
+[2023-04-15 07:00:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zwkit
+[2023-04-15 07:00:57] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.13.0.dev20230413] Old Version: [2.13.0.dev20230410]
+[2023-04-15 07:00:57] INFO root fetch - processPackages [zwkit]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-15 07:00:57] INFO root fetch - processPackages [anachem]: New version: [0.20] Old Version: [0.12]
+[2023-04-15 07:00:57] WARNING root fetch - processPackages [bipartite-learn]: Skipping, unable to determine old version
+[2023-04-15 07:00:57] INFO root fetch - main [MainThread]: End processing [bipartite-learn] error
+[2023-04-15 07:00:57] INFO root fetch - processPackages [zwkit]: executing diffoscope
+[2023-04-15 07:00:57] INFO root fetch - processPackages [zwkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zwkit-0.4.8.tar.gz tmp/zwkit-0.4.9.tar.gz --markdown 20230415/z/zwkit/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-15 07:00:58] INFO root fetch - processPackages [anachem]: Downloading https://files.pythonhosted.org/packages/ab/55/f2a45096bdb24af4eaf1d3aa5555429d0cfe6a74e63c3845148b599d6565/anachem-0.12.tar.gz
+[2023-04-15 07:00:58] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/be/f0/2fa0b016ba0c9ebc892218197742dd3f3d1bf03506aecde64f7d5835993a/tflite_runtime_nightly-2.13.0.dev20230413-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-15 07:00:58] INFO root fetch - processPackages [anachem]: Downloading https://files.pythonhosted.org/packages/a8/5a/1582d6b170dce303b8271b64c7c8db16c54e70e19dc4afc118fae2634423/anachem-0.20.tar.gz
+[2023-04-15 07:00:58] INFO root fetch - processPackages [anachem]: executing diffoscope
+[2023-04-15 07:00:58] INFO root fetch - processPackages [anachem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anachem-0.12.tar.gz tmp/anachem-0.20.tar.gz --markdown 20230415/a/anachem/0.12-0.20/diff.md --exclude *.pyd
+[2023-04-15 07:00:58] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-04-15 07:00:58] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.13.0.dev20230410-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.13.0.dev20230413-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230415/t/tflite-runtime-nightly/2.13.0.dev20230410-2.13.0.dev20230413/diff.md --exclude *.pyd
+[2023-04-15 07:00:59] INFO root fetch - main [MainThread]: End processing [zwkit]: success
+[2023-04-15 07:00:59] INFO root fetch - main [MainThread]: End processing [anachem]: success
+[2023-04-15 07:01:33] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-04-15 07:01:33] INFO root fetch - main [MainThread]: Store serial: [17716559]
