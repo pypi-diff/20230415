@@ -14326,3 +14326,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 12:15:18] INFO root fetch - main [MainThread]: End processing [os2ds-rules]: success
 [2023-04-15 12:15:19] INFO root fetch - main [MainThread]: End processing [plone.app.event]: success
 [2023-04-15 12:15:19] INFO root fetch - main [MainThread]: Store serial: [17718085]
+[2023-04-15 12:20:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718085]
+[2023-04-15 12:20:29] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 12:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peaqevcore
+[2023-04-15 12:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: terra-classic-sdk
+[2023-04-15 12:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lbutils-mp
+[2023-04-15 12:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langcorn
+[2023-04-15 12:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypi-sql-query-inspector
+[2023-04-15 12:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: anim
+[2023-04-15 12:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyroFork-dev
+[2023-04-15 12:20:29] WARNING root fetch - processPackages [terra-classic-sdk]: Skipping, unable to determine old version
+[2023-04-15 12:20:29] INFO root fetch - main [MainThread]: End processing [terra-classic-sdk] error
+[2023-04-15 12:20:29] WARNING root fetch - processPackages [pypi-sql-query-inspector]: Skipping, unable to determine old version
+[2023-04-15 12:20:29] INFO root fetch - main [MainThread]: End processing [pypi-sql-query-inspector] error
+[2023-04-15 12:20:29] INFO root fetch - processPackages [anim]: New version: [0.1.18] Old Version: [0.1.17]
+[2023-04-15 12:20:29] INFO root fetch - processPackages [lbutils-mp]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-15 12:20:29] INFO root fetch - processPackages [langcorn]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 12:20:29] INFO root fetch - processPackages [PyroFork-dev]: New version: [2.1.5a1.dev202304141818] Old Version: [2.1.5a1.dev202304141812]
+[2023-04-15 12:20:29] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-04-15 12:20:29] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/d3/3a/d595706eb589ecf59a8cba9b6d5b0456fc65fe7e1d2c1e2aec7feee838b8/peaqevcore-9.2.2.tar.gz
+[2023-04-15 12:20:29] INFO root fetch - processPackages [anim]: executing diffoscope
+[2023-04-15 12:20:29] INFO root fetch - processPackages [anim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anim-0.1.17-py3-none-any.whl.zip tmp/anim-0.1.18-py3-none-any.whl.zip --markdown 20230415/a/anim/0.1.17-0.1.18/diff.md --exclude *.pyd
+[2023-04-15 12:20:29] INFO root fetch - processPackages [PyroFork-dev]: executing diffoscope
+[2023-04-15 12:20:29] INFO root fetch - processPackages [PyroFork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-dev-2.1.5a1.dev202304141812.tar.gz tmp/PyroFork-dev-2.1.5a1.dev202304141818.tar.gz --markdown 20230415/P/PyroFork-dev/2.1.5a1.dev202304141812-2.1.5a1.dev202304141818/diff.md --exclude *.pyd
+[2023-04-15 12:20:29] INFO root fetch - processPackages [lbutils-mp]: Downloading https://files.pythonhosted.org/packages/ca/80/53d5e9e681699288422755ed00bf2826e7cc108c6cae733d056768c1c17c/lbutils-mp-0.2.3.tar.gz
+[2023-04-15 12:20:29] INFO root fetch - processPackages [langcorn]: Downloading https://files.pythonhosted.org/packages/4f/26/94375f53dcd78cfd85e7a6dd25f2772ded8e2b02799bd78f4e9be407ffdf/langcorn-0.0.3.tar.gz
+[2023-04-15 12:20:29] INFO root fetch - processPackages [lbutils-mp]: executing diffoscope
+[2023-04-15 12:20:29] INFO root fetch - processPackages [lbutils-mp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbutils-mp-0.2.2.tar.gz tmp/lbutils-mp-0.2.3.tar.gz --markdown 20230415/l/lbutils-mp/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-15 12:20:29] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/7d/ed/173dd45b11e856f6a0a37a2fe90750405b19807684a9c94bd5e9388c29a2/peaqevcore-9.2.3.tar.gz
+[2023-04-15 12:20:29] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-04-15 12:20:29] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230415/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-04-15 12:20:29] INFO root fetch - processPackages [langcorn]: Downloading https://files.pythonhosted.org/packages/5c/5a/0370697cecffb3cdcefd3eefcca8f4058adb73f508a89600d83a8d01bfb5/langcorn-0.0.4.tar.gz
+[2023-04-15 12:20:29] INFO root fetch - processPackages [langcorn]: executing diffoscope
+[2023-04-15 12:20:29] INFO root fetch - processPackages [langcorn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langcorn-0.0.3.tar.gz tmp/langcorn-0.0.4.tar.gz --markdown 20230415/l/langcorn/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 12:20:30] INFO root fetch - main [MainThread]: End processing [anim]: success
+[2023-04-15 12:20:31] INFO root fetch - main [MainThread]: End processing [langcorn]: success
+[2023-04-15 12:20:31] INFO root fetch - main [MainThread]: End processing [lbutils-mp]: success
+[2023-04-15 12:20:31] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-04-15 12:20:33] INFO root fetch - main [MainThread]: End processing [PyroFork-dev]: success
+[2023-04-15 12:20:33] INFO root fetch - main [MainThread]: Store serial: [17718111]
