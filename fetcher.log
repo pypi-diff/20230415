@@ -5420,3 +5420,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 06:50:08] INFO root fetch - main [MainThread]: End processing [odoo12-addon-l10n-it-fiscal-document-type]: success
 [2023-04-15 06:50:08] INFO root fetch - main [MainThread]: End processing [odoo14-addon-assets-management]: success
 [2023-04-15 06:50:08] INFO root fetch - main [MainThread]: Store serial: [17716517]
+[2023-04-15 06:55:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716517]
+[2023-04-15 06:55:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 06:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mage-ai
+[2023-04-15 06:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-l10n-it-corrispettivi
+[2023-04-15 06:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-l10n-it-fatturapa-in
+[2023-04-15 06:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addons-oca-l10n-italy
+[2023-04-15 06:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jskiner
+[2023-04-15 06:55:17] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo12-addon-l10n-it-corrispettivi]: New version: [12.0.1.1.8.99.dev4] Old Version: [12.0.1.1.8.99.dev3]
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: New version: [16.0.20230414.0] Old Version: [16.0.20230310.0]
+[2023-04-15 06:55:17] INFO root fetch - processPackages [jskiner]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 06:55:17] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-04-15 06:55:17] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.8.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230415/m/mage-ai/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: Downloading https://files.pythonhosted.org/packages/15/9a/1b740f266697e7b0f27311a0254dcb2b81f23070de3a6f0aacabddb321b5/odoo_addons_oca_l10n_italy-16.0.20230310.0-py3-none-any.whl
+[2023-04-15 06:55:17] INFO root fetch - processPackages [jskiner]: Downloading https://files.pythonhosted.org/packages/88/b2/2863af93c78c6a60b76d674e7a15ccfb02ceff8a6eb263ae6bc9de7bb9d1/jskiner-0.0.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Downloading https://files.pythonhosted.org/packages/23/5a/335b51ed15d32d36c533a53f5126367b8067e8b589295d75731d8fb0b033/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.0.2-py3-none-any.whl
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo12-addon-l10n-it-corrispettivi]: Downloading https://files.pythonhosted.org/packages/87/46/c2c24515b3999237a51d546010de3dd0243a4a11470c2b27d5a4a8f65e17/odoo12_addon_l10n_it_corrispettivi-12.0.1.1.8.99.dev3-py3-none-any.whl
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Downloading https://files.pythonhosted.org/packages/e4/fa/59d117709a6fa8679a562d921e3222041041be28ab9d43003d90c2c6c771/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.0.3-py3-none-any.whl
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: executing diffoscope
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230415/o/odoo-addon-l10n-it-fatturapa-in/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: Downloading https://files.pythonhosted.org/packages/c4/ff/7b7dc3bc1e4fd930c32369566ef0f143cdd5d3df87f11197cbfe9cc703e3/odoo_addons_oca_l10n_italy-16.0.20230414.0-py3-none-any.whl
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: executing diffoscope
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_l10n_italy-16.0.20230310.0-py3-none-any.whl.zip tmp/odoo_addons_oca_l10n_italy-16.0.20230414.0-py3-none-any.whl.zip --markdown 20230415/o/odoo-addons-oca-l10n-italy/16.0.20230310.0-16.0.20230414.0/diff.md --exclude *.pyd
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo12-addon-l10n-it-corrispettivi]: Downloading https://files.pythonhosted.org/packages/07/e3/564529e2276fe56df139607ac713f6f8faf2e6e0810d52caf4e8d98e8a4a/odoo12_addon_l10n_it_corrispettivi-12.0.1.1.8.99.dev4-py3-none-any.whl
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo12-addon-l10n-it-corrispettivi]: executing diffoscope
+[2023-04-15 06:55:17] INFO root fetch - processPackages [odoo12-addon-l10n-it-corrispettivi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_l10n_it_corrispettivi-12.0.1.1.8.99.dev3-py3-none-any.whl.zip tmp/odoo12_addon_l10n_it_corrispettivi-12.0.1.1.8.99.dev4-py3-none-any.whl.zip --markdown 20230415/o/odoo12-addon-l10n-it-corrispettivi/12.0.1.1.8.99.dev3-12.0.1.1.8.99.dev4/diff.md --exclude *.pyd
+[2023-04-15 06:55:18] INFO root fetch - processPackages [jskiner]: Downloading https://files.pythonhosted.org/packages/cc/c4/10726ae895cb89fe6bd63831407977aa9c03a221df0a7835edf24e9ca5d7/jskiner-0.0.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 06:55:18] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-l10n-italy]: success
+[2023-04-15 06:55:18] INFO root fetch - processPackages [jskiner]: executing diffoscope
+[2023-04-15 06:55:18] INFO root fetch - processPackages [jskiner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jskiner-0.0.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/jskiner-0.0.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230415/j/jskiner/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 06:55:19] INFO root fetch - main [MainThread]: End processing [odoo12-addon-l10n-it-corrispettivi]: success
+[2023-04-15 06:55:19] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fatturapa-in]: success
+[2023-04-15 06:55:30] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
+[2023-04-15 06:55:47] INFO root fetch - main [MainThread]: End processing [jskiner]: success
+[2023-04-15 06:55:47] INFO root fetch - main [MainThread]: Store serial: [17716538]
