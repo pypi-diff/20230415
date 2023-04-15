@@ -17690,3 +17690,13 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 18:15:34] INFO root fetch - main [MainThread]: End processing [TCFile]: success
 [2023-04-15 18:15:34] INFO root fetch - main [MainThread]: End processing [chessmaker]: success
 [2023-04-15 18:15:34] INFO root fetch - main [MainThread]: Store serial: [17720136]
+[2023-04-15 18:20:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720136]
+[2023-04-15 18:20:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-15 18:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langchain
+[2023-04-15 18:20:44] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-04-15 18:20:44] INFO root fetch - processPackages [langchain]: Downloading https://files.pythonhosted.org/packages/24/6a/f6c87d4ef49bae4d166fa3be99402f669acf9aa59b4d1d31342da0c57e32/langchain-0.0.99.tar.gz
+[2023-04-15 18:20:45] INFO root fetch - processPackages [langchain]: Downloading https://files.pythonhosted.org/packages/8e/d3/a01f18d4cda1e4e2cbed8c15693f649fb439aab4b94f0c2a0ed636bbe505/langchain-0.0.99rc0.tar.gz
+[2023-04-15 18:20:45] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-04-15 18:20:45] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230415/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-04-15 18:20:48] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2023-04-15 18:20:48] INFO root fetch - main [MainThread]: Store serial: [17720139]
