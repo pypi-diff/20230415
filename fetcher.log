@@ -19667,3 +19667,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 21:52:30] INFO root fetch - main [MainThread]: End processing [microt-preprocessing]: success
 [2023-04-15 21:52:31] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
 [2023-04-15 21:52:31] INFO root fetch - main [MainThread]: Store serial: [17721559]
+[2023-04-15 21:57:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721559]
+[2023-04-15 21:57:41] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 21:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: essentials-configuration
+[2023-04-15 21:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langchain
+[2023-04-15 21:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfbsdk-stub-generator
+[2023-04-15 21:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: microt-preprocessing
+[2023-04-15 21:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hiddifypanel
+[2023-04-15 21:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fastapi-soap
+[2023-04-15 21:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: searchlix
+[2023-04-15 21:57:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sharrow
+[2023-04-15 21:57:41] INFO root fetch - processPackages [pyfbsdk-stub-generator]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 21:57:41] INFO root fetch - processPackages [hiddifypanel]: New version: [4.0.0.dev6] Old Version: [4.0.0.dev5]
+[2023-04-15 21:57:41] INFO root fetch - processPackages [microt-preprocessing]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 21:57:41] INFO root fetch - processPackages [searchlix]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-15 21:57:41] INFO root fetch - processPackages [fastapi-soap]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 21:57:41] INFO root fetch - processPackages [essentials-configuration]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-04-15 21:57:41] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-04-15 21:57:41] INFO root fetch - processPackages [sharrow]: New version: [2.6.0] Old Version: [2.5.2]
+[2023-04-15 21:57:41] INFO root fetch - processPackages [microt-preprocessing]: executing diffoscope
+[2023-04-15 21:57:41] INFO root fetch - processPackages [microt-preprocessing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microt_preprocessing-0.1.8.tar.gz tmp/microt_preprocessing-0.1.9.tar.gz --markdown 20230415/m/microt-preprocessing/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 21:57:41] INFO root fetch - processPackages [searchlix]: executing diffoscope
+[2023-04-15 21:57:41] INFO root fetch - processPackages [searchlix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchlix-1.0.4.tar.gz tmp/searchlix-1.0.5.tar.gz --markdown 20230415/s/searchlix/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-15 21:57:41] INFO root fetch - processPackages [pyfbsdk-stub-generator]: Downloading https://files.pythonhosted.org/packages/9d/8c/64afaf502c35c7756661b271a49cb9073dd4d5f1252c83406461dbfd0ce8/pyfbsdk-stub-generator-0.0.3.tar.gz
+[2023-04-15 21:57:41] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-04-15 21:57:41] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230415/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-04-15 21:57:41] INFO root fetch - processPackages [essentials-configuration]: Downloading https://files.pythonhosted.org/packages/70/d8/28ac1f14d71f76427d21ecd421e1c2e0d01a83e1879f2fcbd7d9e6b2be0e/essentials-configuration-2.0.2.tar.gz
+[2023-04-15 21:57:41] INFO root fetch - processPackages [fastapi-soap]: Downloading https://files.pythonhosted.org/packages/ec/a0/3f23dea1b98d1bd66cd91bc94ced9458a67ed2b536dd5c649e3593caeb03/fastapi-soap-0.0.1.tar.gz
+[2023-04-15 21:57:41] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/43/15/b21249bde80286a5583461c03fe82d2f45c45d3c4e2b3836108187aa9b0b/hiddifypanel-4.0.0.dev6-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-15 21:57:41] INFO root fetch - processPackages [sharrow]: Downloading https://files.pythonhosted.org/packages/71/69/9541eb7959077deae5ebc902eb3db640574217ca4bc3eb8ae59d4303a648/sharrow-2.5.2.tar.gz
+[2023-04-15 21:57:41] INFO root fetch - processPackages [essentials-configuration]: Downloading https://files.pythonhosted.org/packages/fc/e5/741048927324aaafea211be292924d87347f20bb4c951b9e6a373dd7a885/essentials_configuration-2.0.3.tar.gz
+[2023-04-15 21:57:41] INFO root fetch - processPackages [fastapi-soap]: Downloading https://files.pythonhosted.org/packages/a1/24/f6ed3cd02e8ddd802330f836da25b2c1e6bbac78a633dff4083f4ec0a976/fastapi-soap-0.0.2.tar.gz
+[2023-04-15 21:57:41] INFO root fetch - processPackages [essentials-configuration]: executing diffoscope
+[2023-04-15 21:57:41] INFO root fetch - processPackages [essentials-configuration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/essentials-configuration-2.0.2.tar.gz tmp/essentials_configuration-2.0.3.tar.gz --markdown 20230415/e/essentials-configuration/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-04-15 21:57:41] INFO root fetch - processPackages [pyfbsdk-stub-generator]: Downloading https://files.pythonhosted.org/packages/51/55/e86a23e0711775576257736b324f36e8c3dd2817e7a6b0238b3ff58ee24e/pyfbsdk-stub-generator-0.0.4.tar.gz
+[2023-04-15 21:57:41] INFO root fetch - processPackages [fastapi-soap]: executing diffoscope
+[2023-04-15 21:57:41] INFO root fetch - processPackages [fastapi-soap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-soap-0.0.1.tar.gz tmp/fastapi-soap-0.0.2.tar.gz --markdown 20230415/f/fastapi-soap/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 21:57:41] INFO root fetch - processPackages [pyfbsdk-stub-generator]: executing diffoscope
+[2023-04-15 21:57:41] INFO root fetch - processPackages [pyfbsdk-stub-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfbsdk-stub-generator-0.0.3.tar.gz tmp/pyfbsdk-stub-generator-0.0.4.tar.gz --markdown 20230415/p/pyfbsdk-stub-generator/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 21:57:41] INFO root fetch - processPackages [sharrow]: Downloading https://files.pythonhosted.org/packages/e1/4a/91a6efaf90cdffaff14c34fe9ea3c721d8691434d62bd385db788912d5fb/sharrow-2.6.0.tar.gz
+[2023-04-15 21:57:42] INFO root fetch - processPackages [sharrow]: executing diffoscope
+[2023-04-15 21:57:42] INFO root fetch - processPackages [sharrow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharrow-2.5.2.tar.gz tmp/sharrow-2.6.0.tar.gz --markdown 20230415/s/sharrow/2.5.2-2.6.0/diff.md --exclude *.pyd
+[2023-04-15 21:57:42] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-15 21:57:42] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-4.0.0.dev5-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-4.0.0.dev6-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230415/h/hiddifypanel/4.0.0.dev5-4.0.0.dev6/diff.md --exclude *.pyd
+[2023-04-15 21:57:42] INFO root fetch - main [MainThread]: End processing [searchlix]: success
+[2023-04-15 21:57:42] INFO root fetch - main [MainThread]: End processing [fastapi-soap]: success
+[2023-04-15 21:57:43] INFO root fetch - main [MainThread]: End processing [microt-preprocessing]: success
+[2023-04-15 21:57:43] INFO root fetch - main [MainThread]: End processing [pyfbsdk-stub-generator]: success
+[2023-04-15 21:57:43] INFO root fetch - main [MainThread]: End processing [essentials-configuration]: success
+[2023-04-15 21:57:44] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2023-04-15 21:57:49] INFO root fetch - main [MainThread]: End processing [sharrow]: success
+[2023-04-15 21:57:59] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-04-15 21:57:59] INFO root fetch - main [MainThread]: Store serial: [17721595]
