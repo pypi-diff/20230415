@@ -13372,3 +13372,111 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 10:31:36] ERROR root fetch - processPackages [pydeck]: Timeout during execution of pkgdiff
 [2023-04-15 10:31:36] INFO root fetch - main [MainThread]: End processing [pydeck] error
 [2023-04-15 10:31:36] INFO root fetch - main [MainThread]: Store serial: [17717446]
+[2023-04-15 10:36:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717446]
+[2023-04-15 10:37:00] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-15 10:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: buildarr-jellyseerr
+[2023-04-15 10:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rwkv-paddle
+[2023-04-15 10:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pynessie
+[2023-04-15 10:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plone.alterego
+[2023-04-15 10:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: huble
+[2023-04-15 10:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: voluxcontroller
+[2023-04-15 10:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: starlette-web
+[2023-04-15 10:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: paralleltd
+[2023-04-15 10:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hiscovid
+[2023-04-15 10:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: zintor
+[2023-04-15 10:37:00] WARNING root fetch - processPackages [rwkv-paddle]: Skipping, unable to determine old version
+[2023-04-15 10:37:00] INFO root fetch - processPackages [rwkv-paddle]: Start processing: gpt-address-api
+[2023-04-15 10:37:00] INFO root fetch - main [MainThread]: End processing [rwkv-paddle] error
+[2023-04-15 10:37:00] WARNING root fetch - processPackages [buildarr-jellyseerr]: Skipping, unable to determine old version
+[2023-04-15 10:37:00] INFO root fetch - processPackages [starlette-web]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-15 10:37:00] INFO root fetch - processPackages [buildarr-jellyseerr]: Start processing: tmu
+[2023-04-15 10:37:00] INFO root fetch - processPackages [huble]: New version: [0.2.282] Old Version: [0.2.281]
+[2023-04-15 10:37:00] INFO root fetch - main [MainThread]: End processing [buildarr-jellyseerr] error
+[2023-04-15 10:37:00] INFO root fetch - processPackages [plone.alterego]: New version: [2.0.0] Old Version: [1.1.7]
+[2023-04-15 10:37:00] INFO root fetch - processPackages [voluxcontroller]: New version: [0.1.0a2] Old Version: [0.1.0a1]
+[2023-04-15 10:37:00] INFO root fetch - processPackages [hiscovid]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 10:37:00] INFO root fetch - processPackages [pynessie]: New version: [0.9.2] Old Version: [0.9.0]
+[2023-04-15 10:37:00] INFO root fetch - processPackages [paralleltd]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-15 10:37:00] WARNING root fetch - processPackages [gpt-address-api]: Skipping, unable to determine old version
+[2023-04-15 10:37:00] INFO root fetch - processPackages [gpt-address-api]: Start processing: hello-world-example
+[2023-04-15 10:37:00] INFO root fetch - main [MainThread]: End processing [gpt-address-api] error
+[2023-04-15 10:37:00] INFO root fetch - processPackages [zintor]: New version: [0.0.18] Old Version: [0.0.17]
+[2023-04-15 10:37:00] INFO root fetch - processPackages [tmu]: New version: [0.8.0] Old Version: [0.7.9]
+[2023-04-15 10:37:00] WARNING root fetch - processPackages [hello-world-example]: Skipping, unable to determine old version
+[2023-04-15 10:37:00] INFO root fetch - processPackages [hello-world-example]: Start processing: plone.versioncheck
+[2023-04-15 10:37:00] INFO root fetch - main [MainThread]: End processing [hello-world-example] error
+[2023-04-15 10:37:00] INFO root fetch - processPackages [plone.versioncheck]: New version: [1.8.0] Old Version: [1.7.0]
+[2023-04-15 10:37:00] INFO root fetch - processPackages [voluxcontroller]: executing diffoscope
+[2023-04-15 10:37:00] INFO root fetch - processPackages [voluxcontroller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voluxcontroller-0.1.0a1.tar.gz tmp/voluxcontroller-0.1.0a2.tar.gz --markdown 20230415/v/voluxcontroller/0.1.0a1-0.1.0a2/diff.md --exclude *.pyd
+[2023-04-15 10:37:00] INFO root fetch - processPackages [plone.alterego]: executing diffoscope
+[2023-04-15 10:37:00] INFO root fetch - processPackages [plone.alterego]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.alterego-1.1.7.tar.gz tmp/plone.alterego-2.0.0.tar.gz --markdown 20230415/p/plone.alterego/1.1.7-2.0.0/diff.md --exclude *.pyd
+[2023-04-15 10:37:00] INFO root fetch - processPackages [paralleltd]: executing diffoscope
+[2023-04-15 10:37:00] INFO root fetch - processPackages [paralleltd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paralleltd-0.0.0.tar.gz tmp/paralleltd-0.0.1.tar.gz --markdown 20230415/p/paralleltd/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-15 10:37:00] INFO root fetch - processPackages [zintor]: Downloading https://files.pythonhosted.org/packages/62/f7/ae5d43adc6c3a5e4ce0b0ecfca34c645bf071a3dcfe966095dcb987f031b/zintor-0.0.17.tar.gz
+[2023-04-15 10:37:00] INFO root fetch - processPackages [huble]: Downloading https://files.pythonhosted.org/packages/88/92/5c346ce4720197f32df80dd7028494c698682c30a6f9beb5df06bd2a75f7/huble-0.2.281.tar.gz
+[2023-04-15 10:37:00] INFO root fetch - processPackages [pynessie]: Downloading https://files.pythonhosted.org/packages/35/34/862624b88e274f1ef17fd1a9c810ae6326b14123c3cf5f32d1a92778100a/pynessie-0.9.0.tar.gz
+[2023-04-15 10:37:00] INFO root fetch - processPackages [tmu]: Downloading https://files.pythonhosted.org/packages/42/c1/e6ac12b94b8db842c1095ce1b2a0be3e3c1f9eb52c13fb82aac8b3add1f8/tmu-0.7.9-pp39-pypy39_pp73-win_amd64.whl
+[2023-04-15 10:37:00] INFO root fetch - processPackages [hiscovid]: Downloading https://files.pythonhosted.org/packages/5c/06/b5d025da12a55ca75a883776ad873c38286d0ab8634b46df5f49a0b0d00b/hiscovid-0.0.3.tar.gz
+[2023-04-15 10:37:00] INFO root fetch - processPackages [plone.versioncheck]: Downloading https://files.pythonhosted.org/packages/16/d9/4a2937c3d807c2076db31850b915e055c5ebcd8848b4de9a1d3879db8091/plone.versioncheck-1.7.0.tar.gz
+[2023-04-15 10:37:00] INFO root fetch - processPackages [starlette-web]: Downloading https://files.pythonhosted.org/packages/87/df/e93497200147c8bdf07677ff15e9b3f9bcbe84317438c8ea0f736f621463/starlette_web-0.1.3.tar.gz
+[2023-04-15 10:37:00] INFO root fetch - processPackages [starlette-web]: executing diffoscope
+[2023-04-15 10:37:00] INFO root fetch - processPackages [starlette-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starlette_web-0.1.2.tar.gz tmp/starlette_web-0.1.3.tar.gz --markdown 20230415/s/starlette-web/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-15 10:37:00] INFO root fetch - processPackages [zintor]: Downloading https://files.pythonhosted.org/packages/fe/94/36df7590cdeeb0b283126d361611eb00026359d81eaeeff2ba0e292801f3/zintor-0.0.18.tar.gz
+[2023-04-15 10:37:00] INFO root fetch - processPackages [huble]: Downloading https://files.pythonhosted.org/packages/44/61/4a227ea3d45124303bed9f7a9013c36fe4ec661f86d30ef365a87824f83d/huble-0.2.282.tar.gz
+[2023-04-15 10:37:00] INFO root fetch - processPackages [hiscovid]: Downloading https://files.pythonhosted.org/packages/6b/ea/428dfef091d9292c4cf32ef42b0588c366bbf2ff51a5089e1a7899237dac/hiscovid-0.0.4.tar.gz
+[2023-04-15 10:37:00] INFO root fetch - processPackages [tmu]: Downloading https://files.pythonhosted.org/packages/7c/dd/76881c1a5e2d5660297889b1f0ca744b47711a57a6062efe1191bbfd0d01/tmu-0.8.0-pp39-pypy39_pp73-win_amd64.whl
+[2023-04-15 10:37:00] INFO root fetch - processPackages [zintor]: executing diffoscope
+[2023-04-15 10:37:00] INFO root fetch - processPackages [zintor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zintor-0.0.17.tar.gz tmp/zintor-0.0.18.tar.gz --markdown 20230415/z/zintor/0.0.17-0.0.18/diff.md --exclude *.pyd
+[2023-04-15 10:37:00] INFO root fetch - processPackages [hiscovid]: executing diffoscope
+[2023-04-15 10:37:00] INFO root fetch - processPackages [pynessie]: Downloading https://files.pythonhosted.org/packages/db/a7/8c73f7307fa99f382131e531b553c5694912bae54eca351545190ba23ada/pynessie-0.9.2.tar.gz
+[2023-04-15 10:37:00] INFO root fetch - processPackages [hiscovid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiscovid-0.0.3.tar.gz tmp/hiscovid-0.0.4.tar.gz --markdown 20230415/h/hiscovid/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 10:37:00] INFO root fetch - processPackages [huble]: executing diffoscope
+[2023-04-15 10:37:00] INFO root fetch - processPackages [huble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huble-0.2.281.tar.gz tmp/huble-0.2.282.tar.gz --markdown 20230415/h/huble/0.2.281-0.2.282/diff.md --exclude *.pyd
+[2023-04-15 10:37:00] INFO root fetch - processPackages [plone.versioncheck]: Downloading https://files.pythonhosted.org/packages/e2/ba/3606d6f0e998071f5e3111810418ead304c607b98929277a5c1fba4d374e/plone.versioncheck-1.8.0.tar.gz
+[2023-04-15 10:37:00] INFO root fetch - processPackages [tmu]: executing diffoscope
+[2023-04-15 10:37:00] INFO root fetch - processPackages [tmu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmu-0.7.9-pp39-pypy39_pp73-win_amd64.whl.zip tmp/tmu-0.8.0-pp39-pypy39_pp73-win_amd64.whl.zip --markdown 20230415/t/tmu/0.7.9-0.8.0/diff.md --exclude *.pyd
+[2023-04-15 10:37:01] INFO root fetch - processPackages [pynessie]: executing diffoscope
+[2023-04-15 10:37:01] INFO root fetch - processPackages [pynessie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynessie-0.9.0.tar.gz tmp/pynessie-0.9.2.tar.gz --markdown 20230415/p/pynessie/0.9.0-0.9.2/diff.md --exclude *.pyd
+[2023-04-15 10:37:01] INFO root fetch - processPackages [plone.versioncheck]: executing diffoscope
+[2023-04-15 10:37:01] INFO root fetch - processPackages [plone.versioncheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.versioncheck-1.7.0.tar.gz tmp/plone.versioncheck-1.8.0.tar.gz --markdown 20230415/p/plone.versioncheck/1.7.0-1.8.0/diff.md --exclude *.pyd
+[2023-04-15 10:37:01] INFO root fetch - processPackages [voluxcontroller]: Start processing: kdfba
+[2023-04-15 10:37:01] INFO root fetch - main [MainThread]: End processing [voluxcontroller]: success
+[2023-04-15 10:37:01] INFO root fetch - processPackages [kdfba]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-15 10:37:01] INFO root fetch - processPackages [paralleltd]: Start processing: tf-estimator-nightly
+[2023-04-15 10:37:01] INFO root fetch - main [MainThread]: End processing [paralleltd]: success
+[2023-04-15 10:37:01] INFO root fetch - processPackages [plone.alterego]: Start processing: gpt-address-api
+[2023-04-15 10:37:01] INFO root fetch - main [MainThread]: End processing [plone.alterego]: success
+[2023-04-15 10:37:01] WARNING root fetch - processPackages [gpt-address-api]: Skipping, unable to determine old version
+[2023-04-15 10:37:01] INFO root fetch - processPackages [gpt-address-api]: Start processing: django-direct-cloud-upload
+[2023-04-15 10:37:01] INFO root fetch - main [MainThread]: End processing [gpt-address-api] error
+[2023-04-15 10:37:02] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-04-15 10:37:02] INFO root fetch - processPackages [django-direct-cloud-upload]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-15 10:37:02] INFO root fetch - processPackages [tf-estimator-nightly]: Downloading https://files.pythonhosted.org/packages/31/a0/5e1b898e43043b32d95e8719e2eb127692fd8261edbdad4801876a46893f/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl
+[2023-04-15 10:37:02] INFO root fetch - processPackages [kdfba]: Downloading https://files.pythonhosted.org/packages/f5/f2/04e4d3ea5c6a98a6bae5f4fa1d79259be98be86d41fa5fdd850c09770474/kdfba-0.3.2.tar.gz
+[2023-04-15 10:37:02] INFO root fetch - processPackages [tf-estimator-nightly]: Downloading https://files.pythonhosted.org/packages/1c/b6/fe4f7077ae036fd90bf9dfdc09b52cf611b857e7a26c3bc44a2e76c94af2/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl
+[2023-04-15 10:37:02] INFO root fetch - processPackages [django-direct-cloud-upload]: Downloading https://files.pythonhosted.org/packages/86/2d/5c6ca6b0dc739a8ba292fb561b51e1a628cde81a80caa6333336140aa21e/django-direct-cloud-upload-0.2.5.tar.gz
+[2023-04-15 10:37:02] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-04-15 10:37:02] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230415/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-04-15 10:37:02] INFO root fetch - processPackages [kdfba]: executing diffoscope
+[2023-04-15 10:37:02] INFO root fetch - processPackages [kdfba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kdfba-0.3.1.tar.gz tmp/kdfba-0.3.2.tar.gz --markdown 20230415/k/kdfba/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-15 10:37:02] INFO root fetch - processPackages [zintor]: Start processing: qemu-runner
+[2023-04-15 10:37:02] INFO root fetch - main [MainThread]: End processing [zintor]: success
+[2023-04-15 10:37:02] INFO root fetch - processPackages [qemu-runner]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-15 10:37:02] INFO root fetch - main [MainThread]: End processing [hiscovid]: success
+[2023-04-15 10:37:02] INFO root fetch - processPackages [django-direct-cloud-upload]: Downloading https://files.pythonhosted.org/packages/9e/b7/aecc0c20bcbd33894d01a19fd99b7111cf89e0b21fd9c4c785cd6728a2c5/django-direct-cloud-upload-0.2.6.tar.gz
+[2023-04-15 10:37:02] INFO root fetch - processPackages [django-direct-cloud-upload]: executing diffoscope
+[2023-04-15 10:37:02] INFO root fetch - processPackages [django-direct-cloud-upload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-direct-cloud-upload-0.2.5.tar.gz tmp/django-direct-cloud-upload-0.2.6.tar.gz --markdown 20230415/d/django-direct-cloud-upload/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-15 10:37:02] INFO root fetch - processPackages [qemu-runner]: Downloading https://files.pythonhosted.org/packages/76/34/8a1a28ab97f4bf2d599803912962514c96929572fd8a77b322e4dddf0c52/qemu-runner-1.2.0.tar.gz
+[2023-04-15 10:37:02] INFO root fetch - main [MainThread]: End processing [huble]: success
+[2023-04-15 10:37:02] INFO root fetch - processPackages [qemu-runner]: Downloading https://files.pythonhosted.org/packages/4b/1a/df875e2cd7fc6a48f11b415b854374338a0198d3c394dbaea106a15db61a/qemu-runner-1.3.0.tar.gz
+[2023-04-15 10:37:02] INFO root fetch - processPackages [qemu-runner]: executing diffoscope
+[2023-04-15 10:37:02] INFO root fetch - processPackages [qemu-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qemu-runner-1.2.0.tar.gz tmp/qemu-runner-1.3.0.tar.gz --markdown 20230415/q/qemu-runner/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-15 10:37:03] INFO root fetch - main [MainThread]: End processing [pynessie]: success
+[2023-04-15 10:37:03] INFO root fetch - main [MainThread]: End processing [tmu]: success
+[2023-04-15 10:37:03] INFO root fetch - main [MainThread]: End processing [plone.versioncheck]: success
+[2023-04-15 10:37:03] INFO root fetch - main [MainThread]: End processing [kdfba]: success
+[2023-04-15 10:37:03] INFO root fetch - main [MainThread]: End processing [django-direct-cloud-upload]: success
+[2023-04-15 10:37:04] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-04-15 10:37:05] INFO root fetch - main [MainThread]: End processing [qemu-runner]: success
+[2023-04-15 10:37:06] INFO root fetch - main [MainThread]: End processing [starlette-web]: success
+[2023-04-15 10:37:06] INFO root fetch - main [MainThread]: Store serial: [17717560]
