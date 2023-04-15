@@ -14979,3 +14979,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 13:30:33] INFO root fetch - main [MainThread]: End processing [alibabacloud-vpc20160428]: success
 [2023-04-15 13:30:38] INFO root fetch - main [MainThread]: End processing [numwords-to-nums]: success
 [2023-04-15 13:30:38] INFO root fetch - main [MainThread]: Store serial: [17718495]
+[2023-04-15 13:35:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718495]
+[2023-04-15 13:35:46] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 13:35:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xfaas-core-python3
+[2023-04-15 13:35:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twtvt
+[2023-04-15 13:35:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: install-release
+[2023-04-15 13:35:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dovado-rtl
+[2023-04-15 13:35:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: planetai
+[2023-04-15 13:35:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyre-check-nightly
+[2023-04-15 13:35:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: butler-connect
+[2023-04-15 13:35:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyapikey
+[2023-04-15 13:35:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: torchx-nightly
+[2023-04-15 13:35:46] INFO root fetch - processPackages [twtvt]: New version: [2023.4.15.post2] Old Version: [2023.4.15.post1]
+[2023-04-15 13:35:46] INFO root fetch - processPackages [butler-connect]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-15 13:35:46] INFO root fetch - processPackages [dovado-rtl]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-15 13:35:46] INFO root fetch - processPackages [pyapikey]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-15 13:35:46] INFO root fetch - processPackages [xfaas-core-python3]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-15 13:35:46] INFO root fetch - processPackages [install-release]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-15 13:35:46] INFO root fetch - processPackages [planetai]: New version: [1.3] Old Version: [1.2]
+[2023-04-15 13:35:46] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-15 13:35:46] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/40/6b/5cae6dbacb4f1e062885a390ebbbbfb77f40f669f4216028cb0017d5d966/torchx_nightly-2023.4.8-py3-none-any.whl
+[2023-04-15 13:35:46] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101681557063] Old Version: [0.0.101681470693]
+[2023-04-15 13:35:46] INFO root fetch - processPackages [pyapikey]: Downloading https://files.pythonhosted.org/packages/57/d3/4222bc97000947af6304a7a40b4a81231a42082fc0fe2518a01dd63f0fd4/pyapikey-0.0.2.tar.gz
+[2023-04-15 13:35:46] INFO root fetch - processPackages [xfaas-core-python3]: Downloading https://files.pythonhosted.org/packages/f8/ea/4d4b06085f6b42216f8a487bdd3c897f9f34f2ce3a82191a268c3f85dbea/xfaas_core_python3-0.0.4.tar.gz
+[2023-04-15 13:35:46] INFO root fetch - processPackages [twtvt]: Downloading https://files.pythonhosted.org/packages/be/69/d4c6637192fcb053ad5c90ae907043add743b752119973b0371db15a93d9/twtvt-2023.4.15.post2.tar.gz
+[2023-04-15 13:35:46] INFO root fetch - processPackages [install-release]: Downloading https://files.pythonhosted.org/packages/74/cb/d4727664de10788af04f50a08d8814bccfe7b2f103f22ab7f86ba1f55014/install_release-0.3.2.tar.gz
+[2023-04-15 13:35:46] INFO root fetch - processPackages [planetai]: Downloading https://files.pythonhosted.org/packages/21/f9/7b5f45c06e9caef64ef2d4e1aa5ead2cfbd4b2c59428329af38036cde807/planetai-1.3.tar.gz
+[2023-04-15 13:35:47] INFO root fetch - processPackages [butler-connect]: Downloading https://files.pythonhosted.org/packages/24/29/266c51396f123871e09b87500559b80bec998439923a05f859fe51d50b4c/butler-connect-0.4.3.tar.gz
+[2023-04-15 13:35:47] INFO root fetch - processPackages [planetai]: executing diffoscope
+[2023-04-15 13:35:47] INFO root fetch - processPackages [planetai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/planetai-1.2.tar.gz tmp/planetai-1.3.tar.gz --markdown 20230415/p/planetai/1.2-1.3/diff.md --exclude *.pyd
+[2023-04-15 13:35:47] INFO root fetch - processPackages [butler-connect]: executing diffoscope
+[2023-04-15 13:35:47] INFO root fetch - processPackages [butler-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/butler-connect-0.4.2.tar.gz tmp/butler-connect-0.4.3.tar.gz --markdown 20230415/b/butler-connect/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-15 13:35:47] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/59/cb/da3fe65b3811ea1039a828790dcfdb74b88472aae27d6d404890b0b13b3e/pyre-check-nightly-0.0.101681470693.tar.gz
+[2023-04-15 13:35:47] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/f3/2d/8c73b53518d3c938905df42f1f37dcd1332d5f2b369cad4fa3aba08c0d86/torchx_nightly-2023.4.9-py3-none-any.whl
+[2023-04-15 13:35:47] INFO root fetch - processPackages [twtvt]: executing diffoscope
+[2023-04-15 13:35:47] INFO root fetch - processPackages [twtvt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twtvt-2023.4.15.post1.tar.gz tmp/twtvt-2023.4.15.post2.tar.gz --markdown 20230415/t/twtvt/2023.4.15.post1-2023.4.15.post2/diff.md --exclude *.pyd
+[2023-04-15 13:35:47] INFO root fetch - processPackages [dovado-rtl]: executing diffoscope
+[2023-04-15 13:35:47] INFO root fetch - processPackages [dovado-rtl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dovado-rtl-0.9.8.tar.gz tmp/dovado-rtl-0.9.9.tar.gz --markdown 20230415/d/dovado-rtl/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-15 13:35:47] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 23128105>=10485760
+[2023-04-15 13:35:47] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-04-15 13:35:47] INFO root fetch - processPackages [pyapikey]: Downloading https://files.pythonhosted.org/packages/d1/b2/fcc6d75a9378e44342c0d572f389dba05bb21a95e111bb70ef8223453691/pyapikey-0.0.4.tar.gz
+[2023-04-15 13:35:47] INFO root fetch - processPackages [xfaas-core-python3]: Downloading https://files.pythonhosted.org/packages/d9/f8/63b0df87535146ed3a3c11e0a3375b1ef999e517a09dcce3aedf37e4119f/xfaas_core_python3-0.0.5.tar.gz
+[2023-04-15 13:35:47] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-04-15 13:35:47] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.4.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230415/t/torchx-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-15 13:35:47] INFO root fetch - processPackages [pyapikey]: executing diffoscope
+[2023-04-15 13:35:47] INFO root fetch - processPackages [pyapikey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyapikey-0.0.2.tar.gz tmp/pyapikey-0.0.4.tar.gz --markdown 20230415/p/pyapikey/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 13:35:47] INFO root fetch - processPackages [install-release]: Downloading https://files.pythonhosted.org/packages/06/5e/7d74e3b68c3397546fc769f9b582fdf7119d1aaf37558c97e9f05a1114f1/install_release-0.3.3.tar.gz
+[2023-04-15 13:35:47] INFO root fetch - processPackages [install-release]: executing diffoscope
+[2023-04-15 13:35:47] INFO root fetch - processPackages [install-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/install_release-0.3.2.tar.gz tmp/install_release-0.3.3.tar.gz --markdown 20230415/i/install-release/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-15 13:35:47] INFO root fetch - processPackages [xfaas-core-python3]: executing diffoscope
+[2023-04-15 13:35:47] INFO root fetch - processPackages [xfaas-core-python3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xfaas_core_python3-0.0.4.tar.gz tmp/xfaas_core_python3-0.0.5.tar.gz --markdown 20230415/x/xfaas-core-python3/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 13:35:48] INFO root fetch - main [MainThread]: End processing [planetai]: success
+[2023-04-15 13:35:48] INFO root fetch - main [MainThread]: End processing [butler-connect]: success
+[2023-04-15 13:35:48] INFO root fetch - main [MainThread]: End processing [twtvt]: success
+[2023-04-15 13:35:48] INFO root fetch - main [MainThread]: End processing [pyapikey]: success
+[2023-04-15 13:35:48] INFO root fetch - main [MainThread]: End processing [xfaas-core-python3]: success
+[2023-04-15 13:35:48] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-04-15 13:35:49] INFO root fetch - main [MainThread]: End processing [install-release]: success
+[2023-04-15 13:35:57] INFO root fetch - main [MainThread]: End processing [dovado-rtl]: success
+[2023-04-15 13:35:57] INFO root fetch - main [MainThread]: Store serial: [17718522]
