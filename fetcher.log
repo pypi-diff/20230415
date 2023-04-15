@@ -6361,3 +6361,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 08:35:36] INFO root fetch - main [MainThread]: End processing [pylint-keyword-only-args-plugin]: success
 [2023-04-15 08:36:22] INFO root fetch - main [MainThread]: End processing [PureCloudPlatformClientV2]: success
 [2023-04-15 08:36:22] INFO root fetch - main [MainThread]: Store serial: [17716947]
+[2023-04-15 08:41:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716947]
+[2023-04-15 08:41:30] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 08:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wagtail-sb-fontawesome
+[2023-04-15 08:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-rma
+[2023-04-15 08:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-rma
+[2023-04-15 08:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PhanMemMMN
+[2023-04-15 08:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-akinator
+[2023-04-15 08:41:30] WARNING root fetch - processPackages [wagtail-sb-fontawesome]: Skipping, unable to determine old version
+[2023-04-15 08:41:30] INFO root fetch - processPackages [wagtail-sb-fontawesome]: Start processing: fickle
+[2023-04-15 08:41:30] INFO root fetch - main [MainThread]: End processing [wagtail-sb-fontawesome] error
+[2023-04-15 08:41:30] WARNING root fetch - processPackages [PhanMemMMN]: Skipping, unable to determine old version
+[2023-04-15 08:41:30] INFO root fetch - processPackages [PhanMemMMN]: Start processing: snapatac2
+[2023-04-15 08:41:30] INFO root fetch - main [MainThread]: End processing [PhanMemMMN] error
+[2023-04-15 08:41:30] INFO root fetch - processPackages [odoo-addon-rma]: New version: [15.0.1.1.2.6] Old Version: [15.0.1.1.2.5]
+[2023-04-15 08:41:30] INFO root fetch - processPackages [nonebot-plugin-akinator]: New version: [0.1.1] Old Version: [0.1.0.post2]
+[2023-04-15 08:41:30] INFO root fetch - processPackages [fickle]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-15 08:41:30] INFO root fetch - processPackages [odoo14-addon-rma]: New version: [14.0.3.2.6.dev5] Old Version: [14.0.3.2.6.dev4]
+[2023-04-15 08:41:30] INFO root fetch - processPackages [snapatac2]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-04-15 08:41:31] INFO root fetch - processPackages [nonebot-plugin-akinator]: Downloading https://files.pythonhosted.org/packages/0b/39/749ad7abf77810140530301a7840be99c6a0fa2c1b68745570ccd222697c/nonebot-plugin-akinator-0.1.1.tar.gz
+[2023-04-15 08:41:31] INFO root fetch - processPackages [snapatac2]: Downloading https://files.pythonhosted.org/packages/87/82/27b5535db14636117524a81f5ab937978c120e893e092faed27dc2dd635d/snapatac2-2.2.0.tar.gz
+[2023-04-15 08:41:31] INFO root fetch - processPackages [fickle]: Downloading https://files.pythonhosted.org/packages/60/2a/6d34225e88a56850d3646ab0f24b0cdd3510b46457b5c118797b92f69b59/fickle-0.2.2.tar.gz
+[2023-04-15 08:41:31] INFO root fetch - processPackages [odoo-addon-rma]: Downloading https://files.pythonhosted.org/packages/e3/e4/d4e43a902f423deb4433080b01e07762df1567d9f441626855ee1b8edc24/odoo_addon_rma-15.0.1.1.2.6-py3-none-any.whl
+[2023-04-15 08:41:31] INFO root fetch - processPackages [nonebot-plugin-akinator]: executing diffoscope
+[2023-04-15 08:41:31] INFO root fetch - processPackages [nonebot-plugin-akinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-akinator-0.1.0.post2.tar.gz tmp/nonebot-plugin-akinator-0.1.1.tar.gz --markdown 20230415/n/nonebot-plugin-akinator/0.1.0.post2-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 08:41:31] INFO root fetch - processPackages [fickle]: executing diffoscope
+[2023-04-15 08:41:31] INFO root fetch - processPackages [fickle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fickle-0.2.1.tar.gz tmp/fickle-0.2.2.tar.gz --markdown 20230415/f/fickle/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-15 08:41:31] INFO root fetch - processPackages [odoo14-addon-rma]: Downloading https://files.pythonhosted.org/packages/eb/23/2401dcede1cae852a2ac650f5de8c3d1983869f4499ced3bda659b3d1962/odoo14_addon_rma-14.0.3.2.6.dev5-py3-none-any.whl
+[2023-04-15 08:41:31] INFO root fetch - processPackages [odoo-addon-rma]: executing diffoscope
+[2023-04-15 08:41:31] INFO root fetch - processPackages [odoo-addon-rma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_rma-15.0.1.1.2.5-py3-none-any.whl.zip tmp/odoo_addon_rma-15.0.1.1.2.6-py3-none-any.whl.zip --markdown 20230415/o/odoo-addon-rma/15.0.1.1.2.5-15.0.1.1.2.6/diff.md --exclude *.pyd
+[2023-04-15 08:41:31] INFO root fetch - processPackages [odoo14-addon-rma]: executing diffoscope
+[2023-04-15 08:41:31] INFO root fetch - processPackages [odoo14-addon-rma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_rma-14.0.3.2.6.dev4-py3-none-any.whl.zip tmp/odoo14_addon_rma-14.0.3.2.6.dev5-py3-none-any.whl.zip --markdown 20230415/o/odoo14-addon-rma/14.0.3.2.6.dev4-14.0.3.2.6.dev5/diff.md --exclude *.pyd
+[2023-04-15 08:41:31] INFO root fetch - processPackages [snapatac2]: Downloading https://files.pythonhosted.org/packages/c9/50/67b9d36efb24b077e3a5a85b3fe7edd36fd18abeaf2b0589401724c7f7d7/snapatac2-2.3.0.tar.gz
+[2023-04-15 08:41:31] INFO root fetch - processPackages [snapatac2]: executing diffoscope
+[2023-04-15 08:41:31] INFO root fetch - processPackages [snapatac2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snapatac2-2.2.0.tar.gz tmp/snapatac2-2.3.0.tar.gz --markdown 20230415/s/snapatac2/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-04-15 08:41:32] INFO root fetch - processPackages [fickle]: Start processing: CLIbrary
+[2023-04-15 08:41:32] INFO root fetch - main [MainThread]: End processing [fickle]: success
+[2023-04-15 08:41:32] INFO root fetch - processPackages [CLIbrary]: New version: [1.7.0] Old Version: [1.6.2]
+[2023-04-15 08:41:32] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-akinator]: success
+[2023-04-15 08:41:32] INFO root fetch - processPackages [CLIbrary]: Downloading https://files.pythonhosted.org/packages/80/bc/c55b7075a3674968cd8fd363562e6dea0788f0a0eafa50aaad54f9059612/clibrary-1.7.0.tar.gz
+[2023-04-15 08:41:32] INFO root fetch - processPackages [CLIbrary]: executing diffoscope
+[2023-04-15 08:41:32] INFO root fetch - processPackages [CLIbrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clibrary-1.6.2.tar.gz tmp/clibrary-1.7.0.tar.gz --markdown 20230415/C/CLIbrary/1.6.2-1.7.0/diff.md --exclude *.pyd
+[2023-04-15 08:41:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-rma]: success
+[2023-04-15 08:41:32] INFO root fetch - main [MainThread]: End processing [snapatac2]: success
+[2023-04-15 08:41:32] INFO root fetch - main [MainThread]: End processing [odoo14-addon-rma]: success
+[2023-04-15 08:41:33] INFO root fetch - main [MainThread]: End processing [CLIbrary]: success
+[2023-04-15 08:41:33] INFO root fetch - main [MainThread]: Store serial: [17716979]
