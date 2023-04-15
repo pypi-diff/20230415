@@ -1689,3 +1689,40 @@
 [2023-04-15 02:35:18] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
 [2023-04-15 02:35:18] INFO root fetch - main [MainThread]: End processing [locate-pixelcolor-cpppragma]: success
 [2023-04-15 02:35:18] INFO root fetch - main [MainThread]: Store serial: [17714368]
+[2023-04-15 02:40:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17714368]
+[2023-04-15 02:40:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 02:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: luau
+[2023-04-15 02:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mayan-edms
+[2023-04-15 02:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: locate-pixelcolor-numba
+[2023-04-15 02:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: letsbuilda-pypi
+[2023-04-15 02:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cpggen
+[2023-04-15 02:40:25] INFO root fetch - processPackages [letsbuilda-pypi]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-04-15 02:40:25] INFO root fetch - processPackages [locate-pixelcolor-numba]: New version: [0.11] Old Version: [0.10]
+[2023-04-15 02:40:25] INFO root fetch - processPackages [luau]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-15 02:40:25] INFO root fetch - processPackages [mayan-edms]: New version: [4.4.5] Old Version: [4.4.4]
+[2023-04-15 02:40:25] INFO root fetch - processPackages [cpggen]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-15 02:40:25] INFO root fetch - processPackages [locate-pixelcolor-numba]: Downloading https://files.pythonhosted.org/packages/af/d4/da5215d99de0f6c3d08d8f15487b59ec6c3f933e9f44611a097a28ae75e5/locate_pixelcolor_numba-0.10.tar.gz
+[2023-04-15 02:40:25] INFO root fetch - processPackages [letsbuilda-pypi]: Downloading https://files.pythonhosted.org/packages/7d/ae/153fa833cf09dc812cca3bf3e1448e1dd316034259e40cbe3970cb5a20aa/letsbuilda-pypi-1.0.0.tar.gz
+[2023-04-15 02:40:25] INFO root fetch - processPackages [mayan-edms]: Downloading https://files.pythonhosted.org/packages/6a/73/d37d796188d5c9775a5de83242ddb7cd9a30a0a3d0a24827003a0c097996/mayan-edms-4.4.4.tar.gz
+[2023-04-15 02:40:25] INFO root fetch - processPackages [cpggen]: Downloading https://files.pythonhosted.org/packages/21/d4/9b3bdbcd9b61e744f4a7a70addbe1844ca284b01dec5696660272dcb423b/cpggen-0.9.1.tar.gz
+[2023-04-15 02:40:25] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/08/04/15bd767e234512e1c5aec95fd39d202aaed3ba8525e581e15bc3fe9af12a/luau-0.2.6.tar.gz
+[2023-04-15 02:40:26] INFO root fetch - processPackages [locate-pixelcolor-numba]: Downloading https://files.pythonhosted.org/packages/00/59/e1dfb51c225699388d671a4eac77cbe6f633a2dd5ac5e5e6d6f1a8789d60/locate_pixelcolor_numba-0.11.tar.gz
+[2023-04-15 02:40:26] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-15 02:40:26] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.2.5.tar.gz tmp/luau-0.2.6.tar.gz --markdown 20230415/l/luau/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-15 02:40:26] INFO root fetch - processPackages [locate-pixelcolor-numba]: executing diffoscope
+[2023-04-15 02:40:26] INFO root fetch - processPackages [locate-pixelcolor-numba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locate_pixelcolor_numba-0.10.tar.gz tmp/locate_pixelcolor_numba-0.11.tar.gz --markdown 20230415/l/locate-pixelcolor-numba/0.10-0.11/diff.md --exclude *.pyd
+[2023-04-15 02:40:26] INFO root fetch - processPackages [cpggen]: Downloading https://files.pythonhosted.org/packages/6a/c1/ebeb08fede6fdcda6636fd92449f1570597ef33060171e1a9bf51138ce56/cpggen-0.9.2.tar.gz
+[2023-04-15 02:40:26] INFO root fetch - processPackages [letsbuilda-pypi]: Downloading https://files.pythonhosted.org/packages/dd/24/43f086cfc31bdcf45cd4da6f2b40f5ac201e535fbe01d60e5b35716d9827/letsbuilda-pypi-2.0.0.tar.gz
+[2023-04-15 02:40:26] INFO root fetch - processPackages [letsbuilda-pypi]: executing diffoscope
+[2023-04-15 02:40:26] INFO root fetch - processPackages [letsbuilda-pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/letsbuilda-pypi-1.0.0.tar.gz tmp/letsbuilda-pypi-2.0.0.tar.gz --markdown 20230415/l/letsbuilda-pypi/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-15 02:40:26] INFO root fetch - processPackages [cpggen]: executing diffoscope
+[2023-04-15 02:40:26] INFO root fetch - processPackages [cpggen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpggen-0.9.1.tar.gz tmp/cpggen-0.9.2.tar.gz --markdown 20230415/c/cpggen/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-15 02:40:27] INFO root fetch - processPackages [mayan-edms]: Downloading https://files.pythonhosted.org/packages/8c/79/0f0821fa102dd61b40feba4667392c3d31a369d5a648ea4b3a08f1bfa207/mayan-edms-4.4.5.tar.gz
+[2023-04-15 02:40:27] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-15 02:40:27] INFO root fetch - main [MainThread]: End processing [letsbuilda-pypi]: success
+[2023-04-15 02:40:27] INFO root fetch - processPackages [mayan-edms]: executing diffoscope
+[2023-04-15 02:40:27] INFO root fetch - processPackages [mayan-edms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mayan-edms-4.4.4.tar.gz tmp/mayan-edms-4.4.5.tar.gz --markdown 20230415/m/mayan-edms/4.4.4-4.4.5/diff.md --exclude *.pyd
+[2023-04-15 02:40:27] INFO root fetch - main [MainThread]: End processing [locate-pixelcolor-numba]: success
+[2023-04-15 02:40:27] INFO root fetch - main [MainThread]: End processing [cpggen]: success
+[2023-04-15 02:42:41] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
+[2023-04-15 02:42:41] INFO root fetch - main [MainThread]: Store serial: [17714382]
