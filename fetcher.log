@@ -15726,3 +15726,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 14:43:16] INFO root fetch - main [MainThread]: End processing [manticore]: success
 [2023-04-15 14:43:22] INFO root fetch - main [MainThread]: End processing [django-video-play]: success
 [2023-04-15 14:43:22] INFO root fetch - main [MainThread]: Store serial: [17718967]
+[2023-04-15 14:48:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718967]
+[2023-04-15 14:48:32] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 14:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: econpizza
+[2023-04-15 14:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensorcircuit-nightly
+[2023-04-15 14:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pureml
+[2023-04-15 14:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: napatrackmater
+[2023-04-15 14:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cubao-pypi-example
+[2023-04-15 14:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Allagash
+[2023-04-15 14:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hds-stats
+[2023-04-15 14:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: moto
+[2023-04-15 14:48:32] INFO root fetch - processPackages [pureml]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-15 14:48:32] INFO root fetch - processPackages [econpizza]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-15 14:48:32] INFO root fetch - processPackages [hds-stats]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-15 14:48:32] INFO root fetch - processPackages [napatrackmater]: New version: [3.3.7] Old Version: [3.3.6]
+[2023-04-15 14:48:32] INFO root fetch - processPackages [cubao-pypi-example]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 14:48:32] INFO root fetch - processPackages [Allagash]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-15 14:48:32] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.8.0.dev20230415] Old Version: [0.8.0.dev20230414]
+[2023-04-15 14:48:32] INFO root fetch - processPackages [hds-stats]: Downloading https://files.pythonhosted.org/packages/e9/bf/545e65a81fb9da0a02212801b5bbd086da739c67e8e4fcaf24ba47b6c919/hds-stats-0.1.4.tar.gz
+[2023-04-15 14:48:32] INFO root fetch - processPackages [pureml]: Downloading https://files.pythonhosted.org/packages/12/3b/08d987b998e6ea0862d3322dc59850cd3b1d9c52f4d6eb9f903b04921505/pureml-0.3.3-py3-none-any.whl
+[2023-04-15 14:48:32] INFO root fetch - processPackages [cubao-pypi-example]: Downloading https://files.pythonhosted.org/packages/73/2a/d5cb8ab5a84e12155af5b5d23be23dd14581e0729254689a70a3edcf4f38/cubao-pypi-example-0.0.1.tar.gz
+[2023-04-15 14:48:32] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/16/f8/601301f79ff13c3d76ea3a2eb10d4b344b9541b325e0ee9aa91ef23b2530/napatrackmater-3.3.7.tar.gz
+[2023-04-15 14:48:32] INFO root fetch - processPackages [Allagash]: Downloading https://files.pythonhosted.org/packages/57/4c/fd27e0febb28f768a41940b93c3c89b00b0f74c3620d446987b542a61d33/Allagash-0.4.2.tar.gz
+[2023-04-15 14:48:32] INFO root fetch - processPackages [napatrackmater]: executing diffoscope
+[2023-04-15 14:48:32] INFO root fetch - processPackages [napatrackmater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napatrackmater-3.3.6.tar.gz tmp/napatrackmater-3.3.7.tar.gz --markdown 20230415/n/napatrackmater/3.3.6-3.3.7/diff.md --exclude *.pyd
+[2023-04-15 14:48:32] INFO root fetch - processPackages [cubao-pypi-example]: Downloading https://files.pythonhosted.org/packages/ba/69/a2ed4c68e3e9f6f5a34e74bfb216000a02cb99b838eb013acd776d40ec29/cubao-pypi-example-0.0.2.tar.gz
+[2023-04-15 14:48:33] INFO root fetch - processPackages [hds-stats]: Downloading https://files.pythonhosted.org/packages/ff/21/c3ff09e7e461950b138c9e3f31720fc206eea96aa31f8ab66ff7c71c5428/hds-stats-0.1.5.tar.gz
+[2023-04-15 14:48:33] INFO root fetch - processPackages [cubao-pypi-example]: executing diffoscope
+[2023-04-15 14:48:33] INFO root fetch - processPackages [cubao-pypi-example]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cubao-pypi-example-0.0.1.tar.gz tmp/cubao-pypi-example-0.0.2.tar.gz --markdown 20230415/c/cubao-pypi-example/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 14:48:33] INFO root fetch - processPackages [pureml]: Downloading https://files.pythonhosted.org/packages/c5/e4/972eefbca126b6ab56ea86127bfa165e8daa93fd21b1152f62b12b863313/pureml-0.3.4.tar.gz
+[2023-04-15 14:48:33] INFO root fetch - processPackages [hds-stats]: executing diffoscope
+[2023-04-15 14:48:33] INFO root fetch - processPackages [hds-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hds-stats-0.1.4.tar.gz tmp/hds-stats-0.1.5.tar.gz --markdown 20230415/h/hds-stats/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-15 14:48:33] INFO root fetch - processPackages [pureml]: executing diffoscope
+[2023-04-15 14:48:33] INFO root fetch - processPackages [pureml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pureml-0.3.3-py3-none-any.whl.zip tmp/pureml-0.3.4.tar.gz --markdown 20230415/p/pureml/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-15 14:48:33] INFO root fetch - processPackages [Allagash]: Downloading https://files.pythonhosted.org/packages/5d/d6/c57695fec0ceb38f060ba9b02e94ea560e8822a8d933372a44d1d8ef16c2/Allagash-0.4.3.tar.gz
+[2023-04-15 14:48:33] INFO root fetch - processPackages [Allagash]: executing diffoscope
+[2023-04-15 14:48:33] INFO root fetch - processPackages [Allagash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Allagash-0.4.2.tar.gz tmp/Allagash-0.4.3.tar.gz --markdown 20230415/A/Allagash/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-15 14:48:33] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/da/f6/6ecc6db09d3b172e948181204ce66b144ce297ce8292399ba14081971087/tensorcircuit-nightly-0.8.0.dev20230414.tar.gz
+[2023-04-15 14:48:33] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/89/17/8e1981ccd09429e3a5ad7873215ca361acf4e339a44e5c3df2bf73cab63a/tensorcircuit-nightly-0.8.0.dev20230415.tar.gz
+[2023-04-15 14:48:33] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-04-15 14:48:33] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.8.0.dev20230414.tar.gz tmp/tensorcircuit-nightly-0.8.0.dev20230415.tar.gz --markdown 20230415/t/tensorcircuit-nightly/0.8.0.dev20230414-0.8.0.dev20230415/diff.md --exclude *.pyd
+[2023-04-15 14:48:34] INFO root fetch - main [MainThread]: End processing [hds-stats]: success
+[2023-04-15 14:48:34] INFO root fetch - processPackages [econpizza]: Downloading https://files.pythonhosted.org/packages/fc/19/7fd6aef9b391a92527e2fceca970c7a7a1efc6da42663954e6026c6b446e/econpizza-0.5.4.tar.gz
+[2023-04-15 14:48:34] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
+[2023-04-15 14:48:34] INFO root fetch - main [MainThread]: End processing [pureml]: success
+[2023-04-15 14:48:34] INFO root fetch - main [MainThread]: End processing [cubao-pypi-example]: success
+[2023-04-15 14:48:34] INFO root fetch - processPackages [econpizza]: executing diffoscope
+[2023-04-15 14:48:34] INFO root fetch - processPackages [econpizza]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/econpizza-0.5.3.tar.gz tmp/econpizza-0.5.4.tar.gz --markdown 20230415/e/econpizza/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-15 14:48:34] INFO root fetch - main [MainThread]: End processing [Allagash]: success
+[2023-04-15 14:48:34] INFO root fetch - processPackages [moto]: New version: [4.1.8.dev9] Old Version: [4.1.8.dev8]
+[2023-04-15 14:48:34] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-15 14:48:34] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.8.dev8.tar.gz tmp/moto-4.1.8.dev9.tar.gz --markdown 20230415/m/moto/4.1.8.dev8-4.1.8.dev9/diff.md --exclude *.pyd
+[2023-04-15 14:48:35] INFO root fetch - main [MainThread]: End processing [econpizza]: success
+[2023-04-15 14:48:35] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2023-04-15 14:49:07] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-04-15 14:49:07] INFO root fetch - main [MainThread]: Store serial: [17718990]
