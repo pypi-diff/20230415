@@ -18353,3 +18353,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 19:37:18] INFO root fetch - main [MainThread]: End processing [jupyterhub-tmpnativeauthenticator]: success
 [2023-04-15 19:37:21] INFO root fetch - main [MainThread]: End processing [fullctl]: success
 [2023-04-15 19:37:21] INFO root fetch - main [MainThread]: Store serial: [17720609]
+[2023-04-15 19:42:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720609]
+[2023-04-15 19:42:30] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-15 19:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rlogging
+[2023-04-15 19:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aistac-foundation
+[2023-04-15 19:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fullctl
+[2023-04-15 19:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Rypple
+[2023-04-15 19:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jupyterhub-tmpnativeauthenticator
+[2023-04-15 19:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vernac
+[2023-04-15 19:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aztecglyph
+[2023-04-15 19:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fastdup
+[2023-04-15 19:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ftp2sftp
+[2023-04-15 19:42:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mtap
+[2023-04-15 19:42:30] INFO root fetch - processPackages [fullctl]: New version: [1.2.0rc2] Old Version: [1.2.0rc1]
+[2023-04-15 19:42:30] INFO root fetch - processPackages [vernac]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 19:42:30] WARNING root fetch - processPackages [aztecglyph]: Skipping, unable to determine old version
+[2023-04-15 19:42:30] INFO root fetch - processPackages [rlogging]: New version: [1.1.0] Old Version: [1.0.7]
+[2023-04-15 19:42:30] INFO root fetch - main [MainThread]: End processing [aztecglyph] error
+[2023-04-15 19:42:30] INFO root fetch - processPackages [aistac-foundation]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-04-15 19:42:30] WARNING root fetch - processPackages [Rypple]: Skipping, unable to determine old version
+[2023-04-15 19:42:30] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-15 19:42:30] INFO root fetch - main [MainThread]: End processing [Rypple] error
+[2023-04-15 19:42:30] INFO root fetch - processPackages [fastdup]: New version: [0.918] Old Version: [0.917]
+[2023-04-15 19:42:30] WARNING root fetch - processPackages [ftp2sftp]: Skipping, unable to determine old version
+[2023-04-15 19:42:30] INFO root fetch - main [MainThread]: End processing [ftp2sftp] error
+[2023-04-15 19:42:30] INFO root fetch - processPackages [mtap]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-15 19:42:30] INFO root fetch - processPackages [aistac-foundation]: executing diffoscope
+[2023-04-15 19:42:30] INFO root fetch - processPackages [aistac-foundation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aistac-foundation-2.9.6.tar.gz tmp/aistac-foundation-2.9.7.tar.gz --markdown 20230415/a/aistac-foundation/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-04-15 19:42:30] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Downloading https://files.pythonhosted.org/packages/4b/65/3746d899ae9e6a9b91ac60ebc366c5a627741c0a02178222675a2bd08a69/jupyterhub-tmpnativeauthenticator-1.0.5.tar.gz
+[2023-04-15 19:42:30] INFO root fetch - processPackages [rlogging]: Downloading https://files.pythonhosted.org/packages/b5/79/7a1788cb5159794009edaac732740d808a084e41cbc47ecdadce405a1c47/rlogging-1.0.7.tar.gz
+[2023-04-15 19:42:30] INFO root fetch - processPackages [fastdup]: Downloading https://files.pythonhosted.org/packages/b0/92/6a755dede362d44affa8125e5cebba57988a507a3ba280c1c1ea97e699a0/fastdup-0.917-cp39-cp39-manylinux_2_31_x86_64.whl
+[2023-04-15 19:42:30] ERROR root fetch - processPackages [fullctl]: Unable to fetch info: No such project/version 'fullctl' 1.2.0rc2
+[2023-04-15 19:42:30] INFO root fetch - main [MainThread]: End processing [fullctl] error
+[2023-04-15 19:42:30] INFO root fetch - processPackages [mtap]: Downloading https://files.pythonhosted.org/packages/c6/09/547f8b7f062020752c618458166d487bcbe439bfd2f2a1e955f65d9e73e2/mtap-1.1.0.tar.gz
+[2023-04-15 19:42:30] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: executing diffoscope
+[2023-04-15 19:42:30] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterhub-tmpnativeauthenticator-1.0.4.tar.gz tmp/jupyterhub-tmpnativeauthenticator-1.0.5.tar.gz --markdown 20230415/j/jupyterhub-tmpnativeauthenticator/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-15 19:42:30] WARNING root fetch - processPackages [fastdup]: Skipping package: exceeds size limit 75095487>=10485760
+[2023-04-15 19:42:30] INFO root fetch - main [MainThread]: End processing [fastdup] error
+[2023-04-15 19:42:30] INFO root fetch - processPackages [vernac]: Downloading https://files.pythonhosted.org/packages/d8/7e/8f819151f7b52364377379138d93c20e5a2e296b8926850942405a2af658/vernac-0.0.4.tar.gz
+[2023-04-15 19:42:30] INFO root fetch - processPackages [rlogging]: Downloading https://files.pythonhosted.org/packages/d8/dc/212e73331fed376cb35df06d0721c2d62b6276fafccf511f4a198adba7fe/rlogging-1.1.0.tar.gz
+[2023-04-15 19:42:30] INFO root fetch - processPackages [vernac]: executing diffoscope
+[2023-04-15 19:42:30] INFO root fetch - processPackages [vernac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vernac-0.0.3.tar.gz tmp/vernac-0.0.4.tar.gz --markdown 20230415/v/vernac/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 19:42:30] INFO root fetch - processPackages [rlogging]: executing diffoscope
+[2023-04-15 19:42:30] INFO root fetch - processPackages [rlogging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rlogging-1.0.7.tar.gz tmp/rlogging-1.1.0.tar.gz --markdown 20230415/r/rlogging/1.0.7-1.1.0/diff.md --exclude *.pyd
+[2023-04-15 19:42:31] INFO root fetch - processPackages [mtap]: Downloading https://files.pythonhosted.org/packages/07/69/f0b0d3911a09c68707fcc08d1929512d243a2e72d746c01a5dde4319e382/mtap-1.2.0.tar.gz
+[2023-04-15 19:42:31] INFO root fetch - processPackages [mtap]: executing diffoscope
+[2023-04-15 19:42:31] INFO root fetch - processPackages [mtap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtap-1.1.0.tar.gz tmp/mtap-1.2.0.tar.gz --markdown 20230415/m/mtap/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-15 19:42:31] INFO root fetch - main [MainThread]: End processing [vernac]: success
+[2023-04-15 19:42:32] INFO root fetch - main [MainThread]: End processing [jupyterhub-tmpnativeauthenticator]: success
+[2023-04-15 19:42:32] INFO root fetch - main [MainThread]: End processing [rlogging]: success
+[2023-04-15 19:42:34] INFO root fetch - main [MainThread]: End processing [aistac-foundation]: success
+[2023-04-15 19:43:47] INFO root fetch - main [MainThread]: End processing [mtap]: success
+[2023-04-15 19:43:47] INFO root fetch - main [MainThread]: Store serial: [17720647]
