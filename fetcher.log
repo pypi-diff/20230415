@@ -16878,3 +16878,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 16:44:13] INFO root fetch - main [MainThread]: End processing [xhs]: success
 [2023-04-15 16:44:24] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-04-15 16:44:24] INFO root fetch - main [MainThread]: Store serial: [17719597]
+[2023-04-15 16:49:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719597]
+[2023-04-15 16:49:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 16:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beards-analytics
+[2023-04-15 16:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twtvt
+[2023-04-15 16:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tinote
+[2023-04-15 16:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pip-run
+[2023-04-15 16:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tinote
+[2023-04-15 16:49:33] INFO root fetch - processPackages [tinote]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-15 16:49:33] INFO root fetch - processPackages [twtvt]: New version: [2023.4.15.post3] Old Version: [2023.4.15.post2]
+[2023-04-15 16:49:33] INFO root fetch - processPackages [tinote]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-15 16:49:33] INFO root fetch - processPackages [beards-analytics]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-15 16:49:33] INFO root fetch - processPackages [pip-run]: New version: [9.5.0] Old Version: [9.4.0]
+[2023-04-15 16:49:33] INFO root fetch - processPackages [tinote]: Downloading https://files.pythonhosted.org/packages/14/74/ac949a469a6092ad6cca262086aa32456ab680893c13ce7061a79bc84f95/tinote-0.3.0.tar.gz
+[2023-04-15 16:49:33] INFO root fetch - processPackages [tinote]: Downloading https://files.pythonhosted.org/packages/14/74/ac949a469a6092ad6cca262086aa32456ab680893c13ce7061a79bc84f95/tinote-0.3.0.tar.gz
+[2023-04-15 16:49:34] INFO root fetch - processPackages [pip-run]: Downloading https://files.pythonhosted.org/packages/91/09/3593816578d9ffb26adebb74031ff189fdc859c56086d9aaf84e7fe70f6d/pip-run-9.4.0.tar.gz
+[2023-04-15 16:49:34] INFO root fetch - processPackages [beards-analytics]: Downloading https://files.pythonhosted.org/packages/f1/52/d852e5dbb6280eff0fe18d5d657764b6503a2da927baf3610eb40c3fe837/beards_analytics-0.1.5-py3-none-any.whl
+[2023-04-15 16:49:34] INFO root fetch - processPackages [twtvt]: Downloading https://files.pythonhosted.org/packages/55/c0/581411099187c6cd49eaa67a4e94fbbe30147d889caa867618207c220680/twtvt-2023.4.15.post3.tar.gz
+[2023-04-15 16:49:34] INFO root fetch - processPackages [beards-analytics]: executing diffoscope
+[2023-04-15 16:49:34] INFO root fetch - processPackages [beards-analytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beards_analytics-0.1.4-py3-none-any.whl.zip tmp/beards_analytics-0.1.5-py3-none-any.whl.zip --markdown 20230415/b/beards-analytics/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-15 16:49:34] INFO root fetch - processPackages [twtvt]: executing diffoscope
+[2023-04-15 16:49:34] INFO root fetch - processPackages [twtvt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twtvt-2023.4.15.post2.tar.gz tmp/twtvt-2023.4.15.post3.tar.gz --markdown 20230415/t/twtvt/2023.4.15.post2-2023.4.15.post3/diff.md --exclude *.pyd
+[2023-04-15 16:49:34] INFO root fetch - processPackages [tinote]: Downloading https://files.pythonhosted.org/packages/1d/15/695920b37f007ddc305c6d0f294a2e699b389e0ea7b6fb984fc19505681b/tinote-0.3.1.tar.gz
+[2023-04-15 16:49:34] INFO root fetch - processPackages [tinote]: Downloading https://files.pythonhosted.org/packages/1d/15/695920b37f007ddc305c6d0f294a2e699b389e0ea7b6fb984fc19505681b/tinote-0.3.1.tar.gz
+[2023-04-15 16:49:34] INFO root fetch - processPackages [pip-run]: Downloading https://files.pythonhosted.org/packages/09/62/9208b4eecab793f5e59c44e9b071dcb257622e79f053e17f888fe7b787ef/pip-run-9.5.0.tar.gz
+[2023-04-15 16:49:34] INFO root fetch - processPackages [tinote]: executing diffoscope
+[2023-04-15 16:49:34] INFO root fetch - processPackages [tinote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinote-0.3.0.tar.gz tmp/tinote-0.3.1.tar.gz --markdown 20230415/t/tinote/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-15 16:49:34] INFO root fetch - processPackages [tinote]: executing diffoscope
+[2023-04-15 16:49:34] INFO root fetch - processPackages [tinote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinote-0.3.0.tar.gz tmp/tinote-0.3.1.tar.gz --markdown 20230415/t/tinote/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-15 16:49:34] INFO root fetch - processPackages [pip-run]: executing diffoscope
+[2023-04-15 16:49:34] INFO root fetch - processPackages [pip-run]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-run-9.4.0.tar.gz tmp/pip-run-9.5.0.tar.gz --markdown 20230415/p/pip-run/9.4.0-9.5.0/diff.md --exclude *.pyd
+[2023-04-15 16:49:35] INFO root fetch - main [MainThread]: End processing [twtvt]: success
+[2023-04-15 16:49:35] INFO root fetch - main [MainThread]: End processing [beards-analytics]: success
+[2023-04-15 16:49:35] INFO root fetch - main [MainThread]: End processing [tinote]: success
+[2023-04-15 16:49:35] INFO root fetch - main [MainThread]: End processing [tinote]: success
+[2023-04-15 16:49:36] INFO root fetch - main [MainThread]: End processing [pip-run]: success
+[2023-04-15 16:49:36] INFO root fetch - main [MainThread]: Store serial: [17719614]
