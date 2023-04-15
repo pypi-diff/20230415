@@ -4896,3 +4896,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 05:30:01] INFO root fetch - main [MainThread]: End processing [DomiKnowS]: success
 [2023-04-15 05:30:01] INFO root fetch - main [MainThread]: End processing [minitrade]: success
 [2023-04-15 05:30:01] INFO root fetch - main [MainThread]: Store serial: [17716183]
+[2023-04-15 05:35:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716183]
+[2023-04-15 05:35:08] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 05:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xmodel-dynamo
+[2023-04-15 05:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gradio
+[2023-04-15 05:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-asterisk-click2dial
+[2023-04-15 05:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ethome-ml
+[2023-04-15 05:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dycw-utilities
+[2023-04-15 05:35:08] INFO root fetch - processPackages [ethome-ml]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-15 05:35:08] WARNING root fetch - processPackages [xmodel-dynamo]: Skipping, unable to determine old version
+[2023-04-15 05:35:08] INFO root fetch - processPackages [xmodel-dynamo]: Start processing: psgtest
+[2023-04-15 05:35:08] INFO root fetch - main [MainThread]: End processing [xmodel-dynamo] error
+[2023-04-15 05:35:08] INFO root fetch - processPackages [odoo14-addon-asterisk-click2dial]: New version: [14.0.2.0.1.dev1] Old Version: [14.0.2.0.0]
+[2023-04-15 05:35:08] INFO root fetch - processPackages [gradio]: New version: [3.9.1] Old Version: [3.9]
+[2023-04-15 05:35:08] INFO root fetch - processPackages [dycw-utilities]: New version: [0.9.0] Old Version: [0.8.8]
+[2023-04-15 05:35:08] INFO root fetch - processPackages [psgtest]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-15 05:35:08] INFO root fetch - processPackages [psgtest]: executing diffoscope
+[2023-04-15 05:35:08] INFO root fetch - processPackages [psgtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psgtest-1.8.0.tar.gz tmp/psgtest-1.9.0.tar.gz --markdown 20230415/p/psgtest/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-15 05:35:08] INFO root fetch - processPackages [ethome-ml]: Downloading https://files.pythonhosted.org/packages/c6/d0/4dd81e6ef5df08a924e2933848febe49ee537145ca179b159023b0affeca/ethome-ml-0.5.3.tar.gz
+[2023-04-15 05:35:08] INFO root fetch - processPackages [odoo14-addon-asterisk-click2dial]: Downloading https://files.pythonhosted.org/packages/59/60/c4bb0bf2010a0ca87203f405e0a83859d39e2e3bcbf9fae33b9e1e401af8/odoo14_addon_asterisk_click2dial-14.0.2.0.1.dev1-py3-none-any.whl
+[2023-04-15 05:35:08] INFO root fetch - processPackages [gradio]: Downloading https://files.pythonhosted.org/packages/b2/2d/f8dc88b392cdaac54b5bf6b56af321211f705494f4a0b2a1589717c06ff5/gradio-3.9.tar.gz
+[2023-04-15 05:35:08] WARNING root fetch - processPackages [gradio]: Skipping package: exceeds size limit 12444246>=10485760
+[2023-04-15 05:35:08] INFO root fetch - processPackages [gradio]: Start processing: pipen-args
+[2023-04-15 05:35:08] INFO root fetch - main [MainThread]: End processing [gradio] error
+[2023-04-15 05:35:08] INFO root fetch - processPackages [pipen-args]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-15 05:35:08] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/18/5f/14fd12b36288c6f50f412854105898b537e348c0c10e7cedb0b54a05a56e/dycw_utilities-0.9.0.tar.gz
+[2023-04-15 05:35:08] INFO root fetch - processPackages [odoo14-addon-asterisk-click2dial]: executing diffoscope
+[2023-04-15 05:35:08] INFO root fetch - processPackages [odoo14-addon-asterisk-click2dial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_asterisk_click2dial-14.0.2.0.0-py3-none-any.whl.zip tmp/odoo14_addon_asterisk_click2dial-14.0.2.0.1.dev1-py3-none-any.whl.zip --markdown 20230415/o/odoo14-addon-asterisk-click2dial/14.0.2.0.0-14.0.2.0.1.dev1/diff.md --exclude *.pyd
+[2023-04-15 05:35:08] WARNING root fetch - processPackages [ethome-ml]: Skipping package: exceeds size limit 16165980>=10485760
+[2023-04-15 05:35:08] INFO root fetch - processPackages [ethome-ml]: Start processing: tulp
+[2023-04-15 05:35:08] INFO root fetch - main [MainThread]: End processing [ethome-ml] error
+[2023-04-15 05:35:08] INFO root fetch - processPackages [tulp]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-15 05:35:08] INFO root fetch - processPackages [pipen-args]: Downloading https://files.pythonhosted.org/packages/f6/2f/4216412b309a60e41bd984a951c1a5ff0706757d6758dd181604583cd736/pipen_args-0.9.1.tar.gz
+[2023-04-15 05:35:09] INFO root fetch - processPackages [pipen-args]: executing diffoscope
+[2023-04-15 05:35:09] INFO root fetch - processPackages [pipen-args]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_args-0.9.0.tar.gz tmp/pipen_args-0.9.1.tar.gz --markdown 20230415/p/pipen-args/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-15 05:35:09] INFO root fetch - processPackages [dycw-utilities]: executing diffoscope
+[2023-04-15 05:35:09] INFO root fetch - processPackages [dycw-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dycw_utilities-0.8.8.tar.gz tmp/dycw_utilities-0.9.0.tar.gz --markdown 20230415/d/dycw-utilities/0.8.8-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 05:35:09] INFO root fetch - processPackages [tulp]: Downloading https://files.pythonhosted.org/packages/85/4d/0681b8f5f540f20ea63ff601341d32636feb1f06897bef4ccad6fd3d80db/tulp-0.4.3.tar.gz
+[2023-04-15 05:35:09] INFO root fetch - processPackages [tulp]: Downloading https://files.pythonhosted.org/packages/11/46/c4511018de550b752768a4041bd52aae91403992c9c0875a3c69434a3d50/tulp-0.4.4.tar.gz
+[2023-04-15 05:35:09] INFO root fetch - processPackages [tulp]: executing diffoscope
+[2023-04-15 05:35:09] INFO root fetch - processPackages [tulp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulp-0.4.3.tar.gz tmp/tulp-0.4.4.tar.gz --markdown 20230415/t/tulp/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-15 05:35:09] INFO root fetch - processPackages [psgtest]: Start processing: idealgeo
+[2023-04-15 05:35:09] INFO root fetch - main [MainThread]: End processing [psgtest]: success
+[2023-04-15 05:35:09] WARNING root fetch - processPackages [idealgeo]: Skipping, unable to determine old version
+[2023-04-15 05:35:09] INFO root fetch - main [MainThread]: End processing [idealgeo] error
+[2023-04-15 05:35:10] INFO root fetch - main [MainThread]: End processing [pipen-args]: success
+[2023-04-15 05:35:10] INFO root fetch - main [MainThread]: End processing [odoo14-addon-asterisk-click2dial]: success
+[2023-04-15 05:35:10] INFO root fetch - main [MainThread]: End processing [tulp]: success
+[2023-04-15 05:35:11] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
+[2023-04-15 05:35:11] INFO root fetch - main [MainThread]: Store serial: [17716217]
