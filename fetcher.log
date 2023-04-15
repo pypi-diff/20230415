@@ -13505,3 +13505,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 10:45:16] ERROR root fetch - processPackages [mkdocs-material-otf]: Timeout during execution of pkgdiff
 [2023-04-15 10:45:16] INFO root fetch - main [MainThread]: End processing [mkdocs-material-otf] error
 [2023-04-15 10:45:16] INFO root fetch - main [MainThread]: Store serial: [17717573]
+[2023-04-15 10:50:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717573]
+[2023-04-15 10:50:25] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-15 10:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Izmon
+[2023-04-15 10:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: topologicpy
+[2023-04-15 10:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tff-nightly
+[2023-04-15 10:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: couchbase-checkup
+[2023-04-15 10:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: DjangoKit
+[2023-04-15 10:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: couchbase-checkup
+[2023-04-15 10:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: secret-wallet-codimoc
+[2023-04-15 10:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: wizata-dsapi
+[2023-04-15 10:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: linki
+[2023-04-15 10:50:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: megabots
+[2023-04-15 10:50:25] INFO root fetch - processPackages [DjangoKit]: New version: [0.9.2] Old Version: [0.9]
+[2023-04-15 10:50:25] INFO root fetch - processPackages [topologicpy]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-15 10:50:25] INFO root fetch - processPackages [Izmon]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-15 10:50:25] INFO root fetch - processPackages [secret-wallet-codimoc]: New version: [0.6.1] Old Version: [0.5.1]
+[2023-04-15 10:50:25] WARNING root fetch - processPackages [couchbase-checkup]: Skipping, unable to determine old version
+[2023-04-15 10:50:25] INFO root fetch - processPackages [couchbase-checkup]: Start processing: cogsgpt
+[2023-04-15 10:50:25] INFO root fetch - main [MainThread]: End processing [couchbase-checkup] error
+[2023-04-15 10:50:25] WARNING root fetch - processPackages [linki]: Skipping, unable to determine old version
+[2023-04-15 10:50:25] INFO root fetch - main [MainThread]: End processing [linki] error
+[2023-04-15 10:50:25] WARNING root fetch - processPackages [couchbase-checkup]: Skipping, unable to determine old version
+[2023-04-15 10:50:25] INFO root fetch - main [MainThread]: End processing [couchbase-checkup] error
+[2023-04-15 10:50:25] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 10:50:25] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-04-15 10:50:25] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.8.tar.gz tmp/wizata-dsapi-0.1.9.tar.gz --markdown 20230415/w/wizata-dsapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 10:50:25] WARNING root fetch - processPackages [megabots]: Skipping, unable to determine old version
+[2023-04-15 10:50:25] INFO root fetch - main [MainThread]: End processing [megabots] error
+[2023-04-15 10:50:25] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230415] Old Version: [0.0.1.dev20230414]
+[2023-04-15 10:50:25] WARNING root fetch - processPackages [cogsgpt]: Skipping, unable to determine old version
+[2023-04-15 10:50:25] INFO root fetch - main [MainThread]: End processing [cogsgpt] error
+[2023-04-15 10:50:25] INFO root fetch - processPackages [DjangoKit]: Downloading https://files.pythonhosted.org/packages/44/5b/ce08e39e9730094ee4f60d5b8c57cd6178e2df37986ac4e688021ca574b1/DjangoKit-0.9.tar.gz
+[2023-04-15 10:50:25] INFO root fetch - processPackages [Izmon]: Downloading https://files.pythonhosted.org/packages/36/ca/8ebe47da5928b8bc136c68691ecdf21099ca7493ac9aed1978227989517e/Izmon-1.1.0.tar.gz
+[2023-04-15 10:50:25] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/48/84/460449922b1aea74d24fc53a264aaab8b35842456acc16bd6e2d8e4e0ab7/topologicpy-0.4.3.tar.gz
+[2023-04-15 10:50:25] INFO root fetch - processPackages [secret-wallet-codimoc]: Downloading https://files.pythonhosted.org/packages/38/eb/87e1263673c547b8d6ef5fca81542458d74c755dbc0b88c8118f725f5cfb/secret_wallet_codimoc-0.5.1-py3-none-any.whl
+[2023-04-15 10:50:25] WARNING root fetch - processPackages [topologicpy]: Skipping package: exceeds size limit 34014874>=10485760
+[2023-04-15 10:50:25] INFO root fetch - main [MainThread]: End processing [topologicpy] error
+[2023-04-15 10:50:25] INFO root fetch - processPackages [Izmon]: Downloading https://files.pythonhosted.org/packages/83/dc/f550ea96a61322580635ad76bd690f4c2010841aa6306e107f71d36fe68b/Izmon-1.1.1.tar.gz
+[2023-04-15 10:50:25] INFO root fetch - processPackages [Izmon]: executing diffoscope
+[2023-04-15 10:50:25] INFO root fetch - processPackages [Izmon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Izmon-1.1.0.tar.gz tmp/Izmon-1.1.1.tar.gz --markdown 20230415/I/Izmon/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-15 10:50:26] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/e7/f5/5d7e349b228aad6439092d7080f32db7dfcdcf4a58ebc453ef3013422aaf/tff_nightly-0.0.1.dev20230415-py2.py3-none-any.whl
+[2023-04-15 10:50:26] INFO root fetch - processPackages [DjangoKit]: Downloading https://files.pythonhosted.org/packages/07/38/1e464d5ef00d798e49856f513f0e1b5183370979b4b75151c58ed275b101/DjangoKit-0.9.2.tar.gz
+[2023-04-15 10:50:26] INFO root fetch - processPackages [secret-wallet-codimoc]: Downloading https://files.pythonhosted.org/packages/94/cd/89866cbe72e22fabfdd362b85e206ae14dee8cb1e4aa062745492e971a6e/secret_wallet_codimoc-0.6.1-py3-none-any.whl
+[2023-04-15 10:50:26] INFO root fetch - processPackages [secret-wallet-codimoc]: executing diffoscope
+[2023-04-15 10:50:26] INFO root fetch - processPackages [secret-wallet-codimoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secret_wallet_codimoc-0.5.1-py3-none-any.whl.zip tmp/secret_wallet_codimoc-0.6.1-py3-none-any.whl.zip --markdown 20230415/s/secret-wallet-codimoc/0.5.1-0.6.1/diff.md --exclude *.pyd
+[2023-04-15 10:50:26] INFO root fetch - processPackages [DjangoKit]: executing diffoscope
+[2023-04-15 10:50:26] INFO root fetch - processPackages [DjangoKit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DjangoKit-0.9.tar.gz tmp/DjangoKit-0.9.2.tar.gz --markdown 20230415/D/DjangoKit/0.9-0.9.2/diff.md --exclude *.pyd
+[2023-04-15 10:50:26] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-04-15 10:50:26] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230414-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230415-py2.py3-none-any.whl.zip --markdown 20230415/t/tff-nightly/0.0.1.dev20230414-0.0.1.dev20230415/diff.md --exclude *.pyd
+[2023-04-15 10:50:26] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-04-15 10:50:27] INFO root fetch - main [MainThread]: End processing [Izmon]: success
+[2023-04-15 10:50:27] INFO root fetch - main [MainThread]: End processing [secret-wallet-codimoc]: success
+[2023-04-15 10:50:27] INFO root fetch - main [MainThread]: End processing [DjangoKit]: success
+[2023-04-15 10:50:29] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-04-15 10:50:29] INFO root fetch - main [MainThread]: Store serial: [17717624]
