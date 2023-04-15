@@ -19719,3 +19719,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 21:57:49] INFO root fetch - main [MainThread]: End processing [sharrow]: success
 [2023-04-15 21:57:59] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-04-15 21:57:59] INFO root fetch - main [MainThread]: Store serial: [17721595]
+[2023-04-15 22:03:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721595]
+[2023-04-15 22:03:10] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 22:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhOn
+[2023-04-15 22:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyIntellect
+[2023-04-15 22:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bam-filter
+[2023-04-15 22:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: microt-preprocessing
+[2023-04-15 22:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sabledocs
+[2023-04-15 22:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sabledocs
+[2023-04-15 22:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: synergy-dataset
+[2023-04-15 22:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: yopass-api
+[2023-04-15 22:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: RsFsw
+[2023-04-15 22:03:10] INFO root fetch - processPackages [pyhOn]: New version: [0.8.0b3] Old Version: [0.8.0b2]
+[2023-04-15 22:03:10] INFO root fetch - processPackages [synergy-dataset]: New version: [1.0a3] Old Version: [1.0a2]
+[2023-04-15 22:03:10] INFO root fetch - processPackages [sabledocs]: New version: [0.1.43] Old Version: [0.1]
+[2023-04-15 22:03:10] INFO root fetch - processPackages [microt-preprocessing]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 22:03:10] INFO root fetch - processPackages [sabledocs]: New version: [0.1.43] Old Version: [0.1]
+[2023-04-15 22:03:10] INFO root fetch - processPackages [PyIntellect]: New version: [2023.1.0] Old Version: [0.0.7]
+[2023-04-15 22:03:10] INFO root fetch - processPackages [bam-filter]: New version: [1.2.1] Old Version: [1.1.9]
+[2023-04-15 22:03:10] INFO root fetch - processPackages [microt-preprocessing]: executing diffoscope
+[2023-04-15 22:03:10] INFO root fetch - processPackages [microt-preprocessing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microt_preprocessing-0.1.8.tar.gz tmp/microt_preprocessing-0.1.9.tar.gz --markdown 20230415/m/microt-preprocessing/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 22:03:10] INFO root fetch - processPackages [RsFsw]: New version: [5.20.1] Old Version: [5.20.0]
+[2023-04-15 22:03:10] WARNING root fetch - processPackages [yopass-api]: Skipping, unable to determine old version
+[2023-04-15 22:03:10] INFO root fetch - main [MainThread]: End processing [yopass-api] error
+[2023-04-15 22:03:10] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/59/80/df66e6d0981b8ffc3a10884db6b95ff768266cf75b4ece818466d1dcfdf3/sabledocs-0.1.tar.gz
+[2023-04-15 22:03:10] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/59/80/df66e6d0981b8ffc3a10884db6b95ff768266cf75b4ece818466d1dcfdf3/sabledocs-0.1.tar.gz
+[2023-04-15 22:03:10] INFO root fetch - processPackages [PyIntellect]: Downloading https://files.pythonhosted.org/packages/95/d0/234a85cb6024fabd424e6bbc37bca3c359fd79c60aaa4b449174e03662ca/PyIntellect-0.0.7.zip
+[2023-04-15 22:03:10] INFO root fetch - processPackages [bam-filter]: Downloading https://files.pythonhosted.org/packages/a1/e7/84a13997a1014923efa29a112cc525a10436c09833c2e7986dff9b8c3a86/bam-filter-1.1.9.tar.gz
+[2023-04-15 22:03:10] INFO root fetch - processPackages [pyhOn]: Downloading https://files.pythonhosted.org/packages/a5/60/3362e3ebe255868152e07fb2840bfdd84682271639e118a5e0711bd4cfb4/pyhOn-0.8.0b3.tar.gz
+[2023-04-15 22:03:10] INFO root fetch - processPackages [synergy-dataset]: Downloading https://files.pythonhosted.org/packages/1d/09/1dfc478218d45e0dbe8b79b3a3d2dc24a975c2208357479955479d4d89e6/synergy-dataset-1.0a3.tar.gz
+[2023-04-15 22:03:10] INFO root fetch - processPackages [RsFsw]: Downloading https://files.pythonhosted.org/packages/28/d9/7d30d6ecde295ece9cf85f0f8480839b344b0240053671754d4746eafdc5/RsFsw-5.20.0.tar.gz
+[2023-04-15 22:03:10] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-04-15 22:03:10] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.8.0b2.tar.gz tmp/pyhOn-0.8.0b3.tar.gz --markdown 20230415/p/pyhOn/0.8.0b2-0.8.0b3/diff.md --exclude *.pyd
+[2023-04-15 22:03:10] INFO root fetch - processPackages [synergy-dataset]: executing diffoscope
+[2023-04-15 22:03:10] INFO root fetch - processPackages [synergy-dataset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synergy-dataset-1.0a2.tar.gz tmp/synergy-dataset-1.0a3.tar.gz --markdown 20230415/s/synergy-dataset/1.0a2-1.0a3/diff.md --exclude *.pyd
+[2023-04-15 22:03:10] INFO root fetch - processPackages [PyIntellect]: Downloading https://files.pythonhosted.org/packages/89/75/c314fa838313c95d0e7b2613b4ca8da14ff74e944584353c0482f7d8a7b6/PyIntellect-2023.1.0.zip
+[2023-04-15 22:03:10] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/14/b9/83a7c42735e3e2f3c26bbf88863bc2ec812c05b0aaf329fd725757eee38b/sabledocs-0.1.43.tar.gz
+[2023-04-15 22:03:10] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/14/b9/83a7c42735e3e2f3c26bbf88863bc2ec812c05b0aaf329fd725757eee38b/sabledocs-0.1.43.tar.gz
+[2023-04-15 22:03:10] INFO root fetch - processPackages [bam-filter]: Downloading https://files.pythonhosted.org/packages/74/9d/574c4bb368b5179434105691b36680692d8de18d5ed7330b5a5f45299456/bam-filter-1.2.1.tar.gz
+[2023-04-15 22:03:11] INFO root fetch - processPackages [RsFsw]: Downloading https://files.pythonhosted.org/packages/c2/84/0a01dae8305d1634fa37090d6040e5e4c3049f637673326bf4322c571d98/RsFsw-5.20.1.tar.gz
+[2023-04-15 22:03:11] INFO root fetch - processPackages [PyIntellect]: executing diffoscope
+[2023-04-15 22:03:11] INFO root fetch - processPackages [PyIntellect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyIntellect-0.0.7.zip tmp/PyIntellect-2023.1.0.zip --markdown 20230415/P/PyIntellect/0.0.7-2023.1.0/diff.md --exclude *.pyd
+[2023-04-15 22:03:11] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 22:03:11] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.tar.gz tmp/sabledocs-0.1.43.tar.gz --markdown 20230415/s/sabledocs/0.1-0.1.43/diff.md --exclude *.pyd
+[2023-04-15 22:03:11] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 22:03:11] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.tar.gz tmp/sabledocs-0.1.43.tar.gz --markdown 20230415/s/sabledocs/0.1-0.1.43/diff.md --exclude *.pyd
+[2023-04-15 22:03:11] INFO root fetch - processPackages [bam-filter]: executing diffoscope
+[2023-04-15 22:03:11] INFO root fetch - processPackages [bam-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bam-filter-1.1.9.tar.gz tmp/bam-filter-1.2.1.tar.gz --markdown 20230415/b/bam-filter/1.1.9-1.2.1/diff.md --exclude *.pyd
+[2023-04-15 22:03:11] INFO root fetch - processPackages [RsFsw]: executing diffoscope
+[2023-04-15 22:03:11] INFO root fetch - processPackages [RsFsw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RsFsw-5.20.0.tar.gz tmp/RsFsw-5.20.1.tar.gz --markdown 20230415/R/RsFsw/5.20.0-5.20.1/diff.md --exclude *.pyd
+[2023-04-15 22:03:12] INFO root fetch - main [MainThread]: End processing [synergy-dataset]: success
+[2023-04-15 22:03:12] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-04-15 22:03:12] INFO root fetch - main [MainThread]: End processing [PyIntellect]: success
+[2023-04-15 22:03:12] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 22:03:12] INFO root fetch - main [MainThread]: End processing [bam-filter]: success
+[2023-04-15 22:03:13] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 22:03:13] INFO root fetch - main [MainThread]: End processing [microt-preprocessing]: success
+[2023-04-15 22:06:11] ERROR root fetch - processPackages [RsFsw]: Timeout during execution of pkgdiff
+[2023-04-15 22:06:11] INFO root fetch - main [MainThread]: End processing [RsFsw] error
+[2023-04-15 22:06:11] INFO root fetch - main [MainThread]: Store serial: [17721624]
