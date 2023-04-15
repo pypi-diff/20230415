@@ -16015,3 +16015,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 15:15:09] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
 [2023-04-15 15:15:10] INFO root fetch - main [MainThread]: End processing [drf-spectacular]: success
 [2023-04-15 15:15:10] INFO root fetch - main [MainThread]: Store serial: [17719129]
+[2023-04-15 15:20:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719129]
+[2023-04-15 15:20:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 15:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anylabeling
+[2023-04-15 15:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ccxt
+[2023-04-15 15:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sabledocs
+[2023-04-15 15:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fbgemm-gpu-nightly
+[2023-04-15 15:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pynytimes
+[2023-04-15 15:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fastestimator-nightly
+[2023-04-15 15:20:19] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-15 15:20:19] INFO root fetch - processPackages [ccxt]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-15 15:20:19] INFO root fetch - processPackages [pynytimes]: New version: [0.9.2] Old Version: [0.9.0]
+[2023-04-15 15:20:19] INFO root fetch - processPackages [sabledocs]: New version: [0.0.2.dev31] Old Version: [0.0.2.dev29]
+[2023-04-15 15:20:19] INFO root fetch - processPackages [anylabeling]: New version: [0.2.2] Old Version: [0.1.6]
+[2023-04-15 15:20:19] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/2e/4c/3a51164f4c0a21fb3df247be9849d627a1182449b0fb9006d67cef7adf30/ccxt-3.0.8.tar.gz
+[2023-04-15 15:20:19] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/91/d7/37b19c2c14c34663f10ad284c315d7cdad71cbf7995d5e3bd737507ac655/fbgemm_gpu_nightly-2023.4.8-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-15 15:20:19] INFO root fetch - processPackages [fastestimator-nightly]: New version: [1.5.0.dev202304151323] Old Version: [1.5.0.dev202304131324]
+[2023-04-15 15:20:19] INFO root fetch - processPackages [pynytimes]: Downloading https://files.pythonhosted.org/packages/0c/db/e2b0f5a81efb5f841f55e958c9d50baaf2518e6f774f3788eef01f72f881/pynytimes-0.9.0.tar.gz
+[2023-04-15 15:20:19] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/db/fc/d1a503a9419cbfe0127ca291779d9e0450bb5bb2ea09b338d30af9010b44/sabledocs-0.0.2.dev31.tar.gz
+[2023-04-15 15:20:19] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 205605176>=10485760
+[2023-04-15 15:20:19] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-04-15 15:20:19] INFO root fetch - processPackages [fastestimator-nightly]: Downloading https://files.pythonhosted.org/packages/2f/24/7ee0fdee770f9fcf9c2015be9d5d09b268d61c640a2fcbc30aa1d8e1b5e0/fastestimator-nightly-1.5.0.dev202304131324.tar.gz
+[2023-04-15 15:20:19] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/93/dc/4d842bb482904bee2c7942e9f66b5cc6459060c7619021fd0d1ede294c7a/anylabeling-0.2.2.tar.gz
+[2023-04-15 15:20:19] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 15:20:19] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.0.2.dev29.tar.gz tmp/sabledocs-0.0.2.dev31.tar.gz --markdown 20230415/s/sabledocs/0.0.2.dev29-0.0.2.dev31/diff.md --exclude *.pyd
+[2023-04-15 15:20:19] INFO root fetch - processPackages [pynytimes]: Downloading https://files.pythonhosted.org/packages/99/89/45910db895cba5f9c59231f25d91e1879516982d5f6d332e00e6d247e1be/pynytimes-0.9.2.tar.gz
+[2023-04-15 15:20:20] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-15 15:20:20] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.1.6.tar.gz tmp/anylabeling-0.2.2.tar.gz --markdown 20230415/a/anylabeling/0.1.6-0.2.2/diff.md --exclude *.pyd
+[2023-04-15 15:20:20] INFO root fetch - processPackages [pynytimes]: executing diffoscope
+[2023-04-15 15:20:20] INFO root fetch - processPackages [pynytimes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynytimes-0.9.0.tar.gz tmp/pynytimes-0.9.2.tar.gz --markdown 20230415/p/pynytimes/0.9.0-0.9.2/diff.md --exclude *.pyd
+[2023-04-15 15:20:20] INFO root fetch - processPackages [fastestimator-nightly]: Downloading https://files.pythonhosted.org/packages/7d/ee/06e8708f313f05fa6aaa6a431991bacd6c4e655b08b54976f6472a482020/fastestimator-nightly-1.5.0.dev202304151323.tar.gz
+[2023-04-15 15:20:20] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/8e/7d/1f94d2f0fc89bf8708b279ddd82d30cd2d69c098b14f9d8e0c63f464a35e/ccxt-3.0.9.tar.gz
+[2023-04-15 15:20:20] INFO root fetch - processPackages [fastestimator-nightly]: executing diffoscope
+[2023-04-15 15:20:20] INFO root fetch - processPackages [fastestimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastestimator-nightly-1.5.0.dev202304131324.tar.gz tmp/fastestimator-nightly-1.5.0.dev202304151323.tar.gz --markdown 20230415/f/fastestimator-nightly/1.5.0.dev202304131324-1.5.0.dev202304151323/diff.md --exclude *.pyd
+[2023-04-15 15:20:20] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-04-15 15:20:20] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.8.tar.gz tmp/ccxt-3.0.9.tar.gz --markdown 20230415/c/ccxt/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-15 15:20:21] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 15:20:21] INFO root fetch - main [MainThread]: End processing [pynytimes]: success
+[2023-04-15 15:20:21] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
+[2023-04-15 15:20:25] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-04-15 15:20:26] INFO root fetch - main [MainThread]: End processing [fastestimator-nightly]: success
+[2023-04-15 15:20:26] INFO root fetch - main [MainThread]: Store serial: [17719159]
