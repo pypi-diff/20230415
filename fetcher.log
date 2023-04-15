@@ -17785,3 +17785,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 18:31:20] INFO root fetch - main [MainThread]: End processing [st-ant-tree]: success
 [2023-04-15 18:31:48] INFO root fetch - main [MainThread]: End processing [jskiner]: success
 [2023-04-15 18:31:48] INFO root fetch - main [MainThread]: Store serial: [17720206]
+[2023-04-15 18:36:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720206]
+[2023-04-15 18:37:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 18:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beards-analytics
+[2023-04-15 18:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rocketpy
+[2023-04-15 18:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kobject
+[2023-04-15 18:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: netzeus-core-schemas
+[2023-04-15 18:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: func-kit
+[2023-04-15 18:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hiddifypanel
+[2023-04-15 18:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: deep-learning-framework
+[2023-04-15 18:37:02] INFO root fetch - processPackages [func-kit]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 18:37:02] WARNING root fetch - processPackages [beards-analytics]: Skipping, unable to determine old version
+[2023-04-15 18:37:02] INFO root fetch - main [MainThread]: End processing [beards-analytics] error
+[2023-04-15 18:37:02] INFO root fetch - processPackages [kobject]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-15 18:37:02] INFO root fetch - processPackages [hiddifypanel]: New version: [4.0.0.dev3] Old Version: [3.1.9]
+[2023-04-15 18:37:02] INFO root fetch - processPackages [func-kit]: executing diffoscope
+[2023-04-15 18:37:02] INFO root fetch - processPackages [func-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_kit-0.1.0.tar.gz tmp/func_kit-0.1.1.tar.gz --markdown 20230415/f/func-kit/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 18:37:02] INFO root fetch - processPackages [deep-learning-framework]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 18:37:02] WARNING root fetch - processPackages [netzeus-core-schemas]: Skipping, unable to determine old version
+[2023-04-15 18:37:02] INFO root fetch - main [MainThread]: End processing [netzeus-core-schemas] error
+[2023-04-15 18:37:02] INFO root fetch - processPackages [rocketpy]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-15 18:37:03] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/1b/82/6e3810dad4910b0d18f0300679b3d8aa3dd29a1d5c90e574e60d4eba70b3/hiddifypanel-3.1.9-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-15 18:37:03] INFO root fetch - processPackages [kobject]: Downloading https://files.pythonhosted.org/packages/90/70/c317fa016642d7f34d74d8888244a1ae720db62046dd3019e98e275ae20d/kobject-0.3.7.tar.gz
+[2023-04-15 18:37:03] INFO root fetch - processPackages [deep-learning-framework]: Downloading https://files.pythonhosted.org/packages/2c/a6/5a5efac098dbaca8ff008740a3490643f9c024e02f926e1082e2d601e885/deep_learning_framework-0.1.8.tar.gz
+[2023-04-15 18:37:03] INFO root fetch - processPackages [rocketpy]: Downloading https://files.pythonhosted.org/packages/7a/78/de6be7c8234927c346a686363969f98583694960a4d6a2e9704ed5dc0c7c/rocketpy-0.9.8.tar.gz
+[2023-04-15 18:37:03] INFO root fetch - processPackages [kobject]: Downloading https://files.pythonhosted.org/packages/7c/d6/d432060331dc41f1d7a6adb8823f176a9a22e77255844810010e949648f9/kobject-0.3.8.tar.gz
+[2023-04-15 18:37:03] INFO root fetch - processPackages [kobject]: executing diffoscope
+[2023-04-15 18:37:03] INFO root fetch - processPackages [kobject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kobject-0.3.7.tar.gz tmp/kobject-0.3.8.tar.gz --markdown 20230415/k/kobject/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-15 18:37:03] INFO root fetch - processPackages [deep-learning-framework]: Downloading https://files.pythonhosted.org/packages/bb/7f/2170e4c25777cd977a31d58a249849306b6acd0211028673b0ef009bfe90/deep_learning_framework-0.1.9.tar.gz
+[2023-04-15 18:37:03] INFO root fetch - processPackages [rocketpy]: Downloading https://files.pythonhosted.org/packages/7f/ed/eedbb07eba0057cb24fbcf1edd1581b6e98e9fad98d8026ceb1982f15cb5/rocketpy-0.9.9.tar.gz
+[2023-04-15 18:37:03] INFO root fetch - processPackages [deep-learning-framework]: executing diffoscope
+[2023-04-15 18:37:03] INFO root fetch - processPackages [deep-learning-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_learning_framework-0.1.8.tar.gz tmp/deep_learning_framework-0.1.9.tar.gz --markdown 20230415/d/deep-learning-framework/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 18:37:03] INFO root fetch - processPackages [rocketpy]: executing diffoscope
+[2023-04-15 18:37:03] INFO root fetch - processPackages [rocketpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocketpy-0.9.8.tar.gz tmp/rocketpy-0.9.9.tar.gz --markdown 20230415/r/rocketpy/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-15 18:37:03] INFO root fetch - main [MainThread]: End processing [func-kit]: success
+[2023-04-15 18:37:04] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/34/0d/bd6a25b29523e03b4f318b9ced124659c0966e0d092ca397c34331475604/hiddifypanel-4.0.0.dev3-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-15 18:37:04] INFO root fetch - main [MainThread]: End processing [kobject]: success
+[2023-04-15 18:37:04] INFO root fetch - main [MainThread]: End processing [deep-learning-framework]: success
+[2023-04-15 18:37:05] INFO root fetch - main [MainThread]: End processing [rocketpy]: success
+[2023-04-15 18:37:05] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-15 18:37:05] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.1.9-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-4.0.0.dev3-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230415/h/hiddifypanel/3.1.9-4.0.0.dev3/diff.md --exclude *.pyd
+[2023-04-15 18:37:23] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-04-15 18:37:23] INFO root fetch - main [MainThread]: Store serial: [17720242]
