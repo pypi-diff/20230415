@@ -4448,3 +4448,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 04:36:55] INFO root fetch - main [MainThread]: End processing [snc]: success
 [2023-04-15 04:36:56] INFO root fetch - main [MainThread]: End processing [ethome-ml]: success
 [2023-04-15 04:36:56] INFO root fetch - main [MainThread]: Store serial: [17715948]
+[2023-04-15 04:41:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715948]
+[2023-04-15 04:42:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 04:42:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TelegramNotificator
+[2023-04-15 04:42:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: calendar-widget
+[2023-04-15 04:42:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drs-compliance-test
+[2023-04-15 04:42:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TelegramNotificator
+[2023-04-15 04:42:03] WARNING root fetch - processPackages [drs-compliance-test]: Skipping, unable to determine old version
+[2023-04-15 04:42:03] INFO root fetch - main [MainThread]: End processing [drs-compliance-test] error
+[2023-04-15 04:42:03] WARNING root fetch - processPackages [calendar-widget]: Skipping, unable to determine old version
+[2023-04-15 04:42:03] INFO root fetch - main [MainThread]: End processing [calendar-widget] error
+[2023-04-15 04:42:03] INFO root fetch - processPackages [TelegramNotificator]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-15 04:42:03] INFO root fetch - processPackages [TelegramNotificator]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-15 04:42:03] INFO root fetch - processPackages [TelegramNotificator]: Downloading https://files.pythonhosted.org/packages/9a/0e/b0960868659491bbfd3e35eaf3eaa37e4ebfc4463a1dacc559b10c190715/TelegramNotificator-1.0.2.tar.gz
+[2023-04-15 04:42:03] INFO root fetch - processPackages [TelegramNotificator]: Downloading https://files.pythonhosted.org/packages/9a/0e/b0960868659491bbfd3e35eaf3eaa37e4ebfc4463a1dacc559b10c190715/TelegramNotificator-1.0.2.tar.gz
+[2023-04-15 04:42:03] INFO root fetch - processPackages [TelegramNotificator]: Downloading https://files.pythonhosted.org/packages/87/a2/997a0f25260abd4d99b5f59a2ef5dd9d8a782955082fda335cec6b6d4ccd/TelegramNotificator-1.0.3.tar.gz
+[2023-04-15 04:42:03] INFO root fetch - processPackages [TelegramNotificator]: Downloading https://files.pythonhosted.org/packages/87/a2/997a0f25260abd4d99b5f59a2ef5dd9d8a782955082fda335cec6b6d4ccd/TelegramNotificator-1.0.3.tar.gz
+[2023-04-15 04:42:03] INFO root fetch - processPackages [TelegramNotificator]: executing diffoscope
+[2023-04-15 04:42:03] INFO root fetch - processPackages [TelegramNotificator]: executing diffoscope
+[2023-04-15 04:42:03] INFO root fetch - processPackages [TelegramNotificator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TelegramNotificator-1.0.2.tar.gz tmp/TelegramNotificator-1.0.3.tar.gz --markdown 20230415/T/TelegramNotificator/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-15 04:42:03] INFO root fetch - processPackages [TelegramNotificator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TelegramNotificator-1.0.2.tar.gz tmp/TelegramNotificator-1.0.3.tar.gz --markdown 20230415/T/TelegramNotificator/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-15 04:42:04] INFO root fetch - main [MainThread]: End processing [TelegramNotificator]: success
+[2023-04-15 04:42:04] INFO root fetch - main [MainThread]: End processing [TelegramNotificator]: success
+[2023-04-15 04:42:04] INFO root fetch - main [MainThread]: Store serial: [17715964]
