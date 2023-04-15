@@ -5204,3 +5204,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 06:16:43] INFO root fetch - main [MainThread]: End processing [databricks-sql-connector]: success
 [2023-04-15 06:18:53] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
 [2023-04-15 06:18:53] INFO root fetch - main [MainThread]: Store serial: [17716413]
+[2023-04-15 06:23:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716413]
+[2023-04-15 06:24:02] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-15 06:24:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyprql
+[2023-04-15 06:24:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netcheck
+[2023-04-15 06:24:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pavegen
+[2023-04-15 06:24:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kfsdutils
+[2023-04-15 06:24:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdict
+[2023-04-15 06:24:02] INFO root fetch - processPackages [netcheck]: New version: [0.2.0a1] Old Version: [0.1.7]
+[2023-04-15 06:24:02] INFO root fetch - processPackages [kfsdutils]: New version: [0.0.92] Old Version: [0.0.91]
+[2023-04-15 06:24:02] INFO root fetch - processPackages [bigdict]: New version: [22.5.29] Old Version: [21.4.11]
+[2023-04-15 06:24:02] INFO root fetch - processPackages [pavegen]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 06:24:02] INFO root fetch - processPackages [pyprql]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-15 06:24:02] INFO root fetch - processPackages [pavegen]: Downloading https://files.pythonhosted.org/packages/1d/42/dd06deee30319b3682950d80203e06b85485b27a6aed1d73161f47652503/pavegen-0.1.0.tar.gz
+[2023-04-15 06:24:02] INFO root fetch - processPackages [netcheck]: Downloading https://files.pythonhosted.org/packages/96/6c/9de5451337beb22e39c042cf2f2ab5dade232fac3bd26fd1356c2a42c6ec/netcheck-0.1.7.tar.gz
+[2023-04-15 06:24:02] INFO root fetch - processPackages [pyprql]: Downloading https://files.pythonhosted.org/packages/1d/5f/d0d9e2357fa958e397f766c05f8d22d06c4a27a2aece3bdb459b853667ce/pyprql-0.7.0.tar.gz
+[2023-04-15 06:24:02] INFO root fetch - processPackages [kfsdutils]: Downloading https://files.pythonhosted.org/packages/9c/ba/60c882e800b625c3f860843e65e27ab3eaf729a56f1f33c114114eb7c3d0/kfsdutils-0.0.92.tar.gz
+[2023-04-15 06:24:02] INFO root fetch - processPackages [kfsdutils]: executing diffoscope
+[2023-04-15 06:24:02] INFO root fetch - processPackages [kfsdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsdutils-0.0.91.tar.gz tmp/kfsdutils-0.0.92.tar.gz --markdown 20230415/k/kfsdutils/0.0.91-0.0.92/diff.md --exclude *.pyd
+[2023-04-15 06:24:02] INFO root fetch - processPackages [pavegen]: Downloading https://files.pythonhosted.org/packages/96/8d/46ef29f76f0e4eae9c6053c4d23848084a8eb403f0252c798a48b63de758/pavegen-0.1.1.tar.gz
+[2023-04-15 06:24:02] INFO root fetch - processPackages [bigdict]: executing diffoscope
+[2023-04-15 06:24:02] INFO root fetch - processPackages [bigdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdict-21.4.11.tar.gz tmp/bigdict-22.5.29.tar.gz --markdown 20230415/b/bigdict/21.4.11-22.5.29/diff.md --exclude *.pyd
+[2023-04-15 06:24:02] INFO root fetch - processPackages [pyprql]: Downloading https://files.pythonhosted.org/packages/b8/68/7f97fee1cd34a6f9f9d45710cbc196a438a01b0d5b915ddb21f08eead000/pyprql-0.8.0.tar.gz
+[2023-04-15 06:24:02] INFO root fetch - processPackages [netcheck]: Downloading https://files.pythonhosted.org/packages/eb/85/b28f6defd80d3b9c2bd46a7b21781b083518d3383423fb408e181217f1e4/netcheck-0.2.0a1.tar.gz
+[2023-04-15 06:24:02] INFO root fetch - processPackages [pavegen]: executing diffoscope
+[2023-04-15 06:24:02] INFO root fetch - processPackages [pavegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pavegen-0.1.0.tar.gz tmp/pavegen-0.1.1.tar.gz --markdown 20230415/p/pavegen/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 06:24:02] INFO root fetch - processPackages [pyprql]: executing diffoscope
+[2023-04-15 06:24:02] INFO root fetch - processPackages [pyprql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprql-0.7.0.tar.gz tmp/pyprql-0.8.0.tar.gz --markdown 20230415/p/pyprql/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-15 06:24:02] INFO root fetch - processPackages [netcheck]: executing diffoscope
+[2023-04-15 06:24:02] INFO root fetch - processPackages [netcheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netcheck-0.1.7.tar.gz tmp/netcheck-0.2.0a1.tar.gz --markdown 20230415/n/netcheck/0.1.7-0.2.0a1/diff.md --exclude *.pyd
+[2023-04-15 06:24:03] INFO root fetch - processPackages [bigdict]: Start processing: neuralprophet
+[2023-04-15 06:24:03] INFO root fetch - main [MainThread]: End processing [bigdict]: success
+[2023-04-15 06:24:03] INFO root fetch - processPackages [neuralprophet]: New version: [0.6.0rc1] Old Version: [0.5.4]
+[2023-04-15 06:24:03] INFO root fetch - processPackages [pavegen]: Start processing: ethome-ml
+[2023-04-15 06:24:03] INFO root fetch - main [MainThread]: End processing [pavegen]: success
+[2023-04-15 06:24:03] INFO root fetch - processPackages [ethome-ml]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-15 06:24:03] INFO root fetch - processPackages [ethome-ml]: Downloading https://files.pythonhosted.org/packages/c6/d0/4dd81e6ef5df08a924e2933848febe49ee537145ca179b159023b0affeca/ethome-ml-0.5.3.tar.gz
+[2023-04-15 06:24:03] WARNING root fetch - processPackages [ethome-ml]: Skipping package: exceeds size limit 16165980>=10485760
+[2023-04-15 06:24:03] INFO root fetch - processPackages [ethome-ml]: Start processing: coca-tools
+[2023-04-15 06:24:03] INFO root fetch - main [MainThread]: End processing [ethome-ml] error
+[2023-04-15 06:24:03] INFO root fetch - processPackages [neuralprophet]: Downloading https://files.pythonhosted.org/packages/68/60/d43efb8b68c95dbd6d2bab96eda6e3a6aa28db4a979fad3fe334a8adfd41/neuralprophet-0.5.4.tar.gz
+[2023-04-15 06:24:03] WARNING root fetch - processPackages [coca-tools]: Skipping, unable to determine old version
+[2023-04-15 06:24:03] INFO root fetch - processPackages [coca-tools]: Start processing: quickstart-vdk
+[2023-04-15 06:24:03] INFO root fetch - main [MainThread]: End processing [coca-tools] error
+[2023-04-15 06:24:03] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.838186637.dev9255] Old Version: [0.2.836982976.dev9245]
+[2023-04-15 06:24:03] INFO root fetch - processPackages [kfsdutils]: Start processing: idealgeo
+[2023-04-15 06:24:03] INFO root fetch - main [MainThread]: End processing [kfsdutils]: success
+[2023-04-15 06:24:03] ERROR root fetch - processPackages [idealgeo]: Unable to get metadata: No such project 'idealgeo'
+[2023-04-15 06:24:03] INFO root fetch - main [MainThread]: End processing [idealgeo] error
+[2023-04-15 06:24:03] INFO root fetch - main [MainThread]: End processing [netcheck]: success
+[2023-04-15 06:24:03] INFO root fetch - main [MainThread]: End processing [pyprql]: success
+[2023-04-15 06:24:03] INFO root fetch - processPackages [neuralprophet]: Downloading https://files.pythonhosted.org/packages/80/f3/365d95a6dbd6e42d256e15db921204cfc7818a84107de9b2ef74f622bc66/neuralprophet-0.6.0rc1.tar.gz
+[2023-04-15 06:24:04] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/3c/bc/3dab23bd4ba919e5acd98bc1d6e2f1db65f08fe230e9d892255d47488b49/quickstart-vdk-0.2.838186637.dev9255.tar.gz
+[2023-04-15 06:24:04] INFO root fetch - processPackages [neuralprophet]: executing diffoscope
+[2023-04-15 06:24:04] INFO root fetch - processPackages [neuralprophet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralprophet-0.5.4.tar.gz tmp/neuralprophet-0.6.0rc1.tar.gz --markdown 20230415/n/neuralprophet/0.5.4-0.6.0rc1/diff.md --exclude *.pyd
+[2023-04-15 06:24:04] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-04-15 06:24:04] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.836982976.dev9245.tar.gz tmp/quickstart-vdk-0.2.838186637.dev9255.tar.gz --markdown 20230415/q/quickstart-vdk/0.2.836982976.dev9245-0.2.838186637.dev9255/diff.md --exclude *.pyd
+[2023-04-15 06:24:05] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2023-04-15 06:24:05] INFO root fetch - main [MainThread]: End processing [neuralprophet]: success
+[2023-04-15 06:24:05] INFO root fetch - main [MainThread]: Store serial: [17716445]
