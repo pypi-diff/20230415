@@ -5349,3 +5349,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 06:39:39] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2023-04-15 06:39:40] INFO root fetch - main [MainThread]: End processing [metaphor-connectors]: success
 [2023-04-15 06:39:40] INFO root fetch - main [MainThread]: Store serial: [17716491]
+[2023-04-15 06:44:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716491]
+[2023-04-15 06:44:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 06:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gqylpy-exception
+[2023-04-15 06:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-l10n-fr-das2
+[2023-04-15 06:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shipdeo
+[2023-04-15 06:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addons-oca-l10n-france
+[2023-04-15 06:44:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gqylpy-log
+[2023-04-15 06:44:46] INFO root fetch - processPackages [odoo-addons-oca-l10n-france]: New version: [16.0.20230414.0] Old Version: [16.0.20230324.0]
+[2023-04-15 06:44:46] INFO root fetch - processPackages [odoo-addon-l10n-fr-das2]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-04-15 06:44:46] INFO root fetch - processPackages [shipdeo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 06:44:46] INFO root fetch - processPackages [gqylpy-exception]: New version: [2.0] Old Version: [1.3.2]
+[2023-04-15 06:44:47] INFO root fetch - processPackages [gqylpy-log]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-15 06:44:47] INFO root fetch - processPackages [odoo-addons-oca-l10n-france]: Downloading https://files.pythonhosted.org/packages/e4/30/0a64c5e2d9bea99e020bca0e58658874859441c6923ce20fc23d9261cf05/odoo_addons_oca_l10n_france-16.0.20230324.0-py3-none-any.whl
+[2023-04-15 06:44:47] INFO root fetch - processPackages [odoo-addon-l10n-fr-das2]: Downloading https://files.pythonhosted.org/packages/07/35/f8c415074f27ce5922bfab6e1fd6461fbea892fe6fdea5eaa6854e5c3a81/odoo_addon_l10n_fr_das2-16.0.1.0.0.2-py3-none-any.whl
+[2023-04-15 06:44:47] INFO root fetch - processPackages [shipdeo]: Downloading https://files.pythonhosted.org/packages/d4/b6/6ce05112a7bab93458aa488c63a26df2591df013cea184e6d51f5c860ce4/shipdeo-0.0.8.tar.gz
+[2023-04-15 06:44:47] INFO root fetch - processPackages [gqylpy-exception]: Downloading https://files.pythonhosted.org/packages/c3/eb/1b67d5299b2e6bfc775310a242825ae32ec011fc6d1c01aa4c58f13927a3/gqylpy_exception-1.3.2.tar.gz
+[2023-04-15 06:44:47] INFO root fetch - processPackages [gqylpy-log]: Downloading https://files.pythonhosted.org/packages/72/26/c66d2c5ea5aedb0daf488f942dc6af714ff2be056793241a0494826e6d74/gqylpy_log-1.0.3.tar.gz
+[2023-04-15 06:44:47] INFO root fetch - processPackages [odoo-addon-l10n-fr-das2]: Downloading https://files.pythonhosted.org/packages/f2/67/d60988135d8683ed99679cb145f11d948a5e5797a184a2fa013b3940dd22/odoo_addon_l10n_fr_das2-16.0.1.0.0.3-py3-none-any.whl
+[2023-04-15 06:44:47] INFO root fetch - processPackages [odoo-addons-oca-l10n-france]: Downloading https://files.pythonhosted.org/packages/b0/f2/cf700a40d3857c6bff1418a65b98c46e995a0bdc2864fce2040f9b7cd415/odoo_addons_oca_l10n_france-16.0.20230414.0-py3-none-any.whl
+[2023-04-15 06:44:47] INFO root fetch - processPackages [gqylpy-exception]: Downloading https://files.pythonhosted.org/packages/92/0b/7c220d56ddd9a99fff7535d3ad72d736fd99a3a269e9aaa3faafbbef086b/gqylpy_exception-2.0.tar.gz
+[2023-04-15 06:44:47] INFO root fetch - processPackages [odoo-addon-l10n-fr-das2]: executing diffoscope
+[2023-04-15 06:44:47] INFO root fetch - processPackages [odoo-addon-l10n-fr-das2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_fr_das2-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_l10n_fr_das2-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230415/o/odoo-addon-l10n-fr-das2/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-04-15 06:44:47] INFO root fetch - processPackages [gqylpy-log]: Downloading https://files.pythonhosted.org/packages/9f/39/d589682b6fa5c4476ca059e4e37335ce8d51d99aa350bb477d28c2a5b46b/gqylpy_log-1.0.4.tar.gz
+[2023-04-15 06:44:47] INFO root fetch - processPackages [odoo-addons-oca-l10n-france]: executing diffoscope
+[2023-04-15 06:44:47] INFO root fetch - processPackages [odoo-addons-oca-l10n-france]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_l10n_france-16.0.20230324.0-py3-none-any.whl.zip tmp/odoo_addons_oca_l10n_france-16.0.20230414.0-py3-none-any.whl.zip --markdown 20230415/o/odoo-addons-oca-l10n-france/16.0.20230324.0-16.0.20230414.0/diff.md --exclude *.pyd
+[2023-04-15 06:44:47] INFO root fetch - processPackages [gqylpy-exception]: executing diffoscope
+[2023-04-15 06:44:47] INFO root fetch - processPackages [gqylpy-exception]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqylpy_exception-1.3.2.tar.gz tmp/gqylpy_exception-2.0.tar.gz --markdown 20230415/g/gqylpy-exception/1.3.2-2.0/diff.md --exclude *.pyd
+[2023-04-15 06:44:47] INFO root fetch - processPackages [gqylpy-log]: executing diffoscope
+[2023-04-15 06:44:47] INFO root fetch - processPackages [gqylpy-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqylpy_log-1.0.3.tar.gz tmp/gqylpy_log-1.0.4.tar.gz --markdown 20230415/g/gqylpy-log/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-15 06:44:48] INFO root fetch - processPackages [shipdeo]: Downloading https://files.pythonhosted.org/packages/03/44/c0060073b4406db3221ecd69228d5b73731475d65e0a0ad9d84d3f8e8572/shipdeo-0.0.9.tar.gz
+[2023-04-15 06:44:48] INFO root fetch - processPackages [shipdeo]: executing diffoscope
+[2023-04-15 06:44:48] INFO root fetch - processPackages [shipdeo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shipdeo-0.0.8.tar.gz tmp/shipdeo-0.0.9.tar.gz --markdown 20230415/s/shipdeo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 06:44:48] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-l10n-france]: success
+[2023-04-15 06:44:48] INFO root fetch - main [MainThread]: End processing [gqylpy-exception]: success
+[2023-04-15 06:44:48] INFO root fetch - main [MainThread]: End processing [gqylpy-log]: success
+[2023-04-15 06:44:55] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-fr-das2]: success
+[2023-04-15 06:44:59] INFO root fetch - main [MainThread]: End processing [shipdeo]: success
+[2023-04-15 06:44:59] INFO root fetch - main [MainThread]: Store serial: [17716506]
