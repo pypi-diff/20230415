@@ -15038,3 +15038,75 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 13:35:49] INFO root fetch - main [MainThread]: End processing [install-release]: success
 [2023-04-15 13:35:57] INFO root fetch - main [MainThread]: End processing [dovado-rtl]: success
 [2023-04-15 13:35:57] INFO root fetch - main [MainThread]: Store serial: [17718522]
+[2023-04-15 13:41:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718522]
+[2023-04-15 13:41:06] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-15 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baize
+[2023-04-15 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gchar
+[2023-04-15 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: carrier-api
+[2023-04-15 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coiled
+[2023-04-15 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: peaksjs-widget
+[2023-04-15 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: arlq
+[2023-04-15 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pip-chill
+[2023-04-15 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hordelib
+[2023-04-15 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Liara
+[2023-04-15 13:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fortepyan
+[2023-04-15 13:41:06] INFO root fetch - processPackages [gchar]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 13:41:06] INFO root fetch - processPackages [fortepyan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 13:41:06] INFO root fetch - processPackages [peaksjs-widget]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 13:41:06] INFO root fetch - processPackages [baize]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-15 13:41:06] INFO root fetch - processPackages [hordelib]: New version: [0.8.7] Old Version: [0.8.6]
+[2023-04-15 13:41:06] INFO root fetch - processPackages [arlq]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-15 13:41:06] INFO root fetch - processPackages [pip-chill]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-15 13:41:06] INFO root fetch - processPackages [carrier-api]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-04-15 13:41:06] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-15 13:41:06] INFO root fetch - processPackages [Liara]: New version: [2.5.2] Old Version: [2.5.1]
+[2023-04-15 13:41:06] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/ba/ec/a1b7d93d0bc17cb3387591dec3bee17f5801f2ebfb87d396273748e93217/coiled-0.5.9.post0.dev7.tar.gz
+[2023-04-15 13:41:07] INFO root fetch - processPackages [peaksjs-widget]: executing diffoscope
+[2023-04-15 13:41:07] INFO root fetch - processPackages [peaksjs-widget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaksjs_widget-0.1.0.tar.gz tmp/peaksjs_widget-0.1.1.tar.gz --markdown 20230415/p/peaksjs-widget/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 13:41:07] INFO root fetch - processPackages [gchar]: Downloading https://files.pythonhosted.org/packages/ae/5a/903194432211916623ed97c008cbb442bafb2e8733c7da5619bc1a235b20/gchar-0.0.8.tar.gz
+[2023-04-15 13:41:07] INFO root fetch - processPackages [fortepyan]: Downloading https://files.pythonhosted.org/packages/6b/8f/acc0a3540ce9df8c84c1de78fa9309b3df94b19835477082040ba86e6f43/fortepyan-0.1.8.tar.gz
+[2023-04-15 13:41:07] INFO root fetch - processPackages [Liara]: Downloading https://files.pythonhosted.org/packages/77/ac/a0b3cc8f5ca9805acf0f863acbd4b4854f245b2f2aa88bd953e19768c098/Liara-2.5.1.tar.gz
+[2023-04-15 13:41:07] INFO root fetch - processPackages [arlq]: Downloading https://files.pythonhosted.org/packages/79/df/c077feec2bdf1674e85d79a58c4d1968ddc5c03a0a2d5340e607bb35b3c9/arlq-1.0.5.tar.gz
+[2023-04-15 13:41:07] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/a5/df/48938a1db29d12564cec78845d2934347db0a1187b93516a8c6b7c99c4e4/hordelib-0.8.7.tar.gz
+[2023-04-15 13:41:07] INFO root fetch - processPackages [pip-chill]: Downloading https://files.pythonhosted.org/packages/25/0d/09d5bf3fb60e7309ad71f1ec8281c467afffd0ca5bf69e1b978a0be67265/pip-chill-1.0.1.tar.gz
+[2023-04-15 13:41:07] INFO root fetch - processPackages [arlq]: executing diffoscope
+[2023-04-15 13:41:07] INFO root fetch - processPackages [arlq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arlq-1.0.4.tar.gz tmp/arlq-1.0.5.tar.gz --markdown 20230415/a/arlq/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-15 13:41:07] INFO root fetch - processPackages [gchar]: Downloading https://files.pythonhosted.org/packages/1e/57/e781937065817437442984c0ffedcb7379bae60270c17e2be12cc4319021/gchar-0.0.9.tar.gz
+[2023-04-15 13:41:07] INFO root fetch - processPackages [carrier-api]: Downloading https://files.pythonhosted.org/packages/3b/1c/e16f262204212e96012f7e4d034ca6db288d5ec65cc2672c6e19f16af5c6/carrier_api-1.9.3.tar.gz
+[2023-04-15 13:41:07] INFO root fetch - processPackages [carrier-api]: executing diffoscope
+[2023-04-15 13:41:07] INFO root fetch - processPackages [carrier-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carrier_api-1.9.2.tar.gz tmp/carrier_api-1.9.3.tar.gz --markdown 20230415/c/carrier-api/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-04-15 13:41:07] INFO root fetch - processPackages [baize]: executing diffoscope
+[2023-04-15 13:41:07] INFO root fetch - processPackages [baize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baize-0.8.2.tar.gz tmp/baize-0.9.0.tar.gz --markdown 20230415/b/baize/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 13:41:07] INFO root fetch - processPackages [fortepyan]: Downloading https://files.pythonhosted.org/packages/10/43/e751a2d31edbab331fe506b78429a112592bfd63cb8b68c25e4d6de63188/fortepyan-0.1.9.tar.gz
+[2023-04-15 13:41:07] INFO root fetch - processPackages [gchar]: executing diffoscope
+[2023-04-15 13:41:07] INFO root fetch - processPackages [gchar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gchar-0.0.8.tar.gz tmp/gchar-0.0.9.tar.gz --markdown 20230415/g/gchar/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 13:41:07] INFO root fetch - processPackages [pip-chill]: Downloading https://files.pythonhosted.org/packages/c1/ab/305ac9704ec51fcb12d70e4745196c0fc7882bf4cf0167ddc8b7c14fb95e/pip-chill-1.0.2.tar.gz
+[2023-04-15 13:41:07] INFO root fetch - processPackages [Liara]: Downloading https://files.pythonhosted.org/packages/9d/d5/d3344c7896a6d0ee6ae2af7c6c92a80fcd2432ec2c42c77f1cecd8a6917b/Liara-2.5.2.tar.gz
+[2023-04-15 13:41:07] INFO root fetch - processPackages [fortepyan]: executing diffoscope
+[2023-04-15 13:41:07] INFO root fetch - processPackages [fortepyan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fortepyan-0.1.8.tar.gz tmp/fortepyan-0.1.9.tar.gz --markdown 20230415/f/fortepyan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 13:41:07] INFO root fetch - processPackages [pip-chill]: executing diffoscope
+[2023-04-15 13:41:07] INFO root fetch - processPackages [pip-chill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-chill-1.0.1.tar.gz tmp/pip-chill-1.0.2.tar.gz --markdown 20230415/p/pip-chill/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-15 13:41:07] INFO root fetch - processPackages [Liara]: executing diffoscope
+[2023-04-15 13:41:07] INFO root fetch - processPackages [Liara]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Liara-2.5.1.tar.gz tmp/Liara-2.5.2.tar.gz --markdown 20230415/L/Liara/2.5.1-2.5.2/diff.md --exclude *.pyd
+[2023-04-15 13:41:07] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-04-15 13:41:07] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.8.6.tar.gz tmp/hordelib-0.8.7.tar.gz --markdown 20230415/h/hordelib/0.8.6-0.8.7/diff.md --exclude *.pyd
+[2023-04-15 13:41:08] INFO root fetch - processPackages [arlq]: Start processing: dovado-rtl
+[2023-04-15 13:41:08] INFO root fetch - main [MainThread]: End processing [arlq]: success
+[2023-04-15 13:41:08] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/3e/39/6ff4fdcc0668907bf1874a37b1d879509a517280193ace86d772a02feaa6/coiled-0.5.9.post0.dev8.tar.gz
+[2023-04-15 13:41:08] INFO root fetch - processPackages [dovado-rtl]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-15 13:41:08] INFO root fetch - processPackages [dovado-rtl]: executing diffoscope
+[2023-04-15 13:41:08] INFO root fetch - processPackages [dovado-rtl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dovado-rtl-0.9.8.tar.gz tmp/dovado-rtl-0.9.9.tar.gz --markdown 20230415/d/dovado-rtl/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-15 13:41:08] INFO root fetch - main [MainThread]: End processing [baize]: success
+[2023-04-15 13:41:08] INFO root fetch - main [MainThread]: End processing [carrier-api]: success
+[2023-04-15 13:41:08] INFO root fetch - main [MainThread]: End processing [fortepyan]: success
+[2023-04-15 13:41:09] INFO root fetch - main [MainThread]: End processing [Liara]: success
+[2023-04-15 13:41:09] INFO root fetch - main [MainThread]: End processing [pip-chill]: success
+[2023-04-15 13:41:10] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-15 13:41:10] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230415/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-15 13:41:10] INFO root fetch - main [MainThread]: End processing [peaksjs-widget]: success
+[2023-04-15 13:41:13] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-15 13:41:16] INFO root fetch - main [MainThread]: End processing [dovado-rtl]: success
+[2023-04-15 13:41:18] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-04-15 13:44:07] ERROR root fetch - processPackages [gchar]: Timeout during execution of pkgdiff
+[2023-04-15 13:44:07] INFO root fetch - main [MainThread]: End processing [gchar] error
+[2023-04-15 13:44:07] INFO root fetch - main [MainThread]: Store serial: [17718569]
