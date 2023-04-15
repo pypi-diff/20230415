@@ -6718,3 +6718,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 09:28:18] INFO root fetch - main [MainThread]: End processing [odoo14-addon-stock-cycle-count]: success
 [2023-04-15 09:28:19] INFO root fetch - main [MainThread]: End processing [renus]: success
 [2023-04-15 09:28:19] INFO root fetch - main [MainThread]: Store serial: [17717187]
+[2023-04-15 09:33:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717187]
+[2023-04-15 09:33:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 09:33:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lalsuite
+[2023-04-15 09:33:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xontrib-pm
+[2023-04-15 09:33:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xiot
+[2023-04-15 09:33:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qnabot
+[2023-04-15 09:33:26] INFO root fetch - processPackages [xontrib-pm]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-15 09:33:26] INFO root fetch - processPackages [xiot]: New version: [1.6.4] Old Version: [1.6.2]
+[2023-04-15 09:33:26] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-04-15 09:33:26] INFO root fetch - processPackages [qnabot]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-15 09:33:26] INFO root fetch - processPackages [xontrib-pm]: Downloading https://files.pythonhosted.org/packages/57/3f/282389b2f13a400306659952b2c1a7986b0aa600a49a7d7980e08b1f5e8d/xontrib-pm-0.3.0.tar.gz
+[2023-04-15 09:33:26] INFO root fetch - processPackages [xiot]: Downloading https://files.pythonhosted.org/packages/11/50/bf0360250110b95e86c65fbd930b65d5ab31c0482a54fa39e7e9eb66fce6/xiot-1.6.2.tar.gz
+[2023-04-15 09:33:26] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 09:33:26] INFO root fetch - processPackages [qnabot]: Downloading https://files.pythonhosted.org/packages/db/b3/c7f579a84f4c710f7968c46a68e5aa9aa97b6ab0b80dcabd3775fcaa2927/qnabot-0.0.6.tar.gz
+[2023-04-15 09:33:26] INFO root fetch - processPackages [xontrib-pm]: Downloading https://files.pythonhosted.org/packages/43/0d/55a5931d34d8ef1feda2d2257c3518f57e65d2b7d9668352a8a363b5bc82/xontrib-pm-0.3.1.tar.gz
+[2023-04-15 09:33:26] INFO root fetch - processPackages [xontrib-pm]: executing diffoscope
+[2023-04-15 09:33:26] INFO root fetch - processPackages [xontrib-pm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xontrib-pm-0.3.0.tar.gz tmp/xontrib-pm-0.3.1.tar.gz --markdown 20230415/x/xontrib-pm/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-15 09:33:26] INFO root fetch - processPackages [xiot]: Downloading https://files.pythonhosted.org/packages/eb/06/1d1352c154c5a1c02981221cb0e689ebf7994dfd9b6beaf0de2f2a56b5d2/xiot-1.6.4.tar.gz
+[2023-04-15 09:33:26] INFO root fetch - processPackages [qnabot]: executing diffoscope
+[2023-04-15 09:33:26] INFO root fetch - processPackages [qnabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qnabot-0.0.5.tar.gz tmp/qnabot-0.0.6.tar.gz --markdown 20230415/q/qnabot/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-15 09:33:26] INFO root fetch - processPackages [xiot]: executing diffoscope
+[2023-04-15 09:33:26] INFO root fetch - processPackages [xiot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiot-1.6.2.tar.gz tmp/xiot-1.6.4.tar.gz --markdown 20230415/x/xiot/1.6.2-1.6.4/diff.md --exclude *.pyd
+[2023-04-15 09:33:26] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-04-15 09:33:26] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-04-15 09:33:27] INFO root fetch - main [MainThread]: End processing [xiot]: success
+[2023-04-15 09:33:27] INFO root fetch - main [MainThread]: End processing [xontrib-pm]: success
+[2023-04-15 09:33:27] INFO root fetch - main [MainThread]: End processing [qnabot]: success
+[2023-04-15 09:33:27] INFO root fetch - main [MainThread]: Store serial: [17717212]
