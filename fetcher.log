@@ -5263,3 +5263,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 06:24:05] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
 [2023-04-15 06:24:05] INFO root fetch - main [MainThread]: End processing [neuralprophet]: success
 [2023-04-15 06:24:05] INFO root fetch - main [MainThread]: Store serial: [17716445]
+[2023-04-15 06:29:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716445]
+[2023-04-15 06:29:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-15 06:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-document-page
+[2023-04-15 06:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graphene-ds-lib
+[2023-04-15 06:29:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hordelib
+[2023-04-15 06:29:12] WARNING root fetch - processPackages [graphene-ds-lib]: Skipping, unable to determine old version
+[2023-04-15 06:29:12] INFO root fetch - main [MainThread]: End processing [graphene-ds-lib] error
+[2023-04-15 06:29:12] INFO root fetch - processPackages [odoo12-addon-document-page]: New version: [12.0.1.4.0.99.dev9] Old Version: [12.0.1.4.0.99.dev8]
+[2023-04-15 06:29:12] INFO root fetch - processPackages [hordelib]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-04-15 06:29:12] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-04-15 06:29:12] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.8.4.tar.gz tmp/hordelib-0.8.5.tar.gz --markdown 20230415/h/hordelib/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-04-15 06:29:12] INFO root fetch - processPackages [odoo12-addon-document-page]: executing diffoscope
+[2023-04-15 06:29:12] INFO root fetch - processPackages [odoo12-addon-document-page]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_document_page-12.0.1.4.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_document_page-12.0.1.4.0.99.dev9-py3-none-any.whl.zip --markdown 20230415/o/odoo12-addon-document-page/12.0.1.4.0.99.dev8-12.0.1.4.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-15 06:29:14] INFO root fetch - main [MainThread]: End processing [odoo12-addon-document-page]: success
+[2023-04-15 06:29:20] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-04-15 06:29:20] INFO root fetch - main [MainThread]: Store serial: [17716454]
