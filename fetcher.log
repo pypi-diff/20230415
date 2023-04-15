@@ -17316,3 +17316,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 17:33:25] INFO root fetch - main [MainThread]: End processing [NeuroRuler]: success
 [2023-04-15 17:33:26] INFO root fetch - main [MainThread]: End processing [tavern]: success
 [2023-04-15 17:33:26] INFO root fetch - main [MainThread]: Store serial: [17719870]
+[2023-04-15 17:38:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719870]
+[2023-04-15 17:38:36] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 17:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vocode
+[2023-04-15 17:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nazo-rand
+[2023-04-15 17:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: strkit
+[2023-04-15 17:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: project94
+[2023-04-15 17:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fernetcrypt
+[2023-04-15 17:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cubao-python
+[2023-04-15 17:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: onnx2tf
+[2023-04-15 17:38:36] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.4] Old Version: [1.9.3]
+[2023-04-15 17:38:36] INFO root fetch - processPackages [project94]: New version: [1.1] Old Version: [1.0]
+[2023-04-15 17:38:36] INFO root fetch - processPackages [vocode]: New version: [0.1.94] Old Version: [0.1.93]
+[2023-04-15 17:38:36] WARNING root fetch - processPackages [fernetcrypt]: Skipping, unable to determine old version
+[2023-04-15 17:38:36] INFO root fetch - main [MainThread]: End processing [fernetcrypt] error
+[2023-04-15 17:38:36] INFO root fetch - processPackages [nazo-rand]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-04-15 17:38:36] WARNING root fetch - processPackages [cubao-python]: Skipping, unable to determine old version
+[2023-04-15 17:38:36] INFO root fetch - main [MainThread]: End processing [cubao-python] error
+[2023-04-15 17:38:36] INFO root fetch - processPackages [strkit]: New version: [0.8.0a9] Old Version: [0.8.0a8]
+[2023-04-15 17:38:36] INFO root fetch - processPackages [strkit]: Downloading https://files.pythonhosted.org/packages/ba/cb/95719bbf80379f0d869f1c88b219bbdc22c5c4fe2342ec1dcfba3572cd97/strkit-0.8.0a8.tar.gz
+[2023-04-15 17:38:36] INFO root fetch - processPackages [vocode]: Downloading https://files.pythonhosted.org/packages/2c/1d/ce79a1f31453016f17e85e96471be846b40654bf76127fd4d76390ff261d/vocode-0.1.93.tar.gz
+[2023-04-15 17:38:36] INFO root fetch - processPackages [project94]: Downloading https://files.pythonhosted.org/packages/40/a5/0b1c3a95785c7e5940744562357cc86c21ee2e442a828aef8234536b75bb/project94-1.0-py3-none-any.whl
+[2023-04-15 17:38:36] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/f9/67/2250b5930d7ec3efba203b9d088da4be1a269fba52e510d745980ebb891b/onnx2tf-1.9.4.tar.gz
+[2023-04-15 17:38:36] INFO root fetch - processPackages [nazo-rand]: Downloading https://files.pythonhosted.org/packages/c0/80/939cbcae0e167b962a0aca4b0365ad7ca34d565c5563548d81e92ff008aa/nazo_rand-0.0.5.tar.gz
+[2023-04-15 17:38:36] INFO root fetch - processPackages [strkit]: Downloading https://files.pythonhosted.org/packages/ef/d5/4eb7c6c03d601fef4720289b88114ff12893bf33c5ad4aa679ff2564b72e/strkit-0.8.0a9.tar.gz
+[2023-04-15 17:38:36] INFO root fetch - processPackages [nazo-rand]: executing diffoscope
+[2023-04-15 17:38:36] INFO root fetch - processPackages [nazo-rand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nazo_rand-0.0.3.tar.gz tmp/nazo_rand-0.0.5.tar.gz --markdown 20230415/n/nazo-rand/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 17:38:36] INFO root fetch - processPackages [strkit]: executing diffoscope
+[2023-04-15 17:38:36] INFO root fetch - processPackages [strkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strkit-0.8.0a8.tar.gz tmp/strkit-0.8.0a9.tar.gz --markdown 20230415/s/strkit/0.8.0a8-0.8.0a9/diff.md --exclude *.pyd
+[2023-04-15 17:38:36] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-04-15 17:38:36] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.3.tar.gz tmp/onnx2tf-1.9.4.tar.gz --markdown 20230415/o/onnx2tf/1.9.3-1.9.4/diff.md --exclude *.pyd
+[2023-04-15 17:38:36] INFO root fetch - processPackages [project94]: Downloading https://files.pythonhosted.org/packages/9f/21/e3e1bc9dd91cbcc4dbd02864224e03e76aecd057c2b13018e45aafc3de6d/project94-1.1.tar.gz
+[2023-04-15 17:38:36] INFO root fetch - processPackages [project94]: executing diffoscope
+[2023-04-15 17:38:36] INFO root fetch - processPackages [project94]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/project94-1.0-py3-none-any.whl.zip tmp/project94-1.1.tar.gz --markdown 20230415/p/project94/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-15 17:38:37] INFO root fetch - processPackages [vocode]: Downloading https://files.pythonhosted.org/packages/07/c9/dd444de44dfc6a4e8cdd75bfbd0bc94eb9b8ff0174d9f9789ec0f6e92537/vocode-0.1.94.tar.gz
+[2023-04-15 17:38:37] INFO root fetch - processPackages [vocode]: executing diffoscope
+[2023-04-15 17:38:37] INFO root fetch - processPackages [vocode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocode-0.1.93.tar.gz tmp/vocode-0.1.94.tar.gz --markdown 20230415/v/vocode/0.1.93-0.1.94/diff.md --exclude *.pyd
+[2023-04-15 17:38:37] INFO root fetch - main [MainThread]: End processing [nazo-rand]: success
+[2023-04-15 17:38:37] INFO root fetch - main [MainThread]: End processing [project94]: success
+[2023-04-15 17:38:37] INFO root fetch - main [MainThread]: End processing [strkit]: success
+[2023-04-15 17:38:39] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-04-15 17:38:39] INFO root fetch - main [MainThread]: End processing [vocode]: success
+[2023-04-15 17:38:39] INFO root fetch - main [MainThread]: Store serial: [17719906]
