@@ -19952,3 +19952,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 22:27:05] INFO root fetch - main [MainThread]: End processing [pyyeti]: success
 [2023-04-15 22:27:05] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
 [2023-04-15 22:27:05] INFO root fetch - main [MainThread]: Store serial: [17721711]
+[2023-04-15 22:32:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721711]
+[2023-04-15 22:32:15] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 22:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chgksuite
+[2023-04-15 22:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: speech2speech
+[2023-04-15 22:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gallery-dl
+[2023-04-15 22:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyIntellect
+[2023-04-15 22:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sabledocs
+[2023-04-15 22:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: statgis
+[2023-04-15 22:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-blive-danmaku
+[2023-04-15 22:32:15] INFO root fetch - processPackages [sabledocs]: New version: [0.1.54] Old Version: [0.1.51]
+[2023-04-15 22:32:15] INFO root fetch - processPackages [PyIntellect]: New version: [2023.1.0] Old Version: [0.0.7]
+[2023-04-15 22:32:15] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: New version: [0.2.0] Old Version: [0.1.64]
+[2023-04-15 22:32:15] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 22:32:15] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.51.tar.gz tmp/sabledocs-0.1.54.tar.gz --markdown 20230415/s/sabledocs/0.1.51-0.1.54/diff.md --exclude *.pyd
+[2023-04-15 22:32:15] INFO root fetch - processPackages [speech2speech]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-15 22:32:15] INFO root fetch - processPackages [gallery-dl]: New version: [1.9.0] Old Version: [1.8.7]
+[2023-04-15 22:32:15] INFO root fetch - processPackages [PyIntellect]: executing diffoscope
+[2023-04-15 22:32:15] INFO root fetch - processPackages [PyIntellect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyIntellect-0.0.7.zip tmp/PyIntellect-2023.1.0.zip --markdown 20230415/P/PyIntellect/0.0.7-2023.1.0/diff.md --exclude *.pyd
+[2023-04-15 22:32:15] INFO root fetch - processPackages [chgksuite]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-15 22:32:15] INFO root fetch - processPackages [statgis]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-15 22:32:15] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: executing diffoscope
+[2023-04-15 22:32:15] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_blive_danmaku-0.1.64.tar.gz tmp/nonebot_plugin_blive_danmaku-0.2.0.tar.gz --markdown 20230415/n/nonebot-plugin-blive-danmaku/0.1.64-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 22:32:15] INFO root fetch - processPackages [speech2speech]: Downloading https://files.pythonhosted.org/packages/3f/98/dcd53ffbe583c7f54838875fa6c36b759dc172d899f683085fc036162d1d/speech2speech-0.0.1.tar.gz
+[2023-04-15 22:32:15] INFO root fetch - processPackages [gallery-dl]: Downloading https://files.pythonhosted.org/packages/5d/1c/09cf02a5b984e19ad70eef4b0546aef2c2642861044e7d619f393e8c8b9a/gallery_dl-1.8.7.tar.gz
+[2023-04-15 22:32:15] INFO root fetch - processPackages [statgis]: Downloading https://files.pythonhosted.org/packages/b0/8e/2815c637ebf290ff33e3ba209e50796f8f8ee1117c2d9a657e8802c21305/statgis-1.0.5.tar.gz
+[2023-04-15 22:32:15] INFO root fetch - processPackages [chgksuite]: Downloading https://files.pythonhosted.org/packages/08/2b/0f75e642fcf6761c9237515450091e8f2eada4286e45f82cc52053558c7b/chgksuite-0.9.0.tar.gz
+[2023-04-15 22:32:15] INFO root fetch - processPackages [speech2speech]: Downloading https://files.pythonhosted.org/packages/b6/e5/59b29f54a2549daebb4f63b11227e0b97db30a51e79d7e2b04cdf04704db/speech2speech-0.1.0.tar.gz
+[2023-04-15 22:32:15] INFO root fetch - processPackages [statgis]: Downloading https://files.pythonhosted.org/packages/4a/f8/df7de92a8d440496027094a4bfcdf6eb9bb5033057a06aaecb8fc635a336/statgis-1.0.6.tar.gz
+[2023-04-15 22:32:15] INFO root fetch - processPackages [speech2speech]: executing diffoscope
+[2023-04-15 22:32:15] INFO root fetch - processPackages [speech2speech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech2speech-0.0.1.tar.gz tmp/speech2speech-0.1.0.tar.gz --markdown 20230415/s/speech2speech/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-15 22:32:15] INFO root fetch - processPackages [chgksuite]: Downloading https://files.pythonhosted.org/packages/cd/f6/800bb5f46eb8b4639b4c81f8c7ad31a582abdb353fd822359c239ec699fd/chgksuite-0.9.1.tar.gz
+[2023-04-15 22:32:15] INFO root fetch - processPackages [gallery-dl]: Downloading https://files.pythonhosted.org/packages/c5/b2/1405454a6bfc347687a5b389bf788d050a0f09cf6f56e4409b54a6571334/gallery_dl-1.9.0.tar.gz
+[2023-04-15 22:32:15] INFO root fetch - processPackages [statgis]: executing diffoscope
+[2023-04-15 22:32:15] INFO root fetch - processPackages [statgis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statgis-1.0.5.tar.gz tmp/statgis-1.0.6.tar.gz --markdown 20230415/s/statgis/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-15 22:32:15] INFO root fetch - processPackages [chgksuite]: executing diffoscope
+[2023-04-15 22:32:15] INFO root fetch - processPackages [chgksuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chgksuite-0.9.0.tar.gz tmp/chgksuite-0.9.1.tar.gz --markdown 20230415/c/chgksuite/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-15 22:32:16] INFO root fetch - processPackages [gallery-dl]: executing diffoscope
+[2023-04-15 22:32:16] INFO root fetch - processPackages [gallery-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gallery_dl-1.8.7.tar.gz tmp/gallery_dl-1.9.0.tar.gz --markdown 20230415/g/gallery-dl/1.8.7-1.9.0/diff.md --exclude *.pyd
+[2023-04-15 22:32:16] INFO root fetch - main [MainThread]: End processing [PyIntellect]: success
+[2023-04-15 22:32:16] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 22:32:16] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-blive-danmaku]: success
+[2023-04-15 22:32:17] INFO root fetch - main [MainThread]: End processing [speech2speech]: success
+[2023-04-15 22:32:17] INFO root fetch - main [MainThread]: End processing [chgksuite]: success
+[2023-04-15 22:32:17] INFO root fetch - main [MainThread]: End processing [statgis]: success
+[2023-04-15 22:32:18] INFO root fetch - main [MainThread]: End processing [gallery-dl]: success
+[2023-04-15 22:32:18] INFO root fetch - main [MainThread]: Store serial: [17721731]
