@@ -4807,3 +4807,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 05:14:31] INFO root fetch - main [MainThread]: End processing [python-ember-mug]: success
 [2023-04-15 05:14:31] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-pagerduty]: success
 [2023-04-15 05:14:31] INFO root fetch - main [MainThread]: Store serial: [17716124]
+[2023-04-15 05:19:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716124]
+[2023-04-15 05:19:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 05:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-ember-mug
+[2023-04-15 05:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-username-email
+[2023-04-15 05:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdktf-cdktf-provider-databricks
+[2023-04-15 05:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dpsa4fl-bindings
+[2023-04-15 05:19:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ovos-listener
+[2023-04-15 05:19:38] INFO root fetch - processPackages [ovos-listener]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2023-04-15 05:19:38] INFO root fetch - processPackages [dpsa4fl-bindings]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 05:19:38] INFO root fetch - processPackages [django-username-email]: New version: [2.5.4] Old Version: [2.5.3]
+[2023-04-15 05:19:38] INFO root fetch - processPackages [python-ember-mug]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-15 05:19:38] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: New version: [6.0.0] Old Version: [5.0.8]
+[2023-04-15 05:19:38] INFO root fetch - processPackages [django-username-email]: Downloading https://files.pythonhosted.org/packages/00/7b/f065eb9f57aafdfd2e9e90c3357a6cf08ab1565e7bc2d11e8e3d1eda3af0/django-username-email-2.5.3.tar.gz
+[2023-04-15 05:19:38] INFO root fetch - processPackages [ovos-listener]: Downloading https://files.pythonhosted.org/packages/90/ad/89c5a31ad9c1f97aae5fc96e27e8b04c825a20ca0e6d534eae08fe89c8f4/ovos_listener-0.0.2a9-py3-none-any.whl
+[2023-04-15 05:19:38] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: Downloading https://files.pythonhosted.org/packages/a6/56/100a99f6ab7b118788e1bf35ec0d205359c8cb7b1cccb7df5eacc8bb7198/cdktf-cdktf-provider-databricks-5.0.8.tar.gz
+[2023-04-15 05:19:38] INFO root fetch - processPackages [python-ember-mug]: executing diffoscope
+[2023-04-15 05:19:38] INFO root fetch - processPackages [python-ember-mug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_ember_mug-0.6.1.tar.gz tmp/python_ember_mug-0.6.2.tar.gz --markdown 20230415/p/python-ember-mug/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-15 05:19:38] INFO root fetch - processPackages [ovos-listener]: executing diffoscope
+[2023-04-15 05:19:38] INFO root fetch - processPackages [ovos-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_listener-0.0.2a8-py3-none-any.whl.zip tmp/ovos_listener-0.0.2a9-py3-none-any.whl.zip --markdown 20230415/o/ovos-listener/0.0.2a8-0.0.2a9/diff.md --exclude *.pyd
+[2023-04-15 05:19:39] INFO root fetch - processPackages [dpsa4fl-bindings]: executing diffoscope
+[2023-04-15 05:19:39] INFO root fetch - processPackages [dpsa4fl-bindings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpsa4fl_bindings-0.1.8.tar.gz tmp/dpsa4fl_bindings-0.1.9.tar.gz --markdown 20230415/d/dpsa4fl-bindings/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 05:19:39] INFO root fetch - processPackages [django-username-email]: Downloading https://files.pythonhosted.org/packages/0c/cf/0de84e03cfdb4dac5d169104c2682864ec625a336f2a0bb8a6a2b053fc5b/django-username-email-2.5.4.tar.gz
+[2023-04-15 05:19:39] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: Downloading https://files.pythonhosted.org/packages/06/e7/02471d1587d1328759ab584c1fb7f22c5d69c4410b214b588db983d9b0f7/cdktf-cdktf-provider-databricks-6.0.0.tar.gz
+[2023-04-15 05:19:39] INFO root fetch - processPackages [django-username-email]: executing diffoscope
+[2023-04-15 05:19:39] INFO root fetch - processPackages [django-username-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-username-email-2.5.3.tar.gz tmp/django-username-email-2.5.4.tar.gz --markdown 20230415/d/django-username-email/2.5.3-2.5.4/diff.md --exclude *.pyd
+[2023-04-15 05:19:39] INFO root fetch - processPackages [ovos-listener]: Start processing: Remilia
+[2023-04-15 05:19:39] INFO root fetch - main [MainThread]: End processing [ovos-listener]: success
+[2023-04-15 05:19:39] INFO root fetch - processPackages [Remilia]: New version: [1.1.3] Old Version: [1.0.3]
+[2023-04-15 05:19:40] INFO root fetch - main [MainThread]: End processing [dpsa4fl-bindings]: success
+[2023-04-15 05:19:40] INFO root fetch - main [MainThread]: End processing [python-ember-mug]: success
+[2023-04-15 05:19:40] INFO root fetch - processPackages [Remilia]: Downloading https://files.pythonhosted.org/packages/e4/a3/0526e8996ba8193a7d5edcf51a917f8124eaedce92aadc96ea3760d2f7ab/Remilia-1.0.3.tar.gz
+[2023-04-15 05:19:40] INFO root fetch - main [MainThread]: End processing [django-username-email]: success
+[2023-04-15 05:19:40] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: executing diffoscope
+[2023-04-15 05:19:40] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-databricks-5.0.8.tar.gz tmp/cdktf-cdktf-provider-databricks-6.0.0.tar.gz --markdown 20230415/c/cdktf-cdktf-provider-databricks/5.0.8-6.0.0/diff.md --exclude *.pyd
+[2023-04-15 05:19:40] INFO root fetch - processPackages [Remilia]: Downloading https://files.pythonhosted.org/packages/08/8b/8a6c55d88a80a9dee62918242e96f444c3d3baf1ffdb23b17645ad869860/Remilia-1.1.3.tar.gz
+[2023-04-15 05:19:40] INFO root fetch - processPackages [Remilia]: executing diffoscope
+[2023-04-15 05:19:40] INFO root fetch - processPackages [Remilia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Remilia-1.0.3.tar.gz tmp/Remilia-1.1.3.tar.gz --markdown 20230415/R/Remilia/1.0.3-1.1.3/diff.md --exclude *.pyd
+[2023-04-15 05:19:41] INFO root fetch - main [MainThread]: End processing [Remilia]: success
+[2023-04-15 05:19:43] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-databricks]: success
+[2023-04-15 05:19:43] INFO root fetch - main [MainThread]: Store serial: [17716145]
