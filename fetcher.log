@@ -5865,3 +5865,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 08:01:16] INFO root fetch - main [MainThread]: End processing [odoo14-addon-payroll]: success
 [2023-04-15 08:01:17] INFO root fetch - main [MainThread]: End processing [odoo12-addon-pos-multiple-control]: success
 [2023-04-15 08:01:17] INFO root fetch - main [MainThread]: Store serial: [17716752]
+[2023-04-15 08:06:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716752]
+[2023-04-15 08:06:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 08:06:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rozklad-ontu-parser-MakisuKurisu
+[2023-04-15 08:06:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyg-nightly
+[2023-04-15 08:06:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ats-case
+[2023-04-15 08:06:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: phpdiscord
+[2023-04-15 08:06:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ProfiWiki
+[2023-04-15 08:06:24] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: New version: [0.0.3.4b0] Old Version: [0.0.3.4a0]
+[2023-04-15 08:06:24] INFO root fetch - processPackages [ats-case]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-15 08:06:24] INFO root fetch - processPackages [phpdiscord]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-15 08:06:24] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230414] Old Version: [2.4.0.dev20230413]
+[2023-04-15 08:06:24] INFO root fetch - processPackages [ProfiWiki]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 08:06:24] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: Downloading https://files.pythonhosted.org/packages/28/a3/8088ea51737dc0840e5a26d26905eba28e391cee8e8ea4b12abe00692118/rozklad_ontu_parser_makisukurisu-0.0.3.4a0.tar.gz
+[2023-04-15 08:06:24] INFO root fetch - processPackages [phpdiscord]: Downloading https://files.pythonhosted.org/packages/79/2d/a191c645187557f19eefa63877cfe30223feb6ac65e9c1732167b29ffd73/phpdiscord-1.0.2.tar.gz
+[2023-04-15 08:06:24] INFO root fetch - processPackages [ProfiWiki]: Downloading https://files.pythonhosted.org/packages/bf/7a/ae5712e7cc48e28502015ec0148d09b0e7e3d2cbcc9a78cb6d11cc5c2a32/profiwiki-0.1.0.tar.gz
+[2023-04-15 08:06:24] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/1c/bb/65b059da29514f1b876fedb06dde06e05be5accdb58b8736b80c17ff5eed/pyg-nightly-2.4.0.dev20230414.tar.gz
+[2023-04-15 08:06:24] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: executing diffoscope
+[2023-04-15 08:06:24] INFO root fetch - processPackages [rozklad-ontu-parser-MakisuKurisu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rozklad_ontu_parser_makisukurisu-0.0.3.4a0.tar.gz tmp/rozklad_ontu_parser_makisukurisu-0.0.3.4b0.tar.gz --markdown 20230415/r/rozklad-ontu-parser-MakisuKurisu/0.0.3.4a0-0.0.3.4b0/diff.md --exclude *.pyd
+[2023-04-15 08:06:24] INFO root fetch - processPackages [ats-case]: Downloading https://files.pythonhosted.org/packages/ea/30/95940a31c4fb81ff1581606c23e4121956ffe32053a2e708fa4ca02b0536/ats_case-0.4.4.tar.gz
+[2023-04-15 08:06:24] INFO root fetch - processPackages [phpdiscord]: executing diffoscope
+[2023-04-15 08:06:24] INFO root fetch - processPackages [phpdiscord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phpdiscord-1.0.1.tar.gz tmp/phpdiscord-1.0.2.tar.gz --markdown 20230415/p/phpdiscord/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-15 08:06:24] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-04-15 08:06:24] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg-nightly-2.4.0.dev20230413.tar.gz tmp/pyg-nightly-2.4.0.dev20230414.tar.gz --markdown 20230415/p/pyg-nightly/2.4.0.dev20230413-2.4.0.dev20230414/diff.md --exclude *.pyd
+[2023-04-15 08:06:25] INFO root fetch - processPackages [ats-case]: executing diffoscope
+[2023-04-15 08:06:25] INFO root fetch - processPackages [ats-case]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ats_case-0.4.3.tar.gz tmp/ats_case-0.4.4.tar.gz --markdown 20230415/a/ats-case/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-15 08:06:25] INFO root fetch - processPackages [ProfiWiki]: Downloading https://files.pythonhosted.org/packages/06/c1/449d5030f90c883e7af5970c5ff9612c7cb608b84570799d62916526d830/profiwiki-0.1.1.tar.gz
+[2023-04-15 08:06:25] INFO root fetch - processPackages [ProfiWiki]: executing diffoscope
+[2023-04-15 08:06:25] INFO root fetch - processPackages [ProfiWiki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiwiki-0.1.0.tar.gz tmp/profiwiki-0.1.1.tar.gz --markdown 20230415/P/ProfiWiki/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 08:06:25] INFO root fetch - main [MainThread]: End processing [phpdiscord]: success
+[2023-04-15 08:06:26] INFO root fetch - main [MainThread]: End processing [rozklad-ontu-parser-MakisuKurisu]: success
+[2023-04-15 08:06:26] INFO root fetch - main [MainThread]: End processing [ats-case]: success
+[2023-04-15 08:06:26] INFO root fetch - main [MainThread]: End processing [ProfiWiki]: success
+[2023-04-15 08:06:29] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-04-15 08:06:29] INFO root fetch - main [MainThread]: Store serial: [17716767]
