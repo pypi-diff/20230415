@@ -14294,3 +14294,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 12:10:07] INFO root fetch - main [MainThread]: End processing [lpminimk3]: success
 [2023-04-15 12:10:08] INFO root fetch - main [MainThread]: End processing [OctoBot-Commons]: success
 [2023-04-15 12:10:08] INFO root fetch - main [MainThread]: Store serial: [17718061]
+[2023-04-15 12:15:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718061]
+[2023-04-15 12:15:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 12:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: os2ds-rules
+[2023-04-15 12:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bagua-cuda113
+[2023-04-15 12:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bagua-cuda111
+[2023-04-15 12:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: neetbox
+[2023-04-15 12:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: plone.app.event
+[2023-04-15 12:15:17] INFO root fetch - processPackages [os2ds-rules]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 12:15:17] INFO root fetch - processPackages [bagua-cuda113]: New version: [0.9.3.dev4] Old Version: [0.9.3.dev3]
+[2023-04-15 12:15:17] INFO root fetch - processPackages [bagua-cuda111]: New version: [0.9.3.dev4] Old Version: [0.9.3.dev3]
+[2023-04-15 12:15:17] INFO root fetch - processPackages [neetbox]: New version: [0.1.509] Old Version: [0.1.508]
+[2023-04-15 12:15:17] INFO root fetch - processPackages [plone.app.event]: New version: [5.0.1] Old Version: [5.0.0]
+[2023-04-15 12:15:17] INFO root fetch - processPackages [bagua-cuda111]: Downloading https://files.pythonhosted.org/packages/c7/e2/35578c1f9d02b0f4d01e4df54f64974dd65d1487201589974504cc47a700/bagua_cuda111-0.9.3.dev3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 12:15:17] INFO root fetch - processPackages [bagua-cuda113]: Downloading https://files.pythonhosted.org/packages/0f/bc/312bb3bb5c4da934abc0c7f2bb571d44dccdcd4fbe3c856cc54cb82ac329/bagua_cuda113-0.9.3.dev3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 12:15:17] INFO root fetch - processPackages [neetbox]: Downloading https://files.pythonhosted.org/packages/4c/dc/598207462bfbbca3d8816eaae9029e54c91efea6c207011e0c32b14f0f45/neetbox-0.1.509.tar.gz
+[2023-04-15 12:15:17] INFO root fetch - processPackages [plone.app.event]: Downloading https://files.pythonhosted.org/packages/62/8f/2ab3693e1b0800af6fafa187f29129189aec1a17530e954b3aa804e0eb7c/plone.app.event-5.0.0.tar.gz
+[2023-04-15 12:15:17] INFO root fetch - processPackages [os2ds-rules]: Downloading https://files.pythonhosted.org/packages/44/38/57184205415e0eb9e3084ff7ffbaca0891af047329b14e31e12155495ca8/os2ds-rules-0.0.3.tar.gz
+[2023-04-15 12:15:17] WARNING root fetch - processPackages [bagua-cuda113]: Skipping package: exceeds size limit 18779270>=10485760
+[2023-04-15 12:15:17] INFO root fetch - main [MainThread]: End processing [bagua-cuda113] error
+[2023-04-15 12:15:17] INFO root fetch - processPackages [neetbox]: executing diffoscope
+[2023-04-15 12:15:17] INFO root fetch - processPackages [neetbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neetbox-0.1.508.tar.gz tmp/neetbox-0.1.509.tar.gz --markdown 20230415/n/neetbox/0.1.508-0.1.509/diff.md --exclude *.pyd
+[2023-04-15 12:15:17] INFO root fetch - processPackages [os2ds-rules]: executing diffoscope
+[2023-04-15 12:15:17] INFO root fetch - processPackages [os2ds-rules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os2ds-rules-0.0.2.tar.gz tmp/os2ds-rules-0.0.3.tar.gz --markdown 20230415/o/os2ds-rules/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 12:15:17] INFO root fetch - processPackages [plone.app.event]: Downloading https://files.pythonhosted.org/packages/70/21/02b8931bfd41210e30764313887d31320888fd7743f9b33b4971cafd3848/plone.app.event-5.0.1.tar.gz
+[2023-04-15 12:15:17] WARNING root fetch - processPackages [bagua-cuda111]: Skipping package: exceeds size limit 18799674>=10485760
+[2023-04-15 12:15:17] INFO root fetch - main [MainThread]: End processing [bagua-cuda111] error
+[2023-04-15 12:15:17] INFO root fetch - processPackages [plone.app.event]: executing diffoscope
+[2023-04-15 12:15:17] INFO root fetch - processPackages [plone.app.event]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.event-5.0.0.tar.gz tmp/plone.app.event-5.0.1.tar.gz --markdown 20230415/p/plone.app.event/5.0.0-5.0.1/diff.md --exclude *.pyd
+[2023-04-15 12:15:18] INFO root fetch - main [MainThread]: End processing [neetbox]: success
+[2023-04-15 12:15:18] INFO root fetch - main [MainThread]: End processing [os2ds-rules]: success
+[2023-04-15 12:15:19] INFO root fetch - main [MainThread]: End processing [plone.app.event]: success
+[2023-04-15 12:15:19] INFO root fetch - main [MainThread]: Store serial: [17718085]
