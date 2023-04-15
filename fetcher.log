@@ -14509,3 +14509,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 12:36:36] INFO root fetch - main [MainThread]: End processing [pypi-sql-query-inspector]: success
 [2023-04-15 12:36:36] INFO root fetch - main [MainThread]: End processing [coca-tools]: success
 [2023-04-15 12:36:36] INFO root fetch - main [MainThread]: Store serial: [17718188]
+[2023-04-15 12:41:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718188]
+[2023-04-15 12:41:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 12:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: burny-common
+[2023-04-15 12:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: extr
+[2023-04-15 12:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: traducteur
+[2023-04-15 12:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: atomicshop
+[2023-04-15 12:41:45] INFO root fetch - processPackages [atomicshop]: New version: [1.7.5] Old Version: [1.7.4]
+[2023-04-15 12:41:45] INFO root fetch - processPackages [burny-common]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 12:41:45] INFO root fetch - processPackages [extr]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-15 12:41:45] INFO root fetch - processPackages [traducteur]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-15 12:41:45] INFO root fetch - processPackages [burny-common]: Downloading https://files.pythonhosted.org/packages/cb/fd/94afdbbfe96bf985cb8f2ce4990fbac907749bef1b4babc81ee01556590f/burny_common-0.0.8.tar.gz
+[2023-04-15 12:41:45] INFO root fetch - processPackages [traducteur]: Downloading https://files.pythonhosted.org/packages/3a/2a/96fc6f09860d2b2ef340caf89e58ca73e22fb5cfd29357378eba05852b3d/traducteur-0.4.7.tar.gz
+[2023-04-15 12:41:45] INFO root fetch - processPackages [extr]: Downloading https://files.pythonhosted.org/packages/08/87/102e5922e72fb53da66e28465c5c5e6ccb677c884e9948a868d0ee93c1c7/extr-0.0.6.tar.gz
+[2023-04-15 12:41:45] INFO root fetch - processPackages [atomicshop]: Downloading https://files.pythonhosted.org/packages/30/aa/60529e7d6e79c097a5ac4ee81af7f6177d8de44f84ecf9419c46189b4f8c/atomicshop-1.7.5-py3-none-any.whl
+[2023-04-15 12:41:45] INFO root fetch - processPackages [traducteur]: executing diffoscope
+[2023-04-15 12:41:45] INFO root fetch - processPackages [traducteur]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traducteur-0.4.6.tar.gz tmp/traducteur-0.4.7.tar.gz --markdown 20230415/t/traducteur/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-15 12:41:45] INFO root fetch - processPackages [extr]: executing diffoscope
+[2023-04-15 12:41:45] INFO root fetch - processPackages [extr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extr-0.0.5.tar.gz tmp/extr-0.0.6.tar.gz --markdown 20230415/e/extr/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-15 12:41:45] INFO root fetch - processPackages [burny-common]: Downloading https://files.pythonhosted.org/packages/23/4a/2559afa35b918543da5f953ce7a09cf3629307828fa528048b38ac26e8a1/burny_common-0.0.9.tar.gz
+[2023-04-15 12:41:45] INFO root fetch - processPackages [atomicshop]: executing diffoscope
+[2023-04-15 12:41:45] INFO root fetch - processPackages [atomicshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomicshop-1.7.4-py3-none-any.whl.zip tmp/atomicshop-1.7.5-py3-none-any.whl.zip --markdown 20230415/a/atomicshop/1.7.4-1.7.5/diff.md --exclude *.pyd
+[2023-04-15 12:41:45] INFO root fetch - processPackages [burny-common]: executing diffoscope
+[2023-04-15 12:41:45] INFO root fetch - processPackages [burny-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/burny_common-0.0.8.tar.gz tmp/burny_common-0.0.9.tar.gz --markdown 20230415/b/burny-common/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 12:41:46] INFO root fetch - main [MainThread]: End processing [extr]: success
+[2023-04-15 12:41:46] INFO root fetch - main [MainThread]: End processing [burny-common]: success
+[2023-04-15 12:41:47] INFO root fetch - main [MainThread]: End processing [traducteur]: success
+[2023-04-15 12:41:47] INFO root fetch - main [MainThread]: End processing [atomicshop]: success
+[2023-04-15 12:41:47] INFO root fetch - main [MainThread]: Store serial: [17718201]
