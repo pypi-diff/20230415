@@ -17700,3 +17700,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 18:20:45] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230415/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
 [2023-04-15 18:20:48] INFO root fetch - main [MainThread]: End processing [langchain]: success
 [2023-04-15 18:20:48] INFO root fetch - main [MainThread]: Store serial: [17720139]
+[2023-04-15 18:25:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720139]
+[2023-04-15 18:25:57] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 18:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cioclarisse
+[2023-04-15 18:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nef-pipelines
+[2023-04-15 18:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nextgpt
+[2023-04-15 18:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hiddifypanel
+[2023-04-15 18:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-genshinuid
+[2023-04-15 18:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: laegr
+[2023-04-15 18:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: feathub-nightly
+[2023-04-15 18:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nomenklatura
+[2023-04-15 18:25:57] INFO root fetch - processPackages [feathub-nightly]: New version: [0.1.dev20230414] Old Version: [0.1.dev20230413]
+[2023-04-15 18:25:57] INFO root fetch - processPackages [hiddifypanel]: New version: [3.1.6] Old Version: [3.1.5]
+[2023-04-15 18:25:57] WARNING root fetch - processPackages [laegr]: Skipping, unable to determine old version
+[2023-04-15 18:25:57] INFO root fetch - main [MainThread]: End processing [laegr] error
+[2023-04-15 18:25:57] INFO root fetch - processPackages [nef-pipelines]: New version: [0.1.33] Old Version: [0.1.32]
+[2023-04-15 18:25:57] INFO root fetch - processPackages [cioclarisse]: New version: [0.3.1] Old Version: [0.2.9]
+[2023-04-15 18:25:57] INFO root fetch - processPackages [nonebot-plugin-genshinuid]: New version: [4.0.3] Old Version: [4.0.2]
+[2023-04-15 18:25:57] INFO root fetch - processPackages [nextgpt]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 18:25:57] INFO root fetch - processPackages [nomenklatura]: New version: [2.9.3] Old Version: [2.9.2]
+[2023-04-15 18:25:57] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/d9/65/da80e188d481d280c2c49c9bfbfadfd97c6237608a2f5f9bad0e3bc89057/hiddifypanel-3.1.5-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-15 18:25:57] INFO root fetch - processPackages [nonebot-plugin-genshinuid]: Downloading https://files.pythonhosted.org/packages/67/47/4101a06fea04dbbd28f7b35dd572d00bcbd766035822e1e164d95947689c/nonebot_plugin_genshinuid-4.0.2.tar.gz
+[2023-04-15 18:25:57] INFO root fetch - processPackages [feathub-nightly]: Downloading https://files.pythonhosted.org/packages/6c/78/afabc6b87e6611a362ecdf4b6c212270b57e9209f170ce2247332d7fa102/feathub_nightly-0.1.dev20230414-py3-none-any.whl
+[2023-04-15 18:25:57] INFO root fetch - processPackages [nextgpt]: Downloading https://files.pythonhosted.org/packages/47/f6/07a07645dbe4260acdd0dd5566043df6f765186109a993bf1fe2af285a47/nextgpt-0.0.3.tar.gz
+[2023-04-15 18:25:57] INFO root fetch - processPackages [nef-pipelines]: Downloading https://files.pythonhosted.org/packages/d3/c9/d21c4e073a20ffaff7390034eb8278b59dfc840fe637fdf50590151dae93/nef_pipelines-0.1.32.tar.gz
+[2023-04-15 18:25:57] INFO root fetch - processPackages [cioclarisse]: Downloading https://files.pythonhosted.org/packages/0a/8b/aeb3d2a725fe800cd996734c90b53ee78aec037759712e5b0508d30e6829/cioclarisse-0.2.9-py2.py3-none-any.whl
+[2023-04-15 18:25:58] INFO root fetch - processPackages [nomenklatura]: Downloading https://files.pythonhosted.org/packages/f7/cd/738e14e0cd5ada20ebda3b9786ab31a73bb76e2e85ec0ca3bcf2f2712a67/nomenklatura-2.9.3.tar.gz
+[2023-04-15 18:25:58] INFO root fetch - processPackages [nef-pipelines]: Downloading https://files.pythonhosted.org/packages/c5/6b/1273bf4760e4c16a24b971118463286cfc1b39b2fa757295a65f37bbfe77/nef_pipelines-0.1.33.tar.gz
+[2023-04-15 18:25:58] INFO root fetch - processPackages [nonebot-plugin-genshinuid]: Downloading https://files.pythonhosted.org/packages/e3/30/fdf01dc2829617c40418f44f04ad33cdfba337d8bfe4a7cf05dea7bb159c/nonebot_plugin_genshinuid-4.0.3.tar.gz
+[2023-04-15 18:25:58] INFO root fetch - processPackages [nextgpt]: Downloading https://files.pythonhosted.org/packages/7c/fc/5ba1a653efa334f8d50994a7f9728fa5dacedaba7ebb3135d0000e622963/nextgpt-0.0.4.tar.gz
+[2023-04-15 18:25:58] INFO root fetch - processPackages [nomenklatura]: executing diffoscope
+[2023-04-15 18:25:58] INFO root fetch - processPackages [nomenklatura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomenklatura-2.9.2.tar.gz tmp/nomenklatura-2.9.3.tar.gz --markdown 20230415/n/nomenklatura/2.9.2-2.9.3/diff.md --exclude *.pyd
+[2023-04-15 18:25:58] INFO root fetch - processPackages [cioclarisse]: Downloading https://files.pythonhosted.org/packages/3f/93/a7214d78e235e36a2db6115f3a6ed474f9403f471fefa86a4f7609514e29/cioclarisse-0.3.1-py2.py3-none-any.whl
+[2023-04-15 18:25:58] INFO root fetch - processPackages [nef-pipelines]: executing diffoscope
+[2023-04-15 18:25:58] INFO root fetch - processPackages [nef-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nef_pipelines-0.1.32.tar.gz tmp/nef_pipelines-0.1.33.tar.gz --markdown 20230415/n/nef-pipelines/0.1.32-0.1.33/diff.md --exclude *.pyd
+[2023-04-15 18:25:58] INFO root fetch - processPackages [nonebot-plugin-genshinuid]: executing diffoscope
+[2023-04-15 18:25:58] INFO root fetch - processPackages [nonebot-plugin-genshinuid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_genshinuid-4.0.2.tar.gz tmp/nonebot_plugin_genshinuid-4.0.3.tar.gz --markdown 20230415/n/nonebot-plugin-genshinuid/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2023-04-15 18:25:58] INFO root fetch - processPackages [nextgpt]: executing diffoscope
+[2023-04-15 18:25:58] INFO root fetch - processPackages [nextgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextgpt-0.0.3.tar.gz tmp/nextgpt-0.0.4.tar.gz --markdown 20230415/n/nextgpt/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 18:25:58] INFO root fetch - processPackages [cioclarisse]: executing diffoscope
+[2023-04-15 18:25:58] INFO root fetch - processPackages [cioclarisse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cioclarisse-0.2.9-py2.py3-none-any.whl.zip tmp/cioclarisse-0.3.1-py2.py3-none-any.whl.zip --markdown 20230415/c/cioclarisse/0.2.9-0.3.1/diff.md --exclude *.pyd
+[2023-04-15 18:25:59] INFO root fetch - processPackages [feathub-nightly]: executing diffoscope
+[2023-04-15 18:25:59] INFO root fetch - processPackages [feathub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feathub_nightly-0.1.dev20230413-py3-none-any.whl.zip tmp/feathub_nightly-0.1.dev20230414-py3-none-any.whl.zip --markdown 20230415/f/feathub-nightly/0.1.dev20230413-0.1.dev20230414/diff.md --exclude *.pyd
+[2023-04-15 18:25:59] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-15 18:25:59] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.1.5-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.1.6-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230415/h/hiddifypanel/3.1.5-3.1.6/diff.md --exclude *.pyd
+[2023-04-15 18:25:59] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-genshinuid]: success
+[2023-04-15 18:25:59] INFO root fetch - main [MainThread]: End processing [cioclarisse]: success
+[2023-04-15 18:25:59] INFO root fetch - main [MainThread]: End processing [nomenklatura]: success
+[2023-04-15 18:25:59] INFO root fetch - main [MainThread]: End processing [nextgpt]: success
+[2023-04-15 18:26:00] INFO root fetch - main [MainThread]: End processing [nef-pipelines]: success
+[2023-04-15 18:26:02] INFO root fetch - main [MainThread]: End processing [feathub-nightly]: success
+[2023-04-15 18:26:10] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-04-15 18:26:10] INFO root fetch - main [MainThread]: Store serial: [17720169]
