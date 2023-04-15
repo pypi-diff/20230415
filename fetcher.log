@@ -20205,3 +20205,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 22:58:19] INFO root fetch - main [MainThread]: End processing [flm-core]: success
 [2023-04-15 22:58:39] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-04-15 22:58:39] INFO root fetch - main [MainThread]: Store serial: [17721829]
+[2023-04-15 23:03:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721829]
+[2023-04-15 23:03:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 23:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sdss-coordio
+[2023-04-15 23:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sabledocs
+[2023-04-15 23:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-api-admin
+[2023-04-15 23:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: balcony
+[2023-04-15 23:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simpleworkspace
+[2023-04-15 23:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: awc
+[2023-04-15 23:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vollseg
+[2023-04-15 23:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: balcony
+[2023-04-15 23:03:49] INFO root fetch - processPackages [awc]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-15 23:03:49] INFO root fetch - processPackages [sabledocs]: New version: [0.1.72] Old Version: [0.1.69]
+[2023-04-15 23:03:49] INFO root fetch - processPackages [django-api-admin]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-15 23:03:49] INFO root fetch - processPackages [balcony]: New version: [0.0.9] Old Version: [0.0.81]
+[2023-04-15 23:03:49] INFO root fetch - processPackages [simpleworkspace]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-04-15 23:03:49] INFO root fetch - processPackages [sdss-coordio]: New version: [1.7.0] Old Version: [1.6.1]
+[2023-04-15 23:03:49] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-15 23:03:49] INFO root fetch - processPackages [balcony]: New version: [0.0.9] Old Version: [0.0.81]
+[2023-04-15 23:03:49] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-15 23:03:49] INFO root fetch - processPackages [simpleworkspace]: executing diffoscope
+[2023-04-15 23:03:49] INFO root fetch - processPackages [simpleworkspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleWorkspace-1.1.98-py3-none-any.whl.zip tmp/SimpleWorkspace-1.1.99-py3-none-any.whl.zip --markdown 20230415/s/simpleworkspace/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-04-15 23:03:49] INFO root fetch - processPackages [awc]: Downloading https://files.pythonhosted.org/packages/b9/05/7a57eccfdcbc66d726f97d5341ddb38db0e5e8d6042124aedecec57174d0/awc-1.2.3-py2.py3-none-any.whl
+[2023-04-15 23:03:49] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-15 23:03:49] INFO root fetch - processPackages [django-api-admin]: Downloading https://files.pythonhosted.org/packages/b5/7d/e8fa4ce6f3bed3534f7ca5d8351e295cc70c3f2c45a3a8df66d4d5ff97af/django-api-admin-1.1.1.tar.gz
+[2023-04-15 23:03:49] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-15 23:03:49] INFO root fetch - processPackages [balcony]: Downloading https://files.pythonhosted.org/packages/c2/b9/18918e2900549f83866355523855d64658466f86616a9ba7f39db37eaaf3/balcony-0.0.81.tar.gz
+[2023-04-15 23:03:49] INFO root fetch - processPackages [balcony]: Downloading https://files.pythonhosted.org/packages/c2/b9/18918e2900549f83866355523855d64658466f86616a9ba7f39db37eaaf3/balcony-0.0.81.tar.gz
+[2023-04-15 23:03:49] INFO root fetch - processPackages [sdss-coordio]: Downloading https://files.pythonhosted.org/packages/eb/94/b8bc569e0d6610ebac8391bba119562a94321d91f1c0a27b5f15a3cd1887/sdss-coordio-1.6.1.tar.gz
+[2023-04-15 23:03:49] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/ba/40/f149c994df7b873a2833bfa148e21c6d92954da073f7c5f58d3d917e9d26/sabledocs-0.1.72.tar.gz
+[2023-04-15 23:03:49] INFO root fetch - processPackages [django-api-admin]: executing diffoscope
+[2023-04-15 23:03:49] INFO root fetch - processPackages [django-api-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-api-admin-1.1.0.tar.gz tmp/django-api-admin-1.1.1.tar.gz --markdown 20230415/d/django-api-admin/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-15 23:03:49] INFO root fetch - processPackages [balcony]: executing diffoscope
+[2023-04-15 23:03:49] INFO root fetch - processPackages [balcony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balcony-0.0.81.tar.gz tmp/balcony-0.0.9.tar.gz --markdown 20230415/b/balcony/0.0.81-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 23:03:49] INFO root fetch - processPackages [balcony]: executing diffoscope
+[2023-04-15 23:03:49] INFO root fetch - processPackages [balcony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balcony-0.0.81.tar.gz tmp/balcony-0.0.9.tar.gz --markdown 20230415/b/balcony/0.0.81-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 23:03:49] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 23:03:49] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.69.tar.gz tmp/sabledocs-0.1.72.tar.gz --markdown 20230415/s/sabledocs/0.1.69-0.1.72/diff.md --exclude *.pyd
+[2023-04-15 23:03:49] INFO root fetch - processPackages [sdss-coordio]: Downloading https://files.pythonhosted.org/packages/4b/27/833abd75152a865157826a4ca8e1ff336e96d778a541ac49cccc6aef1f8c/sdss-coordio-1.7.0.tar.gz
+[2023-04-15 23:03:49] INFO root fetch - processPackages [awc]: Downloading https://files.pythonhosted.org/packages/fd/bd/516fec4a5b69120c4a13eccba5b2cd99a6a387b53142f885ec663bcdd454/awc-1.2.4-py2.py3-none-any.whl
+[2023-04-15 23:03:49] INFO root fetch - processPackages [awc]: executing diffoscope
+[2023-04-15 23:03:49] INFO root fetch - processPackages [awc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awc-1.2.3-py2.py3-none-any.whl.zip tmp/awc-1.2.4-py2.py3-none-any.whl.zip --markdown 20230415/a/awc/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-15 23:03:49] INFO root fetch - processPackages [sdss-coordio]: executing diffoscope
+[2023-04-15 23:03:49] INFO root fetch - processPackages [sdss-coordio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdss-coordio-1.6.1.tar.gz tmp/sdss-coordio-1.7.0.tar.gz --markdown 20230415/s/sdss-coordio/1.6.1-1.7.0/diff.md --exclude *.pyd
+[2023-04-15 23:03:50] INFO root fetch - main [MainThread]: End processing [simpleworkspace]: success
+[2023-04-15 23:03:50] INFO root fetch - main [MainThread]: End processing [django-api-admin]: success
+[2023-04-15 23:03:50] INFO root fetch - main [MainThread]: End processing [balcony]: success
+[2023-04-15 23:03:51] INFO root fetch - main [MainThread]: End processing [awc]: success
+[2023-04-15 23:03:51] INFO root fetch - main [MainThread]: End processing [balcony]: success
+[2023-04-15 23:03:51] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 23:03:53] INFO root fetch - main [MainThread]: End processing [sdss-coordio]: success
+[2023-04-15 23:03:53] INFO root fetch - main [MainThread]: Store serial: [17721866]
