@@ -20297,3 +20297,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 23:09:05] INFO root fetch - main [MainThread]: End processing [pynimate]: success
 [2023-04-15 23:09:05] INFO root fetch - main [MainThread]: End processing [syllabub]: success
 [2023-04-15 23:09:05] INFO root fetch - main [MainThread]: Store serial: [17721887]
+[2023-04-15 23:14:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721887]
+[2023-04-15 23:14:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 23:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vidya
+[2023-04-15 23:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RsFswp
+[2023-04-15 23:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: feynml
+[2023-04-15 23:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: owl-on-fhir
+[2023-04-15 23:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vidya
+[2023-04-15 23:14:15] INFO root fetch - processPackages [owl-on-fhir]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 23:14:15] INFO root fetch - processPackages [RsFswp]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-04-15 23:14:15] INFO root fetch - processPackages [vidya]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 23:14:15] INFO root fetch - processPackages [vidya]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 23:14:15] INFO root fetch - processPackages [feynml]: New version: [0.1.7] Old Version: [0.1.3]
+[2023-04-15 23:14:15] INFO root fetch - processPackages [owl-on-fhir]: Downloading https://files.pythonhosted.org/packages/23/00/3e6d0545f91891b4acdb92f54fdf7252682cae3d0844a35319c65b5e13a5/owl-on-fhir-0.1.8.tar.gz
+[2023-04-15 23:14:15] WARNING root fetch - processPackages [owl-on-fhir]: Skipping package: exceeds size limit 71919209>=10485760
+[2023-04-15 23:14:15] INFO root fetch - main [MainThread]: End processing [owl-on-fhir] error
+[2023-04-15 23:14:15] INFO root fetch - processPackages [vidya]: Downloading https://files.pythonhosted.org/packages/69/8c/986ad1f154cf74024f35815f11216f08cd7f550d98017ceffa38b11600ea/vidya-0.1.0.tar.gz
+[2023-04-15 23:14:15] INFO root fetch - processPackages [vidya]: Downloading https://files.pythonhosted.org/packages/69/8c/986ad1f154cf74024f35815f11216f08cd7f550d98017ceffa38b11600ea/vidya-0.1.0.tar.gz
+[2023-04-15 23:14:15] INFO root fetch - processPackages [RsFswp]: Downloading https://files.pythonhosted.org/packages/a5/fa/a7214423476523e0fa944a1338ccf34677da9e20e48e59b12fba23cd4a57/RsFswp-3.0.0.tar.gz
+[2023-04-15 23:14:15] INFO root fetch - processPackages [feynml]: Downloading https://files.pythonhosted.org/packages/fc/b8/1ab942ff64be72f0138b8eba3d923da1c6d2db235ee4387453f3bf96758c/feynml-0.1.3.tar.gz
+[2023-04-15 23:14:15] INFO root fetch - processPackages [vidya]: Downloading https://files.pythonhosted.org/packages/d2/50/c8bdcb708a64a905d24e4866abcdff78f4a3549741374dc33a60f2a05f2f/vidya-0.1.1.tar.gz
+[2023-04-15 23:14:15] INFO root fetch - processPackages [vidya]: Downloading https://files.pythonhosted.org/packages/d2/50/c8bdcb708a64a905d24e4866abcdff78f4a3549741374dc33a60f2a05f2f/vidya-0.1.1.tar.gz
+[2023-04-15 23:14:16] INFO root fetch - processPackages [feynml]: Downloading https://files.pythonhosted.org/packages/27/04/11259806ee3996881994a51d76cfbd87605453cce2417d22097d52ab2d74/feynml-0.1.7.tar.gz
+[2023-04-15 23:14:16] INFO root fetch - processPackages [RsFswp]: Downloading https://files.pythonhosted.org/packages/52/6d/c10f27ea6775cbed36750771e6cebf4083e49c151bc3b1db7ebf522fdff2/RsFswp-3.0.1.tar.gz
+[2023-04-15 23:14:16] INFO root fetch - processPackages [vidya]: executing diffoscope
+[2023-04-15 23:14:16] INFO root fetch - processPackages [vidya]: executing diffoscope
+[2023-04-15 23:14:16] INFO root fetch - processPackages [vidya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vidya-0.1.0.tar.gz tmp/vidya-0.1.1.tar.gz --markdown 20230415/v/vidya/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 23:14:16] INFO root fetch - processPackages [vidya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vidya-0.1.0.tar.gz tmp/vidya-0.1.1.tar.gz --markdown 20230415/v/vidya/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 23:14:16] INFO root fetch - processPackages [feynml]: executing diffoscope
+[2023-04-15 23:14:16] INFO root fetch - processPackages [feynml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feynml-0.1.3.tar.gz tmp/feynml-0.1.7.tar.gz --markdown 20230415/f/feynml/0.1.3-0.1.7/diff.md --exclude *.pyd
+[2023-04-15 23:14:16] INFO root fetch - processPackages [RsFswp]: executing diffoscope
+[2023-04-15 23:14:16] INFO root fetch - processPackages [RsFswp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RsFswp-3.0.0.tar.gz tmp/RsFswp-3.0.1.tar.gz --markdown 20230415/R/RsFswp/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-04-15 23:14:17] INFO root fetch - main [MainThread]: End processing [vidya]: success
+[2023-04-15 23:14:17] INFO root fetch - main [MainThread]: End processing [vidya]: success
+[2023-04-15 23:14:17] INFO root fetch - main [MainThread]: End processing [feynml]: success
+[2023-04-15 23:16:25] INFO root fetch - main [MainThread]: End processing [RsFswp]: success
+[2023-04-15 23:16:25] INFO root fetch - main [MainThread]: Store serial: [17721905]
