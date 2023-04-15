@@ -13480,3 +13480,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 10:37:05] INFO root fetch - main [MainThread]: End processing [qemu-runner]: success
 [2023-04-15 10:37:06] INFO root fetch - main [MainThread]: End processing [starlette-web]: success
 [2023-04-15 10:37:06] INFO root fetch - main [MainThread]: Store serial: [17717560]
+[2023-04-15 10:42:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717560]
+[2023-04-15 10:42:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-15 10:42:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ezdxf
+[2023-04-15 10:42:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs-material-otf
+[2023-04-15 10:42:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfp-nightly
+[2023-04-15 10:42:15] INFO root fetch - processPackages [mkdocs-material-otf]: New version: [9.1.6] Old Version: [9.1.106]
+[2023-04-15 10:42:15] INFO root fetch - processPackages [ezdxf]: New version: [1.0.4b1] Old Version: [1.0.3b0]
+[2023-04-15 10:42:15] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-04-15 10:42:15] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2023-04-15 10:42:15] INFO root fetch - processPackages [mkdocs-material-otf]: Downloading https://files.pythonhosted.org/packages/ac/00/be141fb6de0312b96f1a07c6f51a4248cc50dfa5d7dbab8349f2ed3de825/mkdocs_material_otf-9.1.106.tar.gz
+[2023-04-15 10:42:15] INFO root fetch - processPackages [ezdxf]: Downloading https://files.pythonhosted.org/packages/90/79/9e1a52f7cf84c628ff43ae7448765798a8a0f0c44680b04a32ddd7ca56cd/ezdxf-1.0.3b0.zip
+[2023-04-15 10:42:15] INFO root fetch - processPackages [mkdocs-material-otf]: Downloading https://files.pythonhosted.org/packages/fe/6c/bc8ef10c40b73310fb2c303081c9d8305bcd4235a0f254a666396b64c6a7/mkdocs_material_otf-9.1.6.tar.gz
+[2023-04-15 10:42:16] INFO root fetch - processPackages [ezdxf]: Downloading https://files.pythonhosted.org/packages/13/f8/3542198e2144841b44ed106961428f8fe36b08db4f57e15c2c7a0253c56e/ezdxf-1.0.4b1.zip
+[2023-04-15 10:42:16] INFO root fetch - processPackages [ezdxf]: executing diffoscope
+[2023-04-15 10:42:16] INFO root fetch - processPackages [ezdxf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezdxf-1.0.3b0.zip tmp/ezdxf-1.0.4b1.zip --markdown 20230415/e/ezdxf/1.0.3b0-1.0.4b1/diff.md --exclude *.pyd
+[2023-04-15 10:42:16] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2023-04-15 10:42:16] INFO root fetch - processPackages [mkdocs-material-otf]: executing diffoscope
+[2023-04-15 10:42:16] INFO root fetch - processPackages [mkdocs-material-otf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_material_otf-9.1.106.tar.gz tmp/mkdocs_material_otf-9.1.6.tar.gz --markdown 20230415/m/mkdocs-material-otf/9.1.106-9.1.6/diff.md --exclude *.pyd
+[2023-04-15 10:42:17] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-04-15 10:42:17] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230415/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-04-15 10:42:26] INFO root fetch - main [MainThread]: End processing [ezdxf]: success
+[2023-04-15 10:42:30] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-04-15 10:45:16] ERROR root fetch - processPackages [mkdocs-material-otf]: Timeout during execution of pkgdiff
+[2023-04-15 10:45:16] INFO root fetch - main [MainThread]: End processing [mkdocs-material-otf] error
+[2023-04-15 10:45:16] INFO root fetch - main [MainThread]: Store serial: [17717573]
