@@ -17569,3 +17569,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 17:59:36] INFO root fetch - main [MainThread]: End processing [shikithon]: success
 [2023-04-15 17:59:44] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-04-15 17:59:44] INFO root fetch - main [MainThread]: Store serial: [17720055]
+[2023-04-15 18:04:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720055]
+[2023-04-15 18:04:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 18:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: theme-label
+[2023-04-15 18:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: buge
+[2023-04-15 18:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notification-service-nightly
+[2023-04-15 18:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-flow-nightly
+[2023-04-15 18:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nanolayer
+[2023-04-15 18:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mahiro
+[2023-04-15 18:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: interpolating-neural-networks
+[2023-04-15 18:04:53] WARNING root fetch - processPackages [buge]: Skipping, unable to determine old version
+[2023-04-15 18:04:53] INFO root fetch - main [MainThread]: End processing [buge] error
+[2023-04-15 18:04:53] WARNING root fetch - processPackages [mahiro]: Skipping, unable to determine old version
+[2023-04-15 18:04:53] INFO root fetch - main [MainThread]: End processing [mahiro] error
+[2023-04-15 18:04:53] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-15 18:04:53] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-15 18:04:53] INFO root fetch - processPackages [notification-service-nightly]: Downloading https://files.pythonhosted.org/packages/9b/b2/1f109e78536d3e7f4bb7f20bd1720d89954e56a233ec6522e8b893f8978c/notification_service_nightly-2023.4.8.tar.gz
+[2023-04-15 18:04:53] INFO root fetch - processPackages [theme-label]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-15 18:04:53] INFO root fetch - processPackages [ai-flow-nightly]: Downloading https://files.pythonhosted.org/packages/34/a6/26fba7488adf5bd306711b2a5cba3179f7aa44b4ece195be8c65da1d735b/ai_flow_nightly-2023.4.8.tar.gz
+[2023-04-15 18:04:53] WARNING root fetch - processPackages [interpolating-neural-networks]: Skipping, unable to determine old version
+[2023-04-15 18:04:53] INFO root fetch - main [MainThread]: End processing [interpolating-neural-networks] error
+[2023-04-15 18:04:53] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-15 18:04:53] INFO root fetch - processPackages [theme-label]: Downloading https://files.pythonhosted.org/packages/2d/d3/1dfe3564b8e3b5924d951391f419c0bf8ff79cd2f23568da2e906659bd07/theme-label-0.2.0.tar.gz
+[2023-04-15 18:04:53] INFO root fetch - processPackages [notification-service-nightly]: Downloading https://files.pythonhosted.org/packages/ce/0f/f3ab9a91cd48947bfe4b2fdc37e1a4b0ab941ee56b38fbd9bc94809467e3/notification_service_nightly-2023.4.9.tar.gz
+[2023-04-15 18:04:53] INFO root fetch - processPackages [nanolayer]: Downloading https://files.pythonhosted.org/packages/f7/80/e468152babc6e88200c8550f2acb9118ee6b98559961a04f5057b14cce4a/nanolayer-0.4.8-py3-none-any.whl
+[2023-04-15 18:04:53] INFO root fetch - processPackages [ai-flow-nightly]: Downloading https://files.pythonhosted.org/packages/4b/a1/5d1dbe596641bcb245726409f9036baf5c33f804612443987da582853c57/ai_flow_nightly-2023.4.9.tar.gz
+[2023-04-15 18:04:53] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-04-15 18:04:53] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.4.8.tar.gz tmp/ai_flow_nightly-2023.4.9.tar.gz --markdown 20230415/a/ai-flow-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-15 18:04:53] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-04-15 18:04:53] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.4.8.tar.gz tmp/notification_service_nightly-2023.4.9.tar.gz --markdown 20230415/n/notification-service-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-15 18:04:53] INFO root fetch - processPackages [nanolayer]: Downloading https://files.pythonhosted.org/packages/70/8a/a686dbb9639ca2e1d67b4529bad6754b3a7a4935d0e3000f500f51951aa4/nanolayer-0.4.9-py3-none-any.whl
+[2023-04-15 18:04:53] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-04-15 18:04:53] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230415/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-15 18:04:53] INFO root fetch - processPackages [theme-label]: Downloading https://files.pythonhosted.org/packages/c1/05/b9659bc19ff2430cd864468f39034c8b96e13cbd3d4dff111d31ac6817ee/theme-label-0.2.1.tar.gz
+[2023-04-15 18:04:53] INFO root fetch - processPackages [theme-label]: executing diffoscope
+[2023-04-15 18:04:53] INFO root fetch - processPackages [theme-label]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/theme-label-0.2.0.tar.gz tmp/theme-label-0.2.1.tar.gz --markdown 20230415/t/theme-label/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-15 18:04:54] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-04-15 18:04:54] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-04-15 18:04:54] INFO root fetch - main [MainThread]: End processing [theme-label]: success
+[2023-04-15 18:04:56] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-04-15 18:04:56] INFO root fetch - main [MainThread]: Store serial: [17720081]
