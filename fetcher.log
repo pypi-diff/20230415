@@ -14171,3 +14171,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 11:59:40] INFO root fetch - main [MainThread]: End processing [peaksjs-widget]: success
 [2023-04-15 11:59:43] INFO root fetch - main [MainThread]: End processing [bagua]: success
 [2023-04-15 11:59:43] INFO root fetch - main [MainThread]: Store serial: [17717987]
+[2023-04-15 12:04:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717987]
+[2023-04-15 12:04:52] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 12:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ttp-templates
+[2023-04-15 12:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-naturel-gpt
+[2023-04-15 12:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: discminer
+[2023-04-15 12:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitpulse
+[2023-04-15 12:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: subprocesskiller
+[2023-04-15 12:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: credentials-manager-client
+[2023-04-15 12:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flake8-django
+[2023-04-15 12:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: TempCleaner
+[2023-04-15 12:04:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pypi-sql-query-inspector
+[2023-04-15 12:04:52] INFO root fetch - processPackages [discminer]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-15 12:04:52] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-15 12:04:52] INFO root fetch - processPackages [ttp-templates]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-15 12:04:52] WARNING root fetch - processPackages [TempCleaner]: Skipping, unable to determine old version
+[2023-04-15 12:04:52] INFO root fetch - processPackages [subprocesskiller]: New version: [0.11] Old Version: [0.10]
+[2023-04-15 12:04:52] INFO root fetch - main [MainThread]: End processing [TempCleaner] error
+[2023-04-15 12:04:52] WARNING root fetch - processPackages [pypi-sql-query-inspector]: Skipping, unable to determine old version
+[2023-04-15 12:04:52] INFO root fetch - main [MainThread]: End processing [pypi-sql-query-inspector] error
+[2023-04-15 12:04:52] WARNING root fetch - processPackages [credentials-manager-client]: Skipping, unable to determine old version
+[2023-04-15 12:04:52] WARNING root fetch - processPackages [gitpulse]: Skipping, unable to determine old version
+[2023-04-15 12:04:52] INFO root fetch - main [MainThread]: End processing [credentials-manager-client] error
+[2023-04-15 12:04:52] INFO root fetch - main [MainThread]: End processing [gitpulse] error
+[2023-04-15 12:04:52] INFO root fetch - processPackages [flake8-django]: New version: [1.2] Old Version: [1.1.5]
+[2023-04-15 12:04:52] INFO root fetch - processPackages [subprocesskiller]: Downloading https://files.pythonhosted.org/packages/64/e7/550ff2abf74bfca9499ae4ea853d44ceab36979b0fb3aab5136f44e94702/subprocesskiller-0.10.tar.gz
+[2023-04-15 12:04:52] INFO root fetch - processPackages [ttp-templates]: Downloading https://files.pythonhosted.org/packages/a0/e5/776d4651e4b5b45b26bff628bc5a947dc68bb7dce05107804b242f1f8376/ttp_templates-0.3.4.tar.gz
+[2023-04-15 12:04:52] INFO root fetch - processPackages [flake8-django]: Downloading https://files.pythonhosted.org/packages/3c/28/34fdde82fc76527b422897dd1d174ea6f8bac85b9ce80be2d2a922851eb7/flake8-django-1.1.5.tar.gz
+[2023-04-15 12:04:52] INFO root fetch - processPackages [discminer]: Downloading https://files.pythonhosted.org/packages/0b/7e/baf04bfc47b6961debbfb64d6f2a0043bda53a1988f35f9c41ca667212a3/discminer-0.2.0.tar.gz
+[2023-04-15 12:04:52] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: Downloading https://files.pythonhosted.org/packages/04/93/7250fb9d22bad65800995bcbc28eeff73d1394d5ee65998ffc9cc79f363b/nonebot_plugin_naturel_gpt-2.1.1.tar.gz
+[2023-04-15 12:04:53] INFO root fetch - processPackages [ttp-templates]: Downloading https://files.pythonhosted.org/packages/55/18/d3613520b462e82b06201cd08d7eec6f0084bea7b414ab7a03111d3a3c6b/ttp_templates-0.3.5.tar.gz
+[2023-04-15 12:04:53] INFO root fetch - processPackages [subprocesskiller]: Downloading https://files.pythonhosted.org/packages/96/38/412f19af0881b79a6e8a3a7f7c1ddd9ac099cbafd59d2917d05aad32c3fa/subprocesskiller-0.11.tar.gz
+[2023-04-15 12:04:53] INFO root fetch - processPackages [flake8-django]: Downloading https://files.pythonhosted.org/packages/63/68/ab2e5606630eb188b054cc084a36b1939abb65dc87f2532bd6c0ec6ad753/flake8_django-1.2.tar.gz
+[2023-04-15 12:04:53] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: executing diffoscope
+[2023-04-15 12:04:53] INFO root fetch - processPackages [nonebot-plugin-naturel-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_naturel_gpt-2.1.0.tar.gz tmp/nonebot_plugin_naturel_gpt-2.1.1.tar.gz --markdown 20230415/n/nonebot-plugin-naturel-gpt/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-15 12:04:53] INFO root fetch - processPackages [discminer]: executing diffoscope
+[2023-04-15 12:04:53] INFO root fetch - processPackages [discminer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discminer-0.1.1.tar.gz tmp/discminer-0.2.0.tar.gz --markdown 20230415/d/discminer/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 12:04:53] INFO root fetch - processPackages [ttp-templates]: executing diffoscope
+[2023-04-15 12:04:53] INFO root fetch - processPackages [ttp-templates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ttp_templates-0.3.4.tar.gz tmp/ttp_templates-0.3.5.tar.gz --markdown 20230415/t/ttp-templates/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-15 12:04:53] INFO root fetch - processPackages [subprocesskiller]: executing diffoscope
+[2023-04-15 12:04:53] INFO root fetch - processPackages [subprocesskiller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subprocesskiller-0.10.tar.gz tmp/subprocesskiller-0.11.tar.gz --markdown 20230415/s/subprocesskiller/0.10-0.11/diff.md --exclude *.pyd
+[2023-04-15 12:04:53] INFO root fetch - processPackages [flake8-django]: executing diffoscope
+[2023-04-15 12:04:53] INFO root fetch - processPackages [flake8-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flake8-django-1.1.5.tar.gz tmp/flake8_django-1.2.tar.gz --markdown 20230415/f/flake8-django/1.1.5-1.2/diff.md --exclude *.pyd
+[2023-04-15 12:04:54] INFO root fetch - main [MainThread]: End processing [subprocesskiller]: success
+[2023-04-15 12:04:54] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-naturel-gpt]: success
+[2023-04-15 12:04:54] INFO root fetch - main [MainThread]: End processing [flake8-django]: success
+[2023-04-15 12:04:54] INFO root fetch - main [MainThread]: End processing [discminer]: success
+[2023-04-15 12:04:54] INFO root fetch - main [MainThread]: End processing [ttp-templates]: success
+[2023-04-15 12:04:54] INFO root fetch - main [MainThread]: Store serial: [17718020]
