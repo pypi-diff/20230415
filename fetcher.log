@@ -6456,3 +6456,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 08:51:51] INFO root fetch - main [MainThread]: End processing [facexlib]: success
 [2023-04-15 08:51:52] INFO root fetch - main [MainThread]: End processing [lazyops]: success
 [2023-04-15 08:51:52] INFO root fetch - main [MainThread]: Store serial: [17717001]
+[2023-04-15 08:56:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717001]
+[2023-04-15 08:56:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 08:56:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioqzone
+[2023-04-15 08:56:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: govtech-data
+[2023-04-15 08:56:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vmilog-py
+[2023-04-15 08:56:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: shapvs
+[2023-04-15 08:56:59] WARNING root fetch - processPackages [shapvs]: Skipping, unable to determine old version
+[2023-04-15 08:56:59] INFO root fetch - main [MainThread]: End processing [shapvs] error
+[2023-04-15 08:56:59] INFO root fetch - processPackages [vmilog-py]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-15 08:56:59] INFO root fetch - processPackages [aioqzone]: New version: [0.9.9.dev3] Old Version: [0.9.9.dev2]
+[2023-04-15 08:56:59] INFO root fetch - processPackages [govtech-data]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 08:56:59] INFO root fetch - processPackages [aioqzone]: Downloading https://files.pythonhosted.org/packages/7f/ff/f8dc9aff74e57608bbfaf7589832ca3aee3afdd16253d1e6fe206241ec8f/aioqzone-0.9.9.dev2.tar.gz
+[2023-04-15 08:56:59] INFO root fetch - processPackages [govtech-data]: Downloading https://files.pythonhosted.org/packages/35/f1/b14783c058bcd11e247ed7db374d8646a82b29b7ac068919655b32a979d4/govtech_data-0.1.6.tar.gz
+[2023-04-15 08:56:59] INFO root fetch - processPackages [vmilog-py]: Downloading https://files.pythonhosted.org/packages/f7/18/be9bbfee5b4c0e0cc5c26b071046975935013e384ddb75c688ff4ef1f722/vmilog-py-0.4.0.tar.gz
+[2023-04-15 08:56:59] INFO root fetch - processPackages [govtech-data]: executing diffoscope
+[2023-04-15 08:56:59] INFO root fetch - processPackages [govtech-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/govtech_data-0.1.5.tar.gz tmp/govtech_data-0.1.6.tar.gz --markdown 20230415/g/govtech-data/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 08:56:59] INFO root fetch - processPackages [vmilog-py]: executing diffoscope
+[2023-04-15 08:56:59] INFO root fetch - processPackages [vmilog-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmilog-py-0.3.0.tar.gz tmp/vmilog-py-0.4.0.tar.gz --markdown 20230415/v/vmilog-py/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-15 08:56:59] INFO root fetch - processPackages [aioqzone]: Downloading https://files.pythonhosted.org/packages/d2/e6/57423151a50842933a21c06dc0af51e6875fd99447e03329725a06d6c191/aioqzone-0.9.9.dev3.tar.gz
+[2023-04-15 08:56:59] INFO root fetch - processPackages [aioqzone]: executing diffoscope
+[2023-04-15 08:56:59] INFO root fetch - processPackages [aioqzone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqzone-0.9.9.dev2.tar.gz tmp/aioqzone-0.9.9.dev3.tar.gz --markdown 20230415/a/aioqzone/0.9.9.dev2-0.9.9.dev3/diff.md --exclude *.pyd
+[2023-04-15 08:57:00] INFO root fetch - main [MainThread]: End processing [vmilog-py]: success
+[2023-04-15 08:57:00] INFO root fetch - main [MainThread]: End processing [govtech-data]: success
+[2023-04-15 08:57:00] INFO root fetch - main [MainThread]: End processing [aioqzone]: success
+[2023-04-15 08:57:00] INFO root fetch - main [MainThread]: Store serial: [17717015]
