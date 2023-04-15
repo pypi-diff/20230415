@@ -16071,3 +16071,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 15:25:36] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
 [2023-04-15 15:25:37] INFO root fetch - main [MainThread]: End processing [jcmutils]: success
 [2023-04-15 15:25:37] INFO root fetch - main [MainThread]: Store serial: [17719164]
+[2023-04-15 15:30:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719164]
+[2023-04-15 15:30:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sharewifi
+[2023-04-15 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NamasteiG
+[2023-04-15 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pylatexenc
+[2023-04-15 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ReverseBox
+[2023-04-15 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: regis
+[2023-04-15 15:30:45] INFO root fetch - processPackages [sharewifi]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-15 15:30:45] INFO root fetch - processPackages [NamasteiG]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-15 15:30:45] INFO root fetch - processPackages [pylatexenc]: New version: [3.0a13] Old Version: [2.9]
+[2023-04-15 15:30:45] INFO root fetch - processPackages [ReverseBox]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-15 15:30:45] INFO root fetch - processPackages [regis]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 15:30:45] INFO root fetch - processPackages [regis]: Downloading https://files.pythonhosted.org/packages/a9/19/a046cde404f181fda6ee27f5dc3222dda2311afcbdc14d6cbebde4c3e7ac/regis-0.1.8.tar.gz
+[2023-04-15 15:30:45] INFO root fetch - processPackages [sharewifi]: Downloading https://files.pythonhosted.org/packages/3d/27/0a55ce7f65af6330df8dff3025ba48a777a283f522db2ff37fedf866b43b/sharewifi-1.0.1.tar.gz
+[2023-04-15 15:30:46] INFO root fetch - processPackages [NamasteiG]: Downloading https://files.pythonhosted.org/packages/75/31/c21248cbf41827163991c829ef4e94dfab41d820cf9ed1961ae7872a6484/NamasteiG-0.2.3.tar.gz
+[2023-04-15 15:30:46] INFO root fetch - processPackages [pylatexenc]: Downloading https://files.pythonhosted.org/packages/ee/bd/aab29298c50e36ecabb94caaebdadce78ef609b3b185456413f866c7abd5/pylatexenc-2.9.tar.gz
+[2023-04-15 15:30:46] INFO root fetch - processPackages [regis]: Downloading https://files.pythonhosted.org/packages/e0/25/74667bbd99d0acf4eb4064ce4d615ab4919fd700d07b132eea95030ea6ae/regis-0.1.9.tar.gz
+[2023-04-15 15:30:46] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/08/31/219193b813865f63df50207221fac51eb981c0fee6e14accb558baf5e128/ReverseBox-0.4.9.tar.gz
+[2023-04-15 15:30:46] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2023-04-15 15:30:46] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.4.8.tar.gz tmp/ReverseBox-0.4.9.tar.gz --markdown 20230415/R/ReverseBox/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-15 15:30:46] INFO root fetch - processPackages [sharewifi]: Downloading https://files.pythonhosted.org/packages/1f/f0/d49ac12fd69d5e3f2405ced526fafcd1d7bfaf8c7c87acd82c003c120a34/sharewifi-1.0.2.tar.gz
+[2023-04-15 15:30:46] INFO root fetch - processPackages [regis]: executing diffoscope
+[2023-04-15 15:30:46] INFO root fetch - processPackages [regis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regis-0.1.8.tar.gz tmp/regis-0.1.9.tar.gz --markdown 20230415/r/regis/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 15:30:46] INFO root fetch - processPackages [NamasteiG]: Downloading https://files.pythonhosted.org/packages/53/59/1ba91f2ac8259878de1cdab79b6fc50aa996fb1f6c80a870c85ad507e374/NamasteiG-0.2.4.tar.gz
+[2023-04-15 15:30:46] INFO root fetch - processPackages [sharewifi]: executing diffoscope
+[2023-04-15 15:30:46] INFO root fetch - processPackages [sharewifi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharewifi-1.0.1.tar.gz tmp/sharewifi-1.0.2.tar.gz --markdown 20230415/s/sharewifi/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-15 15:30:46] INFO root fetch - processPackages [NamasteiG]: executing diffoscope
+[2023-04-15 15:30:46] INFO root fetch - processPackages [NamasteiG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NamasteiG-0.2.3.tar.gz tmp/NamasteiG-0.2.4.tar.gz --markdown 20230415/N/NamasteiG/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-15 15:30:46] INFO root fetch - processPackages [pylatexenc]: Downloading https://files.pythonhosted.org/packages/dd/f6/956675a206cd88d8f514bb91fadac1309a88be1784577bc6c0313d3c5c58/pylatexenc-3.0a13.tar.gz
+[2023-04-15 15:30:46] INFO root fetch - processPackages [pylatexenc]: executing diffoscope
+[2023-04-15 15:30:46] INFO root fetch - processPackages [pylatexenc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylatexenc-2.9.tar.gz tmp/pylatexenc-3.0a13.tar.gz --markdown 20230415/p/pylatexenc/2.9-3.0a13/diff.md --exclude *.pyd
+[2023-04-15 15:30:47] INFO root fetch - main [MainThread]: End processing [NamasteiG]: success
+[2023-04-15 15:30:47] INFO root fetch - main [MainThread]: End processing [regis]: success
+[2023-04-15 15:30:47] INFO root fetch - main [MainThread]: End processing [sharewifi]: success
+[2023-04-15 15:30:47] INFO root fetch - main [MainThread]: End processing [pylatexenc]: success
+[2023-04-15 15:30:47] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2023-04-15 15:30:47] INFO root fetch - main [MainThread]: Store serial: [17719178]
