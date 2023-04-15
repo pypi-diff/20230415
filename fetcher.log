@@ -4361,3 +4361,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 04:21:20] INFO root fetch - main [MainThread]: End processing [webint]: success
 [2023-04-15 04:21:24] INFO root fetch - main [MainThread]: End processing [openram]: success
 [2023-04-15 04:21:24] INFO root fetch - main [MainThread]: Store serial: [17715894]
+[2023-04-15 04:26:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715894]
+[2023-04-15 04:26:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 04:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: json-codec
+[2023-04-15 04:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyote
+[2023-04-15 04:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iam-actions
+[2023-04-15 04:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PySDM-examples
+[2023-04-15 04:26:30] INFO root fetch - processPackages [json-codec]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-15 04:26:30] INFO root fetch - processPackages [PySDM-examples]: New version: [2.9] Old Version: [2.8]
+[2023-04-15 04:26:30] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230415] Old Version: [1.2.20230414]
+[2023-04-15 04:26:30] INFO root fetch - processPackages [pyote]: New version: [5.2.2] Old Version: [5.2.1]
+[2023-04-15 04:26:30] INFO root fetch - processPackages [json-codec]: Downloading https://files.pythonhosted.org/packages/5f/9d/684c6454707058bac92d6c59a8f6a83e4c0b4a2c72414e9f282aa41d3fb6/json_codec-0.1.4.tar.gz
+[2023-04-15 04:26:30] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/30/2c/6a882a2d75efee1ab6348c28e267976b9bac5a635f3f76d623d53a006f88/iam_actions-1.2.20230415.tar.gz
+[2023-04-15 04:26:30] INFO root fetch - processPackages [pyote]: Downloading https://files.pythonhosted.org/packages/9a/76/72836ab6aa2626bc8427ac0fb05c4c137a9d6b5043d6249df8c25721450c/pyote-5.2.1.tar.gz
+[2023-04-15 04:26:31] INFO root fetch - processPackages [PySDM-examples]: executing diffoscope
+[2023-04-15 04:26:31] INFO root fetch - processPackages [PySDM-examples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySDM-examples-2.8.tar.gz tmp/PySDM-examples-2.9.tar.gz --markdown 20230415/P/PySDM-examples/2.8-2.9/diff.md --exclude *.pyd
+[2023-04-15 04:26:31] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-04-15 04:26:31] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230414.tar.gz tmp/iam_actions-1.2.20230415.tar.gz --markdown 20230415/i/iam-actions/1.2.20230414-1.2.20230415/diff.md --exclude *.pyd
+[2023-04-15 04:26:31] INFO root fetch - processPackages [json-codec]: Downloading https://files.pythonhosted.org/packages/ca/7c/03135dd407dde7fbad8e95b409ac19486e6c8be10c8a40b4781158633341/json_codec-0.1.5.tar.gz
+[2023-04-15 04:26:31] INFO root fetch - processPackages [pyote]: Downloading https://files.pythonhosted.org/packages/a5/e7/bf395d27937cbe530951d59b02a661f0934dd097848e540daa55f0a1d6a9/pyote-5.2.2.tar.gz
+[2023-04-15 04:26:31] INFO root fetch - processPackages [json-codec]: executing diffoscope
+[2023-04-15 04:26:31] INFO root fetch - processPackages [json-codec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_codec-0.1.4.tar.gz tmp/json_codec-0.1.5.tar.gz --markdown 20230415/j/json-codec/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-15 04:26:31] INFO root fetch - processPackages [pyote]: executing diffoscope
+[2023-04-15 04:26:31] INFO root fetch - processPackages [pyote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyote-5.2.1.tar.gz tmp/pyote-5.2.2.tar.gz --markdown 20230415/p/pyote/5.2.1-5.2.2/diff.md --exclude *.pyd
+[2023-04-15 04:26:32] INFO root fetch - main [MainThread]: End processing [json-codec]: success
+[2023-04-15 04:26:33] INFO root fetch - main [MainThread]: End processing [PySDM-examples]: success
+[2023-04-15 04:26:33] INFO root fetch - main [MainThread]: End processing [pyote]: success
+[2023-04-15 04:26:36] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-04-15 04:26:36] INFO root fetch - main [MainThread]: Store serial: [17715907]
