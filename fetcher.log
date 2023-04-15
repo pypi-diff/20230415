@@ -18092,3 +18092,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 19:16:22] INFO root fetch - main [MainThread]: End processing [PHX]: success
 [2023-04-15 19:16:22] INFO root fetch - main [MainThread]: End processing [flgo]: success
 [2023-04-15 19:16:22] INFO root fetch - main [MainThread]: Store serial: [17720465]
+[2023-04-15 19:21:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720465]
+[2023-04-15 19:21:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 19:21:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-04-15 19:21:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bk-clustering
+[2023-04-15 19:21:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mixalime
+[2023-04-15 19:21:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otree
+[2023-04-15 19:21:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vollseg
+[2023-04-15 19:21:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: subaligner
+[2023-04-15 19:21:32] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-15 19:21:32] INFO root fetch - processPackages [otree]: New version: [6.0.0a5] Old Version: [6.0.0a4]
+[2023-04-15 19:21:32] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-15 19:21:32] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-15 19:21:32] INFO root fetch - processPackages [bk-clustering]: New version: [0.2] Old Version: [0.1.1]
+[2023-04-15 19:21:32] INFO root fetch - processPackages [mixalime]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-04-15 19:21:32] INFO root fetch - processPackages [subaligner]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-15 19:21:32] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-15 19:21:32] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-15 19:21:32] INFO root fetch - processPackages [otree]: executing diffoscope
+[2023-04-15 19:21:32] INFO root fetch - processPackages [otree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otree-6.0.0a4.tar.gz tmp/otree-6.0.0a5.tar.gz --markdown 20230415/o/otree/6.0.0a4-6.0.0a5/diff.md --exclude *.pyd
+[2023-04-15 19:21:32] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-15 19:21:32] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230415/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-15 19:21:33] INFO root fetch - processPackages [bk-clustering]: Downloading https://files.pythonhosted.org/packages/79/fe/368418b98546fadefc108ff2052e624a4ab5346aaebc23eae724c7c9863f/bk_clustering-0.1.1.tar.gz
+[2023-04-15 19:21:33] INFO root fetch - processPackages [mixalime]: Downloading https://files.pythonhosted.org/packages/8e/2f/d240b2f6803bf60aeb17f7f054aa7d50ae9fed0d01f2c78df860d2d41795/mixalime-2.9.8.tar.gz
+[2023-04-15 19:21:33] INFO root fetch - processPackages [subaligner]: Downloading https://files.pythonhosted.org/packages/c4/24/63869e79215116161f91cb1f756f8bf39e40a7bd135b08eda6c165bfe51c/subaligner-0.3.0.tar.gz
+[2023-04-15 19:21:33] INFO root fetch - processPackages [bk-clustering]: Downloading https://files.pythonhosted.org/packages/0c/35/6c48c3f2bba099efc8ad735dfe154b272022e3257ce55200194c31507e9a/bk_clustering-0.2.tar.gz
+[2023-04-15 19:21:33] INFO root fetch - processPackages [subaligner]: Downloading https://files.pythonhosted.org/packages/9e/d6/186ad2893cae664cdec61e6789fadbecfa5d1b84700d74b30ce2de7a5a66/subaligner-0.3.1.tar.gz
+[2023-04-15 19:21:33] INFO root fetch - processPackages [bk-clustering]: executing diffoscope
+[2023-04-15 19:21:33] INFO root fetch - processPackages [bk-clustering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bk_clustering-0.1.1.tar.gz tmp/bk_clustering-0.2.tar.gz --markdown 20230415/b/bk-clustering/0.1.1-0.2/diff.md --exclude *.pyd
+[2023-04-15 19:21:33] INFO root fetch - processPackages [mixalime]: Downloading https://files.pythonhosted.org/packages/15/d5/57edb971c7da6a1fae4e07e7bb1439621759adf902da9fc6527602363bd9/mixalime-2.9.9.tar.gz
+[2023-04-15 19:21:33] INFO root fetch - processPackages [subaligner]: executing diffoscope
+[2023-04-15 19:21:33] INFO root fetch - processPackages [subaligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subaligner-0.3.0.tar.gz tmp/subaligner-0.3.1.tar.gz --markdown 20230415/s/subaligner/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-15 19:21:34] INFO root fetch - processPackages [mixalime]: executing diffoscope
+[2023-04-15 19:21:34] INFO root fetch - processPackages [mixalime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixalime-2.9.8.tar.gz tmp/mixalime-2.9.9.tar.gz --markdown 20230415/m/mixalime/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-04-15 19:21:34] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-15 19:21:34] INFO root fetch - main [MainThread]: End processing [bk-clustering]: success
+[2023-04-15 19:21:35] INFO root fetch - main [MainThread]: End processing [otree]: success
+[2023-04-15 19:21:35] INFO root fetch - main [MainThread]: End processing [mixalime]: success
+[2023-04-15 19:21:36] INFO root fetch - main [MainThread]: End processing [subaligner]: success
+[2023-04-15 19:21:36] INFO root fetch - main [MainThread]: Store serial: [17720488]
