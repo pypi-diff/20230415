@@ -4237,3 +4237,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 04:08:44] INFO root fetch - main [MainThread]: End processing [pyroscopegridding]: success
 [2023-04-15 04:08:44] INFO root fetch - main [MainThread]: End processing [opencmiss.importer]: success
 [2023-04-15 04:08:44] INFO root fetch - main [MainThread]: Store serial: [17715816]
+[2023-04-15 04:13:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715816]
+[2023-04-15 04:13:51] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 04:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: butter-cli
+[2023-04-15 04:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: universalmutator
+[2023-04-15 04:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymemuc
+[2023-04-15 04:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cardano-nft-vending-machine
+[2023-04-15 04:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: optibot
+[2023-04-15 04:13:51] INFO root fetch - processPackages [butter-cli]: New version: [1.11] Old Version: [1.1]
+[2023-04-15 04:13:51] INFO root fetch - processPackages [optibot]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 04:13:51] INFO root fetch - processPackages [cardano-nft-vending-machine]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-15 04:13:51] INFO root fetch - processPackages [pymemuc]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-15 04:13:51] INFO root fetch - processPackages [universalmutator]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-04-15 04:13:51] INFO root fetch - processPackages [optibot]: Downloading https://files.pythonhosted.org/packages/5c/83/348a3d04cb718a69d3c0af62564cbfd600436ae9648cf89d91f3a3179cd2/optibot-0.0.1.tar.gz
+[2023-04-15 04:13:51] INFO root fetch - processPackages [butter-cli]: Downloading https://files.pythonhosted.org/packages/44/94/b9bfcd69b2be54c326f275f92dc5ea7a428c0415fa8612de6ff73a6ca739/butter-cli-1.11.tar.gz
+[2023-04-15 04:13:51] INFO root fetch - processPackages [universalmutator]: Downloading https://files.pythonhosted.org/packages/6e/0f/bfbde52c91bbecea08ac7148c888e73acea5e8c5462e697d616cc160fea7/universalmutator-1.1.6-py3-none-any.whl
+[2023-04-15 04:13:51] INFO root fetch - processPackages [cardano-nft-vending-machine]: Downloading https://files.pythonhosted.org/packages/75/95/30617c82247a0164b121e21e13e3e1610eadf4337978002736edc79f2d90/cardano-nft-vending-machine-0.6.2.tar.gz
+[2023-04-15 04:13:51] INFO root fetch - processPackages [butter-cli]: executing diffoscope
+[2023-04-15 04:13:51] INFO root fetch - processPackages [butter-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/butter-cli-1.1.tar.gz tmp/butter-cli-1.11.tar.gz --markdown 20230415/b/butter-cli/1.1-1.11/diff.md --exclude *.pyd
+[2023-04-15 04:13:51] INFO root fetch - processPackages [optibot]: Downloading https://files.pythonhosted.org/packages/a3/9f/caaf5e6bd0e9cab2778cbb41d1f390aa30b16ac75c08fc01bf1cdd022ab7/optibot-0.0.2.tar.gz
+[2023-04-15 04:13:51] INFO root fetch - processPackages [cardano-nft-vending-machine]: Downloading https://files.pythonhosted.org/packages/a9/88/bcf9abf81534af2fb82d0ecaa4279a20ca464b1d1abff00e808f3ede11f9/cardano-nft-vending-machine-0.6.3.tar.gz
+[2023-04-15 04:13:51] INFO root fetch - processPackages [pymemuc]: Downloading https://files.pythonhosted.org/packages/a5/00/4d2953d5d6b25db1ea3430b42af6ee6a4f0e65930684dfe3bc6f403f055f/pymemuc-0.2.5.tar.gz
+[2023-04-15 04:13:51] INFO root fetch - processPackages [universalmutator]: Downloading https://files.pythonhosted.org/packages/9b/f7/d703f1c3b7d49d3e400f1bbaa2a54272f54b4999d93eb6debc753ac6582d/universalmutator-1.1.7-py3-none-any.whl
+[2023-04-15 04:13:51] INFO root fetch - processPackages [optibot]: executing diffoscope
+[2023-04-15 04:13:51] INFO root fetch - processPackages [optibot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optibot-0.0.1.tar.gz tmp/optibot-0.0.2.tar.gz --markdown 20230415/o/optibot/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 04:13:51] INFO root fetch - processPackages [cardano-nft-vending-machine]: executing diffoscope
+[2023-04-15 04:13:51] INFO root fetch - processPackages [cardano-nft-vending-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardano-nft-vending-machine-0.6.2.tar.gz tmp/cardano-nft-vending-machine-0.6.3.tar.gz --markdown 20230415/c/cardano-nft-vending-machine/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-15 04:13:51] INFO root fetch - processPackages [pymemuc]: executing diffoscope
+[2023-04-15 04:13:51] INFO root fetch - processPackages [pymemuc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemuc-0.2.4.tar.gz tmp/pymemuc-0.2.5.tar.gz --markdown 20230415/p/pymemuc/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-15 04:13:52] INFO root fetch - processPackages [universalmutator]: executing diffoscope
+[2023-04-15 04:13:52] INFO root fetch - processPackages [universalmutator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/universalmutator-1.1.6-py3-none-any.whl.zip tmp/universalmutator-1.1.7-py3-none-any.whl.zip --markdown 20230415/u/universalmutator/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-04-15 04:13:52] INFO root fetch - processPackages [butter-cli]: Start processing: pyhOn
+[2023-04-15 04:13:52] INFO root fetch - main [MainThread]: End processing [butter-cli]: success
+[2023-04-15 04:13:52] INFO root fetch - processPackages [pyhOn]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-04-15 04:13:52] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-04-15 04:13:52] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.7.3.tar.gz tmp/pyhOn-0.7.4.tar.gz --markdown 20230415/p/pyhOn/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-04-15 04:13:53] INFO root fetch - processPackages [pymemuc]: Start processing: cmlibs.importer
+[2023-04-15 04:13:53] INFO root fetch - main [MainThread]: End processing [pymemuc]: success
+[2023-04-15 04:13:53] INFO root fetch - processPackages [optibot]: Start processing: viser
+[2023-04-15 04:13:53] INFO root fetch - main [MainThread]: End processing [optibot]: success
+[2023-04-15 04:13:53] WARNING root fetch - processPackages [cmlibs.importer]: Skipping, unable to determine old version
+[2023-04-15 04:13:53] INFO root fetch - processPackages [cmlibs.importer]: Start processing: webint
+[2023-04-15 04:13:53] INFO root fetch - main [MainThread]: End processing [cmlibs.importer] error
+[2023-04-15 04:13:53] INFO root fetch - main [MainThread]: End processing [cardano-nft-vending-machine]: success
+[2023-04-15 04:13:53] INFO root fetch - processPackages [viser]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-15 04:13:53] INFO root fetch - processPackages [webint]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 04:13:53] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/ac/05/3ccc8dfa596182f6c44657f18d08998f1aa72d152b052261bc2efd69242e/viser-0.0.5.tar.gz
+[2023-04-15 04:13:53] INFO root fetch - main [MainThread]: End processing [universalmutator]: success
+[2023-04-15 04:13:53] INFO root fetch - processPackages [webint]: Downloading https://files.pythonhosted.org/packages/42/4b/ccc995b423281681af4329fc9b74ebca49b5bf43a516d576459c419b486b/webint-0.1.8.tar.gz
+[2023-04-15 04:13:53] INFO root fetch - processPackages [viser]: executing diffoscope
+[2023-04-15 04:13:53] INFO root fetch - processPackages [viser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viser-0.0.4.tar.gz tmp/viser-0.0.5.tar.gz --markdown 20230415/v/viser/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 04:13:53] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-04-15 04:13:55] INFO root fetch - processPackages [webint]: Downloading https://files.pythonhosted.org/packages/f4/be/5553cc674f3905c35a02f9069bad2384cbae83ac40e14f3949e72c082fa7/webint-0.1.9.tar.gz
+[2023-04-15 04:13:58] INFO root fetch - processPackages [webint]: executing diffoscope
+[2023-04-15 04:13:58] INFO root fetch - processPackages [webint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint-0.1.8.tar.gz tmp/webint-0.1.9.tar.gz --markdown 20230415/w/webint/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 04:14:04] INFO root fetch - main [MainThread]: End processing [webint]: success
+[2023-04-15 04:16:07] INFO root fetch - main [MainThread]: End processing [viser]: success
+[2023-04-15 04:16:07] INFO root fetch - main [MainThread]: Store serial: [17715847]
