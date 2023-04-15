@@ -14825,3 +14825,102 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 13:20:00] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
 [2023-04-15 13:20:00] INFO root fetch - main [MainThread]: End processing [sharingiscaring]: success
 [2023-04-15 13:20:00] INFO root fetch - main [MainThread]: Store serial: [17718406]
+[2023-04-15 13:25:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718406]
+[2023-04-15 13:25:10] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tplink-omada-client
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: decimify
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: planetai
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: insidecouchbase
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchserve-nightly
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torch-model-archiver-nightly
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torch-workflow-archiver-nightly
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ipsocgen
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: torchrec-nightly
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hfmirror
+[2023-04-15 13:25:10] INFO root fetch - processPackages [decimify]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-15 13:25:10] INFO root fetch - processPackages [insidecouchbase]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 13:25:10] INFO root fetch - processPackages [planetai]: New version: [1.1] Old Version: [0.1]
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ipsocgen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 13:25:10] INFO root fetch - processPackages [tplink-omada-client]: New version: [1.2.1] Old Version: [1.1.5]
+[2023-04-15 13:25:10] INFO root fetch - processPackages [hfmirror]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 13:25:10] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-15 13:25:10] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.4.9] Old Version: [2023.4.7]
+[2023-04-15 13:25:10] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-15 13:25:10] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-15 13:25:10] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/00/82/319f3c998c1b886c648e7560fce0ad6d68fa06b6b8807405ce7adbe77519/torchserve_nightly-2023.4.8-py3-none-any.whl
+[2023-04-15 13:25:10] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/63/1a/7f813ad2ab78bf669432a2c2be094f99ccb691dbcf2cf9eccf6bac7d1831/torch_model_archiver_nightly-2023.4.8-py3-none-any.whl
+[2023-04-15 13:25:10] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/8e/0d/89b559816b3c3923e175e6a2e1d694ea0d85771fd8dcf4338063a8f98f35/torch_workflow_archiver_nightly-2023.4.8-py3-none-any.whl
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ipsocgen]: executing diffoscope
+[2023-04-15 13:25:10] INFO root fetch - processPackages [ipsocgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipsocgen-0.1.8.tar.gz tmp/ipsocgen-0.1.9.tar.gz --markdown 20230415/i/ipsocgen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 13:25:10] INFO root fetch - processPackages [planetai]: Downloading https://files.pythonhosted.org/packages/c7/56/57d5f27607cdcb2e1a23bb671ac701f4088d0e8bdf2a72f463ed3fdaceb3/planetai-0.1.tar.gz
+[2023-04-15 13:25:10] INFO root fetch - processPackages [decimify]: Downloading https://files.pythonhosted.org/packages/59/58/dcd7afabe3b001f68170700c8757fea7ec0532d5af50e58a8911aa15010d/decimify-0.1.3.tar.gz
+[2023-04-15 13:25:10] INFO root fetch - processPackages [torchrec-nightly]: Downloading https://files.pythonhosted.org/packages/d2/70/a665f40750f8d312a1e519feaa9e38de37072db6c5a1702fdf7869bfcc44/torchrec_nightly-2023.4.7-py39-none-any.whl
+[2023-04-15 13:25:10] INFO root fetch - processPackages [tplink-omada-client]: Downloading https://files.pythonhosted.org/packages/58/43/c2f47e33451a51b48ce13c64a72eb796e7abbd8df668648ec535f7272759/tplink_omada_client-1.1.5.tar.gz
+[2023-04-15 13:25:10] INFO root fetch - processPackages [insidecouchbase]: Downloading https://files.pythonhosted.org/packages/6d/c2/fb535e18b305d56b39c836d7e84d389e79655ed068067a514e0ced433ec3/insidecouchbase-0.0.4.tar.gz
+[2023-04-15 13:25:10] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23695640>=10485760
+[2023-04-15 13:25:10] INFO root fetch - processPackages [torchserve-nightly]: Start processing: mongopersistence
+[2023-04-15 13:25:10] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-04-15 13:25:10] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/31/ec/8e2002b0e0f36364cc789c1f1eb834780896c14483e783a1f1cf1976a622/torch_workflow_archiver_nightly-2023.4.9-py3-none-any.whl
+[2023-04-15 13:25:10] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/f8/b8/ac391a2effa477df2297126139bd7a6f6f21611cc67116154349174a6a71/torch_model_archiver_nightly-2023.4.9-py3-none-any.whl
+[2023-04-15 13:25:11] INFO root fetch - processPackages [hfmirror]: Downloading https://files.pythonhosted.org/packages/32/59/cb06bea0574b2cc966bf9b5c860d9153220daa1bb52122fd54514d27fb90/hfmirror-0.0.3.tar.gz
+[2023-04-15 13:25:11] INFO root fetch - processPackages [mongopersistence]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-15 13:25:11] INFO root fetch - processPackages [decimify]: executing diffoscope
+[2023-04-15 13:25:11] INFO root fetch - processPackages [decimify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decimify-0.1.2.tar.gz tmp/decimify-0.1.3.tar.gz --markdown 20230415/d/decimify/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-15 13:25:11] INFO root fetch - processPackages [planetai]: Downloading https://files.pythonhosted.org/packages/84/a1/33c3040e354cc53c48f7bf20d615ae7317162bb906edd9f2b71f962eeaa4/planetai-1.1.tar.gz
+[2023-04-15 13:25:11] INFO root fetch - processPackages [mongopersistence]: Downloading https://files.pythonhosted.org/packages/f2/01/820e9401bc9636dc81838d77ff859c715bc170ace041d10f072dd90dec6d/mongopersistence-0.2.0.tar.gz
+[2023-04-15 13:25:11] INFO root fetch - processPackages [insidecouchbase]: executing diffoscope
+[2023-04-15 13:25:11] INFO root fetch - processPackages [insidecouchbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/insidecouchbase-0.0.3.tar.gz tmp/insidecouchbase-0.0.4.tar.gz --markdown 20230415/i/insidecouchbase/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 13:25:11] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-04-15 13:25:11] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.4.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230415/t/torch-workflow-archiver-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-15 13:25:11] INFO root fetch - processPackages [hfmirror]: executing diffoscope
+[2023-04-15 13:25:11] INFO root fetch - processPackages [hfmirror]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hfmirror-0.0.2.tar.gz tmp/hfmirror-0.0.3.tar.gz --markdown 20230415/h/hfmirror/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 13:25:11] INFO root fetch - processPackages [planetai]: executing diffoscope
+[2023-04-15 13:25:11] INFO root fetch - processPackages [planetai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/planetai-0.1.tar.gz tmp/planetai-1.1.tar.gz --markdown 20230415/p/planetai/0.1-1.1/diff.md --exclude *.pyd
+[2023-04-15 13:25:11] INFO root fetch - processPackages [torchrec-nightly]: Downloading https://files.pythonhosted.org/packages/72/b9/0b521c1a1a6fd45f1f49ab8405816497f31b06233ded2dfc7aff870ed898/torchrec_nightly-2023.4.9-py39-none-any.whl
+[2023-04-15 13:25:11] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-04-15 13:25:11] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.4.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230415/t/torch-model-archiver-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-15 13:25:11] INFO root fetch - processPackages [tplink-omada-client]: Downloading https://files.pythonhosted.org/packages/63/cc/3c13029401a710bc660eb9b45ffcd873bf0b47a9d74952063ad5fd8f7e48/tplink_omada_client-1.2.1.tar.gz
+[2023-04-15 13:25:11] INFO root fetch - processPackages [tplink-omada-client]: executing diffoscope
+[2023-04-15 13:25:11] INFO root fetch - processPackages [tplink-omada-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tplink_omada_client-1.1.5.tar.gz tmp/tplink_omada_client-1.2.1.tar.gz --markdown 20230415/t/tplink-omada-client/1.1.5-1.2.1/diff.md --exclude *.pyd
+[2023-04-15 13:25:11] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-04-15 13:25:11] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.4.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.4.9-py39-none-any.whl.zip --markdown 20230415/t/torchrec-nightly/2023.4.7-2023.4.9/diff.md --exclude *.pyd
+[2023-04-15 13:25:11] INFO root fetch - processPackages [mongopersistence]: Downloading https://files.pythonhosted.org/packages/ce/b8/4a57fd32152bdeafe5afa8b36f64a98b737f4dcb68a2d86aa2295fadfd84/mongopersistence-0.3.0.tar.gz
+[2023-04-15 13:25:11] INFO root fetch - processPackages [mongopersistence]: executing diffoscope
+[2023-04-15 13:25:11] INFO root fetch - processPackages [mongopersistence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongopersistence-0.2.0.tar.gz tmp/mongopersistence-0.3.0.tar.gz --markdown 20230415/m/mongopersistence/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 13:25:12] INFO root fetch - processPackages [decimify]: Start processing: vollseg-napari-trackmate
+[2023-04-15 13:25:12] INFO root fetch - main [MainThread]: End processing [decimify]: success
+[2023-04-15 13:25:12] INFO root fetch - processPackages [vollseg-napari-trackmate]: New version: [2.1.0] Old Version: [2.0.7]
+[2023-04-15 13:25:12] INFO root fetch - processPackages [vollseg-napari-trackmate]: Downloading https://files.pythonhosted.org/packages/ed/db/40d40b1e1e21c55b08cfe4f9329e61973aa2f8d714ecaedf26c36303fd29/vollseg-napari-trackmate-2.0.7.tar.gz
+[2023-04-15 13:25:12] INFO root fetch - processPackages [planetai]: Start processing: django-comment-system
+[2023-04-15 13:25:12] INFO root fetch - main [MainThread]: End processing [planetai]: success
+[2023-04-15 13:25:12] INFO root fetch - processPackages [django-comment-system]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-04-15 13:25:12] INFO root fetch - processPackages [hfmirror]: Start processing: pydevd
+[2023-04-15 13:25:12] INFO root fetch - main [MainThread]: End processing [hfmirror]: success
+[2023-04-15 13:25:12] INFO root fetch - processPackages [pydevd]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-15 13:25:12] INFO root fetch - processPackages [django-comment-system]: executing diffoscope
+[2023-04-15 13:25:12] INFO root fetch - processPackages [django-comment-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-comment-system-2.9.0.tar.gz tmp/django-comment-system-2.9.1.tar.gz --markdown 20230415/d/django-comment-system/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-04-15 13:25:12] INFO root fetch - processPackages [ipsocgen]: Start processing: aliyun-python-sdk-vpc
+[2023-04-15 13:25:12] INFO root fetch - main [MainThread]: End processing [ipsocgen]: success
+[2023-04-15 13:25:12] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-04-15 13:25:12] INFO root fetch - processPackages [vollseg-napari-trackmate]: Downloading https://files.pythonhosted.org/packages/7b/fe/1e543b1c3d81d8663e4fb1fa93a44a130ccc1800b0946c030e9c72d02dad/vollseg-napari-trackmate-2.1.0.tar.gz
+[2023-04-15 13:25:12] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-04-15 13:25:12] INFO root fetch - processPackages [aliyun-python-sdk-vpc]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-15 13:25:12] INFO root fetch - processPackages [pydevd]: Downloading https://files.pythonhosted.org/packages/18/34/06ac3b3afb713170a8694cc04eb9679ff7ad421920a966d5c66e8af8145d/pydevd-2.9.5.tar.gz
+[2023-04-15 13:25:13] INFO root fetch - main [MainThread]: End processing [mongopersistence]: success
+[2023-04-15 13:25:13] INFO root fetch - processPackages [vollseg-napari-trackmate]: executing diffoscope
+[2023-04-15 13:25:13] INFO root fetch - processPackages [vollseg-napari-trackmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vollseg-napari-trackmate-2.0.7.tar.gz tmp/vollseg-napari-trackmate-2.1.0.tar.gz --markdown 20230415/v/vollseg-napari-trackmate/2.0.7-2.1.0/diff.md --exclude *.pyd
+[2023-04-15 13:25:13] INFO root fetch - main [MainThread]: End processing [insidecouchbase]: success
+[2023-04-15 13:25:13] INFO root fetch - main [MainThread]: End processing [tplink-omada-client]: success
+[2023-04-15 13:25:13] INFO root fetch - processPackages [aliyun-python-sdk-vpc]: Downloading https://files.pythonhosted.org/packages/f6/94/988ac3b39fee6b1e0a780e523d5c4f784b1fd2770073712afad4d74ac430/aliyun-python-sdk-vpc-3.0.8.tar.gz
+[2023-04-15 13:25:13] INFO root fetch - processPackages [pydevd]: Downloading https://files.pythonhosted.org/packages/2c/3e/d77e59b4aa520977c06a0d2d777f5f2e280e3568fa8a19af0e7e15c279f1/pydevd-2.9.6-cp37-cp37m-macosx_10_15_x86_64.whl
+[2023-04-15 13:25:13] INFO root fetch - processPackages [aliyun-python-sdk-vpc]: Downloading https://files.pythonhosted.org/packages/5a/26/542e862c62b4bb1182c40068b24ce776e3def5d1bfc73b3bbf7b9fe8d648/aliyun-python-sdk-vpc-3.0.9.tar.gz
+[2023-04-15 13:25:13] INFO root fetch - processPackages [aliyun-python-sdk-vpc]: executing diffoscope
+[2023-04-15 13:25:13] INFO root fetch - processPackages [aliyun-python-sdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-vpc-3.0.8.tar.gz tmp/aliyun-python-sdk-vpc-3.0.9.tar.gz --markdown 20230415/a/aliyun-python-sdk-vpc/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-15 13:25:13] INFO root fetch - processPackages [pydevd]: executing diffoscope
+[2023-04-15 13:25:13] INFO root fetch - processPackages [pydevd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydevd-2.9.5.tar.gz tmp/pydevd-2.9.6-cp37-cp37m-macosx_10_15_x86_64.whl.zip --markdown 20230415/p/pydevd/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-15 13:25:14] INFO root fetch - main [MainThread]: End processing [vollseg-napari-trackmate]: success
+[2023-04-15 13:25:15] INFO root fetch - main [MainThread]: End processing [pydevd]: success
+[2023-04-15 13:25:17] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-vpc]: success
+[2023-04-15 13:25:18] INFO root fetch - main [MainThread]: End processing [django-comment-system]: success
+[2023-04-15 13:25:19] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-04-15 13:25:19] INFO root fetch - main [MainThread]: Store serial: [17718459]
