@@ -16056,3 +16056,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 15:20:25] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-04-15 15:20:26] INFO root fetch - main [MainThread]: End processing [fastestimator-nightly]: success
 [2023-04-15 15:20:26] INFO root fetch - main [MainThread]: Store serial: [17719159]
+[2023-04-15 15:25:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719159]
+[2023-04-15 15:25:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-15 15:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jcmutils
+[2023-04-15 15:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: digitalarztools
+[2023-04-15 15:25:35] INFO root fetch - processPackages [digitalarztools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 15:25:35] INFO root fetch - processPackages [jcmutils]: New version: [1.2.0] Old Version: [1.1.9]
+[2023-04-15 15:25:35] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2023-04-15 15:25:35] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.0.8.tar.gz tmp/digitalarztools-0.0.9.tar.gz --markdown 20230415/d/digitalarztools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 15:25:35] INFO root fetch - processPackages [jcmutils]: Downloading https://files.pythonhosted.org/packages/f9/f6/11f6b88d9c749cca99c7dc6214a7adc64ff4de1ca53529bf4cc918cd61f7/jcmutils-1.1.9.tar.gz
+[2023-04-15 15:25:35] INFO root fetch - processPackages [jcmutils]: Downloading https://files.pythonhosted.org/packages/05/88/aacbbd428b60e22310b9465e9ead094875b8386d9dc513188c328c0d98c2/jcmutils-1.2.0.tar.gz
+[2023-04-15 15:25:36] INFO root fetch - processPackages [jcmutils]: executing diffoscope
+[2023-04-15 15:25:36] INFO root fetch - processPackages [jcmutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jcmutils-1.1.9.tar.gz tmp/jcmutils-1.2.0.tar.gz --markdown 20230415/j/jcmutils/1.1.9-1.2.0/diff.md --exclude *.pyd
+[2023-04-15 15:25:36] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2023-04-15 15:25:37] INFO root fetch - main [MainThread]: End processing [jcmutils]: success
+[2023-04-15 15:25:37] INFO root fetch - main [MainThread]: Store serial: [17719164]
