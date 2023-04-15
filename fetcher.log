@@ -6961,3 +6961,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 09:54:20] INFO root fetch - main [MainThread]: End processing [plone.caching]: success
 [2023-04-15 09:54:21] INFO root fetch - main [MainThread]: End processing [plone.app.intid]: success
 [2023-04-15 09:54:21] INFO root fetch - main [MainThread]: Store serial: [17717331]
+[2023-04-15 09:59:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717331]
+[2023-04-15 09:59:29] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 09:59:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oarepo
+[2023-04-15 09:59:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: backend-sqlalchemy
+[2023-04-15 09:59:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mespaint
+[2023-04-15 09:59:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plone.app.redirector
+[2023-04-15 09:59:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pipen-report
+[2023-04-15 09:59:29] INFO root fetch - processPackages [backend-sqlalchemy]: New version: [0.1.5.dev1681545553] Old Version: [0.1.4.dev1681023002]
+[2023-04-15 09:59:29] INFO root fetch - processPackages [plone.app.redirector]: New version: [3.0.1] Old Version: [3.0.0a1]
+[2023-04-15 09:59:29] WARNING root fetch - processPackages [mespaint]: Skipping, unable to determine old version
+[2023-04-15 09:59:29] INFO root fetch - processPackages [mespaint]: Start processing: satdigitalinvoice
+[2023-04-15 09:59:29] INFO root fetch - main [MainThread]: End processing [mespaint] error
+[2023-04-15 09:59:29] INFO root fetch - processPackages [pipen-report]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-15 09:59:29] INFO root fetch - processPackages [oarepo]: New version: [9.0.9] Old Version: [9.0.8]
+[2023-04-15 09:59:29] INFO root fetch - processPackages [satdigitalinvoice]: New version: [3.0.0] Old Version: [2.2.0]
+[2023-04-15 09:59:29] INFO root fetch - processPackages [oarepo]: executing diffoscope
+[2023-04-15 09:59:29] INFO root fetch - processPackages [oarepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-9.0.8.tar.gz tmp/oarepo-9.0.9.tar.gz --markdown 20230415/o/oarepo/9.0.8-9.0.9/diff.md --exclude *.pyd
+[2023-04-15 09:59:29] INFO root fetch - processPackages [pipen-report]: Downloading https://files.pythonhosted.org/packages/f9/ce/1478680d76ea4b3e79258f5024b603b8fc36ed02144fbd0682120be69689/pipen_report-0.8.0.tar.gz
+[2023-04-15 09:59:29] INFO root fetch - processPackages [plone.app.redirector]: Downloading https://files.pythonhosted.org/packages/d4/b9/5735e3a1e41cf044cd80c629313c51e36307f247019ac2c1106597958379/plone.app.redirector-3.0.0a1.tar.gz
+[2023-04-15 09:59:29] INFO root fetch - processPackages [pipen-report]: Downloading https://files.pythonhosted.org/packages/bd/42/f6e3acca8f25830d56abb0eb2e88b3f896a8c3bf694365bb5ca73fd739d1/pipen_report-0.9.0.tar.gz
+[2023-04-15 09:59:29] INFO root fetch - processPackages [backend-sqlalchemy]: Downloading https://files.pythonhosted.org/packages/d4/2e/47ff486cc03f275984b95341ea9533b38fb1a19eb3119229ed0be5a5eafb/backend_sqlalchemy-0.1.5.dev1681545553.tar.gz
+[2023-04-15 09:59:29] INFO root fetch - processPackages [satdigitalinvoice]: Downloading https://files.pythonhosted.org/packages/da/e1/2dd66448fe246822aeff81bb495dca4fe5cc9547ff7929e8d04c3af5571c/satdigitalinvoice-3.0.0.tar.gz
+[2023-04-15 09:59:29] INFO root fetch - processPackages [pipen-report]: executing diffoscope
+[2023-04-15 09:59:29] INFO root fetch - processPackages [pipen-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_report-0.8.0.tar.gz tmp/pipen_report-0.9.0.tar.gz --markdown 20230415/p/pipen-report/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 09:59:29] INFO root fetch - processPackages [satdigitalinvoice]: executing diffoscope
+[2023-04-15 09:59:29] INFO root fetch - processPackages [satdigitalinvoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satdigitalinvoice-2.2.0.tar.gz tmp/satdigitalinvoice-3.0.0.tar.gz --markdown 20230415/s/satdigitalinvoice/2.2.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-15 09:59:29] INFO root fetch - processPackages [backend-sqlalchemy]: executing diffoscope
+[2023-04-15 09:59:29] INFO root fetch - processPackages [backend-sqlalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend_sqlalchemy-0.1.4.dev1681023002.tar.gz tmp/backend_sqlalchemy-0.1.5.dev1681545553.tar.gz --markdown 20230415/b/backend-sqlalchemy/0.1.4.dev1681023002-0.1.5.dev1681545553/diff.md --exclude *.pyd
+[2023-04-15 09:59:29] INFO root fetch - processPackages [plone.app.redirector]: Downloading https://files.pythonhosted.org/packages/b8/ae/cb911200e31f994e9a472b984bf1fb14f7747cf6c298ffa7dd7b9d594c17/plone.app.redirector-3.0.1.tar.gz
+[2023-04-15 09:59:29] INFO root fetch - processPackages [plone.app.redirector]: executing diffoscope
+[2023-04-15 09:59:29] INFO root fetch - processPackages [plone.app.redirector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.redirector-3.0.0a1.tar.gz tmp/plone.app.redirector-3.0.1.tar.gz --markdown 20230415/p/plone.app.redirector/3.0.0a1-3.0.1/diff.md --exclude *.pyd
+[2023-04-15 09:59:30] INFO root fetch - processPackages [oarepo]: Start processing: admin-form-image-preivew
+[2023-04-15 09:59:30] INFO root fetch - main [MainThread]: End processing [oarepo]: success
+[2023-04-15 09:59:30] INFO root fetch - processPackages [admin-form-image-preivew]: New version: [1.5] Old Version: [1.4]
+[2023-04-15 09:59:30] INFO root fetch - processPackages [admin-form-image-preivew]: Downloading https://files.pythonhosted.org/packages/d8/68/be048db9fa536369b3f85da9a9488eb6c67e02f0f1e5dfb82192dae7dca9/admin-form-image-preivew-1.5.tar.gz
+[2023-04-15 09:59:30] INFO root fetch - processPackages [pipen-report]: Start processing: plone.app.customerize
+[2023-04-15 09:59:30] INFO root fetch - main [MainThread]: End processing [pipen-report]: success
+[2023-04-15 09:59:30] INFO root fetch - processPackages [admin-form-image-preivew]: executing diffoscope
+[2023-04-15 09:59:30] INFO root fetch - processPackages [admin-form-image-preivew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/admin-form-image-preivew-1.4.tar.gz tmp/admin-form-image-preivew-1.5.tar.gz --markdown 20230415/a/admin-form-image-preivew/1.4-1.5/diff.md --exclude *.pyd
+[2023-04-15 09:59:30] INFO root fetch - main [MainThread]: End processing [backend-sqlalchemy]: success
+[2023-04-15 09:59:30] INFO root fetch - processPackages [plone.app.customerize]: New version: [2.0.0] Old Version: [1.3.9]
+[2023-04-15 09:59:30] INFO root fetch - main [MainThread]: End processing [satdigitalinvoice]: success
+[2023-04-15 09:59:31] INFO root fetch - processPackages [plone.app.customerize]: Downloading https://files.pythonhosted.org/packages/a6/39/b056fd20d007e38461e5360f5da327e10287a93295849f5d5c8721b72afd/plone.app.customerize-1.3.9.tar.gz
+[2023-04-15 09:59:31] INFO root fetch - processPackages [plone.app.customerize]: Downloading https://files.pythonhosted.org/packages/66/8f/8b7eb50cbffcbcbe1fcd53d1a1ba865a6b7aeddce6c8183a75687da156b3/plone.app.customerize-2.0.0.tar.gz
+[2023-04-15 09:59:31] INFO root fetch - processPackages [plone.app.customerize]: executing diffoscope
+[2023-04-15 09:59:31] INFO root fetch - processPackages [plone.app.customerize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.customerize-1.3.9.tar.gz tmp/plone.app.customerize-2.0.0.tar.gz --markdown 20230415/p/plone.app.customerize/1.3.9-2.0.0/diff.md --exclude *.pyd
+[2023-04-15 09:59:32] INFO root fetch - main [MainThread]: End processing [admin-form-image-preivew]: success
+[2023-04-15 09:59:32] INFO root fetch - main [MainThread]: End processing [plone.app.customerize]: success
+[2023-04-15 09:59:38] INFO root fetch - main [MainThread]: End processing [plone.app.redirector]: success
+[2023-04-15 09:59:38] INFO root fetch - main [MainThread]: Store serial: [17717358]
