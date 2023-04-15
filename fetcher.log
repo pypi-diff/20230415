@@ -14696,3 +14696,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 13:03:54] INFO root fetch - main [MainThread]: End processing [insidecouchbase]: success
 [2023-04-15 13:04:10] INFO root fetch - main [MainThread]: End processing [hm-pyhelper]: success
 [2023-04-15 13:04:10] INFO root fetch - main [MainThread]: Store serial: [17718312]
+[2023-04-15 13:09:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718312]
+[2023-04-15 13:09:24] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 13:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: insidecouchbase
+[2023-04-15 13:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: logicgateeso
+[2023-04-15 13:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: interlinking
+[2023-04-15 13:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: toolkit-lennart
+[2023-04-15 13:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: maelzel
+[2023-04-15 13:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: quom
+[2023-04-15 13:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: peaksjs-widget
+[2023-04-15 13:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mountwizzard4
+[2023-04-15 13:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: interlinking
+[2023-04-15 13:09:24] WARNING root fetch - processPackages [toolkit-lennart]: Skipping, unable to determine old version
+[2023-04-15 13:09:24] INFO root fetch - main [MainThread]: End processing [toolkit-lennart] error
+[2023-04-15 13:09:24] INFO root fetch - processPackages [insidecouchbase]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 13:09:24] INFO root fetch - processPackages [logicgateeso]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 13:09:24] WARNING root fetch - processPackages [interlinking]: Skipping, unable to determine old version
+[2023-04-15 13:09:24] INFO root fetch - main [MainThread]: End processing [interlinking] error
+[2023-04-15 13:09:24] INFO root fetch - processPackages [peaksjs-widget]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 13:09:24] WARNING root fetch - processPackages [interlinking]: Skipping, unable to determine old version
+[2023-04-15 13:09:24] INFO root fetch - main [MainThread]: End processing [interlinking] error
+[2023-04-15 13:09:24] INFO root fetch - processPackages [maelzel]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-15 13:09:24] INFO root fetch - processPackages [quom]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-04-15 13:09:24] INFO root fetch - processPackages [maelzel]: Downloading https://files.pythonhosted.org/packages/e1/df/3a0f8019b2dde14ee16f9af7a559c1a084128924c3eb3826d3da87bdc1ec/maelzel-0.9.0.tar.gz
+[2023-04-15 13:09:24] INFO root fetch - processPackages [peaksjs-widget]: executing diffoscope
+[2023-04-15 13:09:24] INFO root fetch - processPackages [peaksjs-widget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaksjs_widget-0.1.0.tar.gz tmp/peaksjs_widget-0.1.1.tar.gz --markdown 20230415/p/peaksjs-widget/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 13:09:24] INFO root fetch - processPackages [mountwizzard4]: New version: [3.1.0b7] Old Version: [3.1.0b6]
+[2023-04-15 13:09:24] WARNING root fetch - processPackages [maelzel]: Skipping package: exceeds size limit 17210322>=10485760
+[2023-04-15 13:09:24] INFO root fetch - main [MainThread]: End processing [maelzel] error
+[2023-04-15 13:09:24] INFO root fetch - processPackages [logicgateeso]: Downloading https://files.pythonhosted.org/packages/b1/74/8f66456ab521f4815b179b6171526026308e72e98e7735a88f68756ff875/LogicGateESO-0.1.0.tar.gz
+[2023-04-15 13:09:24] INFO root fetch - processPackages [insidecouchbase]: Downloading https://files.pythonhosted.org/packages/72/59/cae481890e5c67504fe68ca7ea6071631b138d3cb747ac04dff13d27463e/insidecouchbase-0.0.3.tar.gz
+[2023-04-15 13:09:24] INFO root fetch - processPackages [quom]: Downloading https://files.pythonhosted.org/packages/0a/26/91cef505132e7800e4232facc0858d079b7f84a07d608dbc6e790fc90015/quom-4.0.1.tar.gz
+[2023-04-15 13:09:24] INFO root fetch - processPackages [mountwizzard4]: Downloading https://files.pythonhosted.org/packages/d9/28/c6a2e5653fab74f07c3f577d704de26f95b947ac15464b29ada102d77e3a/mountwizzard4-3.1.0b6.tar.gz
+[2023-04-15 13:09:24] INFO root fetch - processPackages [insidecouchbase]: executing diffoscope
+[2023-04-15 13:09:24] INFO root fetch - processPackages [insidecouchbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/insidecouchbase-0.0.2.tar.gz tmp/insidecouchbase-0.0.3.tar.gz --markdown 20230415/i/insidecouchbase/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 13:09:24] INFO root fetch - processPackages [quom]: executing diffoscope
+[2023-04-15 13:09:24] INFO root fetch - processPackages [quom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quom-4.0.0.tar.gz tmp/quom-4.0.1.tar.gz --markdown 20230415/q/quom/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-04-15 13:09:24] WARNING root fetch - processPackages [mountwizzard4]: Skipping package: exceeds size limit 14271268>=10485760
+[2023-04-15 13:09:24] INFO root fetch - main [MainThread]: End processing [mountwizzard4] error
+[2023-04-15 13:09:24] INFO root fetch - processPackages [logicgateeso]: Downloading https://files.pythonhosted.org/packages/91/93/ae7131f0caf04582957aa6ccbfa0e37d5cff76dcf805f0132da2db362263/LogicGateESO-0.1.1.tar.gz
+[2023-04-15 13:09:24] INFO root fetch - processPackages [logicgateeso]: executing diffoscope
+[2023-04-15 13:09:24] INFO root fetch - processPackages [logicgateeso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LogicGateESO-0.1.0.tar.gz tmp/LogicGateESO-0.1.1.tar.gz --markdown 20230415/l/logicgateeso/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 13:09:25] INFO root fetch - main [MainThread]: End processing [insidecouchbase]: success
+[2023-04-15 13:09:25] INFO root fetch - main [MainThread]: End processing [quom]: success
+[2023-04-15 13:09:25] INFO root fetch - main [MainThread]: End processing [logicgateeso]: success
+[2023-04-15 13:09:26] INFO root fetch - main [MainThread]: End processing [peaksjs-widget]: success
+[2023-04-15 13:09:26] INFO root fetch - main [MainThread]: Store serial: [17718343]
