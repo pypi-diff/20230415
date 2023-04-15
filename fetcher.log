@@ -7099,3 +7099,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 10:09:59] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-arktools]: success
 [2023-04-15 10:09:59] INFO root fetch - main [MainThread]: End processing [plone.protect]: success
 [2023-04-15 10:09:59] INFO root fetch - main [MainThread]: Store serial: [17717401]
+[2023-04-15 10:15:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717401]
+[2023-04-15 10:15:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 10:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ospyata
+[2023-04-15 10:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shapfs
+[2023-04-15 10:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: backend-sqlalchemy
+[2023-04-15 10:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: voluxcontroller
+[2023-04-15 10:15:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: peegy
+[2023-04-15 10:15:07] INFO root fetch - processPackages [ospyata]: New version: [3.1.0] Old Version: [3.0.1]
+[2023-04-15 10:15:07] INFO root fetch - processPackages [peegy]: New version: [1.3.6] Old Version: [1.3.4]
+[2023-04-15 10:15:07] WARNING root fetch - processPackages [shapfs]: Skipping, unable to determine old version
+[2023-04-15 10:15:07] INFO root fetch - processPackages [shapfs]: Start processing: dftt-timecode
+[2023-04-15 10:15:07] INFO root fetch - main [MainThread]: End processing [shapfs] error
+[2023-04-15 10:15:07] WARNING root fetch - processPackages [voluxcontroller]: Skipping, unable to determine old version
+[2023-04-15 10:15:07] INFO root fetch - processPackages [voluxcontroller]: Start processing: fastapi-amis-admin-nav
+[2023-04-15 10:15:07] INFO root fetch - main [MainThread]: End processing [voluxcontroller] error
+[2023-04-15 10:15:07] INFO root fetch - processPackages [backend-sqlalchemy]: New version: [0.1.5.dev1681545553] Old Version: [0.1.5]
+[2023-04-15 10:15:07] INFO root fetch - processPackages [dftt-timecode]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 10:15:07] INFO root fetch - processPackages [fastapi-amis-admin-nav]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 10:15:07] INFO root fetch - processPackages [backend-sqlalchemy]: Downloading https://files.pythonhosted.org/packages/cc/11/4654eb0eac178366cb8fd76d0df7e9a4ac04fd3e23ab90ab3890efc6748a/backend_sqlalchemy-0.1.5.tar.gz
+[2023-04-15 10:15:07] INFO root fetch - processPackages [peegy]: Downloading https://files.pythonhosted.org/packages/12/56/6bf9f820d32d0abaff1233fb3cd618b5d853c5c6994dcfff091005fc49c9/peegy-1.3.4.tar.gz
+[2023-04-15 10:15:07] INFO root fetch - processPackages [dftt-timecode]: Downloading https://files.pythonhosted.org/packages/0e/7c/ecf9351d4a678807e3ffb2941bebc14043ba5cf3081b6d404ef614f053e8/dftt_timecode-0.0.8.tar.gz
+[2023-04-15 10:15:08] INFO root fetch - processPackages [fastapi-amis-admin-nav]: Downloading https://files.pythonhosted.org/packages/32/b2/7f07e6ed2ecb7f051c1f09518982d63f040684955455402845c90adbbdba/fastapi_amis_admin_nav-0.0.2.tar.gz
+[2023-04-15 10:15:08] INFO root fetch - processPackages [ospyata]: Downloading https://files.pythonhosted.org/packages/15/bd/e6cf7a7a469fa9f84b835a21de21901e60234b5a52b35bece77f357561bf/ospyata-3.1.0.tar.gz
+[2023-04-15 10:15:08] INFO root fetch - processPackages [backend-sqlalchemy]: executing diffoscope
+[2023-04-15 10:15:08] INFO root fetch - processPackages [backend-sqlalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend_sqlalchemy-0.1.5.tar.gz tmp/backend_sqlalchemy-0.1.5.dev1681545553.tar.gz --markdown 20230415/b/backend-sqlalchemy/0.1.5-0.1.5.dev1681545553/diff.md --exclude *.pyd
+[2023-04-15 10:15:08] INFO root fetch - processPackages [ospyata]: executing diffoscope
+[2023-04-15 10:15:08] INFO root fetch - processPackages [ospyata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ospyata-3.0.1.tar.gz tmp/ospyata-3.1.0.tar.gz --markdown 20230415/o/ospyata/3.0.1-3.1.0/diff.md --exclude *.pyd
+[2023-04-15 10:15:08] INFO root fetch - processPackages [peegy]: Downloading https://files.pythonhosted.org/packages/2b/f5/1393582fc3a28460af370a0fab85f76af0e7ba2f29e0233da5685f1f5bef/peegy-1.3.6.tar.gz
+[2023-04-15 10:15:08] INFO root fetch - processPackages [peegy]: executing diffoscope
+[2023-04-15 10:15:08] INFO root fetch - processPackages [peegy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peegy-1.3.4.tar.gz tmp/peegy-1.3.6.tar.gz --markdown 20230415/p/peegy/1.3.4-1.3.6/diff.md --exclude *.pyd
+[2023-04-15 10:15:08] INFO root fetch - processPackages [fastapi-amis-admin-nav]: Downloading https://files.pythonhosted.org/packages/c1/38/d2cf446e2f5ac40186742d47b6119105cac0f37a34a607e971ae8924be88/fastapi_amis_admin_nav-0.0.3.tar.gz
+[2023-04-15 10:15:08] INFO root fetch - processPackages [fastapi-amis-admin-nav]: executing diffoscope
+[2023-04-15 10:15:08] INFO root fetch - processPackages [fastapi-amis-admin-nav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_amis_admin_nav-0.0.2.tar.gz tmp/fastapi_amis_admin_nav-0.0.3.tar.gz --markdown 20230415/f/fastapi-amis-admin-nav/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 10:15:08] INFO root fetch - processPackages [dftt-timecode]: Downloading https://files.pythonhosted.org/packages/c6/fb/5406eaf78493f579c5197a534bcd13d431d72dd8a6bf143ca9b1305bb833/dftt_timecode-0.0.9.tar.gz
+[2023-04-15 10:15:08] INFO root fetch - processPackages [dftt-timecode]: executing diffoscope
+[2023-04-15 10:15:08] INFO root fetch - processPackages [dftt-timecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dftt_timecode-0.0.8.tar.gz tmp/dftt_timecode-0.0.9.tar.gz --markdown 20230415/d/dftt-timecode/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 10:15:09] INFO root fetch - main [MainThread]: End processing [backend-sqlalchemy]: success
+[2023-04-15 10:15:09] INFO root fetch - main [MainThread]: End processing [fastapi-amis-admin-nav]: success
+[2023-04-15 10:15:09] INFO root fetch - main [MainThread]: End processing [ospyata]: success
+[2023-04-15 10:15:09] INFO root fetch - main [MainThread]: End processing [dftt-timecode]: success
+[2023-04-15 10:15:10] INFO root fetch - main [MainThread]: End processing [peegy]: success
+[2023-04-15 10:15:10] INFO root fetch - main [MainThread]: Store serial: [17717426]
