@@ -6407,3 +6407,11 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 08:41:32] INFO root fetch - main [MainThread]: End processing [odoo14-addon-rma]: success
 [2023-04-15 08:41:33] INFO root fetch - main [MainThread]: End processing [CLIbrary]: success
 [2023-04-15 08:41:33] INFO root fetch - main [MainThread]: Store serial: [17716979]
+[2023-04-15 08:46:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716979]
+[2023-04-15 08:46:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-15 08:46:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-sale-blanket-order
+[2023-04-15 08:46:40] INFO root fetch - processPackages [odoo12-addon-sale-blanket-order]: New version: [12.0.1.0.2.99.dev9] Old Version: [12.0.1.0.2.99.dev8]
+[2023-04-15 08:46:41] INFO root fetch - processPackages [odoo12-addon-sale-blanket-order]: executing diffoscope
+[2023-04-15 08:46:41] INFO root fetch - processPackages [odoo12-addon-sale-blanket-order]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_sale_blanket_order-12.0.1.0.2.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_sale_blanket_order-12.0.1.0.2.99.dev9-py3-none-any.whl.zip --markdown 20230415/o/odoo12-addon-sale-blanket-order/12.0.1.0.2.99.dev8-12.0.1.0.2.99.dev9/diff.md --exclude *.pyd
+[2023-04-15 08:46:42] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-blanket-order]: success
+[2023-04-15 08:46:42] INFO root fetch - main [MainThread]: Store serial: [17716983]
