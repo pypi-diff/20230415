@@ -18193,3 +18193,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 19:26:49] INFO root fetch - main [MainThread]: End processing [jupyterhub-tmpnativeauthenticator]: success
 [2023-04-15 19:26:51] INFO root fetch - main [MainThread]: End processing [snaptrade-python-sdk]: success
 [2023-04-15 19:26:51] INFO root fetch - main [MainThread]: Store serial: [17720523]
+[2023-04-15 19:31:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720523]
+[2023-04-15 19:32:00] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 19:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdxbasics
+[2023-04-15 19:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: salix-containers
+[2023-04-15 19:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gwemopt
+[2023-04-15 19:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OmniBridge
+[2023-04-15 19:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aztecglyph
+[2023-04-15 19:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: seleniumbase
+[2023-04-15 19:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aistac-foundation
+[2023-04-15 19:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jupyterhub-tmpnativeauthenticator
+[2023-04-15 19:32:00] INFO root fetch - processPackages [salix-containers]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-15 19:32:00] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-15 19:32:00] INFO root fetch - processPackages [aistac-foundation]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-04-15 19:32:00] WARNING root fetch - processPackages [aztecglyph]: Skipping, unable to determine old version
+[2023-04-15 19:32:00] INFO root fetch - main [MainThread]: End processing [aztecglyph] error
+[2023-04-15 19:32:00] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 19:32:00] INFO root fetch - processPackages [gwemopt]: New version: [0.0.82] Old Version: [0.0.81]
+[2023-04-15 19:32:00] INFO root fetch - processPackages [cdxbasics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-15 19:32:00] INFO root fetch - processPackages [seleniumbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-15 19:32:00] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: executing diffoscope
+[2023-04-15 19:32:00] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterhub-tmpnativeauthenticator-1.0.1.tar.gz tmp/jupyterhub-tmpnativeauthenticator-1.0.2.tar.gz --markdown 20230415/j/jupyterhub-tmpnativeauthenticator/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-15 19:32:00] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-15 19:32:00] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230415/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 19:32:00] INFO root fetch - processPackages [cdxbasics]: executing diffoscope
+[2023-04-15 19:32:00] INFO root fetch - processPackages [cdxbasics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdxbasics-0.2.8.tar.gz tmp/cdxbasics-0.2.9.tar.gz --markdown 20230415/c/cdxbasics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-15 19:32:00] INFO root fetch - processPackages [aistac-foundation]: Downloading https://files.pythonhosted.org/packages/e9/ad/d0d844b4f35250063b74d3b41f9f043c0ff8d4dd55f91e7331fbfb4a31e6/aistac-foundation-2.9.6.tar.gz
+[2023-04-15 19:32:00] INFO root fetch - processPackages [gwemopt]: Downloading https://files.pythonhosted.org/packages/a4/8d/cd664a31d77c7ae8072cb09ccbab57db56842a84a59b3d5e6d8f5ce479c3/gwemopt-0.0.82.tar.gz
+[2023-04-15 19:32:00] INFO root fetch - processPackages [salix-containers]: Downloading https://files.pythonhosted.org/packages/8f/8e/7527e08d7511cc8087a4102fc5ec416f13c5e2292a1d37e4ac4cabec872c/salix-containers-0.3.1.tar.gz
+[2023-04-15 19:32:00] INFO root fetch - processPackages [salix-containers]: executing diffoscope
+[2023-04-15 19:32:00] INFO root fetch - processPackages [salix-containers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salix-containers-0.3.0.tar.gz tmp/salix-containers-0.3.1.tar.gz --markdown 20230415/s/salix-containers/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-15 19:32:00] INFO root fetch - processPackages [gwemopt]: executing diffoscope
+[2023-04-15 19:32:00] INFO root fetch - processPackages [gwemopt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gwemopt-0.0.81.tar.gz tmp/gwemopt-0.0.82.tar.gz --markdown 20230415/g/gwemopt/0.0.81-0.0.82/diff.md --exclude *.pyd
+[2023-04-15 19:32:00] INFO root fetch - processPackages [seleniumbase]: Downloading https://files.pythonhosted.org/packages/d5/06/b4c4aa69540cf3a9c497a53072da777eefd704403fc8f952a88c69208ad1/seleniumbase-4.9.8.tar.gz
+[2023-04-15 19:32:00] INFO root fetch - processPackages [aistac-foundation]: Downloading https://files.pythonhosted.org/packages/57/f1/970e08b6986af04d413b219e4f62ffbd2e6fd9cf42a0690aca7de90bd4be/aistac-foundation-2.9.7.tar.gz
+[2023-04-15 19:32:00] INFO root fetch - processPackages [aistac-foundation]: executing diffoscope
+[2023-04-15 19:32:00] INFO root fetch - processPackages [aistac-foundation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aistac-foundation-2.9.6.tar.gz tmp/aistac-foundation-2.9.7.tar.gz --markdown 20230415/a/aistac-foundation/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-04-15 19:32:01] INFO root fetch - processPackages [seleniumbase]: Downloading https://files.pythonhosted.org/packages/9d/0f/462449b9921267bb9f0f0db257c72435e50ec2fcd4219764bb131be70686/seleniumbase-4.9.9.tar.gz
+[2023-04-15 19:32:01] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-15 19:32:01] INFO root fetch - processPackages [seleniumbase]: executing diffoscope
+[2023-04-15 19:32:01] INFO root fetch - processPackages [seleniumbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seleniumbase-4.9.8.tar.gz tmp/seleniumbase-4.9.9.tar.gz --markdown 20230415/s/seleniumbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-15 19:32:01] INFO root fetch - main [MainThread]: End processing [salix-containers]: success
+[2023-04-15 19:32:01] INFO root fetch - main [MainThread]: End processing [cdxbasics]: success
+[2023-04-15 19:32:01] INFO root fetch - main [MainThread]: End processing [jupyterhub-tmpnativeauthenticator]: success
+[2023-04-15 19:32:01] INFO root fetch - main [MainThread]: End processing [gwemopt]: success
+[2023-04-15 19:32:03] INFO root fetch - main [MainThread]: End processing [aistac-foundation]: success
+[2023-04-15 19:32:03] INFO root fetch - main [MainThread]: End processing [seleniumbase]: success
+[2023-04-15 19:32:03] INFO root fetch - main [MainThread]: Store serial: [17720546]
