@@ -16839,3 +16839,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 16:39:02] INFO root fetch - main [MainThread]: End processing [openhasp-config-manager]: success
 [2023-04-15 16:39:02] INFO root fetch - main [MainThread]: End processing [discord-ext-pager]: success
 [2023-04-15 16:39:02] INFO root fetch - main [MainThread]: Store serial: [17719573]
+[2023-04-15 16:44:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719573]
+[2023-04-15 16:44:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 16:44:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vprikol-api-python
+[2023-04-15 16:44:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hds-stats
+[2023-04-15 16:44:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xhs
+[2023-04-15 16:44:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hiddifypanel
+[2023-04-15 16:44:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tplink-omada-client
+[2023-04-15 16:44:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: TheSilent
+[2023-04-15 16:44:11] INFO root fetch - processPackages [hds-stats]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 16:44:11] INFO root fetch - processPackages [vprikol-api-python]: New version: [1.3] Old Version: [1.2.5]
+[2023-04-15 16:44:11] INFO root fetch - processPackages [xhs]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-15 16:44:11] INFO root fetch - processPackages [tplink-omada-client]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-15 16:44:11] INFO root fetch - processPackages [hiddifypanel]: New version: [4.0.0.dev1] Old Version: [4.0.0.dev0]
+[2023-04-15 16:44:11] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 16:44:11] INFO root fetch - processPackages [vprikol-api-python]: Downloading https://files.pythonhosted.org/packages/ec/fe/176257fef6a58f0a0d655ed2b7b29098e3e4e7fddc6579183fd428d9893c/vprikol_api_python-1.2.5.tar.gz
+[2023-04-15 16:44:11] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-15 16:44:11] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230415/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 16:44:11] INFO root fetch - processPackages [hds-stats]: Downloading https://files.pythonhosted.org/packages/df/60/c84d84c8e9513ce0ba71a4252e8a14d9309926255677f980d26870289ed8/hds-stats-0.1.6.tar.gz
+[2023-04-15 16:44:11] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/5e/af/6a46c5b4c3aab66c128995df6bd37ce278ae01da0655d3a228d5fcf7d294/hiddifypanel-4.0.0.dev1-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-15 16:44:11] INFO root fetch - processPackages [tplink-omada-client]: Downloading https://files.pythonhosted.org/packages/28/20/a43627cbdec203d511a8de7a9dc18f686833a0d7efe1d39501bb55e01203/tplink_omada_client-1.2.2.tar.gz
+[2023-04-15 16:44:11] INFO root fetch - processPackages [tplink-omada-client]: executing diffoscope
+[2023-04-15 16:44:11] INFO root fetch - processPackages [tplink-omada-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tplink_omada_client-1.2.1.tar.gz tmp/tplink_omada_client-1.2.2.tar.gz --markdown 20230415/t/tplink-omada-client/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-15 16:44:11] INFO root fetch - processPackages [xhs]: Downloading https://files.pythonhosted.org/packages/05/f3/3a498de08af4208a5d7b764275fb64abe1e8ed7a5a5637a84e5d39429071/xhs-0.1.3.tar.gz
+[2023-04-15 16:44:11] INFO root fetch - processPackages [hds-stats]: executing diffoscope
+[2023-04-15 16:44:11] INFO root fetch - processPackages [hds-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hds-stats-0.1.5.tar.gz tmp/hds-stats-0.1.6.tar.gz --markdown 20230415/h/hds-stats/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 16:44:12] INFO root fetch - processPackages [vprikol-api-python]: Downloading https://files.pythonhosted.org/packages/4a/75/b3072f3a25d43f9f2fc00251185ee7a5c084f11c0ae07d079c83520cb5d8/vprikol_api_python-1.3.tar.gz
+[2023-04-15 16:44:12] INFO root fetch - processPackages [xhs]: executing diffoscope
+[2023-04-15 16:44:12] INFO root fetch - processPackages [xhs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xhs-0.1.2.tar.gz tmp/xhs-0.1.3.tar.gz --markdown 20230415/x/xhs/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-15 16:44:12] INFO root fetch - processPackages [vprikol-api-python]: executing diffoscope
+[2023-04-15 16:44:12] INFO root fetch - processPackages [vprikol-api-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vprikol_api_python-1.2.5.tar.gz tmp/vprikol_api_python-1.3.tar.gz --markdown 20230415/v/vprikol-api-python/1.2.5-1.3/diff.md --exclude *.pyd
+[2023-04-15 16:44:12] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-15 16:44:13] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-15 16:44:13] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-4.0.0.dev0-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-4.0.0.dev1-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230415/h/hiddifypanel/4.0.0.dev0-4.0.0.dev1/diff.md --exclude *.pyd
+[2023-04-15 16:44:13] INFO root fetch - main [MainThread]: End processing [hds-stats]: success
+[2023-04-15 16:44:13] INFO root fetch - main [MainThread]: End processing [tplink-omada-client]: success
+[2023-04-15 16:44:13] INFO root fetch - main [MainThread]: End processing [vprikol-api-python]: success
+[2023-04-15 16:44:13] INFO root fetch - main [MainThread]: End processing [xhs]: success
+[2023-04-15 16:44:24] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-04-15 16:44:24] INFO root fetch - main [MainThread]: Store serial: [17719597]
