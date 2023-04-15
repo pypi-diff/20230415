@@ -1135,3 +1135,73 @@
 [2023-04-15 01:56:29] INFO root fetch - main [MainThread]: End processing [bacalhau-airflow]: success
 [2023-04-15 01:56:37] INFO root fetch - main [MainThread]: End processing [ShellcodeTester]: success
 [2023-04-15 01:56:37] INFO root fetch - main [MainThread]: Store serial: [17713993]
+[2023-04-15 02:01:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17713993]
+[2023-04-15 02:01:44] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-15 02:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coordz
+[2023-04-15 02:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redscrap
+[2023-04-15 02:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-library-30140721
+[2023-04-15 02:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cbra
+[2023-04-15 02:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchdatasets-nightly
+[2023-04-15 02:01:44] WARNING root fetch - processPackages [redscrap]: Skipping, unable to determine old version
+[2023-04-15 02:01:44] INFO root fetch - processPackages [redscrap]: Start processing: mct-nightly
+[2023-04-15 02:01:44] INFO root fetch - main [MainThread]: End processing [redscrap] error
+[2023-04-15 02:01:44] WARNING root fetch - processPackages [coordz]: Skipping, unable to determine old version
+[2023-04-15 02:01:44] INFO root fetch - processPackages [coordz]: Start processing: openhasp-config-manager
+[2023-04-15 02:01:44] INFO root fetch - main [MainThread]: End processing [coordz] error
+[2023-04-15 02:01:44] WARNING root fetch - processPackages [python-library-30140721]: Skipping, unable to determine old version
+[2023-04-15 02:01:44] INFO root fetch - processPackages [python-library-30140721]: Start processing: langchain-serve
+[2023-04-15 02:01:44] INFO root fetch - main [MainThread]: End processing [python-library-30140721] error
+[2023-04-15 02:01:44] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9042023.post411] Old Version: [1.8.0.9032023.post431]
+[2023-04-15 02:01:44] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a83]
+[2023-04-15 02:01:44] INFO root fetch - processPackages [openhasp-config-manager]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-15 02:01:44] INFO root fetch - processPackages [langchain-serve]: New version: [0.0.4.dev2] Old Version: [0.0.3.dev3]
+[2023-04-15 02:01:44] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1681430578] Old Version: [1681344191]
+[2023-04-15 02:01:44] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-04-15 02:01:44] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9032023.post431.tar.gz tmp/mct-nightly-1.8.0.9042023.post411.tar.gz --markdown 20230415/m/mct-nightly/1.8.0.9032023.post431-1.8.0.9042023.post411/diff.md --exclude *.pyd
+[2023-04-15 02:01:44] INFO root fetch - processPackages [cbra]: Downloading https://files.pythonhosted.org/packages/3c/e1/95f0f4b1c8538f8557f6fd20376d105a32fdb2423c095166f5f63e2d7e92/cbra-2.0.0a83.tar.gz
+[2023-04-15 02:01:45] INFO root fetch - processPackages [langchain-serve]: Downloading https://files.pythonhosted.org/packages/41/ad/8f910150d01709e3cda9b00ce454cf65b59383c98afb25ee45ad8b40d231/langchain-serve-0.0.4.dev2.tar.gz
+[2023-04-15 02:01:45] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/f0/f1/62c4c901ef11dfdd7214a78082c571e655ed58ee63b4469493c5a3a31fd3/torchdatasets-nightly-1681430578.tar.gz
+[2023-04-15 02:01:45] INFO root fetch - processPackages [openhasp-config-manager]: Downloading https://files.pythonhosted.org/packages/35/f1/09df9d8d803fc5785b42cdf308e79e9a0347ae9e0f0601a3611a900eec5e/openhasp_config_manager-0.4.6.tar.gz
+[2023-04-15 02:01:45] INFO root fetch - processPackages [openhasp-config-manager]: executing diffoscope
+[2023-04-15 02:01:45] INFO root fetch - processPackages [openhasp-config-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openhasp_config_manager-0.4.5.tar.gz tmp/openhasp_config_manager-0.4.6.tar.gz --markdown 20230415/o/openhasp-config-manager/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-15 02:01:45] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-15 02:01:45] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a83.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230415/c/cbra/2.0.0a83-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-15 02:01:45] INFO root fetch - processPackages [langchain-serve]: executing diffoscope
+[2023-04-15 02:01:45] INFO root fetch - processPackages [langchain-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-serve-0.0.3.dev3.tar.gz tmp/langchain-serve-0.0.4.dev2.tar.gz --markdown 20230415/l/langchain-serve/0.0.3.dev3-0.0.4.dev2/diff.md --exclude *.pyd
+[2023-04-15 02:01:45] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-04-15 02:01:45] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1681344191.tar.gz tmp/torchdatasets-nightly-1681430578.tar.gz --markdown 20230415/t/torchdatasets-nightly/1681344191-1681430578/diff.md --exclude *.pyd
+[2023-04-15 02:01:46] INFO root fetch - processPackages [torchdatasets-nightly]: Start processing: jaxkern-nightly
+[2023-04-15 02:01:46] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-04-15 02:01:46] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-04-15 02:01:46] INFO root fetch - processPackages [openhasp-config-manager]: Start processing: PyTimbre
+[2023-04-15 02:01:46] INFO root fetch - main [MainThread]: End processing [openhasp-config-manager]: success
+[2023-04-15 02:01:46] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-04-15 02:01:46] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230415/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-04-15 02:01:46] INFO root fetch - processPackages [langchain-serve]: Start processing: coordz
+[2023-04-15 02:01:46] INFO root fetch - main [MainThread]: End processing [langchain-serve]: success
+[2023-04-15 02:01:46] INFO root fetch - processPackages [PyTimbre]: New version: [0.6.7] Old Version: [0.6.6]
+[2023-04-15 02:01:46] INFO root fetch - processPackages [coordz]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 02:01:46] INFO root fetch - processPackages [coordz]: Downloading https://files.pythonhosted.org/packages/88/ff/3c2ef79727ea749dea3420179d5a983cc641e70f408c06bfef03e2cbb5d0/coordz-0.1.0.tar.gz
+[2023-04-15 02:01:46] INFO root fetch - processPackages [PyTimbre]: Downloading https://files.pythonhosted.org/packages/29/bb/3093c1fce3b01e11af3dead1659becb67045aa33212b3385d759b8042dd5/PyTimbre-0.6.6.tar.gz
+[2023-04-15 02:01:46] INFO root fetch - processPackages [coordz]: Downloading https://files.pythonhosted.org/packages/52/3c/315fe5d6b42a5a6c07553b262ca9cb2429faf5c87ebfe9ffe6347287465f/coordz-0.1.1.tar.gz
+[2023-04-15 02:01:46] INFO root fetch - processPackages [PyTimbre]: Downloading https://files.pythonhosted.org/packages/de/15/1c78ea63d73ff9db351ff93e7da59e8b41060f3504042769b33b002b5ec4/PyTimbre-0.6.7.tar.gz
+[2023-04-15 02:01:47] INFO root fetch - processPackages [coordz]: executing diffoscope
+[2023-04-15 02:01:47] INFO root fetch - processPackages [coordz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coordz-0.1.0.tar.gz tmp/coordz-0.1.1.tar.gz --markdown 20230415/c/coordz/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 02:01:47] INFO root fetch - processPackages [PyTimbre]: executing diffoscope
+[2023-04-15 02:01:47] INFO root fetch - processPackages [PyTimbre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyTimbre-0.6.6.tar.gz tmp/PyTimbre-0.6.7.tar.gz --markdown 20230415/P/PyTimbre/0.6.6-0.6.7/diff.md --exclude *.pyd
+[2023-04-15 02:01:47] INFO root fetch - processPackages [jaxkern-nightly]: Start processing: luau
+[2023-04-15 02:01:47] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-04-15 02:01:47] INFO root fetch - processPackages [luau]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-15 02:01:47] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-15 02:01:47] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.2.2.tar.gz tmp/luau-0.2.3.tar.gz --markdown 20230415/l/luau/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-15 02:01:48] INFO root fetch - processPackages [coordz]: Start processing: symdexer
+[2023-04-15 02:01:48] INFO root fetch - main [MainThread]: End processing [coordz]: success
+[2023-04-15 02:01:48] INFO root fetch - processPackages [symdexer]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-15 02:01:48] INFO root fetch - main [MainThread]: End processing [PyTimbre]: success
+[2023-04-15 02:01:48] INFO root fetch - processPackages [symdexer]: executing diffoscope
+[2023-04-15 02:01:48] INFO root fetch - processPackages [symdexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symdexer-0.1.2.tar.gz tmp/symdexer-0.2.0.tar.gz --markdown 20230415/s/symdexer/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 02:01:48] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-15 02:01:49] INFO root fetch - main [MainThread]: End processing [symdexer]: success
+[2023-04-15 02:01:49] INFO root fetch - main [MainThread]: End processing [cbra]: success
+[2023-04-15 02:01:50] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-04-15 02:01:50] INFO root fetch - main [MainThread]: Store serial: [17714039]
