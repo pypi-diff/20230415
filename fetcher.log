@@ -4034,3 +4034,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 03:39:52] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
 [2023-04-15 03:40:40] INFO root fetch - main [MainThread]: End processing [pybind11-geobuf]: success
 [2023-04-15 03:40:40] INFO root fetch - main [MainThread]: Store serial: [17715723]
+[2023-04-15 03:45:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715723]
+[2023-04-15 03:45:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 03:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: proactive-jupyter-kernel
+[2023-04-15 03:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: regis
+[2023-04-15 03:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hls4ml
+[2023-04-15 03:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-servers
+[2023-04-15 03:45:47] INFO root fetch - processPackages [regis]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 03:45:47] INFO root fetch - processPackages [hls4ml]: New version: [0.7.0rc1] Old Version: [0.6.0]
+[2023-04-15 03:45:47] INFO root fetch - processPackages [pytest-servers]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-15 03:45:47] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-04-15 03:45:47] INFO root fetch - processPackages [pytest-servers]: Downloading https://files.pythonhosted.org/packages/3f/ee/662106a1b65c5a55ff46aef405de6709a03eeea99ef5ea3e9e841de9ee59/pytest-servers-0.2.1.tar.gz
+[2023-04-15 03:45:47] INFO root fetch - processPackages [hls4ml]: Downloading https://files.pythonhosted.org/packages/eb/5b/bbe4348ed024e77120efebf2f16aae8faddf96447d6c0c747c29d8ff80c0/hls4ml-0.7.0rc1.tar.gz
+[2023-04-15 03:45:48] INFO root fetch - processPackages [regis]: executing diffoscope
+[2023-04-15 03:45:48] INFO root fetch - processPackages [regis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regis-0.1.8.tar.gz tmp/regis-0.1.9.tar.gz --markdown 20230415/r/regis/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 03:45:48] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-04-15 03:45:48] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230415/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-04-15 03:45:48] INFO root fetch - processPackages [pytest-servers]: Downloading https://files.pythonhosted.org/packages/dc/58/4e71a1b0d514428fdbeaddc291290b61281da173feda33028d250e189350/pytest-servers-0.2.2.tar.gz
+[2023-04-15 03:45:48] INFO root fetch - processPackages [pytest-servers]: executing diffoscope
+[2023-04-15 03:45:48] INFO root fetch - processPackages [pytest-servers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-servers-0.2.1.tar.gz tmp/pytest-servers-0.2.2.tar.gz --markdown 20230415/p/pytest-servers/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-15 03:45:48] INFO root fetch - processPackages [hls4ml]: executing diffoscope
+[2023-04-15 03:45:48] INFO root fetch - processPackages [hls4ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hls4ml-0.6.0.tar.gz tmp/hls4ml-0.7.0rc1.tar.gz --markdown 20230415/h/hls4ml/0.6.0-0.7.0rc1/diff.md --exclude *.pyd
+[2023-04-15 03:45:49] INFO root fetch - main [MainThread]: End processing [regis]: success
+[2023-04-15 03:45:49] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-04-15 03:45:49] INFO root fetch - main [MainThread]: End processing [pytest-servers]: success
+[2023-04-15 03:45:53] INFO root fetch - main [MainThread]: End processing [hls4ml]: success
+[2023-04-15 03:45:53] INFO root fetch - main [MainThread]: Store serial: [17715735]
