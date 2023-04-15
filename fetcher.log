@@ -20256,3 +20256,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 23:03:51] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
 [2023-04-15 23:03:53] INFO root fetch - main [MainThread]: End processing [sdss-coordio]: success
 [2023-04-15 23:03:53] INFO root fetch - main [MainThread]: Store serial: [17721866]
+[2023-04-15 23:08:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721866]
+[2023-04-15 23:09:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 23:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: syllabub
+[2023-04-15 23:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: voliboli-sgqlc-types
+[2023-04-15 23:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mqtt-thread
+[2023-04-15 23:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sabledocs
+[2023-04-15 23:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pynimate
+[2023-04-15 23:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: secapi-tl
+[2023-04-15 23:09:03] INFO root fetch - processPackages [sabledocs]: New version: [0.1.72] Old Version: [0.1.69]
+[2023-04-15 23:09:03] INFO root fetch - processPackages [secapi-tl]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-15 23:09:03] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 23:09:03] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.69.tar.gz tmp/sabledocs-0.1.72.tar.gz --markdown 20230415/s/sabledocs/0.1.69-0.1.72/diff.md --exclude *.pyd
+[2023-04-15 23:09:03] INFO root fetch - processPackages [voliboli-sgqlc-types]: New version: [1.9] Old Version: [1.8]
+[2023-04-15 23:09:03] INFO root fetch - processPackages [mqtt-thread]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-04-15 23:09:03] INFO root fetch - processPackages [syllabub]: New version: [0.1.5] Old Version: [0.0.4]
+[2023-04-15 23:09:03] INFO root fetch - processPackages [pynimate]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-15 23:09:03] INFO root fetch - processPackages [secapi-tl]: executing diffoscope
+[2023-04-15 23:09:03] INFO root fetch - processPackages [secapi-tl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secapi-tl-1.1.3.tar.gz tmp/secapi-tl-1.1.4.tar.gz --markdown 20230415/s/secapi-tl/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-15 23:09:03] INFO root fetch - processPackages [syllabub]: Downloading https://files.pythonhosted.org/packages/c5/61/e930214eccea0567c9ad4f51af793cf3b5dd56b6579a40a0a880d693dfce/syllabub-0.0.4.tar.gz
+[2023-04-15 23:09:03] INFO root fetch - processPackages [voliboli-sgqlc-types]: Downloading https://files.pythonhosted.org/packages/f0/56/60e57591f789d68ad89ffd7ad7f30ce57e7de6906a2e9d58178bde7f5157/voliboli_sgqlc_types-1.8.tar.gz
+[2023-04-15 23:09:03] INFO root fetch - processPackages [mqtt-thread]: Downloading https://files.pythonhosted.org/packages/4e/20/b0517070c1c1efc04cf84c22cb32de5cab75fb0d9bbd035c216f17bc2ff0/mqtt_thread-1.6.0.tar.gz
+[2023-04-15 23:09:03] INFO root fetch - processPackages [pynimate]: Downloading https://files.pythonhosted.org/packages/b3/0d/9f5301c63637797c2a3e142cafa8ac7fe8421d65aaed005f6d36bb8a19be/pynimate-1.1.0.tar.gz
+[2023-04-15 23:09:03] INFO root fetch - processPackages [voliboli-sgqlc-types]: Downloading https://files.pythonhosted.org/packages/e8/b7/6d61fbb62a1edc07cfdf8d7c34ca9dedfcf1cc0eb44340fb55e96e07ceed/voliboli_sgqlc_types-1.9.tar.gz
+[2023-04-15 23:09:03] INFO root fetch - processPackages [mqtt-thread]: Downloading https://files.pythonhosted.org/packages/30/fe/aff3fb589d4a30ab45d5b5f5b0d091012d4f6fb94703ca582ffb0d80d661/mqtt_thread-1.6.1.tar.gz
+[2023-04-15 23:09:03] INFO root fetch - processPackages [syllabub]: Downloading https://files.pythonhosted.org/packages/e8/b0/7fbfc8d0c5177abbdc5147da53aa0f7c214a42bd1ee74b2ce16c07e71dd3/syllabub-0.1.5.tar.gz
+[2023-04-15 23:09:03] INFO root fetch - processPackages [pynimate]: Downloading https://files.pythonhosted.org/packages/f0/40/652a4e8a94fa9ae41e860835e184d3def520a2a4e083d37f6c703e2199a2/pynimate-1.2.0.tar.gz
+[2023-04-15 23:09:03] INFO root fetch - processPackages [voliboli-sgqlc-types]: executing diffoscope
+[2023-04-15 23:09:03] INFO root fetch - processPackages [voliboli-sgqlc-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voliboli_sgqlc_types-1.8.tar.gz tmp/voliboli_sgqlc_types-1.9.tar.gz --markdown 20230415/v/voliboli-sgqlc-types/1.8-1.9/diff.md --exclude *.pyd
+[2023-04-15 23:09:03] INFO root fetch - processPackages [mqtt-thread]: executing diffoscope
+[2023-04-15 23:09:03] INFO root fetch - processPackages [mqtt-thread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mqtt_thread-1.6.0.tar.gz tmp/mqtt_thread-1.6.1.tar.gz --markdown 20230415/m/mqtt-thread/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-04-15 23:09:04] INFO root fetch - processPackages [syllabub]: executing diffoscope
+[2023-04-15 23:09:04] INFO root fetch - processPackages [syllabub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syllabub-0.0.4.tar.gz tmp/syllabub-0.1.5.tar.gz --markdown 20230415/s/syllabub/0.0.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-15 23:09:04] INFO root fetch - processPackages [pynimate]: executing diffoscope
+[2023-04-15 23:09:04] INFO root fetch - processPackages [pynimate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynimate-1.1.0.tar.gz tmp/pynimate-1.2.0.tar.gz --markdown 20230415/p/pynimate/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-15 23:09:04] INFO root fetch - main [MainThread]: End processing [secapi-tl]: success
+[2023-04-15 23:09:04] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 23:09:04] INFO root fetch - main [MainThread]: End processing [voliboli-sgqlc-types]: success
+[2023-04-15 23:09:05] INFO root fetch - main [MainThread]: End processing [mqtt-thread]: success
+[2023-04-15 23:09:05] INFO root fetch - main [MainThread]: End processing [pynimate]: success
+[2023-04-15 23:09:05] INFO root fetch - main [MainThread]: End processing [syllabub]: success
+[2023-04-15 23:09:05] INFO root fetch - main [MainThread]: Store serial: [17721887]
