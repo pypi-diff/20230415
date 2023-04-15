@@ -4564,3 +4564,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 04:52:25] INFO root fetch - main [MainThread]: End processing [TerraVide]: success
 [2023-04-15 04:52:26] INFO root fetch - main [MainThread]: End processing [gerabaldi]: success
 [2023-04-15 04:52:26] INFO root fetch - main [MainThread]: Store serial: [17716004]
+[2023-04-15 04:57:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716004]
+[2023-04-15 04:57:32] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 04:57:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duckdb
+[2023-04-15 04:57:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drs-compliance-test
+[2023-04-15 04:57:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo12-addon-account-menu-invoice-refund
+[2023-04-15 04:57:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mycotools
+[2023-04-15 04:57:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TelegramNotificator
+[2023-04-15 04:57:32] INFO root fetch - processPackages [odoo12-addon-account-menu-invoice-refund]: New version: [12.0.2.0.1.99.dev1] Old Version: [12.0.2.0.1]
+[2023-04-15 04:57:32] INFO root fetch - processPackages [drs-compliance-test]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-15 04:57:32] INFO root fetch - processPackages [TelegramNotificator]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-15 04:57:32] INFO root fetch - processPackages [mycotools]: New version: [0.9b9] Old Version: [0.9b8]
+[2023-04-15 04:57:33] INFO root fetch - processPackages [duckdb]: New version: [0.7.2.dev1867] Old Version: [0.7.2.dev1803]
+[2023-04-15 04:57:33] INFO root fetch - processPackages [mycotools]: executing diffoscope
+[2023-04-15 04:57:33] INFO root fetch - processPackages [mycotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mycotools-0.9b8.tar.gz tmp/mycotools-0.9b9.tar.gz --markdown 20230415/m/mycotools/0.9b8-0.9b9/diff.md --exclude *.pyd
+[2023-04-15 04:57:33] INFO root fetch - processPackages [drs-compliance-test]: Downloading https://files.pythonhosted.org/packages/8b/4e/868d3b85b15bbf57f90950a58f27cdf141e1e435b5a14a970308a8cec968/drs-compliance-test-1.0.1.tar.gz
+[2023-04-15 04:57:33] INFO root fetch - processPackages [odoo12-addon-account-menu-invoice-refund]: Downloading https://files.pythonhosted.org/packages/41/c5/e298c3a3fd8e8eba93dcc30e170e1f4cb67b521e71567cc571f1c6597578/odoo12_addon_account_menu_invoice_refund-12.0.2.0.1-py3-none-any.whl
+[2023-04-15 04:57:33] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/20/57/4a4527ea6b24caae6319392c0bb102c418750975a4c9c28b46577aca842a/duckdb-0.7.2.dev1803-cp37-cp37m-macosx_10_9_x86_64.whl
+[2023-04-15 04:57:33] INFO root fetch - processPackages [TelegramNotificator]: Downloading https://files.pythonhosted.org/packages/e6/5d/7d99ada23a691e73d6e44b9f683e034365649d0f970f153e27c02e3e564b/TelegramNotificator-1.0.4.tar.gz
+[2023-04-15 04:57:33] INFO root fetch - processPackages [drs-compliance-test]: Downloading https://files.pythonhosted.org/packages/2f/c1/f4c630bde68ed8f97ae85723982ba19548c13c81162dc5c25ba1f5e09679/drs-compliance-test-1.0.2.tar.gz
+[2023-04-15 04:57:33] INFO root fetch - processPackages [TelegramNotificator]: executing diffoscope
+[2023-04-15 04:57:33] INFO root fetch - processPackages [TelegramNotificator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TelegramNotificator-1.0.3.tar.gz tmp/TelegramNotificator-1.0.4.tar.gz --markdown 20230415/T/TelegramNotificator/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-15 04:57:33] INFO root fetch - processPackages [odoo12-addon-account-menu-invoice-refund]: Downloading https://files.pythonhosted.org/packages/4b/b7/7076ddf8c1ac61b9d6533746973ea862e5606cd4599fd62eb00789c53b4b/odoo12_addon_account_menu_invoice_refund-12.0.2.0.1.99.dev1-py3-none-any.whl
+[2023-04-15 04:57:33] INFO root fetch - processPackages [drs-compliance-test]: executing diffoscope
+[2023-04-15 04:57:33] INFO root fetch - processPackages [drs-compliance-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drs-compliance-test-1.0.1.tar.gz tmp/drs-compliance-test-1.0.2.tar.gz --markdown 20230415/d/drs-compliance-test/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-15 04:57:33] WARNING root fetch - processPackages [duckdb]: Skipping package: exceeds size limit 14252308>=10485760
+[2023-04-15 04:57:33] INFO root fetch - processPackages [duckdb]: Start processing: ml-pipelines-sdk
+[2023-04-15 04:57:33] INFO root fetch - main [MainThread]: End processing [duckdb] error
+[2023-04-15 04:57:33] INFO root fetch - processPackages [ml-pipelines-sdk]: New version: [1.9.1] Old Version: [1.9.0rc0]
+[2023-04-15 04:57:33] INFO root fetch - processPackages [odoo12-addon-account-menu-invoice-refund]: executing diffoscope
+[2023-04-15 04:57:33] INFO root fetch - processPackages [odoo12-addon-account-menu-invoice-refund]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_account_menu_invoice_refund-12.0.2.0.1-py3-none-any.whl.zip tmp/odoo12_addon_account_menu_invoice_refund-12.0.2.0.1.99.dev1-py3-none-any.whl.zip --markdown 20230415/o/odoo12-addon-account-menu-invoice-refund/12.0.2.0.1-12.0.2.0.1.99.dev1/diff.md --exclude *.pyd
+[2023-04-15 04:57:33] INFO root fetch - processPackages [ml-pipelines-sdk]: Downloading https://files.pythonhosted.org/packages/0b/de/0efff1121efe9a2783d7b98152b1b8379cbc7e91a2e26d339a0cc2515e92/ml_pipelines_sdk-1.9.0rc0-py3-none-any.whl
+[2023-04-15 04:57:33] INFO root fetch - processPackages [ml-pipelines-sdk]: Downloading https://files.pythonhosted.org/packages/5e/c3/a57766f5c0762f7177e90323e845c7c0958227afb8537727d5e6c1fb9ab9/ml_pipelines_sdk-1.9.1-py3-none-any.whl
+[2023-04-15 04:57:34] INFO root fetch - processPackages [ml-pipelines-sdk]: executing diffoscope
+[2023-04-15 04:57:34] INFO root fetch - processPackages [ml-pipelines-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_pipelines_sdk-1.9.0rc0-py3-none-any.whl.zip tmp/ml_pipelines_sdk-1.9.1-py3-none-any.whl.zip --markdown 20230415/m/ml-pipelines-sdk/1.9.0rc0-1.9.1/diff.md --exclude *.pyd
+[2023-04-15 04:57:34] INFO root fetch - processPackages [TelegramNotificator]: Start processing: tfx
+[2023-04-15 04:57:34] INFO root fetch - main [MainThread]: End processing [TelegramNotificator]: success
+[2023-04-15 04:57:34] INFO root fetch - processPackages [tfx]: New version: [1.9.1] Old Version: [1.9.0rc0]
+[2023-04-15 04:57:34] INFO root fetch - processPackages [mycotools]: Start processing: coola
+[2023-04-15 04:57:34] INFO root fetch - main [MainThread]: End processing [mycotools]: success
+[2023-04-15 04:57:34] INFO root fetch - processPackages [coola]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-15 04:57:34] INFO root fetch - processPackages [tfx]: Downloading https://files.pythonhosted.org/packages/80/6c/6f908206558af5cebdf192dfb2a573747f1716b2717c82073521ba76b9a2/tfx-1.9.0rc0-py3-none-any.whl
+[2023-04-15 04:57:34] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-menu-invoice-refund]: success
+[2023-04-15 04:57:34] INFO root fetch - processPackages [coola]: Downloading https://files.pythonhosted.org/packages/b7/10/e25bcf020fb344f7c9b3fcc0fb2c6766994386263f64540b3418dca2c89d/coola-0.0.6.tar.gz
+[2023-04-15 04:57:34] INFO root fetch - processPackages [coola]: executing diffoscope
+[2023-04-15 04:57:34] INFO root fetch - processPackages [coola]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coola-0.0.5.tar.gz tmp/coola-0.0.6.tar.gz --markdown 20230415/c/coola/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-15 04:57:34] INFO root fetch - main [MainThread]: End processing [drs-compliance-test]: success
+[2023-04-15 04:57:35] INFO root fetch - processPackages [tfx]: Downloading https://files.pythonhosted.org/packages/57/e8/257e2dcb9e00cf5a9787fa98e16361bf89ad1d0165cb1763b99377579a93/tfx-1.9.1-py3-none-any.whl
+[2023-04-15 04:57:35] INFO root fetch - main [MainThread]: End processing [coola]: success
+[2023-04-15 04:57:35] INFO root fetch - processPackages [tfx]: executing diffoscope
+[2023-04-15 04:57:35] INFO root fetch - processPackages [tfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfx-1.9.0rc0-py3-none-any.whl.zip tmp/tfx-1.9.1-py3-none-any.whl.zip --markdown 20230415/t/tfx/1.9.0rc0-1.9.1/diff.md --exclude *.pyd
+[2023-04-15 04:57:39] INFO root fetch - main [MainThread]: End processing [ml-pipelines-sdk]: success
+[2023-04-15 04:57:54] INFO root fetch - main [MainThread]: End processing [tfx]: success
+[2023-04-15 04:57:54] INFO root fetch - main [MainThread]: Store serial: [17716024]
