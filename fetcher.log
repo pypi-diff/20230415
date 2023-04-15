@@ -5627,3 +5627,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 07:19:55] INFO root fetch - main [MainThread]: End processing [odoo11-addon-mgmtsystem-nonconformity]: success
 [2023-04-15 07:19:55] INFO root fetch - main [MainThread]: End processing [tinta]: success
 [2023-04-15 07:19:55] INFO root fetch - main [MainThread]: Store serial: [17716633]
+[2023-04-15 07:24:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716633]
+[2023-04-15 07:25:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-15 07:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo13-addon-mgmtsystem-hazard-risk
+[2023-04-15 07:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-mgmtsystem-hazard-risk
+[2023-04-15 07:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crazy-thursday
+[2023-04-15 07:25:02] INFO root fetch - processPackages [odoo14-addon-mgmtsystem-hazard-risk]: New version: [14.0.1.0.1.dev7] Old Version: [14.0.1.0.1.dev6]
+[2023-04-15 07:25:02] INFO root fetch - processPackages [odoo13-addon-mgmtsystem-hazard-risk]: New version: [13.0.1.0.1.dev9] Old Version: [13.0.1.0.1.dev8]
+[2023-04-15 07:25:02] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-15 07:25:02] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-15 07:25:02] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230415/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-15 07:25:02] INFO root fetch - processPackages [odoo14-addon-mgmtsystem-hazard-risk]: Downloading https://files.pythonhosted.org/packages/11/6d/1102deae42ab8ef2fac3f3703bbaf3d35f074a6a97885bd2423f1d72701f/odoo14_addon_mgmtsystem_hazard_risk-14.0.1.0.1.dev6-py3-none-any.whl
+[2023-04-15 07:25:02] INFO root fetch - processPackages [odoo13-addon-mgmtsystem-hazard-risk]: Downloading https://files.pythonhosted.org/packages/30/04/98c2e6fb620e2a4953dcb5205f057a937d8cfc1584bcdfc8f4472f4fe47b/odoo13_addon_mgmtsystem_hazard_risk-13.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-15 07:25:02] INFO root fetch - processPackages [odoo13-addon-mgmtsystem-hazard-risk]: Downloading https://files.pythonhosted.org/packages/59/4b/4f5c281a08bc15fe1778f3a43ef9c355c7b780860b71c6c0087b696798bb/odoo13_addon_mgmtsystem_hazard_risk-13.0.1.0.1.dev9-py3-none-any.whl
+[2023-04-15 07:25:02] INFO root fetch - processPackages [odoo14-addon-mgmtsystem-hazard-risk]: Downloading https://files.pythonhosted.org/packages/e1/1c/77cfc7321f7725f23c62588d32311e6a69845a805a16d17fad9eb1776ec6/odoo14_addon_mgmtsystem_hazard_risk-14.0.1.0.1.dev7-py3-none-any.whl
+[2023-04-15 07:25:02] INFO root fetch - processPackages [odoo13-addon-mgmtsystem-hazard-risk]: executing diffoscope
+[2023-04-15 07:25:02] INFO root fetch - processPackages [odoo13-addon-mgmtsystem-hazard-risk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_mgmtsystem_hazard_risk-13.0.1.0.1.dev8-py3-none-any.whl.zip tmp/odoo13_addon_mgmtsystem_hazard_risk-13.0.1.0.1.dev9-py3-none-any.whl.zip --markdown 20230415/o/odoo13-addon-mgmtsystem-hazard-risk/13.0.1.0.1.dev8-13.0.1.0.1.dev9/diff.md --exclude *.pyd
+[2023-04-15 07:25:03] INFO root fetch - processPackages [odoo14-addon-mgmtsystem-hazard-risk]: executing diffoscope
+[2023-04-15 07:25:03] INFO root fetch - processPackages [odoo14-addon-mgmtsystem-hazard-risk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_mgmtsystem_hazard_risk-14.0.1.0.1.dev6-py3-none-any.whl.zip tmp/odoo14_addon_mgmtsystem_hazard_risk-14.0.1.0.1.dev7-py3-none-any.whl.zip --markdown 20230415/o/odoo14-addon-mgmtsystem-hazard-risk/14.0.1.0.1.dev6-14.0.1.0.1.dev7/diff.md --exclude *.pyd
+[2023-04-15 07:25:03] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-15 07:25:04] INFO root fetch - main [MainThread]: End processing [odoo13-addon-mgmtsystem-hazard-risk]: success
+[2023-04-15 07:25:04] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mgmtsystem-hazard-risk]: success
+[2023-04-15 07:25:04] INFO root fetch - main [MainThread]: Store serial: [17716642]
