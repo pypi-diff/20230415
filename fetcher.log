@@ -16724,3 +16724,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 16:23:22] INFO root fetch - main [MainThread]: End processing [spin-phonon-suite]: success
 [2023-04-15 16:23:23] INFO root fetch - main [MainThread]: End processing [jal]: success
 [2023-04-15 16:23:23] INFO root fetch - main [MainThread]: Store serial: [17719511]
+[2023-04-15 16:28:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719511]
+[2023-04-15 16:28:32] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipython-gpt
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: novauniverse
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: HACNet
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SPLayout
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: revChatGPT
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sneakpeek-py
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vmn
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xata
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PySide2-Fluent-Widgets
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ob-dj-store
+[2023-04-15 16:28:32] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: New version: [0.7.0] Old Version: [0.6.9]
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ipython-gpt]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 16:28:32] INFO root fetch - processPackages [novauniverse]: New version: [2.1.3] Old Version: [2.1.2]
+[2023-04-15 16:28:32] INFO root fetch - processPackages [sneakpeek-py]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-15 16:28:32] INFO root fetch - processPackages [HACNet]: New version: [1.3.2] Old Version: [1.0.1]
+[2023-04-15 16:28:32] INFO root fetch - processPackages [xata]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ob-dj-store]: New version: [0.0.9.8] Old Version: [0.0.9.7]
+[2023-04-15 16:28:32] INFO root fetch - processPackages [SPLayout]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-15 16:28:32] INFO root fetch - processPackages [vmn]: New version: [0.8.0rc8] Old Version: [0.8.0rc7]
+[2023-04-15 16:28:32] INFO root fetch - processPackages [revChatGPT]: New version: [4.2.2] Old Version: [4.2.1]
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ob-dj-store]: executing diffoscope
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ob-dj-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ob-dj-store-0.0.9.7.tar.gz tmp/ob-dj-store-0.0.9.8.tar.gz --markdown 20230415/o/ob-dj-store/0.0.9.7-0.0.9.8/diff.md --exclude *.pyd
+[2023-04-15 16:28:32] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/af/91/1da156d11ceb2e712930014a8180b8aae5541f37a3d0034218de99121470/PySide2-Fluent-Widgets-0.6.9.tar.gz
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ipython-gpt]: Downloading https://files.pythonhosted.org/packages/35/13/d0c0e0bee119c3c75862b328619c0840607f76c1ff83293ac6f15776742c/ipython-gpt-0.0.4.tar.gz
+[2023-04-15 16:28:32] INFO root fetch - processPackages [sneakpeek-py]: Downloading https://files.pythonhosted.org/packages/2b/a2/d8f285f467a8e09d5d1eba3ea793fcb8e31aea98edf49c21040c006458c4/sneakpeek_py-0.1.1.tar.gz
+[2023-04-15 16:28:32] INFO root fetch - processPackages [xata]: Downloading https://files.pythonhosted.org/packages/78/60/7a66a7abb65e893447e7385428c973db07c337d5ccf0706e7dc294a93ba2/xata-0.8.0.tar.gz
+[2023-04-15 16:28:32] INFO root fetch - processPackages [novauniverse]: Downloading https://files.pythonhosted.org/packages/fc/b5/cdae827daddc00639b544cf019f080f57db11cab2b0f7959e671586821bd/novauniverse-2.1.3.tar.gz
+[2023-04-15 16:28:32] INFO root fetch - processPackages [HACNet]: Downloading https://files.pythonhosted.org/packages/d4/eb/f063ec63123abbc2341da20bcf317c06065b686afee0e77ab34a43a8ca83/HACNet-1.0.1.tar.gz
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ipython-gpt]: executing diffoscope
+[2023-04-15 16:28:32] INFO root fetch - processPackages [vmn]: Downloading https://files.pythonhosted.org/packages/23/45/5b37c2edcfded31b40f00f7c7fb83150e08aca053018b1a26f25cfd524b1/vmn-0.8.0rc7-py3-none-any.whl
+[2023-04-15 16:28:32] INFO root fetch - processPackages [ipython-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipython-gpt-0.0.3.tar.gz tmp/ipython-gpt-0.0.4.tar.gz --markdown 20230415/i/ipython-gpt/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 16:28:32] INFO root fetch - processPackages [novauniverse]: executing diffoscope
+[2023-04-15 16:28:32] INFO root fetch - processPackages [novauniverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novauniverse-2.1.2-py3-none-any.whl.zip tmp/novauniverse-2.1.3.tar.gz --markdown 20230415/n/novauniverse/2.1.2-2.1.3/diff.md --exclude *.pyd
+[2023-04-15 16:28:33] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/02/f4/a0d0c7b9e59de462af0002cd5e55e139ce1886891093b39a59bc040a2a15/revChatGPT-4.2.2.tar.gz
+[2023-04-15 16:28:33] INFO root fetch - processPackages [sneakpeek-py]: Downloading https://files.pythonhosted.org/packages/10/ea/66f2069cc5d74fa2e008b5ad154be1a6b621ae7831a43438725aa8abe4cf/sneakpeek_py-0.1.2.tar.gz
+[2023-04-15 16:28:33] INFO root fetch - processPackages [SPLayout]: Downloading https://files.pythonhosted.org/packages/f8/fd/3f6a4a0627ddd4d71b0f1eb21eba27b5aecbe8928433767a305ab1c9f9f5/SPLayout-0.4.5.tar.gz
+[2023-04-15 16:28:33] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-04-15 16:28:33] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-4.2.1.tar.gz tmp/revChatGPT-4.2.2.tar.gz --markdown 20230415/r/revChatGPT/4.2.1-4.2.2/diff.md --exclude *.pyd
+[2023-04-15 16:28:33] INFO root fetch - processPackages [sneakpeek-py]: executing diffoscope
+[2023-04-15 16:28:33] INFO root fetch - processPackages [sneakpeek-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sneakpeek_py-0.1.1.tar.gz tmp/sneakpeek_py-0.1.2.tar.gz --markdown 20230415/s/sneakpeek-py/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 16:28:33] INFO root fetch - processPackages [SPLayout]: executing diffoscope
+[2023-04-15 16:28:33] INFO root fetch - processPackages [SPLayout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SPLayout-0.4.4.tar.gz tmp/SPLayout-0.4.5.tar.gz --markdown 20230415/S/SPLayout/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-15 16:28:33] INFO root fetch - processPackages [xata]: Downloading https://files.pythonhosted.org/packages/85/a6/7102778d453e8b4d14801f2e1db3cbc3e456f38ed151cf7c1fea65c38300/xata-0.9.0.tar.gz
+[2023-04-15 16:28:33] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/22/89/0ed069c6bef8089bae6c0d15022e3ab0b55e8a4ac3da16ac34d91b2b644f/PySide2-Fluent-Widgets-0.7.0.tar.gz
+[2023-04-15 16:28:33] INFO root fetch - processPackages [HACNet]: Downloading https://files.pythonhosted.org/packages/cd/d1/2062ab94b0947fbca6bd759ab1cae9f45b624020623ae63c9482f45cafa2/HACNet-1.3.2.tar.gz
+[2023-04-15 16:28:33] INFO root fetch - processPackages [xata]: executing diffoscope
+[2023-04-15 16:28:33] INFO root fetch - processPackages [xata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xata-0.8.0.tar.gz tmp/xata-0.9.0.tar.gz --markdown 20230415/x/xata/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 16:28:33] INFO root fetch - processPackages [HACNet]: executing diffoscope
+[2023-04-15 16:28:33] INFO root fetch - processPackages [HACNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HACNet-1.0.1.tar.gz tmp/HACNet-1.3.2.tar.gz --markdown 20230415/H/HACNet/1.0.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-15 16:28:33] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: executing diffoscope
+[2023-04-15 16:28:33] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide2-Fluent-Widgets-0.6.9.tar.gz tmp/PySide2-Fluent-Widgets-0.7.0.tar.gz --markdown 20230415/P/PySide2-Fluent-Widgets/0.6.9-0.7.0/diff.md --exclude *.pyd
+[2023-04-15 16:28:33] INFO root fetch - processPackages [vmn]: Downloading https://files.pythonhosted.org/packages/06/4e/0b14262568a337d6ce200773ea842fb66d7ccced5b8c9d0d2b8f48722ab8/vmn-0.8.0rc8-py3-none-any.whl
+[2023-04-15 16:28:33] INFO root fetch - processPackages [vmn]: executing diffoscope
+[2023-04-15 16:28:33] INFO root fetch - processPackages [vmn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmn-0.8.0rc7-py3-none-any.whl.zip tmp/vmn-0.8.0rc8-py3-none-any.whl.zip --markdown 20230415/v/vmn/0.8.0rc7-0.8.0rc8/diff.md --exclude *.pyd
+[2023-04-15 16:28:34] INFO root fetch - main [MainThread]: End processing [novauniverse]: success
+[2023-04-15 16:28:34] INFO root fetch - main [MainThread]: End processing [ipython-gpt]: success
+[2023-04-15 16:28:34] INFO root fetch - main [MainThread]: End processing [HACNet]: success
+[2023-04-15 16:28:34] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
+[2023-04-15 16:28:34] INFO root fetch - main [MainThread]: End processing [xata]: success
+[2023-04-15 16:28:34] INFO root fetch - main [MainThread]: End processing [sneakpeek-py]: success
+[2023-04-15 16:28:35] INFO root fetch - main [MainThread]: End processing [vmn]: success
+[2023-04-15 16:28:35] INFO root fetch - main [MainThread]: End processing [SPLayout]: success
+[2023-04-15 16:28:36] INFO root fetch - main [MainThread]: End processing [ob-dj-store]: success
+[2023-04-15 16:28:38] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
+[2023-04-15 16:28:38] INFO root fetch - main [MainThread]: Store serial: [17719541]
