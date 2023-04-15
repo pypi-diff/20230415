@@ -5899,3 +5899,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 08:06:26] INFO root fetch - main [MainThread]: End processing [ProfiWiki]: success
 [2023-04-15 08:06:29] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-04-15 08:06:29] INFO root fetch - main [MainThread]: Store serial: [17716767]
+[2023-04-15 08:11:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716767]
+[2023-04-15 08:11:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-15 08:11:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meroua
+[2023-04-15 08:11:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meroua
+[2023-04-15 08:11:37] INFO root fetch - processPackages [meroua]: New version: [1.2] Old Version: [1.1]
+[2023-04-15 08:11:37] INFO root fetch - processPackages [meroua]: New version: [1.2] Old Version: [1.1]
+[2023-04-15 08:11:37] INFO root fetch - processPackages [meroua]: Downloading https://files.pythonhosted.org/packages/6b/ca/28ff6d7ba2feb8f719659306995fecce40f38febe11e21257b3ea27662e7/meroua-1.2.tar.gz
+[2023-04-15 08:11:37] INFO root fetch - processPackages [meroua]: Downloading https://files.pythonhosted.org/packages/6b/ca/28ff6d7ba2feb8f719659306995fecce40f38febe11e21257b3ea27662e7/meroua-1.2.tar.gz
+[2023-04-15 08:11:38] INFO root fetch - processPackages [meroua]: executing diffoscope
+[2023-04-15 08:11:38] INFO root fetch - processPackages [meroua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meroua-1.1.tar.gz tmp/meroua-1.2.tar.gz --markdown 20230415/m/meroua/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-15 08:11:38] INFO root fetch - processPackages [meroua]: executing diffoscope
+[2023-04-15 08:11:38] INFO root fetch - processPackages [meroua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meroua-1.1.tar.gz tmp/meroua-1.2.tar.gz --markdown 20230415/m/meroua/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-15 08:11:38] INFO root fetch - main [MainThread]: End processing [meroua]: success
+[2023-04-15 08:11:38] INFO root fetch - main [MainThread]: End processing [meroua]: success
+[2023-04-15 08:11:38] INFO root fetch - main [MainThread]: Store serial: [17716772]
