@@ -17984,3 +17984,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 19:00:40] INFO root fetch - main [MainThread]: End processing [cvxpylayers]: success
 [2023-04-15 19:00:45] INFO root fetch - main [MainThread]: End processing [snaptrade-python-sdk]: success
 [2023-04-15 19:00:45] INFO root fetch - main [MainThread]: Store serial: [17720400]
+[2023-04-15 19:05:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720400]
+[2023-04-15 19:05:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 19:05:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dancesport-parser
+[2023-04-15 19:05:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leveled-hotbackup-s3-sync
+[2023-04-15 19:05:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gwemopt
+[2023-04-15 19:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: objdictgen
+[2023-04-15 19:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NEMO-user-details
+[2023-04-15 19:05:54] WARNING root fetch - processPackages [objdictgen]: Skipping, unable to determine old version
+[2023-04-15 19:05:54] INFO root fetch - main [MainThread]: End processing [objdictgen] error
+[2023-04-15 19:05:54] INFO root fetch - processPackages [NEMO-user-details]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-15 19:05:54] WARNING root fetch - processPackages [leveled-hotbackup-s3-sync]: Skipping, unable to determine old version
+[2023-04-15 19:05:54] INFO root fetch - main [MainThread]: End processing [leveled-hotbackup-s3-sync] error
+[2023-04-15 19:05:54] INFO root fetch - processPackages [dancesport-parser]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-15 19:05:54] INFO root fetch - processPackages [gwemopt]: New version: [0.0.81] Old Version: [0.0.80]
+[2023-04-15 19:05:54] INFO root fetch - processPackages [NEMO-user-details]: Downloading https://files.pythonhosted.org/packages/23/14/8142742c30018eefc8b84a3d952631f1ca530838f4672ab7b483fcbaca30/NEMO_user_details-1.5.0-py3-none-any.whl
+[2023-04-15 19:05:54] INFO root fetch - processPackages [dancesport-parser]: Downloading https://files.pythonhosted.org/packages/c4/7d/d61f16642faafe3f3d2fa5eafd212326dc9cb478e1a7af32ff0acb23c752/dancesport_parser-0.0.4.tar.gz
+[2023-04-15 19:05:54] INFO root fetch - processPackages [gwemopt]: Downloading https://files.pythonhosted.org/packages/6b/1e/ab643639cd667290ddd049a5d67ba5e592a0db021574e2c53753442eb2bb/gwemopt-0.0.80.tar.gz
+[2023-04-15 19:05:54] INFO root fetch - processPackages [dancesport-parser]: Downloading https://files.pythonhosted.org/packages/f4/4c/27930b2f83b77541d01e23b6afc8373d082fbad2551f7bf8425a192b6335/dancesport_parser-0.0.5.tar.gz
+[2023-04-15 19:05:54] INFO root fetch - processPackages [NEMO-user-details]: Downloading https://files.pythonhosted.org/packages/ba/dd/c0c4e84d929ecfcdd1340c70618a2acd54c541a5bf8ada1a8e474e2143ad/NEMO_user_details-1.5.1-py3-none-any.whl
+[2023-04-15 19:05:54] INFO root fetch - processPackages [gwemopt]: Downloading https://files.pythonhosted.org/packages/ad/ee/75168b6496fb7ed4d48f04b81989293d21d129dcf4c5454fb2c45d5d224a/gwemopt-0.0.81.tar.gz
+[2023-04-15 19:05:54] INFO root fetch - processPackages [dancesport-parser]: executing diffoscope
+[2023-04-15 19:05:54] INFO root fetch - processPackages [dancesport-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dancesport_parser-0.0.4.tar.gz tmp/dancesport_parser-0.0.5.tar.gz --markdown 20230415/d/dancesport-parser/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 19:05:54] INFO root fetch - processPackages [NEMO-user-details]: executing diffoscope
+[2023-04-15 19:05:54] INFO root fetch - processPackages [NEMO-user-details]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO_user_details-1.5.0-py3-none-any.whl.zip tmp/NEMO_user_details-1.5.1-py3-none-any.whl.zip --markdown 20230415/N/NEMO-user-details/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-15 19:05:54] INFO root fetch - processPackages [gwemopt]: executing diffoscope
+[2023-04-15 19:05:54] INFO root fetch - processPackages [gwemopt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gwemopt-0.0.80.tar.gz tmp/gwemopt-0.0.81.tar.gz --markdown 20230415/g/gwemopt/0.0.80-0.0.81/diff.md --exclude *.pyd
+[2023-04-15 19:05:55] INFO root fetch - main [MainThread]: End processing [NEMO-user-details]: success
+[2023-04-15 19:05:55] INFO root fetch - main [MainThread]: End processing [dancesport-parser]: success
+[2023-04-15 19:05:57] INFO root fetch - main [MainThread]: End processing [gwemopt]: success
+[2023-04-15 19:05:57] INFO root fetch - main [MainThread]: Store serial: [17720416]
