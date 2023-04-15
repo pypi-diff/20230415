@@ -4216,3 +4216,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 04:03:36] INFO root fetch - main [MainThread]: End processing [ovos-listener]: success
 [2023-04-15 04:03:36] INFO root fetch - main [MainThread]: End processing [pyroscopegridding]: success
 [2023-04-15 04:03:36] INFO root fetch - main [MainThread]: Store serial: [17715803]
+[2023-04-15 04:08:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715803]
+[2023-04-15 04:08:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-15 04:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyroscopegridding
+[2023-04-15 04:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opencmiss.importer
+[2023-04-15 04:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyautosrt
+[2023-04-15 04:08:43] INFO root fetch - processPackages [pyroscopegridding]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-15 04:08:43] INFO root fetch - processPackages [pyautosrt]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 04:08:43] INFO root fetch - processPackages [opencmiss.importer]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-15 04:08:43] INFO root fetch - processPackages [pyautosrt]: executing diffoscope
+[2023-04-15 04:08:43] INFO root fetch - processPackages [pyautosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyautosrt-0.1.5.tar.gz tmp/pyautosrt-0.1.6.tar.gz --markdown 20230415/p/pyautosrt/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 04:08:43] INFO root fetch - processPackages [pyroscopegridding]: Downloading https://files.pythonhosted.org/packages/67/86/9ab12491424183e327fb7a0d920419d15c25db7472cb48a8a7126d920150/pyroscopegridding-0.2.3.tar.gz
+[2023-04-15 04:08:43] INFO root fetch - processPackages [opencmiss.importer]: Downloading https://files.pythonhosted.org/packages/6e/c7/4532ebbecb882d6d831b8f12a884b5dd7d8d7991909f545cdb385d2460f9/opencmiss.importer-0.4.1.tar.gz
+[2023-04-15 04:08:43] INFO root fetch - processPackages [pyroscopegridding]: executing diffoscope
+[2023-04-15 04:08:43] INFO root fetch - processPackages [pyroscopegridding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroscopegridding-0.2.2.tar.gz tmp/pyroscopegridding-0.2.3.tar.gz --markdown 20230415/p/pyroscopegridding/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-15 04:08:43] INFO root fetch - processPackages [opencmiss.importer]: Downloading https://files.pythonhosted.org/packages/71/15/9e0058d2d1d3d70eccf27e49cec6b6a3a88dc274ed229133975242f66cd8/opencmiss.importer-0.4.2.tar.gz
+[2023-04-15 04:08:43] INFO root fetch - processPackages [opencmiss.importer]: executing diffoscope
+[2023-04-15 04:08:43] INFO root fetch - processPackages [opencmiss.importer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opencmiss.importer-0.4.1.tar.gz tmp/opencmiss.importer-0.4.2.tar.gz --markdown 20230415/o/opencmiss.importer/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-15 04:08:44] INFO root fetch - main [MainThread]: End processing [pyautosrt]: success
+[2023-04-15 04:08:44] INFO root fetch - main [MainThread]: End processing [pyroscopegridding]: success
+[2023-04-15 04:08:44] INFO root fetch - main [MainThread]: End processing [opencmiss.importer]: success
+[2023-04-15 04:08:44] INFO root fetch - main [MainThread]: Store serial: [17715816]
