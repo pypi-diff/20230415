@@ -17921,3 +17921,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 18:50:02] INFO root fetch - main [MainThread]: End processing [pylity]: success
 [2023-04-15 18:50:02] INFO root fetch - main [MainThread]: End processing [salix-containers]: success
 [2023-04-15 18:50:02] INFO root fetch - main [MainThread]: Store serial: [17720327]
+[2023-04-15 18:55:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720327]
+[2023-04-15 18:55:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: osintbuddy
+[2023-04-15 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: algoz900
+[2023-04-15 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hiddifypanel
+[2023-04-15 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aztecglyph
+[2023-04-15 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: osintbuddy
+[2023-04-15 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: trading-robot
+[2023-04-15 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: calc2003
+[2023-04-15 18:55:11] INFO root fetch - processPackages [osintbuddy]: New version: [0.0.2rc14.post1] Old Version: [0.0.2rc13.post1]
+[2023-04-15 18:55:11] WARNING root fetch - processPackages [algoz900]: Skipping, unable to determine old version
+[2023-04-15 18:55:11] INFO root fetch - main [MainThread]: End processing [algoz900] error
+[2023-04-15 18:55:11] WARNING root fetch - processPackages [trading-robot]: Skipping, unable to determine old version
+[2023-04-15 18:55:11] INFO root fetch - main [MainThread]: End processing [trading-robot] error
+[2023-04-15 18:55:11] WARNING root fetch - processPackages [aztecglyph]: Skipping, unable to determine old version
+[2023-04-15 18:55:11] INFO root fetch - main [MainThread]: End processing [aztecglyph] error
+[2023-04-15 18:55:11] INFO root fetch - processPackages [osintbuddy]: New version: [0.0.2rc14.post1] Old Version: [0.0.2rc13.post1]
+[2023-04-15 18:55:11] INFO root fetch - processPackages [hiddifypanel]: New version: [4.0.0.dev3] Old Version: [3.1.9]
+[2023-04-15 18:55:11] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-15 18:55:11] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.1.9-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-4.0.0.dev3-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230415/h/hiddifypanel/3.1.9-4.0.0.dev3/diff.md --exclude *.pyd
+[2023-04-15 18:55:11] WARNING root fetch - processPackages [calc2003]: Skipping, unable to determine old version
+[2023-04-15 18:55:11] INFO root fetch - main [MainThread]: End processing [calc2003] error
+[2023-04-15 18:55:11] INFO root fetch - processPackages [osintbuddy]: Downloading https://files.pythonhosted.org/packages/7a/01/5c96dfc502ff9f38a4a84423dedff063dff96eada9b7129205d88f850269/osintbuddy-0.0.2rc13.post1.tar.gz
+[2023-04-15 18:55:11] INFO root fetch - processPackages [osintbuddy]: Downloading https://files.pythonhosted.org/packages/7a/01/5c96dfc502ff9f38a4a84423dedff063dff96eada9b7129205d88f850269/osintbuddy-0.0.2rc13.post1.tar.gz
+[2023-04-15 18:55:11] INFO root fetch - processPackages [osintbuddy]: Downloading https://files.pythonhosted.org/packages/7d/83/459e00f0815638cbe4f2ba863133411e8e3bcce85706dad1c5b3dc34bbd6/osintbuddy-0.0.2rc14.post1.tar.gz
+[2023-04-15 18:55:11] INFO root fetch - processPackages [osintbuddy]: Downloading https://files.pythonhosted.org/packages/7d/83/459e00f0815638cbe4f2ba863133411e8e3bcce85706dad1c5b3dc34bbd6/osintbuddy-0.0.2rc14.post1.tar.gz
+[2023-04-15 18:55:12] INFO root fetch - processPackages [osintbuddy]: executing diffoscope
+[2023-04-15 18:55:12] INFO root fetch - processPackages [osintbuddy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osintbuddy-0.0.2rc13.post1.tar.gz tmp/osintbuddy-0.0.2rc14.post1.tar.gz --markdown 20230415/o/osintbuddy/0.0.2rc13.post1-0.0.2rc14.post1/diff.md --exclude *.pyd
+[2023-04-15 18:55:12] INFO root fetch - processPackages [osintbuddy]: executing diffoscope
+[2023-04-15 18:55:12] INFO root fetch - processPackages [osintbuddy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osintbuddy-0.0.2rc13.post1.tar.gz tmp/osintbuddy-0.0.2rc14.post1.tar.gz --markdown 20230415/o/osintbuddy/0.0.2rc13.post1-0.0.2rc14.post1/diff.md --exclude *.pyd
+[2023-04-15 18:55:13] INFO root fetch - main [MainThread]: End processing [osintbuddy]: success
+[2023-04-15 18:55:13] INFO root fetch - main [MainThread]: End processing [osintbuddy]: success
+[2023-04-15 18:55:30] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-04-15 18:55:30] INFO root fetch - main [MainThread]: Store serial: [17720370]
