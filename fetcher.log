@@ -19834,3 +19834,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 22:11:23] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
 [2023-04-15 22:11:30] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2023-04-15 22:11:30] INFO root fetch - main [MainThread]: Store serial: [17721651]
+[2023-04-15 22:16:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721651]
+[2023-04-15 22:16:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 22:16:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nlptoolssna
+[2023-04-15 22:16:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openmlda
+[2023-04-15 22:16:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psd-export
+[2023-04-15 22:16:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sabledocs
+[2023-04-15 22:16:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wibuapi
+[2023-04-15 22:16:39] INFO root fetch - processPackages [nlptoolssna]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-15 22:16:39] WARNING root fetch - processPackages [psd-export]: Skipping, unable to determine old version
+[2023-04-15 22:16:39] INFO root fetch - main [MainThread]: End processing [psd-export] error
+[2023-04-15 22:16:39] INFO root fetch - processPackages [sabledocs]: New version: [0.1.46] Old Version: [0.1.43]
+[2023-04-15 22:16:39] WARNING root fetch - processPackages [openmlda]: Skipping, unable to determine old version
+[2023-04-15 22:16:39] INFO root fetch - main [MainThread]: End processing [openmlda] error
+[2023-04-15 22:16:39] INFO root fetch - processPackages [wibuapi]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-15 22:16:39] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 22:16:39] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.43.tar.gz tmp/sabledocs-0.1.46-py3-none-any.whl.zip --markdown 20230415/s/sabledocs/0.1.43-0.1.46/diff.md --exclude *.pyd
+[2023-04-15 22:16:39] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/7a/8b/841e80caa347981b547171ebdee2ea16b0f94648d1d18f85d176a6529c34/nlptoolssna-0.1.9.tar.gz
+[2023-04-15 22:16:39] INFO root fetch - processPackages [wibuapi]: Downloading https://files.pythonhosted.org/packages/d7/66/90033bb357457601f72d30fc250d1048f6f3e83fc2c1b33da387fa910590/wibuapi-0.1.1.tar.gz
+[2023-04-15 22:16:39] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/ac/16/04caca93cbae15d052fe022e88d042ebdfc3aee8e38d4b8a64e897891a3f/nlptoolssna-0.2.0.tar.gz
+[2023-04-15 22:16:39] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-15 22:16:39] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.1.9.tar.gz tmp/nlptoolssna-0.2.0.tar.gz --markdown 20230415/n/nlptoolssna/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 22:16:39] INFO root fetch - processPackages [wibuapi]: Downloading https://files.pythonhosted.org/packages/c7/f5/a82441298c3b238b0e296e856ef10c12db07cd28ba51b90a4b47a72c8e52/wibuapi-0.1.2.tar.gz
+[2023-04-15 22:16:40] INFO root fetch - processPackages [wibuapi]: executing diffoscope
+[2023-04-15 22:16:40] INFO root fetch - processPackages [wibuapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wibuapi-0.1.1.tar.gz tmp/wibuapi-0.1.2.tar.gz --markdown 20230415/w/wibuapi/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 22:16:40] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 22:16:40] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-15 22:16:41] INFO root fetch - main [MainThread]: End processing [wibuapi]: success
+[2023-04-15 22:16:41] INFO root fetch - main [MainThread]: Store serial: [17721668]
