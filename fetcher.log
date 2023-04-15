@@ -15805,3 +15805,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 14:54:18] INFO root fetch - main [MainThread]: End processing [live-fast-api]: success
 [2023-04-15 14:54:18] INFO root fetch - main [MainThread]: End processing [the-spymaster-solvers-client]: success
 [2023-04-15 14:54:18] INFO root fetch - main [MainThread]: Store serial: [17719009]
+[2023-04-15 14:59:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719009]
+[2023-04-15 14:59:27] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 14:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flake8-sqlalchemy
+[2023-04-15 14:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lanms-nova
+[2023-04-15 14:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sabledocs
+[2023-04-15 14:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: the-spymaster-api
+[2023-04-15 14:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-04-15 14:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: watchgha
+[2023-04-15 14:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: arlq
+[2023-04-15 14:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: binary-refinery
+[2023-04-15 14:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sabledocs
+[2023-04-15 14:59:27] WARNING root fetch - processPackages [flake8-sqlalchemy]: Skipping, unable to determine old version
+[2023-04-15 14:59:27] INFO root fetch - main [MainThread]: End processing [flake8-sqlalchemy] error
+[2023-04-15 14:59:27] INFO root fetch - processPackages [lanms-nova]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-15 14:59:27] INFO root fetch - processPackages [the-spymaster-api]: New version: [1.8.0] Old Version: [1.7.0]
+[2023-04-15 14:59:27] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-15 14:59:27] INFO root fetch - processPackages [sabledocs]: New version: [0.0.2.dev29] Old Version: [0.0.1.dev27]
+[2023-04-15 14:59:27] INFO root fetch - processPackages [arlq]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-15 14:59:27] INFO root fetch - processPackages [sabledocs]: New version: [0.0.2.dev29] Old Version: [0.0.1.dev27]
+[2023-04-15 14:59:27] INFO root fetch - processPackages [binary-refinery]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-15 14:59:27] WARNING root fetch - processPackages [watchgha]: Skipping, unable to determine old version
+[2023-04-15 14:59:27] INFO root fetch - main [MainThread]: End processing [watchgha] error
+[2023-04-15 14:59:27] INFO root fetch - processPackages [lanms-nova]: Downloading https://files.pythonhosted.org/packages/13/6e/c847c8952c116ce4b0b9cdad2159aeb2cdd192909cdf7afb307c7be920e0/lanms-nova-1.0.1.tar.gz
+[2023-04-15 14:59:27] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/e0/6e/d57fd232186129bf0bdcccca84a956c8f4c9789e772c4f49464ffdb14683/sabledocs-0.0.1.dev27.tar.gz
+[2023-04-15 14:59:27] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/e0/6e/d57fd232186129bf0bdcccca84a956c8f4c9789e772c4f49464ffdb14683/sabledocs-0.0.1.dev27.tar.gz
+[2023-04-15 14:59:27] INFO root fetch - processPackages [the-spymaster-api]: Downloading https://files.pythonhosted.org/packages/c9/3f/c266c25264eea810ff4f5826d49f3989832b1c86c342613df0b5b2bac670/the-spymaster-api-1.7.0.tar.gz
+[2023-04-15 14:59:27] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/95/3d/56cb2ef0d207c1d563d9ff7520eabd783b8cda0111c2c03e7c2fd072ffa6/fbgemm_gpu_nightly_cpu-2023.4.8-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-15 14:59:27] INFO root fetch - processPackages [arlq]: Downloading https://files.pythonhosted.org/packages/0f/ec/b8f728ebf5b00f51c33bb60a89b81b0fd0d934087adb9845a1bc06a581dd/arlq-1.0.6.tar.gz
+[2023-04-15 14:59:27] INFO root fetch - processPackages [binary-refinery]: Downloading https://files.pythonhosted.org/packages/50/4c/b013d77b06eccb8463cff018f8b6404f2886a49423f4f1144ad77aad6842/binary-refinery-0.6.1.tar.gz
+[2023-04-15 14:59:27] INFO root fetch - processPackages [arlq]: executing diffoscope
+[2023-04-15 14:59:27] INFO root fetch - processPackages [arlq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arlq-1.0.5.tar.gz tmp/arlq-1.0.6.tar.gz --markdown 20230415/a/arlq/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-15 14:59:27] INFO root fetch - processPackages [the-spymaster-api]: Downloading https://files.pythonhosted.org/packages/b5/07/522f638906ee030ef35d82c6fb54dc3a3611baa24b87c0594f7e7263e240/the-spymaster-api-1.8.0.tar.gz
+[2023-04-15 14:59:27] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/2d/1f/e8bd467ad1dde7242771771b6508354fad8fd42488cb6c15b12f62c6c2ab/sabledocs-0.0.2.dev29.tar.gz
+[2023-04-15 14:59:27] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/2d/1f/e8bd467ad1dde7242771771b6508354fad8fd42488cb6c15b12f62c6c2ab/sabledocs-0.0.2.dev29.tar.gz
+[2023-04-15 14:59:27] INFO root fetch - processPackages [binary-refinery]: Downloading https://files.pythonhosted.org/packages/15/23/d0b70b7f45807db7a5df9d43d5367738d49983818f3e5a7ce26383a5dbb4/binary-refinery-0.6.2.tar.gz
+[2023-04-15 14:59:27] INFO root fetch - processPackages [lanms-nova]: Downloading https://files.pythonhosted.org/packages/ab/a7/2a5827675432f3cbc80f22112e55355b1af697215024acf868e982f50d35/lanms-nova-1.0.2.tar.gz
+[2023-04-15 14:59:27] INFO root fetch - processPackages [the-spymaster-api]: executing diffoscope
+[2023-04-15 14:59:27] INFO root fetch - processPackages [the-spymaster-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/the-spymaster-api-1.7.0.tar.gz tmp/the-spymaster-api-1.8.0.tar.gz --markdown 20230415/t/the-spymaster-api/1.7.0-1.8.0/diff.md --exclude *.pyd
+[2023-04-15 14:59:27] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 14:59:27] INFO root fetch - processPackages [lanms-nova]: executing diffoscope
+[2023-04-15 14:59:27] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.0.1.dev27.tar.gz tmp/sabledocs-0.0.2.dev29.tar.gz --markdown 20230415/s/sabledocs/0.0.1.dev27-0.0.2.dev29/diff.md --exclude *.pyd
+[2023-04-15 14:59:27] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 14:59:27] INFO root fetch - processPackages [lanms-nova]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lanms-nova-1.0.1.tar.gz tmp/lanms-nova-1.0.2.tar.gz --markdown 20230415/l/lanms-nova/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-15 14:59:27] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.0.1.dev27.tar.gz tmp/sabledocs-0.0.2.dev29.tar.gz --markdown 20230415/s/sabledocs/0.0.1.dev27-0.0.2.dev29/diff.md --exclude *.pyd
+[2023-04-15 14:59:28] INFO root fetch - processPackages [binary-refinery]: executing diffoscope
+[2023-04-15 14:59:28] INFO root fetch - processPackages [binary-refinery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binary-refinery-0.6.1.tar.gz tmp/binary-refinery-0.6.2.tar.gz --markdown 20230415/b/binary-refinery/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-15 14:59:28] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/7a/8b/7de5a365cfae34cd68b385fb2ac2ef2760296e1312eac915dbbc0f90985b/fbgemm_gpu_nightly_cpu-2023.4.9-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-15 14:59:28] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-04-15 14:59:28] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.4.8-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.4.9-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230415/f/fbgemm-gpu-nightly-cpu/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-15 14:59:29] INFO root fetch - main [MainThread]: End processing [arlq]: success
+[2023-04-15 14:59:29] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 14:59:29] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 14:59:29] INFO root fetch - main [MainThread]: End processing [the-spymaster-api]: success
+[2023-04-15 14:59:31] INFO root fetch - main [MainThread]: End processing [binary-refinery]: success
+[2023-04-15 14:59:31] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-04-15 14:59:37] INFO root fetch - main [MainThread]: End processing [lanms-nova]: success
+[2023-04-15 14:59:37] INFO root fetch - main [MainThread]: Store serial: [17719040]
