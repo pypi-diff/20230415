@@ -4389,3 +4389,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 04:26:33] INFO root fetch - main [MainThread]: End processing [pyote]: success
 [2023-04-15 04:26:36] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-04-15 04:26:36] INFO root fetch - main [MainThread]: Store serial: [17715907]
+[2023-04-15 04:31:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715907]
+[2023-04-15 04:31:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 04:31:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meowerbot
+[2023-04-15 04:31:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: midgard-discord
+[2023-04-15 04:31:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ethome-ml
+[2023-04-15 04:31:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wellplate-image
+[2023-04-15 04:31:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pywriter
+[2023-04-15 04:31:42] INFO root fetch - processPackages [ethome-ml]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-15 04:31:42] WARNING root fetch - processPackages [midgard-discord]: Skipping, unable to determine old version
+[2023-04-15 04:31:42] INFO root fetch - main [MainThread]: End processing [midgard-discord] error
+[2023-04-15 04:31:42] INFO root fetch - processPackages [meowerbot]: New version: [2.5.0] Old Version: [2.4.6]
+[2023-04-15 04:31:42] INFO root fetch - processPackages [wellplate-image]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 04:31:42] WARNING root fetch - processPackages [pywriter]: Skipping, unable to determine old version
+[2023-04-15 04:31:42] INFO root fetch - main [MainThread]: End processing [pywriter] error
+[2023-04-15 04:31:42] INFO root fetch - processPackages [wellplate-image]: Downloading https://files.pythonhosted.org/packages/87/13/0474b6a2eab5721de848c4dbd64dead746344cb28206bb2802f57075ff50/wellplate_image-0.1.0.tar.gz
+[2023-04-15 04:31:42] INFO root fetch - processPackages [meowerbot]: Downloading https://files.pythonhosted.org/packages/8f/2c/7e83b8459ab13879f3cd524de5d4c1c143b3e9165f58a72dba899c18e28b/meowerbot-2.4.6.tar.gz
+[2023-04-15 04:31:42] INFO root fetch - processPackages [ethome-ml]: Downloading https://files.pythonhosted.org/packages/82/a9/263056dcdb9dc1748b9ec8c7110484488ae22ba669bf6b2963354ab7cbd6/ethome-ml-0.4.0.tar.gz
+[2023-04-15 04:31:43] INFO root fetch - processPackages [meowerbot]: Downloading https://files.pythonhosted.org/packages/95/c7/7c3086c7efbe93ca04740c03f4edd49c09c35f133f54f991f917c8e092cc/meowerbot-2.5.0.tar.gz
+[2023-04-15 04:31:43] INFO root fetch - processPackages [wellplate-image]: Downloading https://files.pythonhosted.org/packages/f9/16/e87e9e93a8b6f57d6e720f1343fbd12d94157daeec89f256e5091d4237b7/wellplate_image-0.1.1.tar.gz
+[2023-04-15 04:31:43] INFO root fetch - processPackages [meowerbot]: executing diffoscope
+[2023-04-15 04:31:43] INFO root fetch - processPackages [meowerbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meowerbot-2.4.6.tar.gz tmp/meowerbot-2.5.0.tar.gz --markdown 20230415/m/meowerbot/2.4.6-2.5.0/diff.md --exclude *.pyd
+[2023-04-15 04:31:43] INFO root fetch - processPackages [wellplate-image]: executing diffoscope
+[2023-04-15 04:31:43] INFO root fetch - processPackages [wellplate-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wellplate_image-0.1.0.tar.gz tmp/wellplate_image-0.1.1.tar.gz --markdown 20230415/w/wellplate-image/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 04:31:43] INFO root fetch - processPackages [ethome-ml]: Downloading https://files.pythonhosted.org/packages/e7/41/fb2fdac391b85c0fbed0f7d33945b12838112ca23146dd1209693a26ff81/ethome-ml-0.5.0.tar.gz
+[2023-04-15 04:31:44] INFO root fetch - main [MainThread]: End processing [meowerbot]: success
+[2023-04-15 04:31:44] INFO root fetch - main [MainThread]: End processing [wellplate-image]: success
+[2023-04-15 04:31:44] INFO root fetch - processPackages [ethome-ml]: executing diffoscope
+[2023-04-15 04:31:44] INFO root fetch - processPackages [ethome-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethome-ml-0.4.0.tar.gz tmp/ethome-ml-0.5.0.tar.gz --markdown 20230415/e/ethome-ml/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-15 04:31:47] INFO root fetch - main [MainThread]: End processing [ethome-ml]: success
+[2023-04-15 04:31:47] INFO root fetch - main [MainThread]: Store serial: [17715925]
