@@ -16791,3 +16791,16 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 16:28:36] INFO root fetch - main [MainThread]: End processing [ob-dj-store]: success
 [2023-04-15 16:28:38] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
 [2023-04-15 16:28:38] INFO root fetch - main [MainThread]: Store serial: [17719541]
+[2023-04-15 16:33:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719541]
+[2023-04-15 16:33:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-15 16:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatgpt-plugin
+[2023-04-15 16:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: passy
+[2023-04-15 16:33:49] INFO root fetch - processPackages [passy]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 16:33:49] WARNING root fetch - processPackages [chatgpt-plugin]: Skipping, unable to determine old version
+[2023-04-15 16:33:49] INFO root fetch - main [MainThread]: End processing [chatgpt-plugin] error
+[2023-04-15 16:33:49] INFO root fetch - processPackages [passy]: Downloading https://files.pythonhosted.org/packages/29/de/a56f542d51948e056539bfff8710763cc3ff90860a155a0498170be716d8/passy-0.0.1.tar.gz
+[2023-04-15 16:33:49] INFO root fetch - processPackages [passy]: Downloading https://files.pythonhosted.org/packages/ba/9b/43c70963c6e248b08cd7f99544be117246ab487fbe7a2017d22bfc4ed2fc/passy-0.0.2.tar.gz
+[2023-04-15 16:33:50] INFO root fetch - processPackages [passy]: executing diffoscope
+[2023-04-15 16:33:50] INFO root fetch - processPackages [passy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/passy-0.0.1.tar.gz tmp/passy-0.0.2.tar.gz --markdown 20230415/p/passy/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 16:33:51] INFO root fetch - main [MainThread]: End processing [passy]: success
+[2023-04-15 16:33:51] INFO root fetch - main [MainThread]: Store serial: [17719551]
