@@ -13730,3 +13730,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 11:06:12] INFO root fetch - main [MainThread]: End processing [nekograd]: success
 [2023-04-15 11:06:12] INFO root fetch - main [MainThread]: End processing [plone.base]: success
 [2023-04-15 11:06:12] INFO root fetch - main [MainThread]: Store serial: [17717726]
+[2023-04-15 11:11:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717726]
+[2023-04-15 11:11:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cellsaw
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ProfiWiki
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: types-simplejson
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ttp
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tbp-nightly
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tf-nightly
+[2023-04-15 11:11:21] INFO root fetch - processPackages [cellsaw]: New version: [0.0.58] Old Version: [0.0.2]
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ProfiWiki]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-15 11:11:21] INFO root fetch - processPackages [types-simplejson]: New version: [3.19.0.0] Old Version: [3.18.0.3]
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ttp]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-15 11:11:21] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-04-15 11:11:21] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/b9/6c/43a589e5ab1d1b961e5780e41057576c7abd5bf16d3f871d8ef4ebdaf461/tbp-nightly-2.9.0a20221129.tar.gz
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ProfiWiki]: Downloading https://files.pythonhosted.org/packages/24/2a/949d11607ff6da0994fc6708a14436d050e3ec9bfd918426fd9541b6a6cf/profiwiki-0.1.2.tar.gz
+[2023-04-15 11:11:21] INFO root fetch - processPackages [types-simplejson]: Downloading https://files.pythonhosted.org/packages/9f/9e/9de7e0f42dd48ea22c3664f756da003638a78ef380cd7a1b2ced5dd248f4/types-simplejson-3.18.0.3.tar.gz
+[2023-04-15 11:11:21] INFO root fetch - processPackages [cellsaw]: Downloading https://files.pythonhosted.org/packages/a4/98/d3a4e3cbe5268f30b73a683d3655ad7e06bc4218d0609fdf5077665050e8/cellsaw-0.0.2.tar.gz
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ttp]: Downloading https://files.pythonhosted.org/packages/8f/46/0dfc8e2e5a656ab99ecb36d04213fa12627911b131a2af5bf555d52a4b1a/ttp-0.9.2.tar.gz
+[2023-04-15 11:11:21] INFO root fetch - processPackages [tf-nightly]: New version: [2.13.0.dev20230415] Old Version: [2.13.0.dev20230414]
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ProfiWiki]: executing diffoscope
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ProfiWiki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiwiki-0.1.1.tar.gz tmp/profiwiki-0.1.2.tar.gz --markdown 20230415/P/ProfiWiki/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 11:11:21] INFO root fetch - processPackages [cellsaw]: Downloading https://files.pythonhosted.org/packages/02/10/c1da3b715e864df23cc7a8ace604045885f308a331ef0c5a089334fbc8cc/cellsaw-0.0.58.tar.gz
+[2023-04-15 11:11:21] INFO root fetch - processPackages [types-simplejson]: Downloading https://files.pythonhosted.org/packages/c6/1d/476ef6c685cc43a12df9b954331427b83c4ab6cac745dc152d7be2381f0a/types-simplejson-3.19.0.0.tar.gz
+[2023-04-15 11:11:21] INFO root fetch - processPackages [ttp]: Downloading https://files.pythonhosted.org/packages/42/68/7980c8d148488acf3a547c8e83ade3601215b568f220788d4d7d393f4cea/ttp-0.9.3.tar.gz
+[2023-04-15 11:11:22] INFO root fetch - processPackages [types-simplejson]: executing diffoscope
+[2023-04-15 11:11:22] INFO root fetch - processPackages [types-simplejson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-simplejson-3.18.0.3.tar.gz tmp/types-simplejson-3.19.0.0.tar.gz --markdown 20230415/t/types-simplejson/3.18.0.3-3.19.0.0/diff.md --exclude *.pyd
+[2023-04-15 11:11:22] INFO root fetch - processPackages [cellsaw]: executing diffoscope
+[2023-04-15 11:11:22] INFO root fetch - processPackages [cellsaw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellsaw-0.0.2.tar.gz tmp/cellsaw-0.0.58.tar.gz --markdown 20230415/c/cellsaw/0.0.2-0.0.58/diff.md --exclude *.pyd
+[2023-04-15 11:11:22] INFO root fetch - processPackages [ttp]: executing diffoscope
+[2023-04-15 11:11:22] INFO root fetch - processPackages [ttp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ttp-0.9.2.tar.gz tmp/ttp-0.9.3.tar.gz --markdown 20230415/t/ttp/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-15 11:11:22] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/88/a6/b098b6cf927f246e633fa02bdf25d99dfce4e22675c82994d1bafb9634af/tf_nightly-2.13.0.dev20230415-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-04-15 11:11:22] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2023-04-15 11:11:22] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.13.0.dev20230414-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.13.0.dev20230415-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20230415/t/tf-nightly/2.13.0.dev20230414-2.13.0.dev20230415/diff.md --exclude *.pyd
+[2023-04-15 11:11:22] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/2e/31/c611af28c0d42c7cbb86781523f94e57796654fd8b7a7049e8a6db2eecf3/tbp-nightly-2.9.0a20221130.tar.gz
+[2023-04-15 11:11:23] INFO root fetch - main [MainThread]: End processing [types-simplejson]: success
+[2023-04-15 11:11:23] INFO root fetch - main [MainThread]: End processing [cellsaw]: success
+[2023-04-15 11:11:23] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2023-04-15 11:11:23] INFO root fetch - main [MainThread]: End processing [ProfiWiki]: success
+[2023-04-15 11:11:23] INFO root fetch - main [MainThread]: End processing [ttp]: success
+[2023-04-15 11:11:24] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-04-15 11:11:24] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230415/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-04-15 11:11:27] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-04-15 11:11:27] INFO root fetch - main [MainThread]: Store serial: [17717743]
