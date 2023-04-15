@@ -20591,3 +20591,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 23:42:45] INFO root fetch - main [MainThread]: End processing [fclogr]: success
 [2023-04-15 23:42:45] INFO root fetch - main [MainThread]: End processing [fabric-fim]: success
 [2023-04-15 23:42:45] INFO root fetch - main [MainThread]: Store serial: [17722071]
+[2023-04-15 23:47:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722071]
+[2023-04-15 23:47:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-15 23:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crcgen
+[2023-04-15 23:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coiled
+[2023-04-15 23:47:54] INFO root fetch - processPackages [crcgen]: New version: [2.5] Old Version: [2.4]
+[2023-04-15 23:47:54] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-15 23:47:54] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-15 23:47:54] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230415/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-15 23:47:55] INFO root fetch - processPackages [crcgen]: Downloading https://files.pythonhosted.org/packages/55/e8/191fe8da3644af43d4f43789e711f0fb543c3b1c6952c2e3f79905dfaa33/crcgen-2.4.tar.gz
+[2023-04-15 23:47:55] INFO root fetch - processPackages [crcgen]: Downloading https://files.pythonhosted.org/packages/72/db/01d4cec92a5cf78ebf561f77443565634d205ac837f3dd4a7af500848897/crcgen-2.5.tar.gz
+[2023-04-15 23:47:55] INFO root fetch - processPackages [crcgen]: executing diffoscope
+[2023-04-15 23:47:55] INFO root fetch - processPackages [crcgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crcgen-2.4.tar.gz tmp/crcgen-2.5.tar.gz --markdown 20230415/c/crcgen/2.4-2.5/diff.md --exclude *.pyd
+[2023-04-15 23:47:56] INFO root fetch - main [MainThread]: End processing [crcgen]: success
+[2023-04-15 23:47:58] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-15 23:47:58] INFO root fetch - main [MainThread]: Store serial: [17722079]
