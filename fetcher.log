@@ -15239,3 +15239,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 13:54:46] INFO root fetch - main [MainThread]: End processing [cdxbasics]: success
 [2023-04-15 13:54:46] INFO root fetch - main [MainThread]: End processing [resqpy]: success
 [2023-04-15 13:54:46] INFO root fetch - main [MainThread]: Store serial: [17718638]
+[2023-04-15 13:59:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718638]
+[2023-04-15 13:59:55] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 13:59:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arxiv-bot
+[2023-04-15 13:59:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqle
+[2023-04-15 13:59:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: discord-advert-framework
+[2023-04-15 13:59:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdxbasics
+[2023-04-15 13:59:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scenedataset
+[2023-04-15 13:59:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: py-raycast-engine
+[2023-04-15 13:59:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-sdgpt
+[2023-04-15 13:59:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: terraform-backend-s3-bucket
+[2023-04-15 13:59:55] INFO root fetch - processPackages [scenedataset]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-15 13:59:55] INFO root fetch - processPackages [cdxbasics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-15 13:59:55] WARNING root fetch - processPackages [sqle]: Skipping, unable to determine old version
+[2023-04-15 13:59:55] INFO root fetch - main [MainThread]: End processing [sqle] error
+[2023-04-15 13:59:55] INFO root fetch - processPackages [arxiv-bot]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 13:59:55] INFO root fetch - processPackages [discord-advert-framework]: New version: [2.6.3] Old Version: [2.6.2]
+[2023-04-15 13:59:55] INFO root fetch - processPackages [terraform-backend-s3-bucket]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-15 13:59:55] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-15 13:59:55] INFO root fetch - processPackages [py-raycast-engine]: New version: [1.0.3] Old Version: [0.1.1]
+[2023-04-15 13:59:55] INFO root fetch - processPackages [cdxbasics]: executing diffoscope
+[2023-04-15 13:59:55] INFO root fetch - processPackages [cdxbasics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdxbasics-0.2.8.tar.gz tmp/cdxbasics-0.2.9.tar.gz --markdown 20230415/c/cdxbasics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-15 13:59:55] INFO root fetch - processPackages [arxiv-bot]: Downloading https://files.pythonhosted.org/packages/18/26/1d63e3a3c762f1dc94d08160f42b8c6e18fe04b29e5395e6bded920bf9d7/arxiv_bot-0.0.3.tar.gz
+[2023-04-15 13:59:55] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: executing diffoscope
+[2023-04-15 13:59:55] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_sdgpt-0.2.3.tar.gz tmp/nonebot_plugin_sdgpt-0.2.4.tar.gz --markdown 20230415/n/nonebot-plugin-sdgpt/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-15 13:59:55] INFO root fetch - processPackages [terraform-backend-s3-bucket]: executing diffoscope
+[2023-04-15 13:59:55] INFO root fetch - processPackages [terraform-backend-s3-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terraform-backend-s3-bucket-0.0.6.tar.gz tmp/terraform-backend-s3-bucket-0.0.7.tar.gz --markdown 20230415/t/terraform-backend-s3-bucket/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-15 13:59:55] INFO root fetch - processPackages [discord-advert-framework]: Downloading https://files.pythonhosted.org/packages/aa/c7/18b711e5ee46143a3814de1647a0f9e5d8be612ca40d6b125970d1177238/discord-advert-framework-2.6.2.tar.gz
+[2023-04-15 13:59:55] INFO root fetch - processPackages [scenedataset]: Downloading https://files.pythonhosted.org/packages/98/71/aea31507f695e0738955777b5d937fa613ea7670c80221ab4204e1f1a1b6/scenedataset-1.0.2.tar.gz
+[2023-04-15 13:59:55] WARNING root fetch - processPackages [discord-advert-framework]: Skipping package: exceeds size limit 17686708>=10485760
+[2023-04-15 13:59:55] INFO root fetch - main [MainThread]: End processing [discord-advert-framework] error
+[2023-04-15 13:59:55] INFO root fetch - processPackages [arxiv-bot]: Downloading https://files.pythonhosted.org/packages/21/97/ac692f8c5064bc0309cbb244638491d66c337074c4364da1904b7a607a76/arxiv_bot-0.0.4.tar.gz
+[2023-04-15 13:59:55] INFO root fetch - processPackages [scenedataset]: executing diffoscope
+[2023-04-15 13:59:55] INFO root fetch - processPackages [scenedataset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scenedataset-1.0.1.tar.gz tmp/scenedataset-1.0.2.tar.gz --markdown 20230415/s/scenedataset/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-15 13:59:55] INFO root fetch - processPackages [py-raycast-engine]: Downloading https://files.pythonhosted.org/packages/c7/0e/13b07d4697dc079cfee2a27907cf7a7272ad3bdb84d255034c8aa073ce29/py_raycast_engine-1.0.3-cp37-none-win_amd64.whl
+[2023-04-15 13:59:55] INFO root fetch - processPackages [arxiv-bot]: executing diffoscope
+[2023-04-15 13:59:55] INFO root fetch - processPackages [arxiv-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arxiv_bot-0.0.3.tar.gz tmp/arxiv_bot-0.0.4.tar.gz --markdown 20230415/a/arxiv-bot/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 13:59:56] INFO root fetch - processPackages [py-raycast-engine]: executing diffoscope
+[2023-04-15 13:59:56] INFO root fetch - processPackages [py-raycast-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_raycast_engine-0.1.1.tar.gz tmp/py_raycast_engine-1.0.3-cp37-none-win_amd64.whl.zip --markdown 20230415/p/py-raycast-engine/0.1.1-1.0.3/diff.md --exclude *.pyd
+[2023-04-15 13:59:56] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-sdgpt]: success
+[2023-04-15 13:59:56] INFO root fetch - main [MainThread]: End processing [cdxbasics]: success
+[2023-04-15 13:59:56] INFO root fetch - main [MainThread]: End processing [terraform-backend-s3-bucket]: success
+[2023-04-15 13:59:56] INFO root fetch - main [MainThread]: End processing [scenedataset]: success
+[2023-04-15 13:59:57] INFO root fetch - main [MainThread]: End processing [arxiv-bot]: success
+[2023-04-15 14:00:05] INFO root fetch - main [MainThread]: End processing [py-raycast-engine]: success
+[2023-04-15 14:00:05] INFO root fetch - main [MainThread]: Store serial: [17718692]
