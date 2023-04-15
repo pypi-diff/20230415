@@ -20167,3 +20167,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 22:53:07] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
 [2023-04-15 22:53:07] INFO root fetch - main [MainThread]: End processing [mine]: success
 [2023-04-15 22:53:07] INFO root fetch - main [MainThread]: Store serial: [17721810]
+[2023-04-15 22:58:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721810]
+[2023-04-15 22:58:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 22:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycryptlibraryv3
+[2023-04-15 22:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dyntastic
+[2023-04-15 22:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytaskrunner
+[2023-04-15 22:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flm-core
+[2023-04-15 22:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: balcony
+[2023-04-15 22:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hiddifypanel
+[2023-04-15 22:58:17] INFO root fetch - processPackages [dyntastic]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-15 22:58:17] INFO root fetch - processPackages [flm-core]: New version: [0.3.0a11] Old Version: [0.3.0a10]
+[2023-04-15 22:58:17] WARNING root fetch - processPackages [pycryptlibraryv3]: Skipping, unable to determine old version
+[2023-04-15 22:58:17] INFO root fetch - main [MainThread]: End processing [pycryptlibraryv3] error
+[2023-04-15 22:58:17] INFO root fetch - processPackages [balcony]: New version: [0.0.9] Old Version: [0.0.80]
+[2023-04-15 22:58:17] INFO root fetch - processPackages [pytaskrunner]: New version: [0.9.1.post0] Old Version: [0.9.0.post0]
+[2023-04-15 22:58:17] INFO root fetch - processPackages [hiddifypanel]: New version: [4.0.0.dev6] Old Version: [4.0.0.dev5]
+[2023-04-15 22:58:17] INFO root fetch - processPackages [flm-core]: Downloading https://files.pythonhosted.org/packages/ff/64/f53503290a9ea8a97441f324032ac3effbaa9f06f005979a0daf6f50bbee/flm_core-0.3.0a10.tar.gz
+[2023-04-15 22:58:17] INFO root fetch - processPackages [dyntastic]: Downloading https://files.pythonhosted.org/packages/17/08/c38b5962ea8fe93768ab888ddc6254f56e7a77a32feda84db12412084c36/dyntastic-0.8.2.tar.gz
+[2023-04-15 22:58:17] INFO root fetch - processPackages [balcony]: Downloading https://files.pythonhosted.org/packages/48/1e/028c54e4adeea776d58ff2cc8318ed6a68c37987e08178528f22be93c9bd/balcony-0.0.80.tar.gz
+[2023-04-15 22:58:17] INFO root fetch - processPackages [pytaskrunner]: Downloading https://files.pythonhosted.org/packages/8e/dc/d4b01fba93f4e8e7af03a2ed1f2feb70c3e6ae3088672f995cb86a3c6a20/pytaskrunner-0.9.0.post0.tar.gz
+[2023-04-15 22:58:17] INFO root fetch - processPackages [balcony]: executing diffoscope
+[2023-04-15 22:58:17] INFO root fetch - processPackages [balcony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balcony-0.0.80.tar.gz tmp/balcony-0.0.9.tar.gz --markdown 20230415/b/balcony/0.0.80-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 22:58:17] INFO root fetch - processPackages [dyntastic]: Downloading https://files.pythonhosted.org/packages/de/18/b3f04108390a952e5e44acf14b61fa808748e53305e0c0a32525474fef6e/dyntastic-0.9.0.tar.gz
+[2023-04-15 22:58:17] INFO root fetch - processPackages [flm-core]: Downloading https://files.pythonhosted.org/packages/88/35/ca01770c0848358a7ab70ded4c1cb3533a60cf82c9c4239681fc1e4a1e28/flm_core-0.3.0a11.tar.gz
+[2023-04-15 22:58:17] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-15 22:58:17] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-4.0.0.dev5-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-4.0.0.dev6-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230415/h/hiddifypanel/4.0.0.dev5-4.0.0.dev6/diff.md --exclude *.pyd
+[2023-04-15 22:58:17] INFO root fetch - processPackages [pytaskrunner]: Downloading https://files.pythonhosted.org/packages/21/08/425b8c06530d6dd3e5b854c37c4fb4df663d9bf94a8c8095843034a81a7b/pytaskrunner-0.9.1.post0.tar.gz
+[2023-04-15 22:58:17] INFO root fetch - processPackages [dyntastic]: executing diffoscope
+[2023-04-15 22:58:17] INFO root fetch - processPackages [dyntastic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyntastic-0.8.2.tar.gz tmp/dyntastic-0.9.0.tar.gz --markdown 20230415/d/dyntastic/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 22:58:17] INFO root fetch - processPackages [flm-core]: executing diffoscope
+[2023-04-15 22:58:17] INFO root fetch - processPackages [flm-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flm_core-0.3.0a10.tar.gz tmp/flm_core-0.3.0a11.tar.gz --markdown 20230415/f/flm-core/0.3.0a10-0.3.0a11/diff.md --exclude *.pyd
+[2023-04-15 22:58:17] INFO root fetch - processPackages [pytaskrunner]: executing diffoscope
+[2023-04-15 22:58:17] INFO root fetch - processPackages [pytaskrunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytaskrunner-0.9.0.post0.tar.gz tmp/pytaskrunner-0.9.1.post0.tar.gz --markdown 20230415/p/pytaskrunner/0.9.0.post0-0.9.1.post0/diff.md --exclude *.pyd
+[2023-04-15 22:58:18] INFO root fetch - main [MainThread]: End processing [balcony]: success
+[2023-04-15 22:58:18] INFO root fetch - main [MainThread]: End processing [dyntastic]: success
+[2023-04-15 22:58:19] INFO root fetch - main [MainThread]: End processing [pytaskrunner]: success
+[2023-04-15 22:58:19] INFO root fetch - main [MainThread]: End processing [flm-core]: success
+[2023-04-15 22:58:39] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-04-15 22:58:39] INFO root fetch - main [MainThread]: Store serial: [17721829]
