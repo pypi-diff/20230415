@@ -5279,3 +5279,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 06:29:14] INFO root fetch - main [MainThread]: End processing [odoo12-addon-document-page]: success
 [2023-04-15 06:29:20] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-04-15 06:29:20] INFO root fetch - main [MainThread]: Store serial: [17716454]
+[2023-04-15 06:34:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716454]
+[2023-04-15 06:34:26] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 06:34:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modProcesso
+[2023-04-15 06:34:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jkh011120-randmat
+[2023-04-15 06:34:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meta-reid
+[2023-04-15 06:34:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drs-compliance
+[2023-04-15 06:34:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pagla-chacha
+[2023-04-15 06:34:27] INFO root fetch - processPackages [drs-compliance]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-15 06:34:27] INFO root fetch - processPackages [meta-reid]: New version: [3.4.11] Old Version: [3.4.10]
+[2023-04-15 06:34:27] INFO root fetch - processPackages [modProcesso]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 06:34:27] WARNING root fetch - processPackages [jkh011120-randmat]: Skipping, unable to determine old version
+[2023-04-15 06:34:27] WARNING root fetch - processPackages [pagla-chacha]: Skipping, unable to determine old version
+[2023-04-15 06:34:27] INFO root fetch - processPackages [jkh011120-randmat]: Start processing: odoo12-addon-l10n-br-account
+[2023-04-15 06:34:27] INFO root fetch - processPackages [pagla-chacha]: Start processing: odoo14-addon-l10n-br-account
+[2023-04-15 06:34:27] INFO root fetch - main [MainThread]: End processing [jkh011120-randmat] error
+[2023-04-15 06:34:27] INFO root fetch - main [MainThread]: End processing [pagla-chacha] error
+[2023-04-15 06:34:27] INFO root fetch - processPackages [odoo12-addon-l10n-br-account]: New version: [12.0.9.0.1] Old Version: [12.0.9.0.0.99.dev3]
+[2023-04-15 06:34:27] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: New version: [14.0.5.7.0] Old Version: [14.0.5.6.3.dev1]
+[2023-04-15 06:34:27] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: executing diffoscope
+[2023-04-15 06:34:27] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_account-14.0.5.6.3.dev1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_account-14.0.5.7.0-py3-none-any.whl.zip --markdown 20230415/o/odoo14-addon-l10n-br-account/14.0.5.6.3.dev1-14.0.5.7.0/diff.md --exclude *.pyd
+[2023-04-15 06:34:27] INFO root fetch - processPackages [drs-compliance]: Downloading https://files.pythonhosted.org/packages/5c/db/9aa11b6f8bfdaa657848a60d9e7602573c65dad792a47a2ffc93f74b2f16/drs-compliance-1.0.8.tar.gz
+[2023-04-15 06:34:27] INFO root fetch - processPackages [odoo12-addon-l10n-br-account]: Downloading https://files.pythonhosted.org/packages/17/9d/003977e4ad66dc3c5aca9d04c9ae3738c186fa1a645f451337ac9db6d610/odoo12_addon_l10n_br_account-12.0.9.0.0.99.dev3-py3-none-any.whl
+[2023-04-15 06:34:27] INFO root fetch - processPackages [meta-reid]: Downloading https://files.pythonhosted.org/packages/1f/cb/5338edc68c3ca044b1f51bd062fe3bad4231b85b282c3e4ffab93e391d08/meta-reid-3.4.11.tar.gz
+[2023-04-15 06:34:27] INFO root fetch - processPackages [modProcesso]: executing diffoscope
+[2023-04-15 06:34:27] INFO root fetch - processPackages [modProcesso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modProcesso-0.0.8.tar.gz tmp/modProcesso-0.0.9.tar.gz --markdown 20230415/m/modProcesso/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 06:34:27] INFO root fetch - processPackages [drs-compliance]: executing diffoscope
+[2023-04-15 06:34:27] INFO root fetch - processPackages [drs-compliance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drs-compliance-1.0.7.tar.gz tmp/drs-compliance-1.0.8.tar.gz --markdown 20230415/d/drs-compliance/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-15 06:34:27] INFO root fetch - processPackages [meta-reid]: executing diffoscope
+[2023-04-15 06:34:27] INFO root fetch - processPackages [meta-reid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta-reid-3.4.10.tar.gz tmp/meta-reid-3.4.11.tar.gz --markdown 20230415/m/meta-reid/3.4.10-3.4.11/diff.md --exclude *.pyd
+[2023-04-15 06:34:27] INFO root fetch - processPackages [odoo12-addon-l10n-br-account]: Downloading https://files.pythonhosted.org/packages/ac/a5/83cae299b1b7d7836eaf8665d5ab89606d37c833138d3965303612624874/odoo12_addon_l10n_br_account-12.0.9.0.1-py3-none-any.whl
+[2023-04-15 06:34:28] INFO root fetch - processPackages [odoo12-addon-l10n-br-account]: executing diffoscope
+[2023-04-15 06:34:28] INFO root fetch - processPackages [odoo12-addon-l10n-br-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_l10n_br_account-12.0.9.0.0.99.dev3-py3-none-any.whl.zip tmp/odoo12_addon_l10n_br_account-12.0.9.0.1-py3-none-any.whl.zip --markdown 20230415/o/odoo12-addon-l10n-br-account/12.0.9.0.0.99.dev3-12.0.9.0.1/diff.md --exclude *.pyd
+[2023-04-15 06:34:28] INFO root fetch - main [MainThread]: End processing [modProcesso]: success
+[2023-04-15 06:34:28] INFO root fetch - main [MainThread]: End processing [drs-compliance]: success
+[2023-04-15 06:34:28] INFO root fetch - main [MainThread]: End processing [meta-reid]: success
+[2023-04-15 06:34:28] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account]: success
+[2023-04-15 06:34:29] INFO root fetch - main [MainThread]: End processing [odoo12-addon-l10n-br-account]: success
+[2023-04-15 06:34:29] INFO root fetch - main [MainThread]: Store serial: [17716476]
