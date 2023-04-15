@@ -16804,3 +16804,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 16:33:50] INFO root fetch - processPackages [passy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/passy-0.0.1.tar.gz tmp/passy-0.0.2.tar.gz --markdown 20230415/p/passy/0.0.1-0.0.2/diff.md --exclude *.pyd
 [2023-04-15 16:33:51] INFO root fetch - main [MainThread]: End processing [passy]: success
 [2023-04-15 16:33:51] INFO root fetch - main [MainThread]: Store serial: [17719551]
+[2023-04-15 16:38:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719551]
+[2023-04-15 16:39:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 16:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discord-ext-pager
+[2023-04-15 16:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openhasp-config-manager
+[2023-04-15 16:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: server-chat-pyqt-april-166
+[2023-04-15 16:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: client-chat-pyqt-april-166
+[2023-04-15 16:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gdsfactory
+[2023-04-15 16:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: carter-py
+[2023-04-15 16:39:00] WARNING root fetch - processPackages [server-chat-pyqt-april-166]: Skipping, unable to determine old version
+[2023-04-15 16:39:00] INFO root fetch - main [MainThread]: End processing [server-chat-pyqt-april-166] error
+[2023-04-15 16:39:00] INFO root fetch - processPackages [discord-ext-pager]: New version: [1.0.0.post1] Old Version: [1.0.0]
+[2023-04-15 16:39:00] INFO root fetch - processPackages [carter-py]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-15 16:39:00] INFO root fetch - processPackages [openhasp-config-manager]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-04-15 16:39:00] WARNING root fetch - processPackages [client-chat-pyqt-april-166]: Skipping, unable to determine old version
+[2023-04-15 16:39:00] INFO root fetch - main [MainThread]: End processing [client-chat-pyqt-april-166] error
+[2023-04-15 16:39:00] INFO root fetch - processPackages [gdsfactory]: New version: [6.9.0] Old Version: [6.84.0]
+[2023-04-15 16:39:01] INFO root fetch - processPackages [carter-py]: Downloading https://files.pythonhosted.org/packages/45/7b/62df2cf6be309444f3f2c62bda5d4bfb4b27948cf8a7a2aa50475daa8664/carter-py-0.1.tar.gz
+[2023-04-15 16:39:01] INFO root fetch - processPackages [gdsfactory]: Downloading https://files.pythonhosted.org/packages/0c/31/dec2f0ada99fd594ac90abc4542dbd56c86c4e4228335d7ddb7a6c1b5ab5/gdsfactory-6.84.0.tar.gz
+[2023-04-15 16:39:01] INFO root fetch - processPackages [discord-ext-pager]: Downloading https://files.pythonhosted.org/packages/70/b9/2b1b3080725f90d4e5727c26932fb85f127f073b87493ec35073ec7c092a/discord-ext-pager-1.0.0.tar.gz
+[2023-04-15 16:39:01] INFO root fetch - processPackages [openhasp-config-manager]: Downloading https://files.pythonhosted.org/packages/94/53/a228661de07525c0a5bfb538e7c83b074dd8fd8a676754349f850bb495de/openhasp_config_manager-0.4.8.tar.gz
+[2023-04-15 16:39:01] INFO root fetch - processPackages [openhasp-config-manager]: executing diffoscope
+[2023-04-15 16:39:01] INFO root fetch - processPackages [openhasp-config-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openhasp_config_manager-0.4.7.tar.gz tmp/openhasp_config_manager-0.4.8.tar.gz --markdown 20230415/o/openhasp-config-manager/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-04-15 16:39:01] INFO root fetch - processPackages [carter-py]: Downloading https://files.pythonhosted.org/packages/48/5b/84ff21d5a55ab15b85c72a22edde26dd0af2a3e1300f0cbee176082d016a/carter-py-0.1.1.tar.gz
+[2023-04-15 16:39:01] INFO root fetch - processPackages [discord-ext-pager]: Downloading https://files.pythonhosted.org/packages/45/7d/ea81a6338f30abecab260d1f2d223f6177c6eba3d889735e16c05ab2150c/discord-ext-pager-1.0.0.post1.tar.gz
+[2023-04-15 16:39:01] INFO root fetch - processPackages [carter-py]: executing diffoscope
+[2023-04-15 16:39:01] INFO root fetch - processPackages [carter-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carter-py-0.1.tar.gz tmp/carter-py-0.1.1.tar.gz --markdown 20230415/c/carter-py/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 16:39:01] INFO root fetch - processPackages [discord-ext-pager]: executing diffoscope
+[2023-04-15 16:39:01] INFO root fetch - processPackages [discord-ext-pager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-ext-pager-1.0.0.tar.gz tmp/discord-ext-pager-1.0.0.post1.tar.gz --markdown 20230415/d/discord-ext-pager/1.0.0-1.0.0.post1/diff.md --exclude *.pyd
+[2023-04-15 16:39:01] INFO root fetch - processPackages [gdsfactory]: Downloading https://files.pythonhosted.org/packages/51/e1/bea9be10e53a3f646a2bc569ab98aa0db7b687da72ac78a2d51eac5c8a5e/gdsfactory-6.9.0.tar.gz
+[2023-04-15 16:39:02] WARNING root fetch - processPackages [gdsfactory]: Skipping package: exceeds size limit 11141129>=10485760
+[2023-04-15 16:39:02] INFO root fetch - main [MainThread]: End processing [gdsfactory] error
+[2023-04-15 16:39:02] INFO root fetch - main [MainThread]: End processing [carter-py]: success
+[2023-04-15 16:39:02] INFO root fetch - main [MainThread]: End processing [openhasp-config-manager]: success
+[2023-04-15 16:39:02] INFO root fetch - main [MainThread]: End processing [discord-ext-pager]: success
+[2023-04-15 16:39:02] INFO root fetch - main [MainThread]: Store serial: [17719573]
