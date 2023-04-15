@@ -4519,3 +4519,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 04:47:14] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-move-print]: success
 [2023-04-15 04:47:15] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-chart-update]: success
 [2023-04-15 04:47:15] INFO root fetch - main [MainThread]: Store serial: [17715983]
+[2023-04-15 04:52:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715983]
+[2023-04-15 04:52:22] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 04:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-backpack
+[2023-04-15 04:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mpservice
+[2023-04-15 04:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mycotools
+[2023-04-15 04:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mycotools
+[2023-04-15 04:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ethome-ml
+[2023-04-15 04:52:22] INFO root fetch - processPackages [python-backpack]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-15 04:52:22] INFO root fetch - processPackages [ethome-ml]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-15 04:52:22] INFO root fetch - processPackages [mycotools]: New version: [0.9b9] Old Version: [0.9b8]
+[2023-04-15 04:52:22] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-04-15 04:52:22] INFO root fetch - processPackages [mycotools]: New version: [0.9b9] Old Version: [0.9b8]
+[2023-04-15 04:52:22] INFO root fetch - processPackages [python-backpack]: Downloading https://files.pythonhosted.org/packages/df/c7/064a8280e5a3c99369f09657533ef964dbafb619a1906e1fe844d18707df/python-backpack-1.0.3.tar.gz
+[2023-04-15 04:52:23] INFO root fetch - processPackages [ethome-ml]: Downloading https://files.pythonhosted.org/packages/e4/2e/fd11ea10ea70690b9a4082e80b2247913138e74cf063f2c5f3d41b4495ea/ethome-ml-0.5.1.tar.gz
+[2023-04-15 04:52:23] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-04-15 04:52:23] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230415/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-04-15 04:52:23] INFO root fetch - processPackages [mycotools]: executing diffoscope
+[2023-04-15 04:52:23] INFO root fetch - processPackages [mycotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mycotools-0.9b8.tar.gz tmp/mycotools-0.9b9.tar.gz --markdown 20230415/m/mycotools/0.9b8-0.9b9/diff.md --exclude *.pyd
+[2023-04-15 04:52:23] INFO root fetch - processPackages [mycotools]: executing diffoscope
+[2023-04-15 04:52:23] INFO root fetch - processPackages [mycotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mycotools-0.9b8.tar.gz tmp/mycotools-0.9b9.tar.gz --markdown 20230415/m/mycotools/0.9b8-0.9b9/diff.md --exclude *.pyd
+[2023-04-15 04:52:23] INFO root fetch - processPackages [python-backpack]: Downloading https://files.pythonhosted.org/packages/01/33/53cf00c460d9b1d19723160533d7ffa5c1abf925e70cdafe69cd7bf6fc02/python-backpack-1.0.4.tar.gz
+[2023-04-15 04:52:23] INFO root fetch - processPackages [ethome-ml]: Downloading https://files.pythonhosted.org/packages/e3/3e/e17ea4e5815c4f62f4b3d88b38766c5126c7eadf4e65589ca6acc091aa1b/ethome-ml-0.5.2.tar.gz
+[2023-04-15 04:52:23] INFO root fetch - processPackages [python-backpack]: executing diffoscope
+[2023-04-15 04:52:23] INFO root fetch - processPackages [python-backpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-backpack-1.0.3.tar.gz tmp/python-backpack-1.0.4.tar.gz --markdown 20230415/p/python-backpack/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-15 04:52:23] INFO root fetch - processPackages [ethome-ml]: executing diffoscope
+[2023-04-15 04:52:23] INFO root fetch - processPackages [ethome-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethome-ml-0.5.1.tar.gz tmp/ethome-ml-0.5.2.tar.gz --markdown 20230415/e/ethome-ml/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-15 04:52:24] INFO root fetch - processPackages [mpservice]: Start processing: gerabaldi
+[2023-04-15 04:52:24] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-04-15 04:52:24] INFO root fetch - processPackages [gerabaldi]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-04-15 04:52:24] INFO root fetch - processPackages [mycotools]: Start processing: TerraVide
+[2023-04-15 04:52:24] INFO root fetch - main [MainThread]: End processing [mycotools]: success
+[2023-04-15 04:52:24] INFO root fetch - processPackages [TerraVide]: New version: [0.1.4] Old Version: [0.1.2]
+[2023-04-15 04:52:24] INFO root fetch - main [MainThread]: End processing [python-backpack]: success
+[2023-04-15 04:52:24] INFO root fetch - main [MainThread]: End processing [mycotools]: success
+[2023-04-15 04:52:24] INFO root fetch - processPackages [gerabaldi]: Downloading https://files.pythonhosted.org/packages/52/5b/ed5c396d38c5a4886dc2d55489592a8bc57c94caf4736663bcbfd11cc5e7/gerabaldi-0.1.0.tar.gz
+[2023-04-15 04:52:24] INFO root fetch - processPackages [TerraVide]: Downloading https://files.pythonhosted.org/packages/18/65/7ef617f1a501a0bd031a148dd0ce4770e7d268d243467b48e007ef1c08fd/TerraVide-0.1.4.tar.gz
+[2023-04-15 04:52:24] INFO root fetch - processPackages [TerraVide]: executing diffoscope
+[2023-04-15 04:52:24] INFO root fetch - processPackages [TerraVide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TerraVide-0.1.2.tar.gz tmp/TerraVide-0.1.4.tar.gz --markdown 20230415/T/TerraVide/0.1.2-0.1.4/diff.md --exclude *.pyd
+[2023-04-15 04:52:24] INFO root fetch - processPackages [gerabaldi]: Downloading https://files.pythonhosted.org/packages/82/d1/57c5f40206795672dcd5c14032934d788a42a0c3b0d2d9c44f76ef6ef045/gerabaldi-0.1.2.tar.gz
+[2023-04-15 04:52:25] INFO root fetch - processPackages [gerabaldi]: executing diffoscope
+[2023-04-15 04:52:25] INFO root fetch - processPackages [gerabaldi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gerabaldi-0.1.0.tar.gz tmp/gerabaldi-0.1.2.tar.gz --markdown 20230415/g/gerabaldi/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 04:52:25] INFO root fetch - main [MainThread]: End processing [ethome-ml]: success
+[2023-04-15 04:52:25] INFO root fetch - main [MainThread]: End processing [TerraVide]: success
+[2023-04-15 04:52:26] INFO root fetch - main [MainThread]: End processing [gerabaldi]: success
+[2023-04-15 04:52:26] INFO root fetch - main [MainThread]: Store serial: [17716004]
