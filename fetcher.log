@@ -4419,3 +4419,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 04:31:44] INFO root fetch - processPackages [ethome-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethome-ml-0.4.0.tar.gz tmp/ethome-ml-0.5.0.tar.gz --markdown 20230415/e/ethome-ml/0.4.0-0.5.0/diff.md --exclude *.pyd
 [2023-04-15 04:31:47] INFO root fetch - main [MainThread]: End processing [ethome-ml]: success
 [2023-04-15 04:31:47] INFO root fetch - main [MainThread]: Store serial: [17715925]
+[2023-04-15 04:36:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715925]
+[2023-04-15 04:36:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 04:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hitz
+[2023-04-15 04:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mycotools
+[2023-04-15 04:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snc
+[2023-04-15 04:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-conventional-commits
+[2023-04-15 04:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sball
+[2023-04-15 04:36:53] WARNING root fetch - processPackages [hitz]: Skipping, unable to determine old version
+[2023-04-15 04:36:53] INFO root fetch - processPackages [hitz]: Start processing: ethome-ml
+[2023-04-15 04:36:53] INFO root fetch - main [MainThread]: End processing [hitz] error
+[2023-04-15 04:36:53] WARNING root fetch - processPackages [sball]: Skipping, unable to determine old version
+[2023-04-15 04:36:53] INFO root fetch - processPackages [snc]: New version: [0.1.0] Old Version: [0.0.6]
+[2023-04-15 04:36:53] INFO root fetch - main [MainThread]: End processing [sball] error
+[2023-04-15 04:36:53] INFO root fetch - processPackages [ethome-ml]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-15 04:36:53] INFO root fetch - processPackages [mycotools]: New version: [0.9b9] Old Version: [0.9b8]
+[2023-04-15 04:36:53] WARNING root fetch - processPackages [py-conventional-commits]: Skipping, unable to determine old version
+[2023-04-15 04:36:53] INFO root fetch - main [MainThread]: End processing [py-conventional-commits] error
+[2023-04-15 04:36:53] INFO root fetch - processPackages [ethome-ml]: executing diffoscope
+[2023-04-15 04:36:53] INFO root fetch - processPackages [ethome-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethome-ml-0.4.0.tar.gz tmp/ethome-ml-0.5.0.tar.gz --markdown 20230415/e/ethome-ml/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-15 04:36:53] INFO root fetch - processPackages [snc]: Downloading https://files.pythonhosted.org/packages/ef/6a/667909330250c0c9c47e5d867e26b95a29a112a4de97e337ef58f944b279/snc-0.0.6.tar.gz
+[2023-04-15 04:36:54] INFO root fetch - processPackages [mycotools]: executing diffoscope
+[2023-04-15 04:36:54] INFO root fetch - processPackages [mycotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mycotools-0.9b8.tar.gz tmp/mycotools-0.9b9.tar.gz --markdown 20230415/m/mycotools/0.9b8-0.9b9/diff.md --exclude *.pyd
+[2023-04-15 04:36:54] INFO root fetch - processPackages [snc]: Downloading https://files.pythonhosted.org/packages/26/4a/0b1bd8a51906206e9e9d8235065e77b1fdc3436f389e702c87f1d57d41fa/snc-0.1.0.tar.gz
+[2023-04-15 04:36:54] INFO root fetch - processPackages [snc]: executing diffoscope
+[2023-04-15 04:36:54] INFO root fetch - processPackages [snc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snc-0.0.6.tar.gz tmp/snc-0.1.0.tar.gz --markdown 20230415/s/snc/0.0.6-0.1.0/diff.md --exclude *.pyd
+[2023-04-15 04:36:55] INFO root fetch - main [MainThread]: End processing [mycotools]: success
+[2023-04-15 04:36:55] INFO root fetch - main [MainThread]: End processing [snc]: success
+[2023-04-15 04:36:56] INFO root fetch - main [MainThread]: End processing [ethome-ml]: success
+[2023-04-15 04:36:56] INFO root fetch - main [MainThread]: Store serial: [17715948]
