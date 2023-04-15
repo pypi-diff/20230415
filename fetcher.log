@@ -17462,3 +17462,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 17:49:09] INFO root fetch - main [MainThread]: End processing [py-github-gui-rackodo]: success
 [2023-04-15 17:49:10] INFO root fetch - main [MainThread]: End processing [scarf]: success
 [2023-04-15 17:49:10] INFO root fetch - main [MainThread]: Store serial: [17719975]
+[2023-04-15 17:54:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719975]
+[2023-04-15 17:54:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 17:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shiny-mdc
+[2023-04-15 17:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: the-spymaster-api
+[2023-04-15 17:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: slg-dev-ops
+[2023-04-15 17:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: neetbox
+[2023-04-15 17:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: exudyn
+[2023-04-15 17:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: typeguard
+[2023-04-15 17:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: env-canada
+[2023-04-15 17:54:20] INFO root fetch - processPackages [the-spymaster-api]: New version: [1.8.0] Old Version: [1.7.0]
+[2023-04-15 17:54:20] INFO root fetch - processPackages [neetbox]: New version: [0.1.509] Old Version: [0.1.508]
+[2023-04-15 17:54:20] INFO root fetch - processPackages [the-spymaster-api]: executing diffoscope
+[2023-04-15 17:54:20] INFO root fetch - processPackages [the-spymaster-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/the-spymaster-api-1.7.0.tar.gz tmp/the-spymaster-api-1.8.0.tar.gz --markdown 20230415/t/the-spymaster-api/1.7.0-1.8.0/diff.md --exclude *.pyd
+[2023-04-15 17:54:20] INFO root fetch - processPackages [env-canada]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-15 17:54:20] INFO root fetch - processPackages [shiny-mdc]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-15 17:54:20] INFO root fetch - processPackages [typeguard]: New version: [4.0.0rc4] Old Version: [4.0.0rc3]
+[2023-04-15 17:54:20] INFO root fetch - processPackages [slg-dev-ops]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-15 17:54:20] INFO root fetch - processPackages [neetbox]: executing diffoscope
+[2023-04-15 17:54:20] INFO root fetch - processPackages [neetbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neetbox-0.1.508.tar.gz tmp/neetbox-0.1.509.tar.gz --markdown 20230415/n/neetbox/0.1.508-0.1.509/diff.md --exclude *.pyd
+[2023-04-15 17:54:20] INFO root fetch - processPackages [exudyn]: New version: [1.6.57.dev1] Old Version: [1.6.31.dev1]
+[2023-04-15 17:54:20] INFO root fetch - processPackages [env-canada]: Downloading https://files.pythonhosted.org/packages/32/30/ef9a163691dc0ee7527f310decca6833e5f780f9dcc9cdca5ca19cda7165/env_canada-0.5.8.tar.gz
+[2023-04-15 17:54:20] INFO root fetch - processPackages [slg-dev-ops]: Downloading https://files.pythonhosted.org/packages/a2/97/e0852840fdf83c203f0124ab2329f1939dc65d2b4dec9795516a2d300b05/slg-dev-ops-1.8.0.tar.gz
+[2023-04-15 17:54:20] INFO root fetch - processPackages [typeguard]: Downloading https://files.pythonhosted.org/packages/23/99/7f6d785905782194d56f2f27c74a07e4833d2a7ad3d7448650f3b5e55a09/typeguard-4.0.0rc3.tar.gz
+[2023-04-15 17:54:20] INFO root fetch - processPackages [exudyn]: Downloading https://files.pythonhosted.org/packages/07/9d/1919ef910860dce57b8e04399dff7a31c0d16c484e34838733141dc9c2c1/exudyn-1.6.31.dev1-cp39-cp39-win_amd64.whl
+[2023-04-15 17:54:20] INFO root fetch - processPackages [shiny-mdc]: Downloading https://files.pythonhosted.org/packages/d6/fa/075bd00e0e750519aa0cd1bc2b650ba15c29c757c6e349157030ddfee132/shiny_mdc-1.3.0.tar.gz
+[2023-04-15 17:54:20] INFO root fetch - processPackages [typeguard]: Downloading https://files.pythonhosted.org/packages/86/d4/c8513ef6d89905ff76e8f5fd69bb1e87bdd52c242ef533897f01499a6d2f/typeguard-4.0.0rc4.tar.gz
+[2023-04-15 17:54:20] INFO root fetch - processPackages [env-canada]: Downloading https://files.pythonhosted.org/packages/00/e8/9b3e6a86a0cf93c71090db6438bd254904c888ae3cb331ef40ddfc7ebfc4/env_canada-0.5.9.tar.gz
+[2023-04-15 17:54:20] INFO root fetch - processPackages [slg-dev-ops]: Downloading https://files.pythonhosted.org/packages/11/27/14432f6481da7e646567598bbc166b4e0983ae679b52a7bf1f6d0026a07d/slg-dev-ops-1.9.0.tar.gz
+[2023-04-15 17:54:21] INFO root fetch - processPackages [typeguard]: executing diffoscope
+[2023-04-15 17:54:21] INFO root fetch - processPackages [typeguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typeguard-4.0.0rc3.tar.gz tmp/typeguard-4.0.0rc4.tar.gz --markdown 20230415/t/typeguard/4.0.0rc3-4.0.0rc4/diff.md --exclude *.pyd
+[2023-04-15 17:54:21] INFO root fetch - processPackages [slg-dev-ops]: executing diffoscope
+[2023-04-15 17:54:21] INFO root fetch - processPackages [slg-dev-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slg-dev-ops-1.8.0.tar.gz tmp/slg-dev-ops-1.9.0.tar.gz --markdown 20230415/s/slg-dev-ops/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-15 17:54:21] INFO root fetch - processPackages [exudyn]: Downloading https://files.pythonhosted.org/packages/93/28/d84bfe4316cbf63cba3e02ca30bb13ca316695d9eed54ebc077f4a03a356/exudyn-1.6.57.dev1-cp39-cp39-win_amd64.whl
+[2023-04-15 17:54:21] INFO root fetch - processPackages [shiny-mdc]: executing diffoscope
+[2023-04-15 17:54:21] INFO root fetch - processPackages [shiny-mdc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shiny_mdc-1.2.0.tar.gz tmp/shiny_mdc-1.3.0.tar.gz --markdown 20230415/s/shiny-mdc/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-15 17:54:21] INFO root fetch - processPackages [env-canada]: executing diffoscope
+[2023-04-15 17:54:21] INFO root fetch - processPackages [env-canada]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/env_canada-0.5.8.tar.gz tmp/env_canada-0.5.9.tar.gz --markdown 20230415/e/env-canada/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-15 17:54:21] INFO root fetch - main [MainThread]: End processing [the-spymaster-api]: success
+[2023-04-15 17:54:21] INFO root fetch - processPackages [exudyn]: executing diffoscope
+[2023-04-15 17:54:21] INFO root fetch - processPackages [exudyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exudyn-1.6.31.dev1-cp39-cp39-win_amd64.whl.zip tmp/exudyn-1.6.57.dev1-cp39-cp39-win_amd64.whl.zip --markdown 20230415/e/exudyn/1.6.31.dev1-1.6.57.dev1/diff.md --exclude *.pyd
+[2023-04-15 17:54:21] INFO root fetch - main [MainThread]: End processing [neetbox]: success
+[2023-04-15 17:54:22] INFO root fetch - main [MainThread]: End processing [slg-dev-ops]: success
+[2023-04-15 17:54:22] INFO root fetch - main [MainThread]: End processing [typeguard]: success
+[2023-04-15 17:54:22] INFO root fetch - main [MainThread]: End processing [env-canada]: success
+[2023-04-15 17:54:23] INFO root fetch - main [MainThread]: End processing [shiny-mdc]: success
+[2023-04-15 17:54:23] INFO root fetch - main [MainThread]: End processing [exudyn]: success
+[2023-04-15 17:54:23] INFO root fetch - main [MainThread]: Store serial: [17720009]
