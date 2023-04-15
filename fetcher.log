@@ -20545,3 +20545,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 23:37:34] INFO root fetch - main [MainThread]: End processing [redscrap]: success
 [2023-04-15 23:37:34] INFO root fetch - main [MainThread]: End processing [uptimecurl]: success
 [2023-04-15 23:37:34] INFO root fetch - main [MainThread]: Store serial: [17722043]
+[2023-04-15 23:42:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722043]
+[2023-04-15 23:42:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 23:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fabric-fim
+[2023-04-15 23:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drf-pydantic
+[2023-04-15 23:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: satdigitalinvoice
+[2023-04-15 23:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hond
+[2023-04-15 23:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jeeves-shell
+[2023-04-15 23:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dextools-python
+[2023-04-15 23:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fmdt-python
+[2023-04-15 23:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fclogr
+[2023-04-15 23:42:43] INFO root fetch - processPackages [drf-pydantic]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-15 23:42:43] INFO root fetch - processPackages [fclogr]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-15 23:42:43] INFO root fetch - processPackages [fmdt-python]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 23:42:43] WARNING root fetch - processPackages [dextools-python]: Skipping, unable to determine old version
+[2023-04-15 23:42:43] INFO root fetch - main [MainThread]: End processing [dextools-python] error
+[2023-04-15 23:42:43] INFO root fetch - processPackages [satdigitalinvoice]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-04-15 23:42:43] INFO root fetch - processPackages [jeeves-shell]: New version: [2.1.5] Old Version: [2.1.4]
+[2023-04-15 23:42:43] WARNING root fetch - processPackages [hond]: Skipping, unable to determine old version
+[2023-04-15 23:42:43] INFO root fetch - main [MainThread]: End processing [hond] error
+[2023-04-15 23:42:43] INFO root fetch - processPackages [fabric-fim]: New version: [1.4.9] Old Version: [1.4.7]
+[2023-04-15 23:42:43] INFO root fetch - processPackages [fclogr]: executing diffoscope
+[2023-04-15 23:42:43] INFO root fetch - processPackages [fclogr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fclogr-0.2.0.tar.gz tmp/fclogr-0.3.0.tar.gz --markdown 20230415/f/fclogr/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 23:42:43] INFO root fetch - processPackages [drf-pydantic]: Downloading https://files.pythonhosted.org/packages/90/ea/a76cc922d8eca58f38efbd75fb30180e478ff42827d0538643e7495f3f70/drf_pydantic-0.4.0.tar.gz
+[2023-04-15 23:42:43] INFO root fetch - processPackages [jeeves-shell]: Downloading https://files.pythonhosted.org/packages/ba/07/dc8a03cf572a3eb9a222a90aa50b1a4683a2a9e10c390862c0d256173232/jeeves_shell-2.1.4.tar.gz
+[2023-04-15 23:42:43] INFO root fetch - processPackages [fabric-fim]: Downloading https://files.pythonhosted.org/packages/57/e5/312c822833aec6046481b678820e77286fdbc5e4bd4470922c97856da3cc/fabric_fim-1.4.7.tar.gz
+[2023-04-15 23:42:43] INFO root fetch - processPackages [satdigitalinvoice]: Downloading https://files.pythonhosted.org/packages/ec/f2/b2fdee8480c2389556fb1feae50b777048bdb9499e27bfe572a2b6f6cf64/satdigitalinvoice-3.0.1.tar.gz
+[2023-04-15 23:42:44] INFO root fetch - processPackages [satdigitalinvoice]: executing diffoscope
+[2023-04-15 23:42:44] INFO root fetch - processPackages [satdigitalinvoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satdigitalinvoice-3.0.0.tar.gz tmp/satdigitalinvoice-3.0.1.tar.gz --markdown 20230415/s/satdigitalinvoice/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-04-15 23:42:44] INFO root fetch - processPackages [drf-pydantic]: Downloading https://files.pythonhosted.org/packages/d9/ac/2c8c9f474b47eed65825e3f4bd69dfdfd46658ceb8903746a29bdda12d99/drf_pydantic-0.4.1.tar.gz
+[2023-04-15 23:42:44] INFO root fetch - processPackages [fabric-fim]: Downloading https://files.pythonhosted.org/packages/15/3a/616fa3ff31bc9eb255a18feec553fb626204411caf8deac8104f3f8a1d50/fabric_fim-1.4.9.tar.gz
+[2023-04-15 23:42:44] INFO root fetch - processPackages [drf-pydantic]: executing diffoscope
+[2023-04-15 23:42:44] INFO root fetch - processPackages [drf-pydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_pydantic-0.4.0.tar.gz tmp/drf_pydantic-0.4.1.tar.gz --markdown 20230415/d/drf-pydantic/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-15 23:42:44] INFO root fetch - processPackages [fabric-fim]: executing diffoscope
+[2023-04-15 23:42:44] INFO root fetch - processPackages [fabric-fim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabric_fim-1.4.7.tar.gz tmp/fabric_fim-1.4.9.tar.gz --markdown 20230415/f/fabric-fim/1.4.7-1.4.9/diff.md --exclude *.pyd
+[2023-04-15 23:42:44] INFO root fetch - processPackages [fmdt-python]: executing diffoscope
+[2023-04-15 23:42:44] INFO root fetch - processPackages [fmdt-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmdt_python-0.0.8.tar.gz tmp/fmdt_python-0.0.9.tar.gz --markdown 20230415/f/fmdt-python/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 23:42:44] INFO root fetch - processPackages [jeeves-shell]: Downloading https://files.pythonhosted.org/packages/4e/3a/147d63704083ac45d87b65272ab4088409916a2a7a1ac41518181ed439a8/jeeves_shell-2.1.5.tar.gz
+[2023-04-15 23:42:44] INFO root fetch - processPackages [jeeves-shell]: executing diffoscope
+[2023-04-15 23:42:44] INFO root fetch - processPackages [jeeves-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeeves_shell-2.1.4.tar.gz tmp/jeeves_shell-2.1.5.tar.gz --markdown 20230415/j/jeeves-shell/2.1.4-2.1.5/diff.md --exclude *.pyd
+[2023-04-15 23:42:45] INFO root fetch - main [MainThread]: End processing [satdigitalinvoice]: success
+[2023-04-15 23:42:45] INFO root fetch - main [MainThread]: End processing [drf-pydantic]: success
+[2023-04-15 23:42:45] INFO root fetch - main [MainThread]: End processing [fmdt-python]: success
+[2023-04-15 23:42:45] INFO root fetch - main [MainThread]: End processing [jeeves-shell]: success
+[2023-04-15 23:42:45] INFO root fetch - main [MainThread]: End processing [fclogr]: success
+[2023-04-15 23:42:45] INFO root fetch - main [MainThread]: End processing [fabric-fim]: success
+[2023-04-15 23:42:45] INFO root fetch - main [MainThread]: Store serial: [17722071]
