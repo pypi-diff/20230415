@@ -5590,3 +5590,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 07:14:45] INFO root fetch - main [MainThread]: End processing [hagworm]: success
 [2023-04-15 07:14:46] INFO root fetch - main [MainThread]: End processing [nose-py3]: success
 [2023-04-15 07:14:46] INFO root fetch - main [MainThread]: Store serial: [17716618]
+[2023-04-15 07:19:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716618]
+[2023-04-15 07:19:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 07:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-maintenance-timesheet
+[2023-04-15 07:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo13-addon-maintenance-timesheet
+[2023-04-15 07:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yascikit-learn
+[2023-04-15 07:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo11-addon-mgmtsystem-nonconformity
+[2023-04-15 07:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tinta
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-nonconformity]: New version: [11.0.1.1.2.99.dev9] Old Version: [11.0.1.1.2.99.dev65]
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo12-addon-maintenance-timesheet]: New version: [12.0.1.2.0.99.dev9] Old Version: [12.0.1.2.0.99.dev8]
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo13-addon-maintenance-timesheet]: New version: [13.0.1.3.1.dev3] Old Version: [13.0.1.3.1.dev2]
+[2023-04-15 07:19:53] WARNING root fetch - processPackages [yascikit-learn]: Skipping, unable to determine old version
+[2023-04-15 07:19:53] INFO root fetch - processPackages [yascikit-learn]: Start processing: odoo13-addon-mgmtsystem-audit
+[2023-04-15 07:19:53] INFO root fetch - processPackages [tinta]: New version: [0.1.5b2] Old Version: [0.1.5b1]
+[2023-04-15 07:19:53] INFO root fetch - main [MainThread]: End processing [yascikit-learn] error
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo13-addon-mgmtsystem-audit]: New version: [13.0.1.1.1.dev8] Old Version: [13.0.1.1.1.dev7]
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-nonconformity]: Downloading https://files.pythonhosted.org/packages/6d/bf/86afb23cbf14723e32727e671a3178b56ae391d3bde3d133ce2174f5dd15/odoo11_addon_mgmtsystem_nonconformity-11.0.1.1.2.99.dev65-py2.py3-none-any.whl
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo12-addon-maintenance-timesheet]: Downloading https://files.pythonhosted.org/packages/b9/f1/02f84ff8293e13256e8796281c22e6dea40a1adf64ebe512256e1c751405/odoo12_addon_maintenance_timesheet-12.0.1.2.0.99.dev8-py3-none-any.whl
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo13-addon-maintenance-timesheet]: Downloading https://files.pythonhosted.org/packages/3b/21/baae6475876254363fce61fff4f55c9644aa6e0dcb680c12e1d9a42fc7c1/odoo13_addon_maintenance_timesheet-13.0.1.3.1.dev2-py3-none-any.whl
+[2023-04-15 07:19:53] INFO root fetch - processPackages [tinta]: Downloading https://files.pythonhosted.org/packages/58/e9/e6a5ae1a4565bc64b9fa2f6e89a221e4c3a35416ce56ffaf69370289354b/tinta-0.1.5b2.tar.gz
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo13-addon-mgmtsystem-audit]: executing diffoscope
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo13-addon-mgmtsystem-audit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_mgmtsystem_audit-13.0.1.1.1.dev7-py3-none-any.whl.zip tmp/odoo13_addon_mgmtsystem_audit-13.0.1.1.1.dev8-py3-none-any.whl.zip --markdown 20230415/o/odoo13-addon-mgmtsystem-audit/13.0.1.1.1.dev7-13.0.1.1.1.dev8/diff.md --exclude *.pyd
+[2023-04-15 07:19:53] INFO root fetch - processPackages [tinta]: executing diffoscope
+[2023-04-15 07:19:53] INFO root fetch - processPackages [tinta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinta-0.1.5b1.tar.gz tmp/tinta-0.1.5b2.tar.gz --markdown 20230415/t/tinta/0.1.5b1-0.1.5b2/diff.md --exclude *.pyd
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo12-addon-maintenance-timesheet]: Downloading https://files.pythonhosted.org/packages/02/e5/61c23945c652f3e6342b577540c4d29e52a4b3043573f278d6a82d60e4cd/odoo12_addon_maintenance_timesheet-12.0.1.2.0.99.dev9-py3-none-any.whl
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo13-addon-maintenance-timesheet]: Downloading https://files.pythonhosted.org/packages/51/1e/21dfbc5ef53f525943a2249dba9de851d2b1c03b8ec77bfb7dd8da39de3d/odoo13_addon_maintenance_timesheet-13.0.1.3.1.dev3-py3-none-any.whl
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-nonconformity]: executing diffoscope
+[2023-04-15 07:19:53] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-nonconformity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_mgmtsystem_nonconformity-11.0.1.1.2.99.dev65-py2.py3-none-any.whl.zip tmp/odoo11_addon_mgmtsystem_nonconformity-11.0.1.1.2.99.dev9-py2.py3-none-any.whl.zip --markdown 20230415/o/odoo11-addon-mgmtsystem-nonconformity/11.0.1.1.2.99.dev65-11.0.1.1.2.99.dev9/diff.md --exclude *.pyd
+[2023-04-15 07:19:54] INFO root fetch - processPackages [odoo12-addon-maintenance-timesheet]: executing diffoscope
+[2023-04-15 07:19:54] INFO root fetch - processPackages [odoo12-addon-maintenance-timesheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_maintenance_timesheet-12.0.1.2.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_maintenance_timesheet-12.0.1.2.0.99.dev9-py3-none-any.whl.zip --markdown 20230415/o/odoo12-addon-maintenance-timesheet/12.0.1.2.0.99.dev8-12.0.1.2.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-15 07:19:54] INFO root fetch - processPackages [odoo13-addon-maintenance-timesheet]: executing diffoscope
+[2023-04-15 07:19:54] INFO root fetch - processPackages [odoo13-addon-maintenance-timesheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_maintenance_timesheet-13.0.1.3.1.dev2-py3-none-any.whl.zip tmp/odoo13_addon_maintenance_timesheet-13.0.1.3.1.dev3-py3-none-any.whl.zip --markdown 20230415/o/odoo13-addon-maintenance-timesheet/13.0.1.3.1.dev2-13.0.1.3.1.dev3/diff.md --exclude *.pyd
+[2023-04-15 07:19:55] INFO root fetch - main [MainThread]: End processing [odoo13-addon-mgmtsystem-audit]: success
+[2023-04-15 07:19:55] INFO root fetch - main [MainThread]: End processing [odoo12-addon-maintenance-timesheet]: success
+[2023-04-15 07:19:55] INFO root fetch - main [MainThread]: End processing [odoo13-addon-maintenance-timesheet]: success
+[2023-04-15 07:19:55] INFO root fetch - main [MainThread]: End processing [odoo11-addon-mgmtsystem-nonconformity]: success
+[2023-04-15 07:19:55] INFO root fetch - main [MainThread]: End processing [tinta]: success
+[2023-04-15 07:19:55] INFO root fetch - main [MainThread]: Store serial: [17716633]
