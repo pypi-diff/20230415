@@ -6415,3 +6415,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 08:46:41] INFO root fetch - processPackages [odoo12-addon-sale-blanket-order]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_sale_blanket_order-12.0.1.0.2.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_sale_blanket_order-12.0.1.0.2.99.dev9-py3-none-any.whl.zip --markdown 20230415/o/odoo12-addon-sale-blanket-order/12.0.1.0.2.99.dev8-12.0.1.0.2.99.dev9/diff.md --exclude *.pyd
 [2023-04-15 08:46:42] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-blanket-order]: success
 [2023-04-15 08:46:42] INFO root fetch - main [MainThread]: Store serial: [17716983]
+[2023-04-15 08:51:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716983]
+[2023-04-15 08:51:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 08:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: facexlib
+[2023-04-15 08:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fmdpy
+[2023-04-15 08:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: govtech-data
+[2023-04-15 08:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlalchemy-fields
+[2023-04-15 08:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pure-safetensors
+[2023-04-15 08:51:49] INFO root fetch - processPackages [facexlib]: New version: [0.3.0] Old Version: [0.2.5]
+[2023-04-15 08:51:49] INFO root fetch - processPackages [govtech-data]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-15 08:51:49] INFO root fetch - processPackages [fmdpy]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-15 08:51:49] INFO root fetch - processPackages [sqlalchemy-fields]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-15 08:51:49] INFO root fetch - processPackages [pure-safetensors]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-15 08:51:49] INFO root fetch - processPackages [facexlib]: Downloading https://files.pythonhosted.org/packages/1e/44/91c1b66b67d7545641f9c4e08fc8beac16637764061acc24b0e222834b89/facexlib-0.2.5.tar.gz
+[2023-04-15 08:51:49] INFO root fetch - processPackages [sqlalchemy-fields]: Downloading https://files.pythonhosted.org/packages/e4/9f/77e9383db9b7cb8f4ca9c0019c79418a63afbd23296a18a2a266cd6f6c32/sqlalchemy_fields-0.3.0.tar.gz
+[2023-04-15 08:51:49] INFO root fetch - processPackages [govtech-data]: Downloading https://files.pythonhosted.org/packages/a9/23/3fbca1c5d0b971b38e597074233589369d9cd65fa85b5a490f12609e4d81/govtech_data-0.1.5.tar.gz
+[2023-04-15 08:51:49] INFO root fetch - processPackages [fmdpy]: Downloading https://files.pythonhosted.org/packages/f5/a7/8c912ffc3a9b1c138a47f5a4a007d70e190e19de9faab00a9f68624f5141/fmdpy-0.6.2.tar.gz
+[2023-04-15 08:51:49] INFO root fetch - processPackages [pure-safetensors]: Downloading https://files.pythonhosted.org/packages/c0/93/bd80899faff14079c56c09ebd882fb46f484a68522592cf79ab12b404ccf/pure_safetensors-0.3.2.tar.gz
+[2023-04-15 08:51:49] INFO root fetch - processPackages [govtech-data]: executing diffoscope
+[2023-04-15 08:51:49] INFO root fetch - processPackages [govtech-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/govtech_data-0.1.4.tar.gz tmp/govtech_data-0.1.5.tar.gz --markdown 20230415/g/govtech-data/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-15 08:51:49] INFO root fetch - processPackages [pure-safetensors]: executing diffoscope
+[2023-04-15 08:51:49] INFO root fetch - processPackages [pure-safetensors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure_safetensors-0.3.1.tar.gz tmp/pure_safetensors-0.3.2.tar.gz --markdown 20230415/p/pure-safetensors/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-15 08:51:50] INFO root fetch - processPackages [sqlalchemy-fields]: Downloading https://files.pythonhosted.org/packages/9a/76/3274ee0042e990d7492f4b6919830ef1af942ecd7bd324128f64f40da433/sqlalchemy_fields-0.4.0.tar.gz
+[2023-04-15 08:51:50] INFO root fetch - processPackages [fmdpy]: Downloading https://files.pythonhosted.org/packages/91/e7/6dad893ac9f9c87c603af3a0556883e6fae44cfc3cbcca47b31f4786a5f0/fmdpy-0.6.3.tar.gz
+[2023-04-15 08:51:50] INFO root fetch - processPackages [facexlib]: Downloading https://files.pythonhosted.org/packages/e1/93/c820cd2c6315b635934770808e0b01ed4db257ec33bcf803909dcf4bce15/facexlib-0.3.0.tar.gz
+[2023-04-15 08:51:50] INFO root fetch - processPackages [sqlalchemy-fields]: executing diffoscope
+[2023-04-15 08:51:50] INFO root fetch - processPackages [sqlalchemy-fields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy_fields-0.3.0.tar.gz tmp/sqlalchemy_fields-0.4.0.tar.gz --markdown 20230415/s/sqlalchemy-fields/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-15 08:51:50] INFO root fetch - processPackages [fmdpy]: executing diffoscope
+[2023-04-15 08:51:50] INFO root fetch - processPackages [fmdpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmdpy-0.6.2.tar.gz tmp/fmdpy-0.6.3.tar.gz --markdown 20230415/f/fmdpy/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-15 08:51:50] INFO root fetch - processPackages [facexlib]: executing diffoscope
+[2023-04-15 08:51:50] INFO root fetch - processPackages [facexlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/facexlib-0.2.5.tar.gz tmp/facexlib-0.3.0.tar.gz --markdown 20230415/f/facexlib/0.2.5-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 08:51:50] INFO root fetch - processPackages [govtech-data]: Start processing: lazyops
+[2023-04-15 08:51:50] INFO root fetch - main [MainThread]: End processing [govtech-data]: success
+[2023-04-15 08:51:51] INFO root fetch - processPackages [lazyops]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-15 08:51:51] INFO root fetch - processPackages [lazyops]: executing diffoscope
+[2023-04-15 08:51:51] INFO root fetch - processPackages [lazyops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazyops-0.2.8.tar.gz tmp/lazyops-0.2.9.tar.gz --markdown 20230415/l/lazyops/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-15 08:51:51] INFO root fetch - main [MainThread]: End processing [sqlalchemy-fields]: success
+[2023-04-15 08:51:51] INFO root fetch - main [MainThread]: End processing [pure-safetensors]: success
+[2023-04-15 08:51:51] INFO root fetch - main [MainThread]: End processing [fmdpy]: success
+[2023-04-15 08:51:51] INFO root fetch - main [MainThread]: End processing [facexlib]: success
+[2023-04-15 08:51:52] INFO root fetch - main [MainThread]: End processing [lazyops]: success
+[2023-04-15 08:51:52] INFO root fetch - main [MainThread]: Store serial: [17717001]
