@@ -17027,3 +17027,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 17:00:04] INFO root fetch - main [MainThread]: End processing [opshin]: success
 [2023-04-15 17:00:04] INFO root fetch - main [MainThread]: End processing [mizani]: success
 [2023-04-15 17:00:04] INFO root fetch - main [MainThread]: Store serial: [17719687]
+[2023-04-15 17:05:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719687]
+[2023-04-15 17:05:15] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-15 17:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certsync
+[2023-04-15 17:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydantic-xml
+[2023-04-15 17:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kcli
+[2023-04-15 17:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: so-vits-svc-fork
+[2023-04-15 17:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tensorflow-text-nightly
+[2023-04-15 17:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Track-Lost-Phone
+[2023-04-15 17:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: beards-analytics
+[2023-04-15 17:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: scalde-easy-testing
+[2023-04-15 17:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pip-run
+[2023-04-15 17:05:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sabledocs
+[2023-04-15 17:05:15] INFO root fetch - processPackages [certsync]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-04-15 17:05:15] WARNING root fetch - processPackages [Track-Lost-Phone]: Skipping, unable to determine old version
+[2023-04-15 17:05:15] INFO root fetch - processPackages [Track-Lost-Phone]: Start processing: nazo-rand
+[2023-04-15 17:05:15] INFO root fetch - main [MainThread]: End processing [Track-Lost-Phone] error
+[2023-04-15 17:05:15] INFO root fetch - processPackages [pydantic-xml]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-15 17:05:15] WARNING root fetch - processPackages [scalde-easy-testing]: Skipping, unable to determine old version
+[2023-04-15 17:05:15] INFO root fetch - main [MainThread]: End processing [scalde-easy-testing] error
+[2023-04-15 17:05:15] INFO root fetch - processPackages [beards-analytics]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 17:05:15] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.8.0] Old Version: [3.7.3]
+[2023-04-15 17:05:15] INFO root fetch - processPackages [pip-run]: New version: [9.5.0] Old Version: [9.4.0]
+[2023-04-15 17:05:15] INFO root fetch - processPackages [sabledocs]: New version: [0.0.2.dev33] Old Version: [0.0.2.dev31]
+[2023-04-15 17:05:15] INFO root fetch - processPackages [tensorflow-text-nightly]: New version: [2.13.0.dev20230414] Old Version: [2.13.0.dev20230413]
+[2023-04-15 17:05:15] WARNING root fetch - processPackages [nazo-rand]: Skipping, unable to determine old version
+[2023-04-15 17:05:15] INFO root fetch - main [MainThread]: End processing [nazo-rand] error
+[2023-04-15 17:05:15] INFO root fetch - processPackages [kcli]: New version: [99.0.202304151504] Old Version: [99.0.202304140941]
+[2023-04-15 17:05:15] INFO root fetch - processPackages [pip-run]: executing diffoscope
+[2023-04-15 17:05:15] INFO root fetch - processPackages [pip-run]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-run-9.4.0.tar.gz tmp/pip-run-9.5.0.tar.gz --markdown 20230415/p/pip-run/9.4.0-9.5.0/diff.md --exclude *.pyd
+[2023-04-15 17:05:15] INFO root fetch - processPackages [pydantic-xml]: Downloading https://files.pythonhosted.org/packages/52/93/f793d8d1990685a0ae44d9837832b2ef307eab2326a942dad78affb47af3/pydantic_xml-0.6.0.tar.gz
+[2023-04-15 17:05:15] INFO root fetch - processPackages [certsync]: Downloading https://files.pythonhosted.org/packages/dc/9e/25d9254b4341f320f5ac28f5b983724af0e68ebbb2fe4976ab3b5f7a75f0/certsync-0.1.0.tar.gz
+[2023-04-15 17:05:15] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/85/f1/4b2c63f4b20d1a2f4bb458119ba31fa3c6f1e2ef85294288783d24a6d2a7/kcli-99.0.202304140941-py3-none-any.whl
+[2023-04-15 17:05:15] INFO root fetch - processPackages [beards-analytics]: Downloading https://files.pythonhosted.org/packages/1c/5a/25183425274954a7e2b7416276e7b3d6dc44737fac2797f67d0a6685e218/beards_analytics-0.1.6-py3-none-any.whl
+[2023-04-15 17:05:15] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/f4/f7/c80fea823a7e0493e0d6f01fc7b748820adb24c1acad6d96bc7277377dd9/so_vits_svc_fork-3.8.0.tar.gz
+[2023-04-15 17:05:15] INFO root fetch - processPackages [beards-analytics]: executing diffoscope
+[2023-04-15 17:05:15] INFO root fetch - processPackages [beards-analytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beards_analytics-0.1.5-py3-none-any.whl.zip tmp/beards_analytics-0.1.6-py3-none-any.whl.zip --markdown 20230415/b/beards-analytics/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 17:05:15] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/d5/c8/88b60de741c77017b65e26d83d8cf68b59a6ab4a560b1cf20aafe06909b6/sabledocs-0.0.2.dev33.tar.gz
+[2023-04-15 17:05:15] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-15 17:05:15] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.7.3.tar.gz tmp/so_vits_svc_fork-3.8.0.tar.gz --markdown 20230415/s/so-vits-svc-fork/3.7.3-3.8.0/diff.md --exclude *.pyd
+[2023-04-15 17:05:15] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 17:05:15] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.0.2.dev31.tar.gz tmp/sabledocs-0.0.2.dev33.tar.gz --markdown 20230415/s/sabledocs/0.0.2.dev31-0.0.2.dev33/diff.md --exclude *.pyd
+[2023-04-15 17:05:15] INFO root fetch - processPackages [tensorflow-text-nightly]: Downloading https://files.pythonhosted.org/packages/63/63/ee58b0aede48c6f88075280c6ed325df4bd74c409f519c79bf73dbf72cc0/tensorflow_text_nightly-2.13.0.dev20230414-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 17:05:15] INFO root fetch - processPackages [certsync]: Downloading https://files.pythonhosted.org/packages/b3/31/bdd831cd78266a96c162354daf522b9716e3c5dab181d094538b5d2da0a2/certsync-0.1.2.tar.gz
+[2023-04-15 17:05:15] INFO root fetch - processPackages [pydantic-xml]: Downloading https://files.pythonhosted.org/packages/ff/a4/00f05caa75aa100b7b2cea16c04952809ca9c348d5d02d74a91904a921b0/pydantic_xml-0.6.1.tar.gz
+[2023-04-15 17:05:15] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/60/90/20e3e626c89f8838b32b1b23ee17f55e7c2aee1e523535fdb675603fd94d/kcli-99.0.202304151504-py3-none-any.whl
+[2023-04-15 17:05:15] INFO root fetch - processPackages [pydantic-xml]: executing diffoscope
+[2023-04-15 17:05:15] INFO root fetch - processPackages [pydantic-xml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_xml-0.6.0.tar.gz tmp/pydantic_xml-0.6.1.tar.gz --markdown 20230415/p/pydantic-xml/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-15 17:05:15] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-15 17:05:15] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304140941-py3-none-any.whl.zip tmp/kcli-99.0.202304151504-py3-none-any.whl.zip --markdown 20230415/k/kcli/99.0.202304140941-99.0.202304151504/diff.md --exclude *.pyd
+[2023-04-15 17:05:15] INFO root fetch - processPackages [certsync]: executing diffoscope
+[2023-04-15 17:05:15] INFO root fetch - processPackages [certsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/certsync-0.1.0.tar.gz tmp/certsync-0.1.2.tar.gz --markdown 20230415/c/certsync/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 17:05:16] INFO root fetch - processPackages [tensorflow-text-nightly]: executing diffoscope
+[2023-04-15 17:05:16] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.13.0.dev20230413-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.13.0.dev20230414-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230415/t/tensorflow-text-nightly/2.13.0.dev20230413-2.13.0.dev20230414/diff.md --exclude *.pyd
+[2023-04-15 17:05:16] INFO root fetch - main [MainThread]: End processing [beards-analytics]: success
+[2023-04-15 17:05:16] INFO root fetch - main [MainThread]: End processing [pip-run]: success
+[2023-04-15 17:05:16] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-15 17:05:16] INFO root fetch - main [MainThread]: End processing [certsync]: success
+[2023-04-15 17:05:17] INFO root fetch - main [MainThread]: End processing [pydantic-xml]: success
+[2023-04-15 17:05:17] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 17:05:22] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-15 17:06:52] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
+[2023-04-15 17:06:52] INFO root fetch - main [MainThread]: Store serial: [17719734]
