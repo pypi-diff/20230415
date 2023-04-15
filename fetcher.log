@@ -15601,3 +15601,75 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 14:32:53] INFO root fetch - main [MainThread]: End processing [longitudinal-trends]: success
 [2023-04-15 14:32:53] INFO root fetch - main [MainThread]: End processing [kokos]: success
 [2023-04-15 14:32:53] INFO root fetch - main [MainThread]: Store serial: [17718892]
+[2023-04-15 14:37:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718892]
+[2023-04-15 14:38:01] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-15 14:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphql-config
+[2023-04-15 14:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: servey
+[2023-04-15 14:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: polvo
+[2023-04-15 14:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bagua-cuda102
+[2023-04-15 14:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dtumathtools
+[2023-04-15 14:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-word-bank2
+[2023-04-15 14:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pycodeless
+[2023-04-15 14:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-word-bank2
+[2023-04-15 14:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bagua-cuda113
+[2023-04-15 14:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bagua-cuda115
+[2023-04-15 14:38:01] WARNING root fetch - processPackages [graphql-config]: Skipping, unable to determine old version
+[2023-04-15 14:38:01] INFO root fetch - processPackages [graphql-config]: Start processing: toolkit-lennart
+[2023-04-15 14:38:01] INFO root fetch - main [MainThread]: End processing [graphql-config] error
+[2023-04-15 14:38:01] INFO root fetch - processPackages [polvo]: New version: [0.1.9] Old Version: [0.1.7]
+[2023-04-15 14:38:01] INFO root fetch - processPackages [bagua-cuda102]: New version: [0.9.3.dev5] Old Version: [0.9.3.dev4]
+[2023-04-15 14:38:01] INFO root fetch - processPackages [nonebot-plugin-word-bank2]: New version: [0.1.7.1] Old Version: [0.1.7]
+[2023-04-15 14:38:01] INFO root fetch - processPackages [pycodeless]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-15 14:38:01] INFO root fetch - processPackages [bagua-cuda113]: New version: [0.9.3.dev5] Old Version: [0.9.3.dev4]
+[2023-04-15 14:38:01] INFO root fetch - processPackages [servey]: New version: [2.7.8] Old Version: [2.7.7]
+[2023-04-15 14:38:01] INFO root fetch - processPackages [nonebot-plugin-word-bank2]: New version: [0.1.7.1] Old Version: [0.1.7]
+[2023-04-15 14:38:01] INFO root fetch - processPackages [dtumathtools]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-15 14:38:01] INFO root fetch - processPackages [bagua-cuda115]: New version: [0.9.3.dev4] Old Version: [0.9.3.dev3]
+[2023-04-15 14:38:01] INFO root fetch - processPackages [toolkit-lennart]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-15 14:38:02] INFO root fetch - processPackages [nonebot-plugin-word-bank2]: Downloading https://files.pythonhosted.org/packages/9e/13/13635b61788759cb10160bcd3ae3d5326b6cda5bfa3630fb987fd94d4df7/nonebot_plugin_word_bank2-0.1.7.tar.gz
+[2023-04-15 14:38:02] INFO root fetch - processPackages [nonebot-plugin-word-bank2]: Downloading https://files.pythonhosted.org/packages/9e/13/13635b61788759cb10160bcd3ae3d5326b6cda5bfa3630fb987fd94d4df7/nonebot_plugin_word_bank2-0.1.7.tar.gz
+[2023-04-15 14:38:02] INFO root fetch - processPackages [polvo]: Downloading https://files.pythonhosted.org/packages/75/6c/8bbde84d63bc09bd22e28fe2c33ff52f3a5a4acc3449831e0673f38fe44a/polvo-0.1.7.tar.gz
+[2023-04-15 14:38:02] INFO root fetch - processPackages [dtumathtools]: Downloading https://files.pythonhosted.org/packages/59/6c/b9465bf0da9b13b25057fde417bc311654e6fc8e7cd2b17943c1b8bb27e7/dtumathtools-1.0.4.tar.gz
+[2023-04-15 14:38:02] INFO root fetch - processPackages [bagua-cuda102]: Downloading https://files.pythonhosted.org/packages/56/16/be850cd9a95cf089bf14e53040dc452cf69ce4587e5806d5f64cdf588df9/bagua_cuda102-0.9.3.dev4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 14:38:02] INFO root fetch - processPackages [bagua-cuda115]: Downloading https://files.pythonhosted.org/packages/fc/cd/567d9a7b8d5d4af516c0f5f232dc4d42f05c99bd704f2dd007a67bd8c788/bagua_cuda115-0.9.3.dev3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 14:38:02] WARNING root fetch - processPackages [bagua-cuda115]: Skipping package: exceeds size limit 18866849>=10485760
+[2023-04-15 14:38:02] INFO root fetch - processPackages [bagua-cuda115]: Start processing: bagua-cuda116
+[2023-04-15 14:38:02] INFO root fetch - main [MainThread]: End processing [bagua-cuda115] error
+[2023-04-15 14:38:02] INFO root fetch - processPackages [bagua-cuda113]: Downloading https://files.pythonhosted.org/packages/a5/8d/dd047dd257bd93c364d5b048ca3ff483fb2c667b7ff4f835749b27f0fb7f/bagua_cuda113-0.9.3.dev4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 14:38:02] WARNING root fetch - processPackages [bagua-cuda102]: Skipping package: exceeds size limit 18755472>=10485760
+[2023-04-15 14:38:02] INFO root fetch - main [MainThread]: End processing [bagua-cuda102] error
+[2023-04-15 14:38:02] INFO root fetch - processPackages [bagua-cuda116]: New version: [0.9.3.dev4] Old Version: [0.9.3.dev3]
+[2023-04-15 14:38:02] INFO root fetch - processPackages [servey]: Downloading https://files.pythonhosted.org/packages/30/f0/f8e41054f6a2b5ce6f21d582616875dd9d78e39439229e62b9221f80cf72/servey-2.7.8.tar.gz
+[2023-04-15 14:38:02] INFO root fetch - processPackages [pycodeless]: Downloading https://files.pythonhosted.org/packages/09/94/31164ac1d2b1c60decb80998cb90008eb70d7deada6e6f596801adfedd80/pycodeless-0.2.3.tar.gz
+[2023-04-15 14:38:02] INFO root fetch - processPackages [toolkit-lennart]: Downloading https://files.pythonhosted.org/packages/ae/44/f86593b25489449f6766260793ed1b5635f984e1830f3f19ad1117d140b4/toolkit_lennart-0.0.4.tar.gz
+[2023-04-15 14:38:02] INFO root fetch - processPackages [polvo]: Downloading https://files.pythonhosted.org/packages/e3/7d/102e32be73ae0592f382c0ffa96d4b138b47e3f909832e74abebbb6b95d3/polvo-0.1.9.tar.gz
+[2023-04-15 14:38:02] INFO root fetch - processPackages [dtumathtools]: Downloading https://files.pythonhosted.org/packages/3f/63/b41e3575df9280da243f62dfdab57cbc2b3ce5db105d94f8e5d7968163c4/dtumathtools-1.0.5.tar.gz
+[2023-04-15 14:38:02] INFO root fetch - processPackages [nonebot-plugin-word-bank2]: Downloading https://files.pythonhosted.org/packages/48/c0/6bc140c2e11b2d4d1bf7c97c9e218ce95c7f40c320c07651693ddd2d352a/nonebot_plugin_word_bank2-0.1.7.1.tar.gz
+[2023-04-15 14:38:02] INFO root fetch - processPackages [nonebot-plugin-word-bank2]: Downloading https://files.pythonhosted.org/packages/48/c0/6bc140c2e11b2d4d1bf7c97c9e218ce95c7f40c320c07651693ddd2d352a/nonebot_plugin_word_bank2-0.1.7.1.tar.gz
+[2023-04-15 14:38:02] INFO root fetch - processPackages [bagua-cuda116]: Downloading https://files.pythonhosted.org/packages/a8/da/efdd06ab807578eb067431eb9382c7bf88b074d8e24cf88e3085feb14dda/bagua_cuda116-0.9.3.dev3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 14:38:02] INFO root fetch - processPackages [servey]: executing diffoscope
+[2023-04-15 14:38:02] INFO root fetch - processPackages [servey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servey-2.7.7.tar.gz tmp/servey-2.7.8.tar.gz --markdown 20230415/s/servey/2.7.7-2.7.8/diff.md --exclude *.pyd
+[2023-04-15 14:38:02] INFO root fetch - processPackages [pycodeless]: executing diffoscope
+[2023-04-15 14:38:02] INFO root fetch - processPackages [pycodeless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycodeless-0.2.2.tar.gz tmp/pycodeless-0.2.3.tar.gz --markdown 20230415/p/pycodeless/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-15 14:38:02] WARNING root fetch - processPackages [bagua-cuda116]: Skipping package: exceeds size limit 18863652>=10485760
+[2023-04-15 14:38:02] INFO root fetch - main [MainThread]: End processing [bagua-cuda116] error
+[2023-04-15 14:38:02] INFO root fetch - processPackages [polvo]: executing diffoscope
+[2023-04-15 14:38:02] INFO root fetch - processPackages [polvo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polvo-0.1.7.tar.gz tmp/polvo-0.1.9.tar.gz --markdown 20230415/p/polvo/0.1.7-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 14:38:02] INFO root fetch - processPackages [toolkit-lennart]: executing diffoscope
+[2023-04-15 14:38:02] INFO root fetch - processPackages [dtumathtools]: executing diffoscope
+[2023-04-15 14:38:02] INFO root fetch - processPackages [toolkit-lennart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolkit_lennart-0.0.3.tar.gz tmp/toolkit_lennart-0.0.4.tar.gz --markdown 20230415/t/toolkit-lennart/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-15 14:38:02] INFO root fetch - processPackages [dtumathtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtumathtools-1.0.4.tar.gz tmp/dtumathtools-1.0.5.tar.gz --markdown 20230415/d/dtumathtools/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-15 14:38:02] INFO root fetch - processPackages [nonebot-plugin-word-bank2]: executing diffoscope
+[2023-04-15 14:38:02] INFO root fetch - processPackages [nonebot-plugin-word-bank2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_word_bank2-0.1.7.tar.gz tmp/nonebot_plugin_word_bank2-0.1.7.1.tar.gz --markdown 20230415/n/nonebot-plugin-word-bank2/0.1.7-0.1.7.1/diff.md --exclude *.pyd
+[2023-04-15 14:38:02] WARNING root fetch - processPackages [bagua-cuda113]: Skipping package: exceeds size limit 18779285>=10485760
+[2023-04-15 14:38:02] INFO root fetch - main [MainThread]: End processing [bagua-cuda113] error
+[2023-04-15 14:38:02] INFO root fetch - processPackages [nonebot-plugin-word-bank2]: executing diffoscope
+[2023-04-15 14:38:02] INFO root fetch - processPackages [nonebot-plugin-word-bank2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_word_bank2-0.1.7.tar.gz tmp/nonebot_plugin_word_bank2-0.1.7.1.tar.gz --markdown 20230415/n/nonebot-plugin-word-bank2/0.1.7-0.1.7.1/diff.md --exclude *.pyd
+[2023-04-15 14:38:03] INFO root fetch - main [MainThread]: End processing [pycodeless]: success
+[2023-04-15 14:38:03] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-word-bank2]: success
+[2023-04-15 14:38:03] INFO root fetch - main [MainThread]: End processing [toolkit-lennart]: success
+[2023-04-15 14:38:03] INFO root fetch - main [MainThread]: End processing [polvo]: success
+[2023-04-15 14:38:04] INFO root fetch - main [MainThread]: End processing [dtumathtools]: success
+[2023-04-15 14:38:04] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-word-bank2]: success
+[2023-04-15 14:38:04] INFO root fetch - main [MainThread]: End processing [servey]: success
+[2023-04-15 14:38:04] INFO root fetch - main [MainThread]: Store serial: [17718931]
