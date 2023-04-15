@@ -13815,3 +13815,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 11:16:38] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-blive-danmaku]: success
 [2023-04-15 11:16:38] INFO root fetch - main [MainThread]: End processing [renus]: success
 [2023-04-15 11:16:38] INFO root fetch - main [MainThread]: Store serial: [17717780]
+[2023-04-15 11:21:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717780]
+[2023-04-15 11:21:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 11:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nameless-deploy-tools
+[2023-04-15 11:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fibnumber
+[2023-04-15 11:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: twitter-video-tools
+[2023-04-15 11:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ondewo-csi-client
+[2023-04-15 11:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: csoundengine
+[2023-04-15 11:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wxgl
+[2023-04-15 11:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: z4d-certified-devices
+[2023-04-15 11:21:46] INFO root fetch - processPackages [nameless-deploy-tools]: New version: [1.99] Old Version: [1.98]
+[2023-04-15 11:21:46] INFO root fetch - processPackages [csoundengine]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-15 11:21:46] INFO root fetch - processPackages [fibnumber]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 11:21:46] INFO root fetch - processPackages [wxgl]: New version: [0.9.8] Old Version: [0.9.3]
+[2023-04-15 11:21:46] INFO root fetch - processPackages [twitter-video-tools]: New version: [2023.4.15] Old Version: [2022.12.5]
+[2023-04-15 11:21:46] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.42] Old Version: [2.41]
+[2023-04-15 11:21:46] INFO root fetch - processPackages [ondewo-csi-client]: New version: [3.1.0] Old Version: [3.0.1]
+[2023-04-15 11:21:47] INFO root fetch - processPackages [csoundengine]: executing diffoscope
+[2023-04-15 11:21:47] INFO root fetch - processPackages [csoundengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csoundengine-1.9.0.tar.gz tmp/csoundengine-1.9.1.tar.gz --markdown 20230415/c/csoundengine/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-15 11:21:47] INFO root fetch - processPackages [fibnumber]: Downloading https://files.pythonhosted.org/packages/3f/2f/36e01de4a78ee1630e32f25ec0064166d21797667702bfcca96458d7999a/fibnumber-0.1.0.tar.gz
+[2023-04-15 11:21:47] INFO root fetch - processPackages [twitter-video-tools]: Downloading https://files.pythonhosted.org/packages/8a/7d/4dc7bb7a8b933b1c673be96f85997d94739e1c785d07de80297267a1e91b/twitter_video_tools-2022.12.5.tar.gz
+[2023-04-15 11:21:47] INFO root fetch - processPackages [wxgl]: Downloading https://files.pythonhosted.org/packages/9e/c4/27fb33940c4d75e3322c1662f39214ce752a93188ccea751ff9d6675acea/wxgl-0.9.3-py3-none-any.whl
+[2023-04-15 11:21:47] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-04-15 11:21:47] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.41.tar.gz tmp/z4d-certified-devices-2.42.tar.gz --markdown 20230415/z/z4d-certified-devices/2.41-2.42/diff.md --exclude *.pyd
+[2023-04-15 11:21:47] INFO root fetch - processPackages [ondewo-csi-client]: Downloading https://files.pythonhosted.org/packages/d9/6b/ea63082cd858e9da3503f203ff67ec9fe8d0c654dcb6b72affcc0e4727ba/ondewo-csi-client-3.1.0.tar.gz
+[2023-04-15 11:21:47] INFO root fetch - processPackages [nameless-deploy-tools]: executing diffoscope
+[2023-04-15 11:21:47] INFO root fetch - processPackages [nameless-deploy-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nameless-deploy-tools-1.98.tar.gz tmp/nameless-deploy-tools-1.99.tar.gz --markdown 20230415/n/nameless-deploy-tools/1.98-1.99/diff.md --exclude *.pyd
+[2023-04-15 11:21:47] INFO root fetch - processPackages [ondewo-csi-client]: executing diffoscope
+[2023-04-15 11:21:47] INFO root fetch - processPackages [ondewo-csi-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ondewo-csi-client-3.0.1.tar.gz tmp/ondewo-csi-client-3.1.0.tar.gz --markdown 20230415/o/ondewo-csi-client/3.0.1-3.1.0/diff.md --exclude *.pyd
+[2023-04-15 11:21:47] INFO root fetch - processPackages [twitter-video-tools]: Downloading https://files.pythonhosted.org/packages/66/fe/26a6fa971ba3725f24dfd0c1741c764674c6460b9da60e219b810928ffd0/twitter_video_tools-2023.4.15.tar.gz
+[2023-04-15 11:21:47] INFO root fetch - processPackages [fibnumber]: Downloading https://files.pythonhosted.org/packages/47/a6/78f457049f03b4fe052c5783b9e39d20409b6ffac39a1b707d0e30282eeb/fibnumber-0.1.1.tar.gz
+[2023-04-15 11:21:47] INFO root fetch - processPackages [wxgl]: Downloading https://files.pythonhosted.org/packages/0d/2e/afc8f8e6b5a0095680bfe5e029fb74998dc9c00f59d7a32deb6dd8747dea/wxgl-0.9.8-py3-none-any.whl
+[2023-04-15 11:21:47] INFO root fetch - processPackages [twitter-video-tools]: executing diffoscope
+[2023-04-15 11:21:47] INFO root fetch - processPackages [twitter-video-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_video_tools-2022.12.5.tar.gz tmp/twitter_video_tools-2023.4.15.tar.gz --markdown 20230415/t/twitter-video-tools/2022.12.5-2023.4.15/diff.md --exclude *.pyd
+[2023-04-15 11:21:47] INFO root fetch - processPackages [fibnumber]: executing diffoscope
+[2023-04-15 11:21:47] INFO root fetch - processPackages [fibnumber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fibnumber-0.1.0.tar.gz tmp/fibnumber-0.1.1.tar.gz --markdown 20230415/f/fibnumber/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 11:21:47] INFO root fetch - processPackages [wxgl]: executing diffoscope
+[2023-04-15 11:21:47] INFO root fetch - processPackages [wxgl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wxgl-0.9.3-py3-none-any.whl.zip tmp/wxgl-0.9.8-py3-none-any.whl.zip --markdown 20230415/w/wxgl/0.9.3-0.9.8/diff.md --exclude *.pyd
+[2023-04-15 11:21:48] INFO root fetch - main [MainThread]: End processing [ondewo-csi-client]: success
+[2023-04-15 11:21:48] INFO root fetch - main [MainThread]: End processing [twitter-video-tools]: success
+[2023-04-15 11:21:48] INFO root fetch - main [MainThread]: End processing [fibnumber]: success
+[2023-04-15 11:21:49] INFO root fetch - main [MainThread]: End processing [wxgl]: success
+[2023-04-15 11:21:49] INFO root fetch - main [MainThread]: End processing [nameless-deploy-tools]: success
+[2023-04-15 11:21:50] INFO root fetch - main [MainThread]: End processing [csoundengine]: success
+[2023-04-15 11:21:50] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-04-15 11:21:50] INFO root fetch - main [MainThread]: Store serial: [17717801]
