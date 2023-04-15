@@ -15327,3 +15327,67 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 14:05:26] INFO root fetch - main [MainThread]: End processing [econpizza]: success
 [2023-04-15 14:06:41] INFO root fetch - main [MainThread]: End processing [qtoggleserver]: success
 [2023-04-15 14:06:41] INFO root fetch - main [MainThread]: Store serial: [17718747]
+[2023-04-15 14:11:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718747]
+[2023-04-15 14:11:51] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-15 14:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-bsor
+[2023-04-15 14:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: func-kit
+[2023-04-15 14:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iosense-connect
+[2023-04-15 14:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easy-pil
+[2023-04-15 14:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: merged
+[2023-04-15 14:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyPhasesML
+[2023-04-15 14:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-reaction-system
+[2023-04-15 14:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: numwords-to-nums
+[2023-04-15 14:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dbqq
+[2023-04-15 14:11:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: simsity
+[2023-04-15 14:11:51] INFO root fetch - processPackages [iosense-connect]: New version: [2.0.8] Old Version: [2.0.7]
+[2023-04-15 14:11:51] WARNING root fetch - processPackages [func-kit]: Skipping, unable to determine old version
+[2023-04-15 14:11:51] INFO root fetch - processPackages [func-kit]: Start processing: mb-pytorch
+[2023-04-15 14:11:51] INFO root fetch - processPackages [simsity]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-15 14:11:51] INFO root fetch - main [MainThread]: End processing [func-kit] error
+[2023-04-15 14:11:51] INFO root fetch - processPackages [django-reaction-system]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-15 14:11:51] INFO root fetch - processPackages [numwords-to-nums]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-04-15 14:11:51] INFO root fetch - processPackages [easy-pil]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-15 14:11:51] INFO root fetch - processPackages [pyPhasesML]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-15 14:11:51] WARNING root fetch - processPackages [dbqq]: Skipping, unable to determine old version
+[2023-04-15 14:11:51] INFO root fetch - main [MainThread]: End processing [dbqq] error
+[2023-04-15 14:11:51] INFO root fetch - processPackages [py-bsor]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-15 14:11:51] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304151214] Old Version: [1.0.202304141724]
+[2023-04-15 14:11:52] WARNING root fetch - processPackages [merged]: Skipping, unable to determine old version
+[2023-04-15 14:11:52] INFO root fetch - main [MainThread]: End processing [merged] error
+[2023-04-15 14:11:52] INFO root fetch - processPackages [django-reaction-system]: Downloading https://files.pythonhosted.org/packages/48/d8/58e06819000e8a168d89cf592e70d79f50a1bd2cd1ef2b5e944539628a2c/django-reaction-system-1.1.0.tar.gz
+[2023-04-15 14:11:52] INFO root fetch - processPackages [easy-pil]: Downloading https://files.pythonhosted.org/packages/a9/9a/2fb13720dfdda1d27efd01a768db8d860cc10338bb12f350f6ab46d9d041/easy-pil-0.1.9.tar.gz
+[2023-04-15 14:11:52] INFO root fetch - processPackages [iosense-connect]: Downloading https://files.pythonhosted.org/packages/38/a3/bc41eed76844cc397e5f2eb3f876f53dcdf20eebea2ef4cc9357db5d9821/iosense_connect-2.0.7.tar.gz
+[2023-04-15 14:11:52] INFO root fetch - processPackages [simsity]: Downloading https://files.pythonhosted.org/packages/2f/d0/60c42264481fcb4aaec6c7f2a1b684e55fd7df6458ee6e8abdcdaa7fd8cd/simsity-0.5.3.tar.gz
+[2023-04-15 14:11:52] INFO root fetch - processPackages [numwords-to-nums]: Downloading https://files.pythonhosted.org/packages/45/e9/39e20db876273a4bec59459b7dfe98879c9db43db7a8ff6e1d7f1af5309b/numwords_to_nums-1.1.7.tar.gz
+[2023-04-15 14:11:52] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/6c/f5/4714e661846a2775aac2199dca3e89e92ec6d692fbe7447485ccabd258fb/mb_pytorch-1.0.202304141724-py3-none-any.whl
+[2023-04-15 14:11:52] INFO root fetch - processPackages [numwords-to-nums]: executing diffoscope
+[2023-04-15 14:11:52] INFO root fetch - processPackages [numwords-to-nums]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numwords_to_nums-1.1.6.tar.gz tmp/numwords_to_nums-1.1.7.tar.gz --markdown 20230415/n/numwords-to-nums/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-04-15 14:11:52] INFO root fetch - processPackages [pyPhasesML]: Downloading https://files.pythonhosted.org/packages/03/69/7dde66255de6b00b4bdea20530e3b54b838b830378c4d8bb5f8d43d97231/pyPhasesML-0.4.5.tar.gz
+[2023-04-15 14:11:52] INFO root fetch - processPackages [py-bsor]: executing diffoscope
+[2023-04-15 14:11:52] INFO root fetch - processPackages [py-bsor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_bsor-0.9.8.tar.gz tmp/py_bsor-0.9.9.tar.gz --markdown 20230415/p/py-bsor/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-15 14:11:52] INFO root fetch - processPackages [simsity]: Downloading https://files.pythonhosted.org/packages/45/76/4dc26c3be2dea2e6bf0dc73af328ab738c52ce5c65b56966084a5f8377c1/simsity-0.5.4.tar.gz
+[2023-04-15 14:11:52] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/c4/13/7060fc881d7fb9492fff425529c8f28d810e7661987d0a45521123909ca3/mb_pytorch-1.0.202304151214-py3-none-any.whl
+[2023-04-15 14:11:52] INFO root fetch - processPackages [django-reaction-system]: Downloading https://files.pythonhosted.org/packages/fc/5f/69af44174908928fd1da475d5faa4c31e9c367a6500cd9e0e47ae0f6c98d/django-reaction-system-1.1.1.tar.gz
+[2023-04-15 14:11:52] INFO root fetch - processPackages [iosense-connect]: Downloading https://files.pythonhosted.org/packages/8e/b5/9588e2094f7bea4927925b63587a4dad5d39db015a0cd043905cb22e34ec/iosense_connect-2.0.8.tar.gz
+[2023-04-15 14:11:52] INFO root fetch - processPackages [pyPhasesML]: executing diffoscope
+[2023-04-15 14:11:52] INFO root fetch - processPackages [pyPhasesML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPhasesML-0.4.4.tar.gz tmp/pyPhasesML-0.4.5.tar.gz --markdown 20230415/p/pyPhasesML/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-15 14:11:52] INFO root fetch - processPackages [iosense-connect]: executing diffoscope
+[2023-04-15 14:11:52] INFO root fetch - processPackages [django-reaction-system]: executing diffoscope
+[2023-04-15 14:11:52] INFO root fetch - processPackages [iosense-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iosense_connect-2.0.7.tar.gz tmp/iosense_connect-2.0.8.tar.gz --markdown 20230415/i/iosense-connect/2.0.7-2.0.8/diff.md --exclude *.pyd
+[2023-04-15 14:11:52] INFO root fetch - processPackages [django-reaction-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-reaction-system-1.1.0.tar.gz tmp/django-reaction-system-1.1.1.tar.gz --markdown 20230415/d/django-reaction-system/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-15 14:11:52] INFO root fetch - processPackages [simsity]: executing diffoscope
+[2023-04-15 14:11:52] INFO root fetch - processPackages [simsity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simsity-0.5.3.tar.gz tmp/simsity-0.5.4.tar.gz --markdown 20230415/s/simsity/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-15 14:11:52] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-15 14:11:52] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304141724-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304151214-py3-none-any.whl.zip --markdown 20230415/m/mb-pytorch/1.0.202304141724-1.0.202304151214/diff.md --exclude *.pyd
+[2023-04-15 14:11:52] INFO root fetch - processPackages [easy-pil]: Downloading https://files.pythonhosted.org/packages/27/28/ecc46c0cb30b8c42920a169d84661058fd5d167cb67d859b7de369941e54/easy-pil-0.2.0.tar.gz
+[2023-04-15 14:11:52] INFO root fetch - processPackages [easy-pil]: executing diffoscope
+[2023-04-15 14:11:52] INFO root fetch - processPackages [easy-pil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy-pil-0.1.9.tar.gz tmp/easy-pil-0.2.0.tar.gz --markdown 20230415/e/easy-pil/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 14:11:53] INFO root fetch - main [MainThread]: End processing [py-bsor]: success
+[2023-04-15 14:11:53] INFO root fetch - main [MainThread]: End processing [numwords-to-nums]: success
+[2023-04-15 14:11:53] INFO root fetch - main [MainThread]: End processing [iosense-connect]: success
+[2023-04-15 14:11:53] INFO root fetch - main [MainThread]: End processing [simsity]: success
+[2023-04-15 14:11:54] INFO root fetch - main [MainThread]: End processing [mb-pytorch]: success
+[2023-04-15 14:11:54] INFO root fetch - main [MainThread]: End processing [pyPhasesML]: success
+[2023-04-15 14:11:54] INFO root fetch - main [MainThread]: End processing [django-reaction-system]: success
+[2023-04-15 14:11:55] INFO root fetch - main [MainThread]: End processing [easy-pil]: success
+[2023-04-15 14:11:55] INFO root fetch - main [MainThread]: Store serial: [17718783]
