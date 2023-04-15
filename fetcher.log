@@ -19998,3 +19998,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 22:32:17] INFO root fetch - main [MainThread]: End processing [statgis]: success
 [2023-04-15 22:32:18] INFO root fetch - main [MainThread]: End processing [gallery-dl]: success
 [2023-04-15 22:32:18] INFO root fetch - main [MainThread]: Store serial: [17721731]
+[2023-04-15 22:37:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721731]
+[2023-04-15 22:37:28] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 22:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: repairwheel
+[2023-04-15 22:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gs-peer-connection
+[2023-04-15 22:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: algoxyz
+[2023-04-15 22:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sabledocs
+[2023-04-15 22:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cqepyutils
+[2023-04-15 22:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: algoxyz
+[2023-04-15 22:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: peaqevcore
+[2023-04-15 22:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spawn-lia
+[2023-04-15 22:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: elfws
+[2023-04-15 22:37:28] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-04-15 22:37:28] WARNING root fetch - processPackages [repairwheel]: Skipping, unable to determine old version
+[2023-04-15 22:37:28] INFO root fetch - main [MainThread]: End processing [repairwheel] error
+[2023-04-15 22:37:28] INFO root fetch - processPackages [sabledocs]: New version: [0.1.60] Old Version: [0.1.57]
+[2023-04-15 22:37:28] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 22:37:28] INFO root fetch - processPackages [algoxyz]: New version: [0.34] Old Version: [0.33]
+[2023-04-15 22:37:28] INFO root fetch - processPackages [algoxyz]: New version: [0.34] Old Version: [0.33]
+[2023-04-15 22:37:28] INFO root fetch - processPackages [elfws]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-15 22:37:28] INFO root fetch - processPackages [spawn-lia]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-15 22:37:28] INFO root fetch - processPackages [gs-peer-connection]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 22:37:28] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-04-15 22:37:28] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230415/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-04-15 22:37:28] INFO root fetch - processPackages [algoxyz]: Downloading https://files.pythonhosted.org/packages/3c/98/faacd4cfa3cedaabf24d3e6dd5dfa5f1a46c7e5461d2ddeea95c451b0e9e/algoxyz-0.33.tar.gz
+[2023-04-15 22:37:28] INFO root fetch - processPackages [algoxyz]: Downloading https://files.pythonhosted.org/packages/3c/98/faacd4cfa3cedaabf24d3e6dd5dfa5f1a46c7e5461d2ddeea95c451b0e9e/algoxyz-0.33.tar.gz
+[2023-04-15 22:37:28] INFO root fetch - processPackages [gs-peer-connection]: executing diffoscope
+[2023-04-15 22:37:28] INFO root fetch - processPackages [gs-peer-connection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs-peer-connection-0.0.8.tar.gz tmp/gs-peer-connection-0.0.9.tar.gz --markdown 20230415/g/gs-peer-connection/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 22:37:28] INFO root fetch - processPackages [cqepyutils]: Downloading https://files.pythonhosted.org/packages/55/34/8dcdfb6c9a70f03ef447aeacb120af4cd8cd3cc6f8b23e10c8fa1ce0a9df/cqepyutils-0.1.8.tar.gz
+[2023-04-15 22:37:28] INFO root fetch - processPackages [spawn-lia]: Downloading https://files.pythonhosted.org/packages/42/1b/47f01b06c0cc89f552e3b860f2b04afc0fbaf8f831e1153c0841fc38b92e/spawn-lia-0.2.5.tar.gz
+[2023-04-15 22:37:28] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/df/e2/eecd54076766d2e72589989b9caa07463596db6789abb6ed6ba4cceae73c/sabledocs-0.1.57.tar.gz
+[2023-04-15 22:37:28] INFO root fetch - processPackages [elfws]: Downloading https://files.pythonhosted.org/packages/12/c3/ce02e57f120b303369da49302b042c64e10461a25f4a15766c9fa2a7de99/elfws-0.6.1.tar.gz
+[2023-04-15 22:37:29] INFO root fetch - processPackages [elfws]: Downloading https://files.pythonhosted.org/packages/5d/5f/c8d5b94b8e28da33aeb73992b8ccb4745856d8a562ecc5c6dee81a91d16f/elfws-0.7.0.tar.gz
+[2023-04-15 22:37:29] INFO root fetch - processPackages [algoxyz]: Downloading https://files.pythonhosted.org/packages/19/29/e71664b19a3edc246d43a8acc97e2bd45d687f81741587677821bf208c67/algoxyz-0.34.tar.gz
+[2023-04-15 22:37:29] INFO root fetch - processPackages [algoxyz]: Downloading https://files.pythonhosted.org/packages/19/29/e71664b19a3edc246d43a8acc97e2bd45d687f81741587677821bf208c67/algoxyz-0.34.tar.gz
+[2023-04-15 22:37:29] INFO root fetch - processPackages [spawn-lia]: Downloading https://files.pythonhosted.org/packages/36/37/bef06976672160409c292f5e58db56248d45a055fa9d7b88a86c4b615b74/spawn-lia-0.2.6.tar.gz
+[2023-04-15 22:37:29] INFO root fetch - processPackages [cqepyutils]: Downloading https://files.pythonhosted.org/packages/93/a1/24226d85226d734a3a37ba4877dcc492a3aba114b83026119310dae5e724/cqepyutils-0.1.9.tar.gz
+[2023-04-15 22:37:29] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/cf/f4/0e2b114c5d3ccb89523668fd9e3792797a9d25c14983b84443992da4f631/sabledocs-0.1.60.tar.gz
+[2023-04-15 22:37:29] INFO root fetch - processPackages [elfws]: executing diffoscope
+[2023-04-15 22:37:29] INFO root fetch - processPackages [elfws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elfws-0.6.1.tar.gz tmp/elfws-0.7.0.tar.gz --markdown 20230415/e/elfws/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-15 22:37:29] INFO root fetch - processPackages [algoxyz]: executing diffoscope
+[2023-04-15 22:37:29] INFO root fetch - processPackages [algoxyz]: executing diffoscope
+[2023-04-15 22:37:29] INFO root fetch - processPackages [algoxyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algoxyz-0.33.tar.gz tmp/algoxyz-0.34.tar.gz --markdown 20230415/a/algoxyz/0.33-0.34/diff.md --exclude *.pyd
+[2023-04-15 22:37:29] INFO root fetch - processPackages [algoxyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algoxyz-0.33.tar.gz tmp/algoxyz-0.34.tar.gz --markdown 20230415/a/algoxyz/0.33-0.34/diff.md --exclude *.pyd
+[2023-04-15 22:37:29] INFO root fetch - processPackages [spawn-lia]: executing diffoscope
+[2023-04-15 22:37:29] INFO root fetch - processPackages [spawn-lia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spawn-lia-0.2.5.tar.gz tmp/spawn-lia-0.2.6.tar.gz --markdown 20230415/s/spawn-lia/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-15 22:37:29] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 22:37:29] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.57.tar.gz tmp/sabledocs-0.1.60.tar.gz --markdown 20230415/s/sabledocs/0.1.57-0.1.60/diff.md --exclude *.pyd
+[2023-04-15 22:37:29] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-15 22:37:29] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230415/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 22:37:29] INFO root fetch - main [MainThread]: End processing [gs-peer-connection]: success
+[2023-04-15 22:37:30] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-04-15 22:37:30] INFO root fetch - main [MainThread]: End processing [algoxyz]: success
+[2023-04-15 22:37:30] INFO root fetch - main [MainThread]: End processing [algoxyz]: success
+[2023-04-15 22:37:30] INFO root fetch - main [MainThread]: End processing [elfws]: success
+[2023-04-15 22:37:30] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 22:37:30] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-15 22:37:31] INFO root fetch - main [MainThread]: End processing [spawn-lia]: success
+[2023-04-15 22:37:31] INFO root fetch - main [MainThread]: Store serial: [17721756]
