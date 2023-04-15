@@ -17881,3 +17881,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 18:42:36] INFO root fetch - main [MainThread]: End processing [simplebox]: success
 [2023-04-15 18:44:50] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
 [2023-04-15 18:44:50] INFO root fetch - main [MainThread]: Store serial: [17720281]
+[2023-04-15 18:49:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720281]
+[2023-04-15 18:50:00] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 18:50:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: objdictgen
+[2023-04-15 18:50:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pylity
+[2023-04-15 18:50:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kosis
+[2023-04-15 18:50:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OmniBridge
+[2023-04-15 18:50:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kosis
+[2023-04-15 18:50:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: simplebox
+[2023-04-15 18:50:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sabledocs
+[2023-04-15 18:50:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: salix-containers
+[2023-04-15 18:50:00] WARNING root fetch - processPackages [objdictgen]: Skipping, unable to determine old version
+[2023-04-15 18:50:00] INFO root fetch - main [MainThread]: End processing [objdictgen] error
+[2023-04-15 18:50:00] INFO root fetch - processPackages [pylity]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-04-15 18:50:00] INFO root fetch - processPackages [salix-containers]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-15 18:50:00] WARNING root fetch - processPackages [kosis]: Skipping, unable to determine old version
+[2023-04-15 18:50:00] WARNING root fetch - processPackages [kosis]: Skipping, unable to determine old version
+[2023-04-15 18:50:00] INFO root fetch - main [MainThread]: End processing [kosis] error
+[2023-04-15 18:50:00] INFO root fetch - main [MainThread]: End processing [kosis] error
+[2023-04-15 18:50:00] WARNING root fetch - processPackages [simplebox]: Skipping, unable to determine old version
+[2023-04-15 18:50:00] INFO root fetch - main [MainThread]: End processing [simplebox] error
+[2023-04-15 18:50:00] INFO root fetch - processPackages [sabledocs]: New version: [0.0.2.dev39] Old Version: [0.0.2.dev33]
+[2023-04-15 18:50:00] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 18:50:01] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-15 18:50:01] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230415/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 18:50:01] INFO root fetch - processPackages [salix-containers]: Downloading https://files.pythonhosted.org/packages/2d/ab/75cc18116017bec18653d748132631b3415025bb2ecf97d4fb923df592f2/salix-containers-0.2.1.tar.gz
+[2023-04-15 18:50:01] INFO root fetch - processPackages [pylity]: Downloading https://files.pythonhosted.org/packages/7d/d7/8da0923815af1f8ec662d1509d17f14268b9901bd9653b1bcb0e38fd80a4/pylity-0.0.3.tar.gz
+[2023-04-15 18:50:01] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/cc/af/b934cdbd01183ebe05503f32f10a87e199c9304fccf31a4adbef7a12fed3/sabledocs-0.0.2.dev39.tar.gz
+[2023-04-15 18:50:01] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 18:50:01] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.0.2.dev33.tar.gz tmp/sabledocs-0.0.2.dev39.tar.gz --markdown 20230415/s/sabledocs/0.0.2.dev33-0.0.2.dev39/diff.md --exclude *.pyd
+[2023-04-15 18:50:01] INFO root fetch - processPackages [pylity]: Downloading https://files.pythonhosted.org/packages/79/2f/a8b536edd64f1464c3041a4637bcf7ca950dcd8e473efe1ef4db2394e78d/pylity-0.0.5.tar.gz
+[2023-04-15 18:50:01] INFO root fetch - processPackages [salix-containers]: Downloading https://files.pythonhosted.org/packages/7c/95/99cb5342289b73ef6cfa7589af7695bddc980678732c4752c449b01003d8/salix-containers-0.3.0.tar.gz
+[2023-04-15 18:50:01] INFO root fetch - processPackages [pylity]: executing diffoscope
+[2023-04-15 18:50:01] INFO root fetch - processPackages [pylity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylity-0.0.3.tar.gz tmp/pylity-0.0.5.tar.gz --markdown 20230415/p/pylity/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 18:50:01] INFO root fetch - processPackages [salix-containers]: executing diffoscope
+[2023-04-15 18:50:01] INFO root fetch - processPackages [salix-containers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salix-containers-0.2.1.tar.gz tmp/salix-containers-0.3.0.tar.gz --markdown 20230415/s/salix-containers/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 18:50:02] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-15 18:50:02] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 18:50:02] INFO root fetch - main [MainThread]: End processing [pylity]: success
+[2023-04-15 18:50:02] INFO root fetch - main [MainThread]: End processing [salix-containers]: success
+[2023-04-15 18:50:02] INFO root fetch - main [MainThread]: Store serial: [17720327]
