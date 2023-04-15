@@ -16255,3 +16255,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 15:41:15] INFO root fetch - main [MainThread]: End processing [django-admin-site-search]: success
 [2023-04-15 15:41:16] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
 [2023-04-15 15:41:16] INFO root fetch - main [MainThread]: Store serial: [17719253]
+[2023-04-15 15:46:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719253]
+[2023-04-15 15:46:25] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 15:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wagtail-sb-socialnetworks
+[2023-04-15 15:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vollseg
+[2023-04-15 15:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytulip
+[2023-04-15 15:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: package-MR-FIX
+[2023-04-15 15:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: brainpy
+[2023-04-15 15:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fastapi-casdoor
+[2023-04-15 15:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flm-templates
+[2023-04-15 15:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lemonrunner
+[2023-04-15 15:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: casmarine
+[2023-04-15 15:46:25] INFO root fetch - processPackages [wagtail-sb-socialnetworks]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-15 15:46:25] INFO root fetch - processPackages [pytulip]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-15 15:46:25] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-15 15:46:25] INFO root fetch - processPackages [lemonrunner]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-15 15:46:25] WARNING root fetch - processPackages [package-MR-FIX]: Skipping, unable to determine old version
+[2023-04-15 15:46:25] WARNING root fetch - processPackages [flm-templates]: Skipping, unable to determine old version
+[2023-04-15 15:46:25] INFO root fetch - main [MainThread]: End processing [package-MR-FIX] error
+[2023-04-15 15:46:25] INFO root fetch - main [MainThread]: End processing [flm-templates] error
+[2023-04-15 15:46:25] INFO root fetch - processPackages [brainpy]: New version: [2.4.0] Old Version: [2.3.8]
+[2023-04-15 15:46:25] INFO root fetch - processPackages [fastapi-casdoor]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-15 15:46:25] WARNING root fetch - processPackages [casmarine]: Skipping, unable to determine old version
+[2023-04-15 15:46:25] INFO root fetch - main [MainThread]: End processing [casmarine] error
+[2023-04-15 15:46:25] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-15 15:46:26] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-15 15:46:26] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-15 15:46:26] INFO root fetch - processPackages [wagtail-sb-socialnetworks]: Downloading https://files.pythonhosted.org/packages/1e/3d/f23f831f7f1e0f302be633a6230503cb583c869fda70cefd92fbca7174ec/wagtail-sb-socialnetworks-0.4.0.tar.gz
+[2023-04-15 15:46:26] INFO root fetch - processPackages [lemonrunner]: Downloading https://files.pythonhosted.org/packages/ef/54/adc4930002015cde41b9430dc521ef303e0afa0bfb3af0e4639263162423/lemonrunner-0.3.4.tar.gz
+[2023-04-15 15:46:26] INFO root fetch - processPackages [pytulip]: Downloading https://files.pythonhosted.org/packages/a2/f0/75cf926ab764fef12044c35f154b0a0bf7eb6022382d901fb0b351f176af/pytulip-0.2.2.tar.gz
+[2023-04-15 15:46:26] INFO root fetch - processPackages [brainpy]: Downloading https://files.pythonhosted.org/packages/1b/f0/e8d8b38c68969c578f69ba95dfbc9baaf8fd637fe917cab6fc22d2885bc6/brainpy-2.3.8-py3-none-any.whl
+[2023-04-15 15:46:26] INFO root fetch - processPackages [lemonrunner]: executing diffoscope
+[2023-04-15 15:46:26] INFO root fetch - processPackages [lemonrunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lemonrunner-0.3.3.tar.gz tmp/lemonrunner-0.3.4.tar.gz --markdown 20230415/l/lemonrunner/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-15 15:46:26] INFO root fetch - processPackages [fastapi-casdoor]: Downloading https://files.pythonhosted.org/packages/16/e0/1103836fe4a3058ca24f2f8a90cce0b60e9efec9d105dece28e7b07a0ae4/fastapi-casdoor-0.1.8.tar.gz
+[2023-04-15 15:46:26] INFO root fetch - processPackages [fastapi-casdoor]: executing diffoscope
+[2023-04-15 15:46:26] INFO root fetch - processPackages [fastapi-casdoor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_casdoor-0.1.7-py3.8.egg tmp/fastapi-casdoor-0.1.8.tar.gz --markdown 20230415/f/fastapi-casdoor/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-15 15:46:26] INFO root fetch - processPackages [pytulip]: Downloading https://files.pythonhosted.org/packages/b2/f6/17db42c8c923bbafed3315e47d9bab0a168a04c279058d78a680a8af5976/pytulip-0.2.3.tar.gz
+[2023-04-15 15:46:26] INFO root fetch - processPackages [wagtail-sb-socialnetworks]: Downloading https://files.pythonhosted.org/packages/5d/74/6446beb59cd3c1a9f0db7a008764bf472af00baed38ddea1f0995949e0fd/wagtail_sb_socialnetworks-0.5.0.tar.gz
+[2023-04-15 15:46:26] INFO root fetch - processPackages [brainpy]: Downloading https://files.pythonhosted.org/packages/65/54/7debbce3290c7afc2cdfcd3dd89e7e9b6c45cbea3f1921ea467edee35fdc/brainpy-2.4.0-py3-none-any.whl
+[2023-04-15 15:46:26] INFO root fetch - processPackages [pytulip]: executing diffoscope
+[2023-04-15 15:46:26] INFO root fetch - processPackages [pytulip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytulip-0.2.2.tar.gz tmp/pytulip-0.2.3.tar.gz --markdown 20230415/p/pytulip/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-15 15:46:26] INFO root fetch - processPackages [wagtail-sb-socialnetworks]: executing diffoscope
+[2023-04-15 15:46:26] INFO root fetch - processPackages [wagtail-sb-socialnetworks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-sb-socialnetworks-0.4.0.tar.gz tmp/wagtail_sb_socialnetworks-0.5.0.tar.gz --markdown 20230415/w/wagtail-sb-socialnetworks/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-15 15:46:26] INFO root fetch - processPackages [brainpy]: executing diffoscope
+[2023-04-15 15:46:26] INFO root fetch - processPackages [brainpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brainpy-2.3.8-py3-none-any.whl.zip tmp/brainpy-2.4.0-py3-none-any.whl.zip --markdown 20230415/b/brainpy/2.3.8-2.4.0/diff.md --exclude *.pyd
+[2023-04-15 15:46:27] INFO root fetch - main [MainThread]: End processing [lemonrunner]: success
+[2023-04-15 15:46:27] INFO root fetch - main [MainThread]: End processing [fastapi-casdoor]: success
+[2023-04-15 15:46:27] INFO root fetch - main [MainThread]: End processing [pytulip]: success
+[2023-04-15 15:46:27] INFO root fetch - main [MainThread]: End processing [wagtail-sb-socialnetworks]: success
+[2023-04-15 15:46:31] INFO root fetch - main [MainThread]: End processing [brainpy]: success
+[2023-04-15 15:46:31] INFO root fetch - main [MainThread]: Store serial: [17719284]
