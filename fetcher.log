@@ -15195,3 +15195,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 13:49:21] INFO root fetch - main [MainThread]: End processing [e621-data]: success
 [2023-04-15 13:49:33] INFO root fetch - main [MainThread]: End processing [peaksjs-widget]: success
 [2023-04-15 13:49:33] INFO root fetch - main [MainThread]: Store serial: [17718609]
+[2023-04-15 13:54:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718609]
+[2023-04-15 13:54:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 13:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyransame
+[2023-04-15 13:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sabledocs
+[2023-04-15 13:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ra-utils
+[2023-04-15 13:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torcheval-nightly
+[2023-04-15 13:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdxbasics
+[2023-04-15 13:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: secret-wallet-codimoc
+[2023-04-15 13:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: resqpy
+[2023-04-15 13:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: discord-advert-framework
+[2023-04-15 13:54:43] WARNING root fetch - processPackages [pyransame]: Skipping, unable to determine old version
+[2023-04-15 13:54:43] INFO root fetch - main [MainThread]: End processing [pyransame] error
+[2023-04-15 13:54:43] INFO root fetch - processPackages [torcheval-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-15 13:54:43] INFO root fetch - processPackages [cdxbasics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-15 13:54:43] INFO root fetch - processPackages [resqpy]: New version: [4.7.4] Old Version: [4.7.3]
+[2023-04-15 13:54:43] WARNING root fetch - processPackages [sabledocs]: Skipping, unable to determine old version
+[2023-04-15 13:54:43] INFO root fetch - main [MainThread]: End processing [sabledocs] error
+[2023-04-15 13:54:43] INFO root fetch - processPackages [discord-advert-framework]: New version: [2.6.2] Old Version: [2.6.0]
+[2023-04-15 13:54:43] INFO root fetch - processPackages [secret-wallet-codimoc]: New version: [0.6.2] Old Version: [0.5.1]
+[2023-04-15 13:54:43] INFO root fetch - processPackages [ra-utils]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-04-15 13:54:43] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/5d/f8/1568a132d77205881820499c5026c7c7f08af3a7c73e1f775a491d7a3ec0/torcheval-nightly-2023.4.8.tar.gz
+[2023-04-15 13:54:43] INFO root fetch - processPackages [discord-advert-framework]: Downloading https://files.pythonhosted.org/packages/91/8c/f24ea56d1a71a4a9d5e5d151d99b0864f6aceecb0665cadce44dcf24aa29/discord-advert-framework-2.6.0.tar.gz
+[2023-04-15 13:54:43] WARNING root fetch - processPackages [discord-advert-framework]: Skipping package: exceeds size limit 17686720>=10485760
+[2023-04-15 13:54:43] INFO root fetch - main [MainThread]: End processing [discord-advert-framework] error
+[2023-04-15 13:54:43] INFO root fetch - processPackages [ra-utils]: executing diffoscope
+[2023-04-15 13:54:43] INFO root fetch - processPackages [ra-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ra_utils-1.9.2.tar.gz tmp/ra_utils-1.9.3.tar.gz --markdown 20230415/r/ra-utils/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-04-15 13:54:44] INFO root fetch - processPackages [secret-wallet-codimoc]: Downloading https://files.pythonhosted.org/packages/a9/d9/5473237c5a62bfacb446f5a52d19804eccfcb5495975b06be111e4b35886/secret_wallet_codimoc-0.6.2-py3-none-any.whl
+[2023-04-15 13:54:44] INFO root fetch - processPackages [cdxbasics]: Downloading https://files.pythonhosted.org/packages/44/bf/adf4351223f4cd638d1bb79229170666b0915f3adf1e0e9189ee6769224f/cdxbasics-0.2.8.tar.gz
+[2023-04-15 13:54:44] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2023-04-15 13:54:44] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval-nightly-2023.4.8.tar.gz tmp/torcheval-nightly-2023.4.9.tar.gz --markdown 20230415/t/torcheval-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-15 13:54:44] INFO root fetch - processPackages [resqpy]: Downloading https://files.pythonhosted.org/packages/1d/c2/f6d562bb582ade31a18a5aa654733ace7602f1bc0d2f2e4ae3564a3aa891/resqpy-4.7.4.tar.gz
+[2023-04-15 13:54:44] INFO root fetch - processPackages [secret-wallet-codimoc]: executing diffoscope
+[2023-04-15 13:54:44] INFO root fetch - processPackages [secret-wallet-codimoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secret_wallet_codimoc-0.5.1-py3-none-any.whl.zip tmp/secret_wallet_codimoc-0.6.2-py3-none-any.whl.zip --markdown 20230415/s/secret-wallet-codimoc/0.5.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-15 13:54:44] INFO root fetch - processPackages [resqpy]: executing diffoscope
+[2023-04-15 13:54:44] INFO root fetch - processPackages [resqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resqpy-4.7.3.tar.gz tmp/resqpy-4.7.4.tar.gz --markdown 20230415/r/resqpy/4.7.3-4.7.4/diff.md --exclude *.pyd
+[2023-04-15 13:54:44] INFO root fetch - processPackages [cdxbasics]: Downloading https://files.pythonhosted.org/packages/70/b4/020ddadf0e041dbe964c3ee126f0ced6d699d6a5c6d0e256f1e532782902/cdxbasics-0.2.9.tar.gz
+[2023-04-15 13:54:44] INFO root fetch - processPackages [cdxbasics]: executing diffoscope
+[2023-04-15 13:54:44] INFO root fetch - processPackages [cdxbasics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdxbasics-0.2.8.tar.gz tmp/cdxbasics-0.2.9.tar.gz --markdown 20230415/c/cdxbasics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-15 13:54:45] INFO root fetch - main [MainThread]: End processing [ra-utils]: success
+[2023-04-15 13:54:45] INFO root fetch - main [MainThread]: End processing [secret-wallet-codimoc]: success
+[2023-04-15 13:54:45] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2023-04-15 13:54:46] INFO root fetch - main [MainThread]: End processing [cdxbasics]: success
+[2023-04-15 13:54:46] INFO root fetch - main [MainThread]: End processing [resqpy]: success
+[2023-04-15 13:54:46] INFO root fetch - main [MainThread]: Store serial: [17718638]
