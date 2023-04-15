@@ -19915,3 +19915,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 22:21:52] INFO root fetch - main [MainThread]: End processing [wg-utilities]: success
 [2023-04-15 22:21:53] INFO root fetch - main [MainThread]: End processing [pylatexenc]: success
 [2023-04-15 22:21:53] INFO root fetch - main [MainThread]: Store serial: [17721696]
+[2023-04-15 22:26:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721696]
+[2023-04-15 22:27:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 22:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snakeviz
+[2023-04-15 22:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deepwave
+[2023-04-15 22:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sabledocs
+[2023-04-15 22:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyhOn
+[2023-04-15 22:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyyeti
+[2023-04-15 22:27:03] INFO root fetch - processPackages [snakeviz]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-15 22:27:03] INFO root fetch - processPackages [deepwave]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 22:27:03] INFO root fetch - processPackages [sabledocs]: New version: [0.1.54] Old Version: [0.1.51]
+[2023-04-15 22:27:03] INFO root fetch - processPackages [pyhOn]: New version: [0.8.0b4] Old Version: [0.8.0b3]
+[2023-04-15 22:27:03] INFO root fetch - processPackages [pyyeti]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-15 22:27:03] INFO root fetch - processPackages [deepwave]: Downloading https://files.pythonhosted.org/packages/52/f8/22cd5a2d5057a4d586243a731cfa775526ba31627b544da25e1c94029dda/deepwave-0.0.8.tar.gz
+[2023-04-15 22:27:03] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/58/11/c863adf0ae10348ce6083da582b84077409c22c21f32978850ad2e1669ee/sabledocs-0.1.51.tar.gz
+[2023-04-15 22:27:03] INFO root fetch - processPackages [pyyeti]: Downloading https://files.pythonhosted.org/packages/ad/70/86c698c13cf9561fd71dc87161de3bf09968b0df3a020a870c6b9b2eeb6e/pyyeti-1.2.4.tar.gz
+[2023-04-15 22:27:03] INFO root fetch - processPackages [snakeviz]: Downloading https://files.pythonhosted.org/packages/38/7e/6e5b8f12980aa3b9e59d8d7a36c548337a04cab080b43bfaaf19bf455cda/snakeviz-2.1.1.tar.gz
+[2023-04-15 22:27:03] INFO root fetch - processPackages [pyhOn]: Downloading https://files.pythonhosted.org/packages/d2/8e/5cc3683d4db40d445a3eecc8bafc969b0b899d185eae9a3721ff8bdba867/pyhOn-0.8.0b4.tar.gz
+[2023-04-15 22:27:03] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-04-15 22:27:03] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.8.0b3.tar.gz tmp/pyhOn-0.8.0b4.tar.gz --markdown 20230415/p/pyhOn/0.8.0b3-0.8.0b4/diff.md --exclude *.pyd
+[2023-04-15 22:27:03] INFO root fetch - processPackages [snakeviz]: Downloading https://files.pythonhosted.org/packages/40/28/1fb6e77eccee4ffc314212aea20ec729b1234ddf41c02e54d67b6471539d/snakeviz-2.1.2.tar.gz
+[2023-04-15 22:27:03] INFO root fetch - processPackages [deepwave]: Downloading https://files.pythonhosted.org/packages/4e/2f/69c9feffac1b2087c25c2005c2ec0504132763bbda6be2f6f1f17b6b9b8c/deepwave-0.0.9.tar.gz
+[2023-04-15 22:27:03] INFO root fetch - processPackages [sabledocs]: Downloading https://files.pythonhosted.org/packages/fb/ba/89ae4dd3894e7a679c397ad0a098d5f3d52fddc77540a5685b8b052baefc/sabledocs-0.1.54.tar.gz
+[2023-04-15 22:27:03] INFO root fetch - processPackages [deepwave]: executing diffoscope
+[2023-04-15 22:27:03] INFO root fetch - processPackages [deepwave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepwave-0.0.8.tar.gz tmp/deepwave-0.0.9.tar.gz --markdown 20230415/d/deepwave/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 22:27:03] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-04-15 22:27:03] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.51.tar.gz tmp/sabledocs-0.1.54.tar.gz --markdown 20230415/s/sabledocs/0.1.51-0.1.54/diff.md --exclude *.pyd
+[2023-04-15 22:27:04] INFO root fetch - processPackages [snakeviz]: executing diffoscope
+[2023-04-15 22:27:04] INFO root fetch - processPackages [snakeviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snakeviz-2.1.1.tar.gz tmp/snakeviz-2.1.2.tar.gz --markdown 20230415/s/snakeviz/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-15 22:27:04] INFO root fetch - processPackages [pyyeti]: Downloading https://files.pythonhosted.org/packages/66/49/b82721076d733daf332d6aa8b0b921f577161bb5855b25e6305886e0b2f4/pyyeti-1.2.5.tar.gz
+[2023-04-15 22:27:04] INFO root fetch - processPackages [pyyeti]: executing diffoscope
+[2023-04-15 22:27:04] INFO root fetch - processPackages [pyyeti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyyeti-1.2.4.tar.gz tmp/pyyeti-1.2.5.tar.gz --markdown 20230415/p/pyyeti/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-15 22:27:05] INFO root fetch - main [MainThread]: End processing [deepwave]: success
+[2023-04-15 22:27:05] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-04-15 22:27:05] INFO root fetch - main [MainThread]: End processing [snakeviz]: success
+[2023-04-15 22:27:05] INFO root fetch - main [MainThread]: End processing [pyyeti]: success
+[2023-04-15 22:27:05] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-04-15 22:27:05] INFO root fetch - main [MainThread]: Store serial: [17721711]
