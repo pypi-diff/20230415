@@ -7060,3 +7060,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 10:04:50] INFO root fetch - main [MainThread]: End processing [sqladmin]: success
 [2023-04-15 10:04:51] INFO root fetch - main [MainThread]: End processing [plone.app.testing]: success
 [2023-04-15 10:04:51] INFO root fetch - main [MainThread]: Store serial: [17717378]
+[2023-04-15 10:09:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717378]
+[2023-04-15 10:09:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 10:09:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plone.app.contentlisting
+[2023-04-15 10:09:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipe-utils
+[2023-04-15 10:09:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pygedcom
+[2023-04-15 10:09:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plone.protect
+[2023-04-15 10:09:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shapfs-0.0.1
+[2023-04-15 10:09:57] INFO root fetch - processPackages [plone.protect]: New version: [5.0.0] Old Version: [4.1.8]
+[2023-04-15 10:09:57] INFO root fetch - processPackages [pipe-utils]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-04-15 10:09:57] WARNING root fetch - processPackages [shapfs-0.0.1]: Skipping, unable to determine old version
+[2023-04-15 10:09:57] INFO root fetch - processPackages [shapfs-0.0.1]: Start processing: nonebot-plugin-arktools
+[2023-04-15 10:09:57] INFO root fetch - processPackages [plone.app.contentlisting]: New version: [3.0.3] Old Version: [3.0.2]
+[2023-04-15 10:09:57] INFO root fetch - main [MainThread]: End processing [shapfs-0.0.1] error
+[2023-04-15 10:09:57] INFO root fetch - processPackages [pygedcom]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-15 10:09:57] INFO root fetch - processPackages [nonebot-plugin-arktools]: New version: [1.1.0] Old Version: [1.0.9]
+[2023-04-15 10:09:57] INFO root fetch - processPackages [pipe-utils]: Downloading https://files.pythonhosted.org/packages/1b/09/a8360383303c8c64306501f6bd6e89ec7f077d0ce65decacbdc7608c18da/pipe-utils-0.2.2.tar.gz
+[2023-04-15 10:09:57] INFO root fetch - processPackages [plone.app.contentlisting]: Downloading https://files.pythonhosted.org/packages/4e/b9/0f9e94304d26b2c021cf745fe264d6e2ce05d73d85295f874c1c976c484f/plone.app.contentlisting-3.0.2.tar.gz
+[2023-04-15 10:09:57] INFO root fetch - processPackages [plone.protect]: Downloading https://files.pythonhosted.org/packages/1d/1c/bf7e4b7fe8f91d8320b478a2315c6c5c7de48a6574502f2549d4cb9d6f3e/plone.protect-4.1.8.tar.gz
+[2023-04-15 10:09:58] INFO root fetch - processPackages [pygedcom]: Downloading https://files.pythonhosted.org/packages/ee/1f/e66d36b64a51529141cf6c137fcdbbebba30cea3d04b7197135c211140a6/pygedcom-0.1.7.tar.gz
+[2023-04-15 10:09:58] INFO root fetch - processPackages [nonebot-plugin-arktools]: Downloading https://files.pythonhosted.org/packages/ac/be/e75aca05ecb3b209d713e6c4d1b12610d72c5ebb550350bcd0adba83a679/nonebot_plugin_arktools-1.1.0.tar.gz
+[2023-04-15 10:09:58] INFO root fetch - processPackages [pygedcom]: executing diffoscope
+[2023-04-15 10:09:58] INFO root fetch - processPackages [pygedcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygedcom-0.1.6.tar.gz tmp/pygedcom-0.1.7.tar.gz --markdown 20230415/p/pygedcom/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-15 10:09:58] INFO root fetch - processPackages [pipe-utils]: Downloading https://files.pythonhosted.org/packages/e7/d8/13e81bf4b120f96a03b1242ccfe78d056a75435413a801daf3e1aab5d725/pipe-utils-0.3.0.tar.gz
+[2023-04-15 10:09:58] INFO root fetch - processPackages [nonebot-plugin-arktools]: executing diffoscope
+[2023-04-15 10:09:58] INFO root fetch - processPackages [nonebot-plugin-arktools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_arktools-1.0.9.tar.gz tmp/nonebot_plugin_arktools-1.1.0.tar.gz --markdown 20230415/n/nonebot-plugin-arktools/1.0.9-1.1.0/diff.md --exclude *.pyd
+[2023-04-15 10:09:58] INFO root fetch - processPackages [plone.protect]: Downloading https://files.pythonhosted.org/packages/c4/1f/f7548d4a4156cb368ec68d64769b5b77c56a5bd5d61467cf43754820ab33/plone.protect-5.0.0.tar.gz
+[2023-04-15 10:09:58] INFO root fetch - processPackages [plone.app.contentlisting]: Downloading https://files.pythonhosted.org/packages/6a/70/56911d65640e0c02dcfa9eefd9621f24df675da6e42c521600d5160f9fd3/plone.app.contentlisting-3.0.3.tar.gz
+[2023-04-15 10:09:58] INFO root fetch - processPackages [pipe-utils]: executing diffoscope
+[2023-04-15 10:09:58] INFO root fetch - processPackages [pipe-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipe-utils-0.2.2.tar.gz tmp/pipe-utils-0.3.0.tar.gz --markdown 20230415/p/pipe-utils/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 10:09:58] INFO root fetch - processPackages [plone.app.contentlisting]: executing diffoscope
+[2023-04-15 10:09:58] INFO root fetch - processPackages [plone.app.contentlisting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.contentlisting-3.0.2.tar.gz tmp/plone.app.contentlisting-3.0.3.tar.gz --markdown 20230415/p/plone.app.contentlisting/3.0.2-3.0.3/diff.md --exclude *.pyd
+[2023-04-15 10:09:58] INFO root fetch - processPackages [plone.protect]: executing diffoscope
+[2023-04-15 10:09:58] INFO root fetch - processPackages [plone.protect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.protect-4.1.8.tar.gz tmp/plone.protect-5.0.0.tar.gz --markdown 20230415/p/plone.protect/4.1.8-5.0.0/diff.md --exclude *.pyd
+[2023-04-15 10:09:59] INFO root fetch - main [MainThread]: End processing [pygedcom]: success
+[2023-04-15 10:09:59] INFO root fetch - main [MainThread]: End processing [pipe-utils]: success
+[2023-04-15 10:09:59] INFO root fetch - main [MainThread]: End processing [plone.app.contentlisting]: success
+[2023-04-15 10:09:59] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-arktools]: success
+[2023-04-15 10:09:59] INFO root fetch - main [MainThread]: End processing [plone.protect]: success
+[2023-04-15 10:09:59] INFO root fetch - main [MainThread]: Store serial: [17717401]
