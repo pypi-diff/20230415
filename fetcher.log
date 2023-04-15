@@ -19062,3 +19062,87 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 20:43:10] INFO root fetch - main [MainThread]: End processing [ExoPSI]: success
 [2023-04-15 20:43:11] INFO root fetch - main [MainThread]: End processing [microt-preprocessing]: success
 [2023-04-15 20:43:11] INFO root fetch - main [MainThread]: Store serial: [17721098]
+[2023-04-15 20:48:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721098]
+[2023-04-15 20:48:20] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: UlldConfig
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nlptoolssna
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: owl-on-fhir
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: backseat-driver
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: onvif-zeep-async
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: digiDownload
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: prunerr
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: otree
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: v
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ylin-distributions
+[2023-04-15 20:48:20] WARNING root fetch - processPackages [UlldConfig]: Skipping, unable to determine old version
+[2023-04-15 20:48:20] INFO root fetch - processPackages [UlldConfig]: Start processing: chemeq
+[2023-04-15 20:48:20] INFO root fetch - main [MainThread]: End processing [UlldConfig] error
+[2023-04-15 20:48:20] INFO root fetch - processPackages [owl-on-fhir]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 20:48:20] INFO root fetch - processPackages [prunerr]: New version: [1.1.0b27] Old Version: [1.1.0b26]
+[2023-04-15 20:48:20] INFO root fetch - processPackages [onvif-zeep-async]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-04-15 20:48:20] WARNING root fetch - processPackages [ylin-distributions]: Skipping, unable to determine old version
+[2023-04-15 20:48:20] WARNING root fetch - processPackages [v]: Skipping, unable to determine old version
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ylin-distributions]: Start processing: typing-result
+[2023-04-15 20:48:20] INFO root fetch - main [MainThread]: End processing [ylin-distributions] error
+[2023-04-15 20:48:20] INFO root fetch - processPackages [digiDownload]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 20:48:20] INFO root fetch - processPackages [v]: Start processing: f2py-jit
+[2023-04-15 20:48:20] INFO root fetch - processPackages [nlptoolssna]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 20:48:20] INFO root fetch - main [MainThread]: End processing [v] error
+[2023-04-15 20:48:20] INFO root fetch - processPackages [backseat-driver]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 20:48:20] INFO root fetch - processPackages [otree]: New version: [6.0.0a8] Old Version: [6.0.0a7]
+[2023-04-15 20:48:20] WARNING root fetch - processPackages [chemeq]: Skipping, unable to determine old version
+[2023-04-15 20:48:20] INFO root fetch - processPackages [chemeq]: Start processing: pathier
+[2023-04-15 20:48:20] INFO root fetch - main [MainThread]: End processing [chemeq] error
+[2023-04-15 20:48:20] WARNING root fetch - processPackages [typing-result]: Skipping, unable to determine old version
+[2023-04-15 20:48:20] INFO root fetch - processPackages [typing-result]: Start processing: ddpw
+[2023-04-15 20:48:20] INFO root fetch - main [MainThread]: End processing [typing-result] error
+[2023-04-15 20:48:20] INFO root fetch - processPackages [f2py-jit]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-15 20:48:20] INFO root fetch - processPackages [digiDownload]: Downloading https://files.pythonhosted.org/packages/d2/1e/30cca7c44a6aa1c1bc2b13dc03122ac03de1352196136cf451846d420802/digiDownload-0.0.2.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [pathier]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-15 20:48:20] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/ba/7c/67a0823bb859fa5d4d273bc5b1ffeba5b5d9b158b739f2f5ba7d01076faa/nlptoolssna-0.1.0.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ddpw]: New version: [4.0.0] Old Version: [3.0.0]
+[2023-04-15 20:48:20] INFO root fetch - processPackages [prunerr]: Downloading https://files.pythonhosted.org/packages/a7/6e/ceb32c056769f09373b3378e2bbcab6b56372fcf768e3f0305b03faf1e36/prunerr-1.1.0b27.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [backseat-driver]: Downloading https://files.pythonhosted.org/packages/6e/16/4ab1db714ad6997aa9834149b706d06596d3773e9d9c532bd907cc1cf346/backseat-driver-0.0.1.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [otree]: Downloading https://files.pythonhosted.org/packages/bc/d7/db08ae26a40549ee24ede427c55c827fd123eb0a19e9314e893447e4b4db/otree-6.0.0a7.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [owl-on-fhir]: Downloading https://files.pythonhosted.org/packages/23/00/3e6d0545f91891b4acdb92f54fdf7252682cae3d0844a35319c65b5e13a5/owl-on-fhir-0.1.8.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [f2py-jit]: Downloading https://files.pythonhosted.org/packages/09/cc/2a6eceb3410ae71c86c7eb3a6a607bcd188ca1946156f8344e234f7d1580/f2py_jit-0.9.1-py2.py3-none-any.whl
+[2023-04-15 20:48:20] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/62/75/1ea90eba9468414b9c276fb3adebbd1bbf67d85af1c2cca51912039f678f/onvif-zeep-async-1.2.6.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [pathier]: Downloading https://files.pythonhosted.org/packages/ec/bc/b9699ae0024367f81b3e284f20e8bd37b9ff94abf2f67423a45cb6c36a50/pathier-0.7.0.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ddpw]: Downloading https://files.pythonhosted.org/packages/31/35/887a8f67d63832ce9486dac70be6920a5dbf5a73011b0e82111447f49a90/ddpw-3.0.0.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [prunerr]: executing diffoscope
+[2023-04-15 20:48:20] INFO root fetch - processPackages [prunerr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prunerr-1.1.0b26.tar.gz tmp/prunerr-1.1.0b27.tar.gz --markdown 20230415/p/prunerr/1.1.0b26-1.1.0b27/diff.md --exclude *.pyd
+[2023-04-15 20:48:20] INFO root fetch - processPackages [digiDownload]: Downloading https://files.pythonhosted.org/packages/ca/34/c63bd5912217fbddfaac8b68a17241e592faf5006957d39a8595c2ffbb2d/digiDownload-0.0.3.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-04-15 20:48:20] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-1.2.5.tar.gz tmp/onvif-zeep-async-1.2.6.tar.gz --markdown 20230415/o/onvif-zeep-async/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-04-15 20:48:20] INFO root fetch - processPackages [backseat-driver]: Downloading https://files.pythonhosted.org/packages/fb/3a/6b0a443b968972ce9239078faff3882df73bf3e28d2874c1608f4bb16a17/backseat-driver-0.0.2.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/c7/3f/11b8117859317ce2a8be6c630179b2361a3f504fb946289fc5e7c79c49b0/nlptoolssna-0.1.1.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [f2py-jit]: Downloading https://files.pythonhosted.org/packages/37/e6/39a83a1bf860e83ae1cd6599648940f47a3fe011fa56af9c195bad683a9c/f2py_jit-0.9.2-py2.py3-none-any.whl
+[2023-04-15 20:48:20] INFO root fetch - processPackages [otree]: Downloading https://files.pythonhosted.org/packages/15/bc/c77d0821f246a23fa3251064b2e4b625965c2e27faf730d99f634f861793/otree-6.0.0a8.tar.gz
+[2023-04-15 20:48:20] INFO root fetch - processPackages [ddpw]: Downloading https://files.pythonhosted.org/packages/07/b0/be54cd9e0e072a5c2ff7ff179e171a5ab8ffb955a12595bad5ea97d265dd/ddpw-4.0.0.tar.gz
+[2023-04-15 20:48:20] WARNING root fetch - processPackages [owl-on-fhir]: Skipping package: exceeds size limit 71919209>=10485760
+[2023-04-15 20:48:20] INFO root fetch - main [MainThread]: End processing [owl-on-fhir] error
+[2023-04-15 20:48:20] INFO root fetch - processPackages [backseat-driver]: executing diffoscope
+[2023-04-15 20:48:20] INFO root fetch - processPackages [backseat-driver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backseat-driver-0.0.1.tar.gz tmp/backseat-driver-0.0.2.tar.gz --markdown 20230415/b/backseat-driver/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 20:48:21] INFO root fetch - processPackages [digiDownload]: executing diffoscope
+[2023-04-15 20:48:21] INFO root fetch - processPackages [digiDownload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digiDownload-0.0.2.tar.gz tmp/digiDownload-0.0.3.tar.gz --markdown 20230415/d/digiDownload/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 20:48:21] INFO root fetch - processPackages [f2py-jit]: executing diffoscope
+[2023-04-15 20:48:21] INFO root fetch - processPackages [f2py-jit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/f2py_jit-0.9.1-py2.py3-none-any.whl.zip tmp/f2py_jit-0.9.2-py2.py3-none-any.whl.zip --markdown 20230415/f/f2py-jit/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-15 20:48:21] INFO root fetch - processPackages [pathier]: Downloading https://files.pythonhosted.org/packages/0e/f4/a214b6b30b783df6db4b6936c324190dba49463f6857268fca0585a654dc/pathier-0.8.0.tar.gz
+[2023-04-15 20:48:21] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-15 20:48:21] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.1.0.tar.gz tmp/nlptoolssna-0.1.1.tar.gz --markdown 20230415/n/nlptoolssna/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 20:48:21] INFO root fetch - processPackages [otree]: executing diffoscope
+[2023-04-15 20:48:21] INFO root fetch - processPackages [otree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otree-6.0.0a7.tar.gz tmp/otree-6.0.0a8.tar.gz --markdown 20230415/o/otree/6.0.0a7-6.0.0a8/diff.md --exclude *.pyd
+[2023-04-15 20:48:21] INFO root fetch - processPackages [ddpw]: executing diffoscope
+[2023-04-15 20:48:21] INFO root fetch - processPackages [ddpw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddpw-3.0.0.tar.gz tmp/ddpw-4.0.0.tar.gz --markdown 20230415/d/ddpw/3.0.0-4.0.0/diff.md --exclude *.pyd
+[2023-04-15 20:48:21] INFO root fetch - processPackages [pathier]: executing diffoscope
+[2023-04-15 20:48:21] INFO root fetch - processPackages [pathier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pathier-0.7.0.tar.gz tmp/pathier-0.8.0.tar.gz --markdown 20230415/p/pathier/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-15 20:48:22] INFO root fetch - main [MainThread]: End processing [backseat-driver]: success
+[2023-04-15 20:48:22] INFO root fetch - main [MainThread]: End processing [digiDownload]: success
+[2023-04-15 20:48:22] INFO root fetch - main [MainThread]: End processing [ddpw]: success
+[2023-04-15 20:48:22] INFO root fetch - main [MainThread]: End processing [f2py-jit]: success
+[2023-04-15 20:48:22] INFO root fetch - main [MainThread]: End processing [pathier]: success
+[2023-04-15 20:48:22] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-15 20:48:23] INFO root fetch - main [MainThread]: End processing [otree]: success
+[2023-04-15 20:48:24] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-04-15 20:48:25] INFO root fetch - main [MainThread]: End processing [prunerr]: success
+[2023-04-15 20:48:25] INFO root fetch - main [MainThread]: Store serial: [17721153]
