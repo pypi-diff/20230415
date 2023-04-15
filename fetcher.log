@@ -18580,3 +18580,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 19:59:29] INFO root fetch - main [MainThread]: End processing [jupyterhub-tmpnativeauthenticator]: success
 [2023-04-15 19:59:29] INFO root fetch - main [MainThread]: End processing [pydcs]: success
 [2023-04-15 19:59:29] INFO root fetch - main [MainThread]: Store serial: [17720763]
+[2023-04-15 20:04:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720763]
+[2023-04-15 20:04:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 20:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymediawikidocker
+[2023-04-15 20:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qtpy-frameless-window
+[2023-04-15 20:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mango-explorer-v4
+[2023-04-15 20:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kosis
+[2023-04-15 20:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opshin
+[2023-04-15 20:04:39] INFO root fetch - processPackages [pymediawikidocker]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-15 20:04:39] INFO root fetch - processPackages [mango-explorer-v4]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-15 20:04:39] INFO root fetch - processPackages [qtpy-frameless-window]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 20:04:39] WARNING root fetch - processPackages [kosis]: Skipping, unable to determine old version
+[2023-04-15 20:04:39] INFO root fetch - main [MainThread]: End processing [kosis] error
+[2023-04-15 20:04:39] INFO root fetch - processPackages [opshin]: New version: [0.9.15] Old Version: [0.9.14]
+[2023-04-15 20:04:39] INFO root fetch - processPackages [opshin]: executing diffoscope
+[2023-04-15 20:04:39] INFO root fetch - processPackages [opshin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opshin-0.9.14.tar.gz tmp/opshin-0.9.15.tar.gz --markdown 20230415/o/opshin/0.9.14-0.9.15/diff.md --exclude *.pyd
+[2023-04-15 20:04:39] INFO root fetch - processPackages [pymediawikidocker]: Downloading https://files.pythonhosted.org/packages/b2/54/54d00e3c42ba3ab3b75d917ea2ca292a149469d399120315af842983996f/pymediawikidocker-0.9.9.tar.gz
+[2023-04-15 20:04:39] INFO root fetch - processPackages [mango-explorer-v4]: Downloading https://files.pythonhosted.org/packages/16/64/faa10fb5d2384ae9a049d0046953471e0cdaa0e00fbac7b6afea6ae874a9/mango_explorer_v4-0.7.1.tar.gz
+[2023-04-15 20:04:39] INFO root fetch - processPackages [pymediawikidocker]: executing diffoscope
+[2023-04-15 20:04:39] INFO root fetch - processPackages [pymediawikidocker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymediawikidocker-0.9.8.tar.gz tmp/pymediawikidocker-0.9.9.tar.gz --markdown 20230415/p/pymediawikidocker/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-15 20:04:39] INFO root fetch - processPackages [mango-explorer-v4]: executing diffoscope
+[2023-04-15 20:04:39] INFO root fetch - processPackages [mango-explorer-v4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango_explorer_v4-0.7.0.tar.gz tmp/mango_explorer_v4-0.7.1.tar.gz --markdown 20230415/m/mango-explorer-v4/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-15 20:04:39] INFO root fetch - processPackages [qtpy-frameless-window]: Downloading https://files.pythonhosted.org/packages/5c/64/bd5aab4dbef8fc13c58cec376519f12ce10c87bb2e69f64681a14a6681e0/QtPy-Frameless-Window-0.0.9.tar.gz
+[2023-04-15 20:04:40] INFO root fetch - processPackages [qtpy-frameless-window]: executing diffoscope
+[2023-04-15 20:04:40] INFO root fetch - processPackages [qtpy-frameless-window]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QtPy-Frameless-Window-0.0.8.tar.gz tmp/QtPy-Frameless-Window-0.0.9.tar.gz --markdown 20230415/q/qtpy-frameless-window/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 20:04:41] INFO root fetch - main [MainThread]: End processing [opshin]: success
+[2023-04-15 20:04:41] INFO root fetch - main [MainThread]: End processing [pymediawikidocker]: success
+[2023-04-15 20:04:41] INFO root fetch - main [MainThread]: End processing [qtpy-frameless-window]: success
+[2023-04-15 20:04:41] INFO root fetch - main [MainThread]: End processing [mango-explorer-v4]: success
+[2023-04-15 20:04:41] INFO root fetch - main [MainThread]: Store serial: [17720783]
