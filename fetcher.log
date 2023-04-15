@@ -7011,3 +7011,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 09:59:32] INFO root fetch - main [MainThread]: End processing [plone.app.customerize]: success
 [2023-04-15 09:59:38] INFO root fetch - main [MainThread]: End processing [plone.app.redirector]: success
 [2023-04-15 09:59:38] INFO root fetch - main [MainThread]: Store serial: [17717358]
+[2023-04-15 10:04:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717358]
+[2023-04-15 10:04:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 10:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plone.app.relationfield
+[2023-04-15 10:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plone.app.multilingual
+[2023-04-15 10:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oarepo-micro-api
+[2023-04-15 10:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyglove
+[2023-04-15 10:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: plone.app.contentrules
+[2023-04-15 10:04:46] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230415] Old Version: [0.3.1.dev20230414]
+[2023-04-15 10:04:46] INFO root fetch - processPackages [plone.app.relationfield]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-04-15 10:04:46] INFO root fetch - processPackages [plone.app.contentrules]: New version: [5.0.2] Old Version: [5.0.1]
+[2023-04-15 10:04:46] INFO root fetch - processPackages [plone.app.multilingual]: New version: [7.0.1] Old Version: [7.0.0]
+[2023-04-15 10:04:46] INFO root fetch - processPackages [oarepo-micro-api]: New version: [3.5.9] Old Version: [3.5.8]
+[2023-04-15 10:04:46] INFO root fetch - processPackages [plone.app.relationfield]: Downloading https://files.pythonhosted.org/packages/ff/01/5dee4d7e9987cd026d2e714f2aa28157b715aac2341f823b5f5cc840dd66/plone.app.relationfield-3.0.1.tar.gz
+[2023-04-15 10:04:46] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/18/fd/84234ae1997f8f313137a5fe9c2a86440aa035169c14e3a0671dd24eecd7/pyglove-0.3.1.dev20230415.tar.gz
+[2023-04-15 10:04:46] INFO root fetch - processPackages [plone.app.contentrules]: Downloading https://files.pythonhosted.org/packages/82/86/255aa222d561b5d1b53bccbc3448461f69189bc860b2a8295175ffb61b7b/plone.app.contentrules-5.0.1.tar.gz
+[2023-04-15 10:04:46] INFO root fetch - processPackages [plone.app.multilingual]: Downloading https://files.pythonhosted.org/packages/37/4b/2878ad6efb3593237e84e66b7c3ebc9769757281678a4c8493e3cd2664c1/plone.app.multilingual-7.0.0.tar.gz
+[2023-04-15 10:04:46] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-04-15 10:04:46] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230414.tar.gz tmp/pyglove-0.3.1.dev20230415.tar.gz --markdown 20230415/p/pyglove/0.3.1.dev20230414-0.3.1.dev20230415/diff.md --exclude *.pyd
+[2023-04-15 10:04:47] INFO root fetch - processPackages [oarepo-micro-api]: executing diffoscope
+[2023-04-15 10:04:47] INFO root fetch - processPackages [oarepo-micro-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-micro-api-3.5.8.tar.gz tmp/oarepo-micro-api-3.5.9.tar.gz --markdown 20230415/o/oarepo-micro-api/3.5.8-3.5.9/diff.md --exclude *.pyd
+[2023-04-15 10:04:47] INFO root fetch - processPackages [plone.app.relationfield]: Downloading https://files.pythonhosted.org/packages/41/81/5051c6f1369ddfb21c4d80fccca92d1620d3333f527171e5ee403647df67/plone.app.relationfield-3.0.2.tar.gz
+[2023-04-15 10:04:47] INFO root fetch - processPackages [plone.app.contentrules]: Downloading https://files.pythonhosted.org/packages/24/b5/c1cc43212a34679cbbefa0fc4ed0b48ecf57158cbd0613925724f63cc3f5/plone.app.contentrules-5.0.2.tar.gz
+[2023-04-15 10:04:47] INFO root fetch - processPackages [plone.app.multilingual]: Downloading https://files.pythonhosted.org/packages/c3/f2/22cc35c2ffd8d1c4eb05c9ed2fcd51971d83dc5da211de8ddb6b0f232c6e/plone.app.multilingual-7.0.1.tar.gz
+[2023-04-15 10:04:47] INFO root fetch - processPackages [plone.app.multilingual]: executing diffoscope
+[2023-04-15 10:04:47] INFO root fetch - processPackages [plone.app.multilingual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.multilingual-7.0.0.tar.gz tmp/plone.app.multilingual-7.0.1.tar.gz --markdown 20230415/p/plone.app.multilingual/7.0.0-7.0.1/diff.md --exclude *.pyd
+[2023-04-15 10:04:47] INFO root fetch - processPackages [plone.app.relationfield]: executing diffoscope
+[2023-04-15 10:04:47] INFO root fetch - processPackages [plone.app.relationfield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.relationfield-3.0.1.tar.gz tmp/plone.app.relationfield-3.0.2.tar.gz --markdown 20230415/p/plone.app.relationfield/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-04-15 10:04:47] INFO root fetch - processPackages [plone.app.contentrules]: executing diffoscope
+[2023-04-15 10:04:47] INFO root fetch - processPackages [plone.app.contentrules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.contentrules-5.0.1.tar.gz tmp/plone.app.contentrules-5.0.2.tar.gz --markdown 20230415/p/plone.app.contentrules/5.0.1-5.0.2/diff.md --exclude *.pyd
+[2023-04-15 10:04:48] INFO root fetch - processPackages [oarepo-micro-api]: Start processing: sqladmin
+[2023-04-15 10:04:48] INFO root fetch - main [MainThread]: End processing [oarepo-micro-api]: success
+[2023-04-15 10:04:48] INFO root fetch - processPackages [sqladmin]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-15 10:04:48] INFO root fetch - processPackages [sqladmin]: Downloading https://files.pythonhosted.org/packages/e2/c2/00caa80a451af253bf6bb3f74679b92dd24ec416dd0ce047e586256e86bb/sqladmin-0.8.0.tar.gz
+[2023-04-15 10:04:48] INFO root fetch - processPackages [plone.app.relationfield]: Start processing: plone.app.testing
+[2023-04-15 10:04:48] INFO root fetch - main [MainThread]: End processing [plone.app.relationfield]: success
+[2023-04-15 10:04:48] INFO root fetch - processPackages [sqladmin]: Downloading https://files.pythonhosted.org/packages/a3/b2/0b1777b71ed99e68b69056422de29864ce6be6992d094d56075ab2cbce9d/sqladmin-0.9.0.tar.gz
+[2023-04-15 10:04:48] INFO root fetch - processPackages [plone.app.testing]: New version: [7.0.1] Old Version: [7.0.0b2]
+[2023-04-15 10:04:48] INFO root fetch - main [MainThread]: End processing [plone.app.contentrules]: success
+[2023-04-15 10:04:48] INFO root fetch - processPackages [sqladmin]: executing diffoscope
+[2023-04-15 10:04:48] INFO root fetch - processPackages [sqladmin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqladmin-0.8.0.tar.gz tmp/sqladmin-0.9.0.tar.gz --markdown 20230415/s/sqladmin/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 10:04:49] INFO root fetch - processPackages [plone.app.testing]: Downloading https://files.pythonhosted.org/packages/13/cc/66a3d88ffd9db7aad35134b774a54be9243ab8fffbaa5f951a7783e03f5d/plone.app.testing-7.0.0b2.tar.gz
+[2023-04-15 10:04:49] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2023-04-15 10:04:49] INFO root fetch - processPackages [plone.app.testing]: Downloading https://files.pythonhosted.org/packages/9d/60/50984ebca21788d85295afaf6e1f435b7f01a58dc0ed61165a156e3d5085/plone.app.testing-7.0.1.tar.gz
+[2023-04-15 10:04:49] INFO root fetch - processPackages [plone.app.testing]: executing diffoscope
+[2023-04-15 10:04:49] INFO root fetch - processPackages [plone.app.testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.testing-7.0.0b2.tar.gz tmp/plone.app.testing-7.0.1.tar.gz --markdown 20230415/p/plone.app.testing/7.0.0b2-7.0.1/diff.md --exclude *.pyd
+[2023-04-15 10:04:50] INFO root fetch - main [MainThread]: End processing [plone.app.multilingual]: success
+[2023-04-15 10:04:50] INFO root fetch - main [MainThread]: End processing [sqladmin]: success
+[2023-04-15 10:04:51] INFO root fetch - main [MainThread]: End processing [plone.app.testing]: success
+[2023-04-15 10:04:51] INFO root fetch - main [MainThread]: Store serial: [17717378]
