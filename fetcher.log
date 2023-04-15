@@ -19551,3 +19551,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 21:42:03] INFO root fetch - main [MainThread]: End processing [pyTelegramBotAPI]: success
 [2023-04-15 21:42:04] INFO root fetch - main [MainThread]: End processing [sfalmanac]: success
 [2023-04-15 21:42:04] INFO root fetch - main [MainThread]: Store serial: [17721503]
+[2023-04-15 21:47:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721503]
+[2023-04-15 21:47:14] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 21:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wheel-axle
+[2023-04-15 21:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: skyalmanac
+[2023-04-15 21:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: awc
+[2023-04-15 21:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyICU
+[2023-04-15 21:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yopass-api
+[2023-04-15 21:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: slack-watchman-eg
+[2023-04-15 21:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: multi-cloud-utils
+[2023-04-15 21:47:14] INFO root fetch - processPackages [PyICU]: New version: [2.9] Old Version: [2.8.1]
+[2023-04-15 21:47:14] INFO root fetch - processPackages [awc]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-15 21:47:14] INFO root fetch - processPackages [yopass-api]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 21:47:14] INFO root fetch - processPackages [skyalmanac]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-04-15 21:47:14] INFO root fetch - processPackages [wheel-axle]: New version: [0.0.6.dev20230415194546] Old Version: [0.0.6.dev20230316024610]
+[2023-04-15 21:47:14] INFO root fetch - processPackages [slack-watchman-eg]: New version: [2.0.0] Old Version: [1.1.0]
+[2023-04-15 21:47:15] WARNING root fetch - processPackages [multi-cloud-utils]: Skipping, unable to determine old version
+[2023-04-15 21:47:15] INFO root fetch - main [MainThread]: End processing [multi-cloud-utils] error
+[2023-04-15 21:47:15] INFO root fetch - processPackages [yopass-api]: Downloading https://files.pythonhosted.org/packages/c0/9d/f931d72889bc26e7758bcb4cb3e0378b7de4847386b20c5d5678cb7e4474/yopass_api-0.0.1.tar.gz
+[2023-04-15 21:47:15] INFO root fetch - processPackages [awc]: Downloading https://files.pythonhosted.org/packages/2d/db/a561b90d67824abb5c596534ba69e2dd1f60f69e9f50376f762fd2957edc/awc-1.2.2-py2.py3-none-any.whl
+[2023-04-15 21:47:15] INFO root fetch - processPackages [PyICU]: Downloading https://files.pythonhosted.org/packages/5c/d0/50e4319f07b0514a9da5dfdf65aa36c0782120c13b1d194a9c1a54cdc537/PyICU-2.8.1.tar.gz
+[2023-04-15 21:47:15] INFO root fetch - processPackages [awc]: executing diffoscope
+[2023-04-15 21:47:15] INFO root fetch - processPackages [awc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awc-1.2.1-py2.py3-none-any.whl.zip tmp/awc-1.2.2-py2.py3-none-any.whl.zip --markdown 20230415/a/awc/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-15 21:47:15] INFO root fetch - processPackages [skyalmanac]: Downloading https://files.pythonhosted.org/packages/d0/ee/000bc81f9baa469b4719b723c2790f913691db2d00af9b26cc24679ec3f8/skyalmanac-1.3.8.tar.gz
+[2023-04-15 21:47:15] INFO root fetch - processPackages [wheel-axle]: Downloading https://files.pythonhosted.org/packages/b0/09/27109739c5082421c0020c8a836e0e3c088b0d79483ed14e29c7b8c8caa7/wheel_axle-0.0.6.dev20230316024610.tar.gz
+[2023-04-15 21:47:15] INFO root fetch - processPackages [slack-watchman-eg]: Downloading https://files.pythonhosted.org/packages/b0/9c/7ba3983b463a5e71c491b4e4bb906dd407897115506d55c03547f24cfd89/slack-watchman-eg-1.1.0.tar.gz
+[2023-04-15 21:47:15] INFO root fetch - processPackages [yopass-api]: Downloading https://files.pythonhosted.org/packages/0c/66/6f36fa975eb4a79cf423ada54a4a72409d5e9a47405423b539fdad14f395/yopass-api-0.0.2.tar.gz
+[2023-04-15 21:47:15] INFO root fetch - processPackages [PyICU]: Downloading https://files.pythonhosted.org/packages/11/76/9256430e729ad0dd4675a15a7bf0555b9085d1bea36083b9a1b095602f23/PyICU-2.9.tar.gz
+[2023-04-15 21:47:15] INFO root fetch - processPackages [wheel-axle]: Downloading https://files.pythonhosted.org/packages/33/aa/5a95dd153111fe2ffe1f4ba31b29f7a2375f628a6da8c54069647d0e98e3/wheel_axle-0.0.6.dev20230415194546.tar.gz
+[2023-04-15 21:47:15] INFO root fetch - processPackages [PyICU]: executing diffoscope
+[2023-04-15 21:47:15] INFO root fetch - processPackages [PyICU]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyICU-2.8.1.tar.gz tmp/PyICU-2.9.tar.gz --markdown 20230415/P/PyICU/2.8.1-2.9/diff.md --exclude *.pyd
+[2023-04-15 21:47:15] INFO root fetch - processPackages [yopass-api]: executing diffoscope
+[2023-04-15 21:47:15] INFO root fetch - processPackages [yopass-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yopass_api-0.0.1.tar.gz tmp/yopass-api-0.0.2.tar.gz --markdown 20230415/y/yopass-api/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 21:47:15] INFO root fetch - processPackages [slack-watchman-eg]: Downloading https://files.pythonhosted.org/packages/d1/73/7842d6bdf47e3d69b1546b9d9a34825f947685d8a2ca406a01cdc84c83e7/slack-watchman-eg-2.0.0.tar.gz
+[2023-04-15 21:47:15] INFO root fetch - processPackages [slack-watchman-eg]: executing diffoscope
+[2023-04-15 21:47:15] INFO root fetch - processPackages [slack-watchman-eg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slack-watchman-eg-1.1.0.tar.gz tmp/slack-watchman-eg-2.0.0.tar.gz --markdown 20230415/s/slack-watchman-eg/1.1.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-15 21:47:15] INFO root fetch - processPackages [wheel-axle]: executing diffoscope
+[2023-04-15 21:47:15] INFO root fetch - processPackages [wheel-axle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheel_axle-0.0.6.dev20230316024610.tar.gz tmp/wheel_axle-0.0.6.dev20230415194546.tar.gz --markdown 20230415/w/wheel-axle/0.0.6.dev20230316024610-0.0.6.dev20230415194546/diff.md --exclude *.pyd
+[2023-04-15 21:47:16] INFO root fetch - processPackages [skyalmanac]: Downloading https://files.pythonhosted.org/packages/f8/32/9235a7b372cc04549d25ea332180e1e102a343fc2da85d4425d7deaeaa44/skyalmanac-1.3.9.tar.gz
+[2023-04-15 21:47:16] INFO root fetch - main [MainThread]: End processing [awc]: success
+[2023-04-15 21:47:16] INFO root fetch - main [MainThread]: End processing [yopass-api]: success
+[2023-04-15 21:47:16] INFO root fetch - processPackages [skyalmanac]: executing diffoscope
+[2023-04-15 21:47:16] INFO root fetch - processPackages [skyalmanac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skyalmanac-1.3.8.tar.gz tmp/skyalmanac-1.3.9.tar.gz --markdown 20230415/s/skyalmanac/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-04-15 21:47:16] INFO root fetch - main [MainThread]: End processing [wheel-axle]: success
+[2023-04-15 21:47:16] INFO root fetch - main [MainThread]: End processing [slack-watchman-eg]: success
+[2023-04-15 21:47:17] INFO root fetch - main [MainThread]: End processing [PyICU]: success
+[2023-04-15 21:47:17] INFO root fetch - main [MainThread]: End processing [skyalmanac]: success
+[2023-04-15 21:47:17] INFO root fetch - main [MainThread]: Store serial: [17721520]
