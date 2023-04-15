@@ -16358,3 +16358,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 15:51:44] INFO root fetch - main [MainThread]: End processing [flm-htmlplus]: success
 [2023-04-15 15:51:44] INFO root fetch - main [MainThread]: End processing [flm-htmlplus]: success
 [2023-04-15 15:51:44] INFO root fetch - main [MainThread]: Store serial: [17719311]
+[2023-04-15 15:56:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719311]
+[2023-04-15 15:56:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 15:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torch-utilities
+[2023-04-15 15:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: importlib-metadata
+[2023-04-15 15:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: package-MRFIX
+[2023-04-15 15:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-video-play
+[2023-04-15 15:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gtfd
+[2023-04-15 15:56:54] INFO root fetch - processPackages [torch-utilities]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-15 15:56:54] WARNING root fetch - processPackages [gtfd]: Skipping, unable to determine old version
+[2023-04-15 15:56:54] INFO root fetch - main [MainThread]: End processing [gtfd] error
+[2023-04-15 15:56:54] INFO root fetch - processPackages [django-video-play]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 15:56:54] WARNING root fetch - processPackages [package-MRFIX]: Skipping, unable to determine old version
+[2023-04-15 15:56:54] INFO root fetch - main [MainThread]: End processing [package-MRFIX] error
+[2023-04-15 15:56:54] INFO root fetch - processPackages [importlib-metadata]: New version: [6.4.0] Old Version: [6.3.0]
+[2023-04-15 15:56:54] INFO root fetch - processPackages [django-video-play]: executing diffoscope
+[2023-04-15 15:56:54] INFO root fetch - processPackages [django-video-play]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_video_play-0.1.8.tar.gz tmp/django_video_play-0.1.9.tar.gz --markdown 20230415/d/django-video-play/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 15:56:54] INFO root fetch - processPackages [importlib-metadata]: Downloading https://files.pythonhosted.org/packages/c2/84/ab374b7e05fbdeecf867294660ac0fdb23aa286aca68a31d587f67d181ad/importlib_metadata-6.3.0.tar.gz
+[2023-04-15 15:56:54] INFO root fetch - processPackages [torch-utilities]: Downloading https://files.pythonhosted.org/packages/3f/a6/f9f9d40273a6e7b782ff758a88087bcfb11e11c8ec398d15ae6afb59d249/torch_utilities-1.0.3.tar.gz
+[2023-04-15 15:56:54] INFO root fetch - processPackages [importlib-metadata]: Downloading https://files.pythonhosted.org/packages/88/b2/7ac9f49509204e2240f6a7504f1c4d063499b1c6aa55be7e0a1744cfe008/importlib_metadata-6.4.0.tar.gz
+[2023-04-15 15:56:54] INFO root fetch - processPackages [torch-utilities]: executing diffoscope
+[2023-04-15 15:56:54] INFO root fetch - processPackages [torch-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_utilities-1.0.2.tar.gz tmp/torch_utilities-1.0.3.tar.gz --markdown 20230415/t/torch-utilities/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-15 15:56:54] INFO root fetch - processPackages [importlib-metadata]: executing diffoscope
+[2023-04-15 15:56:54] INFO root fetch - processPackages [importlib-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/importlib_metadata-6.3.0.tar.gz tmp/importlib_metadata-6.4.0.tar.gz --markdown 20230415/i/importlib-metadata/6.3.0-6.4.0/diff.md --exclude *.pyd
+[2023-04-15 15:56:56] INFO root fetch - main [MainThread]: End processing [torch-utilities]: success
+[2023-04-15 15:56:56] INFO root fetch - main [MainThread]: End processing [importlib-metadata]: success
+[2023-04-15 15:57:02] INFO root fetch - main [MainThread]: End processing [django-video-play]: success
+[2023-04-15 15:57:02] INFO root fetch - main [MainThread]: Store serial: [17719330]
