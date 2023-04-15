@@ -20511,3 +20511,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 23:32:09] INFO root fetch - processPackages [seabreeze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seabreeze-2.1.0.tar.gz tmp/seabreeze-2.2.0.tar.gz --markdown 20230415/s/seabreeze/2.1.0-2.2.0/diff.md --exclude *.pyd
 [2023-04-15 23:32:22] INFO root fetch - main [MainThread]: End processing [seabreeze]: success
 [2023-04-15 23:32:22] INFO root fetch - main [MainThread]: Store serial: [17722017]
+[2023-04-15 23:37:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17722017]
+[2023-04-15 23:37:32] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 23:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redscrap
+[2023-04-15 23:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jeeves-shell
+[2023-04-15 23:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lona-redis
+[2023-04-15 23:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: async-rotating-proxy
+[2023-04-15 23:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: async-rotating-proxy
+[2023-04-15 23:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ezpz4u
+[2023-04-15 23:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: uptimecurl
+[2023-04-15 23:37:33] WARNING root fetch - processPackages [ezpz4u]: Skipping, unable to determine old version
+[2023-04-15 23:37:33] INFO root fetch - main [MainThread]: End processing [ezpz4u] error
+[2023-04-15 23:37:33] INFO root fetch - processPackages [jeeves-shell]: New version: [2.1.3] Old Version: [2.1.2]
+[2023-04-15 23:37:33] WARNING root fetch - processPackages [async-rotating-proxy]: Skipping, unable to determine old version
+[2023-04-15 23:37:33] INFO root fetch - main [MainThread]: End processing [async-rotating-proxy] error
+[2023-04-15 23:37:33] WARNING root fetch - processPackages [async-rotating-proxy]: Skipping, unable to determine old version
+[2023-04-15 23:37:33] INFO root fetch - main [MainThread]: End processing [async-rotating-proxy] error
+[2023-04-15 23:37:33] INFO root fetch - processPackages [jeeves-shell]: executing diffoscope
+[2023-04-15 23:37:33] INFO root fetch - processPackages [jeeves-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeeves_shell-2.1.2.tar.gz tmp/jeeves_shell-2.1.3.tar.gz --markdown 20230415/j/jeeves-shell/2.1.2-2.1.3/diff.md --exclude *.pyd
+[2023-04-15 23:37:33] WARNING root fetch - processPackages [lona-redis]: Skipping, unable to determine old version
+[2023-04-15 23:37:33] INFO root fetch - main [MainThread]: End processing [lona-redis] error
+[2023-04-15 23:37:33] INFO root fetch - processPackages [uptimecurl]: New version: [0.1.5] Old Version: [0.0.3]
+[2023-04-15 23:37:33] INFO root fetch - processPackages [redscrap]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 23:37:33] INFO root fetch - processPackages [uptimecurl]: Downloading https://files.pythonhosted.org/packages/30/74/c571b48c25f9930c5a96e1f954600bb3fc1be8e6220d610b37ddc5cbc0a4/uptimecurl-0.0.3.tar.gz
+[2023-04-15 23:37:33] INFO root fetch - processPackages [redscrap]: Downloading https://files.pythonhosted.org/packages/da/c4/ff48d9764e5333b27098d961205060c4397bc1330fa913b66104b295386b/redscrap-0.0.1.tar.gz
+[2023-04-15 23:37:33] INFO root fetch - processPackages [redscrap]: Downloading https://files.pythonhosted.org/packages/d5/ca/a2f2c6c663b65e5c228e0aa5a905bb793974b0c9793c01aa037e4dd24c7b/redscrap-0.0.2-py3-none-any.whl
+[2023-04-15 23:37:33] INFO root fetch - processPackages [uptimecurl]: Downloading https://files.pythonhosted.org/packages/91/67/a3ae3fceeea8315fb45d4c72abb1f114680f951508f77d06150edabd02f0/uptimecurl-0.1.5.tar.gz
+[2023-04-15 23:37:33] INFO root fetch - processPackages [redscrap]: executing diffoscope
+[2023-04-15 23:37:33] INFO root fetch - processPackages [redscrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redscrap-0.0.1.tar.gz tmp/redscrap-0.0.2-py3-none-any.whl.zip --markdown 20230415/r/redscrap/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 23:37:33] INFO root fetch - processPackages [uptimecurl]: executing diffoscope
+[2023-04-15 23:37:33] INFO root fetch - processPackages [uptimecurl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uptimecurl-0.0.3.tar.gz tmp/uptimecurl-0.1.5.tar.gz --markdown 20230415/u/uptimecurl/0.0.3-0.1.5/diff.md --exclude *.pyd
+[2023-04-15 23:37:34] INFO root fetch - main [MainThread]: End processing [jeeves-shell]: success
+[2023-04-15 23:37:34] INFO root fetch - main [MainThread]: End processing [redscrap]: success
+[2023-04-15 23:37:34] INFO root fetch - main [MainThread]: End processing [uptimecurl]: success
+[2023-04-15 23:37:34] INFO root fetch - main [MainThread]: Store serial: [17722043]
