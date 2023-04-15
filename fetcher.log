@@ -13860,3 +13860,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 11:21:50] INFO root fetch - main [MainThread]: End processing [csoundengine]: success
 [2023-04-15 11:21:50] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
 [2023-04-15 11:21:50] INFO root fetch - main [MainThread]: Store serial: [17717801]
+[2023-04-15 11:26:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717801]
+[2023-04-15 11:27:00] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-15 11:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fibnumber
+[2023-04-15 11:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: companyhunter
+[2023-04-15 11:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maelzel
+[2023-04-15 11:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OmniBridge
+[2023-04-15 11:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bpack
+[2023-04-15 11:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pynarrator
+[2023-04-15 11:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ngocthanhcalculator
+[2023-04-15 11:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fastapi-amis-admin-nav
+[2023-04-15 11:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: stackview
+[2023-04-15 11:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: maelzel
+[2023-04-15 11:27:00] WARNING root fetch - processPackages [companyhunter]: Skipping, unable to determine old version
+[2023-04-15 11:27:00] INFO root fetch - processPackages [companyhunter]: Start processing: twtvt
+[2023-04-15 11:27:00] INFO root fetch - main [MainThread]: End processing [companyhunter] error
+[2023-04-15 11:27:00] INFO root fetch - processPackages [fibnumber]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-15 11:27:00] INFO root fetch - processPackages [bpack]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-15 11:27:00] INFO root fetch - processPackages [maelzel]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-15 11:27:00] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 11:27:00] INFO root fetch - processPackages [maelzel]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-15 11:27:00] INFO root fetch - processPackages [pynarrator]: New version: [0.0.1.9] Old Version: [0.0.1.8]
+[2023-04-15 11:27:00] INFO root fetch - processPackages [fastapi-amis-admin-nav]: New version: [0.0.4a1] Old Version: [0.0.3]
+[2023-04-15 11:27:00] WARNING root fetch - processPackages [ngocthanhcalculator]: Skipping, unable to determine old version
+[2023-04-15 11:27:00] INFO root fetch - processPackages [ngocthanhcalculator]: Start processing: fibnumber
+[2023-04-15 11:27:00] INFO root fetch - main [MainThread]: End processing [ngocthanhcalculator] error
+[2023-04-15 11:27:00] INFO root fetch - processPackages [fibnumber]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-15 11:27:00] INFO root fetch - processPackages [OmniBridge]: Downloading https://files.pythonhosted.org/packages/6d/14/aa7807f30bef4198f5b9e2a764deee0ec54d29a028cca71f12c87279fa9e/OmniBridge-0.1.8.tar.gz
+[2023-04-15 11:27:00] INFO root fetch - processPackages [maelzel]: Downloading https://files.pythonhosted.org/packages/e1/df/3a0f8019b2dde14ee16f9af7a559c1a084128924c3eb3826d3da87bdc1ec/maelzel-0.9.0.tar.gz
+[2023-04-15 11:27:00] INFO root fetch - processPackages [maelzel]: Downloading https://files.pythonhosted.org/packages/e1/df/3a0f8019b2dde14ee16f9af7a559c1a084128924c3eb3826d3da87bdc1ec/maelzel-0.9.0.tar.gz
+[2023-04-15 11:27:00] WARNING root fetch - processPackages [twtvt]: Skipping, unable to determine old version
+[2023-04-15 11:27:00] INFO root fetch - main [MainThread]: End processing [twtvt] error
+[2023-04-15 11:27:00] INFO root fetch - processPackages [stackview]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-15 11:27:00] INFO root fetch - processPackages [bpack]: Downloading https://files.pythonhosted.org/packages/80/f5/7c5512ef91ad5d578495fe3123665678807bcc7ca83defd2ba11b35bcaaf/bpack-1.0.0.tar.gz
+[2023-04-15 11:27:00] INFO root fetch - processPackages [pynarrator]: Downloading https://files.pythonhosted.org/packages/c3/c2/1dc39449dd8639f766e83588c3358735b6ce2a313b8d3530a3a1e7c7d6de/pynarrator-0.0.1.8.tar.gz
+[2023-04-15 11:27:00] INFO root fetch - processPackages [fastapi-amis-admin-nav]: Downloading https://files.pythonhosted.org/packages/81/79/2ebc90dd52a073a3c6ab2f23be95a9c98c84adef494760754ec465a587b1/fastapi_amis_admin_nav-0.0.4a1.tar.gz
+[2023-04-15 11:27:00] INFO root fetch - processPackages [OmniBridge]: Downloading https://files.pythonhosted.org/packages/10/7e/d937f68fde06dabb8349b30995ec6f1d9ebbe75baf45c722298f35cd93f8/OmniBridge-0.1.9.tar.gz
+[2023-04-15 11:27:00] INFO root fetch - processPackages [fibnumber]: Downloading https://files.pythonhosted.org/packages/c9/83/61c1a114b8b458c97fe460810223dd31d3faec09e027dc14039df8553637/fibnumber-0.1.2.tar.gz
+[2023-04-15 11:27:00] INFO root fetch - processPackages [fibnumber]: Downloading https://files.pythonhosted.org/packages/c9/83/61c1a114b8b458c97fe460810223dd31d3faec09e027dc14039df8553637/fibnumber-0.1.2.tar.gz
+[2023-04-15 11:27:00] INFO root fetch - processPackages [stackview]: Downloading https://files.pythonhosted.org/packages/bd/90/90befe9a987bd39a45094b8a78ba69b62c46d4963d2dd2112195180b1e06/stackview-0.6.0.tar.gz
+[2023-04-15 11:27:00] INFO root fetch - processPackages [fastapi-amis-admin-nav]: executing diffoscope
+[2023-04-15 11:27:00] INFO root fetch - processPackages [fastapi-amis-admin-nav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_amis_admin_nav-0.0.3.tar.gz tmp/fastapi_amis_admin_nav-0.0.4a1.tar.gz --markdown 20230415/f/fastapi-amis-admin-nav/0.0.3-0.0.4a1/diff.md --exclude *.pyd
+[2023-04-15 11:27:00] INFO root fetch - processPackages [bpack]: Downloading https://files.pythonhosted.org/packages/0b/51/ca985d8a5d266ac4c68ba42b7931d6da24b3595318a3c90c1e53add98ade/bpack-1.1.0.tar.gz
+[2023-04-15 11:27:00] INFO root fetch - processPackages [fibnumber]: executing diffoscope
+[2023-04-15 11:27:00] INFO root fetch - processPackages [fibnumber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fibnumber-0.1.1.tar.gz tmp/fibnumber-0.1.2.tar.gz --markdown 20230415/f/fibnumber/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 11:27:00] INFO root fetch - processPackages [fibnumber]: executing diffoscope
+[2023-04-15 11:27:00] INFO root fetch - processPackages [fibnumber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fibnumber-0.1.1.tar.gz tmp/fibnumber-0.1.2.tar.gz --markdown 20230415/f/fibnumber/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-15 11:27:00] WARNING root fetch - processPackages [maelzel]: Skipping package: exceeds size limit 17210322>=10485760
+[2023-04-15 11:27:00] WARNING root fetch - processPackages [maelzel]: Skipping package: exceeds size limit 17210322>=10485760
+[2023-04-15 11:27:00] INFO root fetch - main [MainThread]: End processing [maelzel] error
+[2023-04-15 11:27:00] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-15 11:27:00] INFO root fetch - main [MainThread]: End processing [maelzel] error
+[2023-04-15 11:27:00] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230415/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 11:27:00] INFO root fetch - processPackages [stackview]: Downloading https://files.pythonhosted.org/packages/c7/7d/5e841a5ba9255afa7eea70d84551890e5e1a1adfd2f45470f4b8723de9bb/stackview-0.6.1.tar.gz
+[2023-04-15 11:27:00] INFO root fetch - processPackages [bpack]: executing diffoscope
+[2023-04-15 11:27:00] INFO root fetch - processPackages [bpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bpack-1.0.0.tar.gz tmp/bpack-1.1.0.tar.gz --markdown 20230415/b/bpack/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-15 11:27:00] INFO root fetch - processPackages [pynarrator]: executing diffoscope
+[2023-04-15 11:27:00] INFO root fetch - processPackages [pynarrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynarrator-0.0.1.8.tar.gz tmp/pynarrator-0.0.1.9.tar.gz --markdown 20230415/p/pynarrator/0.0.1.8-0.0.1.9/diff.md --exclude *.pyd
+[2023-04-15 11:27:01] INFO root fetch - processPackages [stackview]: executing diffoscope
+[2023-04-15 11:27:01] INFO root fetch - processPackages [stackview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackview-0.6.0.tar.gz tmp/stackview-0.6.1.tar.gz --markdown 20230415/s/stackview/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-15 11:27:01] INFO root fetch - main [MainThread]: End processing [fastapi-amis-admin-nav]: success
+[2023-04-15 11:27:01] INFO root fetch - main [MainThread]: End processing [fibnumber]: success
+[2023-04-15 11:27:01] INFO root fetch - main [MainThread]: End processing [fibnumber]: success
+[2023-04-15 11:27:02] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-15 11:27:02] INFO root fetch - main [MainThread]: End processing [pynarrator]: success
+[2023-04-15 11:27:02] INFO root fetch - main [MainThread]: End processing [stackview]: success
+[2023-04-15 11:27:03] INFO root fetch - main [MainThread]: End processing [bpack]: success
+[2023-04-15 11:27:03] INFO root fetch - main [MainThread]: Store serial: [17717841]
