@@ -3950,3 +3950,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 03:29:11] INFO root fetch - main [MainThread]: End processing [skytapsdk]: success
 [2023-04-15 03:29:12] INFO root fetch - main [MainThread]: End processing [klp-commons]: success
 [2023-04-15 03:29:12] INFO root fetch - main [MainThread]: Store serial: [17715515]
+[2023-04-15 03:34:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17715515]
+[2023-04-15 03:34:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 03:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-stdlib
+[2023-04-15 03:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coffea
+[2023-04-15 03:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DBRetina
+[2023-04-15 03:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-numpy
+[2023-04-15 03:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-pandas
+[2023-04-15 03:34:19] INFO root fetch - processPackages [DBRetina]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-15 03:34:19] INFO root fetch - processPackages [coffea]: New version: [2023.4.0rc2] Old Version: [2023.4.0rc1]
+[2023-04-15 03:34:19] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 03:34:19] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 03:34:19] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 03:34:19] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-04-15 03:34:19] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230415/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 03:34:19] INFO root fetch - processPackages [coffea]: Downloading https://files.pythonhosted.org/packages/94/b2/fa4173021b299b41b73658c469ffc6db94ab7b85a35a1652acfff86f425e/coffea-2023.4.0rc1.tar.gz
+[2023-04-15 03:34:19] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-15 03:34:19] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230415/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 03:34:19] INFO root fetch - processPackages [DBRetina]: Downloading https://files.pythonhosted.org/packages/00/36/b647ba4dbf36f31030d62d63c919b14b671e6a8592d190f75306f5a99518/DBRetina-2.1.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 03:34:19] WARNING root fetch - processPackages [coffea]: Skipping package: exceeds size limit 12217090>=10485760
+[2023-04-15 03:34:19] INFO root fetch - processPackages [coffea]: Start processing: nbdev-pytorch
+[2023-04-15 03:34:19] INFO root fetch - main [MainThread]: End processing [coffea] error
+[2023-04-15 03:34:19] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-15 03:34:19] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-15 03:34:19] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230415/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 03:34:19] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-04-15 03:34:19] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230415/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-15 03:34:19] INFO root fetch - processPackages [DBRetina]: executing diffoscope
+[2023-04-15 03:34:19] INFO root fetch - processPackages [DBRetina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DBRetina-2.1.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/DBRetina-2.1.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230415/D/DBRetina/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-15 03:34:20] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-04-15 03:34:20] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-04-15 03:34:20] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-04-15 03:34:20] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-04-15 03:34:41] INFO root fetch - main [MainThread]: End processing [DBRetina]: success
+[2023-04-15 03:34:41] INFO root fetch - main [MainThread]: Store serial: [17715669]
