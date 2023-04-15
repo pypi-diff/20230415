@@ -13966,3 +13966,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 11:32:15] INFO root fetch - main [MainThread]: End processing [aquarium-python-api]: success
 [2023-04-15 11:32:15] INFO root fetch - main [MainThread]: End processing [makerlabs]: success
 [2023-04-15 11:32:15] INFO root fetch - main [MainThread]: Store serial: [17717858]
+[2023-04-15 11:37:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717858]
+[2023-04-15 11:37:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: policyengine-us
+[2023-04-15 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fake-bge-module-latest
+[2023-04-15 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maelzel
+[2023-04-15 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bfrac
+[2023-04-15 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bfrac
+[2023-04-15 11:37:24] INFO root fetch - processPackages [maelzel]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-15 11:37:24] INFO root fetch - processPackages [fake-bge-module-latest]: New version: [20230415] Old Version: [20230414]
+[2023-04-15 11:37:24] INFO root fetch - processPackages [policyengine-us]: New version: [0.290.0] Old Version: [0.289.0]
+[2023-04-15 11:37:24] INFO root fetch - processPackages [maelzel]: Downloading https://files.pythonhosted.org/packages/e1/df/3a0f8019b2dde14ee16f9af7a559c1a084128924c3eb3826d3da87bdc1ec/maelzel-0.9.0.tar.gz
+[2023-04-15 11:37:24] WARNING root fetch - processPackages [maelzel]: Skipping package: exceeds size limit 17210322>=10485760
+[2023-04-15 11:37:24] INFO root fetch - main [MainThread]: End processing [maelzel] error
+[2023-04-15 11:37:24] INFO root fetch - processPackages [bfrac]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 11:37:24] INFO root fetch - processPackages [bfrac]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 11:37:24] INFO root fetch - processPackages [fake-bge-module-latest]: Downloading https://files.pythonhosted.org/packages/ca/44/7b981210231954ceb3d2c32d8af07e37fef2fee49e49850b303da8a78b2d/fake-bge-module-latest-20230415.tar.gz
+[2023-04-15 11:37:24] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/95/0c/c30af421881ebd6418f66c3038a161d94b218486b61f6e5dc81c2397ad33/policyengine-us-0.290.0.tar.gz
+[2023-04-15 11:37:24] INFO root fetch - processPackages [bfrac]: Downloading https://files.pythonhosted.org/packages/42/01/47b6a2f273279195f577a54b4459e81558a60d0c3818c5c6889ddede8fb5/bfrac-0.0.2.tar.gz
+[2023-04-15 11:37:24] INFO root fetch - processPackages [bfrac]: Downloading https://files.pythonhosted.org/packages/42/01/47b6a2f273279195f577a54b4459e81558a60d0c3818c5c6889ddede8fb5/bfrac-0.0.2.tar.gz
+[2023-04-15 11:37:24] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-15 11:37:24] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.289.0.tar.gz tmp/policyengine-us-0.290.0.tar.gz --markdown 20230415/p/policyengine-us/0.289.0-0.290.0/diff.md --exclude *.pyd
+[2023-04-15 11:37:24] INFO root fetch - processPackages [fake-bge-module-latest]: executing diffoscope
+[2023-04-15 11:37:24] INFO root fetch - processPackages [fake-bge-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bge-module-latest-20230414.tar.gz tmp/fake-bge-module-latest-20230415.tar.gz --markdown 20230415/f/fake-bge-module-latest/20230414-20230415/diff.md --exclude *.pyd
+[2023-04-15 11:37:25] INFO root fetch - processPackages [bfrac]: Downloading https://files.pythonhosted.org/packages/ad/3a/4ce3d62847249113025e3a6f54e567caa1facecde92aac9be8aab42b5279/bfrac-0.0.3.tar.gz
+[2023-04-15 11:37:25] INFO root fetch - processPackages [bfrac]: Downloading https://files.pythonhosted.org/packages/ad/3a/4ce3d62847249113025e3a6f54e567caa1facecde92aac9be8aab42b5279/bfrac-0.0.3.tar.gz
+[2023-04-15 11:37:25] INFO root fetch - processPackages [bfrac]: executing diffoscope
+[2023-04-15 11:37:25] INFO root fetch - processPackages [bfrac]: executing diffoscope
+[2023-04-15 11:37:25] INFO root fetch - processPackages [bfrac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bfrac-0.0.2.tar.gz tmp/bfrac-0.0.3.tar.gz --markdown 20230415/b/bfrac/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 11:37:25] INFO root fetch - processPackages [bfrac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bfrac-0.0.2.tar.gz tmp/bfrac-0.0.3.tar.gz --markdown 20230415/b/bfrac/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 11:37:26] INFO root fetch - main [MainThread]: End processing [bfrac]: success
+[2023-04-15 11:37:26] INFO root fetch - main [MainThread]: End processing [bfrac]: success
+[2023-04-15 11:37:32] INFO root fetch - main [MainThread]: End processing [fake-bge-module-latest]: success
+[2023-04-15 11:38:26] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-04-15 11:38:26] INFO root fetch - main [MainThread]: Store serial: [17717883]
