@@ -20414,3 +20414,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 23:21:42] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
 [2023-04-15 23:21:45] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
 [2023-04-15 23:21:45] INFO root fetch - main [MainThread]: Store serial: [17721941]
+[2023-04-15 23:26:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721941]
+[2023-04-15 23:26:54] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 23:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eons
+[2023-04-15 23:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cross-cal-resourcesat
+[2023-04-15 23:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyworxcloud
+[2023-04-15 23:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unittest-CI
+[2023-04-15 23:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clara-ai
+[2023-04-15 23:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jinja2-orderblocks
+[2023-04-15 23:26:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vollseg
+[2023-04-15 23:26:54] WARNING root fetch - processPackages [unittest-CI]: Skipping, unable to determine old version
+[2023-04-15 23:26:54] INFO root fetch - main [MainThread]: End processing [unittest-CI] error
+[2023-04-15 23:26:54] INFO root fetch - processPackages [cross-cal-resourcesat]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-15 23:26:54] INFO root fetch - processPackages [pyworxcloud]: New version: [3.1.0] Old Version: [3.0.4]
+[2023-04-15 23:26:54] INFO root fetch - processPackages [eons]: New version: [2.3.5] Old Version: [2.3.4]
+[2023-04-15 23:26:54] INFO root fetch - processPackages [clara-ai]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-15 23:26:54] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-15 23:26:54] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-15 23:26:54] INFO root fetch - processPackages [jinja2-orderblocks]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 23:26:54] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-15 23:26:54] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-15 23:26:54] INFO root fetch - processPackages [eons]: Downloading https://files.pythonhosted.org/packages/00/3c/10d7289111a6db70a1b0bdb1dfb8ed2e7b63c204030ab084c233e3755682/eons-2.3.4.tar.gz
+[2023-04-15 23:26:55] INFO root fetch - processPackages [cross-cal-resourcesat]: Downloading https://files.pythonhosted.org/packages/11/d3/65620e12119323b4d4102b92f3fd8d4b99680bf0f7e383f7c59189a484ce/cross_cal_resourcesat-0.1.2.tar.gz
+[2023-04-15 23:26:55] INFO root fetch - processPackages [jinja2-orderblocks]: Downloading https://files.pythonhosted.org/packages/5e/b3/321dd62092b39ce17987a8ccc006b845b2776911ade66719825e5de44a89/jinja2_orderblocks-0.1.0.tar.gz
+[2023-04-15 23:26:55] INFO root fetch - processPackages [pyworxcloud]: Downloading https://files.pythonhosted.org/packages/ca/8a/c1cca5e75239c3ddd6f067cdd7a9f028545418164d53b338d5e4f1d65bec/pyworxcloud-3.1.0.tar.gz
+[2023-04-15 23:26:55] INFO root fetch - processPackages [clara-ai]: Downloading https://files.pythonhosted.org/packages/af/cb/a1be5a1fc4828593b36aad257a8d38b84eec13d7cc872165e6606485dab6/clara_ai-0.0.5.tar.gz
+[2023-04-15 23:26:55] INFO root fetch - processPackages [clara-ai]: executing diffoscope
+[2023-04-15 23:26:55] INFO root fetch - processPackages [clara-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clara_ai-0.0.4.tar.gz tmp/clara_ai-0.0.5.tar.gz --markdown 20230415/c/clara-ai/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 23:26:55] INFO root fetch - processPackages [eons]: Downloading https://files.pythonhosted.org/packages/18/10/4587d54f301c41ab93ccdf2ac35e79cdd66dc3d277baf00842eba177dbec/eons-2.3.5.tar.gz
+[2023-04-15 23:26:55] INFO root fetch - processPackages [pyworxcloud]: executing diffoscope
+[2023-04-15 23:26:55] INFO root fetch - processPackages [pyworxcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyworxcloud-3.0.4.tar.gz tmp/pyworxcloud-3.1.0.tar.gz --markdown 20230415/p/pyworxcloud/3.0.4-3.1.0/diff.md --exclude *.pyd
+[2023-04-15 23:26:55] INFO root fetch - processPackages [cross-cal-resourcesat]: Downloading https://files.pythonhosted.org/packages/a3/62/d5dab3a741781ebcb0f5a706cb2cedcb58ff219adee6672a95bf14ac1453/cross_cal_resourcesat-0.1.3.tar.gz
+[2023-04-15 23:26:55] INFO root fetch - processPackages [eons]: executing diffoscope
+[2023-04-15 23:26:55] INFO root fetch - processPackages [eons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eons-2.3.4.tar.gz tmp/eons-2.3.5.tar.gz --markdown 20230415/e/eons/2.3.4-2.3.5/diff.md --exclude *.pyd
+[2023-04-15 23:26:55] INFO root fetch - processPackages [cross-cal-resourcesat]: executing diffoscope
+[2023-04-15 23:26:55] INFO root fetch - processPackages [cross-cal-resourcesat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cross_cal_resourcesat-0.1.2.tar.gz tmp/cross_cal_resourcesat-0.1.3.tar.gz --markdown 20230415/c/cross-cal-resourcesat/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-15 23:26:55] INFO root fetch - processPackages [jinja2-orderblocks]: Downloading https://files.pythonhosted.org/packages/7f/39/4d845b134bd85379ac86d4d747ed26fc28b69ce0aa4686521d06b44eadd8/jinja2_orderblocks-0.1.1.tar.gz
+[2023-04-15 23:26:55] INFO root fetch - processPackages [jinja2-orderblocks]: executing diffoscope
+[2023-04-15 23:26:55] INFO root fetch - processPackages [jinja2-orderblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinja2_orderblocks-0.1.0.tar.gz tmp/jinja2_orderblocks-0.1.1.tar.gz --markdown 20230415/j/jinja2-orderblocks/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 23:26:56] INFO root fetch - main [MainThread]: End processing [clara-ai]: success
+[2023-04-15 23:26:56] INFO root fetch - main [MainThread]: End processing [pyworxcloud]: success
+[2023-04-15 23:26:56] INFO root fetch - main [MainThread]: End processing [cross-cal-resourcesat]: success
+[2023-04-15 23:26:56] INFO root fetch - main [MainThread]: End processing [jinja2-orderblocks]: success
+[2023-04-15 23:26:56] INFO root fetch - main [MainThread]: End processing [eons]: success
+[2023-04-15 23:26:56] INFO root fetch - main [MainThread]: Store serial: [17721963]
