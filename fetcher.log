@@ -2046,3 +2046,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 03:04:23] INFO root fetch - main [MainThread]: End processing [cpct]: success
 [2023-04-15 03:04:23] INFO root fetch - main [MainThread]: End processing [pythonBgt]: success
 [2023-04-15 03:04:23] INFO root fetch - main [MainThread]: Store serial: [17714532]
+[2023-04-15 03:09:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17714532]
+[2023-04-15 03:09:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-15 03:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gameSooyey
+[2023-04-15 03:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyroscopegridding
+[2023-04-15 03:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yowasp-yosys
+[2023-04-15 03:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: luau
+[2023-04-15 03:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyroscopegridding
+[2023-04-15 03:09:30] INFO root fetch - processPackages [gameSooyey]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-15 03:09:30] INFO root fetch - processPackages [pyroscopegridding]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-15 03:09:30] INFO root fetch - processPackages [luau]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-15 03:09:30] INFO root fetch - processPackages [yowasp-yosys]: New version: [0.9.post5623.dev231] Old Version: [0.9.post5610.dev226]
+[2023-04-15 03:09:30] INFO root fetch - processPackages [pyroscopegridding]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-15 03:09:30] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/08/6a/35e91736838ed9192aa7f63f6caa1d8b4d2aea4e8525a1cd566d55b6031f/luau-0.3.1.tar.gz
+[2023-04-15 03:09:30] INFO root fetch - processPackages [pyroscopegridding]: Downloading https://files.pythonhosted.org/packages/67/2f/52dd3ecadb2fd9abfec54d4db8552cb74f76a9c84a09de67729c91bdde2f/pyroscopegridding-0.1.7.tar.gz
+[2023-04-15 03:09:30] INFO root fetch - processPackages [pyroscopegridding]: Downloading https://files.pythonhosted.org/packages/67/2f/52dd3ecadb2fd9abfec54d4db8552cb74f76a9c84a09de67729c91bdde2f/pyroscopegridding-0.1.7.tar.gz
+[2023-04-15 03:09:30] INFO root fetch - processPackages [yowasp-yosys]: Downloading https://files.pythonhosted.org/packages/d9/10/e7c660588919726a2a41c8d346d4509ae1048b18dd3668a5a08e26ded384/yowasp_yosys-0.9.post5610.dev226-py3-none-any.whl
+[2023-04-15 03:09:30] INFO root fetch - processPackages [gameSooyey]: Downloading https://files.pythonhosted.org/packages/e5/29/e2ef8a620d3bf0099de3ae1c651ceb237eccc65c8a6020208d2c840a0b51/gameSooyey-0.0.5-py3-none-any.whl
+[2023-04-15 03:09:30] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/a8/6f/b4929f967d668f132d44bd868aaa962b861aa24305e25f37bee22c897bc9/luau-0.3.2.tar.gz
+[2023-04-15 03:09:30] INFO root fetch - processPackages [gameSooyey]: executing diffoscope
+[2023-04-15 03:09:30] INFO root fetch - processPackages [gameSooyey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gameSooyey-0.0.4-py3-none-any.whl.zip tmp/gameSooyey-0.0.5-py3-none-any.whl.zip --markdown 20230415/g/gameSooyey/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 03:09:30] INFO root fetch - processPackages [pyroscopegridding]: Downloading https://files.pythonhosted.org/packages/07/b8/2686a592afb07a9e7e0ffed2f26e7d78c2c9aec3ef2a54658a71662bf060/pyroscopegridding-0.1.8.tar.gz
+[2023-04-15 03:09:30] INFO root fetch - processPackages [pyroscopegridding]: Downloading https://files.pythonhosted.org/packages/07/b8/2686a592afb07a9e7e0ffed2f26e7d78c2c9aec3ef2a54658a71662bf060/pyroscopegridding-0.1.8.tar.gz
+[2023-04-15 03:09:30] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-15 03:09:30] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.3.1.tar.gz tmp/luau-0.3.2.tar.gz --markdown 20230415/l/luau/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-15 03:09:30] INFO root fetch - processPackages [pyroscopegridding]: executing diffoscope
+[2023-04-15 03:09:30] INFO root fetch - processPackages [pyroscopegridding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroscopegridding-0.1.7.tar.gz tmp/pyroscopegridding-0.1.8.tar.gz --markdown 20230415/p/pyroscopegridding/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-15 03:09:30] INFO root fetch - processPackages [pyroscopegridding]: executing diffoscope
+[2023-04-15 03:09:30] INFO root fetch - processPackages [pyroscopegridding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroscopegridding-0.1.7.tar.gz tmp/pyroscopegridding-0.1.8.tar.gz --markdown 20230415/p/pyroscopegridding/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-15 03:09:31] INFO root fetch - processPackages [luau]: Start processing: policyengine-us
+[2023-04-15 03:09:31] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-15 03:09:31] INFO root fetch - processPackages [policyengine-us]: New version: [0.288.0] Old Version: [0.287.0]
+[2023-04-15 03:09:31] INFO root fetch - processPackages [gameSooyey]: Start processing: cdk-sops-secrets
+[2023-04-15 03:09:31] INFO root fetch - main [MainThread]: End processing [gameSooyey]: success
+[2023-04-15 03:09:31] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-15 03:09:31] INFO root fetch - main [MainThread]: End processing [pyroscopegridding]: success
+[2023-04-15 03:09:31] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-04-15 03:09:31] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.8.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230415/c/cdk-sops-secrets/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-15 03:09:32] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/18/d8/1459be5774c5eb25c668a8d8d6345686089effdc991d18adc1cce1e42e18/policyengine-us-0.287.0.tar.gz
+[2023-04-15 03:09:32] INFO root fetch - main [MainThread]: End processing [pyroscopegridding]: success
+[2023-04-15 03:09:32] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/1d/de/2b2245cc2843cb6c841de7e705682de8aff202ccceb7160d6dc2fc21440a/policyengine-us-0.288.0.tar.gz
+[2023-04-15 03:09:32] INFO root fetch - processPackages [yowasp-yosys]: Downloading https://files.pythonhosted.org/packages/35/c4/b4e64452f262989908f22d3e1fff557841f6182c69b887c4f6508b655418/yowasp_yosys-0.9.post5623.dev231-py3-none-any.whl
+[2023-04-15 03:09:32] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-15 03:09:32] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.287.0.tar.gz tmp/policyengine-us-0.288.0.tar.gz --markdown 20230415/p/policyengine-us/0.287.0-0.288.0/diff.md --exclude *.pyd
+[2023-04-15 03:09:33] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-04-15 03:09:34] INFO root fetch - processPackages [yowasp-yosys]: executing diffoscope
+[2023-04-15 03:09:34] INFO root fetch - processPackages [yowasp-yosys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yowasp_yosys-0.9.post5610.dev226-py3-none-any.whl.zip tmp/yowasp_yosys-0.9.post5623.dev231-py3-none-any.whl.zip --markdown 20230415/y/yowasp-yosys/0.9.post5610.dev226-0.9.post5623.dev231/diff.md --exclude *.pyd
+[2023-04-15 03:10:35] INFO root fetch - main [MainThread]: End processing [yowasp-yosys]: success
+[2023-04-15 03:10:41] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-04-15 03:10:41] INFO root fetch - main [MainThread]: Store serial: [17714550]
