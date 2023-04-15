@@ -14480,3 +14480,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 12:31:04] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
 [2023-04-15 12:31:07] INFO root fetch - main [MainThread]: End processing [cosmic-profiles]: success
 [2023-04-15 12:31:07] INFO root fetch - main [MainThread]: Store serial: [17718167]
+[2023-04-15 12:36:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17718167]
+[2023-04-15 12:36:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 12:36:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypi-sql-query-inspector
+[2023-04-15 12:36:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bagua-cuda117
+[2023-04-15 12:36:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fooder
+[2023-04-15 12:36:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coca-tools
+[2023-04-15 12:36:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gqt
+[2023-04-15 12:36:34] WARNING root fetch - processPackages [fooder]: Skipping, unable to determine old version
+[2023-04-15 12:36:34] INFO root fetch - main [MainThread]: End processing [fooder] error
+[2023-04-15 12:36:34] INFO root fetch - processPackages [pypi-sql-query-inspector]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-15 12:36:34] INFO root fetch - processPackages [coca-tools]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-15 12:36:34] INFO root fetch - processPackages [gqt]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-15 12:36:34] INFO root fetch - processPackages [bagua-cuda117]: New version: [0.9.3.dev4] Old Version: [0.9.3.dev3]
+[2023-04-15 12:36:35] INFO root fetch - processPackages [coca-tools]: Downloading https://files.pythonhosted.org/packages/58/0e/6c690e20ace3673eb3480e86730dee13fad51a75b5091013b5d9db5f38b4/coca_tools-0.1.0.tar.gz
+[2023-04-15 12:36:35] INFO root fetch - processPackages [bagua-cuda117]: Downloading https://files.pythonhosted.org/packages/71/85/a6eed470a0b84a64d230aca94d5423bc09dd9c8250c82d3d28c87e0af851/bagua_cuda117-0.9.3.dev3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 12:36:35] INFO root fetch - processPackages [pypi-sql-query-inspector]: Downloading https://files.pythonhosted.org/packages/e3/45/befc87aafbc54c3fd27f96909486c5997a40e6a9104730dbed8d60c074ed/pypi-sql-query-inspector-1.0.3.tar.gz
+[2023-04-15 12:36:35] WARNING root fetch - processPackages [bagua-cuda117]: Skipping package: exceeds size limit 18864351>=10485760
+[2023-04-15 12:36:35] INFO root fetch - main [MainThread]: End processing [bagua-cuda117] error
+[2023-04-15 12:36:35] INFO root fetch - processPackages [gqt]: executing diffoscope
+[2023-04-15 12:36:35] INFO root fetch - processPackages [gqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqt-0.98.0.tar.gz tmp/gqt-0.99.0.tar.gz --markdown 20230415/g/gqt/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-15 12:36:35] INFO root fetch - processPackages [pypi-sql-query-inspector]: executing diffoscope
+[2023-04-15 12:36:35] INFO root fetch - processPackages [pypi-sql-query-inspector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi-sql-query-inspector-1.0.2.tar.gz tmp/pypi-sql-query-inspector-1.0.3.tar.gz --markdown 20230415/p/pypi-sql-query-inspector/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-15 12:36:35] INFO root fetch - processPackages [coca-tools]: Downloading https://files.pythonhosted.org/packages/12/82/d0d5a542e3b4e18ff34a58f5c787c5935bd527c154bc0c84e175a7edd605/coca_tools-0.1.1.tar.gz
+[2023-04-15 12:36:35] INFO root fetch - processPackages [coca-tools]: executing diffoscope
+[2023-04-15 12:36:35] INFO root fetch - processPackages [coca-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coca_tools-0.1.0.tar.gz tmp/coca_tools-0.1.1.tar.gz --markdown 20230415/c/coca-tools/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-15 12:36:36] INFO root fetch - main [MainThread]: End processing [gqt]: success
+[2023-04-15 12:36:36] INFO root fetch - main [MainThread]: End processing [pypi-sql-query-inspector]: success
+[2023-04-15 12:36:36] INFO root fetch - main [MainThread]: End processing [coca-tools]: success
+[2023-04-15 12:36:36] INFO root fetch - main [MainThread]: Store serial: [17718188]
