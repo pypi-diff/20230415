@@ -16666,3 +16666,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 16:18:05] INFO root fetch - main [MainThread]: End processing [fhnw-nlp-utils]: success
 [2023-04-15 16:18:09] INFO root fetch - main [MainThread]: End processing [PySide6-Fluent-Widgets]: success
 [2023-04-15 16:18:09] INFO root fetch - main [MainThread]: Store serial: [17719473]
+[2023-04-15 16:23:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719473]
+[2023-04-15 16:23:19] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-15 16:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jprint
+[2023-04-15 16:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: write-the
+[2023-04-15 16:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jprint
+[2023-04-15 16:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: magic-duckdb
+[2023-04-15 16:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spin-phonon-suite
+[2023-04-15 16:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: novauniverse
+[2023-04-15 16:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jprint
+[2023-04-15 16:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jal
+[2023-04-15 16:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: carter-py
+[2023-04-15 16:23:19] INFO root fetch - processPackages [write-the]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-15 16:23:19] INFO root fetch - processPackages [magic-duckdb]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 16:23:20] WARNING root fetch - processPackages [carter-py]: Skipping, unable to determine old version
+[2023-04-15 16:23:20] INFO root fetch - main [MainThread]: End processing [carter-py] error
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jal]: New version: [2023.4.6] Old Version: [2023.4.5]
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: New version: [1.1] Old Version: [1.0]
+[2023-04-15 16:23:20] INFO root fetch - processPackages [novauniverse]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: New version: [1.1] Old Version: [1.0]
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: New version: [1.1] Old Version: [1.0]
+[2023-04-15 16:23:20] INFO root fetch - processPackages [spin-phonon-suite]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-15 16:23:20] INFO root fetch - processPackages [magic-duckdb]: executing diffoscope
+[2023-04-15 16:23:20] INFO root fetch - processPackages [magic-duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magic_duckdb-0.1.8-py3-none-any.whl.zip tmp/magic_duckdb-0.1.9-py3-none-any.whl.zip --markdown 20230415/m/magic-duckdb/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: Downloading https://files.pythonhosted.org/packages/86/60/d46e57320bdffdd8dfe2d4b5e94f80d504d9805ced72c123280ef7bb9415/jprint-1.0.tar.gz
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: Downloading https://files.pythonhosted.org/packages/86/60/d46e57320bdffdd8dfe2d4b5e94f80d504d9805ced72c123280ef7bb9415/jprint-1.0.tar.gz
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: Downloading https://files.pythonhosted.org/packages/86/60/d46e57320bdffdd8dfe2d4b5e94f80d504d9805ced72c123280ef7bb9415/jprint-1.0.tar.gz
+[2023-04-15 16:23:20] INFO root fetch - processPackages [write-the]: Downloading https://files.pythonhosted.org/packages/07/7c/45eb7e79457e78c73b11a95fd907c49416a5be12855d62174ffce709918b/write_the-0.0.1.tar.gz
+[2023-04-15 16:23:20] INFO root fetch - processPackages [spin-phonon-suite]: Downloading https://files.pythonhosted.org/packages/cb/ff/8b7ef83b29f787323930e0f68e1da9500cbc1f62cecc1c0a420d8f4af92d/spin_phonon_suite-0.9.0.tar.gz
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jal]: Downloading https://files.pythonhosted.org/packages/1a/b4/aeb07b34e14679d0527d7d9e74efe6571118220cb9bff2a8a1f24b215e4a/jal-2023.4.6.tar.gz
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jal]: executing diffoscope
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jal-2023.4.5.tar.gz tmp/jal-2023.4.6.tar.gz --markdown 20230415/j/jal/2023.4.5-2023.4.6/diff.md --exclude *.pyd
+[2023-04-15 16:23:20] INFO root fetch - processPackages [novauniverse]: Downloading https://files.pythonhosted.org/packages/7d/81/03c0180426d3857d90e52e2cfbace842895c8d23f40adfdb3d2cd547825d/novauniverse-2.1.2-py3-none-any.whl
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: Downloading https://files.pythonhosted.org/packages/2c/99/8dac5135500eaaa0f405f66e719b79f4bc3328d562580ae9fedc1471dfec/jprint-1.1.tar.gz
+[2023-04-15 16:23:20] INFO root fetch - processPackages [novauniverse]: executing diffoscope
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: Downloading https://files.pythonhosted.org/packages/2c/99/8dac5135500eaaa0f405f66e719b79f4bc3328d562580ae9fedc1471dfec/jprint-1.1.tar.gz
+[2023-04-15 16:23:20] INFO root fetch - processPackages [novauniverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novauniverse-2.1.1.tar.gz tmp/novauniverse-2.1.2-py3-none-any.whl.zip --markdown 20230415/n/novauniverse/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: Downloading https://files.pythonhosted.org/packages/2c/99/8dac5135500eaaa0f405f66e719b79f4bc3328d562580ae9fedc1471dfec/jprint-1.1.tar.gz
+[2023-04-15 16:23:20] INFO root fetch - processPackages [write-the]: Downloading https://files.pythonhosted.org/packages/a5/72/524028d89b380f2bf459d6bb89659db377571d3137ab7999969b5702ce0c/write_the-0.1.0.tar.gz
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: executing diffoscope
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jprint-1.0.tar.gz tmp/jprint-1.1.tar.gz --markdown 20230415/j/jprint/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: executing diffoscope
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jprint-1.0.tar.gz tmp/jprint-1.1.tar.gz --markdown 20230415/j/jprint/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: executing diffoscope
+[2023-04-15 16:23:20] INFO root fetch - processPackages [jprint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jprint-1.0.tar.gz tmp/jprint-1.1.tar.gz --markdown 20230415/j/jprint/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-15 16:23:20] INFO root fetch - processPackages [spin-phonon-suite]: Downloading https://files.pythonhosted.org/packages/b4/04/7214608d60c537dcae4f6fa728c420f036c9dc177f64f905e34ad2babc9f/spin_phonon_suite-0.9.1.tar.gz
+[2023-04-15 16:23:20] INFO root fetch - processPackages [write-the]: executing diffoscope
+[2023-04-15 16:23:20] INFO root fetch - processPackages [write-the]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/write_the-0.0.1.tar.gz tmp/write_the-0.1.0.tar.gz --markdown 20230415/w/write-the/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-15 16:23:20] INFO root fetch - processPackages [spin-phonon-suite]: executing diffoscope
+[2023-04-15 16:23:20] INFO root fetch - processPackages [spin-phonon-suite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spin_phonon_suite-0.9.0.tar.gz tmp/spin_phonon_suite-0.9.1.tar.gz --markdown 20230415/s/spin-phonon-suite/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-15 16:23:21] INFO root fetch - main [MainThread]: End processing [magic-duckdb]: success
+[2023-04-15 16:23:21] INFO root fetch - main [MainThread]: End processing [novauniverse]: success
+[2023-04-15 16:23:21] INFO root fetch - main [MainThread]: End processing [jprint]: success
+[2023-04-15 16:23:21] INFO root fetch - main [MainThread]: End processing [jprint]: success
+[2023-04-15 16:23:21] INFO root fetch - main [MainThread]: End processing [write-the]: success
+[2023-04-15 16:23:22] INFO root fetch - main [MainThread]: End processing [jprint]: success
+[2023-04-15 16:23:22] INFO root fetch - main [MainThread]: End processing [spin-phonon-suite]: success
+[2023-04-15 16:23:23] INFO root fetch - main [MainThread]: End processing [jal]: success
+[2023-04-15 16:23:23] INFO root fetch - main [MainThread]: Store serial: [17719511]
