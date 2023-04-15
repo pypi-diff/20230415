@@ -5719,3 +5719,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 07:40:32] INFO root fetch - main [MainThread]: End processing [je-load-density]: success
 [2023-04-15 07:40:32] INFO root fetch - main [MainThread]: End processing [JarvisAI]: success
 [2023-04-15 07:40:32] INFO root fetch - main [MainThread]: Store serial: [17716671]
+[2023-04-15 07:45:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716671]
+[2023-04-15 07:45:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 07:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-flexreport
+[2023-04-15 07:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lofo-importance
+[2023-04-15 07:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sentry-auth-ldap
+[2023-04-15 07:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pylint-keyword-only-args-plugin
+[2023-04-15 07:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webp-support
+[2023-04-15 07:45:39] INFO root fetch - processPackages [webp-support]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-04-15 07:45:39] INFO root fetch - processPackages [lofo-importance]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-15 07:45:39] INFO root fetch - processPackages [pytest-flexreport]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-04-15 07:45:39] INFO root fetch - processPackages [sentry-auth-ldap]: New version: [21.9.9] Old Version: [21.9.8]
+[2023-04-15 07:45:39] INFO root fetch - processPackages [webp-support]: executing diffoscope
+[2023-04-15 07:45:39] INFO root fetch - processPackages [webp-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webp_support-0.2.2.tar.gz tmp/webp_support-0.2.4.tar.gz --markdown 20230415/w/webp-support/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-04-15 07:45:39] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-15 07:45:39] INFO root fetch - processPackages [pytest-flexreport]: Downloading https://files.pythonhosted.org/packages/f3/fa/6f18632aa1588a2049bf446c9e052a0342db3640f2834153646d2a9d3ac8/pytest-flexreport-1.2.5.tar.gz
+[2023-04-15 07:45:39] INFO root fetch - processPackages [sentry-auth-ldap]: Downloading https://files.pythonhosted.org/packages/a5/78/02f85976f1e9cee384c281754f2cd23e39b13f2d10419d44ad71eb51600d/sentry-auth-ldap-21.9.8.tar.gz
+[2023-04-15 07:45:39] INFO root fetch - processPackages [lofo-importance]: Downloading https://files.pythonhosted.org/packages/c9/4f/65d4449b7a647e93482700bdc68c8b9ea372d2dfa2f9c04c8a95240299eb/lofo-importance-0.3.2.tar.gz
+[2023-04-15 07:45:39] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: Downloading https://files.pythonhosted.org/packages/4d/02/5d31fa80f6f21a953804bf2817d6350c7ec8ae2ee7ea23cc1386abbc9aa8/pylint_keyword_only_args_plugin-0.1.0.tar.gz
+[2023-04-15 07:45:40] INFO root fetch - processPackages [sentry-auth-ldap]: Downloading https://files.pythonhosted.org/packages/81/1a/b5d0299b61087bbe7e05c9c04e9cd31426b56bfd5f98488eb38cf548d492/sentry-auth-ldap-21.9.9.tar.gz
+[2023-04-15 07:45:40] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: Downloading https://files.pythonhosted.org/packages/66/95/96bfa0d4aad99bee02e9d68dc5872fef7accbf16f9625eb006c629cfb87c/pylint_keyword_only_args_plugin-0.2.0.tar.gz
+[2023-04-15 07:45:40] INFO root fetch - processPackages [pytest-flexreport]: Downloading https://files.pythonhosted.org/packages/2f/77/2fae779525450b082b9b4b99b2cca6a396883308859f1e56c881850c8d00/pytest-flexreport-1.2.6.tar.gz
+[2023-04-15 07:45:40] INFO root fetch - processPackages [lofo-importance]: Downloading https://files.pythonhosted.org/packages/4c/63/eca45a13ffa4221ef7a693e874053a48a4461cc5a11bb8023736221be677/lofo-importance-0.3.3.tar.gz
+[2023-04-15 07:45:40] INFO root fetch - processPackages [lofo-importance]: executing diffoscope
+[2023-04-15 07:45:40] INFO root fetch - processPackages [lofo-importance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lofo-importance-0.3.2.tar.gz tmp/lofo-importance-0.3.3.tar.gz --markdown 20230415/l/lofo-importance/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-15 07:45:40] INFO root fetch - processPackages [sentry-auth-ldap]: executing diffoscope
+[2023-04-15 07:45:40] INFO root fetch - processPackages [sentry-auth-ldap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentry-auth-ldap-21.9.8.tar.gz tmp/sentry-auth-ldap-21.9.9.tar.gz --markdown 20230415/s/sentry-auth-ldap/21.9.8-21.9.9/diff.md --exclude *.pyd
+[2023-04-15 07:45:40] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: executing diffoscope
+[2023-04-15 07:45:40] INFO root fetch - processPackages [pylint-keyword-only-args-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylint_keyword_only_args_plugin-0.1.0.tar.gz tmp/pylint_keyword_only_args_plugin-0.2.0.tar.gz --markdown 20230415/p/pylint-keyword-only-args-plugin/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 07:45:40] INFO root fetch - processPackages [pytest-flexreport]: executing diffoscope
+[2023-04-15 07:45:40] INFO root fetch - processPackages [pytest-flexreport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-flexreport-1.2.5.tar.gz tmp/pytest-flexreport-1.2.6.tar.gz --markdown 20230415/p/pytest-flexreport/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-04-15 07:45:40] INFO root fetch - main [MainThread]: End processing [webp-support]: success
+[2023-04-15 07:45:41] INFO root fetch - main [MainThread]: End processing [lofo-importance]: success
+[2023-04-15 07:45:41] INFO root fetch - main [MainThread]: End processing [sentry-auth-ldap]: success
+[2023-04-15 07:45:41] INFO root fetch - main [MainThread]: End processing [pylint-keyword-only-args-plugin]: success
+[2023-04-15 07:45:41] INFO root fetch - main [MainThread]: End processing [pytest-flexreport]: success
+[2023-04-15 07:45:41] INFO root fetch - main [MainThread]: Store serial: [17716697]
