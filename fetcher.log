@@ -17955,3 +17955,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 18:55:13] INFO root fetch - main [MainThread]: End processing [osintbuddy]: success
 [2023-04-15 18:55:30] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-04-15 18:55:30] INFO root fetch - main [MainThread]: Store serial: [17720370]
+[2023-04-15 19:00:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720370]
+[2023-04-15 19:00:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-15 19:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snaptrade-python-sdk
+[2023-04-15 19:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bunnynet
+[2023-04-15 19:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: leveled-hotbackup-s3-sync
+[2023-04-15 19:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cvxpylayers
+[2023-04-15 19:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arcipelago
+[2023-04-15 19:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: logicgate
+[2023-04-15 19:00:38] WARNING root fetch - processPackages [bunnynet]: Skipping, unable to determine old version
+[2023-04-15 19:00:38] INFO root fetch - main [MainThread]: End processing [bunnynet] error
+[2023-04-15 19:00:38] INFO root fetch - processPackages [snaptrade-python-sdk]: New version: [9.0.0] Old Version: [8.4.0]
+[2023-04-15 19:00:38] INFO root fetch - processPackages [cvxpylayers]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 19:00:38] WARNING root fetch - processPackages [leveled-hotbackup-s3-sync]: Skipping, unable to determine old version
+[2023-04-15 19:00:38] WARNING root fetch - processPackages [arcipelago]: Skipping, unable to determine old version
+[2023-04-15 19:00:38] INFO root fetch - main [MainThread]: End processing [leveled-hotbackup-s3-sync] error
+[2023-04-15 19:00:38] INFO root fetch - main [MainThread]: End processing [arcipelago] error
+[2023-04-15 19:00:39] WARNING root fetch - processPackages [logicgate]: Skipping, unable to determine old version
+[2023-04-15 19:00:39] INFO root fetch - main [MainThread]: End processing [logicgate] error
+[2023-04-15 19:00:39] INFO root fetch - processPackages [cvxpylayers]: Downloading https://files.pythonhosted.org/packages/13/4f/e58e410cadceca32d57215b87460f1a337c7d82fd4c1f1e670c59da7b7fe/cvxpylayers-0.1.5.tar.gz
+[2023-04-15 19:00:39] INFO root fetch - processPackages [snaptrade-python-sdk]: Downloading https://files.pythonhosted.org/packages/6f/c7/47221dc28e809cffa217eee9b3e3ab3b2e102b70f8259c8619c4d06252a1/snaptrade-python-sdk-8.4.0.tar.gz
+[2023-04-15 19:00:39] INFO root fetch - processPackages [cvxpylayers]: Downloading https://files.pythonhosted.org/packages/5b/df/37a14ea4e1b8bc1fc4c5f6334852b5a33e6747357d748c97b93258a5886a/cvxpylayers-0.1.6.tar.gz
+[2023-04-15 19:00:39] INFO root fetch - processPackages [snaptrade-python-sdk]: Downloading https://files.pythonhosted.org/packages/e8/91/81180245a4093fa5b9c1f540d35e7336338579401f2ae021892d41cf39f7/snaptrade-python-sdk-9.0.0.tar.gz
+[2023-04-15 19:00:39] INFO root fetch - processPackages [cvxpylayers]: executing diffoscope
+[2023-04-15 19:00:39] INFO root fetch - processPackages [cvxpylayers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvxpylayers-0.1.5.tar.gz tmp/cvxpylayers-0.1.6.tar.gz --markdown 20230415/c/cvxpylayers/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 19:00:39] INFO root fetch - processPackages [snaptrade-python-sdk]: executing diffoscope
+[2023-04-15 19:00:39] INFO root fetch - processPackages [snaptrade-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snaptrade-python-sdk-8.4.0.tar.gz tmp/snaptrade-python-sdk-9.0.0.tar.gz --markdown 20230415/s/snaptrade-python-sdk/8.4.0-9.0.0/diff.md --exclude *.pyd
+[2023-04-15 19:00:40] INFO root fetch - main [MainThread]: End processing [cvxpylayers]: success
+[2023-04-15 19:00:45] INFO root fetch - main [MainThread]: End processing [snaptrade-python-sdk]: success
+[2023-04-15 19:00:45] INFO root fetch - main [MainThread]: Store serial: [17720400]
