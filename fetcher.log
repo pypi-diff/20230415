@@ -14000,3 +14000,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 11:37:32] INFO root fetch - main [MainThread]: End processing [fake-bge-module-latest]: success
 [2023-04-15 11:38:26] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-04-15 11:38:26] INFO root fetch - main [MainThread]: Store serial: [17717883]
+[2023-04-15 11:43:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717883]
+[2023-04-15 11:43:36] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-15 11:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twtvt
+[2023-04-15 11:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytextrust
+[2023-04-15 11:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jsonschema-gentypes
+[2023-04-15 11:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anim
+[2023-04-15 11:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cosmic-profiles
+[2023-04-15 11:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: steampy
+[2023-04-15 11:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Clean-Temp
+[2023-04-15 11:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: arlq
+[2023-04-15 11:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: maelzel
+[2023-04-15 11:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: napatrackmater
+[2023-04-15 11:43:36] INFO root fetch - processPackages [jsonschema-gentypes]: New version: [2.0.0] Old Version: [1.7.2]
+[2023-04-15 11:43:36] INFO root fetch - processPackages [twtvt]: New version: [2023.4.15.post1] Old Version: [2023.4.15]
+[2023-04-15 11:43:36] WARNING root fetch - processPackages [anim]: Skipping, unable to determine old version
+[2023-04-15 11:43:36] INFO root fetch - processPackages [anim]: Start processing: ipython-gpt
+[2023-04-15 11:43:36] INFO root fetch - main [MainThread]: End processing [anim] error
+[2023-04-15 11:43:36] INFO root fetch - processPackages [pytextrust]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-15 11:43:36] INFO root fetch - processPackages [cosmic-profiles]: New version: [1.3.0] Old Version: [1.2.7]
+[2023-04-15 11:43:36] WARNING root fetch - processPackages [Clean-Temp]: Skipping, unable to determine old version
+[2023-04-15 11:43:36] INFO root fetch - main [MainThread]: End processing [Clean-Temp] error
+[2023-04-15 11:43:36] INFO root fetch - processPackages [steampy]: New version: [0.80] Old Version: [0.75]
+[2023-04-15 11:43:36] INFO root fetch - processPackages [maelzel]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-15 11:43:36] INFO root fetch - processPackages [arlq]: New version: [1.0.4] Old Version: [1.0.2]
+[2023-04-15 11:43:36] WARNING root fetch - processPackages [ipython-gpt]: Skipping, unable to determine old version
+[2023-04-15 11:43:36] INFO root fetch - main [MainThread]: End processing [ipython-gpt] error
+[2023-04-15 11:43:36] INFO root fetch - processPackages [napatrackmater]: New version: [3.3.4] Old Version: [3.3.3]
+[2023-04-15 11:43:36] INFO root fetch - processPackages [maelzel]: Downloading https://files.pythonhosted.org/packages/e1/df/3a0f8019b2dde14ee16f9af7a559c1a084128924c3eb3826d3da87bdc1ec/maelzel-0.9.0.tar.gz
+[2023-04-15 11:43:36] WARNING root fetch - processPackages [maelzel]: Skipping package: exceeds size limit 17210322>=10485760
+[2023-04-15 11:43:36] INFO root fetch - main [MainThread]: End processing [maelzel] error
+[2023-04-15 11:43:36] INFO root fetch - processPackages [twtvt]: Downloading https://files.pythonhosted.org/packages/39/7d/d7b216e758b381b7f39c9e694d81fef78b75618ed38baf0fa4fba4120dd1/twtvt-2023.4.15.tar.gz
+[2023-04-15 11:43:36] INFO root fetch - processPackages [jsonschema-gentypes]: Downloading https://files.pythonhosted.org/packages/55/bc/864f5b451b191e210c69e60faf91e8cf8a7bac5e6101dad3fd6665ae1a01/jsonschema_gentypes-1.7.2.tar.gz
+[2023-04-15 11:43:36] INFO root fetch - processPackages [pytextrust]: Downloading https://files.pythonhosted.org/packages/22/53/45d4abd72beffe166d4d97cf84ff442887dac15f55f0b947891b193bb8ff/pytextrust-0.2.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 11:43:36] INFO root fetch - processPackages [cosmic-profiles]: Downloading https://files.pythonhosted.org/packages/8b/ab/eb0124b25ecadc65d2afa6f3ca9ece0a471e94a928d7b8018520639b462c/cosmic_profiles-1.2.7.tar.gz
+[2023-04-15 11:43:36] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/4d/1e/bd1b1d5d3c0b34125266148f253b2e1a9f27905c41fcb72a1cf48546d46a/napatrackmater-3.3.3.tar.gz
+[2023-04-15 11:43:36] INFO root fetch - processPackages [arlq]: Downloading https://files.pythonhosted.org/packages/9a/5d/ba34812636bd57a9d5e2177c1b6f825de4ee427bc046b38f06bc66ed09e2/arlq-1.0.4.tar.gz
+[2023-04-15 11:43:36] INFO root fetch - processPackages [steampy]: Downloading https://files.pythonhosted.org/packages/47/a1/c90f07d14ce4b70cb3807c375c751ac31be78f1eda8bae35bea97896ee1d/steampy-0.75.tar.gz
+[2023-04-15 11:43:37] INFO root fetch - processPackages [arlq]: executing diffoscope
+[2023-04-15 11:43:37] INFO root fetch - processPackages [arlq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arlq-1.0.2.tar.gz tmp/arlq-1.0.4.tar.gz --markdown 20230415/a/arlq/1.0.2-1.0.4/diff.md --exclude *.pyd
+[2023-04-15 11:43:37] INFO root fetch - processPackages [jsonschema-gentypes]: Downloading https://files.pythonhosted.org/packages/72/19/8984d45face2e9f86a3fb7084ef9c21b938dbc753934f2b1809398c86180/jsonschema_gentypes-2.0.0.tar.gz
+[2023-04-15 11:43:37] INFO root fetch - processPackages [steampy]: Downloading https://files.pythonhosted.org/packages/8f/0b/0ca803bd19eef48b227749b1feed19099d04052d8bccf742af44bff18ad1/steampy-0.80.tar.gz
+[2023-04-15 11:43:37] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/43/75/f41c596c8ac6a79b6ba900c2978274d3455ef70ab9e0c0e258c76a74f6f6/napatrackmater-3.3.4.tar.gz
+[2023-04-15 11:43:37] INFO root fetch - processPackages [twtvt]: Downloading https://files.pythonhosted.org/packages/d0/d3/05c296bc505b0df0a431d6241ca90253adde28aee4048ebe3d682c3ea849/twtvt-2023.4.15.post1.tar.gz
+[2023-04-15 11:43:37] INFO root fetch - processPackages [cosmic-profiles]: Downloading https://files.pythonhosted.org/packages/ef/aa/87e79d854a32af1569d770624587be7e66f59652cd6210248c10cd62074e/cosmic_profiles-1.3.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 11:43:37] INFO root fetch - processPackages [jsonschema-gentypes]: executing diffoscope
+[2023-04-15 11:43:37] INFO root fetch - processPackages [jsonschema-gentypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonschema_gentypes-1.7.2.tar.gz tmp/jsonschema_gentypes-2.0.0.tar.gz --markdown 20230415/j/jsonschema-gentypes/1.7.2-2.0.0/diff.md --exclude *.pyd
+[2023-04-15 11:43:37] INFO root fetch - processPackages [napatrackmater]: executing diffoscope
+[2023-04-15 11:43:37] INFO root fetch - processPackages [napatrackmater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napatrackmater-3.3.3.tar.gz tmp/napatrackmater-3.3.4.tar.gz --markdown 20230415/n/napatrackmater/3.3.3-3.3.4/diff.md --exclude *.pyd
+[2023-04-15 11:43:37] INFO root fetch - processPackages [twtvt]: executing diffoscope
+[2023-04-15 11:43:37] INFO root fetch - processPackages [twtvt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twtvt-2023.4.15.tar.gz tmp/twtvt-2023.4.15.post1.tar.gz --markdown 20230415/t/twtvt/2023.4.15-2023.4.15.post1/diff.md --exclude *.pyd
+[2023-04-15 11:43:37] INFO root fetch - processPackages [steampy]: executing diffoscope
+[2023-04-15 11:43:37] INFO root fetch - processPackages [steampy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steampy-0.75.tar.gz tmp/steampy-0.80.tar.gz --markdown 20230415/s/steampy/0.75-0.80/diff.md --exclude *.pyd
+[2023-04-15 11:43:37] INFO root fetch - processPackages [pytextrust]: Downloading https://files.pythonhosted.org/packages/98/75/eac60a38b77abdaa870cb241725fb7ab51a5a7fad0d6376f8509e8e4ebb7/pytextrust-0.2.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-15 11:43:37] INFO root fetch - processPackages [pytextrust]: executing diffoscope
+[2023-04-15 11:43:37] INFO root fetch - processPackages [pytextrust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytextrust-0.2.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pytextrust-0.2.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230415/p/pytextrust/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-15 11:43:38] INFO root fetch - main [MainThread]: End processing [arlq]: success
+[2023-04-15 11:43:38] INFO root fetch - main [MainThread]: End processing [jsonschema-gentypes]: success
+[2023-04-15 11:43:38] INFO root fetch - processPackages [cosmic-profiles]: executing diffoscope
+[2023-04-15 11:43:38] INFO root fetch - processPackages [cosmic-profiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cosmic_profiles-1.2.7.tar.gz tmp/cosmic_profiles-1.3.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230415/c/cosmic-profiles/1.2.7-1.3.0/diff.md --exclude *.pyd
+[2023-04-15 11:43:38] INFO root fetch - main [MainThread]: End processing [twtvt]: success
+[2023-04-15 11:43:38] INFO root fetch - main [MainThread]: End processing [steampy]: success
+[2023-04-15 11:43:39] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
+[2023-04-15 11:43:40] INFO root fetch - main [MainThread]: End processing [cosmic-profiles]: success
+[2023-04-15 11:44:02] INFO root fetch - main [MainThread]: End processing [pytextrust]: success
+[2023-04-15 11:44:02] INFO root fetch - main [MainThread]: Store serial: [17717919]
