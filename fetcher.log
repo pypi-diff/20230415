@@ -20458,3 +20458,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 23:26:56] INFO root fetch - main [MainThread]: End processing [jinja2-orderblocks]: success
 [2023-04-15 23:26:56] INFO root fetch - main [MainThread]: End processing [eons]: success
 [2023-04-15 23:26:56] INFO root fetch - main [MainThread]: Store serial: [17721963]
+[2023-04-15 23:32:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721963]
+[2023-04-15 23:32:06] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 23:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xturing
+[2023-04-15 23:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezpz4u
+[2023-04-15 23:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mine
+[2023-04-15 23:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seabreeze
+[2023-04-15 23:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: feed-archiver
+[2023-04-15 23:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyVHDLModel
+[2023-04-15 23:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hera
+[2023-04-15 23:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hera-workflows
+[2023-04-15 23:32:07] INFO root fetch - processPackages [mine]: New version: [2.1b1] Old Version: [2.0b1]
+[2023-04-15 23:32:07] INFO root fetch - processPackages [xturing]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 23:32:07] INFO root fetch - processPackages [pyVHDLModel]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-15 23:32:07] WARNING root fetch - processPackages [ezpz4u]: Skipping, unable to determine old version
+[2023-04-15 23:32:07] INFO root fetch - main [MainThread]: End processing [ezpz4u] error
+[2023-04-15 23:32:07] INFO root fetch - processPackages [mine]: executing diffoscope
+[2023-04-15 23:32:07] INFO root fetch - processPackages [mine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mine-2.0b1.tar.gz tmp/mine-2.1b1.tar.gz --markdown 20230415/m/mine/2.0b1-2.1b1/diff.md --exclude *.pyd
+[2023-04-15 23:32:07] INFO root fetch - processPackages [hera-workflows]: New version: [5.1.3] Old Version: [5.1.2]
+[2023-04-15 23:32:07] INFO root fetch - processPackages [feed-archiver]: New version: [1.0.0b11] Old Version: [1.0.0]
+[2023-04-15 23:32:07] INFO root fetch - processPackages [hera]: New version: [5.1.3] Old Version: [5.1.2]
+[2023-04-15 23:32:07] INFO root fetch - processPackages [seabreeze]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-04-15 23:32:07] INFO root fetch - processPackages [hera-workflows]: Downloading https://files.pythonhosted.org/packages/fc/2d/b0023b7b4be7f2b1828becfbb22c4af0512411af80544c0d06f50e19aa19/hera_workflows-5.1.2.tar.gz
+[2023-04-15 23:32:07] INFO root fetch - processPackages [pyVHDLModel]: Downloading https://files.pythonhosted.org/packages/a8/a3/6e24a482db435b3aaeb430b054cb3da2d0eb1f0f31879f2d5498bddef0f3/pyVHDLModel-0.8.1.tar.gz
+[2023-04-15 23:32:07] INFO root fetch - processPackages [hera]: Downloading https://files.pythonhosted.org/packages/71/ef/19c3d7bd81f0cb6df34060254d4ca73b0e32aa63b7d674c1a08fb574ed52/hera-5.1.2.tar.gz
+[2023-04-15 23:32:07] INFO root fetch - processPackages [feed-archiver]: Downloading https://files.pythonhosted.org/packages/b5/5a/9f94e1619e619db8bef1ef8be3179ef1bba13c3e14f8cc932fd9cfa49c80/feed-archiver-1.0.0.tar.gz
+[2023-04-15 23:32:07] INFO root fetch - processPackages [xturing]: Downloading https://files.pythonhosted.org/packages/06/3d/125cf78642db92e802de8a96a06c8562dec7f62e0727b8e5c01967a33c38/xturing-0.0.8.tar.gz
+[2023-04-15 23:32:07] INFO root fetch - processPackages [seabreeze]: Downloading https://files.pythonhosted.org/packages/88/71/fa464a13938c2207e7259320439a4596bf16830884422997eef24bcb1c85/seabreeze-2.1.0.tar.gz
+[2023-04-15 23:32:07] INFO root fetch - processPackages [hera-workflows]: Downloading https://files.pythonhosted.org/packages/f6/10/67c187ade635f205e7fd24498a6b87afbdef4a891c6964962493b7980458/hera_workflows-5.1.3.tar.gz
+[2023-04-15 23:32:07] INFO root fetch - processPackages [feed-archiver]: Downloading https://files.pythonhosted.org/packages/a4/60/987a92939e5111a5c5f7a7e2e996d07f32074e2b8f7f7020835f61d45308/feed-archiver-1.0.0b11.tar.gz
+[2023-04-15 23:32:07] INFO root fetch - processPackages [hera]: Downloading https://files.pythonhosted.org/packages/5c/8d/6a53b7258b37ce74314f03d634c4965bc96747c29738ea834d14d3a909ce/hera-5.1.3.tar.gz
+[2023-04-15 23:32:07] INFO root fetch - processPackages [pyVHDLModel]: Downloading https://files.pythonhosted.org/packages/51/cf/3e7939135af9bd4e7b64ec19c4ab2e2477cde96f5d7a578cc163fbf55e35/pyVHDLModel-0.9.0.tar.gz
+[2023-04-15 23:32:07] INFO root fetch - processPackages [xturing]: Downloading https://files.pythonhosted.org/packages/69/1b/9b42dd0e1d51cf51d6ec8e8b6d3f52a7aa7f4958c72510808e4f346610fe/xturing-0.0.9.tar.gz
+[2023-04-15 23:32:07] INFO root fetch - processPackages [hera-workflows]: executing diffoscope
+[2023-04-15 23:32:07] INFO root fetch - processPackages [hera-workflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hera_workflows-5.1.2.tar.gz tmp/hera_workflows-5.1.3.tar.gz --markdown 20230415/h/hera-workflows/5.1.2-5.1.3/diff.md --exclude *.pyd
+[2023-04-15 23:32:07] INFO root fetch - processPackages [feed-archiver]: executing diffoscope
+[2023-04-15 23:32:07] INFO root fetch - processPackages [feed-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feed-archiver-1.0.0.tar.gz tmp/feed-archiver-1.0.0b11.tar.gz --markdown 20230415/f/feed-archiver/1.0.0-1.0.0b11/diff.md --exclude *.pyd
+[2023-04-15 23:32:08] INFO root fetch - processPackages [hera]: executing diffoscope
+[2023-04-15 23:32:08] INFO root fetch - processPackages [hera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hera-5.1.2.tar.gz tmp/hera-5.1.3.tar.gz --markdown 20230415/h/hera/5.1.2-5.1.3/diff.md --exclude *.pyd
+[2023-04-15 23:32:08] INFO root fetch - processPackages [xturing]: executing diffoscope
+[2023-04-15 23:32:08] INFO root fetch - processPackages [xturing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xturing-0.0.8.tar.gz tmp/xturing-0.0.9.tar.gz --markdown 20230415/x/xturing/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 23:32:08] INFO root fetch - processPackages [pyVHDLModel]: executing diffoscope
+[2023-04-15 23:32:08] INFO root fetch - processPackages [pyVHDLModel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyVHDLModel-0.8.1.tar.gz tmp/pyVHDLModel-0.9.0.tar.gz --markdown 20230415/p/pyVHDLModel/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 23:32:08] INFO root fetch - main [MainThread]: End processing [mine]: success
+[2023-04-15 23:32:08] INFO root fetch - processPackages [seabreeze]: Downloading https://files.pythonhosted.org/packages/1e/7e/e5c060f480f3711cfc5df7706c016792a576e325b9bf1c4ad8a17f70e7f4/seabreeze-2.2.0.tar.gz
+[2023-04-15 23:32:09] INFO root fetch - main [MainThread]: End processing [pyVHDLModel]: success
+[2023-04-15 23:32:09] INFO root fetch - main [MainThread]: End processing [xturing]: success
+[2023-04-15 23:32:09] INFO root fetch - main [MainThread]: End processing [hera-workflows]: success
+[2023-04-15 23:32:09] INFO root fetch - main [MainThread]: End processing [feed-archiver]: success
+[2023-04-15 23:32:09] INFO root fetch - main [MainThread]: End processing [hera]: success
+[2023-04-15 23:32:09] INFO root fetch - processPackages [seabreeze]: executing diffoscope
+[2023-04-15 23:32:09] INFO root fetch - processPackages [seabreeze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seabreeze-2.1.0.tar.gz tmp/seabreeze-2.2.0.tar.gz --markdown 20230415/s/seabreeze/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-04-15 23:32:22] INFO root fetch - main [MainThread]: End processing [seabreeze]: success
+[2023-04-15 23:32:22] INFO root fetch - main [MainThread]: Store serial: [17722017]
