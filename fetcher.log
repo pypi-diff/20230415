@@ -5125,3 +5125,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 06:06:04] INFO root fetch - processPackages [valaw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valaw-0.0.3.tar.gz tmp/valaw-0.0.4.tar.gz --markdown 20230415/v/valaw/0.0.3-0.0.4/diff.md --exclude *.pyd
 [2023-04-15 06:06:05] INFO root fetch - main [MainThread]: End processing [valaw]: success
 [2023-04-15 06:06:05] INFO root fetch - main [MainThread]: Store serial: [17716341]
+[2023-04-15 06:11:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716341]
+[2023-04-15 06:11:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 06:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arxivterminal
+[2023-04-15 06:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: highcharts-core
+[2023-04-15 06:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webp-support
+[2023-04-15 06:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webp-support
+[2023-04-15 06:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo12-addon-helpdesk-mgmt
+[2023-04-15 06:11:12] WARNING root fetch - processPackages [arxivterminal]: Skipping, unable to determine old version
+[2023-04-15 06:11:12] INFO root fetch - main [MainThread]: End processing [arxivterminal] error
+[2023-04-15 06:11:12] INFO root fetch - processPackages [highcharts-core]: New version: [1.0.1] Old Version: [1.0.0rc9]
+[2023-04-15 06:11:12] INFO root fetch - processPackages [webp-support]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-15 06:11:12] INFO root fetch - processPackages [webp-support]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-15 06:11:12] INFO root fetch - processPackages [odoo12-addon-helpdesk-mgmt]: New version: [12.0.1.9.1.99.dev9] Old Version: [12.0.1.9.1.99.dev7]
+[2023-04-15 06:11:12] INFO root fetch - processPackages [webp-support]: Downloading https://files.pythonhosted.org/packages/51/cd/cbd8236a0b2e32afbcbb950ee20a0f86da0bb6e8d31ed14d18c76567218f/webp_support-0.2.2.tar.gz
+[2023-04-15 06:11:12] INFO root fetch - processPackages [webp-support]: Downloading https://files.pythonhosted.org/packages/51/cd/cbd8236a0b2e32afbcbb950ee20a0f86da0bb6e8d31ed14d18c76567218f/webp_support-0.2.2.tar.gz
+[2023-04-15 06:11:12] INFO root fetch - processPackages [highcharts-core]: Downloading https://files.pythonhosted.org/packages/86/db/343e0b9538483f376f4eb0fd70d0c119ed3031a5ce7064630b25608a60dd/highcharts_core-1.0.1.tar.gz
+[2023-04-15 06:11:12] INFO root fetch - processPackages [webp-support]: Downloading https://files.pythonhosted.org/packages/18/ff/e9d40ddd2da5f4709a769b7cdda441dc0010e3845c58bb4583e284d3cda8/webp_support-0.2.3.tar.gz
+[2023-04-15 06:11:12] INFO root fetch - processPackages [webp-support]: Downloading https://files.pythonhosted.org/packages/18/ff/e9d40ddd2da5f4709a769b7cdda441dc0010e3845c58bb4583e284d3cda8/webp_support-0.2.3.tar.gz
+[2023-04-15 06:11:12] INFO root fetch - processPackages [odoo12-addon-helpdesk-mgmt]: executing diffoscope
+[2023-04-15 06:11:12] INFO root fetch - processPackages [odoo12-addon-helpdesk-mgmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_helpdesk_mgmt-12.0.1.9.1.99.dev7-py3-none-any.whl.zip tmp/odoo12_addon_helpdesk_mgmt-12.0.1.9.1.99.dev9-py3-none-any.whl.zip --markdown 20230415/o/odoo12-addon-helpdesk-mgmt/12.0.1.9.1.99.dev7-12.0.1.9.1.99.dev9/diff.md --exclude *.pyd
+[2023-04-15 06:11:12] INFO root fetch - processPackages [webp-support]: executing diffoscope
+[2023-04-15 06:11:12] INFO root fetch - processPackages [webp-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webp_support-0.2.2.tar.gz tmp/webp_support-0.2.3.tar.gz --markdown 20230415/w/webp-support/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-15 06:11:12] INFO root fetch - processPackages [webp-support]: executing diffoscope
+[2023-04-15 06:11:12] INFO root fetch - processPackages [webp-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webp_support-0.2.2.tar.gz tmp/webp_support-0.2.3.tar.gz --markdown 20230415/w/webp-support/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-15 06:11:12] INFO root fetch - processPackages [highcharts-core]: executing diffoscope
+[2023-04-15 06:11:12] INFO root fetch - processPackages [highcharts-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/highcharts_core-1.0.0rc9.tar.gz tmp/highcharts_core-1.0.1.tar.gz --markdown 20230415/h/highcharts-core/1.0.0rc9-1.0.1/diff.md --exclude *.pyd
+[2023-04-15 06:11:13] INFO root fetch - main [MainThread]: End processing [webp-support]: success
+[2023-04-15 06:11:13] INFO root fetch - main [MainThread]: End processing [odoo12-addon-helpdesk-mgmt]: success
+[2023-04-15 06:11:14] INFO root fetch - main [MainThread]: End processing [webp-support]: success
+[2023-04-15 06:11:33] INFO root fetch - main [MainThread]: End processing [highcharts-core]: success
+[2023-04-15 06:11:33] INFO root fetch - main [MainThread]: Store serial: [17716385]
