@@ -18240,3 +18240,116 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 19:32:03] INFO root fetch - main [MainThread]: End processing [aistac-foundation]: success
 [2023-04-15 19:32:03] INFO root fetch - main [MainThread]: End processing [seleniumbase]: success
 [2023-04-15 19:32:03] INFO root fetch - main [MainThread]: Store serial: [17720546]
+[2023-04-15 19:37:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720546]
+[2023-04-15 19:37:12] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-15 19:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyterhub-tmpnativeauthenticator
+[2023-04-15 19:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kosis
+[2023-04-15 19:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: casdoor
+[2023-04-15 19:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sbase
+[2023-04-15 19:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: selenium-base
+[2023-04-15 19:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytest-seleniumbase
+[2023-04-15 19:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: drclient
+[2023-04-15 19:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: novelai-api
+[2023-04-15 19:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pytest-sbase
+[2023-04-15 19:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aiomisc
+[2023-04-15 19:37:12] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-15 19:37:12] INFO root fetch - processPackages [casdoor]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-15 19:37:12] INFO root fetch - processPackages [novelai-api]: New version: [0.9] Old Version: [0.8]
+[2023-04-15 19:37:12] WARNING root fetch - processPackages [kosis]: Skipping, unable to determine old version
+[2023-04-15 19:37:12] INFO root fetch - processPackages [kosis]: Start processing: SnakeMD
+[2023-04-15 19:37:12] INFO root fetch - main [MainThread]: End processing [kosis] error
+[2023-04-15 19:37:12] INFO root fetch - processPackages [sbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-15 19:37:12] INFO root fetch - processPackages [drclient]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-15 19:37:12] INFO root fetch - processPackages [selenium-base]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-15 19:37:12] INFO root fetch - processPackages [aiomisc]: New version: [9.8.4] Old Version: [9.8.1]
+[2023-04-15 19:37:12] INFO root fetch - processPackages [SnakeMD]: New version: [2.0.0b2] Old Version: [2.0.0b1]
+[2023-04-15 19:37:12] INFO root fetch - processPackages [pytest-seleniumbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-15 19:37:12] INFO root fetch - processPackages [pytest-sbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-15 19:37:12] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Downloading https://files.pythonhosted.org/packages/68/52/4b998f35336019cac854c74142a6753d5245696571100fc681b8835906d8/jupyterhub-tmpnativeauthenticator-1.0.3.tar.gz
+[2023-04-15 19:37:12] INFO root fetch - processPackages [aiomisc]: executing diffoscope
+[2023-04-15 19:37:12] INFO root fetch - processPackages [aiomisc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiomisc-9.8.1.tar.gz tmp/aiomisc-9.8.4.tar.gz --markdown 20230415/a/aiomisc/9.8.1-9.8.4/diff.md --exclude *.pyd
+[2023-04-15 19:37:13] INFO root fetch - processPackages [casdoor]: Downloading https://files.pythonhosted.org/packages/b5/0d/ea0d365eef0e2cb9337578d932d25f5442b13bff76e2ce2f56d63355a341/casdoor-1.8.0.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [sbase]: Downloading https://files.pythonhosted.org/packages/10/f9/904caa9ffcdc6c4e7625f527d7ff03e2ccbecc9c360a7557b298321e506d/sbase-4.9.8.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [SnakeMD]: Downloading https://files.pythonhosted.org/packages/79/e0/0a90e844d67069655fe323039bef4aadd75414afe10eed1b30af749fd89a/SnakeMD-2.0.0b1.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [pytest-seleniumbase]: Downloading https://files.pythonhosted.org/packages/40/bb/757cad3c5535e64c18cee852b145a86e4d539878bd9dce7c2934bcfb972d/pytest-seleniumbase-4.9.8.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [pytest-sbase]: Downloading https://files.pythonhosted.org/packages/91/87/a1223948d4bac31ab82915c4e7a930c22af874859aa805d6c3abd6b5bb3e/pytest-sbase-4.9.8.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [selenium-base]: Downloading https://files.pythonhosted.org/packages/49/eb/ad6c55d2af108681e38505aff036aef13544a2d1c09817221f499826a6f9/selenium-base-4.9.8.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [novelai-api]: executing diffoscope
+[2023-04-15 19:37:13] INFO root fetch - processPackages [novelai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai-api-0.8.tar.gz tmp/novelai-api-0.9.tar.gz --markdown 20230415/n/novelai-api/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-15 19:37:13] INFO root fetch - processPackages [drclient]: Downloading https://files.pythonhosted.org/packages/e8/28/d4bb41caed67b5561bc0982498df36b8498017f8317cf5017084485a3f85/drclient-0.0.7.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [drclient]: executing diffoscope
+[2023-04-15 19:37:13] INFO root fetch - processPackages [drclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drclient-0.0.6.tar.gz tmp/drclient-0.0.7.tar.gz --markdown 20230415/d/drclient/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-15 19:37:13] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Downloading https://files.pythonhosted.org/packages/37/8c/6a9c8b5e2b89d7d89f91efdd1f421bd758a4dcee489788dd5984bae57dad/jupyterhub-tmpnativeauthenticator-1.0.4.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [SnakeMD]: Downloading https://files.pythonhosted.org/packages/c5/7b/626c3a6454a6a79061dfe9102859b2575c3957716735e7e9f0b6e6d22b06/SnakeMD-2.0.0b2.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [SnakeMD]: executing diffoscope
+[2023-04-15 19:37:13] INFO root fetch - processPackages [SnakeMD]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SnakeMD-2.0.0b1.tar.gz tmp/SnakeMD-2.0.0b2.tar.gz --markdown 20230415/S/SnakeMD/2.0.0b1-2.0.0b2/diff.md --exclude *.pyd
+[2023-04-15 19:37:13] INFO root fetch - processPackages [casdoor]: Downloading https://files.pythonhosted.org/packages/40/23/ec811b0c57811259c23a5c1705697b64f4fe5a0a20fe40a04adbf8e1ab18/casdoor-1.9.0.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [sbase]: Downloading https://files.pythonhosted.org/packages/d2/57/c23bf788f4a8fba6ef62c68be73c8fb443dc5aa71c69b03726c1254377f7/sbase-4.9.9.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [selenium-base]: Downloading https://files.pythonhosted.org/packages/0a/3b/8bdd54f85b1550af5050c8683212c3f88b854c0ef99e22fa6fe216094900/selenium-base-4.9.9.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [pytest-seleniumbase]: Downloading https://files.pythonhosted.org/packages/34/03/c67c6c24b8d7c3e49595b97d914034cf101d3d1d029f9e9453f497e0937a/pytest-seleniumbase-4.9.9.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: executing diffoscope
+[2023-04-15 19:37:13] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterhub-tmpnativeauthenticator-1.0.3.tar.gz tmp/jupyterhub-tmpnativeauthenticator-1.0.4.tar.gz --markdown 20230415/j/jupyterhub-tmpnativeauthenticator/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-15 19:37:13] INFO root fetch - processPackages [pytest-sbase]: Downloading https://files.pythonhosted.org/packages/ea/6c/61da56c0f8d30ee6ecfbf486bd770ce073eba9a09e63981ae35863a37cb0/pytest-sbase-4.9.9.tar.gz
+[2023-04-15 19:37:13] INFO root fetch - processPackages [casdoor]: executing diffoscope
+[2023-04-15 19:37:13] INFO root fetch - processPackages [casdoor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/casdoor-1.8.0.tar.gz tmp/casdoor-1.9.0.tar.gz --markdown 20230415/c/casdoor/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-15 19:37:13] INFO root fetch - processPackages [sbase]: executing diffoscope
+[2023-04-15 19:37:13] INFO root fetch - processPackages [sbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbase-4.9.8.tar.gz tmp/sbase-4.9.9.tar.gz --markdown 20230415/s/sbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-15 19:37:13] INFO root fetch - processPackages [pytest-seleniumbase]: executing diffoscope
+[2023-04-15 19:37:13] INFO root fetch - processPackages [pytest-seleniumbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-seleniumbase-4.9.8.tar.gz tmp/pytest-seleniumbase-4.9.9.tar.gz --markdown 20230415/p/pytest-seleniumbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-15 19:37:13] INFO root fetch - processPackages [selenium-base]: executing diffoscope
+[2023-04-15 19:37:13] INFO root fetch - processPackages [selenium-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium-base-4.9.8.tar.gz tmp/selenium-base-4.9.9.tar.gz --markdown 20230415/s/selenium-base/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-15 19:37:13] INFO root fetch - processPackages [pytest-sbase]: executing diffoscope
+[2023-04-15 19:37:13] INFO root fetch - processPackages [pytest-sbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-sbase-4.9.8.tar.gz tmp/pytest-sbase-4.9.9.tar.gz --markdown 20230415/p/pytest-sbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-15 19:37:14] INFO root fetch - processPackages [drclient]: Start processing: pdm-conda
+[2023-04-15 19:37:14] INFO root fetch - main [MainThread]: End processing [drclient]: success
+[2023-04-15 19:37:14] INFO root fetch - processPackages [pdm-conda]: New version: [0.8.1b1] Old Version: [0.8.1b0]
+[2023-04-15 19:37:14] INFO root fetch - processPackages [casdoor]: Start processing: algo900
+[2023-04-15 19:37:14] INFO root fetch - main [MainThread]: End processing [casdoor]: success
+[2023-04-15 19:37:14] INFO root fetch - processPackages [algo900]: New version: [0.254] Old Version: [0.253]
+[2023-04-15 19:37:14] INFO root fetch - processPackages [SnakeMD]: Start processing: trest
+[2023-04-15 19:37:14] INFO root fetch - main [MainThread]: End processing [SnakeMD]: success
+[2023-04-15 19:37:14] INFO root fetch - processPackages [trest]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-04-15 19:37:14] INFO root fetch - processPackages [pdm-conda]: Downloading https://files.pythonhosted.org/packages/3f/25/cba76305d6652bf4180a7d7fe9a5f759bd7bc31cc02ba3966fc9858148b6/pdm_conda-0.8.1b1.tar.gz
+[2023-04-15 19:37:14] INFO root fetch - processPackages [algo900]: Downloading https://files.pythonhosted.org/packages/5c/ac/ccb134ce66ec7868284fc00f79f40b89973ce225756fcac25676372433a7/algo900-0.253.tar.gz
+[2023-04-15 19:37:14] INFO root fetch - processPackages [pytest-seleniumbase]: Start processing: vollseg
+[2023-04-15 19:37:14] INFO root fetch - main [MainThread]: End processing [pytest-seleniumbase]: success
+[2023-04-15 19:37:14] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-04-15 19:37:15] INFO root fetch - processPackages [trest]: Downloading https://files.pythonhosted.org/packages/60/ee/3055f790bd36dccc745743065ce461127cc46c240499f3948fbbee17cc21/trest-1.3.0.tar.gz
+[2023-04-15 19:37:15] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-04-15 19:37:15] INFO root fetch - processPackages [pdm-conda]: executing diffoscope
+[2023-04-15 19:37:15] INFO root fetch - processPackages [pdm-conda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm_conda-0.8.1b0.tar.gz tmp/pdm_conda-0.8.1b1.tar.gz --markdown 20230415/p/pdm-conda/0.8.1b0-0.8.1b1/diff.md --exclude *.pyd
+[2023-04-15 19:37:15] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-04-15 19:37:15] INFO root fetch - processPackages [vollseg]: Start processing: fullctl
+[2023-04-15 19:37:15] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-04-15 19:37:15] INFO root fetch - processPackages [fullctl]: New version: [1.2.0rc1] Old Version: [0.3.0]
+[2023-04-15 19:37:15] INFO root fetch - processPackages [aiomisc]: Start processing: jupyterhub-tmpnativeauthenticator
+[2023-04-15 19:37:15] INFO root fetch - main [MainThread]: End processing [aiomisc]: success
+[2023-04-15 19:37:15] INFO root fetch - processPackages [algo900]: Downloading https://files.pythonhosted.org/packages/68/ba/0d4ee6c2613f77baf04f9aec0623f2ebe4b2248df0bc98b198083eccff1c/algo900-0.254.tar.gz
+[2023-04-15 19:37:15] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-15 19:37:15] INFO root fetch - processPackages [algo900]: executing diffoscope
+[2023-04-15 19:37:15] INFO root fetch - processPackages [algo900]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algo900-0.253.tar.gz tmp/algo900-0.254.tar.gz --markdown 20230415/a/algo900/0.253-0.254/diff.md --exclude *.pyd
+[2023-04-15 19:37:15] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: executing diffoscope
+[2023-04-15 19:37:15] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterhub-tmpnativeauthenticator-1.0.3.tar.gz tmp/jupyterhub-tmpnativeauthenticator-1.0.4.tar.gz --markdown 20230415/j/jupyterhub-tmpnativeauthenticator/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-15 19:37:15] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Start processing: deep-learning-framework
+[2023-04-15 19:37:15] INFO root fetch - main [MainThread]: End processing [jupyterhub-tmpnativeauthenticator]: success
+[2023-04-15 19:37:15] INFO root fetch - processPackages [fullctl]: Downloading https://files.pythonhosted.org/packages/b8/5b/85fd3e6e98e105dacd726702723b92b9b62149072cbbae2c892dabfd4279/fullctl-0.3.0.tar.gz
+[2023-04-15 19:37:15] INFO root fetch - processPackages [deep-learning-framework]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 19:37:15] INFO root fetch - processPackages [trest]: Downloading https://files.pythonhosted.org/packages/ba/27/4c1e4862259e2a06521bf0dc1a6224792c3ab7a6c869815c3939e985a508/trest-1.4.0.tar.gz
+[2023-04-15 19:37:15] INFO root fetch - processPackages [trest]: executing diffoscope
+[2023-04-15 19:37:15] INFO root fetch - processPackages [trest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trest-1.3.0.tar.gz tmp/trest-1.4.0.tar.gz --markdown 20230415/t/trest/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-04-15 19:37:15] INFO root fetch - processPackages [deep-learning-framework]: executing diffoscope
+[2023-04-15 19:37:15] INFO root fetch - processPackages [deep-learning-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_learning_framework-0.1.8.tar.gz tmp/deep_learning_framework-0.1.9.tar.gz --markdown 20230415/d/deep-learning-framework/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 19:37:15] INFO root fetch - processPackages [fullctl]: Downloading https://files.pythonhosted.org/packages/fa/ce/f532b30859746c64b7c4432c7d39e7580faef0cf542d4dfc852dbf6c29b8/fullctl-1.2.0rc1.tar.gz
+[2023-04-15 19:37:15] INFO root fetch - main [MainThread]: End processing [selenium-base]: success
+[2023-04-15 19:37:15] INFO root fetch - main [MainThread]: End processing [sbase]: success
+[2023-04-15 19:37:15] INFO root fetch - main [MainThread]: End processing [pytest-sbase]: success
+[2023-04-15 19:37:15] INFO root fetch - processPackages [fullctl]: executing diffoscope
+[2023-04-15 19:37:15] INFO root fetch - processPackages [fullctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fullctl-0.3.0.tar.gz tmp/fullctl-1.2.0rc1.tar.gz --markdown 20230415/f/fullctl/0.3.0-1.2.0rc1/diff.md --exclude *.pyd
+[2023-04-15 19:37:16] INFO root fetch - main [MainThread]: End processing [pdm-conda]: success
+[2023-04-15 19:37:16] INFO root fetch - main [MainThread]: End processing [algo900]: success
+[2023-04-15 19:37:16] INFO root fetch - main [MainThread]: End processing [trest]: success
+[2023-04-15 19:37:17] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
+[2023-04-15 19:37:17] INFO root fetch - main [MainThread]: End processing [deep-learning-framework]: success
+[2023-04-15 19:37:18] INFO root fetch - main [MainThread]: End processing [jupyterhub-tmpnativeauthenticator]: success
+[2023-04-15 19:37:21] INFO root fetch - main [MainThread]: End processing [fullctl]: success
+[2023-04-15 19:37:21] INFO root fetch - main [MainThread]: Store serial: [17720609]
