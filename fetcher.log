@@ -5084,3 +5084,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 05:55:47] INFO root fetch - main [MainThread]: End processing [drs-compliance]: success
 [2023-04-15 05:55:47] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-typing]: success
 [2023-04-15 05:55:47] INFO root fetch - main [MainThread]: Store serial: [17716318]
+[2023-04-15 06:00:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716318]
+[2023-04-15 06:00:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-15 06:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datajunction
+[2023-04-15 06:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: objectory
+[2023-04-15 06:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modProcesso
+[2023-04-15 06:00:54] INFO root fetch - processPackages [objectory]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-15 06:00:54] INFO root fetch - processPackages [datajunction]: New version: [0.0.1a2] Old Version: [0.0.1a1]
+[2023-04-15 06:00:54] INFO root fetch - processPackages [modProcesso]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-15 06:00:55] INFO root fetch - processPackages [datajunction]: Downloading https://files.pythonhosted.org/packages/9c/04/871950444940a360284e83613c36273c61886044d847e6e2f3874faddd5d/datajunction-0.0.1a1.tar.gz
+[2023-04-15 06:00:55] INFO root fetch - processPackages [objectory]: Downloading https://files.pythonhosted.org/packages/0f/fd/a432645d5cb2bb40621971ddd3e57e2096560b9b84abc8a9645b18451ebe/objectory-0.0.1.tar.gz
+[2023-04-15 06:00:55] INFO root fetch - processPackages [modProcesso]: Downloading https://files.pythonhosted.org/packages/82/30/a9788771f605adb8948bb0ed07ee9cc908b02946416dff400c79c7a37785/modProcesso-0.0.9.tar.gz
+[2023-04-15 06:00:55] INFO root fetch - processPackages [modProcesso]: executing diffoscope
+[2023-04-15 06:00:55] INFO root fetch - processPackages [modProcesso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modProcesso-0.0.8.tar.gz tmp/modProcesso-0.0.9.tar.gz --markdown 20230415/m/modProcesso/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-15 06:00:55] INFO root fetch - processPackages [objectory]: Downloading https://files.pythonhosted.org/packages/84/9b/947e06ed022af252a533bbb14c59b015cc76dc8141377c4cd73d5424b521/objectory-0.0.2.tar.gz
+[2023-04-15 06:00:55] INFO root fetch - processPackages [datajunction]: Downloading https://files.pythonhosted.org/packages/a2/cf/df675e319c0740cb5e017e42a29de2819cb1de29775ed2fc79395c0a063f/datajunction-0.0.1a2.tar.gz
+[2023-04-15 06:00:55] INFO root fetch - processPackages [objectory]: executing diffoscope
+[2023-04-15 06:00:55] INFO root fetch - processPackages [objectory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/objectory-0.0.1.tar.gz tmp/objectory-0.0.2.tar.gz --markdown 20230415/o/objectory/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-15 06:00:55] INFO root fetch - processPackages [datajunction]: executing diffoscope
+[2023-04-15 06:00:55] INFO root fetch - processPackages [datajunction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datajunction-0.0.1a1.tar.gz tmp/datajunction-0.0.1a2.tar.gz --markdown 20230415/d/datajunction/0.0.1a1-0.0.1a2/diff.md --exclude *.pyd
+[2023-04-15 06:00:56] INFO root fetch - main [MainThread]: End processing [modProcesso]: success
+[2023-04-15 06:00:56] INFO root fetch - main [MainThread]: End processing [objectory]: success
+[2023-04-15 06:00:56] INFO root fetch - main [MainThread]: End processing [datajunction]: success
+[2023-04-15 06:00:56] INFO root fetch - main [MainThread]: Store serial: [17716327]
