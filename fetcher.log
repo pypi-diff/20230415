@@ -6518,3 +6518,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 09:02:11] INFO root fetch - main [MainThread]: End processing [get-spotlights]: success
 [2023-04-15 09:02:20] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-04-15 09:02:20] INFO root fetch - main [MainThread]: Store serial: [17717043]
+[2023-04-15 09:07:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717043]
+[2023-04-15 09:07:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-15 09:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: barbell2-bodycomp
+[2023-04-15 09:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiokeydb
+[2023-04-15 09:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cmlibs.widgets
+[2023-04-15 09:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-hub-nightly
+[2023-04-15 09:07:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-base-user-locale
+[2023-04-15 09:07:28] INFO root fetch - processPackages [aiokeydb]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 09:07:28] INFO root fetch - processPackages [barbell2-bodycomp]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-15 09:07:28] WARNING root fetch - processPackages [cmlibs.widgets]: Skipping, unable to determine old version
+[2023-04-15 09:07:28] INFO root fetch - main [MainThread]: End processing [cmlibs.widgets] error
+[2023-04-15 09:07:28] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-04-15 09:07:28] INFO root fetch - processPackages [aiokeydb]: executing diffoscope
+[2023-04-15 09:07:28] INFO root fetch - processPackages [aiokeydb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiokeydb-0.1.8.tar.gz tmp/aiokeydb-0.1.9.tar.gz --markdown 20230415/a/aiokeydb/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 09:07:28] INFO root fetch - processPackages [odoo14-addon-base-user-locale]: New version: [14.0.1.1.2.dev7] Old Version: [14.0.1.1.2.dev6]
+[2023-04-15 09:07:28] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-04-15 09:07:28] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230415/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-04-15 09:07:29] INFO root fetch - processPackages [odoo14-addon-base-user-locale]: Downloading https://files.pythonhosted.org/packages/53/1a/572eb869628e956cfc2acbfdd2efe406116f37042746f29412b160ac155b/odoo14_addon_base_user_locale-14.0.1.1.2.dev6-py3-none-any.whl
+[2023-04-15 09:07:29] INFO root fetch - processPackages [barbell2-bodycomp]: Downloading https://files.pythonhosted.org/packages/37/cb/b86595926ca0aa1a19442e6f0f1f82e07e5b43083e0515ac175440fffd1e/barbell2_bodycomp-0.4.0.tar.gz
+[2023-04-15 09:07:29] INFO root fetch - processPackages [barbell2-bodycomp]: executing diffoscope
+[2023-04-15 09:07:29] INFO root fetch - processPackages [barbell2-bodycomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barbell2_bodycomp-0.3.0.tar.gz tmp/barbell2_bodycomp-0.4.0.tar.gz --markdown 20230415/b/barbell2-bodycomp/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-15 09:07:29] INFO root fetch - processPackages [odoo14-addon-base-user-locale]: Downloading https://files.pythonhosted.org/packages/6c/3a/db2c3d1a6cb9165d39af387bcefbab64266e1b0ae7c62d6f93927e9be838/odoo14_addon_base_user_locale-14.0.1.1.2.dev7-py3-none-any.whl
+[2023-04-15 09:07:29] INFO root fetch - processPackages [odoo14-addon-base-user-locale]: executing diffoscope
+[2023-04-15 09:07:29] INFO root fetch - processPackages [odoo14-addon-base-user-locale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_base_user_locale-14.0.1.1.2.dev6-py3-none-any.whl.zip tmp/odoo14_addon_base_user_locale-14.0.1.1.2.dev7-py3-none-any.whl.zip --markdown 20230415/o/odoo14-addon-base-user-locale/14.0.1.1.2.dev6-14.0.1.1.2.dev7/diff.md --exclude *.pyd
+[2023-04-15 09:07:30] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-04-15 09:07:30] INFO root fetch - main [MainThread]: End processing [barbell2-bodycomp]: success
+[2023-04-15 09:07:30] INFO root fetch - main [MainThread]: End processing [aiokeydb]: success
+[2023-04-15 09:07:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-base-user-locale]: success
+[2023-04-15 09:07:30] INFO root fetch - main [MainThread]: Store serial: [17717070]
