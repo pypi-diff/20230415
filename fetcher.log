@@ -5480,3 +5480,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 07:00:59] INFO root fetch - main [MainThread]: End processing [anachem]: success
 [2023-04-15 07:01:33] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-04-15 07:01:33] INFO root fetch - main [MainThread]: Store serial: [17716559]
+[2023-04-15 07:06:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716559]
+[2023-04-15 07:06:42] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-15 07:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapid-pe
+[2023-04-15 07:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mrgrain.cdk-esbuild
+[2023-04-15 07:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mrgrain.cdk-esbuild
+[2023-04-15 07:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: multi-model-server
+[2023-04-15 07:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webp-support
+[2023-04-15 07:06:42] INFO root fetch - processPackages [rapid-pe]: New version: [0.0.7.dev20230415] Old Version: [0.0.7.dev20230414]
+[2023-04-15 07:06:42] INFO root fetch - processPackages [webp-support]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-04-15 07:06:42] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: New version: [4.1.6] Old Version: [4.1.5]
+[2023-04-15 07:06:42] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: New version: [4.1.6] Old Version: [4.1.5]
+[2023-04-15 07:06:42] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230415] Old Version: [1.1.8b20230414]
+[2023-04-15 07:06:42] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/e6/63/8de952c60ee732312885bdc88bfa9c5bbacc02dc9963a75bbbea2ad6ddb8/rapid_pe-0.0.7.dev20230414.tar.gz
+[2023-04-15 07:06:42] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: Downloading https://files.pythonhosted.org/packages/d1/cb/54efa2ed13d02ef2d51eaab0deec582cd100ddd86b12216abf6f2f603ee8/mrgrain.cdk-esbuild-4.1.5.tar.gz
+[2023-04-15 07:06:42] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/6a/25/3a06698fb9792e546d6d27693ea32d216f686c1539a98e5566b504d1c403/multi_model_server-1.1.8b20230415-py2.py3-none-any.whl
+[2023-04-15 07:06:42] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: Downloading https://files.pythonhosted.org/packages/d1/cb/54efa2ed13d02ef2d51eaab0deec582cd100ddd86b12216abf6f2f603ee8/mrgrain.cdk-esbuild-4.1.5.tar.gz
+[2023-04-15 07:06:42] INFO root fetch - processPackages [webp-support]: Downloading https://files.pythonhosted.org/packages/d5/b1/e78f7c61795e6ed312f37212b43a26f7d4a243fa8f2ab917a85567fd67ad/webp_support-0.2.4.tar.gz
+[2023-04-15 07:06:42] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-04-15 07:06:42] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230414-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230415-py2.py3-none-any.whl.zip --markdown 20230415/m/multi-model-server/1.1.8b20230414-1.1.8b20230415/diff.md --exclude *.pyd
+[2023-04-15 07:06:42] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: Downloading https://files.pythonhosted.org/packages/b2/03/7e4869018f698187077c1273b7dbc2362d3ea5c75f6200ea594a99f35d48/mrgrain.cdk-esbuild-4.1.6.tar.gz
+[2023-04-15 07:06:42] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/4c/ab/f2e675f5f7e3b8c665387987ec7fb3b34b3c22c797bc7e099cefb547dbbb/rapid_pe-0.0.7.dev20230415.tar.gz
+[2023-04-15 07:06:42] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: Downloading https://files.pythonhosted.org/packages/b2/03/7e4869018f698187077c1273b7dbc2362d3ea5c75f6200ea594a99f35d48/mrgrain.cdk-esbuild-4.1.6.tar.gz
+[2023-04-15 07:06:42] INFO root fetch - processPackages [webp-support]: executing diffoscope
+[2023-04-15 07:06:42] INFO root fetch - processPackages [webp-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webp_support-0.2.2.tar.gz tmp/webp_support-0.2.4.tar.gz --markdown 20230415/w/webp-support/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-04-15 07:06:42] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: executing diffoscope
+[2023-04-15 07:06:42] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrgrain.cdk-esbuild-4.1.5.tar.gz tmp/mrgrain.cdk-esbuild-4.1.6.tar.gz --markdown 20230415/m/mrgrain.cdk-esbuild/4.1.5-4.1.6/diff.md --exclude *.pyd
+[2023-04-15 07:06:42] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: executing diffoscope
+[2023-04-15 07:06:42] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrgrain.cdk-esbuild-4.1.5.tar.gz tmp/mrgrain.cdk-esbuild-4.1.6.tar.gz --markdown 20230415/m/mrgrain.cdk-esbuild/4.1.5-4.1.6/diff.md --exclude *.pyd
+[2023-04-15 07:06:42] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-04-15 07:06:42] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.0.7.dev20230414.tar.gz tmp/rapid_pe-0.0.7.dev20230415.tar.gz --markdown 20230415/r/rapid-pe/0.0.7.dev20230414-0.0.7.dev20230415/diff.md --exclude *.pyd
+[2023-04-15 07:06:43] INFO root fetch - processPackages [webp-support]: Start processing: tflite-model-maker-nightly
+[2023-04-15 07:06:43] INFO root fetch - main [MainThread]: End processing [webp-support]: success
+[2023-04-15 07:06:43] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202304140508] Old Version: [0.4.3.dev202304130517]
+[2023-04-15 07:06:44] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: Start processing: datajunction
+[2023-04-15 07:06:44] INFO root fetch - main [MainThread]: End processing [mrgrain.cdk-esbuild]: success
+[2023-04-15 07:06:44] INFO root fetch - processPackages [datajunction]: New version: [0.0.1a3] Old Version: [0.0.1a2]
+[2023-04-15 07:06:44] INFO root fetch - processPackages [mrgrain.cdk-esbuild]: Start processing: splatnet3-scraper
+[2023-04-15 07:06:44] INFO root fetch - main [MainThread]: End processing [mrgrain.cdk-esbuild]: success
+[2023-04-15 07:06:44] INFO root fetch - processPackages [splatnet3-scraper]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-15 07:06:44] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/72/4c/0755e352341a432f3c4846baa5a05e4d62bd565882822d238d731b62f757/tflite-model-maker-nightly-0.4.3.dev202304140508.tar.gz
+[2023-04-15 07:06:44] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-04-15 07:06:44] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202304130517.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202304140508.tar.gz --markdown 20230415/t/tflite-model-maker-nightly/0.4.3.dev202304130517-0.4.3.dev202304140508/diff.md --exclude *.pyd
+[2023-04-15 07:06:44] INFO root fetch - processPackages [datajunction]: Downloading https://files.pythonhosted.org/packages/59/7a/1d1a6ec50a4fd934deb3f9acca0e4c61de3cb61edc601975f013f49762d7/datajunction-0.0.1a3.tar.gz
+[2023-04-15 07:06:44] INFO root fetch - processPackages [splatnet3-scraper]: Downloading https://files.pythonhosted.org/packages/75/98/e4b07fad802149b3d03393c1393eab0f5591e64599a57e4d6e0db2b5121b/splatnet3_scraper-0.7.1.tar.gz
+[2023-04-15 07:06:44] INFO root fetch - processPackages [datajunction]: executing diffoscope
+[2023-04-15 07:06:44] INFO root fetch - processPackages [datajunction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datajunction-0.0.1a2.tar.gz tmp/datajunction-0.0.1a3.tar.gz --markdown 20230415/d/datajunction/0.0.1a2-0.0.1a3/diff.md --exclude *.pyd
+[2023-04-15 07:06:44] INFO root fetch - processPackages [splatnet3-scraper]: executing diffoscope
+[2023-04-15 07:06:44] INFO root fetch - processPackages [splatnet3-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splatnet3_scraper-0.7.0.tar.gz tmp/splatnet3_scraper-0.7.1.tar.gz --markdown 20230415/s/splatnet3-scraper/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-15 07:06:44] INFO root fetch - processPackages [rapid-pe]: Start processing: krakenci-client
+[2023-04-15 07:06:44] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-04-15 07:06:44] INFO root fetch - processPackages [krakenci-client]: New version: [1.1.44] Old Version: [1.0]
+[2023-04-15 07:06:45] INFO root fetch - processPackages [krakenci-client]: Downloading https://files.pythonhosted.org/packages/0c/a4/761effaa46fe788965f57c6e1b2aba805e580ef09293954b861d594d37d7/krakenci_client-1.0.tar.gz
+[2023-04-15 07:06:45] INFO root fetch - processPackages [krakenci-client]: Downloading https://files.pythonhosted.org/packages/03/48/c18ef8c8f38e072fda6f0d257cc38d0752a0d7f49f96ca3f73d0fcb3e2a6/krakenci_client-1.1.44.tar.gz
+[2023-04-15 07:06:45] INFO root fetch - processPackages [splatnet3-scraper]: Start processing: krakenci-server
+[2023-04-15 07:06:45] INFO root fetch - main [MainThread]: End processing [splatnet3-scraper]: success
+[2023-04-15 07:06:45] INFO root fetch - processPackages [krakenci-server]: New version: [1.1.44] Old Version: [1.0]
+[2023-04-15 07:06:45] INFO root fetch - processPackages [krakenci-client]: executing diffoscope
+[2023-04-15 07:06:45] INFO root fetch - processPackages [krakenci-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krakenci_client-1.0.tar.gz tmp/krakenci_client-1.1.44.tar.gz --markdown 20230415/k/krakenci-client/1.0-1.1.44/diff.md --exclude *.pyd
+[2023-04-15 07:06:45] INFO root fetch - processPackages [krakenci-server]: Downloading https://files.pythonhosted.org/packages/ac/23/c63ffe23a882c5ff204c264715a0cddb1c2209f1fd84ca78c90b7dd21643/krakenci_server-1.0.tar.gz
+[2023-04-15 07:06:45] INFO root fetch - processPackages [datajunction]: Start processing: tinta
+[2023-04-15 07:06:45] INFO root fetch - main [MainThread]: End processing [datajunction]: success
+[2023-04-15 07:06:45] INFO root fetch - processPackages [tinta]: New version: [0.1.5b1] Old Version: [0.1.4a1.post0]
+[2023-04-15 07:06:46] INFO root fetch - processPackages [krakenci-server]: Downloading https://files.pythonhosted.org/packages/d8/0d/ab2bc6bc9e412e3acf8b13f537c391c15c56815b9cd394359eb51e04c1b8/krakenci_server-1.1.44.tar.gz
+[2023-04-15 07:06:46] INFO root fetch - processPackages [krakenci-server]: executing diffoscope
+[2023-04-15 07:06:46] INFO root fetch - processPackages [krakenci-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krakenci_server-1.0.tar.gz tmp/krakenci_server-1.1.44.tar.gz --markdown 20230415/k/krakenci-server/1.0-1.1.44/diff.md --exclude *.pyd
+[2023-04-15 07:06:46] INFO root fetch - processPackages [tinta]: Downloading https://files.pythonhosted.org/packages/61/7a/010bd194ab0fec9e808a4d3c5f7a03f898221a6777244a30a54ba2ef9c30/tinta-0.1.4a1.post0.tar.gz
+[2023-04-15 07:06:46] INFO root fetch - processPackages [tinta]: Downloading https://files.pythonhosted.org/packages/5d/51/23fbb44ecb8d677e27fce4b675c470ca1805e5aaf1be23316abad1e524ad/tinta-0.1.5b1.tar.gz
+[2023-04-15 07:06:46] INFO root fetch - main [MainThread]: End processing [krakenci-client]: success
+[2023-04-15 07:06:46] INFO root fetch - processPackages [tinta]: executing diffoscope
+[2023-04-15 07:06:46] INFO root fetch - processPackages [tinta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinta-0.1.4a1.post0.tar.gz tmp/tinta-0.1.5b1.tar.gz --markdown 20230415/t/tinta/0.1.4a1.post0-0.1.5b1/diff.md --exclude *.pyd
+[2023-04-15 07:06:47] INFO root fetch - main [MainThread]: End processing [tinta]: success
+[2023-04-15 07:06:48] INFO root fetch - main [MainThread]: End processing [krakenci-server]: success
+[2023-04-15 07:06:50] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-04-15 07:09:36] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-04-15 07:09:36] INFO root fetch - main [MainThread]: Store serial: [17716604]
