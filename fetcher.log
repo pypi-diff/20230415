@@ -19013,3 +19013,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 20:37:54] INFO root fetch - main [MainThread]: End processing [punctuators]: success
 [2023-04-15 20:37:54] INFO root fetch - main [MainThread]: End processing [rustplus]: success
 [2023-04-15 20:37:54] INFO root fetch - main [MainThread]: Store serial: [17721075]
+[2023-04-15 20:43:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17721075]
+[2023-04-15 20:43:08] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 20:43:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transformers-gradients
+[2023-04-15 20:43:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-env
+[2023-04-15 20:43:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: UncertainSCI
+[2023-04-15 20:43:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: digiDownload
+[2023-04-15 20:43:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ExoPSI
+[2023-04-15 20:43:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: leveled-hotbackup-s3-sync
+[2023-04-15 20:43:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hlatypingtools
+[2023-04-15 20:43:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: microt-preprocessing
+[2023-04-15 20:43:08] INFO root fetch - processPackages [microt-preprocessing]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-15 20:43:08] INFO root fetch - processPackages [leveled-hotbackup-s3-sync]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 20:43:08] INFO root fetch - processPackages [transformers-gradients]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-15 20:43:08] INFO root fetch - processPackages [odoo-env]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-15 20:43:08] WARNING root fetch - processPackages [digiDownload]: Skipping, unable to determine old version
+[2023-04-15 20:43:08] INFO root fetch - main [MainThread]: End processing [digiDownload] error
+[2023-04-15 20:43:08] INFO root fetch - processPackages [microt-preprocessing]: executing diffoscope
+[2023-04-15 20:43:08] INFO root fetch - processPackages [microt-preprocessing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microt_preprocessing-0.1.8.tar.gz tmp/microt_preprocessing-0.1.9.tar.gz --markdown 20230415/m/microt-preprocessing/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-15 20:43:08] INFO root fetch - processPackages [hlatypingtools]: New version: [1.0.0] Old Version: [0.1.1]
+[2023-04-15 20:43:08] INFO root fetch - processPackages [UncertainSCI]: New version: [1.0rc2] Old Version: [1.0rc1]
+[2023-04-15 20:43:08] INFO root fetch - processPackages [ExoPSI]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-15 20:43:08] INFO root fetch - processPackages [transformers-gradients]: executing diffoscope
+[2023-04-15 20:43:08] INFO root fetch - processPackages [transformers-gradients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformers_gradients-0.0.6.tar.gz tmp/transformers_gradients-0.0.7.tar.gz --markdown 20230415/t/transformers-gradients/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-15 20:43:08] INFO root fetch - processPackages [leveled-hotbackup-s3-sync]: Downloading https://files.pythonhosted.org/packages/e4/bf/dbf5e042484679c57fded724441705c2d55a34582d9bac238ecd4f97502b/leveled_hotbackup_s3_sync-0.0.2-py3-none-any.whl
+[2023-04-15 20:43:08] INFO root fetch - processPackages [odoo-env]: Downloading https://files.pythonhosted.org/packages/fc/9c/b71f33a4c604affe0e3a7ecc00e0ef45e33b424af1b5c94183e8ebc3e300/odoo-env-0.9.8.tar.gz
+[2023-04-15 20:43:08] INFO root fetch - processPackages [UncertainSCI]: Downloading https://files.pythonhosted.org/packages/8a/79/febb215d95eaba625cda20c4953cd4f9f6b8c96b197c67a769233dbaa51d/UncertainSCI-1.0rc1.tar.gz
+[2023-04-15 20:43:08] INFO root fetch - processPackages [leveled-hotbackup-s3-sync]: Downloading https://files.pythonhosted.org/packages/c0/7f/d1cfe2ed2faa5b85160723ea1a2b1a3bf9d51903aa882844a84806116fbb/leveled_hotbackup_s3_sync-0.0.3-py3-none-any.whl
+[2023-04-15 20:43:08] INFO root fetch - processPackages [ExoPSI]: Downloading https://files.pythonhosted.org/packages/f9/b2/2df0ae5403da004ee53c67d29383d8fa333d0b9b58098b18a80b55db0ea3/ExoPSI-1.0.2.tar.gz
+[2023-04-15 20:43:08] INFO root fetch - processPackages [hlatypingtools]: Downloading https://files.pythonhosted.org/packages/7d/20/c6313d9dd0f68cda603e2930a1a6ca7d45e916388335ff5ed3dc7c5de5c6/hlatypingtools-1.0.0.tar.gz
+[2023-04-15 20:43:08] INFO root fetch - processPackages [hlatypingtools]: executing diffoscope
+[2023-04-15 20:43:08] INFO root fetch - processPackages [hlatypingtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hlatypingtools-0.1.1.tar.gz tmp/hlatypingtools-1.0.0.tar.gz --markdown 20230415/h/hlatypingtools/0.1.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-15 20:43:08] INFO root fetch - processPackages [leveled-hotbackup-s3-sync]: executing diffoscope
+[2023-04-15 20:43:08] INFO root fetch - processPackages [leveled-hotbackup-s3-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leveled_hotbackup_s3_sync-0.0.2-py3-none-any.whl.zip tmp/leveled_hotbackup_s3_sync-0.0.3-py3-none-any.whl.zip --markdown 20230415/l/leveled-hotbackup-s3-sync/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 20:43:08] INFO root fetch - processPackages [ExoPSI]: executing diffoscope
+[2023-04-15 20:43:08] INFO root fetch - processPackages [ExoPSI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ExoPSI-1.0.1.tar.gz tmp/ExoPSI-1.0.2.tar.gz --markdown 20230415/E/ExoPSI/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-15 20:43:09] INFO root fetch - processPackages [odoo-env]: Downloading https://files.pythonhosted.org/packages/a0/53/5ee30fb680dd77b0f64bc973a67db15aa1bc5be9440ce36dabdd43c18ec8/odoo-env-0.9.9.tar.gz
+[2023-04-15 20:43:09] INFO root fetch - processPackages [UncertainSCI]: Downloading https://files.pythonhosted.org/packages/7a/6a/8053135c1e0452cf9c2e719b57391ee959c7d02b5890dd9774addd875d09/UncertainSCI-1.0rc2.tar.gz
+[2023-04-15 20:43:09] INFO root fetch - processPackages [UncertainSCI]: executing diffoscope
+[2023-04-15 20:43:09] INFO root fetch - processPackages [UncertainSCI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UncertainSCI-1.0rc1.tar.gz tmp/UncertainSCI-1.0rc2.tar.gz --markdown 20230415/U/UncertainSCI/1.0rc1-1.0rc2/diff.md --exclude *.pyd
+[2023-04-15 20:43:09] INFO root fetch - processPackages [odoo-env]: executing diffoscope
+[2023-04-15 20:43:09] INFO root fetch - processPackages [odoo-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo-env-0.9.8.tar.gz tmp/odoo-env-0.9.9.tar.gz --markdown 20230415/o/odoo-env/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-15 20:43:09] INFO root fetch - main [MainThread]: End processing [transformers-gradients]: success
+[2023-04-15 20:43:10] INFO root fetch - main [MainThread]: End processing [hlatypingtools]: success
+[2023-04-15 20:43:10] INFO root fetch - main [MainThread]: End processing [leveled-hotbackup-s3-sync]: success
+[2023-04-15 20:43:10] INFO root fetch - main [MainThread]: End processing [odoo-env]: success
+[2023-04-15 20:43:10] INFO root fetch - main [MainThread]: End processing [UncertainSCI]: success
+[2023-04-15 20:43:10] INFO root fetch - main [MainThread]: End processing [ExoPSI]: success
+[2023-04-15 20:43:11] INFO root fetch - main [MainThread]: End processing [microt-preprocessing]: success
+[2023-04-15 20:43:11] INFO root fetch - main [MainThread]: Store serial: [17721098]
