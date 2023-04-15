@@ -4750,3 +4750,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 05:09:19] INFO root fetch - main [MainThread]: End processing [citoplasm]: success
 [2023-04-15 05:09:19] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
 [2023-04-15 05:09:19] INFO root fetch - main [MainThread]: Store serial: [17716093]
+[2023-04-15 05:14:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17716093]
+[2023-04-15 05:14:27] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-15 05:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: biglist
+[2023-04-15 05:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TerraVide
+[2023-04-15 05:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: citoplasm
+[2023-04-15 05:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: charmr
+[2023-04-15 05:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sball
+[2023-04-15 05:14:27] INFO root fetch - processPackages [citoplasm]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-15 05:14:27] INFO root fetch - processPackages [sball]: New version: [1.0.0] Old Version: [0.9.6]
+[2023-04-15 05:14:27] INFO root fetch - processPackages [biglist]: New version: [0.7.9b6] Old Version: [0.7.9b5]
+[2023-04-15 05:14:28] WARNING root fetch - processPackages [charmr]: Skipping, unable to determine old version
+[2023-04-15 05:14:28] INFO root fetch - processPackages [TerraVide]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-15 05:14:28] INFO root fetch - processPackages [charmr]: Start processing: tinote
+[2023-04-15 05:14:28] INFO root fetch - main [MainThread]: End processing [charmr] error
+[2023-04-15 05:14:28] WARNING root fetch - processPackages [tinote]: Skipping, unable to determine old version
+[2023-04-15 05:14:28] INFO root fetch - processPackages [tinote]: Start processing: xmodel
+[2023-04-15 05:14:28] INFO root fetch - main [MainThread]: End processing [tinote] error
+[2023-04-15 05:14:28] INFO root fetch - processPackages [xmodel]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-15 05:14:28] INFO root fetch - processPackages [citoplasm]: Downloading https://files.pythonhosted.org/packages/7f/a4/5b3a8d56183b1034416df92c9a618d730a40c57ccf3dc6899379669331da/citoplasm-0.0.4.tar.gz
+[2023-04-15 05:14:28] INFO root fetch - processPackages [biglist]: executing diffoscope
+[2023-04-15 05:14:28] INFO root fetch - processPackages [biglist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biglist-0.7.9b5.tar.gz tmp/biglist-0.7.9b6.tar.gz --markdown 20230415/b/biglist/0.7.9b5-0.7.9b6/diff.md --exclude *.pyd
+[2023-04-15 05:14:28] INFO root fetch - processPackages [sball]: Downloading https://files.pythonhosted.org/packages/e9/c5/dd70bc8f5c02f6b6629a3eaab8b286c844c3a245e7da8dd48d495ff0050b/sball-1.0.0.tar.gz
+[2023-04-15 05:14:28] INFO root fetch - processPackages [TerraVide]: Downloading https://files.pythonhosted.org/packages/e6/54/eb83fc1a44040c8f881bbb553860eba5b7d926927b8afecf336d670787f3/TerraVide-0.1.6.tar.gz
+[2023-04-15 05:14:28] INFO root fetch - processPackages [sball]: executing diffoscope
+[2023-04-15 05:14:28] INFO root fetch - processPackages [sball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sball-0.9.6.tar.gz tmp/sball-1.0.0.tar.gz --markdown 20230415/s/sball/0.9.6-1.0.0/diff.md --exclude *.pyd
+[2023-04-15 05:14:28] INFO root fetch - processPackages [TerraVide]: executing diffoscope
+[2023-04-15 05:14:28] INFO root fetch - processPackages [TerraVide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TerraVide-0.1.5.tar.gz tmp/TerraVide-0.1.6.tar.gz --markdown 20230415/T/TerraVide/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 05:14:28] INFO root fetch - processPackages [citoplasm]: Downloading https://files.pythonhosted.org/packages/b7/19/1a4574d55c3025abeb947154354c920486a05d5db181da755bbac5f9f442/citoplasm-0.0.5.tar.gz
+[2023-04-15 05:14:28] INFO root fetch - processPackages [citoplasm]: executing diffoscope
+[2023-04-15 05:14:28] INFO root fetch - processPackages [citoplasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citoplasm-0.0.4.tar.gz tmp/citoplasm-0.0.5.tar.gz --markdown 20230415/c/citoplasm/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 05:14:28] INFO root fetch - processPackages [xmodel]: Downloading https://files.pythonhosted.org/packages/2c/0c/f4bbee4dbe95d8d3cd819ab032719edcf60e0e82f3407bcb8abf58a0a6f2/xmodel-0.3.0.tar.gz
+[2023-04-15 05:14:28] INFO root fetch - processPackages [xmodel]: executing diffoscope
+[2023-04-15 05:14:28] INFO root fetch - processPackages [xmodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xmodel-0.2.0.tar.gz tmp/xmodel-0.3.0.tar.gz --markdown 20230415/x/xmodel/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-15 05:14:29] INFO root fetch - processPackages [TerraVide]: Start processing: cdktf-cdktf-provider-pagerduty
+[2023-04-15 05:14:29] INFO root fetch - main [MainThread]: End processing [TerraVide]: success
+[2023-04-15 05:14:29] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: New version: [6.0.3] Old Version: [6.0.2]
+[2023-04-15 05:14:29] INFO root fetch - processPackages [biglist]: Start processing: citoplasm
+[2023-04-15 05:14:29] INFO root fetch - main [MainThread]: End processing [biglist]: success
+[2023-04-15 05:14:29] INFO root fetch - processPackages [citoplasm]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-15 05:14:29] INFO root fetch - processPackages [sball]: Start processing: python-ember-mug
+[2023-04-15 05:14:29] INFO root fetch - main [MainThread]: End processing [sball]: success
+[2023-04-15 05:14:29] INFO root fetch - processPackages [citoplasm]: executing diffoscope
+[2023-04-15 05:14:29] INFO root fetch - processPackages [citoplasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citoplasm-0.0.4.tar.gz tmp/citoplasm-0.0.5.tar.gz --markdown 20230415/c/citoplasm/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-15 05:14:29] INFO root fetch - main [MainThread]: End processing [citoplasm]: success
+[2023-04-15 05:14:29] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: Downloading https://files.pythonhosted.org/packages/fc/68/280d1121a1d97e12129a8d99eec912a255b66c510c8c8b90e9349990efcc/cdktf-cdktf-provider-pagerduty-6.0.2.tar.gz
+[2023-04-15 05:14:29] INFO root fetch - processPackages [python-ember-mug]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-15 05:14:29] INFO root fetch - main [MainThread]: End processing [xmodel]: success
+[2023-04-15 05:14:29] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: Downloading https://files.pythonhosted.org/packages/e2/21/c4496b72e7ca6138093b3548d409e3380e2cfb3959c0eb34a64c6b6e7fb2/cdktf-cdktf-provider-pagerduty-6.0.3.tar.gz
+[2023-04-15 05:14:29] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: executing diffoscope
+[2023-04-15 05:14:29] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-pagerduty-6.0.2.tar.gz tmp/cdktf-cdktf-provider-pagerduty-6.0.3.tar.gz --markdown 20230415/c/cdktf-cdktf-provider-pagerduty/6.0.2-6.0.3/diff.md --exclude *.pyd
+[2023-04-15 05:14:29] INFO root fetch - processPackages [python-ember-mug]: Downloading https://files.pythonhosted.org/packages/10/ac/59561bb062dbbeaf464e2ce0e17c68d43c290de0191b6473797bea0ea2e4/python_ember_mug-0.6.2.tar.gz
+[2023-04-15 05:14:30] INFO root fetch - processPackages [python-ember-mug]: executing diffoscope
+[2023-04-15 05:14:30] INFO root fetch - processPackages [python-ember-mug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_ember_mug-0.6.1.tar.gz tmp/python_ember_mug-0.6.2.tar.gz --markdown 20230415/p/python-ember-mug/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-15 05:14:30] INFO root fetch - main [MainThread]: End processing [citoplasm]: success
+[2023-04-15 05:14:31] INFO root fetch - main [MainThread]: End processing [python-ember-mug]: success
+[2023-04-15 05:14:31] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-pagerduty]: success
+[2023-04-15 05:14:31] INFO root fetch - main [MainThread]: Store serial: [17716124]
