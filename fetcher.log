@@ -6877,3 +6877,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 09:43:51] INFO root fetch - main [MainThread]: End processing [plone.app.registry]: success
 [2023-04-15 09:43:58] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2023-04-15 09:43:58] INFO root fetch - main [MainThread]: Store serial: [17717276]
+[2023-04-15 09:49:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17717276]
+[2023-04-15 09:49:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-15 09:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plone.app.users
+[2023-04-15 09:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly-cpu
+[2023-04-15 09:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wtfutil
+[2023-04-15 09:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plone.alterego
+[2023-04-15 09:49:07] INFO root fetch - processPackages [wtfutil]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-15 09:49:07] INFO root fetch - processPackages [plone.alterego]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-15 09:49:07] INFO root fetch - processPackages [plone.app.users]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-04-15 09:49:07] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.13.0.dev20230415] Old Version: [2.13.0.dev20230414]
+[2023-04-15 09:49:07] INFO root fetch - processPackages [plone.alterego]: Downloading https://files.pythonhosted.org/packages/ef/94/75af9fc263534d9f2be51b55c8a4c307378fd611ca99f34ed1e1f683ed15/plone.alterego-1.1.5.tar.gz
+[2023-04-15 09:49:07] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/79/90/d4a19ac0601fbfc0909367db94fea8537cfcec3a0267ee92318d6b09533c/tf_nightly_cpu-2.13.0.dev20230415-cp39-cp39-win_amd64.whl
+[2023-04-15 09:49:07] INFO root fetch - processPackages [plone.app.users]: Downloading https://files.pythonhosted.org/packages/1b/c0/4cd9b54d2aa790a12becb2d6499d92662b79e009c375a5b2efa27762aa55/plone.app.users-3.0.2.tar.gz
+[2023-04-15 09:49:07] INFO root fetch - processPackages [wtfutil]: executing diffoscope
+[2023-04-15 09:49:07] INFO root fetch - processPackages [wtfutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtfutil-1.0.8.tar.gz tmp/wtfutil-1.0.9.tar.gz --markdown 20230415/w/wtfutil/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-15 09:49:07] INFO root fetch - processPackages [plone.alterego]: Downloading https://files.pythonhosted.org/packages/61/79/67c1d85363dc2bcd8e8cda105f505ef27aa219b3e46756f47ac7d4f4eaab/plone.alterego-1.1.6.tar.gz
+[2023-04-15 09:49:07] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-04-15 09:49:07] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.13.0.dev20230414-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.13.0.dev20230415-cp39-cp39-win_amd64.whl.zip --markdown 20230415/t/tf-nightly-cpu/2.13.0.dev20230414-2.13.0.dev20230415/diff.md --exclude *.pyd
+[2023-04-15 09:49:07] INFO root fetch - processPackages [plone.app.users]: executing diffoscope
+[2023-04-15 09:49:07] INFO root fetch - processPackages [plone.app.users]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.users-3.0.1.tar.gz tmp/plone.app.users-3.0.2.tar.gz --markdown 20230415/p/plone.app.users/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-04-15 09:49:07] INFO root fetch - processPackages [plone.alterego]: executing diffoscope
+[2023-04-15 09:49:07] INFO root fetch - processPackages [plone.alterego]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.alterego-1.1.5.tar.gz tmp/plone.alterego-1.1.6.tar.gz --markdown 20230415/p/plone.alterego/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-15 09:49:08] INFO root fetch - main [MainThread]: End processing [wtfutil]: success
+[2023-04-15 09:49:08] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2023-04-15 09:49:08] INFO root fetch - main [MainThread]: End processing [plone.alterego]: success
+[2023-04-15 09:49:09] INFO root fetch - main [MainThread]: End processing [plone.app.users]: success
+[2023-04-15 09:49:09] INFO root fetch - main [MainThread]: Store serial: [17717290]
