@@ -18511,3 +18511,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 19:54:14] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-facturae]: success
 [2023-04-15 19:54:14] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
 [2023-04-15 19:54:14] INFO root fetch - main [MainThread]: Store serial: [17720714]
+[2023-04-15 19:59:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17720714]
+[2023-04-15 19:59:23] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-15 19:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mango-explorer-v4
+[2023-04-15 19:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydcs
+[2023-04-15 19:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lcwc
+[2023-04-15 19:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: allocine-seances
+[2023-04-15 19:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sportydatagen
+[2023-04-15 19:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jupyterhub-tmpnativeauthenticator
+[2023-04-15 19:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gen-odoo-readme
+[2023-04-15 19:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gwemopt
+[2023-04-15 19:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mango-explorer-v4
+[2023-04-15 19:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: open-darts
+[2023-04-15 19:59:23] INFO root fetch - processPackages [gwemopt]: New version: [0.0.84] Old Version: [0.0.82]
+[2023-04-15 19:59:23] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-15 19:59:23] WARNING root fetch - processPackages [sportydatagen]: Skipping, unable to determine old version
+[2023-04-15 19:59:23] INFO root fetch - processPackages [sportydatagen]: Start processing: al-otto
+[2023-04-15 19:59:23] INFO root fetch - processPackages [mango-explorer-v4]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-15 19:59:23] WARNING root fetch - processPackages [allocine-seances]: Skipping, unable to determine old version
+[2023-04-15 19:59:23] INFO root fetch - processPackages [pydcs]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-15 19:59:23] INFO root fetch - main [MainThread]: End processing [sportydatagen] error
+[2023-04-15 19:59:23] INFO root fetch - processPackages [lcwc]: New version: [0.3] Old Version: [0.2.1]
+[2023-04-15 19:59:23] INFO root fetch - processPackages [open-darts]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-15 19:59:23] INFO root fetch - processPackages [gen-odoo-readme]: New version: [0.1.6] Old Version: [0.1.1]
+[2023-04-15 19:59:23] INFO root fetch - main [MainThread]: End processing [allocine-seances] error
+[2023-04-15 19:59:23] INFO root fetch - processPackages [mango-explorer-v4]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-15 19:59:24] INFO root fetch - processPackages [al-otto]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-15 19:59:24] INFO root fetch - processPackages [mango-explorer-v4]: Downloading https://files.pythonhosted.org/packages/5d/5c/2bc39cfa95019460aca8dcd7a29c837ddd5814d2dbcd76f11ce7020b4a5a/mango_explorer_v4-0.6.0.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [mango-explorer-v4]: Downloading https://files.pythonhosted.org/packages/5d/5c/2bc39cfa95019460aca8dcd7a29c837ddd5814d2dbcd76f11ce7020b4a5a/mango_explorer_v4-0.6.0.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [pydcs]: Downloading https://files.pythonhosted.org/packages/37/6f/0869638cd5370403d78d981e891817f6b2972fcb199c29f4755e2a901d39/pydcs-0.9.8.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [gen-odoo-readme]: Downloading https://files.pythonhosted.org/packages/6f/ce/32f3c8bc399223a88814faf7bc38dbb09697e76cdff218a2626c8162fb28/gen-odoo-readme-0.1.6.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [gwemopt]: Downloading https://files.pythonhosted.org/packages/1e/91/674322339d18cdd438f47d326d31e95561af16932c3eec0ba47ee2c904d1/gwemopt-0.0.84.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [lcwc]: Downloading https://files.pythonhosted.org/packages/68/6d/224a831aef0198b34efd9f7f3d68b8ff6d2dbb8553d278603f4482b4f3a7/lcwc-0.2.1.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Downloading https://files.pythonhosted.org/packages/d0/6d/3e25864c03fcb0e8a3cd102853ffac16e15a281337eb2979744873bb2ff8/jupyterhub-tmpnativeauthenticator-1.0.8.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [open-darts]: Downloading https://files.pythonhosted.org/packages/79/a6/6e03f3d071f94455cba33b51d5f3baac5dea92c1abbad204ccc1a88d7470/open_darts-0.1.3-cp39-cp39-win_amd64.whl
+[2023-04-15 19:59:24] INFO root fetch - processPackages [gen-odoo-readme]: executing diffoscope
+[2023-04-15 19:59:24] INFO root fetch - processPackages [gen-odoo-readme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen-odoo-readme-0.1.1.tar.gz tmp/gen-odoo-readme-0.1.6.tar.gz --markdown 20230415/g/gen-odoo-readme/0.1.1-0.1.6/diff.md --exclude *.pyd
+[2023-04-15 19:59:24] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: executing diffoscope
+[2023-04-15 19:59:24] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterhub-tmpnativeauthenticator-1.0.7.tar.gz tmp/jupyterhub-tmpnativeauthenticator-1.0.8.tar.gz --markdown 20230415/j/jupyterhub-tmpnativeauthenticator/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-15 19:59:24] INFO root fetch - processPackages [gwemopt]: executing diffoscope
+[2023-04-15 19:59:24] INFO root fetch - processPackages [gwemopt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gwemopt-0.0.82.tar.gz tmp/gwemopt-0.0.84.tar.gz --markdown 20230415/g/gwemopt/0.0.82-0.0.84/diff.md --exclude *.pyd
+[2023-04-15 19:59:24] INFO root fetch - processPackages [al-otto]: Downloading https://files.pythonhosted.org/packages/7b/38/de091fda38b4ca0f3ebbba4f56878ab95148125ad16efc4c46c401c001e4/al_otto-0.2.1.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [lcwc]: Downloading https://files.pythonhosted.org/packages/e9/45/172cd8074ed0f646b9c0a34997e6d44f9d5525b1988e9def66ca79744842/lcwc-0.3.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [mango-explorer-v4]: Downloading https://files.pythonhosted.org/packages/5a/5c/112721c662bc1c253a9c4cffced461444574cbe564295ca31e8ca1f923c0/mango_explorer_v4-0.7.0.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [mango-explorer-v4]: Downloading https://files.pythonhosted.org/packages/5a/5c/112721c662bc1c253a9c4cffced461444574cbe564295ca31e8ca1f923c0/mango_explorer_v4-0.7.0.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [mango-explorer-v4]: executing diffoscope
+[2023-04-15 19:59:24] INFO root fetch - processPackages [mango-explorer-v4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango_explorer_v4-0.6.0.tar.gz tmp/mango_explorer_v4-0.7.0.tar.gz --markdown 20230415/m/mango-explorer-v4/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-15 19:59:24] INFO root fetch - processPackages [mango-explorer-v4]: executing diffoscope
+[2023-04-15 19:59:24] INFO root fetch - processPackages [mango-explorer-v4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango_explorer_v4-0.6.0.tar.gz tmp/mango_explorer_v4-0.7.0.tar.gz --markdown 20230415/m/mango-explorer-v4/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-15 19:59:24] INFO root fetch - processPackages [lcwc]: executing diffoscope
+[2023-04-15 19:59:24] INFO root fetch - processPackages [pydcs]: Downloading https://files.pythonhosted.org/packages/f4/dc/4572754a9331c84338f457ac3f9cac6235763bf8786565beb0f76d70789c/pydcs-0.9.9.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [lcwc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lcwc-0.2.1.tar.gz tmp/lcwc-0.3.tar.gz --markdown 20230415/l/lcwc/0.2.1-0.3/diff.md --exclude *.pyd
+[2023-04-15 19:59:24] INFO root fetch - processPackages [al-otto]: Downloading https://files.pythonhosted.org/packages/51/a6/f92073887d251cadb691f7a9ecf818e75f49a4d60c0291e58f5b64da9e46/al_otto-0.2.2.tar.gz
+[2023-04-15 19:59:24] INFO root fetch - processPackages [pydcs]: executing diffoscope
+[2023-04-15 19:59:24] INFO root fetch - processPackages [pydcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydcs-0.9.8.tar.gz tmp/pydcs-0.9.9.tar.gz --markdown 20230415/p/pydcs/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-15 19:59:24] INFO root fetch - processPackages [al-otto]: executing diffoscope
+[2023-04-15 19:59:24] INFO root fetch - processPackages [al-otto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/al_otto-0.2.1.tar.gz tmp/al_otto-0.2.2.tar.gz --markdown 20230415/a/al-otto/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-15 19:59:25] INFO root fetch - processPackages [open-darts]: Downloading https://files.pythonhosted.org/packages/ad/a0/d6b73b05ab6f25da6e4abd3c0cb1e771b60b275f239b38c2b54d8cefe3e8/open_darts-0.1.4-cp39-cp39-win_amd64.whl
+[2023-04-15 19:59:25] INFO root fetch - processPackages [open-darts]: executing diffoscope
+[2023-04-15 19:59:25] INFO root fetch - processPackages [open-darts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_darts-0.1.3-cp39-cp39-win_amd64.whl.zip tmp/open_darts-0.1.4-cp39-cp39-win_amd64.whl.zip --markdown 20230415/o/open-darts/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-15 19:59:25] INFO root fetch - main [MainThread]: End processing [gen-odoo-readme]: success
+[2023-04-15 19:59:25] INFO root fetch - main [MainThread]: End processing [lcwc]: success
+[2023-04-15 19:59:26] INFO root fetch - main [MainThread]: End processing [al-otto]: success
+[2023-04-15 19:59:26] INFO root fetch - main [MainThread]: End processing [mango-explorer-v4]: success
+[2023-04-15 19:59:26] INFO root fetch - main [MainThread]: End processing [open-darts]: success
+[2023-04-15 19:59:27] INFO root fetch - main [MainThread]: End processing [gwemopt]: success
+[2023-04-15 19:59:28] INFO root fetch - main [MainThread]: End processing [mango-explorer-v4]: success
+[2023-04-15 19:59:29] INFO root fetch - main [MainThread]: End processing [jupyterhub-tmpnativeauthenticator]: success
+[2023-04-15 19:59:29] INFO root fetch - main [MainThread]: End processing [pydcs]: success
+[2023-04-15 19:59:29] INFO root fetch - main [MainThread]: Store serial: [17720763]
