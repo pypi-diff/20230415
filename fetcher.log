@@ -16914,3 +16914,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-15 16:49:35] INFO root fetch - main [MainThread]: End processing [tinote]: success
 [2023-04-15 16:49:36] INFO root fetch - main [MainThread]: End processing [pip-run]: success
 [2023-04-15 16:49:36] INFO root fetch - main [MainThread]: Store serial: [17719614]
+[2023-04-15 16:54:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17719614]
+[2023-04-15 16:54:45] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-15 16:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: catprompt
+[2023-04-15 16:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hds-stats
+[2023-04-15 16:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scalde-data-factory
+[2023-04-15 16:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fury
+[2023-04-15 16:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scalde-cognito-confidential
+[2023-04-15 16:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scalde-easy-testting
+[2023-04-15 16:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cargo-zigbuild
+[2023-04-15 16:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sarus-sql
+[2023-04-15 16:54:45] INFO root fetch - processPackages [hds-stats]: New version: [0.2.0] Old Version: [0.1.6]
+[2023-04-15 16:54:45] INFO root fetch - processPackages [catprompt]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-15 16:54:45] WARNING root fetch - processPackages [scalde-easy-testting]: Skipping, unable to determine old version
+[2023-04-15 16:54:45] WARNING root fetch - processPackages [sarus-sql]: Skipping, unable to determine old version
+[2023-04-15 16:54:45] WARNING root fetch - processPackages [scalde-data-factory]: Skipping, unable to determine old version
+[2023-04-15 16:54:45] INFO root fetch - main [MainThread]: End processing [scalde-easy-testting] error
+[2023-04-15 16:54:45] WARNING root fetch - processPackages [scalde-cognito-confidential]: Skipping, unable to determine old version
+[2023-04-15 16:54:45] INFO root fetch - main [MainThread]: End processing [sarus-sql] error
+[2023-04-15 16:54:45] INFO root fetch - processPackages [fury]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-15 16:54:45] INFO root fetch - main [MainThread]: End processing [scalde-data-factory] error
+[2023-04-15 16:54:45] INFO root fetch - main [MainThread]: End processing [scalde-cognito-confidential] error
+[2023-04-15 16:54:45] INFO root fetch - processPackages [cargo-zigbuild]: New version: [0.9.0] Old Version: [0.8.8]
+[2023-04-15 16:54:45] INFO root fetch - processPackages [fury]: Downloading https://files.pythonhosted.org/packages/dd/01/4da5d01a67885ce148c71c0fb6e001570ae74393a55aa11bd73622dd494b/fury-0.8.0.tar.gz
+[2023-04-15 16:54:45] INFO root fetch - processPackages [hds-stats]: Downloading https://files.pythonhosted.org/packages/84/b6/f12a5f7b8f72a98d3368294967ac63c3a677caad6497b10493b8befa7b3b/hds-stats-0.2.0.tar.gz
+[2023-04-15 16:54:45] INFO root fetch - processPackages [cargo-zigbuild]: Downloading https://files.pythonhosted.org/packages/32/ce/65eccbdc2e10dcf359bfee8ccf7e1522568bcb898a0c3306da22188a93e1/cargo_zigbuild-0.8.8-py3-none-win_arm64.whl
+[2023-04-15 16:54:45] INFO root fetch - processPackages [catprompt]: Downloading https://files.pythonhosted.org/packages/cc/1d/1131f6fc072bc9d0c7f3e26eeed221ef621207b9a0b5a08fbb25ff57e512/catprompt-0.0.3.tar.gz
+[2023-04-15 16:54:45] INFO root fetch - processPackages [hds-stats]: executing diffoscope
+[2023-04-15 16:54:45] INFO root fetch - processPackages [hds-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hds-stats-0.1.6.tar.gz tmp/hds-stats-0.2.0.tar.gz --markdown 20230415/h/hds-stats/0.1.6-0.2.0/diff.md --exclude *.pyd
+[2023-04-15 16:54:45] INFO root fetch - processPackages [catprompt]: executing diffoscope
+[2023-04-15 16:54:45] INFO root fetch - processPackages [catprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/catprompt-0.0.2.tar.gz tmp/catprompt-0.0.3.tar.gz --markdown 20230415/c/catprompt/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-15 16:54:45] INFO root fetch - processPackages [fury]: Downloading https://files.pythonhosted.org/packages/49/c9/bb32323491930437559488f4d0f5905211195171c18c9abc11c81a226143/fury-0.9.0.tar.gz
+[2023-04-15 16:54:45] INFO root fetch - processPackages [cargo-zigbuild]: Downloading https://files.pythonhosted.org/packages/e0/c4/785516a9ca5e58d15cb5c210a2aaaf1aa39d58ae869c0a6b3181b4e57115/cargo_zigbuild-0.9.0-py3-none-win_arm64.whl
+[2023-04-15 16:54:45] WARNING root fetch - processPackages [fury]: Skipping package: exceeds size limit 68194837>=10485760
+[2023-04-15 16:54:45] INFO root fetch - main [MainThread]: End processing [fury] error
+[2023-04-15 16:54:45] INFO root fetch - processPackages [cargo-zigbuild]: executing diffoscope
+[2023-04-15 16:54:45] INFO root fetch - processPackages [cargo-zigbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230415:/home/abi/fetcher/20230415:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cargo_zigbuild-0.8.8-py3-none-win_arm64.whl.zip tmp/cargo_zigbuild-0.9.0-py3-none-win_arm64.whl.zip --markdown 20230415/c/cargo-zigbuild/0.8.8-0.9.0/diff.md --exclude *.pyd
+[2023-04-15 16:54:46] INFO root fetch - main [MainThread]: End processing [hds-stats]: success
+[2023-04-15 16:54:46] INFO root fetch - main [MainThread]: End processing [catprompt]: success
+[2023-04-15 16:54:50] INFO root fetch - main [MainThread]: End processing [cargo-zigbuild]: success
+[2023-04-15 16:54:50] INFO root fetch - main [MainThread]: Store serial: [17719649]
